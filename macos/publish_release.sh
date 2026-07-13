@@ -52,13 +52,16 @@ if ! git diff --quiet || ! git diff --cached --quiet; then
 	exit 1
 fi
 
-REPO_SLUG="$(gh repo view --json nameWithOwner --jq .nameWithOwner 2>/dev/null || true)"
-if [ -z "$REPO_SLUG" ]; then
-	# Fall back to parsing it out of the remote URL if `gh repo view` can't
-	# tell (e.g. it default-resolved to the wrong remote in a fork setup).
-	REMOTE_URL="$(git remote get-url "$RELEASE_REMOTE")"
-	REPO_SLUG="$(echo "$REMOTE_URL" | sed -E 's#.*github.com[:/]([^/]+/[^/.]+)(\.git)?#\1#')"
-fi
+# Deliberately NOT using `gh repo view`'s auto-detection here: with both
+# `origin` (this fork) and `upstream` (the repo this fork pulls from, which
+# the user has no write access to) configured, gh's repo-resolution
+# heuristic picked `upstream` in practice -- every gh call below would then
+# silently target the wrong repo, and a 403 (no write access there) surfaces
+# as gh's generic, misleading "'workflow' scope may be required" error no
+# amount of token-scope fiddling on the *correct* repo will ever fix. Always
+# derive the slug directly from $RELEASE_REMOTE's URL instead; unambiguous.
+REMOTE_URL="$(git remote get-url "$RELEASE_REMOTE")"
+REPO_SLUG="$(echo "$REMOTE_URL" | sed -E 's#.*github.com[:/]([^/]+/[^/.]+)(\.git)?#\1#')"
 echo "Releasing to: ${REPO_SLUG} (remote: ${RELEASE_REMOTE})"
 
 CHANGELOG="CHANGELOG.md"
