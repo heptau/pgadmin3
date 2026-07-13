@@ -9,19 +9,22 @@
 #
 # What it does, in order:
 #   1. Refuses to run with a dirty working tree or without `gh` installed.
-#   2. Computes today's date-based version (with collision-avoidance).
+#   2. Computes today's date-based version (with collision-avoidance), or
+#      resumes a previous attempt's version if one is pending (see the
+#      "Resume detection" comment below).
 #   3. Promotes the CHANGELOG.md "## [Unreleased]" section to
 #      "## [<version>]" (leaving a fresh empty Unreleased above it) and
-#      commits that change.
-#   4. Builds the app (`make build`) and re-stamps Info.plist with the
-#      release version.
-#   5. Zips the .app, computes its checksum.
-#   6. Tags v<version>, pushes the tag + the changelog commit to `origin`
+#      commits that change. Skipped when resuming.
+#   4. Tags v<version>, pushes the tag + the changelog commit to `origin`
 #      (never `upstream` -- see AGENTS.md's branching strategy: this repo
 #      pulls from upstream but only ever pushes to the user's own fork).
-#   7. Creates the GitHub release with the extracted changelog notes and the
-#      zip/checksum as assets.
-#   8. Generates and pushes an updated Homebrew Cask to the heptau/homebrew-tap
+#   5. If a GitHub release for this tag already exists, skip straight to
+#      reusing its already-uploaded zip's checksum (see "GitHub release"
+#      comment below for why). Otherwise: build the app (`make build`),
+#      re-stamp Info.plist with the release version, zip it, compute its
+#      checksum, and create the GitHub release with the extracted changelog
+#      notes and the zip/checksum as assets.
+#   6. Generates and pushes an updated Homebrew Cask to the heptau/homebrew-tap
 #      repo, via the GitHub API (no local clone needed).
 #
 # Environment variables:
@@ -151,28 +154,6 @@ if ! ./macos/changelog_notes.sh "$VERSION" > "$NOTES_FILE" 2>/dev/null || [ ! -s
 	echo "No changelog entries recorded for this release." > "$NOTES_FILE"
 fi
 
-# ── Build & bundle, stamped with the release version ────────────────────────
-echo "==> Building (this may take a while)..."
-make build
-echo "==> Re-stamping Info.plist with version ${VERSION}..."
-PGADMIN3_VERSION="$VERSION" ./macos/build_app.sh "$BUILD_DIR"
-echo ""
-
-# ── Zip + checksum ────────────────────────────────────────────────────────────
-ZIP_NAME="pgAdmin3-${VERSION}-macos-arm64.zip"
-ZIP_PATH="${DIST_DIR}/${ZIP_NAME}"
-echo "==> Zipping ${ZIP_NAME}..."
-rm -f "$ZIP_PATH"
-(cd "$BUILD_DIR" && zip -rq "dist/${ZIP_NAME}" "pgAdmin III.app")
-(cd "$DIST_DIR" && shasum -a 256 "$ZIP_NAME" > checksums.txt)
-echo ""
-
-# ── Homebrew Cask ────────────────────────────────────────────────────────────
-echo "==> Generating Homebrew cask..."
-./macos/generate_homebrew_cask.sh "$VERSION" "$ZIP_PATH" "${DIST_DIR}/Casks"
-LOCAL_CASK="${DIST_DIR}/Casks/pgadmin3.rb"
-echo ""
-
 # ── Tag & push (to $RELEASE_REMOTE only -- never `upstream`) ────────────────
 echo "==> Tagging ${TAG}..."
 if git tag -l "$TAG" | grep -q .; then
@@ -184,13 +165,45 @@ git push "$RELEASE_REMOTE" HEAD
 git push "$RELEASE_REMOTE" "$TAG"
 echo ""
 
+ZIP_NAME="pgAdmin3-${VERSION}-macos-arm64.zip"
+ZIP_PATH="${DIST_DIR}/${ZIP_NAME}"
+
 # ── GitHub release ────────────────────────────────────────────────────────────
 # Idempotent: a previous run may have created the tag/release already (e.g.
 # this script failed on a later step, like the Homebrew tap update below) --
 # re-running must not blow up on "release already exists".
+#
+# Deliberately checked *before* building: the local build isn't reproducible
+# byte-for-byte between runs (embedded timestamps, non-deterministic ad-hoc
+# codesign output, etc.), so if the release already exists, rebuilding and
+# re-hashing here would produce a *different* zip than what's actually
+# uploaded -- and the Homebrew Cask generated from that mismatched hash would
+# fail `brew install`'s checksum verification. When resuming, skip straight
+# to reusing the sha256 of whatever is already live on the release.
 if gh release view "$TAG" --repo "$REPO_SLUG" >/dev/null 2>&1; then
-	echo "==> GitHub release ${TAG} already exists -- skipping creation."
+	echo "==> GitHub release ${TAG} already exists -- skipping build/zip/creation."
+	SHA_ARM="$(gh api "repos/${REPO_SLUG}/releases/tags/${TAG}" --jq \
+		".assets[] | select(.name == \"${ZIP_NAME}\") | .digest" | sed 's/^sha256://')"
+	if [ -z "$SHA_ARM" ]; then
+		echo "Error: release ${TAG} exists but has no '${ZIP_NAME}' asset -- can't"
+		echo "determine its checksum for the Homebrew cask. Inspect it manually:"
+		echo "  https://github.com/${REPO_SLUG}/releases/tag/${TAG}"
+		exit 1
+	fi
 else
+	echo "==> Building (this may take a while)..."
+	make build
+	echo "==> Re-stamping Info.plist with version ${VERSION}..."
+	PGADMIN3_VERSION="$VERSION" ./macos/build_app.sh "$BUILD_DIR"
+	echo ""
+
+	echo "==> Zipping ${ZIP_NAME}..."
+	rm -f "$ZIP_PATH"
+	(cd "$BUILD_DIR" && zip -rq "dist/${ZIP_NAME}" "pgAdmin III.app")
+	(cd "$DIST_DIR" && shasum -a 256 "$ZIP_NAME" > checksums.txt)
+	SHA_ARM="$(shasum -a 256 "$ZIP_PATH" | awk '{print $1}')"
+	echo ""
+
 	echo "==> Creating GitHub release ${TAG}..."
 	gh release create "$TAG" \
 		--repo "$REPO_SLUG" \
@@ -198,6 +211,12 @@ else
 		--notes-file "$NOTES_FILE" \
 		"$ZIP_PATH" "${DIST_DIR}/checksums.txt"
 fi
+echo ""
+
+# ── Homebrew Cask ────────────────────────────────────────────────────────────
+echo "==> Generating Homebrew cask..."
+./macos/generate_homebrew_cask.sh "$VERSION" "$SHA_ARM" "${DIST_DIR}/Casks"
+LOCAL_CASK="${DIST_DIR}/Casks/pgadmin3.rb"
 echo ""
 
 # ── Homebrew tap update via GitHub API (no local clone needed) ──────────────
