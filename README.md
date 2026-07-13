@@ -108,5 +108,5 @@ canvas toolkit), and `utils/` (shared helpers).
 
 ## License
 
-Released under the PostgreSQL Licence, same as the original pgAdmin III
-project (see license headers in source files).
+Released under the [PostgreSQL Licence](LICENSE), same as the original
+pgAdmin III project.
