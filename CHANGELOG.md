@@ -5,6 +5,15 @@ Format loosely follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ## [Unreleased]
 
+### Fixed
+- Fixed the main window's toolbar icons overlapping on macOS (Retina
+  displays specifically) — the toolbar's bitmap size was never set to
+  match the 32x32 icons being drawn into it.
+- Fixed `make release` producing a Homebrew cask whose checksum didn't
+  match the actual uploaded release asset when re-run after a release
+  already existed (the local build isn't byte-for-byte reproducible
+  between runs).
+
 ## [2026.07.13]
 
 ### Added

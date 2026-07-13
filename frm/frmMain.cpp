@@ -374,6 +374,21 @@ void frmMain::CreateMenus()
 
 	toolBar = new ctlMenuToolbar(this, -1, wxDefaultPosition, wxDefaultSize, wxTB_FLAT | wxTB_NODIVIDER );
 	//toolBar->SetToolBitmapSize(wxSize(32, 32));
+#ifdef __WXMAC__
+	// Every menu factory that adds tools to this toolbar (addServerFactory,
+	// propertyFactory/refreshFactory, viewDataFactory, etc. -- see
+	// pgServer.cpp/dlgProperty.cpp/frmEditGrid.cpp) requests its icon via
+	// GetBundleSVG(..., wxSize(32, 32)), matching frmQuery's and frmStatus's
+	// own SetToolBitmapSize(FromDIP(wxSize(32, 32))) calls. Without telling
+	// wxToolBar the same size up front, it auto-sizes tool cells from
+	// whichever bitmap it happens to see first, which on macOS Retina
+	// displays produces cells far too small for the 32x32-DIP icons actually
+	// being drawn into them -- the toolbar buttons visibly overlap. Scoped to
+	// __WXMAC__ only since this line was deliberately disabled in the
+	// Windows/Linux build (commit d07487ea, 2023-06-25) and those platforms
+	// haven't shown this symptom.
+	toolBar->SetToolBitmapSize(FromDIP(wxSize(32, 32)));
+#endif
 	menuFactories = new menuFactoryList();
 
 	// Load plugins - must do this after creating the menus and the factories

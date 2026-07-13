@@ -339,6 +339,59 @@ picks up this work next — treat this as a running log, not final docs.
     Homebrew-tap-API-push steps, since that requires a real `gh auth login`
     session and would publish for real. First real `make release` run
     should be watched closely.
+  - Real-world `make release` run surfaced three more issues, all fixed:
+    (1) `gh release create` kept failing with a misleading "'workflow'
+    scope may be required" error regardless of token scope, because
+    `gh repo view`'s auto-detection picked `upstream` (no write access)
+    instead of `origin` when both remotes are configured — fixed by always
+    deriving the repo slug directly from `$RELEASE_REMOTE`'s URL, never via
+    `gh`'s auto-detection. (2) The resume-detection (see above) only
+    checked HEAD's commit message, which broke as soon as any other commit
+    landed on top of the "Release vX.Y.Z" commit before a retry (e.g. a
+    script bugfix) — fixed to check CHANGELOG.md's actual structure
+    (`[Unreleased]` empty + a tag existing for the heading below it) instead,
+    and to resume even if the GitHub release for that version already
+    exists (only the remaining steps need to run then). (3) **The build
+    isn't reproducible** (embedded timestamps / non-deterministic ad-hoc
+    codesign output), so re-running `make release` after a release already
+    exists and rebuilding would produce a *different* zip than what's
+    already uploaded — the freshly-generated Homebrew cask's sha256 then
+    didn't match the real downloadable asset, and `brew install` correctly
+    rejected it. Fixed by checking whether the GitHub release exists
+    *before* deciding to build at all: if it does, skip straight to pulling
+    the real sha256 from the already-uploaded asset's `digest` field via
+    the GitHub API instead of re-hashing a fresh local rebuild.
+- 2026-07-13: User reported the main window's toolbar icons overlapping/too
+  close together on macOS, with a request for tooltips. Tooltips were
+  already wired up correctly (every `AddTool()` call already passes a
+  `shortHelpString`, e.g. `_("Add a connection to a server.")` in
+  `pgServer.cpp`'s `addServerFactory` — no code needed there). The overlap
+  was real, though: `frmMain::CreateMenus()` (`frm/frmMain.cpp:376`) never
+  calls `SetToolBitmapSize()` — the line is literally commented out
+  (`git blame`: disabled by lsv on 2023-06-25, the same day as the SVG/HiDPI
+  toolbar work per CHANGELOG.md — probably to fix a Windows-side sizing
+  issue at the time) — while every menu factory that feeds tools into this
+  toolbar (`addServerFactory`/`propertyFactory`/etc. in `pgServer.cpp`,
+  `dlgProperty.cpp`, `plugins.cpp`, `frmMaintenance.cpp`,
+  `frmEditGrid.cpp`'s view-data factories) requests its icon via
+  `GetBundleSVG(..., wxSize(32, 32))`. Without `SetToolBitmapSize` telling
+  it that size up front, `wxToolBar` auto-sizes tool cells from whatever it
+  sees from the first tool, and on a Retina display the mismatch between
+  that auto-derived (too-small) cell size and the actual 32x32-DIP icons
+  being drawn produces visibly overlapping buttons. `frmQuery.cpp:612` and
+  `frmStatus.cpp:423` already call
+  `SetToolBitmapSize(FromDIP(wxSize(32, 32)))` — same pattern, just missing
+  from frmMain. Fixed by adding that same call, gated to `#ifdef __WXMAC__`
+  only (frm/frmMain.cpp) so as not to touch whatever behavior the maintainer
+  was addressing on Windows/Linux in 2023. Verified visually: before/after
+  screenshots of the toolbar (icons cleanly separated after the fix).
+  Other `ctlMenuToolbar` users (`frmEditGrid`'s own toolbar, `frmConfig`,
+  `frmDatabaseDesigner`, `debugger/frmDebugger`) use plain baked-in 16x16
+  bitmaps (not `GetBundleSVG`/`wxBitmapBundle`) consistently matched to
+  their own `SetToolBitmapSize(wxSize(16, 16))` calls, so they weren't
+  affected by this specific bug (though they're not HiDPI/Retina-crisp
+  either — a separate, lower-priority cosmetic gap, not reported by the
+  user, left alone for now).
 
 ## Known TODOs / not yet solved
 
