@@ -188,21 +188,37 @@ picks up this work next — treat this as a running log, not final docs.
   `wxBitmapHelpers::Rescale → wxBitmapBundleImplSet::GetBitmap →
   wxGenericTreeCtrl::OnImagesChanged`, from
   `ctlTreeJSON::RefreshImageList() → InitMy() → frmOptions::frmOptions()`.
-  Root cause found in `ctl/ctlTreeJSON.cpp` `RefreshImageList()`
-  (~line 590): it sizes a swatch bitmap as `sz.x = r.height - 2` from
-  `GetBoundingRect()`, but `frmOptions` calls this from its own constructor
-  — before the tree control has ever been laid out/painted — so
-  `GetBoundingRect()` returns a degenerate rect (height 0), making
-  `sz.x`/`sz.y` negative, producing an invalid `wxBitmap` that crashes wx's
-  own bitmap-bundle rescaling code later. **Fixed** by clamping
-  `sz = wxSize(15, 15)` whenever the computed size is `< 1`. Rebuilt
-  successfully; relaunched multiple times (including sending Cmd-O via
-  synthetic CGEvents) without reproducing the crash or generating a new
-  `.ips` report — though note the synthetic keystrokes couldn't be
-  confirmed to actually reach pgAdmin3's key window in this sandboxed
-  session (the frontmost app kept reverting to the host "Claude" desktop
-  app), so **this fix has not been end-to-end confirmed by a human clicking
-  Options** — worth the user re-testing that specific dialog once more.
+  First (wrong) theory: `GetBoundingRect()`-derived swatch bitmap size going
+  `<= 0` before the tree is laid out. Added a defensive size clamp (kept —
+  harmless) but the user reproduced the **exact same crash again** on the
+  rebuilt binary, disproving that theory.
+  - Since GUI automation couldn't reliably reach the app in this sandboxed
+    session (synthetic clicks/keystrokes kept losing focus to the host
+    "Claude" desktop app — confirmed via `NSWorkspace.frontmostApplication`),
+    switched to a direct repro: added a temporary `PGADMIN3_TEST_OPTIONS=1`
+    env-var hook in `pgAdmin3.cpp` right after `winMain->Show()` that
+    constructs `frmOptions` directly, bypassing the menu entirely. This
+    reproduced the crash reliably and without any GUI-focus guessing.
+  - **Real root cause**: `ctlTreeJSON::RefreshImageList()` did
+    `wxMask* mask = new wxMask(); bmp.SetMask(mask);` — a *default-constructed*
+    `wxMask` has no actual backing bitmap. This makes `wxBitmap::GetMask()`
+    return non-null (so wx's `ConvertToImage()` takes the "has a mask" code
+    path), but `GetMask()->GetRawAccess()` is null, so the per-pixel masking
+    loop dereferences a null pointer. Confirmed by reading
+    `src/osx/core/bitmap.cpp`'s `wxBitmap::ConvertToImage()` in our locally
+    built wx 3.3.3 source. These swatches are just opaque solid-colour
+    rectangles with no real transparency, so the mask was pure dead weight —
+    **fixed by deleting the `wxMask`/`SetMask()` calls entirely**.
+  - Verified fix: rebuilt, re-ran with the `PGADMIN3_TEST_OPTIONS=1` hook —
+    "Nastavení" (Options) dialog opened and rendered completely (Browser/
+    Query tool/Miscellaneous tree, all the "Display the following database
+    objects" checkboxes, OK/Storno buttons), no crash, no new `.ips` report.
+    Removed the temporary test hook afterwards (`pgAdmin3.cpp` is back to
+    its pre-hook state) and re-verified a normal launch still shows the main
+    window fine.
+  - The user should still do one real click-through of Soubor → Options
+    themselves to be fully sure, but this is now a well-understood, directly
+    reproduced-and-fixed bug rather than a guess.
 
 ## Known TODOs / not yet solved
 

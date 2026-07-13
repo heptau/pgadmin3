@@ -613,9 +613,15 @@ void ctlTreeJSON::RefreshImageList() {
 	for (const auto& [item, color] : colors) {
 		wxMemoryDC dc;
 		wxBitmap bmp(sz.x, sz.y);
-		wxMask* mask = new wxMask();
 		int w = sz.x, h = sz.y;
-		bmp.SetMask(mask);
+		// NB: this used to attach a default-constructed wxMask() (i.e. one
+		// with no actual mask bitmap behind it) via bmp.SetMask(). That
+		// makes wxBitmap::GetMask() non-null while GetMask()->GetRawAccess()
+		// is null, so anything that later converts this bitmap via
+		// ConvertToImage() (e.g. wx 3.3's wxBitmapBundle::CreateImageList()
+		// rescaling it for the tree's image list) dereferences that null
+		// pointer and crashes. These are opaque solid-colour swatches with
+		// no transparency to speak of, so just don't attach a mask at all.
 		dc.SelectObject(bmp);
 		if (color == wxNullColour)
 			dc.SetBrush(wxBrush(wxSystemSettings::GetColour(wxSYS_COLOUR_WINDOW)));
