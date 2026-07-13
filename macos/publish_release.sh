@@ -64,18 +64,48 @@ echo "Releasing to: ${REPO_SLUG} (remote: ${RELEASE_REMOTE})"
 CHANGELOG="CHANGELOG.md"
 
 # ── Resume detection ──────────────────────────────────────────────────────────
-# If HEAD is already a "Release vX.Y.Z" commit (e.g. this script previously
-# tagged + pushed that commit but then failed on a later step, like `gh
-# release create` hitting an auth-scope error), reuse that exact version
-# instead of computing a fresh one -- otherwise a same-day rerun would mint a
-# new .2/.3 version, promote an already-empty Unreleased section again, and
-# leave a confusing duplicate/empty entry in CHANGELOG.md.
-HEAD_SUBJECT="$(git log -1 --format=%s)"
-if [[ "$HEAD_SUBJECT" =~ ^Release\ (v[0-9][0-9.]*)$ ]]; then
-	TAG="${BASH_REMATCH[1]}"
-	VERSION="${TAG#v}"
-	echo "Resuming release ${TAG} (HEAD is already its \"Release ${TAG}\" commit)."
-	echo ""
+# If CHANGELOG.md's [Unreleased] section is already empty, a previous run
+# already promoted it to some [<version>] section (e.g. it tagged + pushed
+# that commit but then failed on a later step, like `gh release create`
+# hitting an auth-scope error). Reuse that exact version -- identified as the
+# heading right after [Unreleased] -- instead of computing a fresh one.
+#
+# NB: this deliberately does NOT look at HEAD's commit message (a previous
+# version of this check did, and broke the moment any other commit -- e.g. a
+# script bugfix -- landed on top of the "Release vX.Y.Z" commit before the
+# retry). Looking at CHANGELOG.md's actual structure instead is robust to
+# that.
+#
+# Only resume if that version doesn't have a GitHub release yet (if it does,
+# whatever's pending must be a genuinely new, not-yet-promoted change, so
+# fall through to minting a fresh version below).
+RESUMING=0
+if [ -z "$(./macos/changelog_notes.sh Unreleased 2>/dev/null || true)" ]; then
+	CANDIDATE_VERSION="$(awk '
+		/^## \[/ {
+			if (seen) {
+				label = $0
+				sub(/^## \[/, "", label)
+				sub(/\].*/, "", label)
+				print label
+				exit
+			}
+			if ($0 ~ /^## \[Unreleased\]/) seen = 1
+		}
+	' "$CHANGELOG")"
+	if [ -n "$CANDIDATE_VERSION" ] && git rev-parse "v${CANDIDATE_VERSION}" >/dev/null 2>&1; then
+		if ! gh release view "v${CANDIDATE_VERSION}" --repo "$REPO_SLUG" >/dev/null 2>&1; then
+			VERSION="$CANDIDATE_VERSION"
+			TAG="v${VERSION}"
+			RESUMING=1
+			echo "Resuming release ${TAG} ([Unreleased] is empty, and [${VERSION}] has no GitHub release yet)."
+			echo ""
+		fi
+	fi
+fi
+
+if [ "$RESUMING" = 1 ]; then
+	:
 else
 	# ── Compute version (date-based, with same-day collision avoidance) ──────
 	BASE_VERSION="$(date +%Y.%m.%d)"
