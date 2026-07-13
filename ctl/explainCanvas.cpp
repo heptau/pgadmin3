@@ -238,7 +238,12 @@ void ExplainCanvas::SetExplainString(const wxString &str)
 
 void ExplainCanvas::OnMouseWhell(wxMouseEvent& ev)
 {
-	HandleOnMouseWheel(ev);
+	// wx's own wxScrollHelperEvtHandler (pushed onto every scrolled window)
+	// already applies the default mouse-wheel scrolling once this handler
+	// Skips the event, so there's no need to reach into
+	// wxScrollHelperBase::HandleOnMouseWheel(), which is a private
+	// implementation detail wx 3.3 stopped allowing direct access to.
+	ev.Skip();
 }
 void ExplainCanvas::OnMouseMotion(wxMouseEvent &ev)
 {

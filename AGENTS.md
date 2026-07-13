@@ -103,13 +103,93 @@ picks up this work next — treat this as a running log, not final docs.
      `wxDC&` to `wxReadOnlyDC&`. Fixed with a `wxCHECK_VERSION(3,3,0)`-gated
      typedef/Clone(), so wx 3.2 (Windows/Linux) behavior is untouched.
 
+- 2026-07-13: More wx-3.3-vs-3.2 API breakage fixed while grinding through the
+  build, all real/portable fixes (not mac-only):
+  1. `frm/frmStatus.cpp`: many `wxTimerEvent evt;` (default-constructed, used
+     only to synchronously call an `OnRefreshXTimer(evt)` handler as a
+     "refresh now" trick — none of these handlers call `evt.GetTimer()`).
+     wx 3.3 removed `wxTimerEvent`'s default ctor. Fixed by passing the
+     contextually relevant `wxTimer&` (e.g. `wxTimerEvent evt(*statusTimer);`)
+     at each of the ~13 call sites.
+  2. `gqb/gqbGridProjTable.cpp` / `gqb/gqbGridOrderTable.cpp`: sent a
+     `wxGRIDTABLE_REQUEST_VIEW_GET_VALUES` grid table message, which wx's own
+     header comment says "never did anything, simply don't use them" — wx 3.3
+     removed the enum value entirely unless `WXWIN_COMPATIBILITY_3_0` is on.
+     Deleted the dead `wxGridTableMessage`/`ProcessTableMessage` call (true
+     no-op on every wx version, confirmed no other file relies on it).
+  3. `dlg/dlgVariable.cpp`: `wxScopedPtr<wxXmlDocument>` — wx's own header
+     says "everything in this file is deprecated, use std::unique_ptr<>
+     instead"; swapped it for `std::unique_ptr` (`#include <memory>` added).
+  4. `ctl/explainCanvas.cpp` `OnMouseWhell`: called
+     `wxScrollHelperBase::HandleOnMouseWheel()` directly, which is a private
+     implementation detail in wx 3.3 (was reachable before). Replaced the
+     whole body with `ev.Skip()`, which is the documented, portable way to
+     let wx's own pushed `wxScrollHelperEvtHandler` apply default wheel
+     scrolling (verified in wx's own `src/generic/scrlwing.cpp`).
+  5. `ctl/ctlMenuToolbar.cpp` `DoProcessLeftClick`: same `::Node` →
+     `compatibility_iterator` swap as before, plus `node == NULL` (ambiguous
+     under wx 3.3 since `NULL` isn't a real `nullptr_t` here) → `!node`.
+  6. `include/frm/frmLog.h` / `frm/frmLog.cpp` `MywxAuiDefaultTabArt::DrawTab`:
+     wx 3.3's `wxAuiFlatTabArt` hides `m_baseColour`/`m_activeColour`/
+     `m_borderPen`/`m_baseColourPen` behind a private pimpl (no getters).
+     Fixed by overriding `SetColour()`/`SetActiveColour()` in
+     `MywxAuiDefaultTabArt` (wx-3.3-gated) to cache the values into our own
+     members, then shadowing the old member names with local `const&`
+     variables at the top of `DrawTab()` — the ~150-line drawing routine
+     below is completely unchanged text-wise.
+  7. **A real bug in wxWidgets 3.3.3 itself** (not pgAdmin3, not mac-specific,
+     reproducible on any platform): `wx/dynarray.h`'s `wxBaseArray<T>::
+     operator[]`/`Item()`/`Last()` return `T&`, but the array is backed by
+     `wxVector<T>` (== `std::vector<T>`), and `std::vector<bool>::operator[]`
+     returns a proxy object, not `bool&` — so `wxArrayBool` (used by
+     `hotdraw/figures/hdIFigure.cpp`'s `selected` member) fails to compile
+     with "non-const lvalue reference ... cannot bind to a temporary of type
+     reference (aka `__bit_reference<...>`)". Patched the **locally-built
+     wx, not pgAdmin3** (`/Users/zv/wx-cocoa-classic/include/wx-3.3/wx/
+     dynarray.h`, backup kept as `dynarray.h.orig`) to use the class's own
+     `reference`/`const_reference` typedefs instead of raw `T&`/`const T&`.
+     Zero impact on the pgAdmin3 repo/upstream merges since it's outside the
+     git tree — but **whoever rebuilds wxWidgets from source for this port
+     needs to reapply this patch** (or check if a newer wx 3.3.x point
+     release has fixed it upstream first).
+
+- 2026-07-13: **It compiles and links.** `cmake --build .` in `build-macos/`
+  produces a native `arm64` Mach-O executable (`build-macos/pgAdmin3`, ~13MB).
+  Also had to gate the `objcopy --only-keep-debug` POST_BUILD step (GNU
+  binutils, ELF-only) behind `if(NOT APPLE)` in `CMakeLists.txt` — macOS has
+  no `objcopy`; a `dsymutil`/`strip`-based equivalent could be added later
+  but isn't required to get a working binary.
+- 2026-07-13: First run attempt: `DYLD_LIBRARY_PATH=/Users/zv/wx-cocoa-classic/lib
+  ./pgAdmin3` — the process launches, becomes the active app, and gets a
+  real, localized (Czech, from system locale) native menu bar (Soubor,
+  Upravit, Plugins, View, Tools, Okno, Nápověda) — confirms the Cocoa/wx
+  integration itself works. BUT no window ever appears (confirmed via
+  `Quartz.CGWindowListCopyWindowInfo` — zero windows owned by the process).
+  Logged error: `nelze otevřít soubor '/pgadmin3.lng'` (can't open
+  `/pgadmin3.lng`) — `i18nPath`/`dataDir` (`pgAdmin3.cpp` ~line 1604,
+  `stdPaths.GetDataDir()`) is resolving to `/` instead of a real resource
+  directory, because this is a bare unbundled executable with no
+  `DATA_DIR`/resource layout set up for macOS (the Windows/Linux versions
+  expect to be dropped into an existing pgAdmin3 install directory — see
+  README). This specific error looks non-fatal (code just skips loading the
+  language list if the read fails), so the real blocker for window creation
+  is probably a different resource lookup later in `OnInit()` — not yet
+  isolated. **Not investigated further this session** — getting a real
+  window on screen (and/or proper `.app` bundling with Info.plist/icons/
+  resource dirs) is the natural next step, scoped separately from "does it
+  compile".
+
 ## Known TODOs / not yet solved
 
 - tests/ (Catch2) disabled on macOS in CMakeLists.txt — needs either a
   Catch2 v2 compat shim or porting tests/test_Formatter.cpp to Catch2 v3
   (`catch2/catch_test_macros.hpp` etc).
-- Runtime behavior on Cocoa (menus, shortcuts, dialogs, App Bundle
-  packaging/.app/.icns/Info.plist) is completely unverified — nothing has
-  been run yet, only compiled.
+- No window renders yet at runtime (see status log above) — needs resource
+  path plumbing (`dataDir`/`i18nPath`/`DATA_DIR`) sorted out for macOS, most
+  likely via a proper `.app` bundle with `Contents/Resources`.
+- No `.app` bundle / `Info.plist` / icon / code signing yet — currently just
+  a bare executable in `build-macos/`.
+- Debug-symbol splitting (dsymutil/strip) skipped on macOS, unlike Windows'
+  objcopy-based split — cosmetic, not blocking.
 
 <!-- Append new dated entries below as work progresses. -->

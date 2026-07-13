@@ -123,6 +123,26 @@ public:
         int close_button_state,
         int* x_extent)  wxOVERRIDE;
 
+#if wxCHECK_VERSION(3, 3, 0)
+    // wx 3.3's wxAuiFlatTabArt moved m_baseColour/m_activeColour/m_borderPen/
+    // m_baseColourPen (used by our custom DrawTab()) behind a private pimpl,
+    // so cache our own copies whenever the AUI framework sets them.
+    void SetColour(const wxColour& colour) wxOVERRIDE {
+        wxAuiDefaultTabArt::SetColour(colour);
+        m_myBaseColour = colour;
+        m_myBaseColourPen = wxPen(colour);
+        m_myBorderPen = wxPen(colour.ChangeLightness(75));
+    }
+    void SetActiveColour(const wxColour& colour) wxOVERRIDE {
+        wxAuiDefaultTabArt::SetActiveColour(colour);
+        m_myActiveColour = colour;
+    }
+
+    wxColour m_myBaseColour = *wxWHITE;
+    wxColour m_myActiveColour = *wxWHITE;
+    wxPen m_myBorderPen;
+    wxPen m_myBaseColourPen;
+#endif
 };
 
 class MyThread : public wxThread

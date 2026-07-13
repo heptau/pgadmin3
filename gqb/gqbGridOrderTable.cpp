@@ -249,11 +249,10 @@ void gqbGridOrderTable::changesPositions(int sPos, int dPos)
 		kindOfOrder->Item(dPos) = tmpKind;
 	}
 
-	wxGridTableMessage msg( this,
-	                        wxGRIDTABLE_REQUEST_VIEW_GET_VALUES,
-	                        sPos,
-	                        1 );
-	GetView()->ProcessTableMessage( msg );
+	// wxGRIDTABLE_REQUEST_VIEW_GET_VALUES was a no-op message wx never
+	// actually implemented ("The first two requests never did anything,
+	// simply don't use them" -- wx/generic/grid.h), and wx 3.3 removes it
+	// unless WXWIN_COMPATIBILITY_3_0 is enabled; drop the dead call.
 
 }
 

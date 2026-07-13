@@ -18,6 +18,7 @@
 #include "ctl/ctlSQLBox.h"
 #include <wx/mstream.h>
 #include <wx/xml/xml.h>
+#include <memory>
 
 BEGIN_EVENT_TABLE(dlgVariable, pgDialog)
 EVT_BUTTON(wxID_CANCEL, dlgVariable::OnCancel)
@@ -139,7 +140,7 @@ dlgVariable::dlgVariable(ctlSQLBox* parent, wxString& query, std::vector<var_que
     wxString xrc_data = xrc_data_head + xmlbody + xrc_data_tail;
     
     wxMemoryInputStream mis(xrc_data, strlen(xrc_data));
-    wxScopedPtr<wxXmlDocument> xmlDoc(new wxXmlDocument(mis, "UTF-8"));
+    std::unique_ptr<wxXmlDocument> xmlDoc(new wxXmlDocument(mis, "UTF-8"));
     if (!xmlDoc->IsOk())
     {
             return;

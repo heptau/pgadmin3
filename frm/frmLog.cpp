@@ -768,6 +768,16 @@ void MywxAuiDefaultTabArt::DrawTab(wxDC& dc,
     wxRect* out_button_rect,
     int* x_extent)
 {
+#if wxCHECK_VERSION(3, 3, 0)
+    // wx 3.3 hid these behind a private pimpl (see SetColour()/
+    // SetActiveColour() overrides in frmLog.h) -- shadow the names locally
+    // so the rest of this function (kept identical to the wx 3.2 codepath)
+    // doesn't need to change.
+    const wxColour& m_baseColour = m_myBaseColour;
+    const wxColour& m_activeColour = m_myActiveColour;
+    const wxPen& m_borderPen = m_myBorderPen;
+    const wxPen& m_baseColourPen = m_myBaseColourPen;
+#endif
     wxCoord normal_textx, normal_texty;
     wxCoord selected_textx, selected_texty;
     wxCoord texty;
