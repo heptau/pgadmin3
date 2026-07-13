@@ -179,6 +179,31 @@ picks up this work next — treat this as a running log, not final docs.
   resource dirs) is the natural next step, scoped separately from "does it
   compile".
 
+- 2026-07-13: User ran the binary themselves, got a real "pgAdmin III" main
+  window (Object Browser, Vlastnosti/Statistics/Dependencies tabs, SQL pane —
+  all rendering correctly), but it **crashed** when opening Soubor → Options
+  (Ctrl-O). Crash report at
+  `~/Library/Logs/DiagnosticReports/pgAdmin3-2026-07-13-143452.ips`:
+  `EXC_BAD_ACCESS`/`SIGSEGV` in `wxBitmap::ConvertToImage()`, called via
+  `wxBitmapHelpers::Rescale → wxBitmapBundleImplSet::GetBitmap →
+  wxGenericTreeCtrl::OnImagesChanged`, from
+  `ctlTreeJSON::RefreshImageList() → InitMy() → frmOptions::frmOptions()`.
+  Root cause found in `ctl/ctlTreeJSON.cpp` `RefreshImageList()`
+  (~line 590): it sizes a swatch bitmap as `sz.x = r.height - 2` from
+  `GetBoundingRect()`, but `frmOptions` calls this from its own constructor
+  — before the tree control has ever been laid out/painted — so
+  `GetBoundingRect()` returns a degenerate rect (height 0), making
+  `sz.x`/`sz.y` negative, producing an invalid `wxBitmap` that crashes wx's
+  own bitmap-bundle rescaling code later. **Fixed** by clamping
+  `sz = wxSize(15, 15)` whenever the computed size is `< 1`. Rebuilt
+  successfully; relaunched multiple times (including sending Cmd-O via
+  synthetic CGEvents) without reproducing the crash or generating a new
+  `.ips` report — though note the synthetic keystrokes couldn't be
+  confirmed to actually reach pgAdmin3's key window in this sandboxed
+  session (the frontmost app kept reverting to the host "Claude" desktop
+  app), so **this fix has not been end-to-end confirmed by a human clicking
+  Options** — worth the user re-testing that specific dialog once more.
+
 ## Known TODOs / not yet solved
 
 - tests/ (Catch2) disabled on macOS in CMakeLists.txt — needs either a

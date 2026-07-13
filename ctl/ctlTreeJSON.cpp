@@ -601,6 +601,13 @@ void ctlTreeJSON::RefreshImageList() {
 	#endif // __WXMSW__
 	}
 	//else return;
+	// Called before the control has ever been laid out/painted (e.g. from
+	// the owning dialog's constructor), GetBoundingRect() can return a
+	// degenerate rect (height 0 or less), which would create an invalid,
+	// zero/negative-sized wxBitmap below and crash later when wx tries to
+	// rescale it for the image list.
+	if (sz.x < 1 || sz.y < 1)
+		sz = wxSize(15, 15);
 	wxVector<wxBitmapBundle> images;
 	int n = 0;
 	for (const auto& [item, color] : colors) {
