@@ -130,8 +130,10 @@ done
 iconutil -c icns "$ICONSET" -o "$RESOURCES_DIR/AppIcon.icns"
 rm -rf "$ICON_TMP"
 
-# Info.plist
-PGADMIN3_VERSION="$(grep -m1 'project(pgAdmin3 VERSION' "$REPO_ROOT/CMakeLists.txt" | sed -E 's/.*VERSION ([0-9.]+).*/\1/')"
+# Info.plist. PGADMIN3_VERSION can be set by the caller (release.sh stamps
+# in the date-based release version); otherwise fall back to CMakeLists.txt's
+# (rarely-bumped) project version, just so it's never blank.
+PGADMIN3_VERSION="${PGADMIN3_VERSION:-$(grep -m1 'project(pgAdmin3 VERSION' "$REPO_ROOT/CMakeLists.txt" | sed -E 's/.*VERSION ([0-9.]+).*/\1/')}"
 sed -e "s/@PGADMIN3_VERSION@/${PGADMIN3_VERSION:-0.0.0}/" \
     -e "s/@MACOS_MIN_VERSION@/$MACOS_MIN_VERSION/" \
     "$REPO_ROOT/macos/Info.plist.in" > "$CONTENTS/Info.plist"

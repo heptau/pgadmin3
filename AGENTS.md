@@ -291,6 +291,54 @@ picks up this work next — treat this as a running log, not final docs.
   - Windows isn't wired into `make` at all (existing build is
     vcxproj/MSVC-based, not shell/make-friendly) — the Makefile just prints
     a pointer to INSTALL.txt / the Visual Studio project for that case.
+- 2026-07-13: Added `make release` (macOS only): `macos/publish_release.sh`
+  plus two small helpers, `macos/changelog_notes.sh` (extracts one version's
+  section body out of CHANGELOG.md — copied near-verbatim from the same
+  script in `~/Code/pgarachne`, it's fully generic) and
+  `macos/generate_homebrew_cask.sh`.
+  - Modeled directly on `~/Code/pgarachne`'s release tooling rather than
+    `~/Code/typolima`'s: typolima is a CLI tool distributed as a Homebrew
+    **Formula** (installs into `bin/`), but pgAdmin3 (like pgarachne) is a
+    GUI `.app`, which needs a Homebrew **Cask** instead — different DSL
+    (`cask "pgadmin3" do ... app "pgAdmin III.app" ... end`), different tap
+    subdirectory (`Casks/` not `Formula/`). Confirmed by inspecting
+    `~/Code/homebrew-tap` (the actual tap repo both projects publish to)
+    directly — it already has both a `Casks/` and `Formula/` directory in
+    active use by other heptau projects.
+  - Since this project doesn't track a real semver, releases are versioned
+    by date: `date +%Y.%m.%d` (e.g. `2026.07.13`), tag `v2026.07.13`, with a
+    `.2`/`.3`/... suffix appended if a same-day tag already exists locally
+    or on the release remote (checked both places).
+  - The release script **automatically promotes** CHANGELOG.md's
+    `## [Unreleased]` section to `## [<version>]` (inserting a fresh empty
+    Unreleased above it) and commits that as part of the release — this was
+    a deliberate choice over pgarachne's flow, which requires the maintainer
+    to hand-edit CHANGELOG.md before running `make release` and fails if the
+    version's heading doesn't already exist. Given `make release` here is
+    explicitly invoked to cut a release (not run automatically/on a timer),
+    auto-promoting is safe and saves a manual step; every promotion is a
+    normal, revertable git commit.
+  - Only builds/publishes an **arm64** artifact (no Intel Mac support exists
+    yet — the locally-built wxWidgets and this whole port have only ever
+    targeted Apple Silicon). The cask has `depends_on arch: :arm64` and no
+    `on_intel` block; add one (see `~/Code/pgarachne`'s cask for the pattern)
+    if an amd64 build pipeline is ever set up.
+  - Release script always pushes to `$RELEASE_REMOTE` (default `origin`,
+    i.e. `heptau/pgadmin3`), never `upstream` (`levinsv/pgadmin3`) — matches
+    the branching strategy at the top of this file.
+  - Homebrew tap update reuses `heptau/homebrew-tap` (same tap typolima and
+    pgarachne already publish to) via the GitHub API (`gh api .../contents/
+    Casks/pgadmin3.rb`), no local tap clone needed.
+  - Verified (without actually releasing — that's a real, public,
+    hard-to-reverse action, left for the user to run deliberately): shell
+    syntax of all three new scripts (`bash -n`), the Unreleased→versioned
+    CHANGELOG promotion logic on a scratch copy of CHANGELOG.md, the
+    changelog-notes extraction against the real CHANGELOG.md, and the
+    generated cask file's Ruby syntax (`ruby -c`) against a dummy zip.
+  - **Not yet exercised end-to-end**: the actual `gh release create` /
+    Homebrew-tap-API-push steps, since that requires a real `gh auth login`
+    session and would publish for real. First real `make release` run
+    should be watched closely.
 
 ## Known TODOs / not yet solved
 
