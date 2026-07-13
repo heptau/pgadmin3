@@ -219,6 +219,21 @@ picks up this work next — treat this as a running log, not final docs.
   - The user should still do one real click-through of Soubor → Options
     themselves to be fully sure, but this is now a well-understood, directly
     reproduced-and-fixed bug rather than a guess.
+- 2026-07-13: User confirmed Options no longer crashes, but got a different
+  error on quit: `Chyba: nelze otevřít soubor
+  '/Users/zv/Library/Preferences/postgresql/pgadmin3opt.json'`. Root cause:
+  `pgAdmin3::InitAppPaths()` (`pgAdmin3.cpp` ~line 1088) sets
+  `dataDir = GetUserConfigDir() + "/postgresql"` on the non-`__LINUX__`
+  branch but — unlike the Linux branch right above it, which does
+  `wxMkDir()` if the dir is missing — never creates that directory. Works
+  in practice on Windows because it usually already exists from a previous
+  install; on a first macOS run `~/Library/Preferences/postgresql/` doesn't
+  exist, so both reading and writing `pgadmin3opt.json` (and presumably
+  other files under `dataDir`) fail. Fixed by adding the same
+  `if (!wxDir::Exists(dataDir)) wxMkDir(...)` guard to the `#else` branch.
+  Verified: deleted the directory, relaunched, confirmed it gets created,
+  used the app, quit, confirmed `pgadmin3opt.json` (90 bytes) was written
+  with no error and no crash report.
 
 ## Known TODOs / not yet solved
 

@@ -1086,6 +1086,13 @@ void pgAdmin3::InitAppPaths()
 	}
 #else
 	dataDir= wxStandardPaths::Get().GetUserConfigDir() + wxFileName::GetPathSeparator() + "postgresql";
+	// Unlike the __LINUX__ branch above, this never created the directory
+	// if missing -- harmless on Windows where installers/previous runs
+	// tend to have already created it, but on a first run on macOS
+	// (~/Library/Preferences/postgresql) it doesn't exist yet, so reading
+	// or writing pgadmin3opt.json etc. under dataDir fails.
+	if (!wxDir::Exists(dataDir))
+		wxMkDir(dataDir, wxS_IRUSR | wxS_IWUSR | wxS_IXUSR);
 #endif
 
 
