@@ -69,19 +69,21 @@ CHANGELOG="CHANGELOG.md"
 # ── Resume detection ──────────────────────────────────────────────────────────
 # If CHANGELOG.md's [Unreleased] section is already empty, a previous run
 # already promoted it to some [<version>] section (e.g. it tagged + pushed
-# that commit but then failed on a later step, like `gh release create`
-# hitting an auth-scope error). Reuse that exact version -- identified as the
+# that commit but then failed on a later step -- gh auth, wrong --repo, a
+# network blip, whatever). Reuse that exact version -- identified as the
 # heading right after [Unreleased] -- instead of computing a fresh one.
+# There being nothing new under [Unreleased] to promote is precisely the
+# signal that we're continuing a previous attempt, not starting a new
+# release; every step below (tag, release, Homebrew tap) already has its own
+# idempotency check, so it's fine to resume even if some of those steps (e.g.
+# the GitHub release itself) already succeeded in a prior run -- they'll just
+# be skipped and whatever's left (e.g. only the Homebrew tap push) will run.
 #
-# NB: this deliberately does NOT look at HEAD's commit message (a previous
+# NB: this deliberately does NOT look at HEAD's commit message (an earlier
 # version of this check did, and broke the moment any other commit -- e.g. a
 # script bugfix -- landed on top of the "Release vX.Y.Z" commit before the
 # retry). Looking at CHANGELOG.md's actual structure instead is robust to
 # that.
-#
-# Only resume if that version doesn't have a GitHub release yet (if it does,
-# whatever's pending must be a genuinely new, not-yet-promoted change, so
-# fall through to minting a fresh version below).
 RESUMING=0
 if [ -z "$(./macos/changelog_notes.sh Unreleased 2>/dev/null || true)" ]; then
 	CANDIDATE_VERSION="$(awk '
@@ -97,13 +99,11 @@ if [ -z "$(./macos/changelog_notes.sh Unreleased 2>/dev/null || true)" ]; then
 		}
 	' "$CHANGELOG")"
 	if [ -n "$CANDIDATE_VERSION" ] && git rev-parse "v${CANDIDATE_VERSION}" >/dev/null 2>&1; then
-		if ! gh release view "v${CANDIDATE_VERSION}" --repo "$REPO_SLUG" >/dev/null 2>&1; then
-			VERSION="$CANDIDATE_VERSION"
-			TAG="v${VERSION}"
-			RESUMING=1
-			echo "Resuming release ${TAG} ([Unreleased] is empty, and [${VERSION}] has no GitHub release yet)."
-			echo ""
-		fi
+		VERSION="$CANDIDATE_VERSION"
+		TAG="v${VERSION}"
+		RESUMING=1
+		echo "Resuming release ${TAG} ([Unreleased] is empty -- nothing new to promote)."
+		echo ""
 	fi
 fi
 
