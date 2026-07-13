@@ -5,6 +5,8 @@ Format loosely follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ## [Unreleased]
 
+## [2026.07.13]
+
 ### Added
 - Native macOS build support: an OS-detecting top-level `Makefile`
   (`make build` / `make run` / `make clean`) and `macos/build_app.sh`, which
