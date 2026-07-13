@@ -61,27 +61,39 @@ if [ -z "$REPO_SLUG" ]; then
 fi
 echo "Releasing to: ${REPO_SLUG} (remote: ${RELEASE_REMOTE})"
 
-# ── Compute version (date-based, with same-day collision avoidance) ─────────
-BASE_VERSION="$(date +%Y.%m.%d)"
-VERSION="$BASE_VERSION"
-N=2
-while git rev-parse "v$VERSION" >/dev/null 2>&1 || git ls-remote --exit-code --tags "$RELEASE_REMOTE" "v$VERSION" >/dev/null 2>&1; do
-	VERSION="${BASE_VERSION}.${N}"
-	N=$((N + 1))
-done
-TAG="v${VERSION}"
-echo "Version: ${VERSION} (tag ${TAG})"
-echo ""
-
-# ── Promote CHANGELOG.md's Unreleased section to this version ──────────────
 CHANGELOG="CHANGELOG.md"
-if ! grep -q '^## \[Unreleased\]' "$CHANGELOG"; then
-	echo "Error: $CHANGELOG has no '## [Unreleased]' heading -- nothing to release."
-	exit 1
-fi
-if grep -q "^## \[${VERSION}\]" "$CHANGELOG"; then
-	echo "==> CHANGELOG.md already has a [${VERSION}] section -- leaving it as-is."
+
+# ── Resume detection ──────────────────────────────────────────────────────────
+# If HEAD is already a "Release vX.Y.Z" commit (e.g. this script previously
+# tagged + pushed that commit but then failed on a later step, like `gh
+# release create` hitting an auth-scope error), reuse that exact version
+# instead of computing a fresh one -- otherwise a same-day rerun would mint a
+# new .2/.3 version, promote an already-empty Unreleased section again, and
+# leave a confusing duplicate/empty entry in CHANGELOG.md.
+HEAD_SUBJECT="$(git log -1 --format=%s)"
+if [[ "$HEAD_SUBJECT" =~ ^Release\ (v[0-9][0-9.]*)$ ]]; then
+	TAG="${BASH_REMATCH[1]}"
+	VERSION="${TAG#v}"
+	echo "Resuming release ${TAG} (HEAD is already its \"Release ${TAG}\" commit)."
+	echo ""
 else
+	# ── Compute version (date-based, with same-day collision avoidance) ──────
+	BASE_VERSION="$(date +%Y.%m.%d)"
+	VERSION="$BASE_VERSION"
+	N=2
+	while git rev-parse "v$VERSION" >/dev/null 2>&1 || git ls-remote --exit-code --tags "$RELEASE_REMOTE" "v$VERSION" >/dev/null 2>&1; do
+		VERSION="${BASE_VERSION}.${N}"
+		N=$((N + 1))
+	done
+	TAG="v${VERSION}"
+	echo "Version: ${VERSION} (tag ${TAG})"
+	echo ""
+
+	# ── Promote CHANGELOG.md's Unreleased section to this version ───────────
+	if ! grep -q '^## \[Unreleased\]' "$CHANGELOG"; then
+		echo "Error: $CHANGELOG has no '## [Unreleased]' heading -- nothing to release."
+		exit 1
+	fi
 	echo "==> Promoting [Unreleased] to [${VERSION}] in $CHANGELOG..."
 	awk -v ver="$VERSION" '
 		/^## \[Unreleased\]/ {
@@ -97,8 +109,8 @@ else
 	mv "${CHANGELOG}.tmp" "$CHANGELOG"
 	git add "$CHANGELOG"
 	git commit -q -m "Release ${TAG}"
+	echo ""
 fi
-echo ""
 
 NOTES_FILE="${DIST_DIR}/RELEASE_NOTES.md"
 mkdir -p "$DIST_DIR"
