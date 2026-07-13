@@ -235,16 +235,81 @@ picks up this work next — treat this as a running log, not final docs.
   used the app, quit, confirmed `pgadmin3opt.json` (90 bytes) was written
   with no error and no crash report.
 
+- 2026-07-13: Added a top-level `Makefile` (OS-detected via `uname -s`) plus
+  `macos/build_app.sh` + `macos/Info.plist.in`, so pgAdmin3 can be launched
+  by double-clicking an icon like a normal Mac app, not just run from a
+  terminal:
+  - `make` (no args) — prints help/usage, including the resolved
+    `WX_COCOA_PREFIX`/`LIBXML2_PREFIX`/etc for the current OS.
+  - `make build` — configures+builds (macOS: also runs
+    `macos/build_app.sh` to assemble a real `build-macos/pgAdmin III.app`);
+    Linux path is just the plain cmake flow from INSTALL.txt/INSTALL_EN.txt
+    into `build/`; anything else prints a "not wired up" message pointing at
+    the existing docs/vcxproj instead of failing silently.
+  - `make run` — quick dev run of the bare binary (macOS: delegates to
+    `run-macos.sh`, which now reads `WX_COCOA_PREFIX` instead of a
+    hardcoded `/Users/zv/...` path so it isn't tied to this one machine).
+  - `make clean` — removes the OS-appropriate build dir.
+  - `macos/build_app.sh` does the actual bundling: copies the wx/postgres/
+    libxml2/etc dylibs the binary depends on into `Contents/Frameworks`,
+    rewrites every load command to `@executable_path/../Frameworks/...` (so
+    no `DYLD_LIBRARY_PATH` is needed at runtime), generates `AppIcon.icns`
+    from the existing `include/images/pgAdmin3.ico` (via `sips`+`iconutil`),
+    fills in `macos/Info.plist.in`, and ad-hoc code-signs the bundle
+    (`codesign -s -`, required for unsigned binaries to launch on Apple
+    Silicon — plain `cp`/`install_name_tool` invalidates the linker's
+    original signature).
+  - Two real bugs surfaced and got fixed while making the bundle actually
+    launch via Finder/`open` (not just from a terminal with
+    `DYLD_LIBRARY_PATH` set, which masks these):
+    1. **sips can't upscale an `.ico` past its largest embedded
+       resolution** (needed 512/1024px icon slots from a 256px source) —
+       fixed by converting the `.ico` to a plain PNG first (`sips -s format
+       png`) and resizing from that instead.
+    2. **Duplicate-library loading crash**: naively copying every `otool -L`
+       dependency by its literal path/basename copied both a dylib's real
+       versioned file (e.g. `libwx_osx_cocoau_core-3.3.3.0.0.dylib`) *and*
+       its symlink aliases (`...-3.3.dylib`, `...-3.3.3.dylib`) as if they
+       were different libraries, because different consumers reference the
+       library under different symlink names. dyld then loaded the "same"
+       library twice under two identities, which showed up as `objc[pid]:
+       Class X is implemented in both ...` warnings, `wxIMPLEMENT_DYNAMIC_
+       CLASS` RTTI-table-already-registered asserts, and eventually a fatal
+       recursive assert inside `wxArtProvider::GetBitmap` while trying to
+       show a log dialog (`SIGTRAP`, not the earlier `SIGSEGV` bugs — a new
+       and different failure class, easy to mistake for one of those).
+       Fixed by canonicalizing every resolved dependency path (following the
+       symlink chain by hand, since macOS's `readlink` has no `-f`) before
+       deciding whether it's "already bundled", so each real file is only
+       ever copied and referenced once regardless of which name pointed to
+       it.
+  - Verified end-to-end: `make build` from a clean state produces a bundle
+    that launches via both `open "build-macos/pgAdmin III.app"` and directly
+    executing `Contents/MacOS/pgAdmin3`, with a real "pgAdmin III" Dock/menu-
+    bar identity and no `DYLD_LIBRARY_PATH` set, no crash report, no
+    duplicate-class warnings.
+  - Windows isn't wired into `make` at all (existing build is
+    vcxproj/MSVC-based, not shell/make-friendly) — the Makefile just prints
+    a pointer to INSTALL.txt / the Visual Studio project for that case.
+
 ## Known TODOs / not yet solved
 
 - tests/ (Catch2) disabled on macOS in CMakeLists.txt — needs either a
   Catch2 v2 compat shim or porting tests/test_Formatter.cpp to Catch2 v3
   (`catch2/catch_test_macros.hpp` etc).
-- No window renders yet at runtime (see status log above) — needs resource
-  path plumbing (`dataDir`/`i18nPath`/`DATA_DIR`) sorted out for macOS, most
-  likely via a proper `.app` bundle with `Contents/Resources`.
-- No `.app` bundle / `Info.plist` / icon / code signing yet — currently just
-  a bare executable in `build-macos/`.
+- `.app` bundling is done (`make build`, see status log), but it doesn't put
+  any resources into `Contents/Resources` yet beyond the icon — the
+  `i18nPath`/translations lookup (`.lng` file, "nelze otevřít soubor
+  '/pgadmin3.lng'") still isn't solved and is harmless/non-fatal so far, but
+  should eventually get real resource files bundled and `i18nPath` pointed
+  at `Contents/Resources` instead.
+- App icon is upscaled from a single 256x256 source (`include/images/
+  pgAdmin3.ico`) — looks fine at normal Dock size but real multi-resolution
+  artwork would look sharper at 512/1024.
+- Not code-signed with a real Developer ID (ad-hoc only) or notarized —
+  fine for running on this machine, but Gatekeeper will complain
+  ("unidentified developer") if the `.app` is copied to another Mac; the
+  user would need to right-click → Open the first time there.
 - Debug-symbol splitting (dsymutil/strip) skipped on macOS, unlike Windows'
   objcopy-based split — cosmetic, not blocking.
 

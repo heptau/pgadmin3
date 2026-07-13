@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleName</key>
+	<string>pgAdmin III</string>
+	<key>CFBundleDisplayName</key>
+	<string>pgAdmin III</string>
+	<key>CFBundleIdentifier</key>
+	<string>org.pgadmin3.pgAdmin3</string>
+	<key>CFBundleVersion</key>
+	<string>@PGADMIN3_VERSION@</string>
+	<key>CFBundleShortVersionString</key>
+	<string>@PGADMIN3_VERSION@</string>
+	<key>CFBundleExecutable</key>
+	<string>pgAdmin3</string>
+	<key>CFBundleIconFile</key>
+	<string>AppIcon</string>
+	<key>CFBundlePackageType</key>
+	<string>APPL</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>LSMinimumSystemVersion</key>
+	<string>@MACOS_MIN_VERSION@</string>
+	<key>NSHighResolutionCapable</key>
+	<true/>
+	<key>NSHumanReadableCopyright</key>
+	<string>Copyright (C) 2002 - 2016, The pgAdmin Development Team</string>
+</dict>
+</plist>

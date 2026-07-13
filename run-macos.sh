@@ -1,8 +1,8 @@
 #!/bin/bash
-# Convenience launcher for the macOS build (see AGENTS.md for context).
-# The binary isn't bundled as a .app yet, so it needs to be told where to
-# find the locally-built wxWidgets .dylibs at runtime.
+# Convenience launcher for a quick dev run of the macOS build -- runs the
+# bare executable directly (see AGENTS.md for context), skipping the .app
+# bundling `make build` does. Also wired up as `make run` on macOS.
 set -euo pipefail
 cd "$(dirname "$0")/build-macos"
-export DYLD_LIBRARY_PATH=/Users/zv/wx-cocoa-classic/lib
+export DYLD_LIBRARY_PATH="${WX_COCOA_PREFIX:-$HOME/wx-cocoa-classic}/lib"
 exec ./pgAdmin3 "$@"
