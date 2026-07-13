@@ -87,12 +87,25 @@ enum
 #endif
 
 #define FLAG_MAX_LINE 9999999999
+// wx 3.3 renamed wxAuiDefaultTabArt to wxAuiFlatTabArt (kept as a #define
+// alias for source compat) and made it non-copyable, and moved GetTabSize()
+// to take a wxReadOnlyDC instead of a wxDC. Keep building against wx 3.2
+// (Windows/Linux) unaffected by gating on the wx version.
+#if wxCHECK_VERSION(3, 3, 0)
+typedef wxReadOnlyDC wxAuiTabArtDCType;
+#else
+typedef wxDC wxAuiTabArtDCType;
+#endif
 class MywxAuiDefaultTabArt : public wxAuiDefaultTabArt
 {
 public:
     MywxAuiDefaultTabArt() :wxAuiDefaultTabArt(){};
     MywxAuiDefaultTabArt* Clone() wxOVERRIDE {
+#if wxCHECK_VERSION(3, 3, 0)
+        return new MywxAuiDefaultTabArt();
+#else
         return new MywxAuiDefaultTabArt(*this);
+#endif
     }
     virtual void DrawTab(wxDC& dc,
         wxWindow* wnd,
@@ -102,7 +115,7 @@ public:
         wxRect* out_tab_rect,
         wxRect* out_button_rect,
         int* x_extent) wxOVERRIDE;
-    virtual    wxSize GetTabSize(wxDC& dc,
+    virtual    wxSize GetTabSize(wxAuiTabArtDCType& dc,
         wxWindow* wnd,
         const wxString& caption,
         const wxBitmapBundle& bitmap,

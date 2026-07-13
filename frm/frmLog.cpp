@@ -706,7 +706,7 @@ void frmLog::seticon(bool errflag) {
 
     SetIcon(ico);
 }
-wxSize MywxAuiDefaultTabArt::GetTabSize(wxDC& dc,
+wxSize MywxAuiDefaultTabArt::GetTabSize(wxAuiTabArtDCType& dc,
     wxWindow* wnd,
     const wxString& caption,
     const wxBitmapBundle& bitmap,

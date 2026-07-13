@@ -170,7 +170,10 @@ ctlMenuButton *ctlMenuToolbar::AddMenuPulldownTool(int toolId, const wxString &l
 
 void ctlMenuToolbar::DoProcessLeftClick(wxMouseEvent &event)
 {
-	ctlMenuToolList::Node *node = NULL;
+	// wx's WX_DECLARE_LIST only defines a "Node" typedef in the classic
+	// (non wxUSE_STD_CONTAINERS) implementation; compatibility_iterator is
+	// the name that's portable across both, so use that here.
+	ctlMenuToolList::compatibility_iterator node;
 	ctlMenuTool *menu_tool = NULL;
 	wxToolBarToolBase *clickTool = FindToolForPosition(event.m_x, event.m_y);
 
@@ -189,7 +192,7 @@ void ctlMenuToolbar::DoProcessLeftClick(wxMouseEvent &event)
 			break;
 	}
 
-	if(node == NULL)
+	if(!node)
 	{
 		event.Skip();
 		return;

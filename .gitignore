@@ -24,3 +24,4 @@ include/svnversion.h
 ctl/ctlMonitorWidget.cpp
 include/ctl/ctlMonitorWidget.h
 build/*
+build-macos/*

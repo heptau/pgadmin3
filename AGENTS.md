@@ -56,5 +56,60 @@ picks up this work next — treat this as a running log, not final docs.
 - 2026-07-13: Branch created, exploring feasibility. No mac-specific code
   written yet. See task list / conversation for live progress; this section
   will be updated as the build gets further.
+- 2026-07-13: Correction — there IS a little pre-existing mac scaffolding:
+  `include/frm/frmLog.h` has an `#ifdef __WXMAC__` AUI-perspective string, and
+  `include/pgAdmin3.h` has an `#ifdef __WXMAC__ void MacOpenFile(...)`. Both
+  predate this session; someone attempted a mac port before but it was never
+  finished/tested (no CMake path, no other mac ifdefs anywhere).
+- 2026-07-13: `cmake` configure works out of the box against Homebrew
+  wxwidgets/postgresql@16/libxml2/libxslt with no CMakeLists.txt changes
+  needed beyond disabling `add_subdirectory(tests)` on `APPLE` (Homebrew only
+  ships Catch2 v3, tests/ use the v2 single-header API — separate, unsolved
+  follow-up, tracked as a TODO below).
+- 2026-07-13: **Important finding** — Homebrew's `wxwidgets` bottle (3.3.3)
+  is built with `wxUSE_STD_CONTAINERS=1` (wx 3.3's new default), which
+  changes the shape of `WX_DECLARE_LIST`-generated classes: no more nested
+  `::Node` typedef, `GetFirst()`/`GetNext()` etc. return `compatibility_iterator`
+  instead of raw `Node*`, and generic `wxList`/`wxNode` (`wxObjectListNode`)
+  becomes an incomplete type at the old call sites. This breaks ~262 call
+  sites across 18 files (`ogl/*`, `debugger/*`, `frm/mathplot.cpp`,
+  `frm/events.cpp`, `ctl/explainCanvas.cpp`, `ctl/explainShape.cpp`, etc.) —
+  all legacy code written against the classic (non-std-container) wxList API
+  that Windows/Linux builds use today.
+  - Patching all 262 sites was rejected: too invasive, spans 18 files shared
+    with Windows/Linux, high conflict risk with upstream, for what is really
+    a *build configuration* mismatch, not a real portability bug (compare
+    to the two genuine bugs below, which WERE worth fixing everywhere).
+  - Decision: build wxWidgets 3.3.3 from source locally with
+    `--disable-std_containers --with-osx_cocoa`, instead of using the
+    Homebrew bottle, to match the classic-mode behavior Windows/Linux already
+    rely on. Keeps the pgAdmin3 source tree untouched for this issue.
+  - Fixed two small `ctlMenuToolList`/similar cases before discovering the
+    scope of the problem — see commits on `macos-port` branch. Those two
+    fixes (`ctl/ctlMenuToolbar.cpp`) use `compatibility_iterator`, which is
+    portable across BOTH std-container and classic wx builds, so they're
+    correct/harmless to keep regardless of which wx we end up using.
+- Two genuine, platform-independent bugs found and fixed while getting this
+  far (both real bugs that would misbehave/fail to compile on any compiler
+  enforcing standard C++, not mac-specific — safe/beneficial upstream too):
+  1. `include/ctl/SourceViewDialog.h` (compare-objects HTML report,
+     `075347b1` by lsv): mixed `std::wstring + const char*` (narrow literal)
+     in an HTML-building expression — fixed by widening the literals to
+     `L"..."`.
+  2. `include/frm/frmLog.h` / `frm/frmLog.cpp`: `MywxAuiDefaultTabArt`
+     (custom AUI tab art) breaks under wx 3.3 because
+     `wxAuiDefaultTabArt` became a `#define` alias for the new, non-copyable
+     `wxAuiFlatTabArt`, and `GetTabSize()`'s DC parameter type changed from
+     `wxDC&` to `wxReadOnlyDC&`. Fixed with a `wxCHECK_VERSION(3,3,0)`-gated
+     typedef/Clone(), so wx 3.2 (Windows/Linux) behavior is untouched.
+
+## Known TODOs / not yet solved
+
+- tests/ (Catch2) disabled on macOS in CMakeLists.txt — needs either a
+  Catch2 v2 compat shim or porting tests/test_Formatter.cpp to Catch2 v3
+  (`catch2/catch_test_macros.hpp` etc).
+- Runtime behavior on Cocoa (menus, shortcuts, dialogs, App Bundle
+  packaging/.app/.icns/Info.plist) is completely unverified — nothing has
+  been run yet, only compiled.
 
 <!-- Append new dated entries below as work progresses. -->

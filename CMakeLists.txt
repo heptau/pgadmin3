@@ -112,7 +112,12 @@ if(CROSS_COMPILE STREQUAL "Windows")
 #	include_directories(${PGBUILD}/openssl/include 
 #	include_directories( ./include/libssh2 ./include/libssh2/Win32 )
 else()
-	add_subdirectory(tests)
+	# Homebrew only ships Catch2 v3 (split headers), while tests/ still uses
+	# the v2-style single-header <catch2/catch.hpp> used by Linux CI's
+	# Catch2 v2 package. Skip building tests on macOS until that's ported.
+	if(NOT APPLE)
+		add_subdirectory(tests)
+	endif()
 endif()
 
 

@@ -171,7 +171,7 @@ public:
 	virtual int OnExit() wxOVERRIDE;
 	virtual void OnFatalException() wxOVERRIDE;
 #ifdef __WXMAC__
-	void MacOpenFile(const wxString &fileName);
+	void MacOpenFile(const wxString &fileName) wxOVERRIDE;
 #endif
 
 private:
