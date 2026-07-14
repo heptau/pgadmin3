@@ -6,6 +6,12 @@ Format loosely follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 ## [Unreleased]
 
 ### Added
+- Filled in ~406 missing French (fr_FR) UI translations, same gap and
+  method as Spanish/Czech. Added `i18n/fr_FR.po` and recompiled
+  `x64/Release/i18n/fr_FR/pgadmin3.mo`. With this, all four requested
+  languages (cs_CZ, es_ES, de_DE, fr_FR) have had their translation gaps
+  filled; the other 7 shipped languages (ru_RU, pl_PL, ja_JP, zh_CN,
+  sr_RS, ca_ES, lv_LV) have not been audited yet.
 - Filled in ~920 missing German (de_DE) UI translations — this catalog
   had a substantially larger gap than the others (missing much of the
   Database Designer and pgAgent job scheduler coverage). Added

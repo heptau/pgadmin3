@@ -512,19 +512,26 @@ picks up this work next — treat this as a running log, not final docs.
   der/die/das X wirklich gelöscht werden?" varies article by object
   gender). Added `i18n/de_DE.po`, recompiled
   `x64/Release/i18n/de_DE/pgadmin3.mo`, verified bundled `.mo`.
-  Currently also running the same pass for French (fr_FR, 406 missing,
-  same baseline as es/cs).
+- 2026-07-14: Same pass for French (fr_FR) — 406 genuine missing strings
+  (same baseline as es/cs), translated into formal French with the
+  existing catalog's guillemet-quote convention (« ... »). Added
+  `i18n/fr_FR.po`, recompiled `x64/Release/i18n/fr_FR/pgadmin3.mo`,
+  verified bundled `.mo`. This completes all 4 languages requested this
+  session (cs_CZ, es_ES, de_DE, fr_FR) — 2138 strings translated total
+  across the four catalogs. The other 7 shipped languages (ru_RU, pl_PL,
+  ja_JP, zh_CN, sr_RS, ca_ES, lv_LV) haven't been touched.
 
 ## Known TODOs / not yet solved
 
 - tests/ (Catch2) disabled on macOS in CMakeLists.txt — needs either a
   Catch2 v2 compat shim or porting tests/test_Formatter.cpp to Catch2 v3
   (`catch2/catch_test_macros.hpp` etc).
-- Czech (cs_CZ) translations were audited and filled in (see status log);
-  the other 9 shipped languages (ru_RU, de_DE, fr_FR, es_ES, pl_PL, ja_JP,
-  zh_CN, sr_RS, ca_ES, lv_LV) still only have their original ~2014
-  Windows-era `.mo` catalogs with no source `.po` and haven't been
-  audited for completeness — same gap, just not tackled yet since the
+- Czech, Spanish, German, and French translations were audited and
+  filled in (see status log); the other 7 shipped languages (ru_RU,
+  pl_PL, ja_JP, zh_CN, sr_RS, ca_ES, lv_LV) still only have their
+  original ~2014 Windows-era `.mo` catalogs with no source `.po` and
+  haven't been audited for completeness — same gap, just not tackled yet
+  since the
   user only asked for Czech.
 - App icon is upscaled from a single 256x256 source (`include/images/
   pgAdmin3.ico`) — looks fine at normal Dock size but real multi-resolution
