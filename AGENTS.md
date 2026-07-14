@@ -503,9 +503,17 @@ picks up this work next — treat this as a running log, not final docs.
   Clave Ajena, "Are you sure..." -> "¿Está seguro de que desea...", etc).
   Added `i18n/es_ES.po`, recompiled `x64/Release/i18n/es_ES/pgadmin3.mo`,
   verified bundled `.mo` byte-identical and correct via `msgunfmt`.
-  Currently also running the same pass for German (de_DE, ~920 missing —
-  a much larger gap than es/fr/cs, this catalog was less complete to
-  begin with) and French (fr_FR, 406 missing, same as es/cs).
+- 2026-07-14: Same pass for German (de_DE) — 920 genuine missing strings,
+  more than double the other languages (this catalog was noticeably less
+  complete to begin with, e.g. missing much of the Database Designer/ER
+  diagram tool and pgAgent job scheduler strings). Dispatched as 19
+  parallel batches of ~50, cross-checking the existing shipped catalog
+  for established compound-noun/gendered-article conventions (e.g. "Soll
+  der/die/das X wirklich gelöscht werden?" varies article by object
+  gender). Added `i18n/de_DE.po`, recompiled
+  `x64/Release/i18n/de_DE/pgadmin3.mo`, verified bundled `.mo`.
+  Currently also running the same pass for French (fr_FR, 406 missing,
+  same baseline as es/cs).
 
 ## Known TODOs / not yet solved
 
