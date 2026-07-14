@@ -7,8 +7,6 @@ Format loosely follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ## [2026.07.14]
 
-## [2026.07.14]
-
 ### Added
 - Added `.po` source files for all 7 remaining shipped languages (ru_RU,
   pl_PL, ja_JP, zh_CN, sr_RS, ca_ES, lv_LV) — previously only compiled
