@@ -22,10 +22,11 @@ CONTENTS="$APP_DIR/Contents"
 MACOS_DIR="$CONTENTS/MacOS"
 RESOURCES_DIR="$CONTENTS/Resources"
 FRAMEWORKS_DIR="$CONTENTS/Frameworks"
+SHAREDSUPPORT_DIR="$CONTENTS/SharedSupport"
 
 echo "Assembling $APP_DIR ..."
 rm -rf "$APP_DIR"
-mkdir -p "$MACOS_DIR" "$RESOURCES_DIR" "$FRAMEWORKS_DIR"
+mkdir -p "$MACOS_DIR" "$RESOURCES_DIR" "$FRAMEWORKS_DIR" "$SHAREDSUPPORT_DIR"
 
 cp "$BIN_SRC" "$MACOS_DIR/pgAdmin3"
 chmod u+w "$MACOS_DIR/pgAdmin3"
@@ -129,6 +130,29 @@ for spec in "16:icon_16x16" "32:icon_16x16@2x" "32:icon_32x32" "64:icon_32x32@2x
 done
 iconutil -c icns "$ICONSET" -o "$RESOURCES_DIR/AppIcon.icns"
 rm -rf "$ICON_TMP"
+
+# Runtime resources. pgAdmin3.cpp's __WXMAC__ branch of LocatePath() sets
+# dataDir from wxStandardPaths::GetDataDir(), which on macOS resolves to
+# Contents/SharedSupport (NSBundle.sharedSupportPath) -- that's *not*
+# Contents/Resources, so these need to land there specifically, or i18nPath
+# resolves empty and translations silently fail to load ("nelze otevrit
+# soubor '/pgadmin3.lng'"). The .mo catalogs themselves only ever existed as
+# prebuilt Windows release assets (x64/Release/i18n/), not something this
+# repo's CMake build produces -- there's no source .po/.pot pipeline here at
+# all, they're just checked-in binaries alongside the Windows .exe.
+if [ -d "$REPO_ROOT/x64/Release/i18n" ]; then
+	cp -R "$REPO_ROOT/x64/Release/i18n" "$SHAREDSUPPORT_DIR/i18n"
+else
+	echo "warning: $REPO_ROOT/x64/Release/i18n not found -- translations won't be bundled" >&2
+fi
+# Also fixes the "Compare other objects" HTML report template, which looks
+# next to the executable first (Windows-only path, since it hardcodes '\\'
+# as the separator) and falls back to dataDir -- the mac-only part of that
+# fallback already works once dataDir resolves correctly, this just needs
+# the file to actually be there.
+if [ -f "$REPO_ROOT/x64/Release/textcompare_report.template" ]; then
+	cp "$REPO_ROOT/x64/Release/textcompare_report.template" "$SHAREDSUPPORT_DIR/"
+fi
 
 # Info.plist. PGADMIN3_VERSION can be set by the caller (release.sh stamps
 # in the date-based release version); otherwise fall back to CMakeLists.txt's

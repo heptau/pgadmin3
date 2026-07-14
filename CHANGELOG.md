@@ -6,6 +6,14 @@ Format loosely follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 ## [Unreleased]
 
 ### Fixed
+- Fixed translations (localization catalogs) never loading on macOS —
+  `wxStandardPaths::GetDataDir()` resolves to `Contents/SharedSupport` on
+  macOS (not `Contents/Resources`), which the `.app` bundle never
+  populated, so `i18nPath` resolved empty and the UI silently fell back
+  to untranslated (English) strings. `macos/build_app.sh` now copies
+  `x64/Release/i18n` (the prebuilt `.mo` catalogs, checked in as Windows
+  release assets) into `Contents/SharedSupport/i18n`, and also copies
+  `textcompare_report.template` there for the same reason.
 - Fixed the main window's toolbar icons overlapping on macOS (Retina
   displays specifically) — the toolbar's bitmap size was never set to
   match the 32x32 icons being drawn into it.

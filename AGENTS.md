@@ -446,18 +446,42 @@ picks up this work next — treat this as a running log, not final docs.
     the same one-line manual fix (or just re-set/clear the server's colour
     once via its Properties dialog, which now shows a blank swatch instead
     of a stale colour when none is set).
+- 2026-07-14: Fixed localization catalogs never loading on macOS. Root
+  cause: `pgAdmin3.cpp`'s `LocatePath()` sets `dataDir` from
+  `wxStandardPaths::Get().GetDataDir()` on `__WXMAC__`, and per wx 3.3.3's
+  Cocoa implementation (`src/osx/core/stdpaths.mm`) that resolves to
+  `NSBundle.sharedSupportPath` (`Contents/SharedSupport`) — a distinct
+  bundle directory from `GetResourcesDir()`'s `Contents/Resources`, and
+  one `macos/build_app.sh` never created or populated. Fixed by adding a
+  `SHAREDSUPPORT_DIR` to `macos/build_app.sh` and copying
+  `x64/Release/i18n` (the only shipped-data macro dir among
+  DOC_DIR/UI_DIR/I18N_DIR/BRANDING_DIR/PLUGINS_DIR that actually exists in
+  the repo — prebuilt Windows release `.mo` catalogs, no source `.po`
+  pipeline here) into `Contents/SharedSupport/i18n`; also copied
+  `textcompare_report.template` there (used by the "Compare other
+  objects" HTML report, whose Windows-hardcoded primary path fails on
+  mac but whose `dataDir`-based fallback now works). Verified at runtime:
+  rebuilt via `make build`, relaunched, confirmed via screenshot that the
+  Object Browser now shows fully-translated strings ("Vlastnosti",
+  "Popis", "Služba", status-bar messages like "Získávájí se podrobnosti o
+  serveru... Dokončeno.") that only come from the gettext catalog, not
+  hardcoded source literals — and no more silent fallback to English.
+  Follow-up (not yet done): the shipped `cs_CZ` catalog is from 2014
+  (upstream pgAdmin III) and is missing translations for strings added
+  since; needs an audit/fill-in pass (tracked as a TODO below).
 
 ## Known TODOs / not yet solved
 
 - tests/ (Catch2) disabled on macOS in CMakeLists.txt — needs either a
   Catch2 v2 compat shim or porting tests/test_Formatter.cpp to Catch2 v3
   (`catch2/catch_test_macros.hpp` etc).
-- `.app` bundling is done (`make build`, see status log), but it doesn't put
-  any resources into `Contents/Resources` yet beyond the icon — the
-  `i18nPath`/translations lookup (`.lng` file, "nelze otevřít soubor
-  '/pgadmin3.lng'") still isn't solved and is harmless/non-fatal so far, but
-  should eventually get real resource files bundled and `i18nPath` pointed
-  at `Contents/Resources` instead.
+- Localization catalogs are now bundled and loading correctly (see status
+  log) — the existing `.po`/`.mo` catalogs (only checked in as prebuilt
+  Windows release assets under `x64/Release/i18n/`, no source `.po` files
+  or build pipeline in this repo) still need a completeness/quality audit;
+  Czech (cs_CZ) was found to be missing translations for ~536 strings
+  that exist in current source but not in the shipped catalog (dated
+  2014, upstream pgAdmin III translator).
 - App icon is upscaled from a single 256x256 source (`include/images/
   pgAdmin3.ico`) — looks fine at normal Dock size but real multi-resolution
   artwork would look sharper at 512/1024.
