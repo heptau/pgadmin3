@@ -469,19 +469,45 @@ picks up this work next — treat this as a running log, not final docs.
   Follow-up (not yet done): the shipped `cs_CZ` catalog is from 2014
   (upstream pgAdmin III) and is missing translations for strings added
   since; needs an audit/fill-in pass (tracked as a TODO below).
+- 2026-07-14: Audited and filled in the Czech (cs_CZ) translation catalog.
+  Extracted a fresh `.pot` via `xgettext` over all source files, merged it
+  against the decompiled existing `cs_CZ.mo` (`msgunfmt` + `msgmerge
+  --no-fuzzy-matching`) to find untranslated msgids: 544 total, of which
+  138 were noise and correctly left untranslated —
+  `dd/dditems/figures/xml/ddXmlStorage.cpp`'s internal DTD-building code
+  (element/attribute name constants and literal DTD text, wrapped in `_()`
+  by mistake upstream — translating these would corrupt the app's own ER
+  diagram file format), `frm/mathplot.cpp` debug trace strings guarded by
+  `#ifdef MATHPLOT_DO_LOGGING` (contain `ClassName::Method()` and are
+  never user-facing), and a handful of SQL-fragment/format-placeholder-
+  only concatenation glue (e.g. a bare `"_"`, `";\n"`, `"1.0"`). The
+  remaining 406 genuine UI strings were translated into Czech (dispatched
+  as 9 parallel batches of ~50 to keep terminology/style consistent via a
+  shared glossary extracted from the existing catalog, e.g. Foreign
+  Key -> cizí klíč, "Are you sure you wish to..." -> "Opravdu si
+  přejete..."), then programmatically verified for zero mismatches in
+  `%`-format-specifier count/order, `&` mnemonic-marker count, and
+  `\t`-prefixed keyboard-accelerator suffixes before merging. Added
+  `i18n/cs_CZ.po` to the repo as the new editable source of truth (there
+  was none before — only the compiled `.mo` existed, checked in as a
+  Windows release asset) and recompiled
+  `x64/Release/i18n/cs_CZ/pgadmin3.mo` from it via `msgfmt`. Verified: the
+  macOS bundle's copy of the `.mo` is byte-identical to the newly compiled
+  one and contains the new strings correctly (checked via `msgunfmt`,
+  e.g. `"New SQL &tab\tCtrl-T"` -> `"Nová &karta SQL\tCtrl-T"` with the
+  accelerator suffix and mnemonic both intact).
 
 ## Known TODOs / not yet solved
 
 - tests/ (Catch2) disabled on macOS in CMakeLists.txt — needs either a
   Catch2 v2 compat shim or porting tests/test_Formatter.cpp to Catch2 v3
   (`catch2/catch_test_macros.hpp` etc).
-- Localization catalogs are now bundled and loading correctly (see status
-  log) — the existing `.po`/`.mo` catalogs (only checked in as prebuilt
-  Windows release assets under `x64/Release/i18n/`, no source `.po` files
-  or build pipeline in this repo) still need a completeness/quality audit;
-  Czech (cs_CZ) was found to be missing translations for ~536 strings
-  that exist in current source but not in the shipped catalog (dated
-  2014, upstream pgAdmin III translator).
+- Czech (cs_CZ) translations were audited and filled in (see status log);
+  the other 9 shipped languages (ru_RU, de_DE, fr_FR, es_ES, pl_PL, ja_JP,
+  zh_CN, sr_RS, ca_ES, lv_LV) still only have their original ~2014
+  Windows-era `.mo` catalogs with no source `.po` and haven't been
+  audited for completeness — same gap, just not tackled yet since the
+  user only asked for Czech.
 - App icon is upscaled from a single 256x256 source (`include/images/
   pgAdmin3.ico`) — looks fine at normal Dock size but real multi-resolution
   artwork would look sharper at 512/1024.

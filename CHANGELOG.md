@@ -5,6 +5,16 @@ Format loosely follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ## [Unreleased]
 
+### Added
+- Filled in ~406 missing Czech (cs_CZ) UI translations that were never
+  covered by the shipped 2014 catalog (newer features like logical
+  replication publications/subscriptions, the query tool's autoreplace/
+  align/format commands, the database designer/ER-diagram tool, pg_wait_
+  sampling status view, etc). Added `i18n/cs_CZ.po` as the new editable
+  source of truth for this catalog (previously only a compiled `.mo` was
+  checked in, with no `.po`/build pipeline at all) and recompiled
+  `x64/Release/i18n/cs_CZ/pgadmin3.mo` from it.
+
 ### Fixed
 - Fixed translations (localization catalogs) never loading on macOS —
   `wxStandardPaths::GetDataDir()` resolves to `Contents/SharedSupport` on
