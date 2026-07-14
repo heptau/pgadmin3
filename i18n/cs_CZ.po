@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pgadmin3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-07-14 11:05+0200\n"
+"POT-Creation-Date: 2026-07-14 21:20+0200\n"
 "PO-Revision-Date: 2014-11-28 11:18+0100\n"
 "Last-Translator: Marek Černocký <marek@manet.cz>\n"
 "Language-Team: Czech <gnome-cs-list@gnome.org>\n"
@@ -13,98 +13,6 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
 "X-Generator: Gtranslator 2.91.6\n"
-
-#: pgAdmin3.cpp:364 pgAdmin3.cpp:384
-msgid "show the version, and quit"
-msgstr "zobrazit verzi a skončit"
-
-#: pgAdmin3.cpp:365
-msgid "show this help message, and quit"
-msgstr "zobrazit tuto nápovědu a skončit"
-
-#: pgAdmin3.cpp:366 pgAdmin3.cpp:386
-msgid "auto-connect to specified server"
-msgstr "automaticky se spojit s určeným serverem"
-
-#: pgAdmin3.cpp:367 pgAdmin3.cpp:387
-msgid "open server status window"
-msgstr "otevřít okno s informacemi o stavu serveru"
-
-#: pgAdmin3.cpp:368
-msgid "open server log window"
-msgstr "otevřít okno protokolu serveru"
-
-#: pgAdmin3.cpp:369 pgAdmin3.cpp:388
-msgid "connect server status window to database"
-msgstr "připojit se k serveru a zobrazit okno se stavem"
-
-#: pgAdmin3.cpp:370 pgAdmin3.cpp:389
-msgid "open query tool"
-msgstr "otevřít dotazovací nástroj"
-
-#: pgAdmin3.cpp:371 pgAdmin3.cpp:390
-msgid "connect query tool to database"
-msgstr "připojit dotazovací nástroj k databázi"
-
-#: pgAdmin3.cpp:373 pgAdmin3.cpp:392
-msgid "open designer window"
-msgstr "otevřít návrhář databází"
-
-#: pgAdmin3.cpp:374 pgAdmin3.cpp:393
-msgid "connect designer window to database"
-msgstr "připojit návrhář databází k databázi"
-
-#: pgAdmin3.cpp:376 pgAdmin3.cpp:395
-msgid "file to load into the query tool in -q or -qc mode"
-msgstr "soubor, který se má načíst při použití parametrů -q nebo -qc"
-
-#: pgAdmin3.cpp:377 pgAdmin3.cpp:396
-msgid "edit main configuration file"
-msgstr "upravit hlavní soubor nastavení"
-
-#: pgAdmin3.cpp:378 pgAdmin3.cpp:397
-msgid "edit HBA configuration file"
-msgstr "upravit soubor nastavení HBA"
-
-#: pgAdmin3.cpp:379 pgAdmin3.cpp:398
-msgid "edit pgpass configuration file"
-msgstr "upravit soubor nastavení pgpass"
-
-#: pgAdmin3.cpp:380 pgAdmin3.cpp:399
-msgid "edit configuration files in cluster directory"
-msgstr "upravit soubory nastavení ve složce klastru"
-
-#: pgAdmin3.cpp:381 pgAdmin3.cpp:400
-msgid "dialog translation test mode"
-msgstr "režim testování překladu dialogů"
-
-#: pgAdmin3.cpp:382
-msgid "export servers configuration to file pgadmin3.ini"
-msgstr "exportovat konfiguraci serverů do souboru pgadmin3.ini"
-
-#: pgAdmin3.cpp:385
-msgid "show the help message, and quit"
-msgstr "zobrazit zprávu s nápovědou a skončit"
-
-#: pgAdmin3.cpp:590
-msgid " - Server Status"
-msgstr " – stav serveru"
-
-#: pgAdmin3.cpp:646 pgAdmin3.cpp:736 pgAdmin3.cpp:831
-msgid "Unknown SSL mode: "
-msgstr "Neznámý režim SSL: "
-
-#: pgAdmin3.cpp:651 pgAdmin3.cpp:741 pgAdmin3.cpp:836
-msgid "Unknown token in connection string: "
-msgstr "Neznámá položka v připojovacím řetězci: "
-
-#: pgAdmin3.cpp:680
-msgid "pgAdmin - Database designer"
-msgstr "pgAdmin – návrhář databází"
-
-#: pgAdmin3.cpp:986
-msgid "Log - "
-msgstr "Protokol - "
 
 #: dlg/dlgDomain.cpp:70 dlg/dlgTable.cpp:226
 msgid "Constraint name"
@@ -188,12 +96,12 @@ msgstr "Proměnná"
 #: dlg/dlgForeignServer.cpp:67 dlg/dlgForeignTable.cpp:114
 #: dlg/dlgTablespace.cpp:56 dlg/dlgUserMapping.cpp:86 dlg/dlgFunction.cpp:163
 #: dlg/dlgDatabase.cpp:85 dlg/dlgForeignDataWrapper.cpp:114
-#: dlg/dlgColumn.cpp:88 gqb/gqbGridRestTable.cpp:95 frm/frmMainConfig.cpp:186
-#: schema/pgTablespace.cpp:229 schema/pgObject.cpp:1584
-#: schema/pgDatabase.cpp:352 schema/pgSequence.cpp:237
+#: dlg/dlgColumn.cpp:88 gqb/gqbGridRestTable.cpp:95
+#: include/schema/pgObject.h:369 include/schema/pgObject.h:370
+#: frm/frmMainConfig.cpp:186 schema/pgTablespace.cpp:229
+#: schema/pgObject.cpp:1584 schema/pgDatabase.cpp:352 schema/pgSequence.cpp:237
 #: debugger/dlgDirectDbg.cpp:144 debugger/ctlVarWindow.cpp:43
-#: slony/slNode.cpp:182 include/schema/pgObject.h:369
-#: include/schema/pgObject.h:370
+#: slony/slNode.cpp:182
 msgid "Value"
 msgstr "Hodnota"
 
@@ -217,6 +125,7 @@ msgstr "Potvrzení smazání superuživatele"
 msgid "The passwords entered do not match!"
 msgstr "Zadaná hesla nejsou shodná!"
 
+#. Fill the group combobox
 #: dlg/dlgServer.cpp:145 dlg/dlgServer.cpp:156 dlg/dlgServer.cpp:259
 #: dlg/dlgServer.cpp:311 dlg/dlgServer.cpp:554 schema/pgServer.cpp:1643
 #: schema/pgServer.cpp:1697 schema/pgServer.cpp:1993
@@ -299,6 +208,7 @@ msgstr ""
 msgid "Stored Password"
 msgstr "Uložené heslo"
 
+#. Initialize options listview and buttons
 #: dlg/dlgTextSearchDictionary.cpp:90 dlg/dlgForeignServer.cpp:66
 #: dlg/dlgForeignTable.cpp:113 dlg/dlgUserMapping.cpp:85
 #: dlg/dlgForeignDataWrapper.cpp:113 frm/frmHbaConfig.cpp:113
@@ -335,6 +245,7 @@ msgstr "nenastaveno"
 msgid "Please select a lexize function."
 msgstr "Vyberte prosím lexikální funkci."
 
+#. Visible columns
 #: dlg/dlgIndexConstraint.cpp:55 dlg/dlgIndexConstraint.cpp:66
 #: dlg/dlgTable.cpp:202 dlg/dlgIndex.cpp:202 dlg/dlgTrigger.cpp:89
 #: dlg/dlgEditGridOptions.cpp:106
@@ -361,6 +272,8 @@ msgstr "Třída oper."
 msgid "Operator"
 msgstr "Operátor"
 
+#. Add the default tablespace
+#. create mode
 #: dlg/dlgIndexConstraint.cpp:279 dlg/dlgTable.cpp:436 dlg/dlgDatabase.cpp:279
 #: dlg/dlgIndex.cpp:454 dlg/dlgView.cpp:367
 msgid "<default tablespace>"
@@ -400,6 +313,7 @@ msgstr ""
 msgid "Cluster \"%s\", set %ld"
 msgstr "Klastr „%s“, sada %ld"
 
+#. add checkbox to the panel
 #: dlg/dlgProperty.cpp:398
 msgid "Read only"
 msgstr "Pouze ke čtení"
@@ -425,16 +339,23 @@ msgstr "Editor SQL"
 msgid "-- Execute replicated using cluster \"%s\", set %ld\n"
 msgstr "-- Provádění změn je replikováno pomocí klastru „%s“, sady %ld\n"
 
+#. error message is displayed inside ExecuteVoid
+#. Warn the user about partially applied changes, but don't bail out.
+#. Carry on as if everything was successful (because the most important
+#. change was!!
 #: dlg/dlgProperty.cpp:943
 msgid ""
 "An error occurred executing the second stage SQL statement.\n"
 "\n"
 "Changes may have been partially applied."
-msgstr "Při provádění SQL příkazu druhé fáze došlo k chybě.\n\nZměny mohly být provedeny částečně."
+msgstr ""
+"Při provádění SQL příkazu druhé fáze došlo k chybě.\n"
+"\n"
+"Změny mohly být provedeny částečně."
 
-#: dlg/dlgProperty.cpp:943 utils/FunctionPGHelper.cpp:406 frm/frmQuery.cpp:2142
-#: frm/frmQuery.cpp:2599 utils/log/MyDataViewCtrl.cpp:317
-#: utils/log/MyDataViewCtrl.cpp:321
+#: dlg/dlgProperty.cpp:943 utils/FunctionPGHelper.cpp:406
+#: utils/log/MyDataViewCtrl.cpp:317 utils/log/MyDataViewCtrl.cpp:321
+#: frm/frmQuery.cpp:2142 frm/frmQuery.cpp:2599
 msgid "Warning"
 msgstr "Varování"
 
@@ -583,35 +504,44 @@ msgstr "Zvolte prosím cílový datový typ."
 msgid "Inherited from table"
 msgstr "Zděděno z tabulky"
 
+#. Invisible columns
+#. ... sql definition
 #: dlg/dlgTable.cpp:211
 msgid "Column definition"
 msgstr "Definice sloupce"
 
+#. ... new comment
 #: dlg/dlgTable.cpp:213
 msgid "Column comment"
 msgstr "Komentář slupce"
 
+#. ... new statistics
 #: dlg/dlgTable.cpp:215 schema/pgColumn.cpp:87
 msgid "Column statistics"
 msgstr "Statistiky sloupce"
 
+#. ... pgColumn* handle (used for new columns)
 #: dlg/dlgTable.cpp:217 gqb/gqbGridProjTable.cpp:99
 #: gqb/gqbGridOrderTable.cpp:101
 msgid "Column"
 msgstr "Sloupec"
 
+#. ... new type OID
 #: dlg/dlgTable.cpp:219
 msgid "Column type oid"
 msgstr "OID typu sloupce"
 
+#. ... pgColumn* handle (used for changed columns)
 #: dlg/dlgTable.cpp:221
 msgid "Changed column"
 msgstr "Změněný sloupec"
 
+#. ... pgColumn* handle (used for variable list)
 #: dlg/dlgTable.cpp:223
 msgid "Variable List"
 msgstr "Seznam proměnných"
 
+#. ... pgColumn* handle (used for security label list)
 #: dlg/dlgTable.cpp:225
 msgid "Security Label List"
 msgstr "Seznam bezpečnostních návěští"
@@ -625,6 +555,7 @@ msgstr "Nezdařilo se znepřístupnit přepínač oprávnění RULE!"
 msgid "Primary Key"
 msgstr "Primární klíč"
 
+#. chkHasOids->Enable(!table || (table && table->GetHasOids() && hasPK && connection->BackendMinimumVersion(7, 4)));
 #: dlg/dlgTable.cpp:1531
 msgid "Foreign Key"
 msgstr "Cizí klíč"
@@ -850,7 +781,7 @@ msgstr "vše"
 #: dlg/dlgSearchObject.cpp:71 dlg/dlgSearchObject.cpp:107
 #: utils/sysSettings.cpp:186 utils/sysSettings.cpp:254 frm/frmOptions.cpp:461
 #: schema/pgPublication.cpp:167 schema/pgSchema.cpp:231 schema/pgSchema.cpp:387
-#: ctl/ctlShortCut.cpp:56 dd/ddmodel/ddGenerationWizard.cpp:554
+#: dd/ddmodel/ddGenerationWizard.cpp:554 ctl/ctlShortCut.cpp:56
 msgid "Tables"
 msgstr "Tabulky"
 
@@ -863,6 +794,7 @@ msgstr "Indexy"
 msgid "Materialized views"
 msgstr "Materializované pohledy"
 
+#. Setup list of keys
 #: dlg/dlgManageMacros.cpp:51
 msgid "Key"
 msgstr "Klávesa"
@@ -887,6 +819,7 @@ msgstr "Slovníky"
 msgid "Please select a parser or a configuration to copy."
 msgstr "Vyberte prosím analyzátor nebo nastavení, které se má zkopírovat."
 
+#. Setup the default values
 #: dlg/dlgManageFavourites.cpp:64 dlg/dlgAddFavourite.cpp:59
 #: frm/frmOptions.cpp:50
 msgid "Favourites"
@@ -930,6 +863,7 @@ msgstr "Vytvořit novou složku v oblíbených"
 msgid "A folder with the specified name already exists."
 msgstr "Sloupec se zadaným jménem již existuje."
 
+#. Public Synonyms does supported in public only
 #: dlg/dlgSynonym.cpp:88 dlg/dlgSynonym.cpp:127 dlg/dlgSynonym.cpp:156
 #: dlg/dlgSynonym.cpp:178 schema/edbSynonym.cpp:174
 msgid "Public synonym"
@@ -988,6 +922,9 @@ msgstr "Zadejte prosím definici externí tabulky."
 msgid "Path"
 msgstr "Cesta"
 
+#. Mapping table between local language and english,
+#. because in SQL we're using only english and translate it later
+#. to the local language.
 #: dlg/dlgSearchObject.cpp:69 dlg/dlgSearchObject.cpp:105
 #: dlg/dlgSearchObject.cpp:816
 msgid "All types"
@@ -1000,6 +937,7 @@ msgstr "Všechny typy"
 msgid "Schemas"
 msgstr "Schémata"
 
+#. Columns
 #: dlg/dlgSearchObject.cpp:72 dlg/dlgSearchObject.cpp:108
 #: gqb/gqbController.cpp:59 frm/frmReport.cpp:2322
 #: schema/pgIndexConstraint.cpp:195 schema/pgIndex.cpp:419
@@ -1193,19 +1131,12 @@ msgstr "Zadaný objekt nelze ve stromu najít."
 msgid "Searching..."
 msgstr "Vyhledává se…"
 
+#. Load the display options
 #: dlg/dlgSearchObject.cpp:865 utils/sysSettings.cpp:89
 #: utils/sysSettings.cpp:221 frm/frmOptions.cpp:423 frm/frmReport.cpp:1708
 #: frm/frmReport.cpp:1761 schema/pgServer.cpp:1116 ctl/ctlShortCut.cpp:60
 msgid "Databases"
 msgstr "Databáze"
-
-#: dlg/dlgSearchObject.cpp:927
-#, c-format
-msgid "Found %d item"
-msgid_plural "Found %d items"
-msgstr[0] "Nalezena %d položka"
-msgstr[1] "Nalezeny %d položky"
-msgstr[2] "Nalezeno %d položek"
 
 #: dlg/dlgSearchObject.cpp:929
 msgid "Nothing was found"
@@ -1366,6 +1297,7 @@ msgstr "Kontrola syntaxe"
 msgid "Validating filter string"
 msgstr "Kontroluje se filtrační řetězec "
 
+#. do not count EXPLAIN or similar
 #: dlg/dlgEditGridOptions.cpp:379
 #, c-format
 msgid "ERROR: Syntax error at character %d!"
@@ -1523,9 +1455,50 @@ msgstr "Spojka"
 msgid "Available Columns"
 msgstr "Dostupné sloupce"
 
+#: include/hotdraw/utilities/hdRemoveDeleteDialog.h:31
+msgid "Title"
+msgstr "Název"
+
 #: include/copyright.h:17
 msgid "This software is released under the PostgreSQL Licence."
 msgstr "Tento software je vydán pod licencí PostgreSQL."
+
+#: include/frm/frmReport.h:156
+msgid "&Compare other objects"
+msgstr "&Porovnat jiné objekty"
+
+#: include/frm/frmReport.h:156
+msgid "Compare other host database select objects."
+msgstr "Porovnat vybrané objekty jiné hostitelské databáze."
+
+#: include/schema/pgObject.h:369
+msgid "Object"
+msgstr "Objekt"
+
+#. properties->AppendItem(_("Last result"), GetLastresult());
+#. Setup listview
+#: include/schema/pgObject.h:369 pro_scheduler/pgproJob.cpp:145
+#: frm/frmStatus.cpp:1044 schema/edbSynonym.cpp:118 schema/pgOperator.cpp:183
+#: schema/edbPackage.cpp:193 schema/pgDomain.cpp:201 schema/pgLanguage.cpp:132
+#: schema/pgForeignServer.cpp:154 schema/pgView.cpp:514
+#: schema/pgTextSearchDictionary.cpp:133 schema/pgSubscription.cpp:121
+#: schema/pgTablespace.cpp:194 schema/pgOperatorFamily.cpp:123
+#: schema/pgCollection.cpp:74 schema/pgPublication.cpp:166
+#: schema/pgForeignTable.cpp:194 schema/pgTable.cpp:1036
+#: schema/pgCatalogObject.cpp:93 schema/pgAggregate.cpp:154
+#: schema/pgConversion.cpp:128 schema/pgCollation.cpp:136
+#: schema/pgExtension.cpp:123 schema/pgTextSearchConfiguration.cpp:135
+#: schema/gpExtTable.cpp:454 schema/pgObject.cpp:750 schema/pgDatabase.cpp:726
+#: schema/pgForeignDataWrapper.cpp:153 schema/pgType.cpp:321
+#: schema/pgSequence.cpp:203 schema/pgFunction.cpp:386
+#: schema/edbPrivateSynonym.cpp:92 schema/pgSchema.cpp:425
+#: schema/pgOperatorClass.cpp:276 slony/slCluster.cpp:387
+msgid "Owner"
+msgstr "Vlastník"
+
+#: include/schema/pgObject.h:370
+msgid "Property"
+msgstr "Vlastnost"
 
 #: pro_scheduler/pgproJob.cpp:36
 msgid "Retrieving details on pro_scheduler job"
@@ -1583,6 +1556,8 @@ msgstr "ID"
 msgid "Enabled"
 msgstr "Povoleno"
 
+#. properties->AppendItem(_("Host agent"), GetHostAgent());
+#. properties->AppendItem(_("Job class"), GetJobclass());
 #: pro_scheduler/pgproJob.cpp:140
 msgid "Started"
 msgstr "Zahájeno"
@@ -1599,35 +1574,18 @@ msgstr "Výsledek"
 msgid "Crontab"
 msgstr "Crontab"
 
-#: pro_scheduler/pgproJob.cpp:145 frm/frmStatus.cpp:1044
-#: schema/edbSynonym.cpp:118 schema/pgOperator.cpp:183
-#: schema/edbPackage.cpp:193 schema/pgDomain.cpp:201 schema/pgLanguage.cpp:132
-#: schema/pgForeignServer.cpp:154 schema/pgView.cpp:514
-#: schema/pgTextSearchDictionary.cpp:133 schema/pgSubscription.cpp:121
-#: schema/pgTablespace.cpp:194 schema/pgOperatorFamily.cpp:123
-#: schema/pgCollection.cpp:74 schema/pgPublication.cpp:166
-#: schema/pgForeignTable.cpp:194 schema/pgTable.cpp:1036
-#: schema/pgCatalogObject.cpp:93 schema/pgAggregate.cpp:154
-#: schema/pgConversion.cpp:128 schema/pgCollation.cpp:136
-#: schema/pgExtension.cpp:123 schema/pgTextSearchConfiguration.cpp:135
-#: schema/gpExtTable.cpp:454 schema/pgObject.cpp:750 schema/pgDatabase.cpp:726
-#: schema/pgForeignDataWrapper.cpp:153 schema/pgType.cpp:321
-#: schema/pgSequence.cpp:203 schema/pgFunction.cpp:386
-#: schema/edbPrivateSynonym.cpp:92 schema/pgSchema.cpp:425
-#: schema/pgOperatorClass.cpp:276 slony/slCluster.cpp:387
-#: include/schema/pgObject.h:369
-msgid "Owner"
-msgstr "Vlastník"
-
 #: pro_scheduler/pgproJob.cpp:146
 msgid "Runas"
 msgstr "Spustit jako"
 
+#. manager.GetPane(wxT("Transactions")).Show(false);
 #: pro_scheduler/pgproJob.cpp:147 pro_scheduler/pgproJob.cpp:358
 #: frm/frmStatus.cpp:1031 frm/frmStatus.cpp:1245
 msgid "Message"
 msgstr "Zpráva"
 
+#. properties->AppendYesNoItem(_("Relocatable?"), GetIsRelocatable());
+#. properties->AppendItem(_("Version"), GetVersion());
 #: pro_scheduler/pgproJob.cpp:148 agent/pgaSchedule.cpp:111
 #: agent/pgaStep.cpp:114 agent/dlgJob.cpp:85 agent/dlgJob.cpp:89
 #: agent/pgaJob.cpp:140 frm/frmMainConfig.cpp:189 frm/frmReport.cpp:2324
@@ -1755,6 +1713,8 @@ msgstr "Nelze otevřít soubor s evidencí!"
 msgid "FATAL"
 msgstr "FATAL"
 
+#. This one crops up on the Mac and originates from the logging code
+#. for no obviously apparent reason.
 #: utils/sysLogger.cpp:307
 msgid "can't flush file descriptor"
 msgstr "nelze uzavřít popisovač souboru"
@@ -1800,6 +1760,8 @@ msgstr ""
 msgid "Failed to execute: %s --version"
 msgstr "Spuštění se nezdařilo: %s --version"
 
+#. brower->db close
+#. return wxEmptyString;
 #: utils/FunctionPGHelper.cpp:237
 msgid "'The database is closed in the object browser.'"
 msgstr "'Databáze je v prohlížeči objektů uzavřena.'"
@@ -1811,7 +1773,12 @@ msgid ""
 "containing the html help files.\n"
 "2. Run it and get the file '_func.txt'.\n"
 "3. Specify the path in the pgadmin3 settings to the html help."
-msgstr "Pro použití kontextové nápovědy k funkcím PostgreSQL:\n1. Je třeba umístit soubor '_extract_func_help.pl' do adresáře obsahujícího soubory html nápovědy.\n2. Spusťte jej a získáte soubor '_func.txt'.\n3. V nastavení pgadmin3 zadejte cestu k html nápovědě."
+msgstr ""
+"Pro použití kontextové nápovědy k funkcím PostgreSQL:\n"
+"1. Je třeba umístit soubor '_extract_func_help.pl' do adresáře obsahujícího "
+"soubory html nápovědy.\n"
+"2. Spusťte jej a získáte soubor '_func.txt'.\n"
+"3. V nastavení pgadmin3 zadejte cestu k html nápovědě."
 
 #: utils/dlgTransformText.cpp:76
 msgid "Transformation text"
@@ -1854,6 +1821,8 @@ msgstr "Nezdařil se zápis do souboru s makry!"
 msgid "Tablespaces"
 msgstr "Tabulkové prostory"
 
+#. Jobs
+#. We only add the Jobs node if the appropriate objects are the initial DB.
 #: utils/sysSettings.cpp:93 utils/sysSettings.cpp:223 frm/frmOptions.cpp:425
 #: schema/pgServer.cpp:1124
 msgid "pgAgent Jobs"
@@ -1922,6 +1891,18 @@ msgstr "Externí tabulky"
 #: schema/pgDatabase.cpp:628
 msgid "Event Triggers"
 msgstr "Triggery události"
+
+#: utils/log/Storage.cpp:218 frm/frmQuery.cpp:2539 frm/frmQuery.cpp:2567
+#: frm/frmQuery.cpp:2776
+msgid ""
+"Query text incomplete.\n"
+"Query contained characters that could not be converted to the local "
+"charset.\n"
+"Please correct the data or try using UTF8 instead."
+msgstr ""
+"Text dotazu je neúplný.\n"
+"Dotaz obsahuje znaky, které nelze převést do národní znakové sady.\n"
+"Proveďte prosím opravu nebo zkuste místo toho použít UTF8."
 
 #: utils/sshTunnel.cpp:99
 #, c-format
@@ -2561,6 +2542,42 @@ msgstr "V současnou chvíli neběží"
 msgid "No steps"
 msgstr "Bez kroků"
 
+#. Add important user info
+#: hotdraw/utilities/hdRemoveDeleteDialog.cpp:117
+msgid ""
+"     Choose Remove from Diagram to remove only from current diagram.     "
+msgstr ""
+"     Zvolte Odebrat z diagramu pro odebrání pouze z aktuálního diagramu.     "
+
+#: hotdraw/utilities/hdRemoveDeleteDialog.cpp:118
+msgid "     Choose Remove from Model to delete permanently.     "
+msgstr "     Zvolte Odebrat z modelu pro trvalé smazání.     "
+
+#: hotdraw/main/hdDrawingView.cpp:457
+msgid "Sample Item"
+msgstr "Ukázková položka"
+
+#: hotdraw/main/hdDrawingView.cpp:466
+msgid "Sample menu item"
+msgstr "Ukázková položka nabídky"
+
+#: hotdraw/main/hdDrawingView.cpp:466
+msgid "Sample"
+msgstr "Ukázka"
+
+#: hotdraw/main/hdDrawingEditor.cpp:267
+msgid "Are you sure you wish to delete figure ?"
+msgstr "Opravdu si přejete smazat objekt ?"
+
+#: hotdraw/main/hdDrawingEditor.cpp:267 hotdraw/main/hdDrawingEditor.cpp:273
+msgid "Delete figures?"
+msgstr "Smazat objekty?"
+
+#: hotdraw/main/hdDrawingEditor.cpp:272
+#, c-format
+msgid "Are you sure you wish to delete %d figures?"
+msgstr "Opravdu si přejete smazat %d objektů?"
+
 #: frm/frmEditGrid.cpp:126 frm/frmEditGrid.cpp:166
 msgid "Save the changed row."
 msgstr "Uložit změněný řádek."
@@ -2628,6 +2645,7 @@ msgstr "Zavřít toto okno."
 msgid "&Undo\tCtrl-Z"
 msgstr "&Zpět\tCtrl+Z"
 
+#. -------------------------
 #: frm/frmEditGrid.cpp:175 frm/frmQuery.cpp:402 frm/frmStatus.cpp:361
 #: frm/frmMain.cpp:458
 msgid "&Copy\tCtrl-C"
@@ -2785,6 +2803,12 @@ msgstr "&Nástroje"
 msgid "&Help"
 msgstr "&Nápověda"
 
+#. Kickstart wxAUI
+#. and reset the captions for the current language
+#. Reset the captions for the current language
+#. Kickstart wxAUI
+#. and reset the captions for the current language
+#. Reset the captions for the current language
 #: frm/frmEditGrid.cpp:242 frm/frmEditGrid.cpp:253 frm/frmEditGrid.cpp:386
 #: frm/frmQuery.cpp:752 frm/frmQuery.cpp:765 frm/frmQuery.cpp:1180
 #: frm/frmStatus.cpp:504 frm/frmStatus.cpp:511 frm/frmStatus.cpp:1555
@@ -2806,14 +2830,6 @@ msgstr "Datová mřížka"
 msgid "Scratch pad"
 msgstr "Poznámkový blok"
 
-#: frm/frmEditGrid.cpp:425
-#, c-format
-msgid "%i row"
-msgid_plural "%i rows"
-msgstr[0] "%i řádek"
-msgstr[1] "%i řádky"
-msgstr[2] "%i řádků"
-
 #: frm/frmEditGrid.cpp:433 frm/frmQuery.cpp:2217
 msgid "&Copy"
 msgstr "&Kopírovat"
@@ -2825,14 +2841,6 @@ msgstr "&Vložit"
 #: frm/frmEditGrid.cpp:756 frm/frmEditGrid.cpp:765
 msgid "Data from one cell copied to clipboard."
 msgstr "Do schránky byla zkopírována data z jedné buňky."
-
-#: frm/frmEditGrid.cpp:777
-#, c-format
-msgid "Data from %d row copied to clipboard."
-msgid_plural "Data from %d rows copied to clipboard."
-msgstr[0] "Do schránky byla zkopírována data z %d řádku."
-msgstr[1] "Do schránky byla zkopírována data ze %d řádků."
-msgstr[2] "Do schránky byla zkopírována data z %d řádků."
 
 #: frm/frmEditGrid.cpp:832 frm/frmEditGrid.cpp:1024 frm/frmEditGrid.cpp:1067
 #: frm/frmEditGrid.cpp:1130
@@ -2862,35 +2870,9 @@ msgstr "Opravdu si přejete smazat %d vybraných řádků?"
 msgid "Delete rows?"
 msgstr "Smazat řádky?"
 
-#: frm/frmEditGrid.cpp:1244
-#, c-format
-msgid ""
-"There was an error deleting the previous record.\n"
-"Are you sure you wish to delete the remaining %d row?"
-msgid_plural ""
-"There was an error deleting the previous record.\n"
-"Are you sure you wish to delete the remaining %d rows?"
-msgstr[0] ""
-"Při mazání předchozího záznamu se vyskytla chyba.\n"
-"Opravdu si přejete smazat %d zbývající řádek?"
-msgstr[1] ""
-"Při mazání předchozího záznamu se vyskytla chyba.\n"
-"Opravdu si přejete smazat %d zbývající řádky?"
-msgstr[2] ""
-"Při mazání předchozího záznamu se vyskytla chyba.\n"
-"Opravdu si přejete smazat %d zbývajících řádků?"
-
 #: frm/frmEditGrid.cpp:1246
 msgid "Delete more records ?"
 msgstr "Mazat další záznamy?"
-
-#: frm/frmEditGrid.cpp:1257 frm/frmEditGrid.cpp:1500 frm/frmQuery.cpp:3771
-#, c-format
-msgid "%d row."
-msgid_plural "%d rows."
-msgstr[0] "%d řádek"
-msgstr[1] "%d řádky"
-msgstr[2] "%d řádků"
 
 #: frm/frmEditGrid.cpp:1395
 msgid "The row limit must be an integer number or 'No limit'"
@@ -2948,25 +2930,9 @@ msgstr "Prohlížet data ze zvoleného objektu s použitím filtru"
 msgid "View Filtered Rows\tCtrl-F"
 msgstr "Zobrazit filtrované řádky\tCtrl-F"
 
-#: frm/frmEditGrid.cpp:3397
-#, c-format
-msgid "View Top %i Row"
-msgid_plural "View Top %i Rows"
-msgstr[0] "Zobrazit pouze první řádek"
-msgstr[1] "Zobrazit první %i řádky"
-msgstr[2] "Zobrazit prvních %i řádků"
-
 #: frm/frmEditGrid.cpp:3397 frm/frmEditGrid.cpp:3399
 msgid "View a limited number of rows in the selected object."
 msgstr "Prohlížet omezený počet řádků ve vybraném objektu."
-
-#: frm/frmEditGrid.cpp:3399
-#, c-format
-msgid "View Last %i Row"
-msgid_plural "View Last %i Rows"
-msgstr[0] "Zobrazit poslední %i řádek"
-msgstr[1] "Zobrazit poslední %i řádky"
-msgstr[2] "Zobrazit posledních %i řádků"
 
 #: frm/frmHint.cpp:153
 msgid "Enabling autovacuum recommended"
@@ -3650,18 +3616,25 @@ msgstr "Režim transakce"
 msgid "<new connection>"
 msgstr "<nové připojení>"
 
+#. Label
 #: frm/frmQuery.cpp:673 frm/frmQuery.cpp:678
 msgid "Previous queries"
 msgstr "Předchozí dotazy"
 
+#. Delete Current button
 #: frm/frmQuery.cpp:683
 msgid "Delete"
 msgstr "Smazat"
 
+#. Delete All button
 #: frm/frmQuery.cpp:688
 msgid "Delete All"
 msgstr "Smazat vše"
 
+#. Inform to GQB that the tree of table haven't filled.
+#. Are we already updating the SQL query - event recursion protection.
+#. Timer used to avoid a bug when close outputPane
+#. Setup SQL editor notebook NBP_SQLEDTR
 #: frm/frmQuery.cpp:735
 msgid "SQL Editor"
 msgstr "Editor SQL"
@@ -3682,6 +3655,8 @@ msgstr "Výklad"
 msgid "Messages"
 msgstr "Zprávy"
 
+#. hist->SetInsertionPointEnd();
+#. outputPane->Get
 #: frm/frmQuery.cpp:742 frm/frmQuery.cpp:1569
 msgid "History"
 msgstr "Historie"
@@ -3708,7 +3683,11 @@ msgid ""
 "\n"
 "In order to take the effect of AUTOCOMMIT mode, please complete the "
 "transaction by executing COMMIT, or ROLLBACK statement."
-msgstr "Aktuální transakce stále probíhá.\n\nAby se projevil režim AUTOCOMMIT, dokončete prosím transakci provedením příkazu COMMIT nebo ROLLBACK."
+msgstr ""
+"Aktuální transakce stále probíhá.\n"
+"\n"
+"Aby se projevil režim AUTOCOMMIT, dokončete prosím transakci provedením "
+"příkazu COMMIT nebo ROLLBACK."
 
 #: frm/frmQuery.cpp:1224
 msgid "Warning - Transaction in progress"
@@ -3722,6 +3701,7 @@ msgstr "Soubory s evidencí (*.log)|*.log|Všechny soubory (*.*)|*.*"
 msgid "Log files (*.log)|*.log|All files (*)|*"
 msgstr "Soubory s evidencí (*.log)|*.log|Všechny soubory (*)|*"
 
+#. Menu
 #: frm/frmQuery.cpp:1632 frm/frmQuery.cpp:1633 frm/frmQuery.cpp:1634
 #: frm/frmQuery.cpp:1635
 msgid "Generate SQL from Graphical Query Builder Model"
@@ -3846,14 +3826,6 @@ msgstr "Nebyla vygenerována žádná šablona."
 msgid "Ln %d, Col %d, Ch %d"
 msgstr "Řá %d, Sl %d, Zn %d"
 
-#: frm/frmQuery.cpp:2438
-#, c-format
-msgid "%d char"
-msgid_plural "%d chars"
-msgstr[0] "%d znak"
-msgstr[1] "%d znaky"
-msgstr[2] "%d znaků"
-
 #: frm/frmQuery.cpp:2501 frm/frmQuery.cpp:2504
 msgid "Open query file"
 msgstr "Otevřít soubor s dotazem"
@@ -3873,18 +3845,6 @@ msgstr ""
 #, c-format
 msgid "%i@"
 msgstr ""
-
-#: frm/frmQuery.cpp:2539 frm/frmQuery.cpp:2567 frm/frmQuery.cpp:2776
-#: utils/log/Storage.cpp:218
-msgid ""
-"Query text incomplete.\n"
-"Query contained characters that could not be converted to the local "
-"charset.\n"
-"Please correct the data or try using UTF8 instead."
-msgstr ""
-"Text dotazu je neúplný.\n"
-"Dotaz obsahuje znaky, které nelze převést do národní znakové sady.\n"
-"Proveďte prosím opravu nebo zkuste místo toho použít UTF8."
 
 #: frm/frmQuery.cpp:2599
 msgid ""
@@ -3910,11 +3870,13 @@ msgstr "Mac"
 msgid "Save query file as"
 msgstr "Uložení dotazu do souboru"
 
+#. lastFilename,
 #: frm/frmQuery.cpp:2742 frm/frmBackupServer.cpp:134
 #: frm/frmBackupGlobals.cpp:151 frm/frmBackup.cpp:312
 msgid "Query files (*.sql)|*.sql|All files (*.*)|*.*"
 msgstr "Soubory s SQL (*.sql)|*.sql|Všechny soubory (*.*)|*.*"
 
+#. lastFilename,
 #: frm/frmQuery.cpp:2745 frm/frmBackupServer.cpp:136
 #: frm/frmBackupGlobals.cpp:153 frm/frmBackup.cpp:314
 msgid "Query files (*.sql)|*.sql|All files (*)|*"
@@ -3969,6 +3931,7 @@ msgstr "Souběžné spuštění pgScriptů není prozatím podporováno."
 msgid "pgScript is running."
 msgstr "pgScript běží."
 
+#. History
 #: frm/frmQuery.cpp:3195
 msgid "-- Executing pgScript\n"
 msgstr "-- Spouští se pgScript\n"
@@ -4008,7 +3971,9 @@ msgstr "v pořádku"
 msgid ""
 "Query returned successfully: one row with OID %ld inserted, %s execution "
 "time."
-msgstr "Dotaz byl úspěšně proveden: byl vložen jeden řádek s OID %ld, doba provádění %s."
+msgstr ""
+"Dotaz byl úspěšně proveden: byl vložen jeden řádek s OID %ld, doba provádění "
+"%s."
 
 #: frm/frmQuery.cpp:3654
 #, c-format
@@ -4018,7 +3983,8 @@ msgstr "Vložen jeden řádek s OID %ld."
 #: frm/frmQuery.cpp:3663
 #, c-format
 msgid "Query returned successfully: one row affected, %s execution time."
-msgstr "Dotaz byl úspěšně proveden: byl ovlivněn jeden řádek, doba provádění %s."
+msgstr ""
+"Dotaz byl úspěšně proveden: byl ovlivněn jeden řádek, doba provádění %s."
 
 #: frm/frmQuery.cpp:3665
 msgid "One row affected."
@@ -4027,7 +3993,8 @@ msgstr "Ovlivněn jeden řádek."
 #: frm/frmQuery.cpp:3673
 #, c-format
 msgid "Query returned successfully: %d rows affected, %s execution time."
-msgstr "Dotaz byl úspěšně proveden: bylo ovlivněno %d řádků, doba provádění %s."
+msgstr ""
+"Dotaz byl úspěšně proveden: bylo ovlivněno %d řádků, doba provádění %s."
 
 #: frm/frmQuery.cpp:3678
 #, c-format
@@ -4055,6 +4022,7 @@ msgstr "Připojení k databázi %s bylo ztraceno."
 msgid "Connection reset."
 msgstr "Připojení vynulováno."
 
+#. msg.Printf("В установленном соединении %s, нет подходящих БД.",browser->GetItemText(lastdb->GetServer()->GetId()).BeforeFirst('(').Trim());
 #: frm/frmQuery.cpp:3712 frm/frmOptions.cpp:607 frm/frmOptions.cpp:617
 #: frm/frmOptions.cpp:627 frm/frmOptions.cpp:637 frm/frmOptions.cpp:646
 #: frm/frmOptions.cpp:654 frm/frmOptions.cpp:662 frm/frmOptions.cpp:670
@@ -4079,42 +4047,10 @@ msgstr "Export dat byl přerušen."
 msgid "No data to export."
 msgstr "Nejsou k dispozici žádná data k exportování"
 
-#: frm/frmQuery.cpp:3797
-#, c-format
-msgid "%ld row retrieved."
-msgid_plural "%ld rows retrieved."
-msgstr[0] "Získán %ld řádek."
-msgstr[1] "Získány %ld řádky."
-msgstr[2] "Získáno %ld řádků."
-
-#: frm/frmQuery.cpp:3806
-#, c-format
-msgid "Retrieving data: %d row."
-msgid_plural "Retrieving data: %d rows."
-msgstr[0] "Získávají se data: %d řádek."
-msgstr[1] "Získávají se data: %d řádky."
-msgstr[2] "Získávají se data: %d řádků."
-
 #: frm/frmQuery.cpp:3820
 #, c-format
 msgid "Total query runtime: %s\n"
 msgstr "Celková doba běhu dotazu: %s\n"
-
-#: frm/frmQuery.cpp:3829
-#, c-format
-msgid "%d row retrieved."
-msgid_plural "%d rows retrieved."
-msgstr[0] "Získán %d řádek."
-msgstr[1] "Získány %d řádky."
-msgstr[2] "Získáno %d řádků."
-
-#: frm/frmQuery.cpp:3841
-#, c-format
-msgid "%ld row."
-msgid_plural "%ld rows."
-msgstr[0] "%ld řádek."
-msgstr[1] "%ld řádky."
-msgstr[2] "%ld řádků."
 
 #: frm/frmQuery.cpp:3929
 msgid "pgScript completed."
@@ -4125,7 +4061,9 @@ msgstr "pgScript dokončen."
 msgid ""
 "Total pgScript runtime: %s\n"
 "\n"
-msgstr "Celková doba běhu pgScript: %s\n\n"
+msgstr ""
+"Celková doba běhu pgScript: %s\n"
+"\n"
 
 #: frm/frmQuery.cpp:3980
 #, c-format
@@ -4146,14 +4084,6 @@ msgstr ""
 "\n"
 "Bylo přijato asynchronní oznámení „%s“ od procesu serveru s PID %d\n"
 "   Data: %s"
-
-#: frm/frmQuery.cpp:3997
-#, c-format
-msgid "%s (%d asynchronous notification received)."
-msgid_plural "%s (%d asynchronous notifications received)."
-msgstr[0] "%s (obdrženo %d asynchronní upozornění)"
-msgstr[1] "%s (obdrženy %d asynchronní upozornění)"
-msgstr[2] "%s (obdrženo %d asynchronních upozornění)"
 
 #: frm/frmQuery.cpp:4202
 msgid "Running formatting command..."
@@ -4208,7 +4138,9 @@ msgstr "Nelze odstranit poslední kartu SQL"
 msgid ""
 "The query on this SQL tab is still running.\n"
 "Wait for it to finish or cancel it before closing the tab."
-msgstr "Dotaz na této kartě SQL stále běží.\nPočkejte na jeho dokončení nebo jej před zavřením karty zrušte."
+msgstr ""
+"Dotaz na této kartě SQL stále běží.\n"
+"Počkejte na jeho dokončení nebo jej před zavřením karty zrušte."
 
 #: frm/frmQuery.cpp:4761
 #, c-format
@@ -4437,6 +4369,8 @@ msgstr "Tabelátor"
 msgid "Default"
 msgstr "Výchozí"
 
+#. Fill the treeview
+#. properties->AppendYesNoItem(_("Relocatable?"), GetIsRelocatable());
 #: frm/frmOptions.cpp:475 schema/pgUserMapping.cpp:133
 #: schema/pgForeignServer.cpp:158 schema/pgTextSearchDictionary.cpp:135
 #: schema/pgSubscription.cpp:124 schema/pgForeignTable.cpp:198
@@ -4556,6 +4490,7 @@ msgstr "nic"
 msgid "The colour specified is not valid."
 msgstr "Zadaná hodnota není platná barva."
 
+#. Append items to cbo
 #: frm/frmStatus.cpp:150 frm/frmStatus.cpp:180 frm/frmStatus.cpp:458
 msgid "Don't refresh"
 msgstr "Neaktualizovat"
@@ -4617,7 +4552,9 @@ msgstr "Povolit ukládání čekacích událostí do souboru sample.dat."
 msgid ""
 "Value parameter pg_wait_sampling.history_size = %ld greet 1000000  "
 "monitoring wait events disabled.\n"
-msgstr "Hodnota parametru pg_wait_sampling.history_size = %ld přesahuje 1000000,  sledování čekacích událostí je vypnuto.\n"
+msgstr ""
+"Hodnota parametru pg_wait_sampling.history_size = %ld přesahuje 1000000,  "
+"sledování čekacích událostí je vypnuto.\n"
 
 #: frm/frmStatus.cpp:366
 msgid "Refresh\tCtrl-R"
@@ -4796,6 +4733,8 @@ msgstr "Evidence"
 msgid "QueryState"
 msgstr "Stav dotazu"
 
+#. statusList->Bind(wxEVT_ERASE_BACKGROUND, &frmStatus::OnEraseBackground, this);
+#. statusList->SetOwnBackgroundColour();
 #: frm/frmStatus.cpp:826
 msgid "PID"
 msgstr "PID"
@@ -4897,7 +4836,9 @@ msgstr "Plán"
 msgid ""
 "Functions pg_read_binary_file(text,bigint,bigint,boolean), "
 "pg_stat_file(text,boolean),pg_ls_logdir()  permission denied."
-msgstr "Funkce pg_read_binary_file(text,bigint,bigint,boolean), pg_stat_file(text,boolean),pg_ls_logdir()  přístup odepřen."
+msgstr ""
+"Funkce pg_read_binary_file(text,bigint,bigint,boolean), "
+"pg_stat_file(text,boolean),pg_ls_logdir()  přístup odepřen."
 
 #: frm/frmStatus.cpp:1254
 msgid "Log entry"
@@ -4907,10 +4848,14 @@ msgstr "Záznam"
 msgid "Activity query long execute"
 msgstr "Dlouho běžící dotaz aktivity"
 
+#. msgerror = connection->GetLastError();
 #: frm/frmStatus.cpp:1916
 msgid "Refreshing status list."
 msgstr "Aktualizuje se seznam stavů."
 
+#. run_interval += wxString::Format(" %lld", (endtime-starttime));
+#. OnSelLockItem(ev);
+#. OnSelXactItem(ev);
 #: frm/frmStatus.cpp:2252 frm/frmStatus.cpp:2259 frm/frmStatus.cpp:2484
 #: frm/frmStatus.cpp:2565 frm/frmStatus.cpp:2725
 msgid "Done."
@@ -5415,7 +5360,14 @@ msgid ""
 "         - Wheel: Vertical scroll\n"
 "         - Wheel + SHIFT: Horizontal scroll\n"
 "         - Wheel + CTRL: Zoom in/out"
-msgstr "Podporované příkazy myši:\n         - Stisknuté levé tlačítko + označení oblasti: Obdélníkové přiblížení\n         - Stisknuté pravé tlačítko + pohyb: Posun (přesun)\n         - Kolečko: Svislé posouvání\n         - Kolečko + SHIFT: Vodorovné posouvání\n         - Kolečko + CTRL: Přiblížení/oddálení"
+msgstr ""
+"Podporované příkazy myši:\n"
+"         - Stisknuté levé tlačítko + označení oblasti: Obdélníkové "
+"přiblížení\n"
+"         - Stisknuté pravé tlačítko + pohyb: Posun (přesun)\n"
+"         - Kolečko: Svislé posouvání\n"
+"         - Kolečko + SHIFT: Vodorovné posouvání\n"
+"         - Kolečko + CTRL: Přiblížení/oddálení"
 
 #: frm/mathplot.cpp:1935
 msgid "wxMathPlot help"
@@ -5536,14 +5488,17 @@ msgstr "Nezdařilo se spuštění zásuvného modulu %s (%s)."
 msgid "Execute the last used plugin."
 msgstr "Spustit naposledy použitý zásuvný modul"
 
+#. NBP_PROPERTIES
 #: frm/frmMain.cpp:194 frm/events.cpp:500 schema/pgColumn.cpp:520
 msgid "Statistics"
 msgstr "Statistiky"
 
+#. NBP_STATISTICS
 #: frm/frmMain.cpp:195 frm/events.cpp:503
 msgid "Dependencies"
 msgstr "Závislosti"
 
+#. NBP_DEPENDENCIES
 #: frm/frmMain.cpp:196 frm/events.cpp:506
 msgid "Dependents"
 msgstr "Závisející"
@@ -5552,6 +5507,9 @@ msgstr "Závisející"
 msgid "Git"
 msgstr "Git"
 
+#. Kickstart wxAUI
+#. and reset the captions for the current language
+#. Reset the captions for the current language
 #: frm/frmMain.cpp:225 frm/frmMain.cpp:236 frm/events.cpp:1323
 msgid "Object browser"
 msgstr "Strom objektů"
@@ -5564,10 +5522,13 @@ msgstr "Informační panel"
 msgid "SQL pane"
 msgstr "Panel SQL"
 
+#. Work around a bug in the generic tree control in wxWidgets,
+#. Per http://trac.wxwidgets.org/ticket/10085
 #: frm/frmMain.cpp:254 frm/frmMain.cpp:258
 msgid "Server Groups"
 msgstr "Skupiny serverů"
 
+#. --------------------------
 #: frm/frmMain.cpp:398
 msgid "&Save Definition..."
 msgstr "&Uložit definici"
@@ -5604,6 +5565,9 @@ msgstr "Ukončit tento program."
 msgid "Slony Replication"
 msgstr "Replikace Slony"
 
+#. -------------------------
+#. --------------------------
+#. placeholder where "New objects" submenu will be inserted
 #: frm/frmMain.cpp:466
 msgid "New &Object"
 msgstr "Nový &objekt"
@@ -5620,6 +5584,7 @@ msgstr "&Server"
 msgid "Server menu commands."
 msgstr "Příkazy nabídky Server."
 
+#. placeholder where "Debugging" submenu will be inserted
 #: frm/frmMain.cpp:506
 msgid "&Debugging"
 msgstr "&Ladění"
@@ -5628,6 +5593,7 @@ msgstr "&Ladění"
 msgid "Debugging options for the selected item."
 msgstr "Volby ladění pro vybranou položku."
 
+#. placeholder where "Query Template" submenu will be inserted
 #: frm/frmMain.cpp:512
 msgid "Scripts"
 msgstr "Skripty"
@@ -5636,6 +5602,7 @@ msgstr "Skripty"
 msgid "Start Query Tool with scripted query."
 msgstr "Spustit dotazovací nástroj se skriptovaným dotazem."
 
+#. placeholder where "View data" submenu will be inserted
 #: frm/frmMain.cpp:526
 msgid "View &Data"
 msgstr "Prohlížet &data"
@@ -5644,6 +5611,7 @@ msgstr "Prohlížet &data"
 msgid "View data."
 msgstr "Prohlížet data."
 
+#. placeholder where "Reports" submenu will be inserted
 #: frm/frmMain.cpp:529
 msgid "&Reports"
 msgstr "&Výstupní sestavy"
@@ -5656,6 +5624,7 @@ msgstr "Vytvořit výstupní sestavu vybrané položky."
 msgid "Server Configuration"
 msgstr "Nastavení serveru"
 
+#. Changing the caption of the plugins menu also needs a similar change below
 #: frm/frmMain.cpp:613
 msgid "&Plugins"
 msgstr "&Zásuvné moduly"
@@ -5685,6 +5654,7 @@ msgstr ""
 msgid "Cannot refresh browser"
 msgstr "Nelze aktualizovat prohlížeč"
 
+#. Create a server object and connect it.
 #: frm/frmMain.cpp:1012
 #, c-format
 msgid "Reconnecting to database %s"
@@ -5699,6 +5669,7 @@ msgstr "Chcete se zkusit znovu připojit k serveru?"
 msgid "Connection to server %s lost."
 msgstr "Připojení k serveru %s bylo ztraceno."
 
+#. Create a server object and connect it.
 #: frm/frmMain.cpp:1065
 #, c-format
 msgid "Reconnecting to server %s (%s:%d)"
@@ -5708,6 +5679,7 @@ msgstr "Provádí se opakované připojení k serveru %s (%s:%d)"
 msgid "Create putty tunnel error."
 msgstr "Chyba při vytváření tunelu PuTTY."
 
+#. Create a server object and connect it.
 #: frm/frmMain.cpp:1195 schema/pgServer.cpp:1958
 #, c-format
 msgid "Connecting to server %s (%s:%d)"
@@ -5856,6 +5828,7 @@ msgstr "Zavření karty"
 msgid "Save &as..."
 msgstr "Uložit &jako…"
 
+#. File Menu
 #: frm/frmConfig.cpp:124
 msgid "Reload server"
 msgstr "Znovu načíst serverem"
@@ -5931,6 +5904,7 @@ msgstr "Nebylo zjištěno žádné nastavení, což se jeví býti podivným."
 msgid "Backend Configuration Hints"
 msgstr "Rady k nastavení serveru"
 
+#. fix translation problem
 #: frm/frmBackup.cpp:126
 msgid "$$ quoting"
 msgstr "Uvození znakem $$"
@@ -5970,41 +5944,6 @@ msgstr "Výstupní sestava AWR"
 #: frm/frmAwr.cpp:33
 msgid "Generate AWR report"
 msgstr "Vytvořit výstupní sestavu AWR"
-
-#: frm/frmExport.cpp:566
-#, c-format
-msgid ""
-"Data export incomplete.\n"
-"\n"
-"%d row contained characters that could not be converted to the local "
-"charset.\n"
-"\n"
-"Please correct the data or try using UTF8 instead."
-msgid_plural ""
-"Data export incomplete.\n"
-"\n"
-"%d rows contained characters that could not be converted to the local "
-"charset.\n"
-"\n"
-"Please correct the data or try using UTF8 instead."
-msgstr[0] ""
-"Export dat není kompletní.\n"
-"\n"
-"%d řádek obsahuje znaky, které nelze převést do národní znakové sady.\n"
-"\n"
-"Opravte prosím data nebo zkuste raději použít UTF8."
-msgstr[1] ""
-"Export dat není kompletní.\n"
-"\n"
-"%d řádky obsahují znaky, které nelze převést do národní znakové sady.\n"
-"\n"
-"Opravte prosím data nebo zkuste raději použít UTF8."
-msgstr[2] ""
-"Export dat není kompletní.\n"
-"\n"
-"%d řádků obsahuje znaky, které nelze převést do národní znakové sady.\n"
-"\n"
-"Opravte prosím data nebo zkuste raději použít UTF8."
 
 #: frm/frmExport.cpp:570
 msgid "Data export completed successfully."
@@ -6202,6 +6141,8 @@ msgstr "Nápověda"
 msgid "Display help"
 msgstr "Zobrazit nápovědu"
 
+#. Add view to notebook
+#. Add new diagram
 #: frm/frmDatabaseDesigner.cpp:197 frm/frmDatabaseDesigner.cpp:520
 #: frm/frmDatabaseDesigner.cpp:654
 msgid "unnamed"
@@ -6211,15 +6152,15 @@ msgstr "nepojmenovaný"
 msgid "Model Browser"
 msgstr "Prohlížeč modelů"
 
+#. Ask what to do with old model
 #: frm/frmDatabaseDesigner.cpp:332 frm/frmDatabaseDesigner.cpp:497
 #: frm/frmDatabaseDesigner.cpp:609
 msgid "Save model changes?"
 msgstr "Uložit změny v modelu?"
 
 #: frm/frmDatabaseDesigner.cpp:332 frm/frmDatabaseDesigner.cpp:497
-#: frm/frmDatabaseDesigner.cpp:609 ctl/ctlSQLGrid.cpp:927
-#: dd/ddmodel/ddDBReverseEnginering.cpp:2029
-#: dd/ddmodel/ddDBReverseEnginering.cpp:2077
+#: frm/frmDatabaseDesigner.cpp:609 dd/ddmodel/ddDBReverseEnginering.cpp:2029
+#: dd/ddmodel/ddDBReverseEnginering.cpp:2077 ctl/ctlSQLGrid.cpp:927
 msgid "Confirm"
 msgstr "Potvrzení"
 
@@ -6247,6 +6188,7 @@ msgstr "Varování ohledně přidání sloupce do tabulky bez diagramu"
 msgid "Please create a model diagram first"
 msgstr "Nejprve prosím vytvořte model diagramu"
 
+#. Open Model
 #: frm/frmDatabaseDesigner.cpp:623
 msgid "Open model"
 msgstr "Otevření modelu"
@@ -7174,7 +7116,11 @@ msgid ""
 "release of %s.\n"
 "\n"
 "%s may not function as expected."
-msgstr "Server, ke kterému se připojujete, není verzí podporovanou touto verzí aplikace %s.\n\n%s nemusí fungovat podle očekávání."
+msgstr ""
+"Server, ke kterému se připojujete, není verzí podporovanou touto verzí "
+"aplikace %s.\n"
+"\n"
+"%s nemusí fungovat podle očekávání."
 
 #: schema/pgServer.cpp:864
 #, c-format
@@ -7185,7 +7131,13 @@ msgid ""
 "%s may not function as expected.\n"
 "\n"
 "Supported server version is %s."
-msgstr "Server, ke kterému se připojujete, není verzí podporovanou touto verzí aplikace %s.\n\n%s nemusí fungovat podle očekávání.\n\nPodporovaná verze serveru je %s."
+msgstr ""
+"Server, ke kterému se připojujete, není verzí podporovanou touto verzí "
+"aplikace %s.\n"
+"\n"
+"%s nemusí fungovat podle očekávání.\n"
+"\n"
+"Podporovaná verze serveru je %s."
 
 #: schema/pgServer.cpp:871 schema/pgServer.cpp:884
 #, c-format
@@ -7209,6 +7161,7 @@ msgstr ""
 msgid "service %s"
 msgstr "služba %s"
 
+#. Display the Server properties
 #: schema/pgServer.cpp:1189
 msgid "Description"
 msgstr "Popis"
@@ -9019,7 +8972,9 @@ msgstr "Aktualizace odběru"
 msgid ""
 "Are you sure you wish to drop subscription \"%s\" including all objects that "
 "depend on it?"
-msgstr "Opravdu si přejete odstranit odběr „%s“ včetně všech objektů, které na něm závisí?"
+msgstr ""
+"Opravdu si přejete odstranit odběr „%s“ včetně všech objektů, které na něm "
+"závisí?"
 
 #: schema/pgSubscription.cpp:45
 #, c-format
@@ -9156,6 +9111,9 @@ msgstr " Získává se využití tabulkového prostoru"
 msgid "Location"
 msgstr "Umístění"
 
+#. Add the statistics view columns
+#. DisplayStatistics is not available for this object
+#. Add the statistics view columns
 #: schema/pgTablespace.cpp:229 schema/pgObject.cpp:1584
 #: schema/pgDatabase.cpp:352 schema/pgSequence.cpp:237 slony/slNode.cpp:182
 msgid "Statistic"
@@ -9307,7 +9265,9 @@ msgstr "Aktualizace publikace"
 msgid ""
 "Are you sure you wish to drop publication \"%s\" including all objects that "
 "depend on it?"
-msgstr "Opravdu si přejete odstranit publikaci „%s“ včetně všech objektů, které na ní závisí?"
+msgstr ""
+"Opravdu si přejete odstranit publikaci „%s“ včetně všech objektů, které na "
+"ní závisí?"
 
 #: schema/pgPublication.cpp:45
 #, c-format
@@ -12682,10 +12642,1257 @@ msgstr "Aktualizují se třídy operátorů"
 msgid "Operator classes list report"
 msgstr "Výstupní sestava se seznamem tříd operátorů"
 
+#: dd/ddmodel/ddDBReverseEnginering.cpp:175
+msgid "Schema not found"
+msgstr "Schéma nebylo nalezeno"
+
+#: dd/ddmodel/ddDBReverseEnginering.cpp:175
+#: dd/ddmodel/ddDBReverseEnginering.cpp:216
+msgid "getting table OID"
+msgstr "získávání OID tabulky"
+
+#: dd/ddmodel/ddDBReverseEnginering.cpp:216
+msgid "Table not found"
+msgstr "Tabulka nebyla nalezena"
+
+#: dd/ddmodel/ddDBReverseEnginering.cpp:665
+#: dd/ddmodel/ddDBReverseEnginering.cpp:679
+#: dd/ddmodel/ddDBReverseEnginering.cpp:1147
+#: dd/ddmodel/ddDBReverseEnginering.cpp:1161
+msgid "Error detecting kind of foreign key source: from Pk or from Uk"
+msgstr ""
+"Chyba při zjišťování typu zdroje cizího klíče: z primárního nebo unikátního "
+"klíče"
+
+#: dd/ddmodel/ddDBReverseEnginering.cpp:665
+#: dd/ddmodel/ddDBReverseEnginering.cpp:679
+#: dd/ddmodel/ddDBReverseEnginering.cpp:786
+#: dd/ddmodel/ddDBReverseEnginering.cpp:1147
+#: dd/ddmodel/ddDBReverseEnginering.cpp:1161
+#: dd/ddmodel/ddDBReverseEnginering.cpp:1262
+msgid "Error importing relationship"
+msgstr "Chyba při importu vztahu"
+
+#: dd/ddmodel/ddDBReverseEnginering.cpp:786
+#: dd/ddmodel/ddDBReverseEnginering.cpp:1262
+msgid "Error detecting kind of foreign key: null or not null"
+msgstr "Chyba při zjišťování typu cizího klíče: null nebo not null"
+
+#: dd/ddmodel/ddDBReverseEnginering.cpp:1333
+msgid "Error fk is repeated"
+msgstr "Chyba: cizí klíč je duplicitní"
+
+#: dd/ddmodel/ddDBReverseEnginering.cpp:1333
+msgid "Error comparing relationships"
+msgstr "Chyba při porovnávání vztahů"
+
+#. Add a message
+#: dd/ddmodel/ddDBReverseEnginering.cpp:1673
+msgid "Please, select a schema to use at import tables process:"
+msgstr "Vyberte prosím schéma, které se použije při procesu importu tabulek:"
+
+#: dd/ddmodel/ddDBReverseEnginering.cpp:1698
+msgid "Please, select a Schema to continue to next step."
+msgstr "Pro pokračování na další krok vyberte prosím schéma."
+
+#: dd/ddmodel/ddDBReverseEnginering.cpp:1698
+msgid "Select a Schema..."
+msgstr "Vyberte schéma..."
+
+#: dd/ddmodel/ddDBReverseEnginering.cpp:1806
+#: dd/ddmodel/ddGenerationWizard.cpp:152
+msgid "Table(s) from selected schema"
+msgstr "Tabulky z vybraného schématu"
+
+#: dd/ddmodel/ddDBReverseEnginering.cpp:1811
+msgid "Tables(s) to be imported"
+msgstr "Tabulky k importu"
+
+#: dd/ddmodel/ddDBReverseEnginering.cpp:1826
+#: dd/ddmodel/ddGenerationWizard.cpp:172
+msgid "Add the selected table(s)"
+msgstr "Přidat vybrané tabulky"
+
+#: dd/ddmodel/ddDBReverseEnginering.cpp:1828
+#: dd/ddmodel/ddGenerationWizard.cpp:174
+msgid "Add all tables"
+msgstr "Přidat všechny tabulky"
+
+#: dd/ddmodel/ddDBReverseEnginering.cpp:1830
+#: dd/ddmodel/ddGenerationWizard.cpp:176
+msgid "Remove the selected table(s)"
+msgstr "Odebrat vybrané tabulky"
+
+#: dd/ddmodel/ddDBReverseEnginering.cpp:1832
+#: dd/ddmodel/ddGenerationWizard.cpp:178
+msgid "Remove all tables"
+msgstr "Odebrat všechny tabulky"
+
+#: dd/ddmodel/ddDBReverseEnginering.cpp:1981
+msgid "Please, select at least a table to continue to next step."
+msgstr "Pro pokračování na další krok vyberte prosím alespoň jednu tabulku."
+
+#: dd/ddmodel/ddDBReverseEnginering.cpp:1981
+msgid "Select some Tables..."
+msgstr "Vyberte některé tabulky..."
+
+#: dd/ddmodel/ddDBReverseEnginering.cpp:1997
+#: dd/ddmodel/ddDBReverseEnginering.cpp:2002
+#: dd/ddmodel/ddDBReverseEnginering.cpp:2018
+msgid "Error when preparing to import table: "
+msgstr "Chyba při přípravě importu tabulky: "
+
+#: dd/ddmodel/ddDBReverseEnginering.cpp:1997
+msgid ""
+", this table have inherited columns and this feature is not supported at "
+"this moment.\n"
+"\n"
+msgstr ""
+", tato tabulka má zděděné sloupce a tato funkce není v tuto chvíli "
+"podporována.\n"
+"\n"
+
+#: dd/ddmodel/ddDBReverseEnginering.cpp:2002
+msgid ""
+", this table already exists in the model and updating table at a model is "
+"not supported at this moment.\n"
+"\n"
+msgstr ""
+", tato tabulka již v modelu existuje a aktualizace tabulky v modelu není v "
+"tuto chvíli podporována.\n"
+"\n"
+
+#: dd/ddmodel/ddDBReverseEnginering.cpp:2009
+msgid "Prepared to import table: "
+msgstr "Připraveno k importu tabulky: "
+
+#: dd/ddmodel/ddDBReverseEnginering.cpp:2009
+#: dd/ddmodel/ddDBReverseEnginering.cpp:2018
+msgid "\n"
+msgstr ""
+
+#. Reset tables after a warning
+#: dd/ddmodel/ddDBReverseEnginering.cpp:2029
+msgid ""
+"Returning to previous dialog will remove all selected tables, do you like to "
+"continue?"
+msgstr ""
+"Návrat na předchozí dialog odstraní všechny vybrané tabulky. Přejete si "
+"pokračovat?"
+
+#: dd/ddmodel/ddDBReverseEnginering.cpp:2077
+msgid ""
+"Returning to previous dialog will delete imported tables before adding it to "
+"the model?"
+msgstr ""
+"Návrat na předchozí dialog odstraní importované tabulky ještě před jejich "
+"přidáním do modelu?"
+
+#: dd/ddmodel/ddDrawingView.cpp:33
+msgid "Add new Table"
+msgstr "Přidat novou tabulku"
+
+#: dd/ddmodel/ddDrawingView.cpp:84
+msgid "Table exists already at this diagram"
+msgstr "Tabulka již v tomto diagramu existuje"
+
+#: dd/ddmodel/ddDrawingView.cpp:84
+msgid "Drag and drop warning"
+msgstr "Varování při přetahování"
+
+#: dd/ddmodel/ddModelBrowser.cpp:39 dd/ddmodel/ddModelBrowser.cpp:69
+msgid "Database Design"
+msgstr "Návrh databáze"
+
+#: dd/ddmodel/ddGenerationWizard.cpp:99 dd/ddmodel/ddGenerationWizard.cpp:556
+#: dd/ddmodel/ddGenerationWizard.cpp:594
+msgid "Create table"
+msgstr "Vytvořit tabulku"
+
+#: dd/ddmodel/ddGenerationWizard.cpp:100 dd/ddmodel/ddGenerationWizard.cpp:557
+#: dd/ddmodel/ddGenerationWizard.cpp:573
+msgid "Alter table"
+msgstr "Změnit tabulku"
+
+#: dd/ddmodel/ddGenerationWizard.cpp:100 dd/ddmodel/ddGenerationWizard.cpp:557
+msgid "Drop, then create"
+msgstr "Odstranit a poté vytvořit"
+
+#: dd/ddmodel/ddGenerationWizard.cpp:100 dd/ddmodel/ddGenerationWizard.cpp:557
+msgid "Create table [conflict]"
+msgstr "Vytvořit tabulku [konflikt]"
+
+#: dd/ddmodel/ddGenerationWizard.cpp:154
+#: dd/dditems/figures/xml/ddXmlStorage.cpp:1731
+#: dd/dditems/figures/xml/ddXmlStorage.cpp:1734
+#: dd/dditems/figures/xml/ddXmlStorage.cpp:1748
+#: dd/dditems/figures/xml/ddXmlStorage.cpp:1759
+#: dd/dditems/figures/xml/ddXmlStorage.cpp:1760
+#: dd/dditems/figures/xml/ddXmlStorage.cpp:1763
+#: dd/dditems/figures/xml/ddXmlStorage.cpp:1780
+#: dd/dditems/figures/xml/ddXmlStorage.cpp:1784
+#: dd/dditems/figures/xml/ddXmlStorage.cpp:1785
+#: dd/dditems/figures/xml/ddXmlStorage.cpp:1794
+#: dd/dditems/figures/xml/ddXmlStorage.cpp:1795
+#: dd/dditems/figures/xml/ddXmlStorage.cpp:1804
+#: dd/dditems/figures/xml/ddXmlStorage.cpp:1805
+#: dd/dditems/figures/xml/ddXmlStorage.cpp:1814
+#: dd/dditems/figures/xml/ddXmlStorage.cpp:1817
+#: dd/dditems/figures/xml/ddXmlStorage.cpp:1818
+msgid " "
+msgstr ""
+
+#: dd/ddmodel/ddGenerationWizard.cpp:157
+msgid "Tables(s) to be generated"
+msgstr "Tabulky ke generování"
+
+#: dd/ddmodel/ddGenerationWizard.cpp:369
+msgid "Please select at least one table to move to next step."
+msgstr "Pro přechod na další krok vyberte prosím alespoň jednu tabulku."
+
+#: dd/ddmodel/ddGenerationWizard.cpp:369
+msgid "No tables selected"
+msgstr "Nejsou vybrány žádné tabulky"
+
+#. Add a message
+#: dd/ddmodel/ddGenerationWizard.cpp:388
+msgid ""
+"Please select a schema to use as check target.\n"
+"\n"
+"This affects the choice between CREATE/ALTER table(s) matching for the DDL "
+"generated depending on whether or not the table exists in that schema."
+msgstr ""
+"Vyberte prosím schéma, které se použije jako cíl kontroly.\n"
+"\n"
+"Toto ovlivňuje volbu mezi CREATE/ALTER pro generované DDL tabulek v "
+"závislosti na tom, zda tabulka v daném schématu existuje, nebo ne."
+
+#: dd/ddmodel/ddGenerationWizard.cpp:396
+msgid "No schema"
+msgstr "Žádné schéma"
+
+#: dd/ddmodel/ddGenerationWizard.cpp:415
+msgid "Please select an item to move to next step."
+msgstr "Pro přechod na další krok vyberte prosím položku."
+
+#: dd/ddmodel/ddGenerationWizard.cpp:415
+msgid "No choice made"
+msgstr "Nebyla provedena žádná volba"
+
+#. Add a message
+#: dd/ddmodel/ddGenerationWizard.cpp:528
+msgid "Please check the choice for each table:"
+msgstr "Zkontrolujte prosím volbu pro každou tabulku:"
+
+#: dd/ddmodel/ddGenerationWizard.cpp:555
+msgid "Select an action"
+msgstr "Vyberte akci"
+
+#. shouldn't it be a WXASSERT?
+#: dd/ddmodel/ddGenerationWizard.cpp:580 dd/ddmodel/ddGenerationWizard.cpp:599
+#: dd/ddmodel/ddDatabaseDesign.cpp:153
+msgid "Metadata of table to be generated not found at database designer model"
+msgstr ""
+"Metadata tabulky určené ke generování nebyla nalezena v modelu návrháře "
+"databáze"
+
+#: dd/ddmodel/ddGenerationWizard.cpp:580 dd/ddmodel/ddDatabaseDesign.cpp:142
+#: dd/ddmodel/ddDatabaseDesign.cpp:153 dd/ddmodel/ddDatabaseDesign.cpp:243
+#: dd/ddmodel/ddDatabaseDesign.cpp:250
+msgid "Error at generation process"
+msgstr "Chyba v procesu generování"
+
+#: dd/ddmodel/ddGenerationWizard.cpp:599
+msgid "Error importing at generation process"
+msgstr "Chyba při importu v procesu generování"
+
+#. Reset tables after a warning
+#: dd/ddmodel/ddGenerationWizard.cpp:615
+msgid ""
+"Going back to \"Select schema\" page will reinitialize all selections.\n"
+"Do you want to continue?"
+msgstr ""
+"Návrat na stránku „Vybrat schéma“ způsobí opětovnou inicializaci všech "
+"výběrů.\n"
+"Přejete si pokračovat?"
+
+#: dd/ddmodel/ddGenerationWizard.cpp:615
+msgid "Going back?"
+msgstr "Vrátit se zpět?"
+
+#: dd/ddmodel/ddDrawingEditor.cpp:87
+#: dd/dditems/handles/ddRemoveTableButtonHandle.cpp:52
+msgid "Are you sure you wish to delete table "
+msgstr "Opravdu si přejete smazat tabulku "
+
+#: dd/ddmodel/ddDrawingEditor.cpp:87
+#: dd/dditems/handles/ddRemoveTableButtonHandle.cpp:52
+msgid "Delete table?"
+msgstr "Smazat tabulku?"
+
+#. Relationship can be delete only NOT REMOVED
+#: dd/ddmodel/ddDrawingEditor.cpp:95
+msgid "Are you sure you wish to delete relationship "
+msgstr "Opravdu si přejete smazat vztah "
+
+#: dd/ddmodel/ddDrawingEditor.cpp:95
+#: dd/dditems/figures/ddRelationshipFigure.cpp:454
+msgid "Delete relationship?"
+msgstr "Smazat vztah?"
+
+#: dd/ddmodel/ddDrawingEditor.cpp:114
+#, c-format
+msgid ""
+"Are you sure you wish to delete %d tables, removing from model related "
+"relationships?"
+msgstr ""
+"Opravdu si přejete smazat %d tabulek a odebrat z modelu související vztahy?"
+
+#: dd/ddmodel/ddDrawingEditor.cpp:115
+msgid "Delete tables?"
+msgstr "Smazat tabulky?"
+
+#: dd/ddmodel/ddDrawingEditor.cpp:165 dd/ddmodel/ddDrawingEditor.cpp:188
+#: dd/ddmodel/ddDrawingEditor.cpp:223
+msgid "Invalid figure kind found"
+msgstr "Nalezen neplatný typ objektu"
+
+#: dd/ddmodel/ddDrawingEditor.cpp:165
+msgid "Error while deleting tables"
+msgstr "Chyba při mazání tabulek"
+
+#: dd/ddmodel/ddDrawingEditor.cpp:188
+msgid "Error while deleting table"
+msgstr "Chyba při mazání tabulky"
+
+#: dd/ddmodel/ddDrawingEditor.cpp:223
+msgid "Error while deleting realtionships"
+msgstr "Chyba při mazání vztahů"
+
+#. shouldn't it be a WXASSERT?
+#: dd/ddmodel/ddDatabaseDesign.cpp:142
+msgid "Invalid number of arguments in call of function generate tables of list"
+msgstr ""
+"Neplatný počet argumentů při volání funkce pro generování seznamu tabulek"
+
+#: dd/ddmodel/ddDatabaseDesign.cpp:162 dd/ddmodel/ddDatabaseDesign.cpp:301
+#: dd/ddmodel/ddDatabaseDesign.cpp:404
+msgid "Generating Create sentence(s) for table(s) "
+msgstr "Generování příkazu(ů) CREATE pro tabulku(y) "
+
+#: dd/ddmodel/ddDatabaseDesign.cpp:185 dd/ddmodel/ddDatabaseDesign.cpp:320
+#: dd/ddmodel/ddDatabaseDesign.cpp:423
+msgid "Generating Pk sentence for table(s) "
+msgstr "Generování příkazu primárního klíče pro tabulku(y) "
+
+#: dd/ddmodel/ddDatabaseDesign.cpp:201 dd/ddmodel/ddDatabaseDesign.cpp:339
+#: dd/ddmodel/ddDatabaseDesign.cpp:442
+msgid "Generating Uk sentence(s) for table(s) "
+msgstr "Generování příkazu(ů) unikátního klíče pro tabulku(y) "
+
+#: dd/ddmodel/ddDatabaseDesign.cpp:217 dd/ddmodel/ddDatabaseDesign.cpp:358
+#: dd/ddmodel/ddDatabaseDesign.cpp:461
+msgid "Generating Fk sentence(s) for table(s) "
+msgstr "Generování příkazu(ů) cizího klíče pro tabulku(y) "
+
+#: dd/ddmodel/ddDatabaseDesign.cpp:243
+msgid "No connection found when building ALTER objects DDL."
+msgstr ""
+"Při sestavování DDL příkazů ALTER pro objekty nebylo nalezeno žádné "
+"připojení."
+
+#: dd/ddmodel/ddDatabaseDesign.cpp:250
+msgid "Schema defined when building ALTER TABLE DDL"
+msgstr "Schéma definováno při sestavování DDL příkazu ALTER TABLE"
+
+#: dd/ddmodel/ddDatabaseDesign.cpp:257
+msgid "Generating Alter table sentence(s) for table(s) "
+msgstr "Generování příkazu(ů) ALTER TABLE pro tabulku(y) "
+
+#: dd/ddmodel/ddDatabaseDesign.cpp:527 dd/ddmodel/ddDatabaseDesign.cpp:533
+msgid "Failed to write the model file!"
+msgstr "Zápis souboru modelu se nezdařil!"
+
+#: dd/ddmodel/ddDatabaseDesign.cpp:677
+#: dd/dditems/figures/xml/ddXmlStorage.cpp:752
+msgid "1.0"
+msgstr ""
+
+#: dd/dditems/utilities/ddSelectKindFksDialog.cpp:103
+#: dd/dditems/utilities/ddSelectKindFksDialog.cpp:116
+msgid "From Primary"
+msgstr "Z primárního klíče"
+
+#: dd/dditems/utilities/ddSelectKindFksDialog.cpp:110
+#: dd/dditems/figures/ddRelationshipFigure.cpp:256
+msgid "Unique Key: "
+msgstr "Unikátní klíč: "
+
+#: dd/dditems/utilities/ddSelectKindFksDialog.cpp:199
+#: dd/dditems/utilities/ddSelectKindFksDialog.cpp:219
+#: dd/dditems/utilities/ddSelectKindFksDialog.cpp:303
+msgid "Automatically Generated"
+msgstr "Automaticky vygenerováno"
+
+#: dd/dditems/figures/ddColumnKindIcon.cpp:62
+msgid "Unique key"
+msgstr "Unikátní klíč"
+
+#: dd/dditems/figures/ddColumnOptionIcon.cpp:49
+msgid "NULL"
+msgstr "NULL"
+
+#: dd/dditems/figures/ddColumnOptionIcon.cpp:52
+msgid "Not NULL"
+msgstr "Nesmí být prázdný"
+
+#: dd/dditems/figures/ddTableFigure.cpp:1178
+#, c-format
+msgid "Cannot build an ALTER TABLE statement for a non existing table (%s.%s)."
+msgstr "Nelze sestavit příkaz ALTER TABLE pro neexistující tabulku (%s.%s)."
+
+#: dd/dditems/figures/ddTableFigure.cpp:1179
+msgid "Error when trying to get table OID"
+msgstr "Chyba při pokusu o získání OID tabulky"
+
+#: dd/dditems/figures/ddTableFigure.cpp:1186
+#, c-format
+msgid "Cannot reverse engineering table %s.%s."
+msgstr "Nelze provést reverzní inženýrství tabulky %s.%s."
+
+#: dd/dditems/figures/ddTableFigure.cpp:1187
+msgid "Error when trying to get stub table"
+msgstr "Chyba při pokusu o získání zástupné tabulky"
+
+#: dd/dditems/figures/ddTableFigure.cpp:1442
+msgid "\" SET NOT NULL;"
+msgstr "\" SET NOT NULL;"
+
+#: dd/dditems/figures/ddTableFigure.cpp:1468
+#, c-format
+msgid ""
+"Some UNIQUE keys on table %s have no name.\n"
+"You should set a name for them, so that pgAdmin can check consistency with "
+"the already available database constraints."
+msgstr ""
+"Některé klíče UNIQUE na tabulce %s nemají název.\n"
+"Měli byste jim nastavit název, aby mohl pgAdmin zkontrolovat konzistenci se "
+"stávajícími omezeními databáze."
+
+#: dd/dditems/figures/ddTableFigure.cpp:1469
+#: dd/dditems/figures/ddTableFigure.cpp:1724
+msgid "Trying to build ALTER sentences"
+msgstr "Pokus o sestavení příkazů ALTER"
+
+#: dd/dditems/figures/ddTableFigure.cpp:1723
+#, c-format
+msgid ""
+"Some foreign keys keys on table %s have no name.\n"
+"You should set a name for them, so that pgAdmin can check consistency with "
+"the already available database constraints."
+msgstr ""
+"Některé cizí klíče na tabulce %s nemají název.\n"
+"Měli byste jim nastavit název, aby mohl pgAdmin zkontrolovat konzistenci se "
+"stávajícími omezeními databáze."
+
+#. <!DOCTYPE MODEL ...pgRelationModel.dtd> but add all dtd to doc instead url
+#: dd/dditems/figures/xml/ddXmlStorage.cpp:60
+#: dd/dditems/figures/xml/ddXmlStorage.cpp:705
+msgid "MODEL"
+msgstr ""
+
+#: dd/dditems/figures/xml/ddXmlStorage.cpp:61
+#: dd/dditems/figures/xml/ddXmlStorage.cpp:62
+msgid "pgrm"
+msgstr ""
+
+#: dd/dditems/figures/xml/ddXmlStorage.cpp:91
+msgid "Error saving model: not source model have been set"
+msgstr "Chyba při ukládání modelu: nebyl nastaven zdrojový model"
+
+#: dd/dditems/figures/xml/ddXmlStorage.cpp:123
+msgid "Fatal Error at libxml for figure persistency"
+msgstr "Závažná chyba knihovny libxml při ukládání obrazců"
+
+#: dd/dditems/figures/xml/ddXmlStorage.cpp:548
+#: dd/dditems/figures/xml/ddXmlStorage.cpp:710
+msgid "TABLE"
+msgstr ""
+
+#: dd/dditems/figures/xml/ddXmlStorage.cpp:552
+#: dd/dditems/figures/xml/ddXmlStorage.cpp:794
+#: dd/dditems/figures/xml/ddXmlStorage.cpp:1685
+msgid "TableID"
+msgstr ""
+
+#: dd/dditems/figures/xml/ddXmlStorage.cpp:568
+#: dd/dditems/figures/xml/ddXmlStorage.cpp:815
+#: dd/dditems/figures/xml/ddXmlStorage.cpp:849
+#: dd/dditems/figures/xml/ddXmlStorage.cpp:1323
+#: dd/dditems/figures/xml/ddXmlStorage.cpp:1359
+#: dd/dditems/figures/xml/ddXmlStorage.cpp:1367
+msgid "POINTS"
+msgstr ""
+
+#: dd/dditems/figures/xml/ddXmlStorage.cpp:586
+#: dd/dditems/figures/xml/ddXmlStorage.cpp:846
+#: dd/dditems/figures/xml/ddXmlStorage.cpp:1355
+msgid "POINT"
+msgstr ""
+
+#. go to /NAME
+#. go to ALIAS or /TITLE
+#: dd/dditems/figures/xml/ddXmlStorage.cpp:602
+#: dd/dditems/figures/xml/ddXmlStorage.cpp:871
+msgid "ALIAS"
+msgstr ""
+
+#: dd/dditems/figures/xml/ddXmlStorage.cpp:624
+#: dd/dditems/figures/xml/ddXmlStorage.cpp:650
+msgid "Model is not following embedded DTD definition, check it.\n"
+msgstr "Model neodpovídá vloženému DTD schématu, zkontrolujte jej.\n"
+
+#: dd/dditems/figures/xml/ddXmlStorage.cpp:656
+msgid "Failed to load document from disk"
+msgstr "Nepodařilo se načíst dokument z disku"
+
+#: dd/dditems/figures/xml/ddXmlStorage.cpp:701
+msgid "VERSION"
+msgstr ""
+
+#: dd/dditems/figures/xml/ddXmlStorage.cpp:715
+msgid "RELATIONSHIP"
+msgstr ""
+
+#: dd/dditems/figures/xml/ddXmlStorage.cpp:721
+msgid "DIAGRAMS"
+msgstr ""
+
+#: dd/dditems/figures/xml/ddXmlStorage.cpp:741
+msgid "VERIXLU"
+msgstr ""
+
+#: dd/dditems/figures/xml/ddXmlStorage.cpp:754
+msgid "Invalid version of XML file for pgAdmin database designer found"
+msgstr "Nalezena neplatná verze souboru XML pro návrhář databází pgAdmin"
+
+#: dd/dditems/figures/xml/ddXmlStorage.cpp:754
+msgid "Invalid XML"
+msgstr "Neplatný XML"
+
+#: dd/dditems/figures/xml/ddXmlStorage.cpp:889
+msgid "UKNAMES"
+msgstr ""
+
+#: dd/dditems/figures/xml/ddXmlStorage.cpp:904
+msgid "UKNAME"
+msgstr ""
+
+#. go to PKNAME Value or PKNAME node?
+#: dd/dditems/figures/xml/ddXmlStorage.cpp:911
+#: dd/dditems/figures/xml/ddXmlStorage.cpp:914
+msgid "PKNAME"
+msgstr ""
+
+#: dd/dditems/figures/xml/ddXmlStorage.cpp:1054
+msgid "Table initial metadata info not found"
+msgstr "Počáteční metadata tabulky nebyla nalezena"
+
+#. CHANGE 300,300 for right value when displaybox metadata will be added
+#. COLUMNS node have COLUMN children?
+#: dd/dditems/figures/xml/ddXmlStorage.cpp:1061
+msgid "COLUMNS"
+msgstr ""
+
+#. go to COLUMN
+#: dd/dditems/figures/xml/ddXmlStorage.cpp:1100
+msgid "COLUMN"
+msgstr ""
+
+#: dd/dditems/figures/xml/ddXmlStorage.cpp:1157
+#: dd/dditems/figures/xml/ddXmlStorage.cpp:1219
+#: dd/dditems/figures/xml/ddXmlStorage.cpp:1444
+#: dd/dditems/figures/xml/ddXmlStorage.cpp:1458
+#: dd/dditems/figures/xml/ddXmlStorage.cpp:1472
+#: dd/dditems/figures/xml/ddXmlStorage.cpp:1486
+#: dd/dditems/figures/xml/ddXmlStorage.cpp:1500
+#: dd/dditems/figures/xml/ddXmlStorage.cpp:1556
+msgid "T"
+msgstr ""
+
+#: dd/dditems/figures/xml/ddXmlStorage.cpp:1179
+msgid "PRECISION"
+msgstr ""
+
+#: dd/dditems/figures/xml/ddXmlStorage.cpp:1197
+msgid "SCALE"
+msgstr ""
+
+#: dd/dditems/figures/xml/ddXmlStorage.cpp:1264
+msgid "SourceTableID"
+msgstr ""
+
+#: dd/dditems/figures/xml/ddXmlStorage.cpp:1278
+msgid "DestTableID"
+msgstr ""
+
+#. go to POINTSRELATION
+#: dd/dditems/figures/xml/ddXmlStorage.cpp:1307
+#: dd/dditems/figures/xml/ddXmlStorage.cpp:1370
+msgid "POINTSRELATION"
+msgstr ""
+
+#: dd/dditems/figures/xml/ddXmlStorage.cpp:1393
+msgid "NAME"
+msgstr ""
+
+#. --> RELATIONITEMS
+#. <!ELEMENT RELATIONITEMS (RELATIONITEM*)>
+#. go to RELATIONITEMS
+#: dd/dditems/figures/xml/ddXmlStorage.cpp:1513
+msgid "RELATIONITEMS"
+msgstr ""
+
+#: dd/dditems/figures/xml/ddXmlStorage.cpp:1524
+msgid "RELATIONITEM"
+msgstr ""
+
+#: dd/dditems/figures/xml/ddXmlStorage.cpp:1600
+msgid "INITIALALIASNAME"
+msgstr ""
+
+#. <!ELEMENT DIAGRAM (NAME, TABLEREF*)>
+#. go to DIAGRAM
+#: dd/dditems/figures/xml/ddXmlStorage.cpp:1642
+#: dd/dditems/figures/xml/ddXmlStorage.cpp:1716
+msgid "DIAGRAM"
+msgstr ""
+
+#: dd/dditems/figures/xml/ddXmlStorage.cpp:1670
+#: dd/dditems/figures/xml/ddXmlStorage.cpp:1702
+msgid "TABLEREF"
+msgstr ""
+
+#: dd/dditems/figures/xml/ddXmlStorage.cpp:1727
+msgid "<!ELEMENT MODEL (VERSION,TABLE+,RELATIONSHIP*,DIAGRAMS)>"
+msgstr ""
+
+#: dd/dditems/figures/xml/ddXmlStorage.cpp:1728
+msgid "<!--Version Element-->"
+msgstr ""
+
+#: dd/dditems/figures/xml/ddXmlStorage.cpp:1729
+msgid "<!ELEMENT VERSION EMPTY>"
+msgstr ""
+
+#: dd/dditems/figures/xml/ddXmlStorage.cpp:1730
+msgid "<!ATTLIST VERSION VERIXLU CDATA #REQUIRED>"
+msgstr ""
+
+#: dd/dditems/figures/xml/ddXmlStorage.cpp:1732
+msgid "<!--Atribute Element-->"
+msgstr ""
+
+#: dd/dditems/figures/xml/ddXmlStorage.cpp:1733
+msgid "<!ELEMENT Attribute (#PCDATA)>"
+msgstr ""
+
+#: dd/dditems/figures/xml/ddXmlStorage.cpp:1735
+msgid "<!ATTLIST Attribute"
+msgstr ""
+
+#: dd/dditems/figures/xml/ddXmlStorage.cpp:1736
+#: dd/dditems/figures/xml/ddXmlStorage.cpp:1742
+msgid "\tName CDATA #REQUIRED"
+msgstr ""
+
+#: dd/dditems/figures/xml/ddXmlStorage.cpp:1737
+msgid "\tKind (normal | selected) #REQUIRED"
+msgstr ""
+
+#: dd/dditems/figures/xml/ddXmlStorage.cpp:1738
+#: dd/dditems/figures/xml/ddXmlStorage.cpp:1743
+msgid ">"
+msgstr ""
+
+#: dd/dditems/figures/xml/ddXmlStorage.cpp:1739
+msgid "<!--Rectangle Element-->"
+msgstr ""
+
+#: dd/dditems/figures/xml/ddXmlStorage.cpp:1740
+msgid "<!ELEMENT Rect (x,y,w,h)>"
+msgstr ""
+
+#: dd/dditems/figures/xml/ddXmlStorage.cpp:1741
+msgid "<!ATTLIST Name"
+msgstr ""
+
+#: dd/dditems/figures/xml/ddXmlStorage.cpp:1744
+msgid "<!ELEMENT \tx (#PCDATA)>"
+msgstr ""
+
+#: dd/dditems/figures/xml/ddXmlStorage.cpp:1745
+msgid "<!ELEMENT \ty (#PCDATA)>"
+msgstr ""
+
+#: dd/dditems/figures/xml/ddXmlStorage.cpp:1746
+msgid "<!ELEMENT \tw (#PCDATA)>"
+msgstr ""
+
+#: dd/dditems/figures/xml/ddXmlStorage.cpp:1747
+msgid "<!ELEMENT \th (#PCDATA)>"
+msgstr ""
+
+#: dd/dditems/figures/xml/ddXmlStorage.cpp:1749
+msgid "<!--Column Element-->"
+msgstr ""
+
+#: dd/dditems/figures/xml/ddXmlStorage.cpp:1750
+msgid ""
+"<!ELEMENT COLUMN "
+"(Attribute*,NAME,OPTION,UKINDEX,ISPK,COLUMNTYPE,PRECISION?,SCALE?,GENERATEFKNAME)>"
+msgstr ""
+
+#: dd/dditems/figures/xml/ddXmlStorage.cpp:1751
+msgid "<!ELEMENT NAME (#PCDATA)>"
+msgstr ""
+
+#: dd/dditems/figures/xml/ddXmlStorage.cpp:1752
+msgid "<!ELEMENT OPTION (#PCDATA)>"
+msgstr ""
+
+#: dd/dditems/figures/xml/ddXmlStorage.cpp:1753
+msgid "<!ELEMENT UKINDEX (#PCDATA)>"
+msgstr ""
+
+#: dd/dditems/figures/xml/ddXmlStorage.cpp:1754
+msgid "<!ELEMENT ISPK (#PCDATA)>"
+msgstr ""
+
+#: dd/dditems/figures/xml/ddXmlStorage.cpp:1755
+msgid "<!ELEMENT COLUMNTYPE (#PCDATA)>"
+msgstr ""
+
+#: dd/dditems/figures/xml/ddXmlStorage.cpp:1756
+msgid "<!ELEMENT PRECISION (#PCDATA)>"
+msgstr ""
+
+#: dd/dditems/figures/xml/ddXmlStorage.cpp:1757
+msgid "<!ELEMENT SCALE (#PCDATA)>"
+msgstr ""
+
+#: dd/dditems/figures/xml/ddXmlStorage.cpp:1758
+msgid "<!ELEMENT GENERATEFKNAME (#PCDATA)>"
+msgstr ""
+
+#: dd/dditems/figures/xml/ddXmlStorage.cpp:1761
+msgid "<!ELEMENT TITLE (NAME,ALIAS?)>"
+msgstr ""
+
+#: dd/dditems/figures/xml/ddXmlStorage.cpp:1762
+msgid "<!ELEMENT ALIAS (#PCDATA)>"
+msgstr ""
+
+#: dd/dditems/figures/xml/ddXmlStorage.cpp:1764
+msgid "<!-- Table Element -->"
+msgstr ""
+
+#: dd/dditems/figures/xml/ddXmlStorage.cpp:1765
+msgid ""
+"<!ELEMENT TABLE (Attribute*,POINTS,TITLE,UKNAMES?, PKNAME, BEGINDRAWCOLS, "
+"BEGINDRAWIDXS, MAXCOLINDEX, MINIDXINDEX, MAXIDXINDEX, COLSROWSSIZE,"
+msgstr ""
+
+#: dd/dditems/figures/xml/ddXmlStorage.cpp:1766
+msgid "COLSWINDOW,IDXSROWSSIZE, IDXSWINDOW, COLUMNS )>"
+msgstr ""
+
+#: dd/dditems/figures/xml/ddXmlStorage.cpp:1767
+msgid "<!ELEMENT COLUMNS (COLUMN*)>"
+msgstr ""
+
+#: dd/dditems/figures/xml/ddXmlStorage.cpp:1768
+msgid "<!ELEMENT UKNAMES (UKNAME+)>"
+msgstr ""
+
+#: dd/dditems/figures/xml/ddXmlStorage.cpp:1769
+msgid "<!ELEMENT UKNAME (#PCDATA)>"
+msgstr ""
+
+#: dd/dditems/figures/xml/ddXmlStorage.cpp:1770
+msgid "<!ELEMENT PKNAME (#PCDATA)>"
+msgstr ""
+
+#: dd/dditems/figures/xml/ddXmlStorage.cpp:1771
+msgid "<!ELEMENT BEGINDRAWCOLS (#PCDATA)>"
+msgstr ""
+
+#: dd/dditems/figures/xml/ddXmlStorage.cpp:1772
+msgid "<!ELEMENT BEGINDRAWIDXS (#PCDATA)>"
+msgstr ""
+
+#: dd/dditems/figures/xml/ddXmlStorage.cpp:1773
+msgid "<!ELEMENT MAXCOLINDEX (#PCDATA)>"
+msgstr ""
+
+#: dd/dditems/figures/xml/ddXmlStorage.cpp:1774
+msgid "<!ELEMENT MINIDXINDEX (#PCDATA)>"
+msgstr ""
+
+#: dd/dditems/figures/xml/ddXmlStorage.cpp:1775
+msgid "<!ELEMENT MAXIDXINDEX (#PCDATA)>"
+msgstr ""
+
+#: dd/dditems/figures/xml/ddXmlStorage.cpp:1776
+msgid "<!ELEMENT COLSROWSSIZE (#PCDATA)>"
+msgstr ""
+
+#: dd/dditems/figures/xml/ddXmlStorage.cpp:1777
+msgid "<!ELEMENT COLSWINDOW (#PCDATA)>"
+msgstr ""
+
+#: dd/dditems/figures/xml/ddXmlStorage.cpp:1778
+msgid "<!ELEMENT IDXSROWSSIZE (#PCDATA)>"
+msgstr ""
+
+#: dd/dditems/figures/xml/ddXmlStorage.cpp:1779
+msgid "<!ELEMENT IDXSWINDOW (#PCDATA)>"
+msgstr ""
+
+#: dd/dditems/figures/xml/ddXmlStorage.cpp:1781
+msgid "<!ATTLIST TABLE"
+msgstr ""
+
+#: dd/dditems/figures/xml/ddXmlStorage.cpp:1782
+msgid "\tTableID ID #REQUIRED"
+msgstr ""
+
+#: dd/dditems/figures/xml/ddXmlStorage.cpp:1783
+msgid "\t>"
+msgstr ""
+
+#: dd/dditems/figures/xml/ddXmlStorage.cpp:1786
+msgid "<!-- Relationship Element -->"
+msgstr ""
+
+#: dd/dditems/figures/xml/ddXmlStorage.cpp:1787
+msgid "<!ELEMENT RELATIONITEMS (RELATIONITEM*)>"
+msgstr ""
+
+#: dd/dditems/figures/xml/ddXmlStorage.cpp:1788
+msgid ""
+"<!ELEMENT RELATIONITEM (AUTOGENFK, FKCOLNAME,SOURCECOLNAME, INITIALCOLNAME, "
+"INITIALALIASNAME? )>"
+msgstr ""
+
+#: dd/dditems/figures/xml/ddXmlStorage.cpp:1789
+msgid "<!ELEMENT AUTOGENFK (#PCDATA)>"
+msgstr ""
+
+#: dd/dditems/figures/xml/ddXmlStorage.cpp:1790
+msgid "<!ELEMENT FKCOLNAME (#PCDATA)>"
+msgstr ""
+
+#: dd/dditems/figures/xml/ddXmlStorage.cpp:1791
+msgid "<!ELEMENT SOURCECOLNAME (#PCDATA)>"
+msgstr ""
+
+#: dd/dditems/figures/xml/ddXmlStorage.cpp:1792
+msgid "<!ELEMENT INITIALCOLNAME (#PCDATA)>"
+msgstr ""
+
+#: dd/dditems/figures/xml/ddXmlStorage.cpp:1793
+msgid "<!ELEMENT INITIALALIASNAME (#PCDATA)>"
+msgstr ""
+
+#: dd/dditems/figures/xml/ddXmlStorage.cpp:1796
+msgid "<!-- POINTSRELATION Element -->"
+msgstr ""
+
+#: dd/dditems/figures/xml/ddXmlStorage.cpp:1797
+msgid "<!ELEMENT POINTSRELATION (POINTS+)>"
+msgstr ""
+
+#: dd/dditems/figures/xml/ddXmlStorage.cpp:1798
+msgid "<!-- POINTS Element -->"
+msgstr ""
+
+#: dd/dditems/figures/xml/ddXmlStorage.cpp:1799
+msgid "<!ELEMENT POINTS (POINT*)>"
+msgstr ""
+
+#: dd/dditems/figures/xml/ddXmlStorage.cpp:1800
+msgid "<!-- POINT Element -->"
+msgstr ""
+
+#: dd/dditems/figures/xml/ddXmlStorage.cpp:1801
+msgid "<!ELEMENT POINT (X,Y)>"
+msgstr ""
+
+#: dd/dditems/figures/xml/ddXmlStorage.cpp:1802
+msgid "<!ELEMENT X (#PCDATA)>"
+msgstr ""
+
+#: dd/dditems/figures/xml/ddXmlStorage.cpp:1803
+msgid "<!ELEMENT Y (#PCDATA)>"
+msgstr ""
+
+#: dd/dditems/figures/xml/ddXmlStorage.cpp:1806
+msgid ""
+"<!ELEMENT RELATIONSHIP (Attribute*, POINTSRELATION, UKINDEX, NAME?, "
+"ONUPDATE, ONDELETE, MATCHSIMPLE, IDENTIFYING, ONETOMANY, MANDATORY, "
+"FKFROMPK, RELATIONITEMS)>"
+msgstr ""
+
+#: dd/dditems/figures/xml/ddXmlStorage.cpp:1807
+msgid "<!ELEMENT ONUPDATE (#PCDATA)>"
+msgstr ""
+
+#: dd/dditems/figures/xml/ddXmlStorage.cpp:1808
+msgid "<!ELEMENT ONDELETE (#PCDATA)>"
+msgstr ""
+
+#: dd/dditems/figures/xml/ddXmlStorage.cpp:1809
+msgid "<!ELEMENT MATCHSIMPLE (#PCDATA)>"
+msgstr ""
+
+#: dd/dditems/figures/xml/ddXmlStorage.cpp:1810
+msgid "<!ELEMENT IDENTIFYING (#PCDATA)>"
+msgstr ""
+
+#: dd/dditems/figures/xml/ddXmlStorage.cpp:1811
+msgid "<!ELEMENT ONETOMANY (#PCDATA)>"
+msgstr ""
+
+#: dd/dditems/figures/xml/ddXmlStorage.cpp:1812
+msgid "<!ELEMENT MANDATORY (#PCDATA)>"
+msgstr ""
+
+#: dd/dditems/figures/xml/ddXmlStorage.cpp:1813
+msgid "<!ELEMENT FKFROMPK (#PCDATA)>"
+msgstr ""
+
+#: dd/dditems/figures/xml/ddXmlStorage.cpp:1815
+msgid "<!ATTLIST RELATIONSHIP SourceTableID IDREF #REQUIRED >"
+msgstr ""
+
+#: dd/dditems/figures/xml/ddXmlStorage.cpp:1816
+msgid "<!ATTLIST RELATIONSHIP DestTableID IDREF #REQUIRED >"
+msgstr ""
+
+#: dd/dditems/figures/xml/ddXmlStorage.cpp:1819
+msgid "<!-- DIAGRAMS Element -->"
+msgstr ""
+
+#: dd/dditems/figures/xml/ddXmlStorage.cpp:1820
+msgid "<!ELEMENT DIAGRAMS (DIAGRAM*)>"
+msgstr ""
+
+#: dd/dditems/figures/xml/ddXmlStorage.cpp:1821
+msgid "<!-- DIAGRAM Element -->"
+msgstr ""
+
+#: dd/dditems/figures/xml/ddXmlStorage.cpp:1822
+msgid "<!ELEMENT DIAGRAM (NAME, TABLEREF*)>"
+msgstr ""
+
+#: dd/dditems/figures/xml/ddXmlStorage.cpp:1823
+msgid "<!-- TABLEREF Element -->"
+msgstr ""
+
+#: dd/dditems/figures/xml/ddXmlStorage.cpp:1824
+msgid "<!ELEMENT TABLEREF EMPTY>"
+msgstr ""
+
+#: dd/dditems/figures/xml/ddXmlStorage.cpp:1825
+msgid "<!ATTLIST TABLEREF TableID IDREF #REQUIRED >"
+msgstr ""
+
+#: dd/dditems/figures/ddColumnFigure.cpp:82
+#, c-format
+msgid ""
+"%s column has a non compatible data type (%s).\n"
+"%s will now have the default data type."
+msgstr ""
+"Sloupec %s má nekompatibilní datový typ (%s).\n"
+"Sloupec %s bude mít nyní výchozí datový typ."
+
+#: dd/dditems/figures/ddColumnFigure.cpp:491
+msgid "relation between table: "
+msgstr "vztah mezi tabulkou: "
+
+#: dd/dditems/figures/ddColumnFigure.cpp:491
+#: dd/dditems/figures/ddColumnFigure.cpp:500
+#: dd/dditems/figures/ddColumnFigure.cpp:509
+msgid " and table: "
+msgstr " a tabulkou: "
+
+#: dd/dditems/figures/ddColumnFigure.cpp:492
+msgid " is marked as identifying but user created foreign key column: "
+msgstr ""
+" je označen jako identifikující, ale uživatelem vytvořený sloupec cizího "
+"klíče: "
+
+#: dd/dditems/figures/ddColumnFigure.cpp:493
+msgid " isn't set as primary key \n"
+msgstr " není nastaven jako primární klíč \n"
+
+#: dd/dditems/figures/ddColumnFigure.cpp:500
+#: dd/dditems/figures/ddColumnFigure.cpp:509
+msgid "relation between table:"
+msgstr "vztah mezi tabulkou:"
+
+#: dd/dditems/figures/ddColumnFigure.cpp:501
+msgid "is marked as optional but user created foreign key column: "
+msgstr ""
+"je označen jako volitelný, ale uživatelem vytvořený sloupec cizího klíče: "
+
+#: dd/dditems/figures/ddColumnFigure.cpp:502
+msgid "is set as mandatory \n"
+msgstr "je nastaven jako povinný \n"
+
+#: dd/dditems/figures/ddColumnFigure.cpp:510
+msgid " is marked as mandatory but user created foreign key column: "
+msgstr ""
+" je označen jako povinný, ale uživatelem vytvořený sloupec cizího klíče: "
+
+#: dd/dditems/figures/ddColumnFigure.cpp:511
+msgid "is set as optional \n"
+msgstr "je nastaven jako volitelný \n"
+
+#: dd/dditems/figures/ddColumnFigure.cpp:519
+msgid "User created foreign key column: "
+msgstr "Uživatelem vytvořený sloupec cizího klíče: "
+
+#: dd/dditems/figures/ddColumnFigure.cpp:519
+msgid "have different datatype from source column of relationship: "
+msgstr "mají odlišný datový typ od zdrojového sloupce vztahu: "
+
+#: dd/dditems/figures/ddColumnFigure.cpp:520
+msgid " \n"
+msgstr ""
+
+#: dd/dditems/figures/ddTextTableItemFigure.cpp:243
+#: dd/dditems/figures/ddTextTableItemFigure.cpp:245
+msgid "Varchar size"
+msgstr "Velikost varchar"
+
+#: dd/dditems/figures/ddTextTableItemFigure.cpp:244
+msgid "Size for varchar datatype"
+msgstr "Velikost pro datový typ varchar"
+
+#: dd/dditems/figures/ddTextTableItemFigure.cpp:264
+msgid "datatype size"
+msgstr "velikost datového typu"
+
+#: dd/dditems/figures/ddTextTableItemFigure.cpp:265
+msgid "Size for datatype"
+msgstr "Velikost pro datový typ"
+
+#: dd/dditems/figures/ddTextTableItemFigure.cpp:266
+msgid "size"
+msgstr "velikost"
+
+#: dd/dditems/figures/ddTextTableItemFigure.cpp:354
+msgid "Add a column..."
+msgstr "Přidat sloupec..."
+
+#: dd/dditems/figures/ddTextTableItemFigure.cpp:355
+msgid "Delete the selected column..."
+msgstr "Smazat vybraný sloupec..."
+
+#: dd/dditems/figures/ddTextTableItemFigure.cpp:358
+msgid "Rename the selected column..."
+msgstr "Přejmenovat vybraný sloupec..."
+
+#: dd/dditems/figures/ddTextTableItemFigure.cpp:360
+msgid "Activate fk auto-naming..."
+msgstr "Aktivovat automatické pojmenování cizího klíče..."
+
+#: dd/dditems/figures/ddTextTableItemFigure.cpp:362
+msgid "Not NULL constraint"
+msgstr "Omezení NOT NULL"
+
+#: dd/dditems/figures/ddTextTableItemFigure.cpp:373
+msgid "Unique Key"
+msgstr "Unikátní klíč"
+
+#: dd/dditems/figures/ddTextTableItemFigure.cpp:378
+msgid "Column datatype"
+msgstr "Datový typ sloupce"
+
+#: dd/dditems/figures/ddTextTableItemFigure.cpp:381
+msgid "serial"
+msgstr "serial"
+
+#: dd/dditems/figures/ddTextTableItemFigure.cpp:383
+msgid "boolean"
+msgstr "boolean"
+
+#: dd/dditems/figures/ddTextTableItemFigure.cpp:385
+msgid "integer"
+msgstr "integer"
+
+#: dd/dditems/figures/ddTextTableItemFigure.cpp:387
+msgid "money"
+msgstr "money"
+
+#: dd/dditems/figures/ddTextTableItemFigure.cpp:389
+msgid "varchar(n)"
+msgstr "varchar(n)"
+
+#: dd/dditems/figures/ddTextTableItemFigure.cpp:391
+msgid "Choose another datatype..."
+msgstr "Zvolit jiný datový typ..."
+
+#: dd/dditems/figures/ddTextTableItemFigure.cpp:393
+msgid "Primary Key Constraint name..."
+msgstr "Název omezení primárního klíče..."
+
+#: dd/dditems/figures/ddTextTableItemFigure.cpp:394
+msgid "Unique Key Constraint name..."
+msgstr "Název omezení unikátního klíče..."
+
+#: dd/dditems/figures/ddTextTableItemFigure.cpp:396
+msgid "Delete table..."
+msgstr "Smazat tabulku..."
+
+#: dd/dditems/figures/ddRelationshipFigure.cpp:241
+#: dd/dditems/figures/ddRelationshipFigure.cpp:274
+#: dd/dditems/figures/ddRelationshipFigure.cpp:287
+#: dd/dditems/figures/ddRelationshipFigure.cpp:311
+msgid "Select one"
+msgstr "Vyberte jeden"
+
+#: dd/dditems/figures/ddRelationshipFigure.cpp:243
+msgid "Foreign Key From"
+msgstr "Cizí klíč z"
+
+#. disable right now item = mnu.AppendCheckItem(MNU_FKEYCUSTOMMAPPING, _("Foreign Key Columns Custom Mapping"));
+#: dd/dditems/figures/ddRelationshipFigure.cpp:264
+msgid "Mandatory relationship kind"
+msgstr "Druh povinného vztahu"
+
+#: dd/dditems/figures/ddRelationshipFigure.cpp:266
+msgid "Identifying relationship"
+msgstr "Identifikující vztah"
+
+#: dd/dditems/figures/ddRelationshipFigure.cpp:269
+msgid "1:M"
+msgstr ""
+
+#: dd/dditems/figures/ddRelationshipFigure.cpp:272
+msgid "Foreign Key Constraint Name"
+msgstr "Název omezení cizího klíče"
+
+#: dd/dditems/figures/ddRelationshipFigure.cpp:275
+msgid "Type Simple"
+msgstr "Typ Jednoduchý"
+
+#: dd/dditems/figures/ddRelationshipFigure.cpp:277
+msgid "Type Full"
+msgstr "Typ Úplný"
+
+#: dd/dditems/figures/ddRelationshipFigure.cpp:279
+msgid "Match Type "
+msgstr "Typ shody "
+
+#: dd/dditems/figures/ddRelationshipFigure.cpp:281
+msgid "[ Simple ]"
+msgstr "[ Jednoduchý ]"
+
+#: dd/dditems/figures/ddRelationshipFigure.cpp:283
+msgid "[ Full ]"
+msgstr "[ Úplný ]"
+
+#: dd/dditems/figures/ddRelationshipFigure.cpp:286
+msgid "On Delete "
+msgstr "Při smazání "
+
+#: dd/dditems/figures/ddRelationshipFigure.cpp:288
+#: dd/dditems/figures/ddRelationshipFigure.cpp:312
+msgid "No Action"
+msgstr "Žádná akce"
+
+#: dd/dditems/figures/ddRelationshipFigure.cpp:291
+#: dd/dditems/figures/ddRelationshipFigure.cpp:315
+msgid "[ No Action ]"
+msgstr "[ Žádná akce ]"
+
+#: dd/dditems/figures/ddRelationshipFigure.cpp:292
+#: dd/dditems/figures/ddRelationshipFigure.cpp:316
+msgid "Restrict"
+msgstr "Omezit"
+
+#: dd/dditems/figures/ddRelationshipFigure.cpp:295
+#: dd/dditems/figures/ddRelationshipFigure.cpp:319
+msgid "[ Restrict ]"
+msgstr "[ Omezit ]"
+
+#: dd/dditems/figures/ddRelationshipFigure.cpp:296
+#: dd/dditems/figures/ddRelationshipFigure.cpp:320
+msgid "Cascade"
+msgstr "Kaskádově"
+
+#: dd/dditems/figures/ddRelationshipFigure.cpp:299
+#: dd/dditems/figures/ddRelationshipFigure.cpp:323
+msgid "[ Cascade ]"
+msgstr "[ Kaskádově ]"
+
+#: dd/dditems/figures/ddRelationshipFigure.cpp:300
+#: dd/dditems/figures/ddRelationshipFigure.cpp:324
+msgid "Set Null"
+msgstr "Nastavit NULL"
+
+#: dd/dditems/figures/ddRelationshipFigure.cpp:303
+#: dd/dditems/figures/ddRelationshipFigure.cpp:327
+msgid "[ Set Null ]"
+msgstr "[ Nastavit NULL ]"
+
+#: dd/dditems/figures/ddRelationshipFigure.cpp:304
+#: dd/dditems/figures/ddRelationshipFigure.cpp:328
+msgid "Set Default"
+msgstr "Nastavit výchozí hodnotu"
+
+#: dd/dditems/figures/ddRelationshipFigure.cpp:307
+#: dd/dditems/figures/ddRelationshipFigure.cpp:331
+msgid "[ Set Default ]"
+msgstr "[ Nastavit výchozí hodnotu ]"
+
+#: dd/dditems/figures/ddRelationshipFigure.cpp:310
+msgid "On Update "
+msgstr "Při aktualizaci "
+
+#: dd/dditems/figures/ddRelationshipFigure.cpp:335
+msgid "Delete Relationship..."
+msgstr "Smazat vztah..."
+
+#: dd/dditems/figures/ddRelationshipFigure.cpp:379
+msgid "_"
+msgstr ""
+
+#: dd/dditems/figures/ddRelationshipFigure.cpp:452
+#, c-format
+msgid "Are you sure you wish to delete relationship between tables %s and %s?"
+msgstr "Opravdu si přejete smazat vztah mezi tabulkami %s a %s?"
+
+#: dd/dditems/figures/ddRelationshipFigure.cpp:755
+msgid "\"."
+msgstr ""
+
+#: dd/dditems/figures/ddRelationshipFigure.cpp:821
+msgid ";\n"
+msgstr ""
+
+#. Put a dummy entry for invalid function OID to the cache. This is
+#. displayed at least for inline code blocks, as we currently have no way
+#. to fetch the source for those
 #: debugger/dbgModel.cpp:56 debugger/dbgEvents.cpp:485
 msgid "<source not available>"
 msgstr "<zdroj není dostupný>"
 
+#. and reset the captions for the current language
+#. Reset the captions for the current language
 #: debugger/frmDebugger.cpp:107 debugger/frmDebugger.cpp:897
 msgid "Toolbar"
 msgstr "Panel nástrojů"
@@ -12695,6 +13902,7 @@ msgstr "Panel nástrojů"
 msgid "Stack pane"
 msgstr "Panel zásobníku"
 
+#. And reset the captions
 #: debugger/frmDebugger.cpp:211 debugger/frmDebugger.cpp:228
 msgid "Source pane"
 msgstr "Panel zdrojového kódu"
@@ -12752,6 +13960,17 @@ msgstr "&Ukončit\tAlt+F4"
 msgid "Exit debugger window"
 msgstr "Opustit ladící okno"
 
+#.
+#. F10 is treated as a System menu under GTK. Hence, we will use Ctrl+F10 for
+#. "step over" operation under GTK, instead of F10.
+#.
+#. To make the behavior consitent, we will also use Ctrl+ for all the operations
+#. under GTK. (i.e. Step into, Step over, Continue, Toggle breakpoint, Stop
+#. debugging)
+#.
+#. Please follow this link for more details:
+#. http://trac.wxwidgets.org/ticket/2404
+#.
 #: debugger/frmDebugger.cpp:739
 msgid "Step into\tCtrl+F11"
 msgstr "Krokovat dovnitř\tCtrl+F11"
@@ -13011,6 +14230,8 @@ msgstr "Chyba při získávání zásobníku volání."
 msgid "Error fetching breakpoints."
 msgstr "Chyba při získávání bodů přerušení."
 
+#. We will wait for the last new break-point, which will be handled in
+#. dbgController::ResultNewBreakpointWait function
 #: debugger/dbgEvents.cpp:713 debugger/dbgEvents.cpp:732
 msgid "Could not create the breakpoint."
 msgstr "Nelze vytvořit bod přerušení."
@@ -13241,22 +14462,6 @@ msgstr "Dotaz vrátil více než 100 kopií řádků, zbytek se zahazuje…\n"
 #, c-format
 msgid "query inserted one row with oid %d.\n"
 msgstr "dotaz vložil jeden řádek s OID %d.\n"
-
-#: db/pgQueryThread.cpp:604
-#, c-format
-msgid "query result with %d row will be returned.\n"
-msgid_plural "query result with %d rows will be returned.\n"
-msgstr[0] "byl vrácen výsledek dotazu s %d řádkem.\n"
-msgstr[1] "byl vrácen výsledek dotazu se %d řádky.\n"
-msgstr[2] "byl vrácen výsledek dotazu s %d řádky.\n"
-
-#: db/pgQueryThread.cpp:612
-#, c-format
-msgid "query result with %d row discarded.\n"
-msgid_plural "query result with %d rows discarded.\n"
-msgstr[0] "byl zahozen výsledek dotazu s %d řádkem.\n"
-msgstr[1] "byl zahozen výsledek dotazu se %d řádky.\n"
-msgstr[2] "byl zahozen výsledek dotazu s %d řádky.\n"
 
 #: slony/slSubscription.cpp:57
 msgid "Retrieving details on Slony subscription"
@@ -13549,6 +14754,8 @@ msgstr "Aktualizují se cesty Slony"
 msgid "Slony paths list report"
 msgstr "Výstupní sestava se seznamem cest Slony"
 
+#. This is very ugly: starting with Slony-I 1.1, this must be called on the provider,
+#. not on the receiver.
 #: slony/dlgRepSubscription.cpp:78
 msgid "Receiver"
 msgstr "Příjemce"
@@ -14001,24 +15208,6 @@ msgstr "Výstupní sestava závisejících na uzlu Slony"
 msgid "Slony node dependents"
 msgstr "Závisející na uzlu Slony"
 
-#: slony/slNode.cpp:172
-#, c-format
-msgid ""
-"There are %ld event acknowledgement outstanding.\n"
-"Continue anyway?"
-msgid_plural ""
-"There are %ld event acknowledgements outstanding.\n"
-"Continue anyway?"
-msgstr[0] ""
-"Je zde %ld nevyřízená potvrzená událost.\n"
-"Přesto pokračovat?"
-msgstr[1] ""
-"Jsou zde %ld nevyřízené potvrzené události.\n"
-"Přesto pokračovat?"
-msgstr[2] ""
-"Je zde %ld nevyřízených potvrzených událostí.\n"
-"Přesto pokračovat?"
-
 #: slony/slNode.cpp:174
 msgid "Events pending"
 msgstr "Události čekající na vyřízení"
@@ -14260,6 +15449,38 @@ msgstr "Vybraný klastr neobsahuje novější software."
 msgid "Please select sequence to replicate."
 msgstr "Určete prosím sekvenci, která se má replikovat."
 
+#: pgscript/exceptions/pgsAssertException.cpp:27
+msgid "Assert Exception - "
+msgstr "Podmíněná chyba - "
+
+#: pgscript/exceptions/pgsArithmeticException.cpp:28
+#, c-format
+msgid "Arithmetic Exception - Operation impossible between '%s' and '%s'"
+msgstr "Výjimka při výpočtu - operaci nelze provést mezi „%s“ a „%s“"
+
+#: pgscript/exceptions/pgsInterruptException.cpp:27
+msgid "pgScript interrupted"
+msgstr "pgScript přerušen."
+
+#: pgscript/exceptions/pgsParameterException.cpp:33
+#, c-format
+msgid ""
+"Parameter Exception - Some parameters are invalid:\n"
+"%s"
+msgstr ""
+"Chyba parametru – některé parametry jsou neplatné:\n"
+"%s"
+
+#: pgscript/exceptions/pgsCastException.cpp:28
+#, c-format
+msgid "Cast Exception - Cannot convert '%s' to '%s'"
+msgstr "Chyba při přetypování - Nelze převést „%s“ na „%s“"
+
+#: pgscript/statements/pgsStmtList.cpp:87
+msgid "Unknown exception:\n"
+msgstr "Neznámá výjimka:\n"
+
+#. Set Default Title
 #: ctl/ctlColourPicker.cpp:25
 msgid "Choose the colour"
 msgstr "Volba barvy"
@@ -14289,14 +15510,6 @@ msgstr "Oddíly"
 #: ctl/ctlSQLBox.cpp:530
 msgid "Find text"
 msgstr "Hledat text"
-
-#: ctl/ctlSQLBox.cpp:561
-#, c-format
-msgid "%d replacement made."
-msgid_plural "%d replacements made."
-msgstr[0] "Provedena %d náhrada."
-msgstr[1] "Provedeny %d náhrady."
-msgstr[2] "Provedeno %d náhrad."
 
 #: ctl/ctlSQLBox.cpp:562
 msgid "Replace all"
@@ -14411,7 +15624,9 @@ msgstr "Role"
 
 #: ctl/ctlTree.cpp:597
 msgid "Currently handles only right and left arrow key, other keys are working"
-msgstr "V současné době jsou zvlášť zpracovávány pouze klávesy šipka vpravo a vlevo, ostatní klávesy fungují běžně"
+msgstr ""
+"V současné době jsou zvlášť zpracovávány pouze klávesy šipka vpravo a vlevo, "
+"ostatní klávesy fungují běžně"
 
 #: ctl/ctlDefaultSecurityPanel.cpp:40
 msgid "Default Privileges"
@@ -14495,1273 +15710,272 @@ msgstr "Název sloupce '%s' nebyl nalezen ve výsledcích dotazu."
 msgid "The column name  '%s' is not closed."
 msgstr "Název sloupce  '%s' není uzavřen."
 
-#: dd/ddmodel/ddDBReverseEnginering.cpp:175
-msgid "Schema not found"
-msgstr "Schéma nebylo nalezeno"
+#. wxCmdLineEntryDesc is one of the few places in 2.9 where wxT()s have any effect...they break the build
+#: pgAdmin3.cpp:364 pgAdmin3.cpp:384
+msgid "show the version, and quit"
+msgstr "zobrazit verzi a skončit"
 
-#: dd/ddmodel/ddDBReverseEnginering.cpp:175
-#: dd/ddmodel/ddDBReverseEnginering.cpp:216
-msgid "getting table OID"
-msgstr "získávání OID tabulky"
+#: pgAdmin3.cpp:365
+msgid "show this help message, and quit"
+msgstr "zobrazit tuto nápovědu a skončit"
 
-#: dd/ddmodel/ddDBReverseEnginering.cpp:216
-msgid "Table not found"
-msgstr "Tabulka nebyla nalezena"
+#: pgAdmin3.cpp:366 pgAdmin3.cpp:386
+msgid "auto-connect to specified server"
+msgstr "automaticky se spojit s určeným serverem"
 
-#: dd/ddmodel/ddDBReverseEnginering.cpp:665
-#: dd/ddmodel/ddDBReverseEnginering.cpp:679
-#: dd/ddmodel/ddDBReverseEnginering.cpp:1147
-#: dd/ddmodel/ddDBReverseEnginering.cpp:1161
-msgid "Error detecting kind of foreign key source: from Pk or from Uk"
-msgstr "Chyba při zjišťování typu zdroje cizího klíče: z primárního nebo unikátního klíče"
+#: pgAdmin3.cpp:367 pgAdmin3.cpp:387
+msgid "open server status window"
+msgstr "otevřít okno s informacemi o stavu serveru"
 
-#: dd/ddmodel/ddDBReverseEnginering.cpp:665
-#: dd/ddmodel/ddDBReverseEnginering.cpp:679
-#: dd/ddmodel/ddDBReverseEnginering.cpp:786
-#: dd/ddmodel/ddDBReverseEnginering.cpp:1147
-#: dd/ddmodel/ddDBReverseEnginering.cpp:1161
-#: dd/ddmodel/ddDBReverseEnginering.cpp:1262
-msgid "Error importing relationship"
-msgstr "Chyba při importu vztahu"
+#: pgAdmin3.cpp:368
+msgid "open server log window"
+msgstr "otevřít okno protokolu serveru"
 
-#: dd/ddmodel/ddDBReverseEnginering.cpp:786
-#: dd/ddmodel/ddDBReverseEnginering.cpp:1262
-msgid "Error detecting kind of foreign key: null or not null"
-msgstr "Chyba při zjišťování typu cizího klíče: null nebo not null"
+#: pgAdmin3.cpp:369 pgAdmin3.cpp:388
+msgid "connect server status window to database"
+msgstr "připojit se k serveru a zobrazit okno se stavem"
 
-#: dd/ddmodel/ddDBReverseEnginering.cpp:1333
-msgid "Error fk is repeated"
-msgstr "Chyba: cizí klíč je duplicitní"
+#: pgAdmin3.cpp:370 pgAdmin3.cpp:389
+msgid "open query tool"
+msgstr "otevřít dotazovací nástroj"
 
-#: dd/ddmodel/ddDBReverseEnginering.cpp:1333
-msgid "Error comparing relationships"
-msgstr "Chyba při porovnávání vztahů"
+#: pgAdmin3.cpp:371 pgAdmin3.cpp:390
+msgid "connect query tool to database"
+msgstr "připojit dotazovací nástroj k databázi"
 
-#: dd/ddmodel/ddDBReverseEnginering.cpp:1673
-msgid "Please, select a schema to use at import tables process:"
-msgstr "Vyberte prosím schéma, které se použije při procesu importu tabulek:"
+#: pgAdmin3.cpp:373 pgAdmin3.cpp:392
+msgid "open designer window"
+msgstr "otevřít návrhář databází"
 
-#: dd/ddmodel/ddDBReverseEnginering.cpp:1698
-msgid "Please, select a Schema to continue to next step."
-msgstr "Pro pokračování na další krok vyberte prosím schéma."
+#: pgAdmin3.cpp:374 pgAdmin3.cpp:393
+msgid "connect designer window to database"
+msgstr "připojit návrhář databází k databázi"
 
-#: dd/ddmodel/ddDBReverseEnginering.cpp:1698
-msgid "Select a Schema..."
-msgstr "Vyberte schéma..."
+#: pgAdmin3.cpp:376 pgAdmin3.cpp:395
+msgid "file to load into the query tool in -q or -qc mode"
+msgstr "soubor, který se má načíst při použití parametrů -q nebo -qc"
 
-#: dd/ddmodel/ddDBReverseEnginering.cpp:1806
-#: dd/ddmodel/ddGenerationWizard.cpp:152
-msgid "Table(s) from selected schema"
-msgstr "Tabulky z vybraného schématu"
+#: pgAdmin3.cpp:377 pgAdmin3.cpp:396
+msgid "edit main configuration file"
+msgstr "upravit hlavní soubor nastavení"
 
-#: dd/ddmodel/ddDBReverseEnginering.cpp:1811
-msgid "Tables(s) to be imported"
-msgstr "Tabulky k importu"
+#: pgAdmin3.cpp:378 pgAdmin3.cpp:397
+msgid "edit HBA configuration file"
+msgstr "upravit soubor nastavení HBA"
 
-#: dd/ddmodel/ddDBReverseEnginering.cpp:1826
-#: dd/ddmodel/ddGenerationWizard.cpp:172
-msgid "Add the selected table(s)"
-msgstr "Přidat vybrané tabulky"
+#: pgAdmin3.cpp:379 pgAdmin3.cpp:398
+msgid "edit pgpass configuration file"
+msgstr "upravit soubor nastavení pgpass"
 
-#: dd/ddmodel/ddDBReverseEnginering.cpp:1828
-#: dd/ddmodel/ddGenerationWizard.cpp:174
-msgid "Add all tables"
-msgstr "Přidat všechny tabulky"
+#: pgAdmin3.cpp:380 pgAdmin3.cpp:399
+msgid "edit configuration files in cluster directory"
+msgstr "upravit soubory nastavení ve složce klastru"
 
-#: dd/ddmodel/ddDBReverseEnginering.cpp:1830
-#: dd/ddmodel/ddGenerationWizard.cpp:176
-msgid "Remove the selected table(s)"
-msgstr "Odebrat vybrané tabulky"
+#: pgAdmin3.cpp:381 pgAdmin3.cpp:400
+msgid "dialog translation test mode"
+msgstr "režim testování překladu dialogů"
 
-#: dd/ddmodel/ddDBReverseEnginering.cpp:1832
-#: dd/ddmodel/ddGenerationWizard.cpp:178
-msgid "Remove all tables"
-msgstr "Odebrat všechny tabulky"
+#: pgAdmin3.cpp:382
+msgid "export servers configuration to file pgadmin3.ini"
+msgstr "exportovat konfiguraci serverů do souboru pgadmin3.ini"
 
-#: dd/ddmodel/ddDBReverseEnginering.cpp:1981
-msgid "Please, select at least a table to continue to next step."
-msgstr "Pro pokračování na další krok vyberte prosím alespoň jednu tabulku."
+#: pgAdmin3.cpp:385
+msgid "show the help message, and quit"
+msgstr "zobrazit zprávu s nápovědou a skončit"
 
-#: dd/ddmodel/ddDBReverseEnginering.cpp:1981
-msgid "Select some Tables..."
-msgstr "Vyberte některé tabulky..."
+#: pgAdmin3.cpp:590
+msgid " - Server Status"
+msgstr " – stav serveru"
 
-#: dd/ddmodel/ddDBReverseEnginering.cpp:1997
-#: dd/ddmodel/ddDBReverseEnginering.cpp:2002
-#: dd/ddmodel/ddDBReverseEnginering.cpp:2018
-msgid "Error when preparing to import table: "
-msgstr "Chyba při přípravě importu tabulky: "
+#: pgAdmin3.cpp:646 pgAdmin3.cpp:736 pgAdmin3.cpp:831
+msgid "Unknown SSL mode: "
+msgstr "Neznámý režim SSL: "
 
-#: dd/ddmodel/ddDBReverseEnginering.cpp:1997
-msgid ""
-", this table have inherited columns and this feature is not supported at "
-"this moment.\n"
-"\n"
-msgstr ", tato tabulka má zděděné sloupce a tato funkce není v tuto chvíli podporována.\n\n"
+#: pgAdmin3.cpp:651 pgAdmin3.cpp:741 pgAdmin3.cpp:836
+msgid "Unknown token in connection string: "
+msgstr "Neznámá položka v připojovacím řetězci: "
 
-#: dd/ddmodel/ddDBReverseEnginering.cpp:2002
-msgid ""
-", this table already exists in the model and updating table at a model is "
-"not supported at this moment.\n"
-"\n"
-msgstr ", tato tabulka již v modelu existuje a aktualizace tabulky v modelu není v tuto chvíli podporována.\n\n"
+#: pgAdmin3.cpp:680
+msgid "pgAdmin - Database designer"
+msgstr "pgAdmin – návrhář databází"
 
-#: dd/ddmodel/ddDBReverseEnginering.cpp:2009
-msgid "Prepared to import table: "
-msgstr "Připraveno k importu tabulky: "
+#. PgConn* newcon = srv->GetConnection()->Duplicate("Log conn");
+#: pgAdmin3.cpp:986
+msgid "Log - "
+msgstr "Protokol - "
 
-#: dd/ddmodel/ddDBReverseEnginering.cpp:2009
-#: dd/ddmodel/ddDBReverseEnginering.cpp:2018
-msgid "\n"
-msgstr ""
-
-#: dd/ddmodel/ddDBReverseEnginering.cpp:2029
-msgid ""
-"Returning to previous dialog will remove all selected tables, do you like to "
-"continue?"
-msgstr "Návrat na předchozí dialog odstraní všechny vybrané tabulky. Přejete si pokračovat?"
-
-#: dd/ddmodel/ddDBReverseEnginering.cpp:2077
-msgid ""
-"Returning to previous dialog will delete imported tables before adding it to "
-"the model?"
-msgstr "Návrat na předchozí dialog odstraní importované tabulky ještě před jejich přidáním do modelu?"
-
-#: dd/ddmodel/ddDrawingView.cpp:33
-msgid "Add new Table"
-msgstr "Přidat novou tabulku"
-
-#: dd/ddmodel/ddDrawingView.cpp:84
-msgid "Table exists already at this diagram"
-msgstr "Tabulka již v tomto diagramu existuje"
-
-#: dd/ddmodel/ddDrawingView.cpp:84
-msgid "Drag and drop warning"
-msgstr "Varování při přetahování"
-
-#: dd/ddmodel/ddModelBrowser.cpp:39 dd/ddmodel/ddModelBrowser.cpp:69
-msgid "Database Design"
-msgstr "Návrh databáze"
-
-#: dd/ddmodel/ddGenerationWizard.cpp:99 dd/ddmodel/ddGenerationWizard.cpp:556
-#: dd/ddmodel/ddGenerationWizard.cpp:594
-msgid "Create table"
-msgstr "Vytvořit tabulku"
-
-#: dd/ddmodel/ddGenerationWizard.cpp:100 dd/ddmodel/ddGenerationWizard.cpp:557
-#: dd/ddmodel/ddGenerationWizard.cpp:573
-msgid "Alter table"
-msgstr "Změnit tabulku"
-
-#: dd/ddmodel/ddGenerationWizard.cpp:100 dd/ddmodel/ddGenerationWizard.cpp:557
-msgid "Drop, then create"
-msgstr "Odstranit a poté vytvořit"
-
-#: dd/ddmodel/ddGenerationWizard.cpp:100 dd/ddmodel/ddGenerationWizard.cpp:557
-msgid "Create table [conflict]"
-msgstr "Vytvořit tabulku [konflikt]"
-
-#: dd/ddmodel/ddGenerationWizard.cpp:154
-#: dd/dditems/figures/xml/ddXmlStorage.cpp:1731
-#: dd/dditems/figures/xml/ddXmlStorage.cpp:1734
-#: dd/dditems/figures/xml/ddXmlStorage.cpp:1748
-#: dd/dditems/figures/xml/ddXmlStorage.cpp:1759
-#: dd/dditems/figures/xml/ddXmlStorage.cpp:1760
-#: dd/dditems/figures/xml/ddXmlStorage.cpp:1763
-#: dd/dditems/figures/xml/ddXmlStorage.cpp:1780
-#: dd/dditems/figures/xml/ddXmlStorage.cpp:1784
-#: dd/dditems/figures/xml/ddXmlStorage.cpp:1785
-#: dd/dditems/figures/xml/ddXmlStorage.cpp:1794
-#: dd/dditems/figures/xml/ddXmlStorage.cpp:1795
-#: dd/dditems/figures/xml/ddXmlStorage.cpp:1804
-#: dd/dditems/figures/xml/ddXmlStorage.cpp:1805
-#: dd/dditems/figures/xml/ddXmlStorage.cpp:1814
-#: dd/dditems/figures/xml/ddXmlStorage.cpp:1817
-#: dd/dditems/figures/xml/ddXmlStorage.cpp:1818
-msgid " "
-msgstr ""
-
-#: dd/ddmodel/ddGenerationWizard.cpp:157
-msgid "Tables(s) to be generated"
-msgstr "Tabulky ke generování"
-
-#: dd/ddmodel/ddGenerationWizard.cpp:369
-msgid "Please select at least one table to move to next step."
-msgstr "Pro přechod na další krok vyberte prosím alespoň jednu tabulku."
-
-#: dd/ddmodel/ddGenerationWizard.cpp:369
-msgid "No tables selected"
-msgstr "Nejsou vybrány žádné tabulky"
-
-#: dd/ddmodel/ddGenerationWizard.cpp:388
-msgid ""
-"Please select a schema to use as check target.\n"
-"\n"
-"This affects the choice between CREATE/ALTER table(s) matching for the DDL "
-"generated depending on whether or not the table exists in that schema."
-msgstr "Vyberte prosím schéma, které se použije jako cíl kontroly.\n\nToto ovlivňuje volbu mezi CREATE/ALTER pro generované DDL tabulek v závislosti na tom, zda tabulka v daném schématu existuje, nebo ne."
-
-#: dd/ddmodel/ddGenerationWizard.cpp:396
-msgid "No schema"
-msgstr "Žádné schéma"
-
-#: dd/ddmodel/ddGenerationWizard.cpp:415
-msgid "Please select an item to move to next step."
-msgstr "Pro přechod na další krok vyberte prosím položku."
-
-#: dd/ddmodel/ddGenerationWizard.cpp:415
-msgid "No choice made"
-msgstr "Nebyla provedena žádná volba"
-
-#: dd/ddmodel/ddGenerationWizard.cpp:528
-msgid "Please check the choice for each table:"
-msgstr "Zkontrolujte prosím volbu pro každou tabulku:"
-
-#: dd/ddmodel/ddGenerationWizard.cpp:555
-msgid "Select an action"
-msgstr "Vyberte akci"
-
-#: dd/ddmodel/ddGenerationWizard.cpp:580 dd/ddmodel/ddGenerationWizard.cpp:599
-#: dd/ddmodel/ddDatabaseDesign.cpp:153
-msgid "Metadata of table to be generated not found at database designer model"
-msgstr "Metadata tabulky určené ke generování nebyla nalezena v modelu návrháře databáze"
-
-#: dd/ddmodel/ddGenerationWizard.cpp:580 dd/ddmodel/ddDatabaseDesign.cpp:142
-#: dd/ddmodel/ddDatabaseDesign.cpp:153 dd/ddmodel/ddDatabaseDesign.cpp:243
-#: dd/ddmodel/ddDatabaseDesign.cpp:250
-msgid "Error at generation process"
-msgstr "Chyba v procesu generování"
-
-#: dd/ddmodel/ddGenerationWizard.cpp:599
-msgid "Error importing at generation process"
-msgstr "Chyba při importu v procesu generování"
-
-#: dd/ddmodel/ddGenerationWizard.cpp:615
-msgid ""
-"Going back to \"Select schema\" page will reinitialize all selections.\n"
-"Do you want to continue?"
-msgstr "Návrat na stránku „Vybrat schéma“ způsobí opětovnou inicializaci všech výběrů.\nPřejete si pokračovat?"
-
-#: dd/ddmodel/ddGenerationWizard.cpp:615
-msgid "Going back?"
-msgstr "Vrátit se zpět?"
-
-#: dd/ddmodel/ddDrawingEditor.cpp:87
-#: dd/dditems/handles/ddRemoveTableButtonHandle.cpp:52
-msgid "Are you sure you wish to delete table "
-msgstr "Opravdu si přejete smazat tabulku "
-
-#: dd/ddmodel/ddDrawingEditor.cpp:87
-#: dd/dditems/handles/ddRemoveTableButtonHandle.cpp:52
-msgid "Delete table?"
-msgstr "Smazat tabulku?"
-
-#: dd/ddmodel/ddDrawingEditor.cpp:95
-msgid "Are you sure you wish to delete relationship "
-msgstr "Opravdu si přejete smazat vztah "
-
-#: dd/ddmodel/ddDrawingEditor.cpp:95
-#: dd/dditems/figures/ddRelationshipFigure.cpp:454
-msgid "Delete relationship?"
-msgstr "Smazat vztah?"
-
-#: dd/ddmodel/ddDrawingEditor.cpp:114
 #, c-format
-msgid ""
-"Are you sure you wish to delete %d tables, removing from model related "
-"relationships?"
-msgstr "Opravdu si přejete smazat %d tabulek a odebrat z modelu související vztahy?"
+#~ msgid "Found %d item"
+#~ msgid_plural "Found %d items"
+#~ msgstr[0] "Nalezena %d položka"
+#~ msgstr[1] "Nalezeny %d položky"
+#~ msgstr[2] "Nalezeno %d položek"
 
-#: dd/ddmodel/ddDrawingEditor.cpp:115
-msgid "Delete tables?"
-msgstr "Smazat tabulky?"
-
-#: dd/ddmodel/ddDrawingEditor.cpp:165 dd/ddmodel/ddDrawingEditor.cpp:188
-#: dd/ddmodel/ddDrawingEditor.cpp:223
-msgid "Invalid figure kind found"
-msgstr "Nalezen neplatný typ objektu"
-
-#: dd/ddmodel/ddDrawingEditor.cpp:165
-msgid "Error while deleting tables"
-msgstr "Chyba při mazání tabulek"
-
-#: dd/ddmodel/ddDrawingEditor.cpp:188
-msgid "Error while deleting table"
-msgstr "Chyba při mazání tabulky"
-
-#: dd/ddmodel/ddDrawingEditor.cpp:223
-msgid "Error while deleting realtionships"
-msgstr "Chyba při mazání vztahů"
-
-#: dd/ddmodel/ddDatabaseDesign.cpp:142
-msgid "Invalid number of arguments in call of function generate tables of list"
-msgstr "Neplatný počet argumentů při volání funkce pro generování seznamu tabulek"
-
-#: dd/ddmodel/ddDatabaseDesign.cpp:162 dd/ddmodel/ddDatabaseDesign.cpp:301
-#: dd/ddmodel/ddDatabaseDesign.cpp:404
-msgid "Generating Create sentence(s) for table(s) "
-msgstr "Generování příkazu(ů) CREATE pro tabulku(y) "
-
-#: dd/ddmodel/ddDatabaseDesign.cpp:185 dd/ddmodel/ddDatabaseDesign.cpp:320
-#: dd/ddmodel/ddDatabaseDesign.cpp:423
-msgid "Generating Pk sentence for table(s) "
-msgstr "Generování příkazu primárního klíče pro tabulku(y) "
-
-#: dd/ddmodel/ddDatabaseDesign.cpp:201 dd/ddmodel/ddDatabaseDesign.cpp:339
-#: dd/ddmodel/ddDatabaseDesign.cpp:442
-msgid "Generating Uk sentence(s) for table(s) "
-msgstr "Generování příkazu(ů) unikátního klíče pro tabulku(y) "
-
-#: dd/ddmodel/ddDatabaseDesign.cpp:217 dd/ddmodel/ddDatabaseDesign.cpp:358
-#: dd/ddmodel/ddDatabaseDesign.cpp:461
-msgid "Generating Fk sentence(s) for table(s) "
-msgstr "Generování příkazu(ů) cizího klíče pro tabulku(y) "
-
-#: dd/ddmodel/ddDatabaseDesign.cpp:243
-msgid "No connection found when building ALTER objects DDL."
-msgstr "Při sestavování DDL příkazů ALTER pro objekty nebylo nalezeno žádné připojení."
-
-#: dd/ddmodel/ddDatabaseDesign.cpp:250
-msgid "Schema defined when building ALTER TABLE DDL"
-msgstr "Schéma definováno při sestavování DDL příkazu ALTER TABLE"
-
-#: dd/ddmodel/ddDatabaseDesign.cpp:257
-msgid "Generating Alter table sentence(s) for table(s) "
-msgstr "Generování příkazu(ů) ALTER TABLE pro tabulku(y) "
-
-#: dd/ddmodel/ddDatabaseDesign.cpp:527 dd/ddmodel/ddDatabaseDesign.cpp:533
-msgid "Failed to write the model file!"
-msgstr "Zápis souboru modelu se nezdařil!"
-
-#: dd/ddmodel/ddDatabaseDesign.cpp:677
-#: dd/dditems/figures/xml/ddXmlStorage.cpp:752
-msgid "1.0"
-msgstr ""
-
-#: hotdraw/utilities/hdRemoveDeleteDialog.cpp:117
-msgid ""
-"     Choose Remove from Diagram to remove only from current diagram.     "
-msgstr "     Zvolte Odebrat z diagramu pro odebrání pouze z aktuálního diagramu.     "
-
-#: hotdraw/utilities/hdRemoveDeleteDialog.cpp:118
-msgid "     Choose Remove from Model to delete permanently.     "
-msgstr "     Zvolte Odebrat z modelu pro trvalé smazání.     "
-
-#: hotdraw/main/hdDrawingView.cpp:457
-msgid "Sample Item"
-msgstr "Ukázková položka"
-
-#: hotdraw/main/hdDrawingView.cpp:466
-msgid "Sample menu item"
-msgstr "Ukázková položka nabídky"
-
-#: hotdraw/main/hdDrawingView.cpp:466
-msgid "Sample"
-msgstr "Ukázka"
-
-#: hotdraw/main/hdDrawingEditor.cpp:267
-msgid "Are you sure you wish to delete figure ?"
-msgstr "Opravdu si přejete smazat objekt ?"
-
-#: hotdraw/main/hdDrawingEditor.cpp:267 hotdraw/main/hdDrawingEditor.cpp:273
-msgid "Delete figures?"
-msgstr "Smazat objekty?"
-
-#: hotdraw/main/hdDrawingEditor.cpp:272
 #, c-format
-msgid "Are you sure you wish to delete %d figures?"
-msgstr "Opravdu si přejete smazat %d objektů?"
+#~ msgid "%i row"
+#~ msgid_plural "%i rows"
+#~ msgstr[0] "%i řádek"
+#~ msgstr[1] "%i řádky"
+#~ msgstr[2] "%i řádků"
 
-#: dd/dditems/utilities/ddSelectKindFksDialog.cpp:103
-#: dd/dditems/utilities/ddSelectKindFksDialog.cpp:116
-msgid "From Primary"
-msgstr "Z primárního klíče"
-
-#: dd/dditems/utilities/ddSelectKindFksDialog.cpp:110
-#: dd/dditems/figures/ddRelationshipFigure.cpp:256
-msgid "Unique Key: "
-msgstr "Unikátní klíč: "
-
-#: dd/dditems/utilities/ddSelectKindFksDialog.cpp:199
-#: dd/dditems/utilities/ddSelectKindFksDialog.cpp:219
-#: dd/dditems/utilities/ddSelectKindFksDialog.cpp:303
-msgid "Automatically Generated"
-msgstr "Automaticky vygenerováno"
-
-#: dd/dditems/figures/ddColumnKindIcon.cpp:62
-msgid "Unique key"
-msgstr "Unikátní klíč"
-
-#: dd/dditems/figures/ddColumnOptionIcon.cpp:49
-msgid "NULL"
-msgstr "NULL"
-
-#: dd/dditems/figures/ddColumnOptionIcon.cpp:52
-msgid "Not NULL"
-msgstr "Nesmí být prázdný"
-
-#: dd/dditems/figures/ddTableFigure.cpp:1178
 #, c-format
-msgid "Cannot build an ALTER TABLE statement for a non existing table (%s.%s)."
-msgstr "Nelze sestavit příkaz ALTER TABLE pro neexistující tabulku (%s.%s)."
+#~ msgid "Data from %d row copied to clipboard."
+#~ msgid_plural "Data from %d rows copied to clipboard."
+#~ msgstr[0] "Do schránky byla zkopírována data z %d řádku."
+#~ msgstr[1] "Do schránky byla zkopírována data ze %d řádků."
+#~ msgstr[2] "Do schránky byla zkopírována data z %d řádků."
 
-#: dd/dditems/figures/ddTableFigure.cpp:1179
-msgid "Error when trying to get table OID"
-msgstr "Chyba při pokusu o získání OID tabulky"
-
-#: dd/dditems/figures/ddTableFigure.cpp:1186
 #, c-format
-msgid "Cannot reverse engineering table %s.%s."
-msgstr "Nelze provést reverzní inženýrství tabulky %s.%s."
+#~ msgid ""
+#~ "There was an error deleting the previous record.\n"
+#~ "Are you sure you wish to delete the remaining %d row?"
+#~ msgid_plural ""
+#~ "There was an error deleting the previous record.\n"
+#~ "Are you sure you wish to delete the remaining %d rows?"
+#~ msgstr[0] ""
+#~ "Při mazání předchozího záznamu se vyskytla chyba.\n"
+#~ "Opravdu si přejete smazat %d zbývající řádek?"
+#~ msgstr[1] ""
+#~ "Při mazání předchozího záznamu se vyskytla chyba.\n"
+#~ "Opravdu si přejete smazat %d zbývající řádky?"
+#~ msgstr[2] ""
+#~ "Při mazání předchozího záznamu se vyskytla chyba.\n"
+#~ "Opravdu si přejete smazat %d zbývajících řádků?"
 
-#: dd/dditems/figures/ddTableFigure.cpp:1187
-msgid "Error when trying to get stub table"
-msgstr "Chyba při pokusu o získání zástupné tabulky"
-
-#: dd/dditems/figures/ddTableFigure.cpp:1442
-msgid "\" SET NOT NULL;"
-msgstr "\" SET NOT NULL;"
-
-#: dd/dditems/figures/ddTableFigure.cpp:1468
 #, c-format
-msgid ""
-"Some UNIQUE keys on table %s have no name.\n"
-"You should set a name for them, so that pgAdmin can check consistency with "
-"the already available database constraints."
-msgstr "Některé klíče UNIQUE na tabulce %s nemají název.\nMěli byste jim nastavit název, aby mohl pgAdmin zkontrolovat konzistenci se stávajícími omezeními databáze."
+#~ msgid "%d row."
+#~ msgid_plural "%d rows."
+#~ msgstr[0] "%d řádek"
+#~ msgstr[1] "%d řádky"
+#~ msgstr[2] "%d řádků"
 
-#: dd/dditems/figures/ddTableFigure.cpp:1469
-#: dd/dditems/figures/ddTableFigure.cpp:1724
-msgid "Trying to build ALTER sentences"
-msgstr "Pokus o sestavení příkazů ALTER"
-
-#: dd/dditems/figures/ddTableFigure.cpp:1723
 #, c-format
-msgid ""
-"Some foreign keys keys on table %s have no name.\n"
-"You should set a name for them, so that pgAdmin can check consistency with "
-"the already available database constraints."
-msgstr "Některé cizí klíče na tabulce %s nemají název.\nMěli byste jim nastavit název, aby mohl pgAdmin zkontrolovat konzistenci se stávajícími omezeními databáze."
+#~ msgid "View Top %i Row"
+#~ msgid_plural "View Top %i Rows"
+#~ msgstr[0] "Zobrazit pouze první řádek"
+#~ msgstr[1] "Zobrazit první %i řádky"
+#~ msgstr[2] "Zobrazit prvních %i řádků"
 
-#: dd/dditems/figures/ddColumnFigure.cpp:82
 #, c-format
-msgid ""
-"%s column has a non compatible data type (%s).\n"
-"%s will now have the default data type."
-msgstr "Sloupec %s má nekompatibilní datový typ (%s).\nSloupec %s bude mít nyní výchozí datový typ."
+#~ msgid "View Last %i Row"
+#~ msgid_plural "View Last %i Rows"
+#~ msgstr[0] "Zobrazit poslední %i řádek"
+#~ msgstr[1] "Zobrazit poslední %i řádky"
+#~ msgstr[2] "Zobrazit posledních %i řádků"
 
-#: dd/dditems/figures/ddColumnFigure.cpp:491
-msgid "relation between table: "
-msgstr "vztah mezi tabulkou: "
-
-#: dd/dditems/figures/ddColumnFigure.cpp:491
-#: dd/dditems/figures/ddColumnFigure.cpp:500
-#: dd/dditems/figures/ddColumnFigure.cpp:509
-msgid " and table: "
-msgstr " a tabulkou: "
-
-#: dd/dditems/figures/ddColumnFigure.cpp:492
-msgid " is marked as identifying but user created foreign key column: "
-msgstr " je označen jako identifikující, ale uživatelem vytvořený sloupec cizího klíče: "
-
-#: dd/dditems/figures/ddColumnFigure.cpp:493
-msgid " isn't set as primary key \n"
-msgstr " není nastaven jako primární klíč \n"
-
-#: dd/dditems/figures/ddColumnFigure.cpp:500
-#: dd/dditems/figures/ddColumnFigure.cpp:509
-msgid "relation between table:"
-msgstr "vztah mezi tabulkou:"
-
-#: dd/dditems/figures/ddColumnFigure.cpp:501
-msgid "is marked as optional but user created foreign key column: "
-msgstr "je označen jako volitelný, ale uživatelem vytvořený sloupec cizího klíče: "
-
-#: dd/dditems/figures/ddColumnFigure.cpp:502
-msgid "is set as mandatory \n"
-msgstr "je nastaven jako povinný \n"
-
-#: dd/dditems/figures/ddColumnFigure.cpp:510
-msgid " is marked as mandatory but user created foreign key column: "
-msgstr " je označen jako povinný, ale uživatelem vytvořený sloupec cizího klíče: "
-
-#: dd/dditems/figures/ddColumnFigure.cpp:511
-msgid "is set as optional \n"
-msgstr "je nastaven jako volitelný \n"
-
-#: dd/dditems/figures/ddColumnFigure.cpp:519
-msgid "User created foreign key column: "
-msgstr "Uživatelem vytvořený sloupec cizího klíče: "
-
-#: dd/dditems/figures/ddColumnFigure.cpp:519
-msgid "have different datatype from source column of relationship: "
-msgstr "mají odlišný datový typ od zdrojového sloupce vztahu: "
-
-#: dd/dditems/figures/ddColumnFigure.cpp:520
-msgid " \n"
-msgstr ""
-
-#: dd/dditems/figures/ddTextTableItemFigure.cpp:243
-#: dd/dditems/figures/ddTextTableItemFigure.cpp:245
-msgid "Varchar size"
-msgstr "Velikost varchar"
-
-#: dd/dditems/figures/ddTextTableItemFigure.cpp:244
-msgid "Size for varchar datatype"
-msgstr "Velikost pro datový typ varchar"
-
-#: dd/dditems/figures/ddTextTableItemFigure.cpp:264
-msgid "datatype size"
-msgstr "velikost datového typu"
-
-#: dd/dditems/figures/ddTextTableItemFigure.cpp:265
-msgid "Size for datatype"
-msgstr "Velikost pro datový typ"
-
-#: dd/dditems/figures/ddTextTableItemFigure.cpp:266
-msgid "size"
-msgstr "velikost"
-
-#: dd/dditems/figures/ddTextTableItemFigure.cpp:354
-msgid "Add a column..."
-msgstr "Přidat sloupec..."
-
-#: dd/dditems/figures/ddTextTableItemFigure.cpp:355
-msgid "Delete the selected column..."
-msgstr "Smazat vybraný sloupec..."
-
-#: dd/dditems/figures/ddTextTableItemFigure.cpp:358
-msgid "Rename the selected column..."
-msgstr "Přejmenovat vybraný sloupec..."
-
-#: dd/dditems/figures/ddTextTableItemFigure.cpp:360
-msgid "Activate fk auto-naming..."
-msgstr "Aktivovat automatické pojmenování cizího klíče..."
-
-#: dd/dditems/figures/ddTextTableItemFigure.cpp:362
-msgid "Not NULL constraint"
-msgstr "Omezení NOT NULL"
-
-#: dd/dditems/figures/ddTextTableItemFigure.cpp:373
-msgid "Unique Key"
-msgstr "Unikátní klíč"
-
-#: dd/dditems/figures/ddTextTableItemFigure.cpp:378
-msgid "Column datatype"
-msgstr "Datový typ sloupce"
-
-#: dd/dditems/figures/ddTextTableItemFigure.cpp:381
-msgid "serial"
-msgstr "serial"
-
-#: dd/dditems/figures/ddTextTableItemFigure.cpp:383
-msgid "boolean"
-msgstr "boolean"
-
-#: dd/dditems/figures/ddTextTableItemFigure.cpp:385
-msgid "integer"
-msgstr "integer"
-
-#: dd/dditems/figures/ddTextTableItemFigure.cpp:387
-msgid "money"
-msgstr "money"
-
-#: dd/dditems/figures/ddTextTableItemFigure.cpp:389
-msgid "varchar(n)"
-msgstr "varchar(n)"
-
-#: dd/dditems/figures/ddTextTableItemFigure.cpp:391
-msgid "Choose another datatype..."
-msgstr "Zvolit jiný datový typ..."
-
-#: dd/dditems/figures/ddTextTableItemFigure.cpp:393
-msgid "Primary Key Constraint name..."
-msgstr "Název omezení primárního klíče..."
-
-#: dd/dditems/figures/ddTextTableItemFigure.cpp:394
-msgid "Unique Key Constraint name..."
-msgstr "Název omezení unikátního klíče..."
-
-#: dd/dditems/figures/ddTextTableItemFigure.cpp:396
-msgid "Delete table..."
-msgstr "Smazat tabulku..."
-
-#: dd/dditems/figures/ddRelationshipFigure.cpp:241
-#: dd/dditems/figures/ddRelationshipFigure.cpp:274
-#: dd/dditems/figures/ddRelationshipFigure.cpp:287
-#: dd/dditems/figures/ddRelationshipFigure.cpp:311
-msgid "Select one"
-msgstr "Vyberte jeden"
-
-#: dd/dditems/figures/ddRelationshipFigure.cpp:243
-msgid "Foreign Key From"
-msgstr "Cizí klíč z"
-
-#: dd/dditems/figures/ddRelationshipFigure.cpp:264
-msgid "Mandatory relationship kind"
-msgstr "Druh povinného vztahu"
-
-#: dd/dditems/figures/ddRelationshipFigure.cpp:266
-msgid "Identifying relationship"
-msgstr "Identifikující vztah"
-
-#: dd/dditems/figures/ddRelationshipFigure.cpp:269
-msgid "1:M"
-msgstr ""
-
-#: dd/dditems/figures/ddRelationshipFigure.cpp:272
-msgid "Foreign Key Constraint Name"
-msgstr "Název omezení cizího klíče"
-
-#: dd/dditems/figures/ddRelationshipFigure.cpp:275
-msgid "Type Simple"
-msgstr "Typ Jednoduchý"
-
-#: dd/dditems/figures/ddRelationshipFigure.cpp:277
-msgid "Type Full"
-msgstr "Typ Úplný"
-
-#: dd/dditems/figures/ddRelationshipFigure.cpp:279
-msgid "Match Type "
-msgstr "Typ shody "
-
-#: dd/dditems/figures/ddRelationshipFigure.cpp:281
-msgid "[ Simple ]"
-msgstr "[ Jednoduchý ]"
-
-#: dd/dditems/figures/ddRelationshipFigure.cpp:283
-msgid "[ Full ]"
-msgstr "[ Úplný ]"
-
-#: dd/dditems/figures/ddRelationshipFigure.cpp:286
-msgid "On Delete "
-msgstr "Při smazání "
-
-#: dd/dditems/figures/ddRelationshipFigure.cpp:288
-#: dd/dditems/figures/ddRelationshipFigure.cpp:312
-msgid "No Action"
-msgstr "Žádná akce"
-
-#: dd/dditems/figures/ddRelationshipFigure.cpp:291
-#: dd/dditems/figures/ddRelationshipFigure.cpp:315
-msgid "[ No Action ]"
-msgstr "[ Žádná akce ]"
-
-#: dd/dditems/figures/ddRelationshipFigure.cpp:292
-#: dd/dditems/figures/ddRelationshipFigure.cpp:316
-msgid "Restrict"
-msgstr "Omezit"
-
-#: dd/dditems/figures/ddRelationshipFigure.cpp:295
-#: dd/dditems/figures/ddRelationshipFigure.cpp:319
-msgid "[ Restrict ]"
-msgstr "[ Omezit ]"
-
-#: dd/dditems/figures/ddRelationshipFigure.cpp:296
-#: dd/dditems/figures/ddRelationshipFigure.cpp:320
-msgid "Cascade"
-msgstr "Kaskádově"
-
-#: dd/dditems/figures/ddRelationshipFigure.cpp:299
-#: dd/dditems/figures/ddRelationshipFigure.cpp:323
-msgid "[ Cascade ]"
-msgstr "[ Kaskádově ]"
-
-#: dd/dditems/figures/ddRelationshipFigure.cpp:300
-#: dd/dditems/figures/ddRelationshipFigure.cpp:324
-msgid "Set Null"
-msgstr "Nastavit NULL"
-
-#: dd/dditems/figures/ddRelationshipFigure.cpp:303
-#: dd/dditems/figures/ddRelationshipFigure.cpp:327
-msgid "[ Set Null ]"
-msgstr "[ Nastavit NULL ]"
-
-#: dd/dditems/figures/ddRelationshipFigure.cpp:304
-#: dd/dditems/figures/ddRelationshipFigure.cpp:328
-msgid "Set Default"
-msgstr "Nastavit výchozí hodnotu"
-
-#: dd/dditems/figures/ddRelationshipFigure.cpp:307
-#: dd/dditems/figures/ddRelationshipFigure.cpp:331
-msgid "[ Set Default ]"
-msgstr "[ Nastavit výchozí hodnotu ]"
-
-#: dd/dditems/figures/ddRelationshipFigure.cpp:310
-msgid "On Update "
-msgstr "Při aktualizaci "
-
-#: dd/dditems/figures/ddRelationshipFigure.cpp:335
-msgid "Delete Relationship..."
-msgstr "Smazat vztah..."
-
-#: dd/dditems/figures/ddRelationshipFigure.cpp:379
-msgid "_"
-msgstr ""
-
-#: dd/dditems/figures/ddRelationshipFigure.cpp:452
 #, c-format
-msgid "Are you sure you wish to delete relationship between tables %s and %s?"
-msgstr "Opravdu si přejete smazat vztah mezi tabulkami %s a %s?"
+#~ msgid "%d char"
+#~ msgid_plural "%d chars"
+#~ msgstr[0] "%d znak"
+#~ msgstr[1] "%d znaky"
+#~ msgstr[2] "%d znaků"
 
-#: dd/dditems/figures/ddRelationshipFigure.cpp:755
-msgid "\"."
-msgstr ""
-
-#: dd/dditems/figures/ddRelationshipFigure.cpp:821
-msgid ";\n"
-msgstr ""
-
-#: dd/dditems/figures/xml/ddXmlStorage.cpp:60
-#: dd/dditems/figures/xml/ddXmlStorage.cpp:705
-msgid "MODEL"
-msgstr ""
-
-#: dd/dditems/figures/xml/ddXmlStorage.cpp:61
-#: dd/dditems/figures/xml/ddXmlStorage.cpp:62
-msgid "pgrm"
-msgstr ""
-
-#: dd/dditems/figures/xml/ddXmlStorage.cpp:91
-msgid "Error saving model: not source model have been set"
-msgstr "Chyba při ukládání modelu: nebyl nastaven zdrojový model"
-
-#: dd/dditems/figures/xml/ddXmlStorage.cpp:123
-msgid "Fatal Error at libxml for figure persistency"
-msgstr "Závažná chyba knihovny libxml při ukládání obrazců"
-
-#: dd/dditems/figures/xml/ddXmlStorage.cpp:548
-#: dd/dditems/figures/xml/ddXmlStorage.cpp:710
-msgid "TABLE"
-msgstr ""
-
-#: dd/dditems/figures/xml/ddXmlStorage.cpp:552
-#: dd/dditems/figures/xml/ddXmlStorage.cpp:794
-#: dd/dditems/figures/xml/ddXmlStorage.cpp:1685
-msgid "TableID"
-msgstr ""
-
-#: dd/dditems/figures/xml/ddXmlStorage.cpp:568
-#: dd/dditems/figures/xml/ddXmlStorage.cpp:815
-#: dd/dditems/figures/xml/ddXmlStorage.cpp:849
-#: dd/dditems/figures/xml/ddXmlStorage.cpp:1323
-#: dd/dditems/figures/xml/ddXmlStorage.cpp:1359
-#: dd/dditems/figures/xml/ddXmlStorage.cpp:1367
-msgid "POINTS"
-msgstr ""
-
-#: dd/dditems/figures/xml/ddXmlStorage.cpp:586
-#: dd/dditems/figures/xml/ddXmlStorage.cpp:846
-#: dd/dditems/figures/xml/ddXmlStorage.cpp:1355
-msgid "POINT"
-msgstr ""
-
-#: dd/dditems/figures/xml/ddXmlStorage.cpp:602
-#: dd/dditems/figures/xml/ddXmlStorage.cpp:871
-msgid "ALIAS"
-msgstr ""
-
-#: dd/dditems/figures/xml/ddXmlStorage.cpp:624
-#: dd/dditems/figures/xml/ddXmlStorage.cpp:650
-msgid "Model is not following embedded DTD definition, check it.\n"
-msgstr "Model neodpovídá vloženému DTD schématu, zkontrolujte jej.\n"
-
-#: dd/dditems/figures/xml/ddXmlStorage.cpp:656
-msgid "Failed to load document from disk"
-msgstr "Nepodařilo se načíst dokument z disku"
-
-#: dd/dditems/figures/xml/ddXmlStorage.cpp:701
-msgid "VERSION"
-msgstr ""
-
-#: dd/dditems/figures/xml/ddXmlStorage.cpp:715
-msgid "RELATIONSHIP"
-msgstr ""
-
-#: dd/dditems/figures/xml/ddXmlStorage.cpp:721
-msgid "DIAGRAMS"
-msgstr ""
-
-#: dd/dditems/figures/xml/ddXmlStorage.cpp:741
-msgid "VERIXLU"
-msgstr ""
-
-#: dd/dditems/figures/xml/ddXmlStorage.cpp:754
-msgid "Invalid version of XML file for pgAdmin database designer found"
-msgstr "Nalezena neplatná verze souboru XML pro návrhář databází pgAdmin"
-
-#: dd/dditems/figures/xml/ddXmlStorage.cpp:754
-msgid "Invalid XML"
-msgstr "Neplatný XML"
-
-#: dd/dditems/figures/xml/ddXmlStorage.cpp:889
-msgid "UKNAMES"
-msgstr ""
-
-#: dd/dditems/figures/xml/ddXmlStorage.cpp:904
-msgid "UKNAME"
-msgstr ""
-
-#: dd/dditems/figures/xml/ddXmlStorage.cpp:911
-#: dd/dditems/figures/xml/ddXmlStorage.cpp:914
-msgid "PKNAME"
-msgstr ""
-
-#: dd/dditems/figures/xml/ddXmlStorage.cpp:1054
-msgid "Table initial metadata info not found"
-msgstr "Počáteční metadata tabulky nebyla nalezena"
-
-#: dd/dditems/figures/xml/ddXmlStorage.cpp:1061
-msgid "COLUMNS"
-msgstr ""
-
-#: dd/dditems/figures/xml/ddXmlStorage.cpp:1100
-msgid "COLUMN"
-msgstr ""
-
-#: dd/dditems/figures/xml/ddXmlStorage.cpp:1157
-#: dd/dditems/figures/xml/ddXmlStorage.cpp:1219
-#: dd/dditems/figures/xml/ddXmlStorage.cpp:1444
-#: dd/dditems/figures/xml/ddXmlStorage.cpp:1458
-#: dd/dditems/figures/xml/ddXmlStorage.cpp:1472
-#: dd/dditems/figures/xml/ddXmlStorage.cpp:1486
-#: dd/dditems/figures/xml/ddXmlStorage.cpp:1500
-#: dd/dditems/figures/xml/ddXmlStorage.cpp:1556
-msgid "T"
-msgstr ""
-
-#: dd/dditems/figures/xml/ddXmlStorage.cpp:1179
-msgid "PRECISION"
-msgstr ""
-
-#: dd/dditems/figures/xml/ddXmlStorage.cpp:1197
-msgid "SCALE"
-msgstr ""
-
-#: dd/dditems/figures/xml/ddXmlStorage.cpp:1264
-msgid "SourceTableID"
-msgstr ""
-
-#: dd/dditems/figures/xml/ddXmlStorage.cpp:1278
-msgid "DestTableID"
-msgstr ""
-
-#: dd/dditems/figures/xml/ddXmlStorage.cpp:1307
-#: dd/dditems/figures/xml/ddXmlStorage.cpp:1370
-msgid "POINTSRELATION"
-msgstr ""
-
-#: dd/dditems/figures/xml/ddXmlStorage.cpp:1393
-msgid "NAME"
-msgstr ""
-
-#: dd/dditems/figures/xml/ddXmlStorage.cpp:1513
-msgid "RELATIONITEMS"
-msgstr ""
-
-#: dd/dditems/figures/xml/ddXmlStorage.cpp:1524
-msgid "RELATIONITEM"
-msgstr ""
-
-#: dd/dditems/figures/xml/ddXmlStorage.cpp:1600
-msgid "INITIALALIASNAME"
-msgstr ""
-
-#: dd/dditems/figures/xml/ddXmlStorage.cpp:1642
-#: dd/dditems/figures/xml/ddXmlStorage.cpp:1716
-msgid "DIAGRAM"
-msgstr ""
-
-#: dd/dditems/figures/xml/ddXmlStorage.cpp:1670
-#: dd/dditems/figures/xml/ddXmlStorage.cpp:1702
-msgid "TABLEREF"
-msgstr ""
-
-#: dd/dditems/figures/xml/ddXmlStorage.cpp:1727
-msgid "<!ELEMENT MODEL (VERSION,TABLE+,RELATIONSHIP*,DIAGRAMS)>"
-msgstr ""
-
-#: dd/dditems/figures/xml/ddXmlStorage.cpp:1728
-msgid "<!--Version Element-->"
-msgstr ""
-
-#: dd/dditems/figures/xml/ddXmlStorage.cpp:1729
-msgid "<!ELEMENT VERSION EMPTY>"
-msgstr ""
-
-#: dd/dditems/figures/xml/ddXmlStorage.cpp:1730
-msgid "<!ATTLIST VERSION VERIXLU CDATA #REQUIRED>"
-msgstr ""
-
-#: dd/dditems/figures/xml/ddXmlStorage.cpp:1732
-msgid "<!--Atribute Element-->"
-msgstr ""
-
-#: dd/dditems/figures/xml/ddXmlStorage.cpp:1733
-msgid "<!ELEMENT Attribute (#PCDATA)>"
-msgstr ""
-
-#: dd/dditems/figures/xml/ddXmlStorage.cpp:1735
-msgid "<!ATTLIST Attribute"
-msgstr ""
-
-#: dd/dditems/figures/xml/ddXmlStorage.cpp:1736
-#: dd/dditems/figures/xml/ddXmlStorage.cpp:1742
-msgid "\tName CDATA #REQUIRED"
-msgstr ""
-
-#: dd/dditems/figures/xml/ddXmlStorage.cpp:1737
-msgid "\tKind (normal | selected) #REQUIRED"
-msgstr ""
-
-#: dd/dditems/figures/xml/ddXmlStorage.cpp:1738
-#: dd/dditems/figures/xml/ddXmlStorage.cpp:1743
-msgid ">"
-msgstr ""
-
-#: dd/dditems/figures/xml/ddXmlStorage.cpp:1739
-msgid "<!--Rectangle Element-->"
-msgstr ""
-
-#: dd/dditems/figures/xml/ddXmlStorage.cpp:1740
-msgid "<!ELEMENT Rect (x,y,w,h)>"
-msgstr ""
-
-#: dd/dditems/figures/xml/ddXmlStorage.cpp:1741
-msgid "<!ATTLIST Name"
-msgstr ""
-
-#: dd/dditems/figures/xml/ddXmlStorage.cpp:1744
-msgid "<!ELEMENT \tx (#PCDATA)>"
-msgstr ""
-
-#: dd/dditems/figures/xml/ddXmlStorage.cpp:1745
-msgid "<!ELEMENT \ty (#PCDATA)>"
-msgstr ""
-
-#: dd/dditems/figures/xml/ddXmlStorage.cpp:1746
-msgid "<!ELEMENT \tw (#PCDATA)>"
-msgstr ""
-
-#: dd/dditems/figures/xml/ddXmlStorage.cpp:1747
-msgid "<!ELEMENT \th (#PCDATA)>"
-msgstr ""
-
-#: dd/dditems/figures/xml/ddXmlStorage.cpp:1749
-msgid "<!--Column Element-->"
-msgstr ""
-
-#: dd/dditems/figures/xml/ddXmlStorage.cpp:1750
-msgid ""
-"<!ELEMENT COLUMN "
-"(Attribute*,NAME,OPTION,UKINDEX,ISPK,COLUMNTYPE,PRECISION?,SCALE?,GENERATEFKNAME)>"
-msgstr ""
-
-#: dd/dditems/figures/xml/ddXmlStorage.cpp:1751
-msgid "<!ELEMENT NAME (#PCDATA)>"
-msgstr ""
-
-#: dd/dditems/figures/xml/ddXmlStorage.cpp:1752
-msgid "<!ELEMENT OPTION (#PCDATA)>"
-msgstr ""
-
-#: dd/dditems/figures/xml/ddXmlStorage.cpp:1753
-msgid "<!ELEMENT UKINDEX (#PCDATA)>"
-msgstr ""
-
-#: dd/dditems/figures/xml/ddXmlStorage.cpp:1754
-msgid "<!ELEMENT ISPK (#PCDATA)>"
-msgstr ""
-
-#: dd/dditems/figures/xml/ddXmlStorage.cpp:1755
-msgid "<!ELEMENT COLUMNTYPE (#PCDATA)>"
-msgstr ""
-
-#: dd/dditems/figures/xml/ddXmlStorage.cpp:1756
-msgid "<!ELEMENT PRECISION (#PCDATA)>"
-msgstr ""
-
-#: dd/dditems/figures/xml/ddXmlStorage.cpp:1757
-msgid "<!ELEMENT SCALE (#PCDATA)>"
-msgstr ""
-
-#: dd/dditems/figures/xml/ddXmlStorage.cpp:1758
-msgid "<!ELEMENT GENERATEFKNAME (#PCDATA)>"
-msgstr ""
-
-#: dd/dditems/figures/xml/ddXmlStorage.cpp:1761
-msgid "<!ELEMENT TITLE (NAME,ALIAS?)>"
-msgstr ""
-
-#: dd/dditems/figures/xml/ddXmlStorage.cpp:1762
-msgid "<!ELEMENT ALIAS (#PCDATA)>"
-msgstr ""
-
-#: dd/dditems/figures/xml/ddXmlStorage.cpp:1764
-msgid "<!-- Table Element -->"
-msgstr ""
-
-#: dd/dditems/figures/xml/ddXmlStorage.cpp:1765
-msgid ""
-"<!ELEMENT TABLE (Attribute*,POINTS,TITLE,UKNAMES?, PKNAME, BEGINDRAWCOLS, "
-"BEGINDRAWIDXS, MAXCOLINDEX, MINIDXINDEX, MAXIDXINDEX, COLSROWSSIZE,"
-msgstr ""
-
-#: dd/dditems/figures/xml/ddXmlStorage.cpp:1766
-msgid "COLSWINDOW,IDXSROWSSIZE, IDXSWINDOW, COLUMNS )>"
-msgstr ""
-
-#: dd/dditems/figures/xml/ddXmlStorage.cpp:1767
-msgid "<!ELEMENT COLUMNS (COLUMN*)>"
-msgstr ""
-
-#: dd/dditems/figures/xml/ddXmlStorage.cpp:1768
-msgid "<!ELEMENT UKNAMES (UKNAME+)>"
-msgstr ""
-
-#: dd/dditems/figures/xml/ddXmlStorage.cpp:1769
-msgid "<!ELEMENT UKNAME (#PCDATA)>"
-msgstr ""
-
-#: dd/dditems/figures/xml/ddXmlStorage.cpp:1770
-msgid "<!ELEMENT PKNAME (#PCDATA)>"
-msgstr ""
-
-#: dd/dditems/figures/xml/ddXmlStorage.cpp:1771
-msgid "<!ELEMENT BEGINDRAWCOLS (#PCDATA)>"
-msgstr ""
-
-#: dd/dditems/figures/xml/ddXmlStorage.cpp:1772
-msgid "<!ELEMENT BEGINDRAWIDXS (#PCDATA)>"
-msgstr ""
-
-#: dd/dditems/figures/xml/ddXmlStorage.cpp:1773
-msgid "<!ELEMENT MAXCOLINDEX (#PCDATA)>"
-msgstr ""
-
-#: dd/dditems/figures/xml/ddXmlStorage.cpp:1774
-msgid "<!ELEMENT MINIDXINDEX (#PCDATA)>"
-msgstr ""
-
-#: dd/dditems/figures/xml/ddXmlStorage.cpp:1775
-msgid "<!ELEMENT MAXIDXINDEX (#PCDATA)>"
-msgstr ""
-
-#: dd/dditems/figures/xml/ddXmlStorage.cpp:1776
-msgid "<!ELEMENT COLSROWSSIZE (#PCDATA)>"
-msgstr ""
-
-#: dd/dditems/figures/xml/ddXmlStorage.cpp:1777
-msgid "<!ELEMENT COLSWINDOW (#PCDATA)>"
-msgstr ""
-
-#: dd/dditems/figures/xml/ddXmlStorage.cpp:1778
-msgid "<!ELEMENT IDXSROWSSIZE (#PCDATA)>"
-msgstr ""
-
-#: dd/dditems/figures/xml/ddXmlStorage.cpp:1779
-msgid "<!ELEMENT IDXSWINDOW (#PCDATA)>"
-msgstr ""
-
-#: dd/dditems/figures/xml/ddXmlStorage.cpp:1781
-msgid "<!ATTLIST TABLE"
-msgstr ""
-
-#: dd/dditems/figures/xml/ddXmlStorage.cpp:1782
-msgid "\tTableID ID #REQUIRED"
-msgstr ""
-
-#: dd/dditems/figures/xml/ddXmlStorage.cpp:1783
-msgid "\t>"
-msgstr ""
-
-#: dd/dditems/figures/xml/ddXmlStorage.cpp:1786
-msgid "<!-- Relationship Element -->"
-msgstr ""
-
-#: dd/dditems/figures/xml/ddXmlStorage.cpp:1787
-msgid "<!ELEMENT RELATIONITEMS (RELATIONITEM*)>"
-msgstr ""
-
-#: dd/dditems/figures/xml/ddXmlStorage.cpp:1788
-msgid ""
-"<!ELEMENT RELATIONITEM (AUTOGENFK, FKCOLNAME,SOURCECOLNAME, INITIALCOLNAME, "
-"INITIALALIASNAME? )>"
-msgstr ""
-
-#: dd/dditems/figures/xml/ddXmlStorage.cpp:1789
-msgid "<!ELEMENT AUTOGENFK (#PCDATA)>"
-msgstr ""
-
-#: dd/dditems/figures/xml/ddXmlStorage.cpp:1790
-msgid "<!ELEMENT FKCOLNAME (#PCDATA)>"
-msgstr ""
-
-#: dd/dditems/figures/xml/ddXmlStorage.cpp:1791
-msgid "<!ELEMENT SOURCECOLNAME (#PCDATA)>"
-msgstr ""
-
-#: dd/dditems/figures/xml/ddXmlStorage.cpp:1792
-msgid "<!ELEMENT INITIALCOLNAME (#PCDATA)>"
-msgstr ""
-
-#: dd/dditems/figures/xml/ddXmlStorage.cpp:1793
-msgid "<!ELEMENT INITIALALIASNAME (#PCDATA)>"
-msgstr ""
-
-#: dd/dditems/figures/xml/ddXmlStorage.cpp:1796
-msgid "<!-- POINTSRELATION Element -->"
-msgstr ""
-
-#: dd/dditems/figures/xml/ddXmlStorage.cpp:1797
-msgid "<!ELEMENT POINTSRELATION (POINTS+)>"
-msgstr ""
-
-#: dd/dditems/figures/xml/ddXmlStorage.cpp:1798
-msgid "<!-- POINTS Element -->"
-msgstr ""
-
-#: dd/dditems/figures/xml/ddXmlStorage.cpp:1799
-msgid "<!ELEMENT POINTS (POINT*)>"
-msgstr ""
-
-#: dd/dditems/figures/xml/ddXmlStorage.cpp:1800
-msgid "<!-- POINT Element -->"
-msgstr ""
-
-#: dd/dditems/figures/xml/ddXmlStorage.cpp:1801
-msgid "<!ELEMENT POINT (X,Y)>"
-msgstr ""
-
-#: dd/dditems/figures/xml/ddXmlStorage.cpp:1802
-msgid "<!ELEMENT X (#PCDATA)>"
-msgstr ""
-
-#: dd/dditems/figures/xml/ddXmlStorage.cpp:1803
-msgid "<!ELEMENT Y (#PCDATA)>"
-msgstr ""
-
-#: dd/dditems/figures/xml/ddXmlStorage.cpp:1806
-msgid ""
-"<!ELEMENT RELATIONSHIP (Attribute*, POINTSRELATION, UKINDEX, NAME?, "
-"ONUPDATE, ONDELETE, MATCHSIMPLE, IDENTIFYING, ONETOMANY, MANDATORY, "
-"FKFROMPK, RELATIONITEMS)>"
-msgstr ""
-
-#: dd/dditems/figures/xml/ddXmlStorage.cpp:1807
-msgid "<!ELEMENT ONUPDATE (#PCDATA)>"
-msgstr ""
-
-#: dd/dditems/figures/xml/ddXmlStorage.cpp:1808
-msgid "<!ELEMENT ONDELETE (#PCDATA)>"
-msgstr ""
-
-#: dd/dditems/figures/xml/ddXmlStorage.cpp:1809
-msgid "<!ELEMENT MATCHSIMPLE (#PCDATA)>"
-msgstr ""
-
-#: dd/dditems/figures/xml/ddXmlStorage.cpp:1810
-msgid "<!ELEMENT IDENTIFYING (#PCDATA)>"
-msgstr ""
-
-#: dd/dditems/figures/xml/ddXmlStorage.cpp:1811
-msgid "<!ELEMENT ONETOMANY (#PCDATA)>"
-msgstr ""
-
-#: dd/dditems/figures/xml/ddXmlStorage.cpp:1812
-msgid "<!ELEMENT MANDATORY (#PCDATA)>"
-msgstr ""
-
-#: dd/dditems/figures/xml/ddXmlStorage.cpp:1813
-msgid "<!ELEMENT FKFROMPK (#PCDATA)>"
-msgstr ""
-
-#: dd/dditems/figures/xml/ddXmlStorage.cpp:1815
-msgid "<!ATTLIST RELATIONSHIP SourceTableID IDREF #REQUIRED >"
-msgstr ""
-
-#: dd/dditems/figures/xml/ddXmlStorage.cpp:1816
-msgid "<!ATTLIST RELATIONSHIP DestTableID IDREF #REQUIRED >"
-msgstr ""
-
-#: dd/dditems/figures/xml/ddXmlStorage.cpp:1819
-msgid "<!-- DIAGRAMS Element -->"
-msgstr ""
-
-#: dd/dditems/figures/xml/ddXmlStorage.cpp:1820
-msgid "<!ELEMENT DIAGRAMS (DIAGRAM*)>"
-msgstr ""
-
-#: dd/dditems/figures/xml/ddXmlStorage.cpp:1821
-msgid "<!-- DIAGRAM Element -->"
-msgstr ""
-
-#: dd/dditems/figures/xml/ddXmlStorage.cpp:1822
-msgid "<!ELEMENT DIAGRAM (NAME, TABLEREF*)>"
-msgstr ""
-
-#: dd/dditems/figures/xml/ddXmlStorage.cpp:1823
-msgid "<!-- TABLEREF Element -->"
-msgstr ""
-
-#: dd/dditems/figures/xml/ddXmlStorage.cpp:1824
-msgid "<!ELEMENT TABLEREF EMPTY>"
-msgstr ""
-
-#: dd/dditems/figures/xml/ddXmlStorage.cpp:1825
-msgid "<!ATTLIST TABLEREF TableID IDREF #REQUIRED >"
-msgstr ""
-
-#: pgscript/exceptions/pgsAssertException.cpp:27
-msgid "Assert Exception - "
-msgstr "Podmíněná chyba - "
-
-#: pgscript/exceptions/pgsArithmeticException.cpp:28
 #, c-format
-msgid "Arithmetic Exception - Operation impossible between '%s' and '%s'"
-msgstr "Výjimka při výpočtu - operaci nelze provést mezi „%s“ a „%s“"
+#~ msgid "%ld row retrieved."
+#~ msgid_plural "%ld rows retrieved."
+#~ msgstr[0] "Získán %ld řádek."
+#~ msgstr[1] "Získány %ld řádky."
+#~ msgstr[2] "Získáno %ld řádků."
 
-#: pgscript/exceptions/pgsInterruptException.cpp:27
-msgid "pgScript interrupted"
-msgstr "pgScript přerušen."
-
-#: pgscript/exceptions/pgsParameterException.cpp:33
 #, c-format
-msgid ""
-"Parameter Exception - Some parameters are invalid:\n"
-"%s"
-msgstr ""
-"Chyba parametru – některé parametry jsou neplatné:\n"
-"%s"
+#~ msgid "Retrieving data: %d row."
+#~ msgid_plural "Retrieving data: %d rows."
+#~ msgstr[0] "Získávají se data: %d řádek."
+#~ msgstr[1] "Získávají se data: %d řádky."
+#~ msgstr[2] "Získávají se data: %d řádků."
 
-#: pgscript/exceptions/pgsCastException.cpp:28
 #, c-format
-msgid "Cast Exception - Cannot convert '%s' to '%s'"
-msgstr "Chyba při přetypování - Nelze převést „%s“ na „%s“"
+#~ msgid "%d row retrieved."
+#~ msgid_plural "%d rows retrieved."
+#~ msgstr[0] "Získán %d řádek."
+#~ msgstr[1] "Získány %d řádky."
+#~ msgstr[2] "Získáno %d řádků."
 
-#: pgscript/statements/pgsStmtList.cpp:87
-msgid "Unknown exception:\n"
-msgstr "Neznámá výjimka:\n"
+#, c-format
+#~ msgid "%ld row."
+#~ msgid_plural "%ld rows."
+#~ msgstr[0] "%ld řádek."
+#~ msgstr[1] "%ld řádky."
+#~ msgstr[2] "%ld řádků."
 
-#: include/frm/frmReport.h:156
-msgid "&Compare other objects"
-msgstr "&Porovnat jiné objekty"
+#, c-format
+#~ msgid "%s (%d asynchronous notification received)."
+#~ msgid_plural "%s (%d asynchronous notifications received)."
+#~ msgstr[0] "%s (obdrženo %d asynchronní upozornění)"
+#~ msgstr[1] "%s (obdrženy %d asynchronní upozornění)"
+#~ msgstr[2] "%s (obdrženo %d asynchronních upozornění)"
 
-#: include/frm/frmReport.h:156
-msgid "Compare other host database select objects."
-msgstr "Porovnat vybrané objekty jiné hostitelské databáze."
+#, c-format
+#~ msgid ""
+#~ "Data export incomplete.\n"
+#~ "\n"
+#~ "%d row contained characters that could not be converted to the local "
+#~ "charset.\n"
+#~ "\n"
+#~ "Please correct the data or try using UTF8 instead."
+#~ msgid_plural ""
+#~ "Data export incomplete.\n"
+#~ "\n"
+#~ "%d rows contained characters that could not be converted to the local "
+#~ "charset.\n"
+#~ "\n"
+#~ "Please correct the data or try using UTF8 instead."
+#~ msgstr[0] ""
+#~ "Export dat není kompletní.\n"
+#~ "\n"
+#~ "%d řádek obsahuje znaky, které nelze převést do národní znakové sady.\n"
+#~ "\n"
+#~ "Opravte prosím data nebo zkuste raději použít UTF8."
+#~ msgstr[1] ""
+#~ "Export dat není kompletní.\n"
+#~ "\n"
+#~ "%d řádky obsahují znaky, které nelze převést do národní znakové sady.\n"
+#~ "\n"
+#~ "Opravte prosím data nebo zkuste raději použít UTF8."
+#~ msgstr[2] ""
+#~ "Export dat není kompletní.\n"
+#~ "\n"
+#~ "%d řádků obsahuje znaky, které nelze převést do národní znakové sady.\n"
+#~ "\n"
+#~ "Opravte prosím data nebo zkuste raději použít UTF8."
 
-#: include/schema/pgObject.h:369
-msgid "Object"
-msgstr "Objekt"
+#, c-format
+#~ msgid "query result with %d row will be returned.\n"
+#~ msgid_plural "query result with %d rows will be returned.\n"
+#~ msgstr[0] "byl vrácen výsledek dotazu s %d řádkem.\n"
+#~ msgstr[1] "byl vrácen výsledek dotazu se %d řádky.\n"
+#~ msgstr[2] "byl vrácen výsledek dotazu s %d řádky.\n"
 
-#: include/schema/pgObject.h:370
-msgid "Property"
-msgstr "Vlastnost"
+#, c-format
+#~ msgid "query result with %d row discarded.\n"
+#~ msgid_plural "query result with %d rows discarded.\n"
+#~ msgstr[0] "byl zahozen výsledek dotazu s %d řádkem.\n"
+#~ msgstr[1] "byl zahozen výsledek dotazu se %d řádky.\n"
+#~ msgstr[2] "byl zahozen výsledek dotazu s %d řádky.\n"
 
-#: include/hotdraw/utilities/hdRemoveDeleteDialog.h:31
-msgid "Title"
-msgstr "Název"
+#, c-format
+#~ msgid ""
+#~ "There are %ld event acknowledgement outstanding.\n"
+#~ "Continue anyway?"
+#~ msgid_plural ""
+#~ "There are %ld event acknowledgements outstanding.\n"
+#~ "Continue anyway?"
+#~ msgstr[0] ""
+#~ "Je zde %ld nevyřízená potvrzená událost.\n"
+#~ "Přesto pokračovat?"
+#~ msgstr[1] ""
+#~ "Jsou zde %ld nevyřízené potvrzené události.\n"
+#~ "Přesto pokračovat?"
+#~ msgstr[2] ""
+#~ "Je zde %ld nevyřízených potvrzených událostí.\n"
+#~ "Přesto pokračovat?"
+
+#, c-format
+#~ msgid "%d replacement made."
+#~ msgid_plural "%d replacements made."
+#~ msgstr[0] "Provedena %d náhrada."
+#~ msgstr[1] "Provedeny %d náhrady."
+#~ msgstr[2] "Provedeno %d náhrad."
 
 #~ msgid ""
 #~ "\n"

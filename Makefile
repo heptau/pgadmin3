@@ -18,7 +18,7 @@ BUILD_DIR_LINUX   ?= build
 JOBS              ?= $(shell (command -v nproc >/dev/null 2>&1 && nproc) || sysctl -n hw.ncpu 2>/dev/null || echo 4)
 
 .DEFAULT_GOAL := help
-.PHONY: help build run release clean
+.PHONY: help build run release clean pngc
 
 help:
 	@echo "pgAdmin3 build helper (detected OS: $(UNAME_S))"
@@ -28,6 +28,7 @@ help:
 ifeq ($(UNAME_S),Darwin)
 	@echo "  make release - build, zip, tag, GitHub release + Homebrew tap update"
 endif
+	@echo "  make pngc    - regenerate .pngc embedded-image headers from .png files"
 	@echo "  make clean   - remove build output"
 ifeq ($(UNAME_S),Darwin)
 	@echo ""
@@ -51,6 +52,9 @@ else
 	@echo "make isn't wired up for $(UNAME_S) yet -- see INSTALL.txt / INSTALL_EN.txt,"
 	@echo "or the Visual Studio project, for Windows."
 endif
+
+pngc:
+	bash macos/png2c.sh
 
 ifeq ($(UNAME_S),Darwin)
 

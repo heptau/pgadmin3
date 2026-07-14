@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>pgAdmin III — native macOS PostgreSQL admin tool</title>
+<meta name="description" content="pgAdmin III — classic native desktop PostgreSQL administration tool. Native macOS (Apple Silicon) build with Homebrew support, dark mode, Czech i18n." />
+<link rel="icon" href="assets/favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<meta property="og:image" content="https://pgadmin3.80.cz/assets/screenshot.png">
+<style>
+:root {
+  --bg: #f8f9fa;
+  --fg: #1a1a2e;
+  --accent: #2563eb;
+  --accent2: #1e40af;
+  --border: #e2e8f0;
+  --card: #ffffff;
+  --muted: #64748b;
+  --code-bg: #f1f5f9;
+  --header-bg: #f1f4f9;
+}
+[data-theme="dark"] {
+  --bg: #0f172a;
+  --fg: #e2e8f0;
+  --accent: #3b82f6;
+  --accent2: #60a5fa;
+  --border: #1e293b;
+  --card: #1e293b;
+  --muted: #94a3b8;
+  --code-bg: #0f172a;
+  --header-bg: #1a2332;
+}
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  background: var(--bg);
+  color: var(--fg);
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+}
+.container { max-width: 800px; margin: 0 auto; padding: 0 24px; }
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 24px;
+  background: var(--header-bg);
+  border-bottom: 1px solid var(--border);
+}
+.logo {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--fg);
+}
+.logo span { color: var(--accent); }
+.nav-links { display: flex; align-items: center; gap: 8px; }
+
+/* Dropdowns */
+.dropdown { position: relative; }
+.dropdown-trigger {
+  background: none;
+  border: 1px solid transparent;
+  border-radius: 6px;
+  padding: 6px 8px;
+  cursor: pointer;
+  color: var(--muted);
+  display: flex;
+  align-items: center;
+  transition: all 0.12s;
+}
+.dropdown-trigger:hover { color: var(--fg); background: var(--card); border-color: var(--border); }
+.dropdown-trigger svg { width: 20px; height: 20px; }
+.dropdown-menu {
+  position: absolute;
+  top: calc(100% + 6px);
+  right: 0;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 6px;
+  min-width: 160px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+  display: none;
+  z-index: 100;
+}
+[data-theme="dark"] .dropdown-menu { box-shadow: 0 8px 24px rgba(0,0,0,0.4); }
+.dropdown-menu.open { display: block; }
+.dropdown-option {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+  background: none;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 10px;
+  font-size: 0.875rem;
+  cursor: pointer;
+  color: var(--fg);
+  font-family: inherit;
+  text-align: left;
+  transition: background 0.1s;
+}
+.dropdown-option:hover { background: var(--header-bg); }
+.dropdown-option.active { background: var(--accent); color: #fff; font-weight: 600; }
+.dropdown-option-icon { font-size: 1rem; line-height: 1; }
+
+/* Hero */
+.hero { padding: 48px 0 32px; border-bottom: 1px solid var(--border); }
+.hero h1 { font-size: 2rem; font-weight: 700; }
+.hero h1 span { color: var(--accent); }
+.hero p { color: var(--muted); margin-top: 8px; font-size: 1.1rem; }
+
+section { padding: 40px 0; border-bottom: 1px solid var(--border); }
+section:last-of-type { border-bottom: none; }
+
+h2 { font-size: 1.4rem; font-weight: 700; margin-bottom: 16px; }
+h2 a { color: inherit; text-decoration: none; }
+h2 a:hover { color: var(--accent); }
+h3 { font-size: 1rem; font-weight: 600; margin-bottom: 8px; }
+p, li { margin-bottom: 12px; }
+ul, ol { padding-left: 24px; }
+li { margin-bottom: 6px; }
+code {
+  background: var(--code-bg);
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-size: 0.875rem;
+}
+pre {
+  background: var(--code-bg);
+  padding: 16px 20px;
+  border-radius: 8px;
+  overflow-x: auto;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  margin: 16px 0;
+  border: 1px solid var(--border);
+}
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+.btn {
+  display: inline-block;
+  background: var(--accent);
+  color: #fff;
+  padding: 12px 28px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: background 0.15s;
+  text-decoration: none;
+}
+.btn:hover { background: var(--accent2); text-decoration: none; }
+.btn-group { display: flex; gap: 12px; flex-wrap: wrap; margin: 24px 0; }
+.btn-outline {
+  background: transparent;
+  color: var(--accent);
+  border: 2px solid var(--accent);
+}
+.btn-outline:hover { background: var(--accent); color: #fff; }
+
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+  margin: 16px 0;
+}
+.feature-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 20px;
+}
+.feature-card h3 { font-size: 1rem; font-weight: 600; margin-bottom: 8px; }
+.feature-card p { font-size: 0.9rem; color: var(--muted); margin: 0; }
+
+.screenshot {
+  width: 100%;
+  max-width: 100%;
+  margin: 20px 0;
+  display: block;
+}
+
+footer {
+  padding: 32px 0;
+  text-align: center;
+  color: var(--muted);
+  font-size: 0.875rem;
+}
+footer a { color: var(--muted); text-decoration: underline; }
+
+[data-lang] { display: none; }
+[data-lang].active { display: block; }
+[data-lang].active.feature-grid { display: grid; }
+[data-lang].active.btn-group { display: flex; }
+
+@media (max-width: 600px) {
+  .hero h1 { font-size: 1.5rem; }
+  .btn-group { flex-direction: column; }
+  .btn { text-align: center; }
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo">pgAdmin <span>III</span></div>
+  <div class="nav-links">
+    <div class="dropdown" data-dropdown="lang">
+      <button class="dropdown-trigger" aria-label="Change language" aria-haspopup="true" aria-expanded="false">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="12" cy="12" r="10"></circle>
+          <line x1="2" y1="12" x2="22" y2="12"></line>
+          <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+        </svg>
+      </button>
+      <div class="dropdown-menu">
+        <button class="dropdown-option" data-lang-value="auto">
+          <span class="dropdown-option-icon">🌐</span>
+          <span>Auto</span>
+        </button>
+        <button class="dropdown-option" data-lang-value="cs">
+          <span class="dropdown-option-icon">🇨🇿</span>
+          <span>Čeština</span>
+        </button>
+        <button class="dropdown-option" data-lang-value="en">
+          <span class="dropdown-option-icon">🇬🇧</span>
+          <span>English</span>
+        </button>
+      </div>
+    </div>
+    <div class="dropdown" data-dropdown="theme">
+      <button class="dropdown-trigger" aria-label="Change theme" aria-haspopup="true" aria-expanded="false">
+        <svg viewBox="0 0 24 24" fill="currentColor">
+          <path d="M12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2zm0 18V4c4.42 0 8 3.58 8 8s-3.58 8-8 8z"></path>
+        </svg>
+      </button>
+      <div class="dropdown-menu">
+        <button class="dropdown-option" data-theme-value="auto">
+          <span class="dropdown-option-icon">🖥️</span>
+          <span>Auto</span>
+        </button>
+        <button class="dropdown-option" data-theme-value="light">
+          <span class="dropdown-option-icon">☀️</span>
+          <span>Light</span>
+        </button>
+        <button class="dropdown-option" data-theme-value="dark">
+          <span class="dropdown-option-icon">🌙</span>
+          <span>Dark</span>
+        </button>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- English -->
+<div data-lang="en">
+
+<div class="container">
+  <div class="hero">
+    <h1>pgAdmin <span>III</span></h1>
+    <p>Classic native desktop PostgreSQL administration tool — now with a native macOS (Apple Silicon) build.</p>
+    <div class="btn-group">
+      <a class="btn" href="#install">Install via Homebrew</a>
+      <a class="btn btn-outline" href="https://github.com/heptau/pgadmin3" target="_blank">Source Code</a>
+    </div>
+  </div>
+</div>
+
+<main class="container">
+
+<section id="about">
+  <h2><a href="#about">#</a> About</h2>
+  <p><strong>pgAdmin III</strong> is the most popular open-source administration and development platform for PostgreSQL. The original project was retired in favor of the web-based pgAdmin 4, but this <strong>community fork</strong> keeps the native wxWidgets application alive — fixing bugs for modern PostgreSQL versions and adding dozens of new features.</p>
+  <p>This release introduces a <strong>fully native macOS port</strong> for Apple Silicon (arm64), distributed as a self-contained <code>.app</code> bundle via Homebrew Cask.</p>
+  <ul>
+    <li><strong>License:</strong> PostgreSQL License (permissive, BSD-like)</li>
+    <li><strong>Repository:</strong> <a href="https://github.com/heptau/pgadmin3" target="_blank">github.com/heptau/pgadmin3</a></li>
+    <li><strong>Upstream fork:</strong> <a href="https://github.com/levinsv/pgadmin3" target="_blank">levinsv/pgadmin3</a> (PostgreSQL 18 support)</li>
+    <li><strong>Original project:</strong> <a href="https://github.com/postgres/pgadmin3" target="_blank">postgres/pgadmin3</a> (archived)</li>
+  </ul>
+</section>
+
+<section id="screenshot">
+  <h2><a href="#screenshot">#</a> Screenshot</h2>
+  <img class="screenshot" src="assets/screenshot.png" alt="pgAdmin III main window on macOS">
+</section>
+
+<section id="features">
+  <h2><a href="#features">#</a> Key Features</h2>
+  <div class="feature-grid">
+    <div class="feature-card">
+      <h3>🖥️ Native macOS</h3>
+      <p>A true native app built on wxWidgets 3.3 + Cocoa. No Electron, no Java — low memory footprint, fast startup.</p>
+    </div>
+    <div class="feature-card">
+      <h3>🐘 PostgreSQL 12–18</h3>
+      <p>Full support for modern PostgreSQL versions, PostgresPro Enterprise, Slony-I replication, and pgAgent scheduling.</p>
+    </div>
+    <div class="feature-card">
+      <h3>🔍 SQL Editor</h3>
+      <p>Syntax highlighting, auto-detect statement under cursor, autosaved tabs, multiple result windows, PCRE text transformations.</p>
+    </div>
+    <div class="feature-card">
+      <h3>📊 Query Tool</h3>
+      <p>Named bookmarks, join autocompletion via foreign keys, human-readable large numbers, cell-comparison diff view.</p>
+    </div>
+    <div class="feature-card">
+      <h3>🔄 Schema Tooling</h3>
+      <p>Cross-server object comparison with HTML diff reports, GitLab-backed version control, B-tree index checking via amcheck.</p>
+    </div>
+    <div class="feature-card">
+      <h3>📈 Monitoring</h3>
+      <p>Server Status / Activity window, process highlighting, wait-event sampling (pg_wait_sampling), AWR reports, CSV log viewer.</p>
+    </div>
+    <div class="feature-card">
+      <h3>🎨 SVG Toolbar</h3>
+      <p>Modern SVG toolbar icons, HiDPI / Retina ready, per-server colour coding.</p>
+    </div>
+    <div class="feature-card">
+      <h3>🌐 Localization</h3>
+      <p>11 languages shipped, all with editable .po sources. Czech, Spanish, German, French, Russian, Polish, Chinese and Latvian gaps filled in v2026.07.14.</p>
+    </div>
+    <div class="feature-card">
+      <h3>🔌 Plugins</h3>
+      <p>Extensible via plug-in modules — add custom functionality without modifying the core.</p>
+    </div>
+    <div class="feature-card">
+      <h3>🔐 SSL / SSH</h3>
+      <p>SSL/TLS connection encryption and SSH tunnelling (libssh2) for secure server access.</p>
+    </div>
+  </div>
+</section>
+
+<section id="install">
+  <h2><a href="#install">#</a> Installation</h2>
+
+  <h3>macOS (Apple Silicon) — quickest path</h3>
+  <p>Pre-built binary via Homebrew Cask:</p>
+  <pre>brew install heptau/tap/pgadmin3</pre>
+  <p>Launch from Launchpad, Spotlight, or the terminal:</p>
+  <pre>open /Applications/pgAdmin\ III.app</pre>
+
+  <h3>Build from source (macOS)</h3>
+  <pre>git clone https://github.com/heptau/pgadmin3.git
+cd pgadmin3
+make build
+open "build-macos/pgAdmin III.app"</pre>
+  <p><strong>Note:</strong> The first build requires a locally-compiled wxWidgets 3.3 (with <code>--disable-std_containers</code>). The Homebrew bottle is not compatible — see <a href="https://github.com/heptau/pgadmin3/blob/main/AGENTS.md" target="_blank">AGENTS.md</a> for details.</p>
+
+  <h3>Linux</h3>
+  <pre>git clone https://github.com/heptau/pgadmin3.git
+cd pgadmin3
+make build
+./build/pgAdmin3</pre>
+
+  <h3>Windows</h3>
+  <p>Open <code>pgAdmin3.vcxproj</code> in Visual Studio, or cross-compile from Linux with mingw — see <a href="https://github.com/heptau/pgadmin3/blob/main/INSTALL_EN.txt" target="_blank">INSTALL_EN.txt</a>.</p>
+</section>
+
+<section id="changelog">
+  <h2><a href="#changelog">#</a> What's New</h2>
+  <p>Version <strong>v2026.07.14</strong>:</p>
+  <ul>
+    <li>All 11 shipped languages now have editable <code>.po</code> sources</li>
+    <li>Russian, Polish, Chinese (zh_CN) and Latvian translations — new strings filled in</li>
+    <li>Czech, Spanish, German, French localizations fully completed</li>
+    <li>Native macOS build (arm64) with Homebrew Cask distribution</li>
+    <li>Dark / light mode — live colour scheme switching</li>
+    <li>Retina toolbar icons</li>
+    <li>PostgreSQL 18 support</li>
+    <li>Full changelog: <a href="https://github.com/heptau/pgadmin3/blob/main/CHANGELOG.md" target="_blank">CHANGELOG.md</a></li>
+  </ul>
+</section>
+
+<section id="support">
+  <h2><a href="#support">#</a> Support &amp; Documentation</h2>
+  <ul>
+    <li><a href="https://github.com/heptau/pgadmin3/issues" target="_blank">Bug reports &amp; feature requests</a> — GitHub Issues</li>
+    <li><a href="https://github.com/heptau/pgadmin3/blob/main/AGENTS.md" target="_blank">AGENTS.md</a> — macOS port working notes</li>
+    <li><a href="https://github.com/heptau/pgadmin3/blob/main/INSTALL_EN.txt" target="_blank">INSTALL_EN.txt</a> — detailed build instructions</li>
+    <li><a href="https://github.com/heptau/pgadmin3/blob/main/CHANGELOG.md" target="_blank">CHANGELOG.md</a> — full change history</li>
+  </ul>
+</section>
+
+</main>
+
+<footer>
+  <div class="container">
+    <p>pgAdmin III is released under the <a href="https://github.com/heptau/pgadmin3/blob/main/LICENSE" target="_blank">PostgreSQL License</a>.</p>
+    <p>Maintained by <a href="https://github.com/heptau">heptau</a> · <a href="https://github.com/heptau/pgadmin3">GitHub</a></p>
+  </div>
+</footer>
+
+</div><!-- /data-lang="en" -->
+
+<!-- Česky -->
+<div data-lang="cs">
+
+<div class="container">
+  <div class="hero">
+    <h1>pgAdmin <span>III</span></h1>
+    <p>Klasický nativní desktopový nástroj pro správu PostgreSQL — nyní i s nativním macOS buildem (Apple Silicon).</p>
+    <div class="btn-group">
+      <a class="btn" href="#install">Instalovat přes Homebrew</a>
+      <a class="btn btn-outline" href="https://github.com/heptau/pgadmin3" target="_blank">Zdrojový kód</a>
+    </div>
+  </div>
+</div>
+
+<main class="container">
+
+<section id="about">
+  <h2><a href="#about">#</a> O projektu</h2>
+  <p><strong>pgAdmin III</strong> je nejoblíbenější open-source nástroj pro administraci a vývoj databází PostgreSQL. Původní projekt byl oficiálně ukončen ve prospěch webového pgAdmin 4, ale tato <strong>komunitní větev</strong> udržuje nativní wxWidgets aplikaci při životě — opravuje chyby pro moderní verze PostgreSQL a přidává desítky nových funkcí.</p>
+  <p>Tato verze přináší <strong>plně nativní macOS port</strong> pro Apple Silicon (arm64), distribuovaný jako samostatný <code>.app</code> bundle přes Homebrew Cask.</p>
+  <ul>
+    <li><strong>Licence:</strong> PostgreSQL License (permisivní, BSD-like)</li>
+    <li><strong>Repozitář:</strong> <a href="https://github.com/heptau/pgadmin3" target="_blank">github.com/heptau/pgadmin3</a></li>
+    <li><strong>Upstream fork:</strong> <a href="https://github.com/levinsv/pgadmin3" target="_blank">levinsv/pgadmin3</a> (podpora PostgreSQL 18)</li>
+    <li><strong>Původní projekt:</strong> <a href="https://github.com/postgres/pgadmin3" target="_blank">postgres/pgadmin3</a> (archivován)</li>
+  </ul>
+</section>
+
+<section id="screenshot">
+  <h2><a href="#screenshot">#</a> Screenshot</h2>
+  <img class="screenshot" src="assets/screenshot.png" alt="pgAdmin III hlavní okno na macOS">
+</section>
+
+<section id="features">
+  <h2><a href="#features">#</a> Hlavní funkce</h2>
+  <div class="feature-grid">
+    <div class="feature-card">
+      <h3>🖥️ Nativní macOS</h3>
+      <p>Skutečná nativní aplikace postavená na wxWidgets 3.3 + Cocoa. Žádný Electron, žádná Java — nízká spotřeba paměti, rychlý start.</p>
+    </div>
+    <div class="feature-card">
+      <h3>🐘 PostgreSQL 12–18</h3>
+      <p>Plná podpora moderních verzí PostgreSQL včetně PostgresPro Enterprise, Slony-I replikace a pgAgent jobů.</p>
+    </div>
+    <div class="feature-card">
+      <h3>🔍 SQL Editor</h3>
+      <p>Syntax highlighting, automatická detekce příkazu pod kurzorem, automatické ukládání záložek, více oken výsledků, PCRE transformace textu.</p>
+    </div>
+    <div class="feature-card">
+      <h3>📊 Nástroj pro dotazy</h3>
+      <p>Pojmenované bookmarky, join autocompletion přes cizí klíče, human-readable velká čísla, diff pohled "porovnej 2 buňky".</p>
+    </div>
+    <div class="feature-card">
+      <h3>🔄 Nástroje schémat</h3>
+      <p>Porovnávání objektů mezi servery s HTML diff reportem, GitLab-backed version control, B-tree checking přes amcheck.</p>
+    </div>
+    <div class="feature-card">
+      <h3>📈 Monitoring</h3>
+      <p>Server Status / Activity okno, zvýraznění procesů, wait-event sampling (pg_wait_sampling), AWR reporty, CSV log viewer.</p>
+    </div>
+    <div class="feature-card">
+      <h3>🎨 SVG toolbar</h3>
+      <p>Moderní SVG ikony, HiDPI / Retina ready, barevné odlišení serverů.</p>
+    </div>
+    <div class="feature-card">
+      <h3>🌐 Lokalizace</h3>
+      <p>11 jazyků, všechny s editovatelnými .po zdroji. Čeština, španělština, němčina, francouzština, ruština, polština, čínština a lotyština — doplněny ve v2026.07.14.</p>
+    </div>
+    <div class="feature-card">
+      <h3>🔌 Pluginy</h3>
+      <p>Rozšiřitelnost pomocí zásuvných modulů — přidejte vlastní funkce bez úpravy jádra.</p>
+    </div>
+    <div class="feature-card">
+      <h3>🔐 SSL / SSH</h3>
+      <p>SSL/TLS šifrování a SSH tunely (libssh2) pro bezpečný přístup k serverům.</p>
+    </div>
+  </div>
+</section>
+
+<section id="install">
+  <h2><a href="#install">#</a> Instalace</h2>
+
+  <h3>macOS (Apple Silicon) — nejjednodušší cesta</h3>
+  <p>Prekompilovaná verze přes Homebrew Cask:</p>
+  <pre>brew install heptau/tap/pgadmin3</pre>
+  <p>Po instalaci spustíte z Launchpadu, Spotlightu nebo terminálu:</p>
+  <pre>open /Applications/pgAdmin\ III.app</pre>
+
+  <h3>Sestavení ze zdroje (macOS)</h3>
+  <pre>git clone https://github.com/heptau/pgadmin3.git
+cd pgadmin3
+make build
+open "build-macos/pgAdmin III.app"</pre>
+  <p><strong>Poznámka:</strong> První build vyžaduje lokálně sestavenou wxWidgets 3.3 (s <code>--disable-std_containers</code>). Homebrew bottle není kompatibilní — viz <a href="https://github.com/heptau/pgadmin3/blob/main/AGENTS.md" target="_blank">AGENTS.md</a>.</p>
+
+  <h3>Linux</h3>
+  <pre>git clone https://github.com/heptau/pgadmin3.git
+cd pgadmin3
+make build
+./build/pgAdmin3</pre>
+
+  <h3>Windows</h3>
+  <p>Otevřete <code>pgAdmin3.vcxproj</code> ve Visual Studiu nebo cross-compilujte z Linuxu pomocí mingw — viz <a href="https://github.com/heptau/pgadmin3/blob/main/INSTALL_EN.txt" target="_blank">INSTALL_EN.txt</a>.</p>
+</section>
+
+<section id="changelog">
+  <h2><a href="#changelog">#</a> Co je nového</h2>
+  <p>Verze <strong>v2026.07.14</strong>:</p>
+  <ul>
+    <li>Všech 11 dodávaných jazyků má nyní editovatelné <code>.po</code> zdroje</li>
+    <li>Ruština, polština, čínština (zh_CN) a lotyština — nově doplněné překlady</li>
+    <li>Čeština, španělština, němčina a francouzština — plně dokončeny</li>
+    <li>Nativní macOS build (arm64) s Homebrew Cask distribucí</li>
+    <li>Dark / light mode — živé přepínání barev</li>
+    <li>Toolbar ikony pro Retina displeje</li>
+    <li>Podpora PostgreSQL 18</li>
+    <li>Plný changelog: <a href="https://github.com/heptau/pgadmin3/blob/main/CHANGELOG.md" target="_blank">CHANGELOG.md</a></li>
+  </ul>
+</section>
+
+<section id="support">
+  <h2><a href="#support">#</a> Podpora a dokumentace</h2>
+  <ul>
+    <li><a href="https://github.com/heptau/pgadmin3/issues" target="_blank">Hlášení chyb a návrhy</a> — GitHub Issues</li>
+    <li><a href="https://github.com/heptau/pgadmin3/blob/main/AGENTS.md" target="_blank">AGENTS.md</a> — pracovní poznámky k macOS portu</li>
+    <li><a href="https://github.com/heptau/pgadmin3/blob/main/INSTALL_EN.txt" target="_blank">INSTALL_EN.txt</a> — detailní build instrukce</li>
+    <li><a href="https://github.com/heptau/pgadmin3/blob/main/CHANGELOG.md" target="_blank">CHANGELOG.md</a> — úplná historie změn</li>
+  </ul>
+</section>
+
+</main>
+
+<footer>
+  <div class="container">
+    <p>pgAdmin III je vydán pod <a href="https://github.com/heptau/pgadmin3/blob/main/LICENSE" target="_blank">PostgreSQL licencí</a>.</p>
+    <p>Spravuje <a href="https://github.com/heptau">heptau</a> · <a href="https://github.com/heptau/pgadmin3">GitHub</a></p>
+  </div>
+</footer>
+
+</div><!-- /data-lang="cs" -->
+
+<script>
+(function () {
+  /* ── language ── */
+  const LANG_KEY = 'pgadmin3_lang';
+  const langOpts = document.querySelectorAll('[data-lang-value]');
+  const langEls  = document.querySelectorAll('[data-lang]');
+
+  function detectLang() {
+    const nav = (navigator.language || '').split('-')[0];
+    return nav === 'cs' ? 'cs' : 'en';
+  }
+
+  function setLang(lang) {
+    const isAuto = lang === 'auto';
+    if (isAuto) { localStorage.removeItem(LANG_KEY); lang = detectLang(); }
+    else { localStorage.setItem(LANG_KEY, lang); }
+    langEls.forEach(el => el.classList.toggle('active', el.dataset.lang === lang));
+    document.documentElement.lang = lang;
+    langOpts.forEach(o => o.classList.toggle('active',
+      (o.dataset.langValue === lang) ||
+      (o.dataset.langValue === 'auto' && isAuto)));
+  }
+
+  setLang(localStorage.getItem(LANG_KEY) || 'auto');
+
+  langOpts.forEach(opt => {
+    opt.addEventListener('click', function () {
+      setLang(this.dataset.langValue);
+      this.closest('.dropdown-menu').classList.remove('open');
+    });
+  });
+
+  /* ── theme ── */
+  const THEME_KEY = 'pgadmin3_theme';
+  const themeOpts = document.querySelectorAll('[data-theme-value]');
+
+  function detectTheme() {
+    return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+  }
+
+  function setTheme(theme) {
+    const isAuto = theme === 'auto';
+    if (isAuto) { localStorage.removeItem(THEME_KEY); theme = detectTheme(); }
+    else { localStorage.setItem(THEME_KEY, theme); }
+    document.documentElement.setAttribute('data-theme', theme);
+    themeOpts.forEach(o => o.classList.toggle('active',
+      (o.dataset.themeValue === theme) ||
+      (o.dataset.themeValue === 'auto' && isAuto)));
+  }
+
+  setTheme(localStorage.getItem(THEME_KEY) || 'auto');
+
+  themeOpts.forEach(opt => {
+    opt.addEventListener('click', function () {
+      setTheme(this.dataset.themeValue);
+      this.closest('.dropdown-menu').classList.remove('open');
+    });
+  });
+
+  window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', () => {
+    if (!localStorage.getItem(THEME_KEY)) setTheme('auto');
+  });
+
+  /* ── dropdown toggle ── */
+  document.querySelectorAll('.dropdown-trigger').forEach(btn => {
+    btn.addEventListener('click', function (e) {
+      e.stopPropagation();
+      const menu = this.nextElementSibling;
+      const isOpen = menu.classList.contains('open');
+      document.querySelectorAll('.dropdown-menu.open').forEach(m => m.classList.remove('open'));
+      if (!isOpen) menu.classList.add('open');
+    });
+  });
+
+  document.addEventListener('click', function () {
+    document.querySelectorAll('.dropdown-menu.open').forEach(m => m.classList.remove('open'));
+  });
+})();
+</script>
+
+</body>
+</html>

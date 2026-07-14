@@ -5,20 +5,36 @@ Format loosely follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ## [Unreleased]
 
+## [2026.07.14]
+
 ### Added
+- Added `.po` source files for all 7 remaining shipped languages (ru_RU,
+  pl_PL, ja_JP, zh_CN, sr_RS, ca_ES, lv_LV) — previously only compiled
+  `.mo` files existed, with no editable source or build pipeline.
+- Filled in missing UI translations for zh_CN (~189 new strings), lv_LV
+  (~112), ru_RU (~189), and pl_PL (~189). The existing `.mo` catalogs for
+  ca_ES, sr_RS, and ja_JP were recompiled from the merged `.po` baseline
+  with no new translations added (task-agent results for those languages
+  were lost mid-session).
+- Added a bilingual (Czech/English) project website at `docs/index.html`
+  with language toggle, dark/light theme switch, and screenshot.
+- Added `macos/png2c.sh` — regenerates all `include/images/*.pngc`
+  embedded-image headers from the corresponding `.png` sources.
+- Added `make pngc` target to the top-level `Makefile`.
+- Added Homebrew Cask install instructions to `README.md`
+  (`brew install heptau/tap/pgadmin3`).
 - Filled in ~406 missing French (fr_FR) UI translations, same gap and
   method as Spanish/Czech. Added `i18n/fr_FR.po` and recompiled
   `x64/Release/i18n/fr_FR/pgadmin3.mo`. With this, all four requested
   languages (cs_CZ, es_ES, de_DE, fr_FR) have had their translation gaps
-  filled; the other 7 shipped languages (ru_RU, pl_PL, ja_JP, zh_CN,
-  sr_RS, ca_ES, lv_LV) have not been audited yet.
+  filled.
 - Filled in ~920 missing German (de_DE) UI translations — this catalog
   had a substantially larger gap than the others (missing much of the
   Database Designer and pgAgent job scheduler coverage). Added
   `i18n/de_DE.po` and recompiled `x64/Release/i18n/de_DE/pgadmin3.mo`.
 - Filled in ~406 missing Spanish (es_ES) UI translations, same gap and
-  method as the Czech pass below. Added `i18n/es_ES.po` as the editable
-  source of truth and recompiled `x64/Release/i18n/es_ES/pgadmin3.mo`.
+  method as the Czech pass. Added `i18n/es_ES.po` as the editable source
+  of truth and recompiled `x64/Release/i18n/es_ES/pgadmin3.mo`.
 - Filled in ~406 missing Czech (cs_CZ) UI translations that were never
   covered by the shipped 2014 catalog (newer features like logical
   replication publications/subscriptions, the query tool's autoreplace/
@@ -49,6 +65,11 @@ Format loosely follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
   panel not repainting at all when switching system appearance while the
   app was running; and some SQL syntax-highlighting colours staying
   black (unreadable) in dark mode.
+
+### Changed
+- Regenerated all `include/images/*.pngc` embedded-image headers from the
+  corresponding `.png` sources via `make pngc` (smaller file sizes,
+  consistent format).
 
 ## [2026.07.13]
 

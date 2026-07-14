@@ -30,8 +30,8 @@ complete, dated list:
   `amcheck`, `pgpro_scheduler` job status integration.
 - **UI**: SVG toolbar icons, per-server icon coloring, JSON-tree editor for
   the app's own settings file, HiDPI-aware builds.
-- **Platform support**: native Windows and Linux builds, PuTTY/Wayland
-  support, and (new) a native **macOS** port — see below.
+- **Platform support**: native Windows, Linux, and **macOS** builds
+  (Apple Silicon, Cocoa) — see below.
 
 ## Supported platforms
 
@@ -39,7 +39,7 @@ complete, dated list:
 |---|---|---|
 | Windows | Primary target, prebuilt `.exe` in `Release/` | Visual Studio project (`pgAdmin3.vcxproj`) or mingw cross-compile — see [INSTALL_EN.txt](INSTALL_EN.txt) |
 | Linux | Actively maintained | `make build` (CMake under the hood) — see [INSTALL_EN.txt](INSTALL_EN.txt) |
-| macOS | New, community-contributed | `make build` — see below and [AGENTS.md](AGENTS.md) |
+| macOS | Stable, community-maintained | `make build` — see below and [AGENTS.md](AGENTS.md) |
 
 Requires PostgreSQL client libraries; the app itself connects to PostgreSQL
 12+ and PostgresPro Enterprise, with incremental support added for newer
@@ -59,14 +59,22 @@ make clean      # remove build output
 
 ### macOS
 
+Pre-built binary via Homebrew Cask (Apple Silicon, arm64):
+
+```bash
+brew install heptau/tap/pgadmin3
+```
+
+Or build from source:
+
 ```bash
 make build
 open "build-macos/pgAdmin III.app"
 ```
 
-The first build needs a locally-built wxWidgets (Homebrew's bottle isn't
-compatible out of the box — see [AGENTS.md](AGENTS.md) for why and how to
-build one). Once that's in place, `make build` configures CMake, compiles,
+The first from-source build needs a locally-built wxWidgets (Homebrew's bottle
+isn't compatible out of the box — see [AGENTS.md](AGENTS.md) for why and how
+to build one). Once that's in place, `make build` configures CMake, compiles,
 and assembles a real double-clickable `.app` bundle with its own icon and
 bundled libraries — no `DYLD_LIBRARY_PATH` needed at runtime.
 
