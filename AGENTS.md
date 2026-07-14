@@ -496,6 +496,16 @@ picks up this work next — treat this as a running log, not final docs.
   one and contains the new strings correctly (checked via `msgunfmt`,
   e.g. `"New SQL &tab\tCtrl-T"` -> `"Nová &karta SQL\tCtrl-T"` with the
   accelerator suffix and mnemonic both intact).
+- 2026-07-14: Same audit/fill-in pass repeated for Spanish (es_ES): 406
+  genuine missing strings (identical set to Czech's, minus the noise —
+  same source coverage baseline), translated into formal Spanish (Spain)
+  using a glossary extracted from the existing catalog (Foreign Key ->
+  Clave Ajena, "Are you sure..." -> "¿Está seguro de que desea...", etc).
+  Added `i18n/es_ES.po`, recompiled `x64/Release/i18n/es_ES/pgadmin3.mo`,
+  verified bundled `.mo` byte-identical and correct via `msgunfmt`.
+  Currently also running the same pass for German (de_DE, ~920 missing —
+  a much larger gap than es/fr/cs, this catalog was less complete to
+  begin with) and French (fr_FR, 406 missing, same as es/cs).
 
 ## Known TODOs / not yet solved
 

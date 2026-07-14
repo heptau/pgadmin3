@@ -6,6 +6,9 @@ Format loosely follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 ## [Unreleased]
 
 ### Added
+- Filled in ~406 missing Spanish (es_ES) UI translations, same gap and
+  method as the Czech pass below. Added `i18n/es_ES.po` as the editable
+  source of truth and recompiled `x64/Release/i18n/es_ES/pgadmin3.mo`.
 - Filled in ~406 missing Czech (cs_CZ) UI translations that were never
   covered by the shipped 2014 catalog (newer features like logical
   replication publications/subscriptions, the query tool's autoreplace/
