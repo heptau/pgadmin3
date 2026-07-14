@@ -13,6 +13,11 @@ Format loosely follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
   match the actual uploaded release asset when re-run after a release
   already existed (the local build isn't byte-for-byte reproducible
   between runs).
+- Fixed several light/dark mode (macOS) appearance bugs: some Object
+  browser tree items showing a stuck, wrong background colour; the SQL
+  panel not repainting at all when switching system appearance while the
+  app was running; and some SQL syntax-highlighting colours staying
+  black (unreadable) in dark mode.
 
 ## [2026.07.13]
 

@@ -101,6 +101,8 @@ public:
 	void SetChanged(bool b);
 	bool IsChanged();
 	wxColor SetSQLBoxColourBackground(bool transaction);
+	void ApplyColourScheme();
+	void OnSysColourChanged(wxSysColourChangedEvent &event);
 	void SetOrigin(int origin);
 	int GetOrigin();
 	void SetFilename(wxString &filename);

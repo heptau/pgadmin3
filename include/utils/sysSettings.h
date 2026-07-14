@@ -1003,13 +1003,30 @@ public:
 private:
 	static const wxString &getDefaultElementColor(int index)
 	{
-		static const wxString colors[] =
+		// Classic palette: dark colours tuned for a white ctlSQLBox
+		// background. Fine as long as GetSQLBoxUseSystemBackground() (the
+		// default) keeps the background white/light, but these are also
+		// the fallback used when the user hasn't customized a given
+		// index's colour (ctlSQLBox/ColourN not yet in config) -- with a
+		// dark system background these unreadably blend in (indices 10/11
+		// are literally black). Only applies to fresh defaults; a colour
+		// the user has explicitly picked (an existing ctlSQLBox/ColourN
+		// config entry) is left alone either way.
+		static const wxString lightColors[] =
 		{
 			wxT("#808080"), wxT("#007f00"), wxT("#007f00"), wxT("#7f7f7f"),
 			wxT("#007f7f"), wxT("#00007f"), wxT("#7f007f"), wxT("#7f007f"),
 			wxT("#007f7f"), wxT("#7f7f7f"), wxT("#000000"), wxT("#000000")
 		};
-		return colors[index];
+		static const wxString darkColors[] =
+		{
+			wxT("#a0a0a0"), wxT("#4EC94E"), wxT("#4EC94E"), wxT("#a0a0a0"),
+			wxT("#4EC9C9"), wxT("#6699FF"), wxT("#D67AD6"), wxT("#D67AD6"),
+			wxT("#4EC9C9"), wxT("#a0a0a0"), wxT("#D4D4D4"), wxT("#D4D4D4")
+		};
+		if (wxSystemSettings::GetAppearance().IsUsingDarkBackground())
+			return darkColors[index];
+		return lightColors[index];
 	}
 
 	bool moveStringValue(const wxChar *oldKey, const wxChar *newKey, int index = -1);

@@ -67,7 +67,10 @@ void ctlColourPicker::UpdateColour()
 {
 	if (!m_colour_clr.IsOk())
 	{
-		wxLogError(wxT("ohoh"));
+		// No colour set (e.g. a server with no custom colour -- see
+		// pgServer::GetColour()'s empty-string convention) -- show a blank
+		// swatch instead of logging an error, since this is now the normal
+		// case for any server the user hasn't explicitly coloured.
 		wxBitmap empty(1, 1);
 		SetBitmapLabel(empty);
 		return;

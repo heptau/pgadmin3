@@ -393,6 +393,60 @@ picks up this work next — treat this as a running log, not final docs.
   either — a separate, lower-priority cosmetic gap, not reported by the
   user, left alone for now).
 
+- 2026-07-14: User reported three light/dark-mode bugs on macOS: (1) some
+  Object browser tree items had the wrong (black) background in light mode,
+  (2) the SQL panel didn't repaint at all when switching the OS between
+  light/dark while the app was running, (3) in dark mode some SQL panel text
+  stayed black (unreadable on the dark background). Root-caused via a
+  research subagent, then verified each fix directly by live-toggling macOS
+  appearance (`osascript ... tell appearance preferences to set dark mode to
+  true/false`) against an already-running instance — confirming both the
+  live-refresh and the colour fixes actually work, not just compile.
+  - **Root cause of (1)**: `pgServer::LoadServers()` (`schema/pgServer.cpp`
+    ~line 1624, and the `pgServer` constructor's default `colour` parameter,
+    `include/schema/pgServer.h:51`) used to snapshot the *current*
+    `wxSYS_COLOUR_WINDOW` into the server's persisted `Colour` config value
+    whenever no custom colour had been set, instead of leaving it empty.
+    `ctlTree::AppendItem`/`SetItemImage` (`ctl/ctlTree.cpp`) only sets an
+    explicit per-item background when `pgServer::GetColour()` is non-empty
+    — so once that snapshot got written to config (baking in whatever the
+    system looked like, light or dark, at that moment), every object under
+    that server kept using the stale colour forever, regardless of later
+    theme switches. Fixed by leaving `colour` empty in both places when the
+    user hasn't explicitly picked one, letting the tree fall back to its own
+    (correctly theme-aware) default background. This is a fix for *future*
+    loads only — an already-corrupted `Colour=` value in an existing
+    `~/Library/Preferences/pgadmin3 Preferences` file needs manual cleanup
+    (see below); also removed a stray `wxLogError(wxT("ohoh"))` debug
+    leftover in `ctl/ctlColourPicker.cpp`'s `UpdateColour()` that would have
+    started firing constantly now that "no colour set" is the common case.
+  - **Root cause of (2)**: zero bindings to `wxEVT_SYS_COLOUR_CHANGED`
+    anywhere in the codebase — nothing ever re-applied colours on a live
+    appearance switch. Fixed by extracting `ctlSQLBox::Create()`'s
+    colour/style-setup block into a new `ApplyColourScheme()` method
+    (`ctl/ctlSQLBox.cpp`/`include/ctl/ctlSQLBox.h`), called once from
+    `Create()` and again from a new `OnSysColourChanged()` handler bound via
+    `EVT_SYS_COLOUR_CHANGED` in the class's static event table.
+  - **Root cause of (3)**: `ctlSQLBox`'s per-token SQL syntax colours
+    (indices 1-11 of the style loop) come from `settings->GetSQLBoxColour(i)`
+    (`include/utils/sysSettings.h`), whose *default* (when the user hasn't
+    customized that index) was a single hardcoded light-mode palette —
+    indices 10/11 literally `#000000`. Fixed by making
+    `getDefaultElementColor()` branch on
+    `wxSystemSettings::GetAppearance().IsUsingDarkBackground()` and return a
+    second, lighter palette for dark backgrounds. Only affects indices the
+    user has never explicitly customized (an existing `ctlSQLBox/ColourN`
+    config entry is always respected as-is, in either mode).
+  - **Found while testing, not a code bug**: this session's own dev/test
+    config (`~/Library/Preferences/pgadmin3 Preferences`) had exactly the
+    `Colour=#171717` snapshot described above baked into the `[Servers/1]`
+    section (from earlier testing in a session where the system happened to
+    be in dark mode) — deleted that one line by hand to confirm the object
+    browser rendered correctly again; a real user hitting this would need
+    the same one-line manual fix (or just re-set/clear the server's colour
+    once via its Properties dialog, which now shows a blank swatch instead
+    of a stale colour when none is set).
+
 ## Known TODOs / not yet solved
 
 - tests/ (Catch2) disabled on macOS in CMakeLists.txt — needs either a

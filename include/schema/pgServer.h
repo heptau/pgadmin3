@@ -48,7 +48,11 @@ public:
 	pgServer(const wxString &newServer = wxT(""), const wxString &newHostAddr = wxT(""), const wxString &newDescription = wxT(""),
 	         const wxString &newService = wxT(""), const wxString &newDatabase = wxT(""), const wxString &newUsername = wxT(""), int newPort = 5432,
 	         bool storePwd = false, const wxString &newRolename = wxT(""), const wxString& newConnStr = wxT(""), bool restore = true, int sslMode = 0,
-	         const wxString &colour = wxSystemSettings::GetColour(wxSYS_COLOUR_WINDOW).GetAsString(wxC2S_HTML_SYNTAX), const wxString &group = wxEmptyString,
+	         // Empty means "no custom colour, follow the tree's own (theme-aware)
+	         // default background" -- see the comment in pgServer::LoadServers
+	         // (schema/pgServer.cpp) for why this must not resolve
+	         // wxSYS_COLOUR_WINDOW eagerly here.
+	         const wxString &colour = wxEmptyString, const wxString &group = wxEmptyString,
 	         bool sshTunnel = false, const wxString &newTunnelHost = wxEmptyString, const wxString &newTunnelUserName = wxEmptyString, bool authModePwd = true,
 	         const wxString &newTunnelPassword = wxEmptyString, const wxString &newPublicKey = wxEmptyString, const wxString &newIdentityFile = wxEmptyString,
 	         const int &sshPort = DEFAULT_SSH_PORT);

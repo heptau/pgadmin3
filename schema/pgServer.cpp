@@ -1621,12 +1621,16 @@ pgObject *pgServerFactory::CreateObjects(pgCollection *obj, ctlTree *browser, co
 				colour = wxEmptyString;
 		}
 
-		if (colour.IsEmpty())
-		{
-			wxColour cColour;
-			cColour.Set(wxSystemSettings::GetColour(wxSYS_COLOUR_WINDOW).GetAsString(wxC2S_HTML_SYNTAX));
-			colour = cColour.GetAsString(wxC2S_HTML_SYNTAX);
-		}
+		// NB: leave colour empty here if the user never picked a custom one
+		// (no "Colour" key saved) -- this used to snapshot the *current*
+		// wxSYS_COLOUR_WINDOW into colour as a permanent fallback, which
+		// bakes in whatever the system looked like (light/dark) at the
+		// moment this config was first loaded and then keeps reapplying
+		// that stale value forever (ctlTree::AppendItem/SetItemImage only
+		// sets an explicit background when GetColour() is non-empty), so an
+		// uncoloured server's tree item would stop following the OS's
+		// light/dark appearance after the first load. Leaving it empty lets
+		// the tree fall back to its own (theme-aware) default background.
 
 		// SSL mode
 #ifdef PG_SSL

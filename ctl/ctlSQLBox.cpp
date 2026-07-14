@@ -60,6 +60,7 @@ BEGIN_EVENT_TABLE(ctlSQLBox, wxStyledTextCtrl)
 	EVT_MENU(MNU_AUTOCOMPLETE, ctlSQLBox::OnAutoComplete)
 	EVT_KILL_FOCUS(ctlSQLBox::OnKillFocus)
 	EVT_TIMER(TIMER_REFRESHUICARRET_ID, ctlSQLBox::OnRefreshUITimer)
+	EVT_SYS_COLOUR_CHANGED(ctlSQLBox::OnSysColourChanged)
 //	EVT_ERASE_BACKGROUND(ctlSQLBox::OnBackGround)
 #ifdef __WXMAC__
 	EVT_STC_PAINTED(-1,  ctlSQLBox::OnPositionStc)
@@ -117,6 +118,64 @@ wxColour ctlSQLBox::SetSQLBoxColourBackground(bool transaction) {
 //	SetBackgroundStyle(wxBG_STYLE_CUSTOM);
 	return bgColor;
 }
+// Applies the font + all the style/background/foreground colours (default
+// text, selection, caret, per-token syntax highlighting, margin, brace
+// matching) -- everything that depends on the user's colour settings and/or
+// the OS light/dark appearance. Runs once from Create(), and again from
+// OnSysColourChanged() whenever the system appearance changes live, so an
+// open query tab actually re-themes instead of keeping whatever colours
+// were resolved at the time it was first created.
+void ctlSQLBox::ApplyColourScheme()
+{
+	wxFont fntSQLBox = settings->GetSQLFont();
+	wxColour bgColor = SetSQLBoxColourBackground(false);
+
+	wxColour frColor = settings->GetSQLBoxColourForeground();
+	if (settings->GetSQLBoxUseSystemForeground())
+	{
+		frColor = wxSystemSettings::GetColour(wxSYS_COLOUR_WINDOWTEXT);
+	}
+	StyleSetForeground(wxSTC_STYLE_DEFAULT, frColor);
+	StyleSetFont(wxSTC_STYLE_DEFAULT, fntSQLBox);
+
+	SetSelBackground(true, wxSystemSettings::GetColour(wxSYS_COLOUR_HIGHLIGHT));
+	SetSelForeground(true, wxSystemSettings::GetColour(wxSYS_COLOUR_HIGHLIGHTTEXT));
+
+	SetCaretForeground(settings->GetSQLColourCaret());
+	if (!settings->GetCaretUseSystemBackground()) {
+		wxColour caretLine(settings->GetCaretColourBackground());
+		SetCaretLineBackground(caretLine);
+		SetCaretLineVisible(true);
+	}
+
+	// Setup the different highlight colurs
+	for (int i = 0; i < 34; ++ i )
+	{
+		if (i > 0 && i < 12)
+			StyleSetForeground(i, settings->GetSQLBoxColour(i));
+		else
+			StyleSetForeground(i, frColor);
+		StyleSetBackground(i, bgColor);
+		StyleSetFont(i, fntSQLBox);
+	}
+
+	// Margin style
+	StyleSetBackground(wxSTC_STYLE_LINENUMBER, settings->GetSQLMarginBackgroundColour());
+
+	// Brace maching styles
+	StyleSetBackground(34, wxColour(0x99, 0xF9, 0xFF));
+	StyleSetBackground(35, wxColour(0xFF, 0xCF, 0x27));
+	StyleSetFont(34, fntSQLBox);
+	StyleSetFont(35, fntSQLBox);
+}
+
+void ctlSQLBox::OnSysColourChanged(wxSysColourChangedEvent &event)
+{
+	ApplyColourScheme();
+	Refresh();
+	event.Skip();
+}
+
 void ctlSQLBox::SetQueryBook(ctlAuiNotebook *query_book)
 {
 	sql_query_book=query_book;
@@ -160,66 +219,18 @@ void ctlSQLBox::Create(wxWindow *parent, wxWindowID id, const wxPoint &pos, cons
 	caretWidth=settings->GetWidthCaretForKeyboardLayout();
 	refreshUITimer = new wxTimer(this, TIMER_REFRESHUICARRET_ID);
 	refreshUITimer->Start(250);
-	wxFont fntSQLBox = settings->GetSQLFont();
-	wxColour bgColor=SetSQLBoxColourBackground(false);
-	//wxColour bgColor = settings->GetSQLBoxColourBackground();
-	//if (settings->GetSQLBoxUseSystemBackground())
-	//{
-	//	bgColor = wxSystemSettings::GetColour(wxSYS_COLOUR_WINDOW);
-	//}
 
-	wxColour frColor = settings->GetSQLBoxColourForeground();
-	if (settings->GetSQLBoxUseSystemForeground())
-	{
-		frColor = wxSystemSettings::GetColour(wxSYS_COLOUR_WINDOWTEXT);
-	}
-//	StyleSetBackground(wxSTC_STYLE_DEFAULT, bgColor);
-	StyleSetForeground(wxSTC_STYLE_DEFAULT, frColor);
-	StyleSetFont(wxSTC_STYLE_DEFAULT, fntSQLBox);
+	ApplyColourScheme();
 
-	SetSelBackground(true, wxSystemSettings::GetColour(wxSYS_COLOUR_HIGHLIGHT));
-	SetSelForeground(true, wxSystemSettings::GetColour(wxSYS_COLOUR_HIGHLIGHTTEXT));
-
-	SetCaretForeground(settings->GetSQLColourCaret());
-	if (!settings->GetCaretUseSystemBackground()) {
-		int r = bgColor.GetRed(); int g = bgColor.GetGreen(); int b = bgColor.GetBlue();
-		if (r > 130) r = r - 20; else r = r + 20;
-		if (g > 130) g = g - 20; else g = g + 20;
-		if (b > 130) b = b - 20; else b = b + 20;
-		//wxColour caretLine(r, g, b);
-		wxColour caretLine(settings->GetCaretColourBackground());
-		SetCaretLineBackground(caretLine);
-		SetCaretLineVisible(true);
-	}
 	autoreplace=0;
 	SetMarginWidth(1, 0);
 	SetTabWidth(settings->GetIndentSpaces());
 	SetUseTabs(!settings->GetSpacesForTabs());
 
-	// Setup the different highlight colurs
-	for (int i = 0; i < 34; ++ i )
-	{
-		if (i > 0 && i < 12)
-			StyleSetForeground(i, settings->GetSQLBoxColour(i));
-		else
-			StyleSetForeground(i, frColor);
-		StyleSetBackground(i, bgColor);
-		StyleSetFont(i, fntSQLBox);
-	}
-
 	// Keywords in uppercase?
 
 	if (settings->GetSQLKeywordsInUppercase())
 		StyleSetCase(5, wxSTC_CASE_UPPER);
-
-	// Margin style
-	StyleSetBackground(wxSTC_STYLE_LINENUMBER, settings->GetSQLMarginBackgroundColour());
-
-	// Brace maching styles
-	StyleSetBackground(34, wxColour(0x99, 0xF9, 0xFF));
-	StyleSetBackground(35, wxColour(0xFF, 0xCF, 0x27));
-	StyleSetFont(34, fntSQLBox);
-	StyleSetFont(35, fntSQLBox);
 
 	// SQL Lexer and keywords.
 	if (sqlKeywords.IsEmpty())
