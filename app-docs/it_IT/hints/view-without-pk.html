@@ -1,0 +1,28 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="STYLESHEET" type="text/css" href="../pgadmin3.css">
+<title>Suggerimenti</title>
+</head>
+
+<body>
+
+<h3>Modifica dati tabella senza chiave primaria</h3>
+<p>
+Poiché la tabella <INFO> non ha una chiave primaria o OID, puoi solo
+visualizzare i dati. Inserire nuove righe e modificare righe esistenti non è
+possibile per lo strumento Modifica Dati senza chiave primaria.
+</p>
+<p>
+Per modificare i dati, pgAdmin III richiede una chiave primaria sulla tabella,
+che è comunque una buona pratica di progettazione del database. In alternativa,
+la tabella può essere creata WITH OIDS. Si prega di notare che gli OID
+<b>non</b> sono garantiti come univoci per un periodo di tempo molto lungo,
+quindi utilizzare gli OID come una sorta di chiave primaria è solo una seconda
+scelta.
+</p>
+
+</body>
+
+</html>

@@ -1,0 +1,47 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link rel="STYLESHEET" type="text/css" href="../pgadmin3.css">
+<title>Rady odborníka</title>
+</head>
+
+<body>
+
+<h3>Primárne kľúče</h3>
+<p>
+Pri návrhu tabuľky by ste mali vždy brať na vedomie, ako bude tabuľka neskôr
+adresovaná. Vo väčšine prípadov budete potrebovať nejakú jednoznačnú
+identifikáciu každého riadku. Taký jednoznačný identifikátor by mal byť
+vytvorený ako primárny kľúč. Primárny kľúč nemusí nutne pozostávať z jediného
+stĺpca. Môže obsahovať toľko stĺpcov, koľko je nutné pre jedinečnú
+identifikáciu riadku. Ak by ste potrebovali veľa stĺpcov (odhadom viac než
+3), môže byť dobrým riešením vymyslieť doplňujúci stĺpec s vhodným dátovým
+typom, napr. serial alebo bigserial, v ktorom sa bude primárny kľúč uchovávať.
+</p>
+<p>
+Iba vo výnimočných prípadoch nie je dôležité vytvárať primárny kľúč. To
+znamená, že chýbajúci primárny kľúč je dosť významný ukazovateľ, že návrh
+tabuľky nie je dokončený. Preto sa tiež objaví Rada odborníka, keď vytvoríte
+tabuľku bez primárneho kľúča.
+</p>
+<p>
+Keď sa pozriete na systémové tabuľky PostgreSQL, zistíte že žiadna z nich
+nemá primárny kľúč. Čo si o tom myslieť? V skutočnosti všetky tieto tabuľky
+majú jeden alebo viac stĺpcov (obvykle iba OID), ktoré jedinečne identifikujú
+každý riadok a pritom dodržiavajú pravidlo pre primárne kľúče, že nesmú byť nulové
+a sú pokryté indexom pre rýchly prístup. Použitie OID má historické príčiny a
+skutočne to nie je hlavná voľba pri návrhu používateľských tabuliek. PostgreSQL
+ich používa kvôli spätnej kompatibilite a napriek tomu že novší prístup by pravdepodobne
+bol použiť výslovne primárne kľúče, hneď tak sa to nezmení.
+</p>
+<p>
+Ako je vidieť na prípade systémových tabuliek, ciele unikátnosti a rýchleho
+prístupu možno dosiahnuť aj s inými prístupmi, než len primárnym kľúčom. Napriek
+tomu, kvôli čistote dátového modelu, vám dôrazne odporúčame na tieto účely
+používať primárne kľúče.
+</p>
+
+</body>
+
+</html>

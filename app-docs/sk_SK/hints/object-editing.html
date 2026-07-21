@@ -1,0 +1,43 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link rel="STYLESHEET" type="text/css" href="../pgadmin3.css">
+<title>Rady odborníka</title>
+</head>
+
+<body>
+
+<h3>Úprava pohľadov, uložených procedúr a funkcií</h3>
+<p>
+Keď upravujete kód pre pohľad, uloženú procedúru alebo funkciu, môže vám byť
+malé textové pole v dialógovom okne vlastností objektu nepohodlné. Možno
+zhľadáte ako lepšiu možnosť použiť skriptovanie pgAdminu s následnou úpravou
+objektu v dopyovacom nástroji. Získate tým výhody editora dopyovacieho
+nástroja, ako je automatické dokončovanie, vyhľadávanie a nahrádzanie a väčší
+pracovný priestor.
+</p>
+<p>
+Ak chcete použiť skriptovanie, kliknite pravým tlačidlom v strome objektov
+na objekt, ktorý chcete upraviť a zvoľte položku <i>Skript CREATE</i>.
+Prípadne sa táto položka môže nachádzať v podponuke <i>Skripty</i>. K rovnakému
+výsledku dôjdete tiež výberom objektu a následnou voľbou <i>Skript CREATE</i>
+v podponuke <i>Skripty</i> ponuky <i>Nástroje</i>.
+</p>
+<p>
+Upravte definíciu objektu podľa svojich potrieb a s použitím tlačidla <i>Vy-konať
+dotaz</i> zmeny aplikujte. Nezabudnite, že zmena názvu pohľadu alebo funkcie a
+hlavičky funkcie alebo procedúry môže spôsobiť vytvorenie nového objektu namiesto
+zmeny existujúceho. Prínosom tohto javu je ľahké vytváranie nových objektov
+podobných tým existujúcim. Aby sa nové objekty zobrazili v strome objektov, je
+niekedy nutné ho nechať aktualizovať.
+</p>
+<p>
+Tento postup môžete vykonávať so všetkými typmi operácií na rôznych objektoch.
+Pre úpravy pohľadov, uložených procedúr a funkcií je ale najvhodnejšia syntax
+PostgreSQL v podobe <i>CREATE OR REPLACE</i>.
+</p>
+
+</body>
+
+</html>

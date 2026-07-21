@@ -1,0 +1,60 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="STYLESHEET" type="text/css" href="../pgadmin3.css">
+<title>Dicas do Guru</title>
+</head>
+
+<body>
+
+<h3>Instrumentação do servidor</h3>
+<p>
+O servidor não possui funções de instrumentação.
+</p>
+<p>
+O pgAdmin III usa algumas funções de suporte que não estão disponíveis por
+padrão em todas as versões do PostgreSQL. Estas permitem algumas tarefas que
+facilitam a vida ao lidar com arquivos de log e arquivos de configuração.
+</p>
+<p>O adminpack é instalado e ativado por padrão se você estiver usando a
+distribuição 'oficial' do pgInstaller do PostgreSQL para Windows e está
+incluído como um módulo contrib em todas as versões do PostgreSQL 8.2 e
+superiores. No entanto, se você estiver executando qualquer outra versão do
+PostgreSQL, precisará instalá-lo manualmente. Para fazer isso, basta copiar o
+código fonte apropriado do adminpack para o diretório /contrib da sua árvore
+de código fonte do PostgreSQL pré-configurada. Você pode baixar os adminpacks
+<a href="http://www.pgadmin.org/download/adminpacks.php">aqui</a>.</p>
+
+<p>Execute os seguintes comandos (substituindo <i>admin</i> por <i>admin81</i>
+se necessário):</p>
+
+<pre>
+    # cd $PGSRC/contrib/admin
+    # make all
+    # make install
+</pre>
+
+<p>O módulo agora deve estar compilado e instalado em sua instalação existente
+do PostgreSQL. Para ser usado, você deve agora instalar o módulo no banco de
+dados que você usa como <i>Banco de Manutenção</i> do pgAdmin (normalmente
+<i>postgres</i>, embora você possa usar um banco de dados diferente). Para
+fazer isso, localize o arquivo <i>admin.sql</i> ou <i>admin81.sql</i>
+instalado na etapa anterior - normalmente pode ser encontrado em
+/usr/local/pgsql/share/contrib/ e execute-o contra seu banco de dados.
+Normalmente você precisa fazer isso como superusuário do PostgreSQL:</p>
+
+<pre>
+    $ psql postgres < /usr/local/pgsql/share/contrib/admin.sql
+</pre>
+
+<p>Na próxima vez que você se conectar ao servidor com o pgAdmin, ele detectará
+a presença do adminpack e oferecerá funcionalidade completa.</p>
+
+<p>
+A instrumentação estendida do servidor não é suportada para PostgreSQL 7.3 e 7.4.
+</p>
+
+</body>
+
+</html>

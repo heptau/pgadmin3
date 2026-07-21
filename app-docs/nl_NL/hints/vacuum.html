@@ -1,0 +1,44 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="STYLESHEET" type="text/css" href="../pgadmin3.css">
+<title>Guru Tips</title>
+</head>
+
+<body>
+
+<h3>VACUUM uitvoeren aanbevolen</h3>
+<p>
+Het geschatte rijenaantal in de tabel &quot;<INFO>&quot; wijkt aanzienlijk af
+van het werkelijke rijenaantal. U moet VACUUM ANALYZE op deze tabel uitvoeren.
+</p>
+<p>
+In plaats van handmatig een VACUUM ANALYZE-commando op deze tabel uit te
+voeren (u kunt hiervoor het pgAdmin III-onderhoudsmenu gebruiken), moet
+worden overwogen om VACUUM ANALYZE regelmatig of geautomatiseerd uit te
+voeren. Dit kan worden bereikt met een planner. PostgreSQL levert ook de
+autovacuum-daemon, die wijzigingen in de database bijhoudt en indien nodig
+automatisch vacuum-commando's uitvoert. In de meeste gevallen is autovacuum
+de beste keuze.
+</p>
+<p><br><br></p>
+<b>Waar is VACUUM goed voor?</b>
+<p>
+De PostgreSQL-queryplanner baseert zijn beslissingen op aannames, afkomstig
+van het geschatte rijenaantal. Als het werkelijke rijenaantal te veel afwijkt
+van het geschatte rijenaantal, kan de planner een verkeerde beslissing nemen,
+wat resulteert in een suboptimaal queryplan. Dit kan leiden tot slechte
+prestaties.
+</p>
+<p>
+De PostgreSQL-opslag heeft VACUUM nodig om transactie-ID's in tabellen te
+fixeren. Bovendien worden verouderde rijen van updates en verwijderingen niet
+opgeruimd totdat het VACUUM-commando op die tabel is uitgevoerd. Diepgaande
+informatie is te vinden in de online documentatie, druk gewoon op de
+helpknop.
+</p>
+
+</body>
+
+</html>

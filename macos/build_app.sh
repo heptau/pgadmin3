@@ -154,6 +154,32 @@ if [ -f "$REPO_ROOT/x64/Release/textcompare_report.template" ]; then
 	cp "$REPO_ROOT/x64/Release/textcompare_report.template" "$SHAREDSUPPORT_DIR/"
 fi
 
+# Guru Hint HTML pages + documentation. frmHint::GetPage() builds paths as
+# docPath + "/<locale>/hints/<hintPage>.html" where docPath resolves to
+# Contents/SharedSupport/docs/ on macOS (see LocatePath() in pgAdmin3.cpp,
+# DOC_DIR = "/docs"). The app-docs/ directory at the repo root has the right
+# locale/hints/ structure, just under a different name -- copy it over as
+# "docs/" so the runtime lookup works.
+# Also symlink it into BUILD_DIR for the direct-dev-run path (make run),
+# where LocatePath() falls back to loadPath + "/docs" as well.
+if [ -d "$REPO_ROOT/app-docs" ]; then
+	echo "  -> Copying guru hint docs to bundle SharedSupport/docs ..."
+	rm -rf "$SHAREDSUPPORT_DIR/docs"
+	cp -R "$REPO_ROOT/app-docs" "$SHAREDSUPPORT_DIR/docs"
+	html_count="$(find "$SHAREDSUPPORT_DIR/docs" -name '*.html' | wc -l | tr -d ' ')" || true
+	if ls "$SHAREDSUPPORT_DIR/docs/"*/hints/*.html >/dev/null 2>&1; then
+		echo "  -> Guru hint docs installed ($html_count HTML files)"
+	else
+		echo "warning: docs copy may have the wrong structure; 'ls $SHAREDSUPPORT_DIR/docs/'" >&2
+		ls "$SHAREDSUPPORT_DIR/docs/" 2>/dev/null || true
+	fi
+	echo "  -> Creating docs symlink in BUILD_DIR for dev mode ..."
+	rm -f "$BUILD_DIR/docs"
+	ln -s "$REPO_ROOT/app-docs" "$BUILD_DIR/docs"
+else
+	echo "warning: $REPO_ROOT/app-docs not found -- guru hints won't be available" >&2
+fi
+
 # Info.plist. PGADMIN3_VERSION can be set by the caller (release.sh stamps
 # in the date-based release version); otherwise fall back to CMakeLists.txt's
 # (rarely-bumped) project version, just so it's never blank.

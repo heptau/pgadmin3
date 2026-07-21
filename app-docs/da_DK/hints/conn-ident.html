@@ -1,0 +1,43 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="STYLESHEET" type="text/css" href="../pgadmin3.css">
+<title>Gururåd</title>
+</head>
+
+<body>
+
+<h3>Ident-godkendelse mislykkedes</h3>
+<p>
+Serveren accepterer ikke den aktuelle bruger: serveren rapporterer
+</p>
+<p>
+<b><tt class="command"><INFO></tt></b>
+</p>
+<p>
+Hvis denne besked vises, er pg_hba.conf-posten fundet for din klient /
+bruger / database-kombination indstillet til "ident"-godkendelse. Nogle
+distributioner, f.eks. Debian, har dette som standard. For at udføre
+ident-baseret godkendelse med succes kræves yderligere opsætning; se
+PostgreSQL-hjælpen for dette. For en begynder kan det være mere passende at
+bruge en anden godkendelsesmetode; MD5-krypterede adgangskoder er et godt
+valg, som kan konfigureres med en post i pg_hba.conf som denne:
+</p>
+<p>
+<b><tt class="command">host all all 192.168.0.0/24 md5</tt></b>
+</p>
+<p>
+Dette eksempel giver MD5-krypteret adgang til alle databaser for alle brugere
+i det private netværk 192.168.0.0/24.
+</p>
+<p>
+Du kan bruge pg_hba.conf-editoren, der er indbygget i pgAdmin III, til at
+redigere konfigurationsfilen pg_hba.conf. Efter at have ændret pg_hba.conf
+skal du udløse en genindlæsning af serverkonfigurationen ved hjælp af pg_ctl
+eller ved at stoppe og genstarte serverprocessen.
+</p>
+
+</body>
+
+</html>

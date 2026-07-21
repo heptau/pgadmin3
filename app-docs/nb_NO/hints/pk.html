@@ -1,0 +1,49 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="STYLESHEET" type="text/css" href="../pgadmin3.css">
+<title>Gururåd</title>
+</head>
+
+<body>
+
+<h3>Primærnøkler</h3>
+<p>
+Når du designer en tabell, bør du alltid ha i tankene hvordan tabellen vil
+bli adressert senere. I de fleste tilfeller vil du trenge en identifikator
+for å entydig adressere en spesifikk rad; denne identifikatoren bør opprettes
+som din primærnøkkel. En primærnøkkel trenger ikke nødvendigvis å bestå av
+en enkelt kolonne; den kan inneholde så mange kolonner som nødvendig for å
+identifisere en rad unikt. Hvis du trenger mange kolonner (tommelfingerregel:
+mer enn 3), kan det være en god idé å finne på en ekstra kolonne med en
+praktisk datatype, f.eks. serial eller bigserial, som inneholder
+primærnøkkelen.
+</p>
+<p>
+Bare i sjeldne tilfeller gir det ikke mening å bruke en primærnøkkel. Det
+betyr at en manglende primærnøkkel er en ganske sterk indikator på at tabellen
+ikke er fullstendig designet; det er derfor et Gururåd vil dukke opp hvis du
+oppretter en tabell uten primærnøkkel.
+</p>
+<p>
+Hvis du ser på PostgreSQLs systemtabeller, vil du oppdage at ingen av dem har
+en primærnøkkel. Hva handler dette om? Faktisk har alle disse tabellene en
+eller to kolonner (vanligvis bare OID) som unikt identifiserer hver rad, i
+tråd med den andre regelen for en primærnøkkel: å ikke tillate null og være
+dekket av en indeks for raskere tilgang. Bruken av OID har historiske årsaker
+og er egentlig ikke førstevalget for å designe brukertabeller. PostgreSQL
+bruker fortsatt dette for bakoverkompatibilitet, og mens en nyere tilnærming
+sannsynligvis ville brukt eksplisitte primærnøkler, vil det ikke bli endret
+nå.
+</p>
+<p>
+Som tilfellet med systemtabellene viser, kan målet om unikhet og rask tilgang
+oppnås med andre tilnærminger enn en primærnøkkel. Likevel, for klarhetens
+skyld i datamodellen, oppfordres du sterkt til å bruke primærnøkler for dette
+formålet.
+</p>
+
+</body>
+
+</html>

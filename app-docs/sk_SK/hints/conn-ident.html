@@ -1,0 +1,42 @@
+<html>
+
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<link rel="STYLESHEET" type="text/css" href="../pgadmin3.css">
+<title>Rady odborníka</title>
+</head>
+
+<body>
+
+<h3>Autentizácia metódou Ident zlyhala</h3>
+<p>
+Server nie je ochotný prijať aktuálneho používateľa: Server hlási
+</p>
+<p>
+<b><tt class="command"><INFO></tt></b>
+</p>
+<p>
+Ak sa objaví toto hlásenie, je v pg_hba.conf záznam pre kombináciu klienta /
+používateľa / databázy s nastaveným overovaním na „ident“. Niektoré distribúcie,
+napr. Debian, majú túto možnosť ako predvolenú. Aby mohlo overenie typu ident
+prebehnúť v poriadku, sú potrebné doplňujúce nastavenia. Podrobnosti nájdete
+v nápovede k PostgreSQL. Pre začiatočníkov môže byť vhodnejšie použiť iný typ
+overovania. Dobrou voľbou sú heslá šifrované pomocou MD5. V pg_hba.conf
+ich môžete nastaviť nejako takto:
+</p>
+<p>
+<b><tt class="command">host all all 192.168.0.0/24 md5</tt></b>
+</p>
+<p>
+Tento príklad udeľuje na základe hesla šifrovaného pomocou MD5 prístup ku všetkým
+databázam pre všetkých používateľov v privátnej sieti 192.168.0.0/24.
+</p>
+<p>
+Na úpravu súboru pg_hba.conf môžete použiť editor nastavení, ktorý je súčasťou
+pgAdmin III. Po vykonaní zmien v pg_hba.conf je potrebné prinútiť server, aby nové
+nastavenie načítal. Buď pomocou pg_ctl alebo reštartovaním procesu servera.
+</p>
+
+</body>
+
+</html>

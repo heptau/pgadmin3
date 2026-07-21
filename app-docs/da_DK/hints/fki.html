@@ -1,0 +1,52 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="STYLESHEET" type="text/css" href="../pgadmin3.css">
+<title>Gururåd</title>
+</head>
+
+<body>
+<h3>Dækkende indekser for fremmednøgler</h3>
+<p>
+En fremmednøgle bruges til at koble to tabeller logisk sammen og begrænse de
+ændringer, der kan foretages på dem.
+</p>
+<p>
+Det hele starter med en mastertabel, som vil være den refererede tabel. Den
+skal have en primærnøgle (faktisk skal de refererede kolonner kun være
+ikke-null og dækket af et unikt indeks, men det er virkelig et godt råd at
+have en primærnøgle). Slavetabellen afhænger af mastertabellen, i den
+forstand at kolonnerne, som fremmednøglen oprettes på, skal matche
+mastertabellen for enhver indsat eller opdateret nøgle. Slavetabellen er den
+refererende tabel for fremmednøglen.
+</p>
+<p>
+Fremmednøglen begrænser ikke kun den refererende tabel, men også den
+refererede tabel; begrænsningstypen kan være RESTRICT, CASCADE eller SET
+NULL. Dette betyder, at hvis en række i master/refererede tabel ændres
+(opdateres eller slettes), kontrolleres alle refererende tabeller for at se,
+om operationen er gyldig, og om der er nogle yderligere handlinger at
+udføre; se PostgreSQL-dokumentationen om fremmednøgler for yderligere detaljer.
+</p>
+<p>
+Dette betyder, at ved ændringsadgang til en specifik række i den refererede
+tabel udføres en tilsvarende læsning på alle refererende tabeller ved hjælp
+af fremmednøglekolonnerne som adgangsnøgle. Følgelig gælder alle
+designregler, der bør tages i betragtning for god læseydelse, normalt også
+for kolonner i en refererende tabel. For god ydeevne anbefales et indeks i
+de fleste tilfælde. PostgreSQL håndhæver ikke dette på nogen måde, så det
+er op til database-designeren at levere et indeks.
+</p>
+<p>
+For nemheds skyld tilbyder pgAdmin III en simpel afkrydsningsfelt, når du
+opretter en fremmednøgle, som automatisk kontrollerer tilstedeværelsen af et
+brugbart indeks og opretter et for dig, hvis intet findes. Som med alle
+indekser er der sjældne tilfælde, hvor et sådant indeks forringer den samlede
+ydelse en smule, men generelt er det meget mere ydeevneforringende at have ét
+indeks for få end at have ét indeks for meget.
+</p>
+
+</body>
+
+</html>

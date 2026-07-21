@@ -1,0 +1,30 @@
+<html>
+
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<link rel="STYLESHEET" type="text/css" href="../pgadmin3.css">
+<title>Rady odborníka</title>
+</head>
+
+<body>
+
+<h3>Kódovanie Unicode na serveri Win32</h3>
+<p>
+Databáza <INFO> je vytvorená s nastavením kódovania na Unicode (UTF8) pre
+ukladanie dát a pracuje v PostgreSQL 8.0 bežiacom na serveri Win32.
+</p>
+<p>
+Win32 implementácia PostgreSQL 8.0 nevie zoradiť reťazce znakov v súlade s
+príslušnou porovnávacou sekvenciou, pretože operačný systém na to neposkytuje
+dostatočnú podporu.
+</p>
+<p>
+Pre takúto inštaláciu je odporúčané použiť vhodné lokálne kódovanie,
+prevádzkovať cluster na inom operačnom systéme alebo prejsť na verziu PostgreSQL
+minimálne 8.1, ktorá má doplnené funkcie zvládajúce porovnávanie v Unicode, čím
+obchádza tento problém.
+</p>
+
+</body>
+
+</html>

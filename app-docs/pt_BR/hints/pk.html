@@ -1,0 +1,49 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="STYLESHEET" type="text/css" href="../pgadmin3.css">
+<title>Dicas do Guru</title>
+</head>
+
+<body>
+
+<h3>Chaves primárias</h3>
+<p>
+Ao projetar uma tabela, você deve sempre ter em mente como a tabela será
+endereçada posteriormente. Na maioria dos casos, você precisará de um
+identificador para endereçar exclusivamente uma linha específica; este
+identificador deve ser criado como sua chave primária. Uma chave primária não
+precisa consistir necessariamente em uma única coluna; pode conter quantas
+colunas forem necessárias para identificar exclusivamente uma linha. Se você
+precisar de muitas colunas (regra geral: mais de 3), pode ser uma boa ideia
+criar uma coluna adicional com um tipo de dados conveniente, por exemplo serial
+ou bigserial, que contenha a chave primária.
+</p>
+<p>
+Apenas em casos raros não faz sentido usar uma chave primária. Isso significa
+que uma chave primária ausente é um indicador bastante forte de que a tabela
+não foi projetada completamente; é por isso que uma Dica do Guru surgirá se
+você criar uma tabela sem chave primária.
+</p>
+<p>
+Se você olhar para as tabelas do sistema PostgreSQL, descobrirá que nenhuma
+delas tem chave primária. Então, do que se trata isso? Na verdade, todas essas
+tabelas têm uma ou duas colunas (geralmente apenas OID) que identificam
+exclusivamente cada linha, obedecendo à segunda regra para uma chave primária,
+não permitindo zero e sendo cobertas por um índice para acesso mais rápido. O
+uso de OIDs tem razões históricas e não é realmente a primeira escolha para
+projetar tabelas de usuário. O PostgreSQL ainda usa isso para compatibilidade
+com versões anteriores, e embora uma abordagem mais nova provavelmente usasse
+chaves primárias explícitas, não será mais alterado agora.
+</p>
+<p>
+Como mostra o caso das tabelas do sistema, o objetivo de exclusividade e
+acesso rápido pode ser alcançado com outras abordagens além de uma chave
+primária. Ainda assim, para clareza do modelo de dados, você é fortemente
+encorajado a usar chaves primárias para este propósito.
+</p>
+
+</body>
+
+</html>

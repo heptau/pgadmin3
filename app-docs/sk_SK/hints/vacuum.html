@@ -1,0 +1,47 @@
+<html>
+
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" >
+<link rel="STYLESHEET" type="text/css" href="../pgadmin3.css">
+<title>Rady odborníka</title>
+</head>
+
+<body>
+
+<h3>Odporúča sa spustenie VACUUM</h3>
+<p>
+Odhadovaný počet riadkov v tabuľke „<INFO>“ sa významne odlišuje od aktuálneho
+počtu riadkov. Mali by ste pre túto tabuľku spustiť príkaz VACUUM ANALYZE.
+</p>
+<p>
+Namiesto ručného spúšťania príkazu VACUUM ANALYZE pre túto tabuľku (môžete
+tiež použiť položku ponuky „Údržba“ v pgAdmin III) zvážte pravidelné a
+automatické vykonávanie VACUUM ANALYZE. To možno dosiahnuť pomocou plánovača
+úloh. PostgreSQL tiež obsahuje démona pre automatický úklid, ktorý sleduje
+zmeny v databáze a ak je potrebné vykonáva príkaz VACUUM automaticky. Vo
+väčšine prípadov je automatický úklid lepšou voľbou.
+</p>
+<p>
+<br>
+<br>
+</p>
+<p>
+<b>Na čo je príkaz VACUUM dobrý?</b>
+</p>
+<p>
+Plánovač dotazov v PostgreSQL robí rozhodnutia na základe predpokladov
+vychádzajúcich z odhadu počtu riadkov. Ak sa aktuálny počet riadkov významne
+líši od odhadovaného počtu riadkov, môže plánovač robiť nesprávne rozhodnutia.
+Výsledkom bude neoptimálny plán a to sa môže odraziť v zlom výkone.
+</p>
+<p>
+Úložisko PostgreSQL potrebuje vykonávanie VACUUM kvôli stabilizovaniu
+transakčných ID v tabuľkách. Navyše zastarané riadky po aktualizáciách a mazaniach
+nie sú vyčistené, dokiaľ sa na príslušných tabuľkách nevykoná príkaz VACUUM.
+Dôkladnejšie informácie nájdete v on-line dokumentácii, stačí stlačiť
+tlačidlo „Nápoveda“.
+</p>
+
+</body>
+
+</html>

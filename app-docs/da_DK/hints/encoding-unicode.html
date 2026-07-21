@@ -1,0 +1,31 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="STYLESHEET" type="text/css" href="../pgadmin3.css">
+<title>Gururåd</title>
+</head>
+
+<body>
+
+<h3>Unicode-kodning på en Win32-server</h3>
+<p>
+Databasen <INFO> er oprettet til at bruge Unicode (UTF8)-kodning til at
+lagre data og kører på en PostgreSQL 8.0-server, der kører på en
+Win32-server.
+</p>
+<p>
+PostgreSQL 8.0 Win32-implementeringen er ikke i stand til at sortere
+tegnstrenge i henhold til passende sorteringssekvenser, fordi operativsystemet
+ikke tilbyder tilstrækkelig support til dette.
+</p>
+<p>
+For denne installation anbefales det at bruge en lokalspecifik kodning,
+køre klyngen på et andet operativsystem eller opgradere din databaseklynge
+til PostgreSQL 8.1, som har yderligere kode til at håndtere
+Unicode-sortering og løse problemet.
+</p>
+
+</body>
+
+</html>

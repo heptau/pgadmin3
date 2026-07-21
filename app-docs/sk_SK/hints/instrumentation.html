@@ -1,0 +1,60 @@
+<html>
+
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<link rel="STYLESHEET" type="text/css" href="../pgadmin3.css">
+<title>Rady odborníka</title>
+</head>
+
+<body>
+
+<h3>Nástroje servera</h3>
+<p>
+Serveru chýba vybavenie nástrojmi.
+</p>
+<p>
+pgAdmin III využíva niektoré podporné funkcie, ktoré nie sú štandardne dostupné
+vo všetkých verziách PostgreSQL. Tieto funkcie dovoľujú vykonávať niektoré veci, ktoré
+uľahčia prácu so súbormi evidencií a so súbormi nastavení.
+</p>
+<p>
+Pokiaľ inštalujete PostgreSQL pre Windows pomocou oficiálneho inštalátora,
+adminpack sa nainštaluje a aktivuje automaticky, pretože od verzie PostgreSQL
+8.2 je súčasťou ako modul tretej strany. Ak ale máte akúkoľvek inú
+variantu, budete si ho musieť sami ručne doinštalovať. Postupujte tak, že
+nakopírujete zdrojový kód adminpack do priečinka /contrib vášho pripraveného
+stromu so zdrojovými kódmi PostgreSQL. Stiahnuť si ich môžete na tejto
+<a href="http://www.pgadmin.org/download/adminpacks.php">adrese</a>.
+</p>
+<p>
+Spustite nasledujúce príkazy (v ktorých v prípade potreby zameňte
+<i>admin</i> za <i>admin81</i>):
+</p>
+<pre>
+    # cd $PGSRC/contrib/admin
+    # make all
+    # make install
+</pre>
+<p>
+Tým sa modul zostaví a nainštaluje do existujúcej inštalácie PostgreSQL. Aby ho
+bolo možné používať, musí sa ešte nainštalovať do databázy, ktorú používate
+ako <i>údržbovú databázu</i> pre pgAdmin (normálne to je <i>postgres</i>, ale
+môžete si priať používať nejakú inú). Na tento účel vyhľadajte súbor
+<i>admin.sql</i> alebo <i>admin81.sql</i>, ktorý sa nainštaloval v predchádzajúcom
+kroku (obvykle do /usr/local/pgsql/share/contrib/) a spustite ho oproti vašej
+databáze. Musíte to urobiť ako superpoužívateľ PostgreSQL:
+</p>
+<pre>
+    $ psql postgres < /usr/local/pgsql/share/contrib/admin.sql
+</pre>
+<p>
+Pri vašom najbližšom pripojení k serveru pomocou pgAdmin sa zistí prítomnosť
+nástrojov adminpack a bude k dispozícii plná funkcionalita.
+</p>
+<p>
+Rozšírenie servera o vybavenie nástrojmi nie je podporované v PostgreSQL 7.3 a 7.4.
+</p>
+
+</body>
+
+</html>

@@ -1,0 +1,34 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="STYLESHEET" type="text/css" href="../pgadmin3.css">
+<title>Gururåd</title>
+</head>
+
+<body>
+
+<h3>Databaskodning</h3>
+<p>
+Databasen <INFO> är skapad för att lagra data med SQL_ASCII-kodning. Denna
+kodning är endast definierad för 7-bitars tecken; betydelsen av tecken med
+8:e biten inställd (icke-ASCII-tecken 127-255) är inte definierad. Följaktligen
+är det inte möjligt för servern att konvertera data till andra kodningar.
+</p>
+<p>
+Om du lagrar icke-ASCII-data i databasen rekommenderas du starkt att använda
+en lämplig databaskodning som representerar din lokala teckenuppsättning för
+att dra nytta av automatisk konvertering till olika klientkodningar när det
+behövs. Om du lagrar icke-ASCII-data i en SQL_ASCII-databas kan du stöta på
+konstiga tecken som skrivs till eller läses från databasen, orsakade av
+kodkonverteringsproblem. Detta kan orsaka mycket huvudvärk när du använder
+databasen med olika klientprogram och drivrutiner.
+</p>
+<p>
+För de flesta installationer kommer Unicode (UTF8)-kodning att ge de mest
+flexibla möjligheterna.
+</p>
+
+</body>
+
+</html>

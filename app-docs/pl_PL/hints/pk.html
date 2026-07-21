@@ -1,0 +1,48 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="STYLESHEET" type="text/css" href="../pgadmin3.css">
+<title>Rady guru</title>
+</head>
+
+<body>
+
+<h3>Klucze główne</h3>
+<p>
+Projektując tabelę, zawsze powinieneś pamiętać o tym, jak tabela będzie później
+adresowana. W większości przypadków będziesz potrzebować identyfikatora, aby
+jednoznacznie odnieść się do konkretnego wiersza; ten identyfikator powinien
+być utworzony jako klucz główny. Klucz główny nie musi koniecznie składać się
+z pojedynczej kolumny; może zawierać tyle kolumn, ile potrzeba, aby jednoznacznie
+zidentyfikować wiersz. Jeśli potrzebujesz wielu kolumn (ogólnie: więcej niż 3),
+dobrym pomysłem może być wymyślenie dodatkowej kolumny z wygodnym typem danych,
+np. serial lub bigserial, która będzie przechowywać klucz główny.
+</p>
+<p>
+Tylko w rzadkich przypadkach używanie klucza głównego nie ma sensu. Oznacza to,
+że brak klucza głównego jest dość silnym wskaźnikiem, że tabela nie została
+zaprojektowana w pełni; dlatego też pojawi się Rada Guru, jeśli utworzysz
+tabelę bez klucza głównego.
+</p>
+<p>
+Jeśli spojrzysz na tabele systemowe PostgreSQL, odkryjesz, że żadna z nich nie
+ma klucza głównego. O co więc chodzi? W rzeczywistości wszystkie te tabele
+mają jedną lub dwie kolumny (zwykle tylko OID), które jednoznacznie
+identyfikują każdy wiersz, przestrzegając drugiej zasady klucza głównego -
+nie pozwalają na zero i są objęte indeksem dla szybszego dostępu. Użycie OID
+ma przyczyny historyczne i nie jest naprawdę pierwszym wyborem przy
+projektowaniu tabel użytkownika. PostgreSQL nadal używa tego ze względu na
+wsteczną kompatybilność i chociaż nowsze podejście prawdopodobnie używałoby
+jawnych kluczy głównych, nie zostanie to już zmienione.
+</p>
+<p>
+Jak pokazuje przypadek tabel systemowych, cel unikalności i szybkiego dostępu
+można osiągnąć za pomocą innych podejść niż klucz główny. Mimo to, dla
+przejrzystości modelu danych, zdecydowanie zaleca się używanie kluczy głównych
+do tego celu.
+</p>
+
+</body>
+
+</html>

@@ -1,0 +1,27 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="STYLESHEET" type="text/css" href="../pgadmin3.css">
+<title>Guru Tips</title>
+</head>
+
+<body>
+
+<h3>Tabelgegevens bewerken zonder primaire sleutel</h3>
+<p>
+Omdat de tabel <INFO> geen primaire sleutel of OIDs heeft, kunt u de
+gegevens alleen bekijken. Nieuwe rijen invoegen en bestaande rijen wijzigen
+is niet mogelijk voor de Gegevens bewerken-tool zonder primaire sleutel.
+</p>
+<p>
+Om gegevens te bewerken, heeft pgAdmin III een primaire sleutel op de tabel
+nodig, wat sowieso een goede databaseontwerppraktijk is. Alternatief kan de
+tabel worden gemaakt WITH OIDS. Houd er rekening mee dat OIDs <b>niet</b>
+gegarandeerd uniek zijn over een zeer lange periode, dus het gebruik van
+OIDs als een soort primaire sleutel is slechts een tweede keuze.
+</p>
+
+</body>
+
+</html>

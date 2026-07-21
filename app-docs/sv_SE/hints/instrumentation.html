@@ -1,0 +1,60 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="STYLESHEET" type="text/css" href="../pgadmin3.css">
+<title>Gururåd</title>
+</head>
+
+<body>
+
+<h3>Serverinstrumentering</h3>
+<p>
+Servern saknar instrumenteringsfunktioner.
+</p>
+<p>
+pgAdmin III använder några stödfunktioner som inte är tillgängliga som
+standard i alla PostgreSQL-versioner. Dessa möjliggör vissa uppgifter som
+gör livet enklare när man hanterar loggfiler och konfigurationsfiler.
+</p>
+<p>adminpack installeras och aktiveras som standard om du använder den
+'officiella' pgInstaller-distributionen av PostgreSQL för Windows och ingår
+som en contrib-modul i alla versioner av PostgreSQL 8.2 och senare. Om du
+dock använder någon annan version av PostgreSQL måste du installera det
+manuellt. För att göra detta, kopiera helt enkelt lämplig adminpack-källkod
+till /contrib-katalogen i ditt förkonfigurerade PostgreSQL-källkodsträd. Du
+kan ladda ner adminpacken
+<a href="http://www.pgadmin.org/download/adminpacks.php">här</a>.</p>
+
+<p>Kör följande kommandon (ersätt <i>admin</i> med <i>admin81</i> om
+det behövs):</p>
+
+<pre>
+    # cd $PGSRC/contrib/admin
+    # make all
+    # make install
+</pre>
+
+<p>Modulen bör nu vara byggd och installerad i din befintliga
+PostgreSQL-installation. För att använda den måste du nu installera modulen
+i databasen du använder som pgAdmins <i>Underhållsdatabas</i> (normalt
+<i>postgres</i>, även om du kanske vill använda en annan databas). För att
+göra detta, lokalisera <i>admin.sql</i> eller <i>admin81.sql</i>-filen som
+installerades i föregående steg - normalt finns den i
+/usr/local/pgsql/share/contrib/ och kör den mot din databas. Du behöver
+normalt göra detta som PostgreSQL-superanvändare:</p>
+
+<pre>
+    $ psql postgres < /usr/local/pgsql/share/contrib/admin.sql
+</pre>
+
+<p>Nästa gång du ansluter till servern med pgAdmin kommer den att upptäcka
+närvaron av adminpack och erbjuda full funktionalitet.</p>
+
+<p>
+Utökad serverinstrumentering stöds inte för PostgreSQL 7.3 och 7.4.
+</p>
+
+</body>
+
+</html>

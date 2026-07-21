@@ -1,0 +1,56 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="STYLESHEET" type="text/css" href="../pgadmin3.css">
+<title>Guru Tips</title>
+</head>
+
+<body>
+<h3>Indexen voor referentiële integriteit</h3>
+<p>
+Een referentiële sleutel (foreign key) wordt gebruikt om twee tabellen logisch
+te koppelen en de wijzigingen die erop kunnen worden toegepast te beperken.
+</p>
+<p>
+Het begint allemaal met een mastertabel, die de gerefereerde tabel zal zijn.
+Deze moet een primaire sleutel hebben (eigenlijk moeten de gerefereerde kolommen
+alleen niet-null zijn en gedekt door een unieke index, maar het is echt een goed
+advies om een primaire sleutel te hebben). De slaaf-tabel is afhankelijk van de
+mastertabel, in de zin dat de kolommen waarop de referentiële sleutel wordt
+gemaakt, moeten overeenkomen met de mastertabel voor elke ingevoegde of
+bijgewerkte sleutel. De slaaf-tabel is de refererende tabel van de referentiële
+sleutel.
+</p>
+<p>
+De referentiële sleutel beperkt niet alleen de refererende tabel, maar ook de
+gerefereerde tabel; de beperkingsvorm kan RESTRICT, CASCADE of SET NULL zijn.
+Dit betekent dat als een rij in de master/gerefereerde tabel wordt gewijzigd
+(bijgewerkt of verwijderd), alle refererende tabellen worden gecontroleerd of
+de bewerking geldig is en of er aanvullende acties moeten worden uitgevoerd;
+raadpleeg de PostgreSQL-documentatie over referentiële sleutels voor meer
+details.
+</p>
+<p>
+Dit betekent dat bij wijzigingstoegang tot een specifieke rij in de
+gerefereerde tabel, een overeenkomstige lezing wordt uitgevoerd op alle
+refererende tabellen, met de referentiële-sleutelkolommen als toegangssleutel.
+Bijgevolg zijn alle ontwerpregels die in aanmerking moeten worden genomen voor
+goede leesprestaties meestal ook van toepassing op kolommen in een refererende
+tabel. Voor goede prestaties is een index in de meeste gevallen aan te raden.
+PostgreSQL dwingt dit op geen enkele manier af, dus het is aan de
+databaseontwerper om een index te leveren.
+</p>
+<p>
+Voor het gemak biedt pgAdmin III een eenvoudig selectievakje bij het maken van
+een referentiële sleutel, dat automatisch controleert op de aanwezigheid van
+een bruikbare index en er een voor u aanmaakt als er geen wordt gevonden.
+Zoals bij alle indexen zijn er zeldzame gevallen waarin een dergelijke index
+de algehele prestaties een beetje vermindert, maar over het algemeen is het
+hebben van één index te veel veel minder prestatieverlagend dan het hebben van
+één index te weinig.
+</p>
+
+</body>
+
+</html>

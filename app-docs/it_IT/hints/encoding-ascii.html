@@ -1,0 +1,36 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="STYLESHEET" type="text/css" href="../pgadmin3.css">
+<title>Suggerimenti</title>
+</head>
+
+<body>
+
+<h3>Codifica del database</h3>
+<p>
+Il database <INFO> è stato creato per memorizzare i dati utilizzando la
+codifica SQL_ASCII. Questa codifica è definita solo per caratteri a 7 bit; il
+significato dei caratteri con l'8° bit impostato (caratteri non ASCII 127-255)
+non è definito. Di conseguenza, non è possibile per il server convertire i
+dati in altre codifiche.
+</p>
+<p>
+Se si memorizzano dati non ASCII nel database, si consiglia vivamente di
+utilizzare una codifica adeguata che rappresenti il proprio set di caratteri
+locali per beneficiare della conversione automatica verso diverse codifiche
+client quando necessario. Se si memorizzano dati non ASCII in un database
+SQL_ASCII, si potrebbero incontrare caratteri strani scritti o letti dal
+database, causati da problemi di conversione del codice. Ciò potrebbe causare
+molti problemi durante l'accesso al database utilizzando diversi programmi e
+driver client.
+</p>
+<p>
+Per la maggior parte delle installazioni, la codifica Unicode (UTF8)
+fornirà le capacità più flessibili.
+</p>
+
+</body>
+
+</html>

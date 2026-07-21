@@ -1,0 +1,46 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="STYLESHEET" type="text/css" href="../pgadmin3.css">
+<title>Gururåd</title>
+</head>
+
+<body>
+
+<h3>Åtkomst till databas nekad</h3>
+<p>
+Servern beviljar inte åtkomst till databasen: servern rapporterar
+</p>
+<p>
+<b><tt class="command"><INFO></tt></b>
+</p>
+<p>
+För att få åtkomst till en databas på en PostgreSQL-server måste du först
+bevilja primär åtkomst till servern för din klient (Host Based Authentication).
+PostgreSQL kommer att kontrollera pg_hba.conf-filen om ett mönster som
+matchar din klientadress / användarnamn / databas finns och är aktiverat innan
+några SQL GRANT-åtkomstkontrollistor utvärderas.
+</p>
+<p>
+De initiala inställningarna i pg_hba.conf är ganska restriktiva för att
+undvika oönskade säkerhetshål orsakade av ogenomgångna men obligatoriska
+systeminställningar. Du vill förmodligen lägga till något som
+</p>
+<p>
+<b><tt class="command">host all all 192.168.0.0/24 md5</tt></b>
+</p>
+<p>
+Detta exempel beviljar MD5-krypterad lösenordsåtkomst till alla databaser
+för alla användare i det privata nätverket 192.168.0.0/24.
+</p>
+<p>
+Du kan använda pg_hba.conf-redigeraren som är inbyggd i pgAdmin III för att
+redigera konfigurationsfilen pg_hba.conf. Efter att ha ändrat pg_hba.conf
+måste du utlösa en omladdning av serverkonfigurationen med pg_ctl eller
+genom att stoppa och starta om serverprocessen.
+</p>
+
+</body>
+
+</html>

@@ -1,0 +1,53 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="STYLESHEET" type="text/css" href="../pgadmin3.css">
+<title>Guru Tips</title>
+</head>
+
+<body>
+
+<h3>Server luistert niet</h3>
+<p>
+De server accepteert geen verbindingen: de verbindingsbibliotheek meldt
+</p>
+<p>
+<b><tt class="command"><INFO></tt></b>
+</p>
+<p>
+Als u dit bericht tegenkomt, controleer dan of de server waarmee u probeert
+te verbinden daadwerkelijk PostgreSQL draait op de opgegeven poort. Test of u
+netwerkconnectiviteit hebt van uw client naar de serverhost met ping of
+vergelijkbare hulpmiddelen. Is uw netwerk / VPN / SSH-tunnel / firewall
+correct geconfigureerd?
+</p>
+<p>
+Om veiligheidsredenen luistert PostgreSQL <b>niet</b> op alle beschikbare
+IP-adressen op de servermachine in eerste instantie. Om de server via het
+netwerk te benaderen, moet u eerst het luisteren op het adres inschakelen.
+</p>
+<p>
+Voor PostgreSQL-servers vanaf versie 8.0 wordt dit geregeld met de parameter
+"listen_addresses" in het postgresql.conf-bestand. Hier kunt u een lijst
+IP-adressen invoeren waarop de server moet luisteren, of gewoon '*' gebruiken
+om op alle beschikbare IP-adressen te luisteren. Voor oudere servers (versie
+7.3 of 7.4) moet u de parameter "tcpip_socket" instellen op 'true'.
+</p>
+<p>
+U kunt de postgresql.conf-editor gebruiken die is ingebouwd in pgAdmin III om
+het configuratiebestand postgresql.conf te bewerken. Na het wijzigen van dit
+bestand moet u het serverproces herstarten om de instelling van kracht te
+laten worden.
+</p>
+<p>
+Als u uw configuratie dubbel hebt gecontroleerd maar nog steeds dit
+foutbericht krijgt, is het onwaarschijnlijk dat u een fatale PostgreSQL-storing
+hebt. U heeft waarschijnlijk een laagniveau netwerkconnectiviteitsprobleem
+(bijv. firewallconfiguratie). Controleer dit grondig voordat u een bug meldt
+bij de PostgreSQL-gemeenschap.
+</p>
+
+</body>
+
+</html>

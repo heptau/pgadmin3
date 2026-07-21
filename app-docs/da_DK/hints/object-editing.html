@@ -1,0 +1,46 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="STYLESHEET" type="text/css" href="../pgadmin3.css">
+<title>Gururåd</title>
+</head>
+
+<body>
+
+<h3>Redigering af views, lagrede procedurer og funktioner</h3>
+<p>
+Når du redigerer koden for et view, en lagret procedure eller funktion, i
+stedet for at bruge den lille tekstboks i egenskabsdialogen for objektet, kan
+du finde det mere bekvemt at bruge scriptningsmulighederne i pgAdmin til at
+redigere objektet i forespørgselsværktøjet. Dette giver dig fordelene ved
+forespørgselsværktøjets editorfunktioner såsom autoudfyld, søg og erstat og
+større arbejdsområde.
+</p>
+
+<p>
+For at bruge scriptningsmulighederne skal du i pgAdmin-browservinduet
+højreklikke på det objekt, du ønsker at redigere, og vælge indstillingen
+<i>CREATE-script</i>. Det kan være i undermenuen <i>Scripts</i>. Alternativt
+kan du vælge objektet og derefter vælge <i>CREATE-script</i>-indstillingen
+fra undermenuen <i>Scripts</i> i menuen <i>Værktøjer</i>.
+</p>
+
+<p>
+Rediger objektets definition efter behov, og brug knappen <i>Udfør
+forespørgsel</i> til at anvende dine ændringer. Glem ikke, at ændring af et
+view- eller funktionsnavn eller signaturen for en funktion eller procedure
+kan resultere i et nyt objekt, der oprettes ved siden af det originale. Denne
+nyttige sideeffekt gør det bekvemt at oprette nye, men lignende objekter. Du
+skal muligvis opdatere pgAdmin-browseren for at vise nyoprettede objekter.
+</p>
+
+<p>
+Du kan bruge denne teknik til at udføre alle slags operationer på forskellige
+objekter, men PostgreSQLs <i>CREATE OR REPLACE</i>-syntaks gør den særligt
+nyttig til redigering af views, lagrede procedurer og funktioner.
+</p>
+
+</body>
+
+</html>

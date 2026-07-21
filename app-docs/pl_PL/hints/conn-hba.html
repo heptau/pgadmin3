@@ -1,0 +1,46 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="STYLESHEET" type="text/css" href="../pgadmin3.css">
+<title>Rady guru</title>
+</head>
+
+<body>
+
+<h3>Odmowa dostępu do bazy danych</h3>
+<p>
+Serwer nie przyznaje dostępu do bazy danych: serwer zgłasza
+</p>
+<p>
+<b><tt class="command"><INFO></tt></b>
+</p>
+<p>
+Aby uzyskać dostęp do bazy danych na serwerze PostgreSQL, musisz najpierw przyznać
+podstawowy dostęp do serwera dla swojego klienta (Host Based Authentication).
+PostgreSQL sprawdzi plik pg_hba.conf, czy istnieje wpis pasujący do
+adresu klienta / nazwy użytkownika / bazy danych i jest włączony, zanim
+zostaną sprawdzone listy kontroli dostępu SQL GRANT.
+</p>
+<p>
+Początkowe ustawienia w pg_hba.conf są dość restrykcyjne, aby uniknąć
+niechcianych luk bezpieczeństwa spowodowanych nieprzejrzanymi, ale obowiązkowymi
+ustawieniami systemowymi. Prawdopodobnie będziesz chciał dodać coś takiego:
+</p>
+<p>
+<b><tt class="command">host all all 192.168.0.0/24 md5</tt></b>
+</p>
+<p>
+Ten przykład przyznaje dostęp za pomocą hasła szyfrowanego MD5 do wszystkich baz
+danych wszystkim użytkownikom w sieci prywatnej 192.168.0.0/24.
+</p>
+<p>
+Możesz użyć edytora pg_hba.conf wbudowanego w pgAdmin III do edycji pliku
+konfiguracyjnego pg_hba.conf. Po zmianie pg_hba.conf musisz wymusić przeładowanie
+konfiguracji serwera za pomocą pg_ctl lub zatrzymując i uruchamiając ponownie
+proces serwera.
+</p>
+
+</body>
+
+</html>

@@ -1,0 +1,27 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="STYLESHEET" type="text/css" href="../pgadmin3.css">
+<title>Rady guru</title>
+</head>
+
+<body>
+
+<h3>Edycja danych w tabeli bez klucza głównego</h3>
+<p>
+Ponieważ tabela <INFO> nie ma klucza głównego ani OID, możesz tylko
+przeglądać dane. Wstawianie nowych wierszy i zmiana istniejących wierszy nie
+jest możliwa dla narzędzia Edytuj dane bez klucza głównego.
+</p>
+<p>
+Aby edytować dane, pgAdmin III wymaga klucza głównego w tabeli, co jest dobrą
+praktyką projektowania bazy danych. Alternatywnie tabela może być utworzona
+WITH OIDS. Należy pamiętać, że OID <b>nie</b> gwarantują unikalności przez
+bardzo długi okres czasu, więc używanie OID jako rodzaju klucza głównego jest
+tylko drugim wyborem.
+</p>
+
+</body>
+
+</html>

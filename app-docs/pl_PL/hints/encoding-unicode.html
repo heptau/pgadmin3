@@ -1,0 +1,31 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="STYLESHEET" type="text/css" href="../pgadmin3.css">
+<title>Rady guru</title>
+</head>
+
+<body>
+
+<h3>Kodowanie Unicode na serwerze Win32</h3>
+<p>
+Baza danych <INFO> została utworzona z kodowaniem Unicode (UTF8) do
+przechowywania danych i jest obsługiwana przez PostgreSQL 8.0 działający na
+serwerze Win32.
+</p>
+<p>
+Implementacja PostgreSQL 8.0 dla Win32 nie jest w stanie sortować ciągów znaków
+według odpowiednich sekwencji porównawczych, ponieważ system operacyjny nie
+oferuje wystarczającego wsparcia w tym zakresie.
+</p>
+<p>
+Dla tej instalacji zaleca się użycie kodowania specyficznego dla locale,
+uruchomienie klastra na innym systemie operacyjnym lub aktualizację klastra
+bazy danych do PostgreSQL 8.1, który zawiera dodatkowy kod do obsługi
+porównań Unicode, co rozwiązuje ten problem.
+</p>
+
+</body>
+
+</html>

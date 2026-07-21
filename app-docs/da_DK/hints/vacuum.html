@@ -1,0 +1,43 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="STYLESHEET" type="text/css" href="../pgadmin3.css">
+<title>Gururåd</title>
+</head>
+
+<body>
+
+<h3>VACUUM anbefales</h3>
+<p>
+Det estimerede rækkeantal i tabellen &quot;<INFO>&quot; afviger betydeligt
+fra det faktiske rækkeantal. Du bør køre VACUUM ANALYZE på denne tabel.
+</p>
+<p>
+I stedet for at udstede en manuel VACUUM ANALYZE-kommando på denne tabel (du
+kan bruge pgAdmin III's vedligeholdelsesmenu til dette), bør du overveje at
+køre VACUUM ANALYZE regelmæssigt eller automatisk. Dette kan opnås ved hjælp
+af en planlægger. PostgreSQL leverer også autovacuum-dæmonen, som sporer
+ændringer foretaget i databasen og udsteder vacuum-kommandoer automatisk efter
+behov. I de fleste tilfælde vil autovacuum være det bedste valg.
+</p>
+<p><br><br></p>
+<b>Hvad er VACUUM godt for?</b>
+<p>
+PostgreSQLs forespørgselsplanlægger træffer sine beslutninger baseret på
+antagelser fra det estimerede rækkeantal. Hvis det faktiske rækkeantal er for
+forskelligt fra det estimerede rækkeantal, kan planlæggeren træffe en forkert
+beslutning, hvilket resulterer i en forespørgselsplan, der ikke er optimal.
+Dette kan resultere i dårlig ydeevne.
+</p>
+<p>
+PostgreSQLs lagring har brug for VACUUM for at få transaktions-ID'er i
+tabeller fikseret. Derudover bliver forældede rækker fra opdateringer og
+sletninger ikke ryddet op, før VACUUM-kommandoen er blevet udstedt på den
+pågældende tabel. Dybdegående information kan findes i onlinedokumentationen,
+tryk blot på hjælpeknappen.
+</p>
+
+</body>
+
+</html>

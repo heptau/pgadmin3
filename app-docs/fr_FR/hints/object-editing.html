@@ -1,0 +1,43 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link rel="STYLESHEET" type="text/css" href="../pgadmin3.css">
+<title>Conseil d'expert</title>
+</head>
+
+<body>
+
+<h3>Éditer les vues, procédures stockées ou fonctions</h3>
+<p>
+Lors de l'édition du code d'une vue, d'une procédure stockée ou d'une fonction, au lieu d'utiliser la petite
+zone de texte de la boîte de dialogue des propriétés de l'objet, il peut être plus pratique
+d'utiliser les options de script de pgAdmin pour éditer l'objet dans l'outil de requête. Cela vous permet de
+bénéficier des fonctionnalités de l'éditeur de l'outil de requête telles que l'autocomplétion, la recherche
+et le remplacement, ainsi qu'un espace de travail plus grand.
+</p>
+
+<p>
+Pour utiliser les options de script, dans la fenêtre de navigation de pgAdmin, faites un clic droit sur l'objet
+que vous souhaitez éditer, et sélectionnez l'option <i>Script CREATE</i>. Elle se trouve dans le sous-menu
+<i>Scripts</i>. Vous pouvez également sélectionner l'objet, puis choisir l'option <i>Script CREATE</i>
+dans le sous-menu <i>Scripts</i> du menu <i>Outils</i>.
+</p>
+
+<p>
+Modifiez la définition de l'objet selon vos besoins, puis
+utilisez le bouton <i>Exécuter la requête</i> pour appliquer vos modifications. N'oubliez pas que la modification
+du nom d'une vue ou d'une fonction, ou de la signature d'une fonction ou procédure, peut entraîner la création
+d'un nouvel objet à côté de l'original. Cet effet secondaire utile permet de créer facilement de nouveaux
+objets similaires. Vous devrez peut-être actualiser la fenêtre de navigation de pgAdmin pour afficher les
+objets nouvellement créés.
+</p>
+
+<p>
+Vous pouvez utiliser cette technique pour effectuer toutes sortes d'opérations sur différents objets, mais la
+syntaxe <i>CREATE OR REPLACE</i> de PostgreSQL la rend particulièrement utile pour éditer les vues,
+les procédures stockées et les fonctions.
+</p>
+
+</body>
+</html>

@@ -27,3 +27,5 @@ build/*
 build-macos/*
 .DS_Store
 *~
+*.bak
+original/

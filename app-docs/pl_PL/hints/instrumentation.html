@@ -1,0 +1,58 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="STYLESHEET" type="text/css" href="../pgadmin3.css">
+<title>Rady guru</title>
+</head>
+
+<body>
+
+<h3>Instrumentacja serwera</h3>
+<p>
+Serwerowi brakuje funkcji instrumentacyjnych.
+</p>
+<p>
+pgAdmin III używa pewnych funkcji pomocniczych, które nie są domyślnie dostępne
+we wszystkich wersjach PostgreSQL. Umożliwiają one wykonanie niektórych zadań,
+które ułatwiają pracę z plikami dziennika i plikami konfiguracyjnymi.
+</p>
+<p>adminpack jest instalowany i aktywowany domyślnie, jeśli używasz
+'oficjalnej' dystrybucji pgInstaller PostgreSQL dla Windows i jest dołączony jako
+moduł contrib we wszystkich wersjach PostgreSQL 8.2 i wyższych. Jeśli jednak
+używasz innej wersji PostgreSQL, będziesz musiał zainstalować go ręcznie. Aby to
+zrobić, po prostu skopiuj odpowiedni kod źródłowy adminpack do katalogu /contrib
+swojego skonfigurowanego drzewa źródłowego PostgreSQL. Możesz pobrać adminpacki
+<a href="http://www.pgadmin.org/download/adminpacks.php">tutaj</a>.</p>
+
+<p>Uruchom następujące polecenia (zastępując <i>admin</i> na <i>admin81</i>
+jeśli to konieczne):</p>
+
+<pre>
+    # cd $PGSRC/contrib/admin
+    # make all
+    # make install
+</pre>
+
+<p>Moduł powinien być teraz zbudowany i zainstalowany w Twojej istniejącej
+instalacji PostgreSQL. Aby go użyć, musisz teraz zainstalować moduł w bazie
+danych, której używasz jako <i>Baza konserwacyjna</i> pgAdmin (normalnie
+<i>postgres</i>, choć możesz użyć innej bazy danych). Aby to zrobić, zlokalizuj
+plik <i>admin.sql</i> lub <i>admin81.sql</i> zainstalowany w poprzednim kroku -
+zwykle można go znaleźć w /usr/local/pgsql/share/contrib/ i uruchom go względem
+swojej bazy danych. Zwykle musisz to zrobić jako superużytkownik PostgreSQL:</p>
+
+<pre>
+    $ psql postgres < /usr/local/pgsql/share/contrib/admin.sql
+</pre>
+
+<p>Przy następnym połączeniu z serwerem za pomocą pgAdmin, wykryje on obecność
+adminpack i zaoferuje pełną funkcjonalność.</p>
+
+<p>
+Rozszerzona instrumentacja serwera nie jest obsługiwana dla PostgreSQL 7.3 i 7.4.
+</p>
+
+</body>
+
+</html>

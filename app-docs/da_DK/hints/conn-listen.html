@@ -1,0 +1,51 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="STYLESHEET" type="text/css" href="../pgadmin3.css">
+<title>Gururåd</title>
+</head>
+
+<body>
+
+<h3>Serveren lytter ikke</h3>
+<p>
+Serveren accepterer ikke forbindelser: forbindelsesbiblioteket rapporterer
+</p>
+<p>
+<b><tt class="command"><INFO></tt></b>
+</p>
+<p>
+Hvis du støder på denne besked, skal du kontrollere, om serveren, du forsøger
+at kontakte, faktisk kører PostgreSQL på den angivne port. Test om du har
+netværksforbindelse fra din klient til serverværten ved hjælp af ping eller
+tilsvarende værktøjer. Er dit netværk / VPN / SSH-tunnel / firewall korrekt
+konfigureret?
+</p>
+<p>
+Af sikkerhedsmæssige årsager lytter PostgreSQL <b>ikke</b> på alle tilgængelige
+IP-adresser på servermaskinen i første omgang. For at få adgang til serveren
+over netværket skal du først aktivere lyttning på adressen.
+</p>
+<p>
+For PostgreSQL-servere fra version 8.0 styres dette ved hjælp af parameteren
+"listen_addresses" i postgresql.conf-filen. Her kan du indtaste en liste over
+IP-adresser, som serveren skal lytte på, eller blot bruge '*' for at lytte på
+alle tilgængelige IP-adresser. For ældre servere (version 7.3 eller 7.4) skal
+du indstille parameteren "tcpip_socket" til 'true'.
+</p>
+<p>
+Du kan bruge postgresql.conf-editoren, der er indbygget i pgAdmin III, til
+at redigere konfigurationsfilen postgresql.conf. Efter at have ændret denne
+fil skal du genstarte serverprocessen for at indstillingen træder i kraft.
+</p>
+<p>
+Hvis du dobbelttjekkede din konfiguration, men stadig får denne fejlbesked,
+er det usandsynligt, at du har en fatal PostgreSQL-fejl. Du har sandsynligvis
+nogle lavere netværksproblemer (f.eks. firewall-konfiguration). Kontroller
+dette grundigt, før du rapporterer en fejl til PostgreSQL-fællesskabet.
+</p>
+
+</body>
+
+</html>

@@ -1,0 +1,53 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="STYLESHEET" type="text/css" href="../pgadmin3.css">
+<title>Gururåd</title>
+</head>
+
+<body>
+<h3>Täckande index för främmande nycklar</h3>
+<p>
+En främmande nyckel används för att logiskt koppla ihop två tabeller och
+begränsa de ändringar som kan tillämpas på dem.
+</p>
+<p>
+Allt börjar med en mastertabell, som kommer att vara den refererade tabellen.
+Den måste ha en primärnyckel (egentligen behöver de refererade kolumnerna bara
+vara icke-null och täckta av ett unikt index, men det är verkligen ett gott råd
+att ha en primärnyckel). Slavtabellen är beroende av mastertabellen, i den
+meningen att kolumnerna som den främmande nyckeln skapas på måste matcha
+mastertabellen för varje infogad eller uppdaterad nyckel. Slavtabellen är den
+refererande tabellen för den främmande nyckeln.
+</p>
+<p>
+Den främmande nyckeln begränsar inte bara den refererande tabellen, utan även
+den refererade tabellen; begränsningstypen kan vara RESTRICT, CASCADE eller
+SET NULL. Detta innebär att om en rad i master/refererad tabell ändras
+(uppdateras eller tas bort), kontrolleras alla refererande tabeller för att
+se om operationen är giltig och om det finns någon ytterligare åtgärd att
+utföra; se PostgreSQL-dokumentationen om främmande nycklar för ytterligare
+detaljer.
+</p>
+<p>
+Detta innebär att vid ändringsåtkomst till en specifik rad i den refererade
+tabellen utförs en motsvarande läsning på alla refererande tabeller, med den
+främmande nyckelns kolumner som åtkomstnyckel. Följaktligen gäller alla
+designregler som bör beaktas för god läsprestanda vanligtvis även för kolumner
+i en refererande tabell. För god prestanda är ett index tillrådligt i de flesta
+fall. PostgreSQL tvingar inte på detta på något sätt, så det är upp till
+databasdesignern att tillhandahålla ett index.
+</p>
+<p>
+För bekvämlighets skull tillhandahåller pgAdmin III en enkel kryssruta när du
+skapar en främmande nyckel, som automatiskt kontrollerar förekomsten av ett
+användbart index och skapar ett åt dig om inget hittas. Som med alla index
+finns det sällsynta fall där ett sådant index försämrar den totala prestandan
+något, men i allmänhet är det mycket mer prestandaförsämrande att ha ett index
+för få än att ha ett index för mycket.
+</p>
+
+</body>
+
+</html>

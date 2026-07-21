@@ -1,0 +1,27 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="STYLESHEET" type="text/css" href="../pgadmin3.css">
+<title>Dicas do Guru</title>
+</head>
+
+<body>
+
+<h3>Editar dados da tabela sem chave primária</h3>
+<p>
+Como a tabela <INFO> não tem uma chave primária ou OIDs, você pode apenas
+visualizar os dados. Inserir novas linhas e alterar linhas existentes não é
+possível para a ferramenta Editar Dados sem chave primária.
+</p>
+<p>
+Para editar dados, o pgAdmin III requer uma chave primária na tabela, o que é
+uma boa prática de design de banco de dados de qualquer forma. Alternativamente,
+a tabela pode ser criada WITH OIDS. Por favor, note que OIDs <b>não</b> são
+garantidos como únicos por um período muito longo de tempo, então usar OIDs
+como um tipo de chave primária é apenas uma segunda escolha.
+</p>
+
+</body>
+
+</html>

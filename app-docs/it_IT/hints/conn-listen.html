@@ -1,0 +1,54 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="STYLESHEET" type="text/css" href="../pgadmin3.css">
+<title>Suggerimenti</title>
+</head>
+
+<body>
+
+<h3>Il server non è in ascolto</h3>
+<p>
+Il server non accetta connessioni: la libreria di connessione riporta
+</p>
+<p>
+<b><tt class="command"><INFO></tt></b>
+</p>
+<p>
+Se incontri questo messaggio, verifica se il server che stai cercando di
+contattare sta effettivamente eseguendo PostgreSQL sulla porta indicata.
+Verifica se hai connettività di rete dal client all'host del server usando
+ping o strumenti equivalenti. La tua rete / VPN / tunnel SSH / firewall è
+configurata correttamente?
+</p>
+<p>
+Per motivi di sicurezza, PostgreSQL <b>non</b> è in ascolto su tutti gli
+indirizzi IP disponibili sulla macchina server inizialmente. Per accedere al
+server tramite rete, è necessario prima abilitare l'ascolto sull'indirizzo.
+</p>
+<p>
+Per i server PostgreSQL a partire dalla versione 8.0, questo è controllato
+utilizzando il parametro "listen_addresses" nel file postgresql.conf. Qui è
+possibile inserire un elenco di indirizzi IP su cui il server deve ascoltare,
+o semplicemente usare '*' per ascoltare su tutti gli indirizzi IP disponibili.
+Per i server precedenti (versione 7.3 o 7.4), è necessario impostare il
+parametro "tcpip_socket" su 'true'.
+</p>
+<p>
+È possibile utilizzare l'editor postgresql.conf integrato in pgAdmin III per
+modificare il file di configurazione postgresql.conf. Dopo aver modificato
+questo file, è necessario riavviare il processo del server per rendere
+effettiva l'impostazione.
+</p>
+<p>
+Se hai ricontrollato la configurazione ma ricevi ancora questo messaggio di
+errore, è improbabile che tu abbia incontrato un malfunzionamento fatale di
+PostgreSQL. Probabilmente hai qualche problema di connettività di rete di
+basso livello (ad esempio configurazione del firewall). Verifica
+accuratamente prima di segnalare un bug alla comunità di PostgreSQL.
+</p>
+
+</body>
+
+</html>

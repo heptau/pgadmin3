@@ -1,0 +1,36 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="STYLESHEET" type="text/css" href="../pgadmin3.css">
+<title>Dicas do Guru</title>
+</head>
+
+<body>
+
+<h3>Codificação do banco de dados</h3>
+<p>
+O banco de dados <INFO> foi criado para armazenar dados usando a codificação
+SQL_ASCII. Esta codificação é definida apenas para caracteres de 7 bits; o
+significado de caracteres com o 8º bit definido (caracteres não ASCII 127-255)
+não é definido. Consequentemente, não é possível para o servidor converter os
+dados para outras codificações.
+</p>
+<p>
+Se você estiver armazenando dados não ASCII no banco de dados, é fortemente
+recomendado usar uma codificação de banco de dados adequada representando seu
+conjunto de caracteres local para se beneficiar da conversão automática para
+diferentes codificações de cliente quando necessário. Se você armazenar dados
+não ASCII em um banco de dados SQL_ASCII, poderá encontrar caracteres
+estranhos escritos ou lidos do banco de dados, causados por problemas de
+conversão de código. Isso pode causar muita dor de cabeça ao acessar o banco
+de dados usando diferentes programas e drivers clientes.
+</p>
+<p>
+Para a maioria das instalações, a codificação Unicode (UTF8) fornecerá as
+capacidades mais flexíveis.
+</p>
+
+</body>
+
+</html>

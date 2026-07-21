@@ -1,0 +1,46 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="STYLESHEET" type="text/css" href="../pgadmin3.css">
+<title>Gururåd</title>
+</head>
+
+<body>
+
+<h3>Adgang til database nægtet</h3>
+<p>
+Serveren giver ikke adgang til databasen: serveren rapporterer
+</p>
+<p>
+<b><tt class="command"><INFO></tt></b>
+</p>
+<p>
+For at få adgang til en database på en PostgreSQL-server skal du først give
+primær adgang til serveren for din klient (Host Based Authentication).
+PostgreSQL vil kontrollere pg_hba.conf-filen, om et mønster, der matcher din
+klientadresse / brugernavn / database, er til stede og aktiveret, før nogen
+SQL GRANT-adgangskontrollister evalueres.
+</p>
+<p>
+De oprindelige indstillinger i pg_hba.conf er ret restriktive for at undgå
+uønskede sikkerhedshuller forårsaget af ugennemgåede men obligatoriske
+systemindstillinger. Du vil sandsynligvis tilføje noget som
+</p>
+<p>
+<b><tt class="command">host all all 192.168.0.0/24 md5</tt></b>
+</p>
+<p>
+Dette eksempel giver MD5-krypteret adgang til alle databaser for alle brugere
+i det private netværk 192.168.0.0/24.
+</p>
+<p>
+Du kan bruge pg_hba.conf-editoren, der er indbygget i pgAdmin III, til at
+redigere konfigurationsfilen pg_hba.conf. Efter at have ændret pg_hba.conf
+skal du udløse en genindlæsning af serverkonfigurationen ved hjælp af pg_ctl
+eller ved at stoppe og genstarte serverprocessen.
+</p>
+
+</body>
+
+</html>

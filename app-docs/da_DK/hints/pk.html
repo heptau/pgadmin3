@@ -1,0 +1,49 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="STYLESHEET" type="text/css" href="../pgadmin3.css">
+<title>Gururåd</title>
+</head>
+
+<body>
+
+<h3>Primærnøgler</h3>
+<p>
+Når du designer en tabel, bør du altid have i tankerne, hvordan tabellen vil
+blive adresseret senere. I de fleste tilfælde vil du have brug for en
+identifikator for entydigt at adressere en specifik række; denne identifikator
+bør oprettes som din primærnøgle. En primærnøgle behøver ikke nødvendigvis at
+bestå af en enkelt kolonne; den kan indeholde så mange kolonner som nødvendigt
+for entydigt at identificere en række. Hvis du har brug for mange kolonner
+(tommelfingerregel: mere end 3), kan det være en god idé at opfinde en
+ekstra kolonne med en bekvem datatype, f.eks. serial eller bigserial, som
+indeholder primærnøglen.
+</p>
+<p>
+Kun i sjældne tilfælde giver det ikke mening at bruge en primærnøgle. Det
+betyder, at en manglende primærnøgle er en ret stærk indikator for, at
+tabellen ikke er fuldstændigt designet; derfor vil et Gururåd dukke op, hvis
+du opretter en tabel uden primærnøgle.
+</p>
+<p>
+Hvis du ser på PostgreSQLs systemtabeller, vil du opdage, at ingen af dem har
+en primærnøgle. Hvad handler det om? Faktisk har alle disse tabeller en eller
+to kolonner (normalt kun OID), som entydigt identificerer hver række, i
+overensstemmelse med den anden regel for en primærnøgle: ikke tillade nul og
+være dækket af et indeks for hurtigere adgang. Brugen af OID har historiske
+årsager og er ikke rigtig førstevalget til at designe brugertabeller.
+PostgreSQL bruger stadig dette for bagudkompatibilitet, og mens en nyere
+tilgang sandsynligvis ville bruge eksplicitte primærnøgler, vil det ikke blive
+ændret nu.
+</p>
+<p>
+Som tilfældet med systemtabellerne viser, kan målet om unikhed og hurtig
+adgang opnås med andre tilgange end en primærnøgle. Ikke desto mindre
+opfordres du stærkt til at bruge primærnøgler til dette formål for at opnå
+klarhed i datamodellen.
+</p>
+
+</body>
+
+</html>

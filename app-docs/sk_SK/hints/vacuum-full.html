@@ -1,0 +1,34 @@
+<html>
+
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<link rel="STYLESHEET" type="text/css" href="../pgadmin3.css">
+<title>Rady odborníka</title>
+</head>
+
+<body>
+
+<h3>VACUUM FULL</h3>
+<p>
+VACUUM FULL nie je odporúčané pre verzie PostgreSQL staršie než 9.0, okrem
+extrémnych okolností.
+</p>
+<p>
+VACUUM FULL by sa malo použiť, len keď bolo v tabuľke aktualizované alebo
+zmazané veľké množstvo dát, aby sa uvoľnilo miesto späť pre operačný systém.
+V prípade, že sa očakáva skoré využitie tohto miesta tabuľkou, by mal stačiť
+bežný príkaz VACUUM.
+</p>
+<p>
+VACUUM FULL nastaví v databáze exkluzívne zámky, aby sa zabránilo <i>všetkým</i>
+ďalším aktivitám v tabuľke či tabuľkách, u ktorých sa vykonáva úklid. Preto
+dokiaľ úklid beží, dotkne sa to ostatných používateľov.
+</p>
+<p>
+Potom, čo u tabuľky alebo databázy prebehne VACUUM FULL, je tiež odporúčané
+preindexovať všetky indexy tabuliek.
+</p>
+
+</body>
+
+</html>

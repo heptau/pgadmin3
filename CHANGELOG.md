@@ -5,17 +5,31 @@ Format loosely follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ## [Unreleased]
 
+
+## [2026.07.21]
+
 ### Added
 - Completed all 45 shipped languages — every `.mo` catalog was recovered as
   an editable `.po` source, merged against the current POT, and all missing
   UI translations filled in (human translation for cs_CZ, es_ES, de_DE, fr_FR;
   Google Translate for the remaining languages). All languages build with 0
   untranslated entries and pass `msgfmt -c`.
+- Added guru hint HTML documentation (`app-docs/`) with 18 languages — all
+  17 hint pages per language. Includes 9 newly added languages (sk_SK, pl_PL,
+  pt_BR, it_IT, ru_RU, nl_NL, sv_SE, da_DK, nb_NO) and reuses existing
+  locales from the i18n catalogs.
+- macOS build: guru hint docs are now bundled into the `.app` at
+  `Contents/SharedSupport/docs/`, with a dev-mode symlink in `BUILD_DIR`
+  for bare-binary runs (`make run`).
 
 ### Fixed
 - Fixed broken `.mo` files for 11 languages that had header malformations or
   format-specifier mismatches: zh_CN, de_DE, ja_JP, fa_IR, ko_KR, pl_PL,
   zh_TW, af_ZA, sr_RS, lv_LV, ru_RU. All now compile cleanly.
+- macOS build: guru hint HTML files are now properly copied into the `.app`
+  bundle (were silently missing before, causing empty hint dialogs).
+- de_DE, es_ES, fr_FR: missing hint pages translated and filled in to reach
+  the full set of 17 files each.
 
 ## [2026.07.14]
 

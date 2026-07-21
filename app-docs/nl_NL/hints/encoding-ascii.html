@@ -1,0 +1,36 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="STYLESHEET" type="text/css" href="../pgadmin3.css">
+<title>Guru Tips</title>
+</head>
+
+<body>
+
+<h3>Databasecodering</h3>
+<p>
+De database <INFO> is gemaakt om gegevens op te slaan met de SQL_ASCII-
+codering. Deze codering is alleen gedefinieerd voor 7-bits tekens; de
+betekenis van tekens met het 8e bit ingesteld (niet-ASCII-tekens 127-255) is
+niet gedefinieerd. Bijgevolg is het niet mogelijk voor de server om gegevens
+naar andere coderingen te converteren.
+</p>
+<p>
+Als u niet-ASCII-gegevens in de database opslaat, wordt u sterk aangeraden een
+juiste databasecodering te gebruiken die uw lokale tekenset vertegenwoordigt om
+te profiteren van automatische conversie naar verschillende clientcoderingen
+wanneer nodig. Als u niet-ASCII-gegevens opslaat in een SQL_ASCII-database,
+kunt u vreemde tekens tegenkomen die naar of van de database worden
+geschreven/gelezen, veroorzaakt door codeconversieproblemen. Dit kan veel
+hoofdpijn veroorzaken bij het benaderen van de database met verschillende
+clientprogramma's en stuurprogramma's.
+</p>
+<p>
+Voor de meeste installaties biedt Unicode (UTF8)-codering de meest flexibele
+mogelijkheden.
+</p>
+
+</body>
+
+</html>

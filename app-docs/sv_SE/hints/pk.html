@@ -1,0 +1,48 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="STYLESHEET" type="text/css" href="../pgadmin3.css">
+<title>Gururåd</title>
+</head>
+
+<body>
+
+<h3>Primärnycklar</h3>
+<p>
+När du designar en tabell bör du alltid ha i åtanke hur tabellen kommer att
+adresseras senare. I de flesta fall kommer du att behöva en identifierare för
+att unikt adressera en specifik rad; denna identifierare bör skapas som din
+primärnyckel. En primärnyckel behöver inte nödvändigtvis bestå av en enda
+kolumn; den kan innehålla så många kolumner som behövs för att unikt
+identifiera en rad. Om du behöver många kolumner (tumregel: fler än 3) kan
+det vara en bra idé att hitta på en extra kolumn med en lämplig datatyp,
+t.ex. serial eller bigserial, som innehåller primärnyckeln.
+</p>
+<p>
+Endast i sällsynta fall är det inte meningsfullt att använda en primärnyckel.
+Det innebär att en saknad primärnyckel är en ganska stark indikator på att
+tabellen inte är fullständigt designad; det är därför ett Gururåd kommer att
+visas om du skapar en tabell utan primärnyckel.
+</p>
+<p>
+Om du tittar på PostgreSQLs systemtabeller kommer du att se att ingen av dem
+har en primärnyckel. Vad handlar detta om? I själva verket har alla dessa
+tabeller en eller två kolumner (vanligtvis endast OID) som unikt identifierar
+varje rad, i enlighet med den andra regeln för en primärnyckel: att inte
+tillåta noll och vara täckta av ett index för snabbare åtkomst. Användningen
+av OID har historiska skäl och är inte riktigt förstahandsvalet för att
+designa användartabeller. PostgreSQL använder fortfarande detta för bakåtkompatibilitet,
+och även om ett nyare tillvägagångssätt förmodligen skulle använda explicita
+primärnycklar kommer det inte att ändras nu.
+</p>
+<p>
+Som fallet med systemtabellerna visar, kan målet om unikhet och snabb åtkomst
+uppnås med andra tillvägagångssätt än en primärnyckel. Ändå, för tydlighetens
+skull i datamodellen, uppmuntras du starkt att använda primärnycklar för detta
+ändamål.
+</p>
+
+</body>
+
+</html>

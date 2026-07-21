@@ -1,0 +1,49 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="STYLESHEET" type="text/css" href="../pgadmin3.css">
+<title>Suggerimenti</title>
+</head>
+
+<body>
+
+<h3>Chiavi primarie</h3>
+<p>
+Quando si progetta una tabella, bisogna sempre tenere presente come la tabella
+verrà indirizzata in seguito. Nella maggior parte dei casi, sarà necessario un
+identificatore per indirizzare in modo univoco una riga specifica; questo
+identificatore dovrebbe essere creato come chiave primaria. Una chiave primaria
+non deve necessariamente consistere in una singola colonna; può contenere tutte
+le colonne necessarie per identificare univocamente una riga. Se sono necessarie
+molte colonne (regola pratica: più di 3), potrebbe essere una buona idea
+inventare una colonna aggiuntiva con un tipo di dati comodo, ad esempio serial
+o bigserial, che contenga la chiave primaria.
+</p>
+<p>
+Solo in rari casi non ha senso utilizzare una chiave primaria. Ciò significa
+che una chiave primaria mancante è un indicatore abbastanza forte che la
+tabella non è stata progettata completamente; ecco perché apparirà un
+Suggerimento se si crea una tabella senza chiave primaria.
+</p>
+<p>
+Se si guardano le tabelle di sistema di PostgreSQL, si scoprirà che nessuna di
+esse ha una chiave primaria. Di cosa si tratta? In realtà, tutte queste tabelle
+hanno una o due colonne (di solito solo OID) che identificano univocamente
+ogni riga, obbedendo alla seconda regola per una chiave primaria, non
+consentendo zeri ed essendo coperte da un indice per un accesso più veloce.
+L'uso degli OID ha ragioni storiche e non è davvero la prima scelta per
+progettare tabelle utente. PostgreSQL lo usa ancora per compatibilità con le
+versioni precedenti, e mentre un approccio più recente probabilmente
+utilizzerebbe chiavi primarie esplicite, non verrà più modificato ora.
+</p>
+<p>
+Come mostra il caso delle tabelle di sistema, l'obiettivo di unicità e accesso
+rapido può essere raggiunto con altri approcci oltre a una chiave primaria.
+Tuttavia, per chiarezza del modello dei dati, si consiglia vivamente di
+utilizzare chiavi primarie per questo scopo.
+</p>
+
+</body>
+
+</html>

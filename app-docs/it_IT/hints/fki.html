@@ -1,0 +1,55 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="STYLESHEET" type="text/css" href="../pgadmin3.css">
+<title>Suggerimenti</title>
+</head>
+
+<body>
+<h3>Indici di copertura per chiavi esterne</h3>
+<p>
+Una chiave esterna viene utilizzata per accoppiare due tabelle in modo logico
+e limitare le modifiche che possono essere applicate ad esse.
+</p>
+<p>
+Tutto inizia con una tabella master, che sarà la tabella referenziata. Deve
+avere una chiave primaria (in realtà le colonne referenziate devono solo essere
+non nulle e coperte da un indice univoco, ma è davvero un buon consiglio avere
+una chiave primaria). La tabella slave dipende dalla tabella master, nel senso
+che le colonne su cui viene creata la chiave esterna devono corrispondere alla
+tabella master per qualsiasi chiave inserita o aggiornata. La tabella slave è
+la tabella referenziante della chiave esterna.
+</p>
+<p>
+La chiave esterna non limita solo la tabella referenziante, ma anche la
+tabella referenziata; il tipo di limitazione può essere RESTRICT, CASCADE o
+SET NULL. Ciò significa che se una riga nella tabella master/referenziata
+viene modificata (aggiornata o eliminata), tutte le tabelle referenzianti
+vengono controllate per verificare se l'operazione è valida e se c'è qualche
+azione aggiuntiva da eseguire; consultare la documentazione di PostgreSQL
+sulle chiavi esterne per ulteriori dettagli.
+</p>
+<p>
+Ciò significa che in caso di modifica dell'accesso a una riga specifica nella
+tabella referenziata, viene eseguita una lettura corrispondente su tutte le
+tabelle referenzianti, utilizzando le colonne della chiave esterna come chiave
+di accesso. Di conseguenza, tutte le regole di progettazione che dovrebbero
+essere prese in considerazione per un buon rendimento in lettura si applicano
+di solito anche alle colonne in una tabella referenziante. Per buone
+prestazioni, un indice è consigliabile nella maggior parte dei casi. PostgreSQL
+non lo impone in alcun modo, quindi spetta al progettista del database fornire
+un indice.
+</p>
+<p>
+Per comodità, pgAdmin III fornisce una semplice casella di controllo durante
+la creazione di una chiave esterna, che verificherà automaticamente la
+presenza di un indice utilizzabile e ne creerà uno se non ne viene trovato
+nessuno. Come per tutti gli indici, ci sono rari casi in cui un tale indice
+degrada leggermente le prestazioni complessive, ma in generale avere un indice
+in meno degrada molto di più le prestazioni che avere un indice in più.
+</p>
+
+</body>
+
+</html>

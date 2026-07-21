@@ -1,0 +1,32 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="STYLESHEET" type="text/css" href="../pgadmin3.css">
+<title>Suggerimenti</title>
+</head>
+
+<body>
+
+<h3>Codifica Unicode su un server Win32</h3>
+<p>
+Il database <INFO> è stato creato per utilizzare la codifica Unicode (UTF8)
+per memorizzare i dati e opera su un server PostgreSQL 8.0 in esecuzione su
+un server Win32.
+</p>
+<p>
+L'implementazione Win32 di PostgreSQL 8.0 non è in grado di ordinare le
+stringhe di caratteri secondo le sequenze di collation appropriate, perché il
+sistema operativo non offre supporto sufficiente per questo.
+</p>
+<p>
+Per questa installazione, si consiglia di utilizzare una codifica specifica
+delle impostazioni locali, eseguire il cluster su un sistema operativo
+diverso o aggiornare il cluster del database a PostgreSQL 8.1, che dispone
+di codice aggiuntivo per gestire le collation Unicode per risolvere il
+problema.
+</p>
+
+</body>
+
+</html>

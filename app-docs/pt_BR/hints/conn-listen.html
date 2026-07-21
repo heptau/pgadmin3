@@ -1,0 +1,53 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="STYLESHEET" type="text/css" href="../pgadmin3.css">
+<title>Dicas do Guru</title>
+</head>
+
+<body>
+
+<h3>Servidor não está ouvindo</h3>
+<p>
+O servidor não aceita conexões: a biblioteca de conexão informa
+</p>
+<p>
+<b><tt class="command"><INFO></tt></b>
+</p>
+<p>
+Se você encontrar esta mensagem, verifique se o servidor que você está
+tentando contatar está realmente executando PostgreSQL na porta fornecida.
+Teste se você tem conectividade de rede do seu cliente ao host do servidor
+usando ping ou ferramentas equivalentes. Sua rede / VPN / túnel SSH /
+firewall está configurado corretamente?
+</p>
+<p>
+Por razões de segurança, o PostgreSQL <b>não</b> escuta em todos os endereços
+IP disponíveis na máquina do servidor inicialmente. Para acessar o servidor
+através da rede, você precisa primeiro habilitar a escuta no endereço.
+</p>
+<p>
+Para servidores PostgreSQL a partir da versão 8.0, isso é controlado usando
+o parâmetro "listen_addresses" no arquivo postgresql.conf. Aqui, você pode
+inserir uma lista de endereços IP nos quais o servidor deve escutar, ou
+simplesmente usar '*' para escutar em todos os endereços IP disponíveis. Para
+servidores mais antigos (versão 7.3 ou 7.4), você precisará definir o
+parâmetro "tcpip_socket" como 'true'.
+</p>
+<p>
+Você pode usar o editor postgresql.conf integrado ao pgAdmin III para editar
+o arquivo de configuração postgresql.conf. Após alterar este arquivo, você
+precisa reiniciar o processo do servidor para que a configuração tenha efeito.
+</p>
+<p>
+Se você verificou sua configuração, mas ainda recebe esta mensagem de erro,
+é improvável que você esteja enfrentando um mau funcionamento fatal do
+PostgreSQL. Você provavelmente tem alguns problemas de conectividade de rede
+de baixo nível (por exemplo, configuração de firewall). Verifique isso
+completamente antes de relatar um bug à comunidade PostgreSQL.
+</p>
+
+</body>
+
+</html>

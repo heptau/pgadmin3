@@ -1,0 +1,59 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="STYLESHEET" type="text/css" href="../pgadmin3.css">
+<title>Gururåd</title>
+</head>
+
+<body>
+
+<h3>Serverinstrumentering</h3>
+<p>
+Serveren mangler instrumenteringsfunksjoner.
+</p>
+<p>
+pgAdmin III bruker noen støttefunksjoner som ikke er tilgjengelige som
+standard i alle PostgreSQL-versjoner. Disse muliggjør noen oppgaver som gjør
+livet enklere når man arbeider med loggfiler og konfigurasjonsfiler.
+</p>
+<p>adminpack installeres og aktiveres som standard hvis du bruker den
+'offisielle' pgInstaller-distribusjonen av PostgreSQL for Windows og er
+inkludert som en contrib-modul i alle versjoner av PostgreSQL 8.2 og nyere.
+Hvis du derimot bruker en annen versjon av PostgreSQL, må du installere det
+manuelt. For å gjøre dette, kopier den aktuelle adminpack-kildekoden til
+/contrib-mappen i ditt forhåndskonfigurerte PostgreSQL-kildekodetre. Du kan
+laste ned adminpackene
+<a href="http://www.pgadmin.org/download/adminpacks.php">her</a>.</p>
+
+<p>Kjør følgende kommandoer (erstatt <i>admin</i> med <i>admin81</i> om
+nødvendig):</p>
+
+<pre>
+    # cd $PGSRC/contrib/admin
+    # make all
+    # make install
+</pre>
+
+<p>Modulen skulle nå være bygget og installert i din eksisterende
+PostgreSQL-installasjon. For å kunne bruke den, må du nå installere modulen
+i databasen du bruker som pgAdmins <i>Vedlikeholdsdatabase</i> (normalt
+<i>postgres</i>, selv om du kanskje vil bruke en annen database). For å gjøre
+dette finner du <i>admin.sql</i> eller <i>admin81.sql</i>-filen installert i
+forrige trinn - normalt finnes den i /usr/local/pgsql/share/contrib/ og kjør
+den mot databasen din. Du må normalt gjøre dette som PostgreSQL-superbruker:</p>
+
+<pre>
+    $ psql postgres < /usr/local/pgsql/share/contrib/admin.sql
+</pre>
+
+<p>Neste gang du kobler til serveren med pgAdmin, vil den oppdage
+tilstedeværelsen av adminpack og tilby full funksjonalitet.</p>
+
+<p>
+Utvidet serverinstrumentering støttes ikke for PostgreSQL 7.3 og 7.4.
+</p>
+
+</body>
+
+</html>

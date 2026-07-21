@@ -1,0 +1,27 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="STYLESHEET" type="text/css" href="../pgadmin3.css">
+<title>Gururåd</title>
+</head>
+
+<body>
+
+<h3>Rediger data i tabell uten primærnøkkel</h3>
+<p>
+Siden tabellen <INFO> ikke har en primærnøkkel eller OID-er, kan du bare se
+dataene. Å sette inn nye rader og endre eksisterende rader er ikke mulig for
+verktøyet Rediger data uten primærnøkkel.
+</p>
+<p>
+For å redigere data krever pgAdmin III en primærnøkkel på tabellen, noe som
+uansett er god database-designpraksis. Alternativt kan tabellen opprettes
+WITH OIDS. Vær oppmerksom på at OID-er <b>ikke</b> garanteres å være unike
+over en svært lang tidsperiode, så bruk av OID-er som en slags primærnøkkel
+er bare et andrevalg.
+</p>
+
+</body>
+
+</html>

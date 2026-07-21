@@ -1,0 +1,43 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="STYLESHEET" type="text/css" href="../pgadmin3.css">
+<title>Gururåd</title>
+</head>
+
+<body>
+
+<h3>Ident-autentisering misslyckades</h3>
+<p>
+Servern accepterar inte den aktuella användaren: servern rapporterar
+</p>
+<p>
+<b><tt class="command"><INFO></tt></b>
+</p>
+<p>
+Om detta meddelande visas är pg_hba.conf-posten som hittades för din klient /
+användare / databaskombination inställd på "ident"-autentisering. Vissa
+distributioner, t.ex. Debian, har detta som standard. För att utföra
+ident-baserad autentisering framgångsrikt krävs ytterligare konfiguration;
+se PostgreSQL-hjälpen för detta. För en nybörjare kan det vara lämpligare
+att använda en annan autentiseringsmetod; MD5-krypterade lösenord är ett bra
+val, som kan konfigureras med en post i pg_hba.conf så här:
+</p>
+<p>
+<b><tt class="command">host all all 192.168.0.0/24 md5</tt></b>
+</p>
+<p>
+Detta exempel beviljar MD5-krypterad lösenordsåtkomst till alla databaser
+för alla användare i det privata nätverket 192.168.0.0/24.
+</p>
+<p>
+Du kan använda pg_hba.conf-redigeraren som är inbyggd i pgAdmin III för att
+redigera konfigurationsfilen pg_hba.conf. Efter att ha ändrat pg_hba.conf
+måste du utlösa en omladdning av serverkonfigurationen med pg_ctl eller
+genom att stoppa och starta om serverprocessen.
+</p>
+
+</body>
+
+</html>

@@ -1,0 +1,92 @@
+BODY {
+	background-color: #ffffff;
+	border-bottom: medium none;
+	border-left: medium none;
+	border-right: medium none;
+	border-top: medium none;
+	color: black;
+	font-family: verdana, helvetica, sans-serif;
+	font-size: 12px;
+	font-style: normal;
+	font-variant: normal;
+}
+
+th {
+	color: #ffffff;
+	background-color: #6884a4;
+	text-decoration: none;
+	font-weight: 600;
+	font-family: verdana, helvetica, sans-serif;
+	font-size: 13px;
+	text-align: left;
+}
+
+td {
+	background-color: #ffffff;
+	color: black;
+	font-family: verdana, helvetica, sans-serif;
+	font-size: 12px;
+	font-style: normal;
+	font-variant: normal;
+}
+
+p,
+li,
+ul,
+ol,
+center,
+dt,
+dd,
+dl {
+	background-color: #ffffff;
+	color: black;
+	font-family: verdana, helvetica, sans-serif;
+	font-size: 12px;
+	font-style: normal;
+	font-variant: normal;
+}
+
+#TablePar {
+	background-color: #ffffff;
+	color: black;
+	font-family: verdana, helvetica, sans-serif;
+	font-size: 12px;
+	font-style: normal;
+	font-variant: normal;
+}
+
+#WhiteTablePar {
+	background-color: #ffffff;
+	color: black;
+	font-family: verdana, helvetica, sans-serif;
+	font-size: 12px;
+	font-style: normal;
+	font-variant: normal;
+}
+
+.fixed {
+	font-family: "Courier New", Courier, monospace;
+	font-size: 12px;
+	white-space: pre;
+}
+
+pre.screen {
+	font-family: "Courier New", Courier, monospace;
+	font-size: 12px;
+	border: solid 1px #330033;
+	padding: 8px;
+	background-color: #eeeeee;
+	line-height: 1.2em;
+}
+
+.command {
+	font-family: "Courier New", Courier, monospace;
+	font-size: 12px;
+	font-weight: bold;
+	white-space: pre;
+}
+
+code {
+	font-family: "Courier New", Courier, monospace;
+	font-size: 12px;
+}

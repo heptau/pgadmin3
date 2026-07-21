@@ -1,0 +1,48 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="STYLESHEET" type="text/css" href="../pgadmin3.css">
+<title>Dicas do Guru</title>
+</head>
+
+<body>
+
+<h3>Editando Visões, Procedimentos Armazenados ou Funções</h3>
+<p>
+Ao editar o código de uma visão, procedimento armazenado ou função, em vez de
+usar a pequena caixa de texto no diálogo de propriedades do objeto, você pode
+achar mais conveniente usar as opções de script no pgAdmin para editar o
+objeto na ferramenta de consulta. Isso lhe dá os benefícios dos recursos do
+editor da Ferramenta de Consulta, como autocompletar, localizar e substituir
+e uma área de trabalho maior.
+</p>
+
+<p>
+Para usar as opções de script, na janela do navegador pgAdmin, clique com o
+botão direito no objeto que deseja editar e selecione a opção <i>Script
+CREATE</i>. Ela pode estar no submenu <i>Scripts</i>. Alternativamente, você
+pode selecionar o objeto e depois escolher a opção <i>Script CREATE</i> no
+submenu <i>Scripts</i> do menu <i>Ferramentas</i>.
+</p>
+
+<p>
+Edite a definição do objeto conforme necessário e use o botão <i>Executar
+Consulta</i> para aplicar suas alterações. Não se esqueça de que modificar o
+nome de uma visão ou função, ou a assinatura de uma função ou procedimento,
+pode resultar na criação de um novo objeto junto ao original. Este efeito
+colateral útil torna conveniente criar objetos novos, mas semelhantes. Talvez
+seja necessário atualizar o navegador pgAdmin para exibir os objetos recém-
+criados.
+</p>
+
+<p>
+Você pode usar esta técnica para realizar todos os tipos de operações em
+diferentes objetos, no entanto a sintaxe <i>CREATE OR REPLACE</i> do PostgreSQL
+a torna particularmente útil para editar visões, procedimentos armazenados e
+funções.
+</p>
+
+</body>
+
+</html>

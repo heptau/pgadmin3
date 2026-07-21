@@ -1,0 +1,60 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="STYLESHEET" type="text/css" href="../pgadmin3.css">
+<title>Gururåd</title>
+</head>
+
+<body>
+
+<h3>Serverinstrumentering</h3>
+<p>
+Serveren mangler instrumenteringsfunktioner.
+</p>
+<p>
+pgAdmin III bruger nogle støttefunktioner, der ikke er tilgængelige som
+standard i alle PostgreSQL-versioner. Disse muliggør nogle opgaver, der gør
+livet lettere, når man arbejder med logfiler og konfigurationsfiler.
+</p>
+<p>adminpack installeres og aktiveres som standard, hvis du bruger den
+'officielle' pgInstaller-distribution af PostgreSQL til Windows og er inkluderet
+som en contrib-modul i alle versioner af PostgreSQL 8.2 og nyere. Hvis du
+dog bruger en anden version af PostgreSQL, skal du installere det manuelt.
+For at gøre dette skal du blot kopiere den relevante adminpack-kildekode til
+/contrib-mappen i dit forudkonfigurerede PostgreSQL-kildekodetræ. Du kan
+downloade adminpack
+<a href="http://www.pgadmin.org/download/adminpacks.php">her</a>.</p>
+
+<p>Kør følgende kommandoer (erstat <i>admin</i> med <i>admin81</i> om
+nødvendigt):</p>
+
+<pre>
+    # cd $PGSRC/contrib/admin
+    # make all
+    # make install
+</pre>
+
+<p>Modulet skulle nu være bygget og installeret i din eksisterende
+PostgreSQL-installation. For at kunne bruge det skal du nu installere modulet
+i databasen, du bruger som pgAdmins <i>Vedligeholdelsesdatabase</i> (normalt
+<i>postgres</i>, selvom du måske vil bruge en anden database). For at gøre
+dette skal du finde <i>admin.sql</i> eller <i>admin81.sql</i>-filen
+installeret i det forrige trin - normalt kan den findes i
+/usr/local/pgsql/share/contrib/ og køre den mod din database. Du skal normalt
+gøre dette som PostgreSQL-superbruger:</p>
+
+<pre>
+    $ psql postgres < /usr/local/pgsql/share/contrib/admin.sql
+</pre>
+
+<p>Næste gang du opretter forbindelse til serveren med pgAdmin, vil den
+opdage tilstedeværelsen af adminpack og tilbyde fuld funktionalitet.</p>
+
+<p>
+Udvidet serverinstrumentering understøttes ikke for PostgreSQL 7.3 og 7.4.
+</p>
+
+</body>
+
+</html>

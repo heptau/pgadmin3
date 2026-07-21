@@ -1,0 +1,38 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="STYLESHEET" type="text/css" href="../pgadmin3.css">
+<title>Gururåd</title>
+</head>
+
+<body>
+
+<h3>Autovacuum anbefales</h3>
+<p>
+Introduceret i PostgreSQL 8.1 er autovacuum-processen, som tidligere var
+implementeret som en ekstern tjeneste, nu integreret i serveren. Den kører
+automatisk VACUUM, hvis en konfigurerbar mængde data er blevet ændret.
+</p>
+<p>
+At køre VACUUM er obligatorisk på en PostgreSQL-server for at holde data
+konsistente og serveren performance. Til at begynde med anbefales det at
+aktivere autovacuum-dæmonen ved at sætte 'autovacuum',
+'stats_start_collector' og 'stats_row_level' i postgresql.conf til 'on'.
+<p>
+I PostgreSQL 8.3 og nyere er autovacuum aktiveret som standard, medmindre
+du slår 'track_activities' eller 'track_counts' fra.
+</p>
+<p>
+Med en normalt ubetydelig præstationsforringelse fra sporingen af
+dataændringer får du automatiske VACUUM-kørsler.
+</p>
+<p>
+For at justere autovacuum-ydeevnen til individuelle behov skal du muligvis
+justere dens indstillinger ved hjælp af globale parametre i postgresql.conf
+eller individuelt på hver tabel; se dokumentationen.
+</p>
+
+</body>
+
+</html>

@@ -1,0 +1,27 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link rel="STYLESHEET" type="text/css" href="../pgadmin3.css">
+<title>Rady odborníka</title>
+</head>
+
+<body>
+
+<h3>Úprava dát v tabuľkách bez primárneho kľúča</h3>
+<p>
+Pretože tabuľka <INFO> nemá primárny kľúč ani OID, môžete si dáta iba
+prezerať. Nástroj na úpravu dát nie je schopný vkladať nové a meniť
+existujúce riadky bez primárneho kľúča.
+</p>
+<p>
+Aby mohol upravovať dáta, potrebuje pgAdmin III u tabuľky primárny kľúč, čo je
+tak ako tak dobrá prax pri návrhu tabuliek. Alternatívne možno vytvoriť tabuľku
+s voľbou WITH OIDS. Vezmite ale prosím na vedomie, že oid <b>nezaručuje</b>
+unikátnosť po veľmi dlhom čase, takže použitie oid ako takého primárneho
+kľúča je len druhotné riešenie.
+</p>
+
+</body>
+
+</html>

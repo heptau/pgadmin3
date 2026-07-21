@@ -6,15 +6,15 @@ picks up this work next — treat this as a running log, not final docs.
 
 ## Branching strategy (IMPORTANT — read before editing)
 
-- `master` tracks `origin/master` (`git@github.com:levinsv/pgadmin3.git`),
-  which is itself a Russian-language fork of the official
-  `postgres/pgadmin3`. The user pulls updates from `origin` regularly and
-  wants **zero/near-zero merge conflicts**.
-- All macOS work happens on the `macos-port` branch. Never commit mac-only
-  changes directly to `master`.
+- `main` is the primary work branch. `master` tracks
+  `origin/master` (`git@github.com:levinsv/pgadmin3.git`), which is itself a
+  Russian-language fork of the official `postgres/pgadmin3`. The user pulls
+  updates from `origin` regularly and wants **zero/near-zero merge conflicts**.
+- All work (including macOS porting) happens on `main`. Never commit directly
+  to `master` — that branch is only for pulling upstream changes.
 - To pick up upstream changes: `git checkout master && git pull origin
-  master`, then `git checkout macos-port && git rebase master` (or merge, if
-  rebase gets messy).
+  master`, then `git checkout main && git rebase master` (or merge, if rebase
+  gets messy).
 - When editing shared source files, prefer **additive, ifdef-guarded**
   changes that slot into the existing platform-conditional style already used
   in this codebase (`#ifdef __WXMSW__` / `#ifdef __WXGTK__` / `#ifndef

@@ -1,0 +1,46 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="STYLESHEET" type="text/css" href="../pgadmin3.css">
+<title>Guru Tips</title>
+</head>
+
+<body>
+
+<h3>Toegang tot database geweigerd</h3>
+<p>
+De server geeft geen toegang tot de database: de server meldt
+</p>
+<p>
+<b><tt class="command"><INFO></tt></b>
+</p>
+<p>
+Om toegang te krijgen tot een database op een PostgreSQL-server, moet u eerst
+basis toegang tot de server verlenen voor uw client (Host Based Authentication).
+PostgreSQL controleert het pg_hba.conf-bestand of er een patroon is dat
+overeenkomt met uw clientadres / gebruikersnaam / database en ingeschakeld is
+voordat SQL GRANT-toegangscontrolelijsten worden geëvalueerd.
+</p>
+<p>
+De initiële instellingen in pg_hba.conf zijn vrij restrictief om ongewenste
+beveiligingslekken te voorkomen die worden veroorzaakt door niet-beoordeelde
+maar verplichte systeeminstellingen. U wilt waarschijnlijk iets toevoegen zoals
+</p>
+<p>
+<b><tt class="command">host all all 192.168.0.0/24 md5</tt></b>
+</p>
+<p>
+Dit voorbeeld verleent MD5-versleutelde wachtwoordtoegang tot alle databases
+voor alle gebruikers in het privénetwerk 192.168.0.0/24.
+</p>
+<p>
+U kunt de pg_hba.conf-editor gebruiken die is ingebouwd in pgAdmin III om het
+configuratiebestand pg_hba.conf te bewerken. Na het wijzigen van pg_hba.conf
+moet u een herlading van de serverconfiguratie activeren met pg_ctl of door
+het serverproces te stoppen en opnieuw te starten.
+</p>
+
+</body>
+
+</html>

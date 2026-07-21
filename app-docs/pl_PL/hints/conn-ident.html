@@ -1,0 +1,43 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="STYLESHEET" type="text/css" href="../pgadmin3.css">
+<title>Rady guru</title>
+</head>
+
+<body>
+
+<h3>Uwierzytelnianie Ident nie powiodło się</h3>
+<p>
+Serwer nie akceptuje bieżącego użytkownika: serwer zgłasza
+</p>
+<p>
+<b><tt class="command"><INFO></tt></b>
+</p>
+<p>
+Jeśli pojawi się ten komunikat, wpis pg_hba.conf znaleziony dla Twojego klienta /
+użytkownika / bazy danych jest ustawiony na uwierzytelnianie „ident”. Niektóre
+dystrybucje, np. Debian, mają to ustawienie domyślnie. Aby pomyślnie
+przeprowadzić uwierzytelnianie ident, potrzebujesz dodatkowej konfiguracji;
+zobacz pomoc PostgreSQL. Dla początkujących bardziej odpowiednie może być
+zastosowanie innej metody uwierzytelniania; hasła szyfrowane MD5 są dobrym
+wyborem, które można skonfigurować za pomocą wpisu w pg_hba.conf:
+</p>
+<p>
+<b><tt class="command">host all all 192.168.0.0/24 md5</tt></b>
+</p>
+<p>
+Ten przykład przyznaje dostęp za pomocą hasła szyfrowanego MD5 do wszystkich baz
+danych wszystkim użytkownikom w sieci prywatnej 192.168.0.0/24.
+</p>
+<p>
+Możesz użyć edytora pg_hba.conf wbudowanego w pgAdmin III do edycji pliku
+konfiguracyjnego pg_hba.conf. Po zmianie pg_hba.conf musisz wymusić przeładowanie
+konfiguracji serwera za pomocą pg_ctl lub zatrzymując i uruchamiając ponownie
+proces serwera.
+</p>
+
+</body>
+
+</html>

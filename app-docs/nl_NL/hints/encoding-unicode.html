@@ -1,0 +1,31 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="STYLESHEET" type="text/css" href="../pgadmin3.css">
+<title>Guru Tips</title>
+</head>
+
+<body>
+
+<h3>Unicode-codering op een Win32-server</h3>
+<p>
+De database <INFO> is gemaakt om Unicode (UTF8)-codering te gebruiken voor
+gegevensopslag en wordt gebruikt op een PostgreSQL 8.0-server die draait op
+een Win32-server.
+</p>
+<p>
+De PostgreSQL 8.0 Win32-implementatie kan tekenreeksen niet sorteren volgens
+de juiste collatievolgorde, omdat het besturingssysteem hier niet voldoende
+ondersteuning voor biedt.
+</p>
+<p>
+Voor deze installatie wordt aanbevolen een locatiespecifieke codering te
+gebruiken, het cluster op een ander besturingssysteem te draaien of uw
+databasecluster te upgraden naar PostgreSQL 8.1, die extra code heeft om met
+Unicode-collaties om te gaan en het probleem op te lossen.
+</p>
+
+</body>
+
+</html>

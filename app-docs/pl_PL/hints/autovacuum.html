@@ -1,0 +1,38 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="STYLESHEET" type="text/css" href="../pgadmin3.css">
+<title>Rady guru</title>
+</head>
+
+<body>
+
+<h3>Zalecane włączenie autovacuum</h3>
+<p>
+Wprowadzony w PostgreSQL 8.1 proces autovacuum, który wcześniej był
+implementowany jako zewnętrzna usługa, jest teraz zintegrowany z serwerem.
+Automatycznie uruchamia VACUUM, gdy skonfigurowana ilość danych ulegnie zmianie.
+</p>
+<p>
+Uruchamianie VACUUM jest obowiązkowe na serwerze PostgreSQL, aby utrzymać spójność
+danych i wydajność serwera. Na początek zaleca się włączenie demona autovacuum
+poprzez ustawienie 'autovacuum', 'stats_start_collector' i 'stats_row_level'
+w postgresql.conf na 'on'.
+<p>
+W PostgreSQL 8.3 i nowszych autovacuum jest domyślnie włączone, chyba że
+wyłączysz 'track_activities' lub 'track_counts'.
+</p>
+<p>
+Przy zwykle pomijalnym spadku wydajności spowodowanym śledzeniem
+zmian danych, zyskasz automatyczne uruchamianie VACUUM.
+</p>
+<p>
+Aby dostosować wydajność autovacuum do indywidualnych potrzeb, możesz potrzebować
+dostroić jego ustawienia za pomocą globalnych parametrów w postgresql.conf lub
+indywidualnie dla każdej tabeli; zobacz dokumentację.
+</p>
+
+</body>
+
+</html>

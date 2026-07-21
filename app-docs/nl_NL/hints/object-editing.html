@@ -1,0 +1,48 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="STYLESHEET" type="text/css" href="../pgadmin3.css">
+<title>Guru Tips</title>
+</head>
+
+<body>
+
+<h3>Bewerken van views, opgeslagen procedures en functies</h3>
+<p>
+Bij het bewerken van de code voor een view, opgeslagen procedure of functie,
+in plaats van het kleine tekstvak in het eigenschappendialoogvenster van het
+object te gebruiken, kunt u het handiger vinden om de scriptopties in pgAdmin
+te gebruiken om het object in de querytool te bewerken. Dit geeft u de
+voordelen van de functies van de querytool-editor, zoals automatisch aanvullen,
+zoeken en vervangen en een grotere werkruimte.
+</p>
+
+<p>
+Om de scriptopties te gebruiken, klikt u in het pgAdmin-browservenster met de
+rechtermuisknop op het object dat u wilt bewerken en selecteert u de optie
+<i>CREATE-script</i>. Deze kan zich in het submenu <i>Scripts</i> bevinden.
+U kunt ook het object selecteren en vervolgens de optie <i>CREATE-script</i>
+kiezen in het submenu <i>Scripts</i> van het menu <i>Extra</i>.
+</p>
+
+<p>
+Bewerk de definitie van het object zoals nodig en gebruik de knop
+<i>Query uitvoeren</i> om uw wijzigingen toe te passen. Vergeet niet dat het
+wijzigen van een view- of functienaam, of de handtekening van een functie of
+procedure, kan resulteren in een nieuw object dat naast het originele wordt
+aangemaakt. Dit nuttige neveneffect maakt het gemakkelijk om nieuwe, maar
+vergelijkbare objecten te maken. Mogelijk moet u de pgAdmin-browser
+vernieuwen om nieuw aangemaakte objecten weer te geven.
+</p>
+
+<p>
+U kunt deze techniek gebruiken om allerlei bewerkingen op verschillende
+objecten uit te voeren, maar de <i>CREATE OR REPLACE</i>-syntaxis van
+PostgreSQL maakt het bijzonder nuttig voor het bewerken van views, opgeslagen
+procedures en functies.
+</p>
+
+</body>
+
+</html>

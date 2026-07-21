@@ -1,0 +1,54 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="STYLESHEET" type="text/css" href="../pgadmin3.css">
+<title>Rady guru</title>
+</head>
+
+<body>
+<h3>Indeksy pokrywające klucze obce</h3>
+<p>
+Klucz obcy służy do logicznego powiązania dwóch tabel i ograniczenia zmian,
+które można na nich zastosować.
+</p>
+<p>
+Wszystko zaczyna się od tabeli nadrzędnej, która będzie tabelą referencjonowaną.
+Musi ona mieć klucz główny (właściwie referencjonowane kolumny muszą być tylko
+niepuste i objęte unikalnym indeksem, ale naprawdę dobrą radą jest posiadanie
+klucza głównego). Tabela podrzędna zależy od tabeli nadrzędnej w tym sensie, że
+kolumny, na których utworzono klucz obcy, muszą odpowiadać tabeli nadrzędnej
+dla każdego wstawionego lub zaktualizowanego klucza. Tabela podrzędna jest
+tabelą referencjonującą klucza obcego.
+</p>
+<p>
+Klucz obcy ogranicza nie tylko tabelę referencjonującą, ale także
+referencjonowaną; rodzaj ograniczenia może być RESTRICT, CASCADE lub SET NULL.
+Oznacza to, że jeśli wiersz w tabeli nadrzędnej/referencjonowanej zostanie
+zmieniony (zaktualizowany lub usunięty), wszystkie tabele referencjonujące są
+sprawdzane, czy operacja jest dozwolona i czy istnieje dodatkowa akcja do
+wykonania; zobacz dokumentację PostgreSQL dotyczącą kluczy obcych, aby uzyskać
+szczegółowe informacje.
+</p>
+<p>
+Oznacza to, że przy zmianie dostępu do określonego wiersza w tabeli
+referencjonowanej wykonywane jest odpowiednie odczytanie wszystkich tabel
+referencjonujących, przy użyciu kolumn klucza obcego jako klucza dostępu. W
+konsekwencji wszystkie zasady projektowania, które należy wziąć pod uwagę dla
+dobrej wydajności odczytu, zwykle mają również zastosowanie do kolumn w tabeli
+referencjonującej. Dla dobrej wydajności zaleca się indeks w większości
+przypadków. PostgreSQL nie wymusza tego w żaden sposób, więc decyzja należy do
+projektanta bazy danych.
+</p>
+<p>
+Dla wygody pgAdmin III udostępnia prosty checkbox podczas tworzenia klucza
+obcego, który automatycznie sprawdzi obecność użytecznego indeksu i utworzy go,
+jeśli żaden nie zostanie znaleziony. Jak w przypadku wszystkich indeksów,
+zdarzają się rzadkie przypadki, gdy taki indeks nieznacznie obniża ogólną
+wydajność, ale ogólnie posiadanie o jeden indeks za mało jest znacznie bardziej
+szkodliwe dla wydajności niż posiadanie o jeden indeks za dużo.
+</p>
+
+</body>
+
+</html>

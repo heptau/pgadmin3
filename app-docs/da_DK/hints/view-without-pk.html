@@ -1,0 +1,27 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="STYLESHEET" type="text/css" href="../pgadmin3.css">
+<title>Gururåd</title>
+</head>
+
+<body>
+
+<h3>Rediger data i tabel uden primærnøgle</h3>
+<p>
+Da tabellen <INFO> ikke har en primærnøgle eller OID'er, kan du kun se data.
+Indsættelse af nye rækker og ændring af eksisterende rækker er ikke mulig for
+værktøjet Rediger data uden primærnøgle.
+</p>
+<p>
+For at redigere data kræver pgAdmin III en primærnøgle på tabellen, hvilket
+under alle omstændigheder er god database-designpraksis. Alternativt kan
+tabellen oprettes WITH OIDS. Bemærk venligst, at OID'er <b>ikke</b> garanteres
+at være unikke over en meget lang periode, så brug af OID'er som en slags
+primærnøgle er kun andetvalg.
+</p>
+
+</body>
+
+</html>

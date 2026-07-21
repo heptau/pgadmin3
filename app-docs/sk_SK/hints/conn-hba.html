@@ -1,0 +1,45 @@
+<html>
+
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<link rel="STYLESHEET" type="text/css" href="../pgadmin3.css">
+<title>Rady odborníka</title>
+</head>
+
+<body>
+
+<h3>Prístup k databáze zamietnutý</h3>
+<p>
+Server nepovolil prístup do databázy: server hlási
+</p>
+<p>
+<b><tt class="command"><INFO></tt></b>
+</p>
+<p>
+Aby ste mali prístup k databáze na serveri PostgreSQL, musíte mať v prvom rade
+základný prístup k serveru pre vášho klienta (Host Based Authentication).
+PostgreSQL skontroluje, či súbor pg_hba.conf obsahuje záznam zodpovedajúci
+vašej kombinácii adresa klienta / meno používateľa / databáza a povolí prístup
+predtým, než sa vykoná vyhodnotenie prístupových oprávnení daných SQL GRANT.
+</p>
+<p>
+Nastavenia v pg_hba.conf po inštalácii sú dosť obmedzujúce, aby sa zabránilo
+bezpečnostným dieram spôsobených neprehodnoteným a pritom povinným systémovým
+nastavením. Pravdepodobne budete chcieť doplniť niečo takéhoto
+</p>
+<p>
+<b><tt class="command">host all all 192.168.0.0/24 md5</tt></b>
+</p>
+<p>
+Tento príklad udeľuje na základe hesla šifrovaného pomocou MD5 prístup ku všetkým
+databázam pre všetkých používateľov v privátnej sieti 192.168.0.0/24.
+</p>
+<p>
+Na úpravu súboru pg_hba.conf môžete použiť editor nastavení, ktorý je súčasťou
+pgAdmin III. Po vykonaní zmien v pg_hba.conf je potrebné prinútiť server, aby nové
+nastavenie načítal. Buď pomocou pg_ctl alebo reštartovaním procesu servera.
+</p>
+
+</body>
+
+</html>

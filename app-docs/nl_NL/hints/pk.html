@@ -1,0 +1,49 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="STYLESHEET" type="text/css" href="../pgadmin3.css">
+<title>Guru Tips</title>
+</head>
+
+<body>
+
+<h3>Primaire sleutels</h3>
+<p>
+Bij het ontwerpen van een tabel moet u altijd in gedachten houden hoe de tabel
+later zal worden geadresseerd. In de meeste gevallen heeft u een identifier
+nodig om een specifieke rij uniek te adresseren; deze identifier moet worden
+aangemaakt als uw primaire sleutel. Een primaire sleutel hoeft niet per se uit
+één kolom te bestaan; hij kan zoveel kolommen bevatten als nodig om een rij
+uniek te identificeren. Als u veel kolommen nodig hebt (vuistregel: meer dan 3),
+kan het een goed idee zijn om een extra kolom te bedenken met een geschikt
+gegevenstype, zoals serial of bigserial, die de primaire sleutel bevat.
+</p>
+<p>
+Alleen in zeldzame gevallen is het niet zinvol om een primaire sleutel te
+gebruiken. Dat betekent dat een ontbrekende primaire sleutel een vrij sterke
+aanwijzing is dat de tabel niet volledig is ontworpen; daarom verschijnt er
+een Guru Tip als u een tabel maakt zonder primaire sleutel.
+</p>
+<p>
+Als u naar de systeemtabellen van PostgreSQL kijkt, zult u zien dat geen
+enkele ervan een primaire sleutel heeft. Waar gaat dit over? In werkelijkheid
+hebben al deze tabellen één of twee kolommen (meestal alleen OID) die elke rij
+uniek identificeren, gehoorzamend aan de tweede regel voor een primaire
+sleutel: geen nul toestaan en gedekt zijn door een index voor snellere
+toegang. Het gebruik van OIDs heeft historische redenen en is niet echt de
+eerste keuze voor het ontwerpen van gebruikers-tabellen. PostgreSQL gebruikt
+dit nog steeds voor achterwaartse compatibiliteit, en hoewel een nieuwere
+benadering waarschijnlijk expliciete primaire sleutels zou gebruiken, zal het
+nu niet meer worden gewijzigd.
+</p>
+<p>
+Zoals de systeemtabellen laten zien, kan het doel van uniciteit en snelle
+toegang worden bereikt met andere benaderingen dan een primaire sleutel. Toch
+wordt u voor de duidelijkheid van het gegevensmodel sterk aangemoedigd om
+primaire sleutels voor dit doel te gebruiken.
+</p>
+
+</body>
+
+</html>

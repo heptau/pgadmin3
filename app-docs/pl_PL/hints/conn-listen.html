@@ -1,0 +1,52 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="STYLESHEET" type="text/css" href="../pgadmin3.css">
+<title>Rady guru</title>
+</head>
+
+<body>
+
+<h3>Serwer nie nasłuchuje</h3>
+<p>
+Serwer nie akceptuje połączeń: biblioteka połączeń zgłasza
+</p>
+<p>
+<b><tt class="command"><INFO></tt></b>
+</p>
+<p>
+Jeśli napotkasz ten komunikat, sprawdź, czy serwer, z którym próbujesz się
+skontaktować, rzeczywiście uruchomiony jest PostgreSQL na danym porcie. Sprawdź,
+czy masz łączność sieciową od klienta do hosta serwera za pomocą ping lub
+podobnych narzędzi. Czy Twoja sieć / VPN / tunel SSH / firewall jest
+skonfigurowana poprawnie?
+</p>
+<p>
+Ze względów bezpieczeństwa PostgreSQL <b>nie</b> nasłuchuje początkowo na
+wszystkich dostępnych adresach IP na serwerze. Aby uzyskać dostęp do serwera
+przez sieć, musisz najpierw włączyć nasłuchiwanie na odpowiednim adresie.
+</p>
+<p>
+W PostgreSQL od wersji 8.0 jest to kontrolowane za pomocą parametru
+„listen_addresses" w pliku postgresql.conf. Tutaj możesz wprowadzić listę
+adresów IP, na których serwer ma nasłuchiwać, lub po prostu użyć '*', aby
+nasłuchiwać na wszystkich dostępnych adresach IP. Dla starszych serwerów (wersja
+7.3 lub 7.4) musisz ustawić parametr „tcpip_socket" na 'true'.
+</p>
+<p>
+Możesz użyć edytora postgresql.conf wbudowanego w pgAdmin III do edycji pliku
+konfiguracyjnego postgresql.conf. Po zmianie tego pliku musisz ponownie
+uruchomić proces serwera, aby zmiany odniosły skutek.
+</p>
+<p>
+Jeśli dokładnie sprawdziłeś konfigurację, ale nadal otrzymujesz ten komunikat
+błędu, jest mało prawdopodobne, że napotkałeś krytyczny błąd PostgreSQL.
+Prawdopodobnie masz problemy z łącznością sieciową niskiego poziomu (np.
+konfiguracja firewalla). Sprawdź to dokładnie przed zgłoszeniem błędu do
+społeczności PostgreSQL.
+</p>
+
+</body>
+
+</html>

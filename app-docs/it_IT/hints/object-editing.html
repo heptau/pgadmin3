@@ -1,0 +1,50 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="STYLESHEET" type="text/css" href="../pgadmin3.css">
+<title>Suggerimenti</title>
+</head>
+
+<body>
+
+<h3>Modifica di viste, procedure memorizzate e funzioni</h3>
+<p>
+Durante la modifica del codice di una vista, procedura memorizzata o funzione,
+invece di utilizzare la piccola casella di testo nella finestra delle
+proprietà dell'oggetto, potrebbe essere più comodo utilizzare le opzioni di
+script in pgAdmin per modificare l'oggetto nello strumento di query. Questo
+offre i vantaggi delle funzionalità dell'editor dello strumento di query come
+il completamento automatico, trova e sostituisci e uno spazio di lavoro più
+ampio.
+</p>
+
+<p>
+Per utilizzare le opzioni di script, nella finestra del browser pgAdmin, fai
+clic con il pulsante destro del mouse sull'oggetto che desideri modificare e
+seleziona l'opzione <i>Script CREATE</i>. Potrebbe trovarsi nel sottomenu
+<i>Script</i>. In alternativa, puoi selezionare l'oggetto e poi scegliere
+l'opzione <i>Script CREATE</i> dal sottomenu <i>Script</i> del menu
+<i>Strumenti</i>.
+</p>
+
+<p>
+Modifica la definizione dell'oggetto come necessario e utilizza il pulsante
+<i>Esegui query</i> per applicare le modifiche. Non dimenticare che la
+modifica del nome di una vista o funzione, o della firma di una funzione o
+procedura, potrebbe comportare la creazione di un nuovo oggetto accanto a
+quello originale. Questo utile effetto collaterale rende conveniente creare
+nuovi oggetti, ma simili. Potrebbe essere necessario aggiornare il browser di
+pgAdmin per visualizzare gli oggetti appena creati.
+</p>
+
+<p>
+Puoi utilizzare questa tecnica per eseguire tutti i tipi di operazioni su
+diversi oggetti, tuttavia la sintassi <i>CREATE OR REPLACE</i> di PostgreSQL
+la rende particolarmente utile per la modifica di viste, procedure memorizzate
+e funzioni.
+</p>
+
+</body>
+
+</html>

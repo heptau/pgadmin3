@@ -1,0 +1,52 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="STYLESHEET" type="text/css" href="../pgadmin3.css">
+<title>Gururåd</title>
+</head>
+
+<body>
+<h3>Dekkende indekser for fremmednøkler</h3>
+<p>
+En fremmednøkkel brukes til å koble to tabeller logisk sammen og begrense
+endringene som kan gjøres på dem.
+</p>
+<p>
+Det hele starter med en mastertabell, som vil være den refererte tabellen.
+Den må ha en primærnøkkel (egentlig trenger de refererte kolonnene bare å
+være ikke-null og dekket av en unik indeks, men det er virkelig et godt råd å
+ha en primærnøkkel). Slavetabellen er avhengig av mastertabellen, i den
+forstand at kolonnene som fremmednøkkelen opprettes på, må samsvare med
+mastertabellen for hver innsatte eller oppdaterte nøkkel. Slavetabellen er
+den refererende tabellen for fremmednøkkelen.
+</p>
+<p>
+Fremmednøkkelen begrenser ikke bare den refererende tabellen, men også den
+refererte tabellen; begrensningstypen kan være RESTRICT, CASCADE eller SET
+NULL. Dette betyr at hvis en rad i master/referert tabell endres (oppdateres
+eller slettes), kontrolleres alle refererende tabeller for å se om
+operasjonen er gyldig, og om det er noen ytterligere handlinger å utføre; se
+PostgreSQL-dokumentasjonen om fremmednøkler for ytterligere detaljer.
+</p>
+<p>
+Dette betyr at ved endringstilgang til en spesifikk rad i den refererte
+tabellen, utføres en tilsvarende lesing på alle refererende tabeller, ved
+bruk av fremmednøkkelkolonnene som tilgangsnøkkel. Følgelig gjelder alle
+designregler som bør tas i betraktning for god leseytelse, vanligvis også for
+kolonner i en refererende tabell. For god ytelse anbefales en indeks i de
+fleste tilfeller. PostgreSQL håndhever ikke dette på noen måte, så det er opp
+til database-designeren å sørge for en indeks.
+</p>
+<p>
+For enkelhets skyld tilbyr pgAdmin III en enkel avmerkingsboks når du
+oppretter en fremmednøkkel, som automatisk sjekker tilstedeværelsen av en
+brukbar indeks og oppretter en for deg hvis ingen blir funnet. Som med alle
+indekser, er det sjeldne tilfeller der en slik indeks forringer den totale
+ytelsen litt, men generelt er det mye mer ytelsesforringende å ha én indeks
+for få enn å ha én indeks for mye.
+</p>
+
+</body>
+
+</html>

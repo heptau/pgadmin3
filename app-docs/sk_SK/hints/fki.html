@@ -1,0 +1,52 @@
+<html>
+
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<link rel="STYLESHEET" type="text/css" href="../pgadmin3.css">
+<title>Rady odborníka</title>
+</head>
+
+<body>
+
+<h3>Pokrytie cudzích kľúčov indexom</h3>
+<p>
+Cudzí kľúč sa používa na logické prepojenie dvojice tabuliek a obmedzenie zmien, ktoré
+je možné na nich vykonávať.
+</p>
+<p>
+Všetko začína hlavnou tabuľkou, ktorá bude odkazovanou tabuľkou. Musí mať primárny
+kľúč (presnejšie odkazovaný stĺpec nesmie obsahovať prázdne hodnoty a musí byť
+pokrytý jedinečným indexom, ale je skutočne dobrým pravidlom, aby ste v nej mali
+primárny index). Podradená tabuľka závisí na hlavnej tabuľke, čo dáva tušiť, že
+stĺpce, na ktorých je cudzí kľúč vytvorený, musia zodpovedať hlavnej tabuľke pre
+každý vkladaný alebo aktualizovaný kľúč. Podradená tabuľka je odkazujúcou
+tabuľkou cudzieho kľúča.
+</p>
+<p>
+Cudzie kľúče obmedzujú nielen odkazujúcu tabuľku, ale aj odkazovanú tabuľku.
+Druhy obmedzení môžu byť RESTRICT, CASCADE alebo SET NULL. Znamená to, že keď
+sa zmení riadok v hlavnej/odkazovanej tabuľke (aktualizáciou alebo zmazaním), všetky
+odkazujúce tabuľky sú skontrolované, či je operácia platná a ak áno,
+vykonajú sa určité dodatočné akcie. Podrobnosti nájdete v dokumentácii k
+PostgreSQL.
+</p>
+<p>
+Dôsledkom je, že ak sa k nejakému riadku v odkazovanej tabuľke pristupuje
+kvôli zmene, vykonáva sa následne čítanie zodpovedajúcich riadkov vo všetkých
+odkazujúcich tabuľkách, pričom sa použije stĺpec s cudzím kľúčom na určenie
+toho správneho riadku. Preto by sa pre tieto stĺpce mali brať do úvahy pravidlá
+návrhu ovplyvňujúce výkon. Vo väčšine prípadov je odporúčané použiť index.
+PostgreSQL to výslovne nevyžaduje, preto zostáva na návrhárovi tabuľky, aby sa o
+to postaral.
+</p>
+<p>
+Pre väčšie pohodlie poskytuje pgAdmin III pri vytváraní cudzieho kľúča jednoduchý
+prepínač, ktorý automaticky skontroluje prítomnosť použiteľných indexov a ak
+žiadny nenájde, tak jeden vytvorí. Tak ako u všetkých indexov, sú výnimočné
+prípady, kedy taký index môže trochu degradovať celkový výkon, ale všeobecne mať
+o index menej má horší vplyv na výkon než mať o jeden index viac.
+</p>
+
+</body>
+
+</html>

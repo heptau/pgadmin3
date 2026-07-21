@@ -1,0 +1,43 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="STYLESHEET" type="text/css" href="../pgadmin3.css">
+<title>Rady guru</title>
+</head>
+
+<body>
+
+<h3>Zalecane uruchomienie VACUUM</h3>
+<p>
+Szacunkowa liczba wierszy w tabeli &quot;<INFO>&quot; znacząco odbiega od
+rzeczywistej liczby wierszy. Należy uruchomić VACUUM ANALYZE dla tej tabeli.
+</p>
+<p>
+Zamiast ręcznego wydawania polecenia VACUUM ANALYZE dla tej tabeli (możesz
+użyć do tego menu konserwacji pgAdmin III), należy rozważyć uruchamianie
+VACUUM ANALYZE regularnie lub automatycznie. Można to osiągnąć za pomocą
+harmonogramu zadań. PostgreSQL udostępnia również demona autovacuum, który
+będzie śledzić zmiany wprowadzone w bazie danych i w razie potrzeby
+automatycznie wydawać polecenia VACUUM. W większości przypadków autovacuum
+będzie najlepszym wyborem.
+</p>
+<p><br><br></p>
+<b>Do czego służy VACUUM?</b>
+<p>
+Planista zapytań PostgreSQL podejmuje decyzje na podstawie założeń wynikających
+z szacunkowej liczby wierszy. Jeśli rzeczywista liczba wierszy zbyt różni się
+od szacunkowej, planista może podjąć błędną decyzję, co skutkuje nieoptymalnym
+planem zapytania. Może to prowadzić do słabej wydajności.
+</p>
+<p>
+Magazyn PostgreSQL wymaga VACUUM, aby naprawić identyfikatory transakcji w
+tabelach. Dodatkowo nieaktualne wiersze z aktualizacji i usunięć nie są
+czyszczone, dopóki polecenie VACUUM nie zostanie wydane dla tej tabeli.
+Szczegółowe informacje można znaleźć w dokumentacji online, wystarczy nacisnąć
+przycisk pomocy.
+</p>
+
+</body>
+
+</html>

@@ -1,0 +1,46 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="STYLESHEET" type="text/css" href="../pgadmin3.css">
+<title>Gururåd</title>
+</head>
+
+<body>
+
+<h3>Redigera vyer, lagrade procedurer och funktioner</h3>
+<p>
+När du redigerar koden för en vy, lagrad procedur eller funktion, istället
+för att använda den lilla textrutan i egenskapsdialogrutan för objektet, kan
+du tycka att det är bekvämare att använda skriptalternativen i pgAdmin för
+att redigera objektet i frågeverktyget. Detta ger dig fördelarna med
+frågeverktygets redigeringsfunktioner som autokomplettering, sök och
+ersätt samt större arbetsyta.
+</p>
+
+<p>
+För att använda skriptalternativen, i pgAdmin-webbläsarfönstret, högerklicka
+på objektet du vill redigera och välj alternativet <i>CREATE-skript</i>. Det
+kan finnas på undermenyn <i>Skript</i>. Alternativt kan du välja objektet
+och sedan välja <i>CREATE-skript</i>-alternativet från undermenyn
+<i>Skript</i> i menyn <i>Verktyg</i>.
+</p>
+
+<p>
+Redigera objektets definition efter behov och använd knappen <i>Kör fråga</i>
+för att tillämpa dina ändringar. Glöm inte att ändra ett vy- eller
+funktionsnamn, eller signaturen för en funktion eller procedur kan resultera
+i att ett nytt objekt skapas bredvid det ursprungliga. Denna användbara
+bieffekt gör det bekvämt att skapa nya, men liknande objekt. Du kan behöva
+uppdatera pgAdmin-webbläsaren för att visa nyskapade objekt.
+</p>
+
+<p>
+Du kan använda denna teknik för att utföra alla typer av operationer på olika
+objekt, men PostgreSQLs <i>CREATE OR REPLACE</i>-syntax gör den särskilt
+användbar för att redigera vyer, lagrade procedurer och funktioner.
+</p>
+
+</body>
+
+</html>

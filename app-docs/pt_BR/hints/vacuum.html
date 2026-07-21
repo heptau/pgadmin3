@@ -1,0 +1,45 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="STYLESHEET" type="text/css" href="../pgadmin3.css">
+<title>Dicas do Guru</title>
+</head>
+
+<body>
+
+<h3>Execução de VACUUM recomendada</h3>
+<p>
+A contagem estimada de linhas na tabela &quot;<INFO>&quot; desvia
+significativamente da contagem real de linhas. Você deve executar VACUUM
+ANALYZE nesta tabela.
+</p>
+<p>
+Em vez de emitir um comando VACUUM ANALYZE manual nesta tabela (você pode usar
+o menu de manutenção do pgAdmin III para isso), deve ser considerado executar
+VACUUM ANALYZE regularmente ou automaticamente. Isso pode ser alcançado usando
+um agendador. O PostgreSQL também fornece o daemon autovacuum, que rastreará
+as alterações feitas no banco de dados e emitirá comandos vacuum conforme
+necessário automaticamente. Na maioria dos casos, o autovacuum será a melhor
+escolha.
+</p>
+<p><br><br></p>
+<b>Para que serve o VACUUM?</b>
+<p>
+O planejador de consultas do PostgreSQL toma suas decisões com base em
+suposições, obtidas a partir da contagem estimada de linhas. Se a contagem
+real de linhas for muito diferente da contagem estimada, o planejador pode
+tomar uma decisão errada, resultando em um plano de consulta que não é o
+ideal. Isso pode resultar em baixo desempenho.
+</p>
+<p>
+O armazenamento do PostgreSQL precisa de VACUUM para que os IDs de transação
+nas tabelas sejam corrigidos. Além disso, linhas desatualizadas de atualizações
+e exclusões não são limpas até que o comando VACUUM tenha sido emitido nessa
+tabela. Informações detalhadas podem ser encontradas na documentação online,
+basta pressionar o botão de ajuda.
+</p>
+
+</body>
+
+</html>

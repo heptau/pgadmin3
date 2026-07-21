@@ -1,0 +1,54 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="STYLESHEET" type="text/css" href="../pgadmin3.css">
+<title>Dicas do Guru</title>
+</head>
+
+<body>
+<h3>Índices de cobertura para chaves estrangeiras</h3>
+<p>
+Uma chave estrangeira é usada para acoplar duas tabelas de forma lógica e
+restringir as alterações que podem ser aplicadas a elas.
+</p>
+<p>
+Tudo começa com uma tabela mestre, que será a tabela referenciada. Ela precisa
+ter uma chave primária (bem, na verdade as colunas referenciadas só precisam
+ser não nulas e cobertas por um índice único, mas é realmente um bom conselho
+ter uma chave primária). A tabela escrava depende da tabela mestre, no sentido
+de que as colunas nas quais a chave estrangeira é criada devem corresponder à
+tabela mestre para qualquer chave inserida ou atualizada. A tabela escrava é a
+tabela referenciadora da chave estrangeira.
+</p>
+<p>
+A chave estrangeira não restringe apenas a tabela referenciadora, mas também a
+tabela referenciada; o tipo de restrição pode ser RESTRICT, CASCADE ou SET
+NULL. Isso significa que, se uma linha na tabela mestre/referenciada for
+alterada (atualizada ou excluída), todas as tabelas referenciadoras são
+verificadas para saber se a operação é válida e se há alguma ação adicional a
+ser executada; consulte a documentação do PostgreSQL sobre chaves estrangeiras
+para obter mais detalhes.
+</p>
+<p>
+Isso significa que, ao alterar o acesso a uma linha específica na tabela
+referenciada, uma leitura correspondente é realizada em todas as tabelas
+referenciadoras, usando as colunas de chave estrangeira como chave de acesso.
+Consequentemente, todas as regras de design que devem ser consideradas para um
+bom desempenho de leitura geralmente também se aplicam a colunas em uma tabela
+referenciadora. Para um bom desempenho, um índice é aconselhável na maioria dos
+casos. O PostgreSQL não exige isso de forma alguma, então cabe ao designer do
+banco de dados fornecer um índice.
+</p>
+<p>
+Por conveniência, o pgAdmin III fornece uma caixa de seleção simples ao criar
+uma chave estrangeira, que verificará automaticamente a presença de um índice
+utilizável e criará um para você se nenhum for encontrado. Como em todos os
+índices, há casos raros em que esse índice degrada um pouco o desempenho geral,
+mas em geral ter um índice a menos degrada muito mais o desempenho do que ter
+um índice a mais.
+</p>
+
+</body>
+
+</html>

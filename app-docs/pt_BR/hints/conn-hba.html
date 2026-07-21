@@ -1,0 +1,47 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="STYLESHEET" type="text/css" href="../pgadmin3.css">
+<title>Dicas do Guru</title>
+</head>
+
+<body>
+
+<h3>Acesso ao banco de dados negado</h3>
+<p>
+O servidor não concede acesso ao banco de dados: o servidor informa
+</p>
+<p>
+<b><tt class="command"><INFO></tt></b>
+</p>
+<p>
+Para acessar um banco de dados em um servidor PostgreSQL, primeiro você deve
+conceder acesso primário ao servidor para seu cliente (Host Based
+Authentication). O PostgreSQL verificará o arquivo pg_hba.conf para ver se um
+padrão que corresponda ao endereço do cliente / nome de usuário / banco de
+dados está presente e ativado antes que qualquer lista de controle de acesso
+SQL GRANT seja avaliada.
+</p>
+<p>
+As configurações iniciais no pg_hba.conf são bastante restritivas, para evitar
+falhas de segurança indesejadas causadas por configurações obrigatórias do
+sistema não revisadas. Você provavelmente vai querer adicionar algo como
+</p>
+<p>
+<b><tt class="command">host all all 192.168.0.0/24 md5</tt></b>
+</p>
+<p>
+Este exemplo concede acesso com senha criptografada MD5 a todos os bancos de
+dados para todos os usuários na rede privada 192.168.0.0/24.
+</p>
+<p>
+Você pode usar o editor pg_hba.conf integrado ao pgAdmin III para editar o
+arquivo de configuração pg_hba.conf. Após alterar o pg_hba.conf, você precisa
+acionar um recarregamento da configuração do servidor usando pg_ctl ou
+parando e reiniciando o processo do servidor.
+</p>
+
+</body>
+
+</html>

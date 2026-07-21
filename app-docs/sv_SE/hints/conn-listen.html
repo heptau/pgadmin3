@@ -1,0 +1,53 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="STYLESHEET" type="text/css" href="../pgadmin3.css">
+<title>Gururåd</title>
+</head>
+
+<body>
+
+<h3>Servern lyssnar inte</h3>
+<p>
+Servern accepterar inte anslutningar: anslutningsbiblioteket rapporterar
+</p>
+<p>
+<b><tt class="command"><INFO></tt></b>
+</p>
+<p>
+Om du stöter på detta meddelande, kontrollera om servern du försöker nå
+faktiskt kör PostgreSQL på den angivna porten. Testa om du har
+nätverksanslutning från din klient till servervärden med ping eller
+liknande verktyg. Är ditt nätverk / VPN / SSH-tunnel / brandvägg
+korrekt konfigurerad?
+</p>
+<p>
+Av säkerhetsskäl lyssnar PostgreSQL <b>inte</b> på alla tillgängliga
+IP-adresser på servern från början. För att komma åt servern över nätverket
+måste du först aktivera lyssning på adressen.
+</p>
+<p>
+För PostgreSQL-servrar från och med version 8.0 styrs detta med parametern
+"listen_addresses" i postgresql.conf-filen. Här kan du ange en lista med
+IP-adresser som servern ska lyssna på, eller helt enkelt använda '*' för att
+lyssna på alla tillgängliga IP-adresser. För äldre servrar (version 7.3 eller
+7.4) måste du ställa in parametern "tcpip_socket" till 'true'.
+</p>
+<p>
+Du kan använda postgresql.conf-redigeraren som är inbyggd i pgAdmin III för
+att redigera konfigurationsfilen postgresql.conf. Efter att ha ändrat denna
+fil måste du starta om serverprocessen för att inställningen ska träda i
+kraft.
+</p>
+<p>
+Om du dubbelkollade din konfiguration men fortfarande får detta felmeddelande,
+är det osannolikt att du har stött på ett allvarligt PostgreSQL-problem. Du
+har förmodligen något lågnivå nätverksanslutningsproblem (t.ex.
+brandväggskonfiguration). Kontrollera detta noggrant innan du rapporterar
+en bugg till PostgreSQL-gemenskapen.
+</p>
+
+</body>
+
+</html>

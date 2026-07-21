@@ -1,0 +1,63 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="STYLESHEET" type="text/css" href="../pgadmin3.css">
+<title>Guru Tips</title>
+</head>
+
+<body>
+
+<h3>Serverinstrumentatie</h3>
+<p>
+De server mist instrumentatiefuncties.
+</p>
+<p>
+pgAdmin III gebruikt enkele ondersteuningsfuncties die niet standaard
+beschikbaar zijn in alle PostgreSQL-versies. Deze maken sommige taken
+mogelijk die het leven gemakkelijker maken bij het omgaan met logbestanden
+en configuratiebestanden.
+</p>
+<p>adminpack wordt standaard geïnstalleerd en geactiveerd als u de
+'officiële' pgInstaller-distributie van PostgreSQL voor Windows gebruikt
+en is opgenomen als contrib-module in alle versies van PostgreSQL 8.2 en
+hoger. Als u echter een andere versie van PostgreSQL gebruikt, moet u het
+handmatig installeren. Kopieer hiervoor de juiste adminpack-broncode naar
+de /contrib-directory van uw vooraf geconfigureerde PostgreSQL-bronboom. U
+kunt de adminpacks
+<a href="http://www.pgadmin.org/download/adminpacks.php">hier</a> downloaden.</p>
+
+<p>Voer de volgende opdrachten uit (vervang <i>admin</i> door <i>admin81</i>
+indien nodig):</p>
+
+<pre>
+    # cd $PGSRC/contrib/admin
+    # make all
+    # make install
+</pre>
+
+<p>De module zou nu moeten zijn gebouwd en geïnstalleerd in uw bestaande
+PostgreSQL-installatie. Om het te gebruiken, moet u de module nu installeren
+in de database die u gebruikt als pgAdmin's <i>Onderhouds-DB</i> (normaal
+<i>postgres</i>, hoewel u misschien een andere database wilt gebruiken).
+Zoek hiervoor het <i>admin.sql</i> of <i>admin81.sql</i> bestand dat in de
+vorige stap is geïnstalleerd - normaal te vinden in
+/usr/local/pgsql/share/contrib/ en voer het uit tegen uw database.
+U moet dit normaal doen als de PostgreSQL-supergebruiker:</p>
+
+<pre>
+    $ psql postgres < /usr/local/pgsql/share/contrib/admin.sql
+</pre>
+
+<p>De volgende keer dat u verbinding maakt met de server met pgAdmin, zal
+het de aanwezigheid van adminpack detecteren en volledige functionaliteit
+bieden.</p>
+
+<p>
+Uitgebreide serverinstrumentatie wordt niet ondersteund voor PostgreSQL 7.3
+en 7.4.
+</p>
+
+</body>
+
+</html>

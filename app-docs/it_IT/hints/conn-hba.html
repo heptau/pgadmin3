@@ -1,0 +1,47 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="STYLESHEET" type="text/css" href="../pgadmin3.css">
+<title>Suggerimenti</title>
+</head>
+
+<body>
+
+<h3>Accesso al database negato</h3>
+<p>
+Il server non concede l'accesso al database: il server riporta
+</p>
+<p>
+<b><tt class="command"><INFO></tt></b>
+</p>
+<p>
+Per accedere a un database su un server PostgreSQL, è necessario prima
+concedere l'accesso primario al server per il proprio client (Host Based
+Authentication). PostgreSQL controllerà il file pg_hba.conf per verificare se
+un pattern che corrisponde all'indirizzo del client / nome utente / database è
+presente e abilitato prima che qualsiasi lista di controllo accessi SQL GRANT
+venga valutata.
+</p>
+<p>
+Le impostazioni iniziali in pg_hba.conf sono piuttosto restrittive, per
+evitare falle di sicurezza indesiderate causate da impostazioni di sistema
+obbligatorie ma non revisionate. Probabilmente vorrai aggiungere qualcosa come
+</p>
+<p>
+<b><tt class="command">host all all 192.168.0.0/24 md5</tt></b>
+</p>
+<p>
+Questo esempio concede accesso con password crittografata MD5 a tutti i
+database per tutti gli utenti sulla rete privata 192.168.0.0/24.
+</p>
+<p>
+È possibile utilizzare l'editor pg_hba.conf integrato in pgAdmin III per
+modificare il file di configurazione pg_hba.conf. Dopo aver modificato
+pg_hba.conf, è necessario attivare un ricaricamento della configurazione del
+server utilizzando pg_ctl o fermando e riavviando il processo del server.
+</p>
+
+</body>
+
+</html>

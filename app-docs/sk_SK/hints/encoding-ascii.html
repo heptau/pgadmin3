@@ -1,0 +1,34 @@
+<html>
+
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<link rel="STYLESHEET" type="text/css" href="../pgadmin3.css">
+<title>Rady odborníka</title>
+</head>
+
+<body>
+
+<h3>Kódovanie databázy</h3>
+<p>
+Databáza <INFO> je vytvorená s kódovaním nastaveným na SQL_ASCII. Toto kódovanie
+je definované iba pre 7-bitové znaky. To znamená, že znaky s nastaveným 8.
+bitom (znaky 127 až 255 mimo štandardu ASCII) nie sú definované. Následkom toho
+nie je server schopný prevádzať dáta do iného kódovania.
+</p>
+<p>
+Ak v databáze uchovávate iné dáta než ASCII, veľmi silno vám odporúčame
+použiť príslušné kódovanie pokrývajúce vašu národnú sadu znakov. Prinesie vám to
+výhodu v podobe automatickej konverzie do iných kódovaní na klientoch v
+situáciách, kedy je to potrebné. Ak budete uchovávať iné dáta než ASCII v
+databázach SQL_ASCII, môžete naraziť na podivné znaky pri zápise alebo čítaní z
+databázy, spôsobené problémami pri konverzii. Budete z toho mať ťažkú hlavu pri
+prístupe do databázy z rôznych klientskych programov a ovládačov.
+</p>
+<p>
+Pre väčšinu inštalácií je najlepšou voľbou kódovanie Unicode (UTF8) vďaka veľkej
+flexibilite.
+</p>
+
+</body>
+
+</html>

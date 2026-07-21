@@ -1,0 +1,45 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="STYLESHEET" type="text/css" href="../pgadmin3.css">
+<title>Suggerimenti</title>
+</head>
+
+<body>
+
+<h3>Esecuzione di VACUUM consigliata</h3>
+<p>
+Il conteggio righe stimato sulla tabella &quot;<INFO>&quot; si discosta
+significativamente dal conteggio righe effettivo. Dovresti eseguire VACUUM
+ANALYZE su questa tabella.
+</p>
+<p>
+Invece di emettere un comando VACUUM ANALYZE manuale su questa tabella (puoi
+utilizzare il menu di manutenzione di pgAdmin III per farlo), si dovrebbe
+considerare l'esecuzione di VACUUM ANALYZE su base regolare o automatizzata.
+Ciò può essere ottenuto utilizzando un pianificatore. PostgreSQL fornisce anche
+il demone autovacuum, che tiene traccia delle modifiche apportate al database
+ed emette comandi vacuum automaticamente quando necessario. Nella maggior parte
+dei casi, autovacuum sarà la scelta migliore.
+</p>
+<p><br><br></p>
+<b>A cosa serve VACUUM?</b>
+<p>
+Il pianificatore di query di PostgreSQL prende le sue decisioni basandosi su
+ipotesi, tratte dal conteggio righe stimato. Se il conteggio righe effettivo è
+troppo diverso dal conteggio righe stimato, il pianificatore potrebbe prendere
+una decisione sbagliata, risultando in un piano di query non ottimale. Ciò
+potrebbe portare a scarse prestazioni.
+</p>
+<p>
+L'archiviazione di PostgreSQL ha bisogno di VACUUM per riparare gli ID di
+transazione nelle tabelle. Inoltre, le righe obsolete da aggiornamenti ed
+eliminazioni non vengono pulite fino a quando il comando VACUUM non è stato
+emesso su quella tabella. Informazioni approfondite possono essere trovate
+nella documentazione online, basta premere il pulsante di aiuto.
+</p>
+
+</body>
+
+</html>

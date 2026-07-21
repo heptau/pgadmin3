@@ -1,0 +1,35 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="STYLESHEET" type="text/css" href="../pgadmin3.css">
+<title>Gururåd</title>
+</head>
+
+<body>
+
+<h3>VACUUM FULL</h3>
+<p>
+VACUUM FULL anbefales ikke til PostgreSQL-versioner før 9.0, undtagen under
+ekstreme omstændigheder.
+</p>
+<p>
+VACUUM FULL bør kun bruges, hvis store mængder data er blevet opdateret eller
+slettet i en tabel for at frigøre plads tilbage til operativsystemet. I
+tilfælde, hvor pladsen forventes at blive brugt af tabellen i fremtiden, bør
+en regelmæssig VACUUM bruges i stedet.
+</p>
+<p>
+VACUUM FULL vil tage eksklusive låse i databasen, hvilket forhindrer
+<i>al</i> anden aktivitet på tabellen(erne), der VACUUM-behandles, og vil som
+sådan have en meget stor indvirkning på andre brugere af databasen, mens den
+kører.
+</p>
+<p>
+Efter at en tabel eller database er blevet VACUUM FULL-behandlet, anbefales
+det også at REINDEX alle indekser på tabellen.
+</p>
+
+</body>
+
+</html>

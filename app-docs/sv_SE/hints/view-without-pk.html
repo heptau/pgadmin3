@@ -1,0 +1,27 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="STYLESHEET" type="text/css" href="../pgadmin3.css">
+<title>Gururåd</title>
+</head>
+
+<body>
+
+<h3>Redigera tabelldata utan primärnyckel</h3>
+<p>
+Eftersom tabellen <INFO> inte har en primärnyckel eller OID kan du bara visa
+data. Att infoga nya rader och ändra befintliga rader är inte möjligt för
+verktyget Redigera data utan primärnyckel.
+</p>
+<p>
+För att redigera data kräver pgAdmin III en primärnyckel på tabellen, vilket
+ändå är god praxis för databasdesign. Alternativt kan tabellen skapas WITH
+OIDS. Observera att OID <b>inte</b> garanteras vara unika under en mycket
+lång tidsperiod, så att använda OID som en slags primärnyckel är bara ett
+andrahandsval.
+</p>
+
+</body>
+
+</html>

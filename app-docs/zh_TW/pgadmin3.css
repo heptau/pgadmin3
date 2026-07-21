@@ -1,0 +1,65 @@
+BODY {
+	background-color: #ffffff;
+	border-bottom: medium none;
+	border-left: medium none;
+	border-right: medium none;
+	border-top: medium none;
+	color: black;
+	font-family: verdana, helvetica, sans-serif;
+	font-size: 12px;
+	font-style: normal;
+	font-variant: normal;
+}
+
+th {
+	color: #ffffff;
+	background-color: #6884a4;
+	text-decoration: none;
+	font-weight: 600;
+	font-family: verdana, helvetica, sans-serif;
+	font-size: 13px;
+	text-align: left;
+}
+
+td {
+	background-color: #ffffff;
+	color: black;
+	font-family: verdana, helvetica, sans-serif;
+	font-size: 12px;
+	font-style: normal;
+	font-variant: normal;
+}
+
+p,
+li,
+ul,
+ol,
+center,
+dt,
+dd,
+dl {
+	background-color: #ffffff;
+	color: black;
+	font-family: verdana, helvetica, sans-serif;
+	font-size: 12px;
+	font-style: normal;
+	font-variant: normal;
+}
+
+#TablePar {
+	background-color: #ffffff;
+	color: black;
+	font-family: verdana, helvetica, sans-serif;
+	font-size: 12px;
+	font-style: normal;
+	font-variant: normal;
+}
+
+#WhiteTablePar {
+	background-color: #ffffff;
+	color: black;
+	font-family: verdana, helvetica, sans-serif;
+	font-size: 12px;
+	font-style: normal;
+	font-variant: normal;
+}
