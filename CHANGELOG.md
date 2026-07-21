@@ -5,6 +5,18 @@ Format loosely follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ## [Unreleased]
 
+### Added
+- Completed all 45 shipped languages — every `.mo` catalog was recovered as
+  an editable `.po` source, merged against the current POT, and all missing
+  UI translations filled in (human translation for cs_CZ, es_ES, de_DE, fr_FR;
+  Google Translate for the remaining languages). All languages build with 0
+  untranslated entries and pass `msgfmt -c`.
+
+### Fixed
+- Fixed broken `.mo` files for 11 languages that had header malformations or
+  format-specifier mismatches: zh_CN, de_DE, ja_JP, fa_IR, ko_KR, pl_PL,
+  zh_TW, af_ZA, sr_RS, lv_LV, ru_RU. All now compile cleanly.
+
 ## [2026.07.14]
 
 ### Added

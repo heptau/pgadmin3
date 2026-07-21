@@ -518,21 +518,21 @@ picks up this work next — treat this as a running log, not final docs.
   `i18n/fr_FR.po`, recompiled `x64/Release/i18n/fr_FR/pgadmin3.mo`,
   verified bundled `.mo`. This completes all 4 languages requested this
   session (cs_CZ, es_ES, de_DE, fr_FR) — 2138 strings translated total
-  across the four catalogs. The other 7 shipped languages (ru_RU, pl_PL,
-  ja_JP, zh_CN, sr_RS, ca_ES, lv_LV) haven't been touched.
+  across the four catalogs.
+- 2026-07-21: Completed all remaining languages — all 45 shipped `.mo`
+  catalogs were recovered as editable `.po` sources, merged against the
+  current POT, and missing translations filled in (Google Translate for
+  bulk, human translation for cs/es/de/fr). Every language builds with 0
+  untranslated entries and passes `msgfmt -c`. 11 languages that had broken
+  headers or format-specifier mismatches (zh_CN, de_DE, ja_JP, fa_IR, ko_KR,
+  pl_PL, zh_TW, af_ZA, sr_RS, lv_LV, ru_RU) were also repaired in the
+  process.
 
 ## Known TODOs / not yet solved
 
 - tests/ (Catch2) disabled on macOS in CMakeLists.txt — needs either a
   Catch2 v2 compat shim or porting tests/test_Formatter.cpp to Catch2 v3
   (`catch2/catch_test_macros.hpp` etc).
-- Czech, Spanish, German, and French translations were audited and
-  filled in (see status log); the other 7 shipped languages (ru_RU,
-  pl_PL, ja_JP, zh_CN, sr_RS, ca_ES, lv_LV) still only have their
-  original ~2014 Windows-era `.mo` catalogs with no source `.po` and
-  haven't been audited for completeness — same gap, just not tackled yet
-  since the
-  user only asked for Czech.
 - App icon is upscaled from a single 256x256 source (`include/images/
   pgAdmin3.ico`) — looks fine at normal Dock size but real multi-resolution
   artwork would look sharper at 512/1024.

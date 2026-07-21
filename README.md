@@ -32,6 +32,8 @@ complete, dated list:
   the app's own settings file, HiDPI-aware builds.
 - **Platform support**: native Windows, Linux, and **macOS** builds
   (Apple Silicon, Cocoa) — see below.
+- **Internationalization**: full UI translations in 45 languages,
+  all with editable `.po` sources.
 
 ## Supported platforms
 
