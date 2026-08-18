@@ -27,6 +27,7 @@
 #include "schema/pgTable.h"
 #include "utils/sysSettings.h"
 #include "utils/registry.h"
+#include "utils/utffile.h"
 
 void frmMain::LoadPluginUtilities()
 {
@@ -472,8 +473,9 @@ bool pluginUtilityFactory::CheckEnable(pgObject *obj)
 	{
 		if (applies_to.Index(wxString(obj->GetFactory()->GetTypeName()).Lower()) == wxNOT_FOUND)
 			if (applies_to.Index("puttyforward") == wxNOT_FOUND) {
-				if (applies_to.Index("far2l") == wxNOT_FOUND)
+				if (applies_to.Index("far2l") == wxNOT_FOUND) {
 					return false;
+				}
 				else {
 					//far2l
 					if (obj->GetMetaType()==PGM_SERVER && !obj->IsCollection()) {

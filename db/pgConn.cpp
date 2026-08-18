@@ -554,7 +554,7 @@ bool pgConn::HasFeature(int featureNo, bool forceCheck)
 		    wxT("  JOIN pg_namespace n ON n.oid=pronamespace\n")
 		    wxT(" WHERE proname IN ('show_samples','pg_tablespace_size', 'pg_file_read', 'pg_logfile_rotate',")
 		    wxT(                  " 'pg_postmaster_starttime', 'pg_terminate_backend', 'pg_reload_conf',")
-		    wxT(                  " 'pgstattuple', 'pgstatindex','bt_index_parent_check')\n")
+		    wxT(                  " 'pgstattuple', 'pgstatindex','bt_index_parent_check','slonyversion')\n")
 		    wxT("   AND nspname IN ('pg_catalog', 'public','profile')")
 		    wxT(" union all select current_setting('log_destination'),555,null,null,null")
 		    wxT(" union all select setting,666,null,null,null from pg_settings s where s.name='track_commit_timestamp'");
@@ -582,6 +582,8 @@ bool pgConn::HasFeature(int featureNo, bool forceCheck)
 					features[FEATURE_TERMINATE_BACKEND] = true;
 				else if (proname == wxT("pg_reload_conf") && pronargs == 0)
 					features[FEATURE_RELOAD_CONF] = true;
+				else if (proname == wxT("slonyversion"))
+					features[FEATURE_SLONY] = true;
 				else if (proname == wxT("pgstattuple") && pronargs == 1 && set->GetLong(wxT("arg0")) == 25)
 					features[FEATURE_PGSTATTUPLE] = true;
 				else if (proname == wxT("pgstatindex") && pronargs == 1 && set->GetLong(wxT("arg0")) == 25)
