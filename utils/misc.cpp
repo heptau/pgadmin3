@@ -69,7 +69,8 @@ extern "C"
 #endif
 #endif
 
-
+// Global helper object
+FunctionPGHelper hhelp;
 
 // Conversions
 
@@ -1504,6 +1505,11 @@ wxSize getScreenSizeForPoint(const wxPoint screenPos) {
 			sizeScreen = wxGetDisplaySize();
 		}
 		return sizeScreen;
+}
+
+FunctionPGHelper* GetFunctionPGHelper()
+{
+		return &hhelp;
 }
 //show help window
 void showHelpHtml(wxWindow *parent, const wxString &htmlHelp,wxPoint screenPos, wxSize size) {

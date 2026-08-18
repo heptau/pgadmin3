@@ -31,6 +31,7 @@
 #include "utils/dlgTransformText.h"
 #include "utils/TableColsMap.h"
 #include "utils/PreviewHtml.h"
+#include "utils/misc.h"
 #include "ctl/SourceViewDialog.h"
 #include "wx/display.h"
 
@@ -682,8 +683,8 @@ void ctlSQLBox::OnCopy(wxCommandEvent& ev) {
 	Copy();
 }
 void ctlSQLBox::OnFuncHelp(wxCommandEvent& ev) {
-
-	FunctionPGHelper *fh=winMain->GetFunctionPGHelper();
+	FunctionPGHelper *fh=NULL;
+	fh=GetFunctionPGHelper();
 	int pos = GetCurrentPos();
 	if (!fh->isValid()) return;
 	wxPoint p =  ClientToScreen( PointFromPosition(pos));

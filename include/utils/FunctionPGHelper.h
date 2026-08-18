@@ -5,6 +5,7 @@
 #include <wx/regex.h>
 #include <map>
 #include <vector>
+class pgConn;
 struct anchor_src { int start ;int end; wxString id;};
 class FunctionPGHelper
 {

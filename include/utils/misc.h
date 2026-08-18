@@ -17,6 +17,7 @@
 #include <wx/tokenzr.h>
 
 #include "utils/misc.h"
+class FunctionPGHelper;
 
 class wxImageList;
 extern wxImageList *imageList;
@@ -283,6 +284,7 @@ bool make_identifier(const wxString &strname, wxString &s, wxString &n, bool isl
 wxSize getScreenSizeForPoint(const wxPoint screenPos);
 void showHelpHtml(wxWindow *parent, const wxString &htmlHelp,wxPoint screenPos, wxSize size);
 bool isPortOpen(const wxString& host, int port , int timeout_ms);
+FunctionPGHelper* GetFunctionPGHelper();
 
 #endif
 
