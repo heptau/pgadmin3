@@ -1903,7 +1903,15 @@ void frmQuery::updateMenu(bool allowUpdateModelSize)
 		{
 			canUndo = sqlQuery->CanUndo();
 			canRedo = sqlQuery->CanRedo();
+			#ifdef __WXMSW__
 			canPaste = sqlQuery->CanPaste();
+			#else
+				// BUG very slow work for linux (X11)
+				if (iswayland)
+						canPaste = sqlQuery->CanPaste();
+					else
+						canPaste = true;
+			#endif
 			canFind = true;
 			canAddFavourite = (sqlQuery->GetLength() > 0) && (settings->GetFavouritesFile().Length() > 0);
 			canManageFavourite = (settings->GetFavouritesFile().Length() > 0);
