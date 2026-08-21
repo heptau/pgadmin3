@@ -1095,8 +1095,8 @@ wxString pgServer::GetVersionNumber()
 	{
 		if (versionNum.IsEmpty())
 		{
-			int major = 0, minor = 0;
-			sscanf(GetVersionString().ToAscii(), "%*s %d.%d", &major, &minor);
+			int major = conn->GetMajorVersion();
+			int minor = conn->GetMinorVersion();
 			versionNum.Printf(wxT("%d.%d"), major, minor);
 		}
 
