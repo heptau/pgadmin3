@@ -1249,7 +1249,7 @@ void pgServer::ShowTreeDetail(ctlTree *browser, frmMain *form, ctlListView *prop
 		// Display the Server properties
 
 		properties->AppendItem(_("Description"), GetDescription());
-		properties->AppendItem(_("Service"), GetService());
+		if (!GetService().IsEmpty()) properties->AppendItem(_("Service"), GetService());
 		if (GetName().IsEmpty() || GetName().StartsWith(wxT("/")))
 		{
 			if (GetName().IsEmpty() && !GetService().IsEmpty())
@@ -1265,7 +1265,7 @@ void pgServer::ShowTreeDetail(ctlTree *browser, frmMain *form, ctlListView *prop
 		else
 		{
 			properties->AppendItem(_("Hostname"), GetName());
-			properties->AppendItem(_("Host Address"), GetHostAddr());
+			if (!GetHostAddr().IsEmpty()) properties->AppendItem(_("Host Address"), GetHostAddr());
 			if (GetPort() == 0 && !GetService().IsEmpty())
 				properties->AppendItem(_("Port"), wxEmptyString);
 			else
@@ -1328,7 +1328,7 @@ void pgServer::ShowTreeDetail(ctlTree *browser, frmMain *form, ctlListView *prop
 		{
 			properties->AppendItem(_("Version string"), GetVersionString());
 			properties->AppendItem(_("Version number"), GetVersionNumber());
-			properties->AppendItem(_("Last system OID"), GetLastSystemOID());
+			//properties->AppendItem(_("Last system OID"), GetLastSystemOID());
 		}
 		properties->AppendYesNoItem(_("Connected?"), GetConnected());
 		if (GetConnected())
@@ -1341,17 +1341,21 @@ void pgServer::ShowTreeDetail(ctlTree *browser, frmMain *form, ctlListView *prop
 				properties->AppendItem(wxT("Autovacuum"), (autovacuumRunning ? _("running") : _("not running")));
 			if (conn->BackendMinimumVersion(8, 5))
 			{
-				properties->AppendItem(_("In recovery"), (GetInRecovery() ? _("yes") : _("no")));
-				properties->AppendItem(_("Last XLOG receive location"), GetReceiveLoc());
-				properties->AppendItem(_("Last XLOG replay location"), GetReplayLoc());
+				if (GetInRecovery()) {
+					properties->AppendItem(_("In recovery"), (GetInRecovery() ? _("yes") : _("no")));
+					properties->AppendItem(_("Last XLOG receive location"), GetReceiveLoc());
+					properties->AppendItem(_("Last XLOG replay location"), GetReplayLoc());
+				}
 			}
 			if (conn->BackendMinimumVersion(9, 1))
 			{
-				properties->AppendItem(_("Last XACT replay timestamp"), GetReplayTimestamp());
-				if (GetInRecovery())
-					properties->AppendItem(_("Replay paused"), (GetReplayPaused() ? _("paused") : _("running")));
-				else
-					properties->AppendItem(_("Replay paused"), wxEmptyString);
+				if (GetInRecovery()) {
+					properties->AppendItem(_("Last XACT replay timestamp"), GetReplayTimestamp());
+					if (GetInRecovery())
+						properties->AppendItem(_("Replay paused"), (GetReplayPaused() ? _("paused") : _("running")));
+					else
+						properties->AppendItem(_("Replay paused"), wxEmptyString);
+				}
 			}
 		}
 		if (GetServerControllable())
@@ -1373,6 +1377,63 @@ void pgServer::ShowTreeDetail(ctlTree *browser, frmMain *form, ctlListView *prop
 			}
 		}
 #endif
+		if (GetConnected()) {
+			wxJSONValue opt;
+			wxJSONValue def(wxJSONType::wxJSONTYPE_OBJECT);
+			wxJSONValue ar(wxJSONType::wxJSONTYPE_ARRAY);
+			opt.SetType(wxJSONType::wxJSONTYPE_OBJECT);
+			def["showparams"]=ar;
+			settings->ReloadJsonFileIfNeed();
+			settings->ReadJsonObect("Servers", opt, def);
+                int ar_size = opt["showparams"].Size();
+				wxString listp;
+                for (int i = 0; i < ar_size; i++) {
+                    wxString val = opt["showparams"][i].AsString();
+					if (val.Length()>64 || val.Length()==0) continue;
+                    //cb->AppendString(val);
+					if (listp.Length()>0) listp+=',';
+					listp+=qtDbString(val);
+                }
+			if (ar_size==0|| listp.Length()==0) listp="'#no visible params'";
+			wxString sql="select s.name,current_setting(s.name,true) curr, null next,context, 'users' ord from pg_settings s where name in ("+listp+")\n";
+			if (GetSuperUser()) {
+					sql+=R"(union all select f.name,current_setting(f.name,true) curr, f.setting next,s.context, 'diff' from pg_file_settings f,pg_settings s where s.name=f.name and 
+						current_setting(f.name,true)<>f.setting and  f.setting<>s.reset_val
+				)";	
+			}
+			sql+="order by ord";
+
+			pgSet *showparam = ExecuteSet(sql);
+			if (showparam)
+			{
+				int pos = 0;
+				std::map<wxString,int> uniq;
+				wxColour diff("#c6f2f3");
+				wxColour user("#dfdfdf");
+				while (!showparam->Eof())
+				{
+					wxString name=showparam->GetVal("name");
+					bool isusers=showparam->GetVal("ord") == "users";
+					wxString context=showparam->GetVal("context");
+					wxString showtext=showparam->GetVal("curr");
+					long rowid=properties->GetItemCount();
+					if (uniq.find(name) == uniq.end()) {
+						uniq[name]=1;
+						if (!isusers) {
+							showtext+="("+showparam->GetVal("next")+")";
+						}
+						properties->AppendItem(name, showtext);
+						if (!isusers)
+								properties->SetItemBackgroundColour(rowid,diff);
+							else
+								properties->SetItemBackgroundColour(rowid,user);
+					}
+				showparam->MoveNext();
+				}
+				delete showparam;
+			}
+			
+		}
 	}
 
 	if(!GetConnected())
