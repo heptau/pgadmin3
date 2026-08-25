@@ -269,7 +269,7 @@ bool pgConn::Initialize()
 		if (!save_applicationname.Contains("query")) sql += wxT("SET lock_timeout=15000;\n");
 		//if (BackendMinimumVersion(9, 0)) sql += wxT("SET bytea_output=escape;\n");
 
-		sql += wxT("SELECT oid, pg_encoding_to_char(encoding) AS encoding,(SELECT oid FROM pg_database  WHERE datname = 'template0') datlastsysoid\n")
+		sql += wxT("SELECT oid, pg_encoding_to_char(encoding) AS encoding,(SELECT max(oid) FROM pg_database  WHERE datname in ('template0','template1')) datlastsysoid\n")
 		       wxT("  FROM pg_database WHERE ");
 
 		if (save_oid)
