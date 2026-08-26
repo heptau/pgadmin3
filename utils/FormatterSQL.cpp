@@ -644,7 +644,7 @@ int FormatterSQL::ParseSql(int flags) {
     bool newline = false;
     int iscomment = 0;
     wxRegEx regnumeric("^([0-9]*[.]?[0-9]*([Ee][-+]?[0-9]+)?)|(inf)|(nan)", wxRE_EXTENDED | wxRE_ICASE);
-    wxRegEx regident("(^[[:alpha:]][[:alnum:]_$]*)", wxRE_EXTENDED | wxRE_ICASE);
+    wxRegEx regident("(^[[:alpha:]_][[:alnum:]_$]*)", wxRE_EXTENDED | wxRE_ICASE);
     wxRegEx regdol("(^[[:alpha:]][[:alnum:]_]*[$])", wxRE_EXTENDED | wxRE_ICASE);
     wxChar qt;
     wxString cons;
@@ -1045,7 +1045,7 @@ int FormatterSQL::ParseSql(int flags) {
             continue;
         }
         // identifier
-        if ((c >= 'a' && c <= 'z') || ((c >= 'A' && c <= 'Z'))) {
+        if ((c >= 'a' && c <= 'z') || ((c >= 'A' && c <= 'Z')) || (c=='_')) {
             i--;
             wxString tmp = sql.substr(i, 64);
             bool matches = regident.Matches(tmp, 0);
@@ -1118,9 +1118,15 @@ int FormatterSQL::ParseSql(int flags) {
     // no sql command
         if (ex) break;
                     #ifdef _DEBUG
-                    int st=items[items.size()-1].srcpos+items[items.size()-1].txt.Length();
-                    wxString b=sql.substr(st,100);
-                    wxMessageBox(wxString::Format("Bad sql syntax : %s",b));
+                    //wxTrap();
+                    int lastidx=items.size()-1;
+                    int st=items[lastidx].srcpos;
+                    wxString textlast=items[lastidx].txt;
+                    st=st+textlast.length();
+                    if (st>=0) {
+                            wxString b=sql.substr(st,100);
+                            wxMessageBox(wxString::Format("Bad sql syntax : %s",b));
+                    }
                     #endif
         errorposition=i;
         return -3;
