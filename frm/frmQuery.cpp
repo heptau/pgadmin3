@@ -864,8 +864,15 @@ frmQuery::frmQuery(frmMain *form, const wxString &_title, pgConn *_conn, const w
 		wxMkdir(tempDir);
 	}
 
-	wxString pref=_conn->GetDbname();
-
+	wxString prefdb=_conn->GetDbname();
+	wxString prefserv;
+	if (mainForm && mainForm->GetBrowser()) {
+		wxTreeItemId id=mainForm->GetBrowser()->GetSelection();
+		pgObject* obj=mainForm->GetBrowser()->GetObject(id);
+		if (obj && obj->GetServer()) {
+			prefserv=((pgServer *)obj)->GetServer()->GetDescription();
+		}
+	}
 	bool modeUnicode = settings->GetUnicodeFile();
 	wxArrayString activePage;
 	wxString f = wxFindFirstFile(tempDir + wxT("*.a"));
@@ -875,7 +882,7 @@ frmQuery::frmQuery(frmMain *form, const wxString &_title, pgConn *_conn, const w
 			filename = f.AfterLast(sepPath).BeforeLast('.');
 			if (filename.BeforeFirst('.') == "_active") {
 				activePage.Add(filename.AfterFirst('.'));
-				wxLogInfo(wxT("frmQuery::_active file marker: name=[%s] pref=[%s]"), filename.AfterFirst('.'), pref);
+//				wxLogInfo(wxT("frmQuery::_active file marker: name=[%s] pref=[%s]"), filename.AfterFirst('.'), prefdb);
 			}
 		}
 		else {
@@ -887,7 +894,12 @@ frmQuery::frmQuery(frmMain *form, const wxString &_title, pgConn *_conn, const w
      while ( !f.empty() )
      {
 		 filename=f.AfterLast(sepPath).BeforeLast('.');
-		 if ((f.AfterLast(sepPath).StartsWith(pref+wxT("."))||(filename.BeforeLast('.').IsEmpty()))) {
+		 wxString filepref=filename.BeforeFirst('.');
+		 if (filepref==filename) filepref.Clear();
+		 bool isprefserv=false;
+		 if (filepref.Length()>2 && prefserv.StartsWith(filepref)) isprefserv=true;
+		 bool isprefdb=((f.AfterLast(sepPath).StartsWith(prefdb+wxT(".")))||(filename.BeforeLast('.').IsEmpty()));
+		 if (isprefserv || isprefdb) {
 			wxUtfFile file(f, wxFile::read, modeUnicode ? wxFONTENCODING_UTF8 : wxFONTENCODING_DEFAULT);
 			if (file.IsOpened()) {
 				file.Read(str);
@@ -934,7 +946,8 @@ frmQuery::frmQuery(frmMain *form, const wxString &_title, pgConn *_conn, const w
 		 for (int i = 0; i < sqlQueryBook->GetPageCount(); i++) {
 			 wxString textpage = sqlQueryBook->GetPageText(i);
 			 if (wxNOT_FOUND !=activePage.Index(textpage)) {
-				 if (textpage.BeforeFirst('.') == pref) {
+				 wxString prefname=textpage.BeforeFirst('.');			
+				 if (prefname == prefdb || prefname== prefserv) {
 					 ii = i;
 					 break;
 				 }
@@ -2531,8 +2544,6 @@ void frmQuery::SaveTempFile()
 		return;
 	}
 	filename=sqlQuery->GetTitle(false);
-	wxString pref=conn->GetDbname();
-	//if (filename.StartsWith(pref))
 	filename+=wxT(".a");
 	wxString tempDir = dataDir+wxFileName::GetPathSeparator()+"recovery"+wxFileName::GetPathSeparator();
 	if (autoSave) {
@@ -4662,9 +4673,17 @@ void frmQuery::OnSqlBookTabRDown (wxAuiNotebookEvent &event) {
 		size_t curpage = sqlQueryBook->GetSelection();
 		ctlSQLBox *sqlQuery = wxDynamicCast(sqlQueryBook->GetPage(curpage), ctlSQLBox);
 		wxString pref=conn->GetDbname()+wxT(".nametab");
+		if (mainForm && mainForm->GetBrowser()) {
+			wxTreeItemId id=mainForm->GetBrowser()->GetSelection();
+			pgObject* obj=mainForm->GetBrowser()->GetObject(id);
+			if (obj && obj->GetServer()) {
+				
+				pref=((pgServer *)obj)->GetServer()->GetDescription()+wxT(".nametab");
+			}
+		}
 
 		wxTextEntryDialog dialog(this,
-		wxT("Please enter name string with prefix dbname\n")
+		wxT("Please enter name string with prefix dbname or description server\n")
 		,
 		wxT("Name autosave tab window."),
 		pref,
