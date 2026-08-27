@@ -1251,7 +1251,7 @@ void pgServer::ShowTreeDetail(ctlTree *browser, frmMain *form, ctlListView *prop
 		    wxColour col;
 			properties->AppendItem(_("Key words"), kw);
 			if (kw.Find('#')!=wxNOT_FOUND)
-				 	col="#e75e5eff";
+				 	col="#facbcbff";
 				else
 					col="#a8f375ff";
 			properties->SetItemBackgroundColour(properties->GetItemCount()-1,col);
