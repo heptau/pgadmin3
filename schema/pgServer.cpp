@@ -1245,8 +1245,17 @@ void pgServer::ShowTreeDetail(ctlTree *browser, frmMain *form, ctlListView *prop
 	{
 		// Add the properties view columns
 		CreateListColumns(properties);
-
+		wxString kw=GetKeywords();
 		// Display the Server properties
+		if (!kw.IsEmpty()) {
+		    wxColour col;
+			properties->AppendItem(_("Key words"), kw);
+			if (kw.Find('#')!=wxNOT_FOUND)
+				 	col="#e75e5eff";
+				else
+					col="#a8f375ff";
+			properties->SetItemBackgroundColour(properties->GetItemCount()-1,col);
+		}
 
 		properties->AppendItem(_("Description"), GetDescription());
 		if (!GetService().IsEmpty()) properties->AppendItem(_("Service"), GetService());
