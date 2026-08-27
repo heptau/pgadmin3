@@ -4683,9 +4683,9 @@ void frmQuery::OnSqlBookTabRDown (wxAuiNotebookEvent &event) {
 		}
 
 		wxTextEntryDialog dialog(this,
-		wxT("Please enter name string with prefix dbname or description server\n")
+		_("Please enter name string with prefix dbname or description server\n")
 		,
-		wxT("Name autosave tab window."),
+		_("Name autosave tab window."),
 		pref,
 		wxOK | wxCANCEL);		//setName( dlg.GetValue().wc_str() );
 		if (dialog.ShowModal() == wxID_OK) {
