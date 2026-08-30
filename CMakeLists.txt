@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.23.0)
 #set(CMAKE_CXX_SYSROOT_FLAG_CODE "list(APPEND CMAKE_CXX_SOURCE_FILE_EXTENSIONS cc)")
-project(pgAdmin3 VERSION 1.26.0)
+project(pgadmin3 VERSION 1.26.0)
 include_directories(. include)
 set(PRECOMP_FILE precomp.h)
 if(NOT CROSS_COMPILE)

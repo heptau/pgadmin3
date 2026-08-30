@@ -1863,12 +1863,18 @@ wxString ctlSQLBox::TextToHtml(int start, int end,bool isAddNewLine, const std::
 	wxString tColor;
 	wxFont fntSQLBox = settings->GetSQLFont();
 	wxString fontName = fntSQLBox.GetFaceName();
+#ifdef __WXGTK__	
+	if (fontName.Find("Consolas")==-1) {
+		fontName="Consolas,"+fontName;
+	}
+#endif
 	wxString sz;
-	sz.Printf("%d", fntSQLBox.GetPixelSize().GetHeight());
+	//sz.Printf("%d", fntSQLBox.GetPixelSize().GetHeight());
+	sz.Printf("%d", fntSQLBox.GetPointSize());
 	int lenstr = selText.Length();
 	//str = wxT("<div style=\"font-family: ") + fontName + wxT("; font-size: " + sz + "px\"><font>");
 	str.Alloc(lenstr*2);
-	str = wxString::Format("<div style=\"font-family: %s; font-size: %spx\"><span>", fontName, sz);
+	str = wxString::Format("<div style=\"font-family: %s; font-size: %spt\"><span>", fontName, sz);
 	int k = 0;
 	int l = 1;
 	int indic=9;
@@ -1950,14 +1956,15 @@ wxString ctlSQLBox::TextToHtml(int start, int end,bool isAddNewLine, const std::
 			lstr += newline; newlineadd=true; k++;
 			continue;
 		};
+		bool no_append=false;
 		if (c == 9) s = 5;
 		if (c == 32) s = 1;
-		if (c == '<') { lstr+="&lt;";  k++; continue; };
-		if (c == '>') { lstr+="&gt;";  k++; continue; };
-		if (c == '&') { lstr+="&amp;";  k++; continue; };
+		if (c == '<') { lstr+="&lt;"; no_append=true;};
+		if (c == '>') { lstr+="&gt;"; no_append=true;};
+		if (c == '&') { lstr+="&amp;";no_append=true;};
 		if (s > 0) 
 			for (int tt = 0; tt < s; tt++) lstr += "&nbsp;";
-		else lstr += c;
+		else if (!no_append) lstr += c;
 		k++;
 		if ((k-1)>=pos) {
 			if (GetSimpleMode()) {
