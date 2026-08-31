@@ -2141,6 +2141,7 @@ wxWindow *addServerFactory::StartDialog(frmMain *form, pgObject *obj)
 				browser->SetItemText(parentitem, label);
 
 				form->StoreServers();
+				browser->SetFocus();
 				return 0;
 			}
 			case PGCONN_DNSERR:

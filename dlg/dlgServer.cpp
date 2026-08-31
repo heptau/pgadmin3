@@ -554,6 +554,62 @@ int dlgServer::Go(bool modal)
 		cbGroup->SetValue(_("Servers"));
 		wxString colour = wxSystemSettings::GetColour(wxSYS_COLOUR_WINDOW).GetAsString(wxC2S_HTML_SYNTAX);
 		colourPicker->SetColour(colour);
+		wxString txt;
+		if (wxTheClipboard->Open()) {
+				
+				// 3. Пытаемся получить данные. 
+				// GetData() возвращает true, если в буфере был текст.
+				wxTextDataObject textData;
+				if (wxTheClipboard->GetData(textData)) {
+					txt = textData.GetText();
+				}
+			    wxTheClipboard->Close();
+			}
+		if (!txt.IsEmpty() && (txt.Length()<1000)) {
+			bool ischeck=true;
+			int cnt=0;
+			while (cnt<2) 
+			{
+			 wxStringTokenizer tkz(txt, wxT("\n\r"));
+			 while (tkz.HasMoreTokens())
+			 {
+				wxString token = tkz.GetNextToken();
+				wxString value=token.AfterFirst('=');
+				wxString key=token.BeforeFirst('=').Lower();
+				if (key=="server") {
+						if (!ischeck) { txtName->SetValue(value);}
+				} else if (key=="description") {
+					if (!ischeck) { txtDescription->SetValue(value);}
+				}else if (key=="username") {
+					if (!ischeck) { txtUsername->SetValue(value);}
+				}else if (key=="database") {
+					if (!ischeck) { cbDatabase->SetValue(value);}
+				}else if (key=="group") {
+					if (!ischeck) {
+						//if (cbGroup->FindString(server->GetDatabaseName()) >= 0)						
+						int n=cbGroup->FindString(value);
+						cbGroup->SetSelection(n);
+						 }
+				}else if (key=="port") {
+					if (!ischeck) { txtPort->SetValue(value);}
+				}else if (key=="storepwd") {
+					if (!ischeck) { chkStorePwd->SetValue(value=="true" );}
+				}else if (key=="restore") {
+					if (!ischeck) { chkRestore->SetValue(value=="true" );}
+				} else {
+					// not found
+					if (ischeck && token.Length()>0) 
+							ischeck=false;
+					break;
+				}
+			 }
+			if (!ischeck) break;
+			// check ok
+			ischeck=!ischeck;
+			cnt++;
+		    }
+		}
+
 	}
 
 	// Call CheckRange to set state on OK button
