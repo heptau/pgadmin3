@@ -273,6 +273,21 @@ wxString FormatterSQL::BuildAutoComplite(int startIndex, int level) {
             if (vi->txt.Lower() == "on") {
                 goto close_element_from;
             }
+            if (vi->txt.Lower() == "update") {
+                found_index++;
+                if ((next_item_no_space(found_index)!=-1) && items[found_index].txt.Lower()=="only") found_index++;
+                if ((next_item_no_space(found_index)!=-1) && (items[found_index].type==FSQL::type_item::identifier ||items[found_index].type==FSQL::type_item::name)) {
+                        // table name
+                        
+                        complite_element el2;
+                        el2.table=items[found_index].txt;
+                        el2.startIndex=el.endIndex=found_index;
+                        el2.level=level;
+                        found_index++;
+                        listTable.push_back(el2);
+                }
+                continue;
+            }
             if (vi->txt.Lower() == "insert") {
                 found_index++;
                 if ((next_item_no_space(found_index)!=-1) && items[found_index].txt.Lower()=="into") {
@@ -291,7 +306,9 @@ wxString FormatterSQL::BuildAutoComplite(int startIndex, int level) {
                 continue;
             }
 
-            if ((vi->flags & end_from) != 0) {
+            if ((vi->flags & end_from) != 0
+                 && zone.b.from == 1 // WHERE without FROM skip
+                ) {
                 zone.b.from = 0;
                 zone.b.skip = 1;
                 isskipnext = true;
@@ -577,7 +594,7 @@ std::vector<complite_element> FormatterSQL::ParsePLpgsql(){
                         complite_element it;
                         it.table=t;
                         wxString lt=t.Lower();
-                        bool ignore=(lt=="alter"||lt=="trigger"||lt=="index");
+                        bool ignore=(lt=="alter"||lt=="trigger"||lt=="index"||lt=="raise");
                         if (ignore) break;
                         if (!ignore) {
                             int itempos=listTable[i].startIndex;
