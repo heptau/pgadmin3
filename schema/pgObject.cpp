@@ -375,12 +375,57 @@ void pgObject::ShowDependency(pgDatabase *db, ctlListView *list, const wxString 
 
 		// not being implemented:
 		// - pg_index (done by pg_class)
-		wxString q=query + wxT("\n")
+		wxString head,tail;
+		bool isExt=settings->GetExtendDepend();
+		if (isExt && GetMetaType()==PGM_FUNCTION && query.substr(0,50).Find("refclassid")>0) {
+				    pgFunction *fn= (pgFunction *) this;
+					wxString src=fn->GetSource();
+                    FSQL::FormatterSQL f(src);
+                    std::vector<FSQL::complite_element> listobj=f.ParsePLpgsql();
+					wxString listT;
+					for (auto a:listobj) {
+						wxString s,n;
+						make_identifier(a.table,s,n,true);
+						if (s.Length()==0) s="null"; else s="'"+s+"'";
+						
+						if (a.alias!="@") {
+							// table
+							n=s+",'"+n+"','r'";
+						} else {
+							//function
+							n=s+",'"+n+"','p'";
+						}
+						if (listT.Length()>0) listT+=',';
+						listT+="("+n+")";
+
+					}
+					
+					wxString tb=R"(
+) a
+ UNION ALL 
+select deptype , refclassid , relkind, adbin , adsrc , type , ownertable , refname , nspname  from (
+select distinct 'n'::"char" deptype,coalesce(c4.oid,p2.oid) refclassid,null::"char" relkind,null::pg_node_tree adbin,null::text adsrc,case when coalesce(c4.oid,p2.oid) is null then '@' else coalesce(c4.relkind::text,t.t) end type,null::name ownertable,t.n::name refname,coalesce(t.sp,coalesce(c4.nspname,p2.nspname))::name nspname from
+ (select * from (values #) as t(sp,n,t)) t
+LEFT JOIN (select c4.oid,n5.nspname,c4.relname,case when c4.relkind='p' then 'r' else c4.relkind end relkind from pg_class c4 JOIN pg_namespace n5 ON c4.relnamespace = n5.oid) c4
+ON (c4.nspname,c4.relname)=((coalesce(t.sp,c4.nspname),t.n)) and t.t='r'
+LEFT JOIN (SELECT p.oid,n.nspname,p.proname,p.prokind FROM pg_proc p JOIN pg_namespace n ON p.pronamespace = n.oid ) p2
+ON (p2.nspname,p2.proname)=((coalesce(t.sp,p2.nspname),t.n)) and t.t='p'
+
+order by type ) b
+					)";
+					tb.Replace("#",listT);
+					if (listT.Length()>0 ) {
+						head="select * from (\n";
+						tail=tb;
+					}
+			
+		}
+		wxString q=head+query + wxT("\n")
 		                       wxT("   AND ") + clsorder + wxT(" IN (\n")
 		                       wxT("   SELECT oid FROM pg_class\n")
 		                       wxT("    WHERE relname IN ('pg_class', 'pg_constraint', 'pg_conversion', 'pg_language', 'pg_proc', 'pg_extension', \n")
 		                       wxT("                      'pg_rewrite', 'pg_namespace', 'pg_trigger', 'pg_type', 'pg_attrdef', 'pg_event_trigger','pg_publication_rel','pg_subscription_rel'))\n")
-		                       wxT(" ORDER BY ") + clsorder + wxT(", cl.relkind");
+		                       wxT(" ORDER BY ") + clsorder + wxT(", cl.relkind") + tail;
 		set = conn->ExecuteSet(q);
 
 		if (set)
@@ -398,8 +443,17 @@ void pgObject::ShowDependency(pgDatabase *db, ctlListView *list, const wxString 
 					if (!refname.IsEmpty())
 						refname += wxT(".");
 				}
-
 				wxString typestr = set->GetVal(wxT("type"));
+				wxString ns=set->GetVal(wxT("nspname"));
+				if (head.Length()>0 && ns.StartsWith("pg_catalog")) {
+					// standart function skip
+					long oid=set->GetOid("refclassid");
+					if (typestr=='p' && oid<16000) {
+						set->MoveNext();
+						continue;
+					}
+				}
+				
 				pgaFactory *depFactory = 0;
 				int icon=-1;
 				if (typestr.Length() > 0) {

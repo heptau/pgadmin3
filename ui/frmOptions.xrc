@@ -222,6 +222,17 @@
                       <flag>wxEXPAND|wxTOP|wxLEFT|wxRIGHT</flag>
                       <border>4</border>
                     </object>
+                    <object class="spacer">
+                          <size>0,0d</size>
+                    </object>
+                    <object class="sizeritem">
+                      <object class="wxCheckBox" name="chkExtendDepend">
+                        <label>Show the dependencies of functions on tables,views,functions</label>
+                        <checked>0</checked>
+                      </object>
+                      <flag>wxEXPAND|wxTOP|wxLEFT|wxRIGHT</flag>
+                      <border>4</border>
+                    </object>
                   </object>
                 </object>
                 <flag>wxEXPAND|wxTOP|wxLEFT|wxRIGHT</flag>
