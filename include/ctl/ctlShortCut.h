@@ -41,7 +41,8 @@ public:
         r.x = rect.x+24;
         r.y = rect.y + (rect.height / 2) - (dc.GetCharHeight() / 2);
         if (pp >= 0) {
-            dc.SetBrush(*wxYELLOW_BRUSH);
+            extern wxBrush selectFindBrush;
+            dc.SetBrush(selectFindBrush);
                 const wxString& line = src;
                 pp = line.Find(fnd);
 
@@ -79,7 +80,7 @@ public:
             return;
         }
         // Otherwise, draw every other background with different colour.
-        wxColour bgCol(245, 245, 255);
+        wxColour bgCol(wxSystemSettings::GetColour(wxSYS_COLOUR_WINDOW).GetAsString(wxC2S_HTML_SYNTAX));
         dc.SetBrush(wxBrush(bgCol));
         dc.SetPen(wxPen(bgCol));
         dc.DrawRectangle(rect);
