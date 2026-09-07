@@ -254,6 +254,9 @@ void dlgServer::OnOK(wxCommandEvent &ev)
 #endif
 		wxColour colour = colourPicker->GetColour();
 		wxString sColour = colour.GetAsString(wxC2S_HTML_SYNTAX);
+		wxString bgcolour = wxSystemSettings::GetColour(wxSYS_COLOUR_WINDOW).GetAsString(wxC2S_HTML_SYNTAX);
+		if (sColour==bgcolour) sColour.Clear();
+
 		server->iSetColour(sColour);
 		if (cbGroup->GetValue().IsEmpty())
 			cbGroup->SetValue(_("Servers"));
@@ -359,7 +362,9 @@ void dlgServer::OnOK(wxCommandEvent &ev)
 
 		mainForm->execSelChange(server->GetId(), true);
 		mainForm->GetBrowser()->SetItemText(item, server->GetFullName());
-		mainForm->SetItemBackgroundColour(item, wxColour(server->GetColour()));
+		wxString soldColour = server->GetColour();
+		if (soldColour.IsEmpty()) soldColour = wxSystemSettings::GetColour(wxSYS_COLOUR_WINDOW).GetAsString(wxC2S_HTML_SYNTAX);
+		mainForm->SetItemBackgroundColour(item, wxColour(soldColour));
 		mainForm->StoreServers();
 	}
 
@@ -473,7 +478,9 @@ int dlgServer::Go(bool modal)
 		txtConnStr->SetValue(server->GetConnStr());
 		chkRestore->SetValue(server->GetRestore());
 		txtDbRestriction->SetValue(server->GetDbRestriction());
-		colourPicker->SetColour(server->GetColour());
+		wxString sColour = wxSystemSettings::GetColour(wxSYS_COLOUR_WINDOW).GetAsString(wxC2S_HTML_SYNTAX);
+		if (!server->GetColour().IsEmpty()) sColour = server->GetColour();
+		colourPicker->SetColour(sColour);
 		cbGroup->SetValue(server->GetGroup());
 
 		pickerSSLCert->SetPath(server->GetSSLCert());
@@ -689,12 +696,13 @@ void dlgServer::CheckChange()
 		// Get old value
 		wxColour colour;
 		wxString sColour = wxEmptyString;
-
-		if (colour.Set(server->GetColour()))
-			sColour = colour.GetAsString(wxC2S_HTML_SYNTAX);
+		wxString oldcolor=server->GetColour();
+		wxString stdcolour = wxSystemSettings::GetColour(wxSYS_COLOUR_WINDOW).GetAsString(wxC2S_HTML_SYNTAX);
+		if (oldcolor.IsEmpty())
+			sColour = stdcolour;
 
 		// Get new value
-		wxString sColour2 = colourPicker->GetColourString();
+		wxString sColour2 = colourPicker->GetColour().GetAsString(wxC2S_HTML_SYNTAX);
 
 		enable =  name != server->GetName()
 		          || txtHostAddr->GetValue() != server->GetHostAddr()

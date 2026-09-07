@@ -1752,14 +1752,14 @@ pgObject *pgServerFactory::CreateObjects(pgCollection *obj, ctlTree *browser, co
 			else
 				colour = wxEmptyString;
 		}
-
+/*
 		if (colour.IsEmpty())
 		{
 			wxColour cColour;
 			cColour.Set(wxSystemSettings::GetColour(wxSYS_COLOUR_WINDOW).GetAsString(wxC2S_HTML_SYNTAX));
 			colour = cColour.GetAsString(wxC2S_HTML_SYNTAX);
 		}
-
+*/
 		// SSL mode
 #ifdef PG_SSL
 		settings->Read(key + wxT("SSL"), &ssl, 0);
