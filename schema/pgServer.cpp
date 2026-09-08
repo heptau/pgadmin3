@@ -1245,6 +1245,7 @@ void pgServer::ShowTreeDetail(ctlTree *browser, frmMain *form, ctlListView *prop
 	{
 		// Add the properties view columns
 		CreateListColumns(properties);
+		bool isdark = wxSystemSettings::GetAppearance().IsUsingDarkBackground();
 		wxString kw=GetKeywords();
 		// Display the Server properties
 		if (!kw.IsEmpty()) {
@@ -1254,7 +1255,10 @@ void pgServer::ShowTreeDetail(ctlTree *browser, frmMain *form, ctlListView *prop
 				 	col="#facbcbff";
 				else
 					col="#a8f375ff";
-			properties->SetItemBackgroundColour(properties->GetItemCount()-1,col);
+			if (isdark)
+					properties->SetItemTextColour(properties->GetItemCount()-1,col);
+				else
+					properties->SetItemBackgroundColour(properties->GetItemCount()-1,col);
 		}
 
 		properties->AppendItem(_("Description"), GetDescription());
@@ -1419,6 +1423,7 @@ void pgServer::ShowTreeDetail(ctlTree *browser, frmMain *form, ctlListView *prop
 				std::map<wxString,int> uniq;
 				wxColour diff("#c6f2f3");
 				wxColour user("#dfdfdf");
+				wxColour c;
 				while (!showparam->Eof())
 				{
 					wxString name=showparam->GetVal("name");
@@ -1433,9 +1438,13 @@ void pgServer::ShowTreeDetail(ctlTree *browser, frmMain *form, ctlListView *prop
 						}
 						properties->AppendItem(name, showtext);
 						if (!isusers)
-								properties->SetItemBackgroundColour(rowid,diff);
+								c=diff;
 							else
-								properties->SetItemBackgroundColour(rowid,user);
+								c=user;
+						if (isdark) 
+							properties->SetItemTextColour(rowid,c);
+							else
+							properties->SetItemBackgroundColour(rowid,c);
 					}
 				showparam->MoveNext();
 				}
