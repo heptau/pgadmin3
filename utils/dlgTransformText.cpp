@@ -587,18 +587,29 @@ void dlgTransformText::SetStyled(ctlStyledText* s) {
 	int regstyle = wxSTC_STYLE_LASTPREDEFINED + 1;
 	s->StyleClearAll();
 	s->ClearDocumentStyle();
+	bool isdark=wxSystemSettings::GetAppearance().IsUsingDarkBackground() ;
 	countGroupColor = opt["colorGroup"].Size();
 	for (int i = regstyle; i < regstyle + countGroupColor; i++) {
 		wxString strcl = opt["colorGroup"][i - regstyle].AsString();
 		wxColour clr(strcl);
 		if (clr.IsOk())
 		{
-			s->StyleSetBackground(i, clr);
+			if (isdark)
+			{
+					s->StyleSetForeground(i, clr); 
+					s->StyleSetBackground(i, wxSystemSettings::GetColour(wxSYS_COLOUR_WINDOW));
+			}
+				else
+			{
+					s->StyleSetBackground(i, clr);
+					s->StyleSetForeground(i, wxSystemSettings::GetColour(wxSYS_COLOUR_WINDOWTEXT));
+			}
 		}
 		else {
 			s->StyleSetBackground(i, wxSystemSettings::GetColour(wxSYS_COLOUR_WINDOW));
+			s->StyleSetForeground(i, wxSystemSettings::GetColour(wxSYS_COLOUR_WINDOWTEXT));
 		}
-		s->StyleSetForeground(i, *wxBLACK);
+		
 	}
 
 }

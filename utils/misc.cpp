@@ -261,6 +261,7 @@ wxString ContrastColorBlackOrWhite(wxColour &bgColor) {
 	float k = bgColor.GetRed() * 0.299 + bgColor.GetGreen() * 0.587 + bgColor.GetBlue() * 0.114;
 	if (k <= 150) return "#FFFFFF"; else return "#000000";
 }
+
 /// <summary>
 /// 
 /// </summary>
@@ -1510,6 +1511,21 @@ wxSize getScreenSizeForPoint(const wxPoint screenPos) {
 FunctionPGHelper* GetFunctionPGHelper()
 {
 		return &hhelp;
+}
+
+wxString getTextParameter(const wxString section, const wxString namepar) {
+	wxJSONValue def(wxJSONType::wxJSONTYPE_OBJECT);
+	wxJSONValue opt(wxJSONType::wxJSONTYPE_OBJECT);
+	wxString emp;
+	def[namepar]=emp;
+	settings->ReloadJsonFileIfNeed();
+    settings->ReadJsonObect(section, opt, def);
+    if (!opt.IsNull()) { // check
+		emp=opt[namepar].AsString();
+		if (emp!="null") return opt[namepar].AsString();
+	}
+	return "";
+
 }
 //show help window
 void showHelpHtml(wxWindow *parent, const wxString &htmlHelp,wxPoint screenPos, wxSize size) {

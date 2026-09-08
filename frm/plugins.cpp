@@ -264,7 +264,15 @@ wxWindow *pluginUtilityFactory::StartDialog(frmMain *form, pgObject *obj)
 	if (!(form->GetLastPluginUtility() && form->GetLastPluginUtility()->CheckEnable(obj))) {
 		return 0;
 	}
-
+	wxString desc;
+	if (obj->GetMetaType()==PGM_SERVER && !obj->IsCollection()) {
+		pgServer* srv = (pgServer*) obj;
+		desc=srv->GetDescription();
+	} else 
+		if (obj->GetServer()) {
+			desc=obj->GetServer()->GetDescription();
+	}
+	execCmd.Replace(wxT("$$DESCRIPTION"), desc);
 	// Replace all the place holders with appropriate values
 	if (HaveDatabase(obj))
 	{

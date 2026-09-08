@@ -945,6 +945,16 @@ public:
 	{
 		WriteBool(wxT("NumberPretty"), newval);
 	}
+	bool GetExtendDepend() const
+	{
+		bool b;
+		Read(wxT("ExtendDepend"), &b, false);
+		return b;
+	}
+	void SetExtendDepend(const bool newval)
+	{
+		WriteBool(wxT("ExtendDepend"), newval);
+	}
 	bool GetVisibleDbNameTree() const
 	{
 		bool b;

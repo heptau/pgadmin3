@@ -77,19 +77,74 @@ ctlSQLGrid::ctlSQLGrid(wxWindow* parent, wxWindowID id, const wxPoint& pos, cons
     // load pgadmin3opt.json 
     wxJSONValue def(wxJSONType::wxJSONTYPE_OBJECT);
     wxJSONValue opt(wxJSONType::wxJSONTYPE_OBJECT);
+    wxString scol;
+    if (wxSystemSettings::GetAppearance().IsUsingDarkBackground()) {
+        scol="#616800ff";
+        def["colorWithNewLine"]=scol;
+        scol="#085f00ff";
+        def["colorOdd"]=scol;
+        scol="#013a01ff";
+        def["colorPlanRow"]=scol;
+        scol="#968c00ff";
+        def["colorPlanNode"]=scol;
+        scol="#47348bff";
+        def["colorPlanNodeCollapse"]=scol;
+    } else
+    {
+        scol="#EFE4B0";
+        def["colorWithNewLine"]=scol;
+        scol="#e0ffe0ff";
+        def["colorOdd"]=scol;
+        scol="#e0ffe0ff";
+        def["colorPlanRow"]=scol;
+        scol="#f8f082ff";
+        def["colorPlanNode"]=scol;
+        scol="#c8bfe8ff";
+        def["colorPlanNodeCollapse"]=scol;
+
+    }
 	int t_width=0;
 	def["thousandsWidthSeparator"]=t_width;
+    //color.Set(239, 228, 176);
 	settings->ReloadJsonFileIfNeed();
     settings->ReadJsonObect("ctlSQLGrid", opt, def);
     if (!opt.IsNull()) { // check
+        bool ischange=false;
 		int tmp=opt["thousandsWidthSeparator"].AsInt();
-        if (tmp<-15 || tmp>15) opt["thousandsWidthSeparator"]=def["thousandsWidthSeparator"];
+
+        if (tmp<-15 || tmp>15) {opt["thousandsWidthSeparator"]=def["thousandsWidthSeparator"]; ischange=true;}
+        wxString c5=opt["colorWithNewLine"].AsString();
+        wxColour cl5(c5);
+        if (!cl5.IsOk()) {opt["colorWithNewLine"] = def["colorWithNewLine"]; ischange=true;}
+        c5=opt["colorOdd"].AsString();
+        cl5=c5;
+        if (!cl5.IsOk()) {opt["colorOdd"] = def["colorOdd"]; ischange=true;}
+        c5=opt["colorPlanRow"].AsString();
+        cl5=c5;
+        if (!cl5.IsOk()) {opt["colorPlanRow"] = def["colorPlanRow"]; ischange=true;}
+        c5=opt["colorPlanNode"].AsString();
+        cl5=c5;
+        if (!cl5.IsOk()) {opt["colorPlanNode"] = def["colorPlanNode"]; ischange=true;}
+        c5=opt["colorPlanNodeCollapse"].AsString();
+        cl5=c5;
+        if (!cl5.IsOk()) {opt["colorPlanNodeCollapse"] = def["colorPlanNodeCollapse"]; ischange=true;}
     }
     else 
         opt = def;
 	int thousandsWidthSeparator = opt["thousandsWidthSeparator"].AsInt();
-
-    SetDefaultRenderer(new  CursorCellRenderer(thousandsWidthSeparator));
+    wxString c5=opt["colorWithNewLine"].AsString();
+    wxColour cl5(c5);
+    c5=opt["colorOdd"].AsString();
+    wxColour cl6(c5);
+    colorodd=cl6;
+    cl6=opt["colorPlanRow"].AsString();
+    colorplanrow=cl6;
+    cl6=opt["colorPlanNode"].AsString();
+    colorplannode=cl6;
+    cl6=opt["colorPlanNodeCollapse"].AsString();
+    colorplannodecollapse=cl6;
+    //colorplanrow,colorplannode
+    SetDefaultRenderer(new  CursorCellRenderer(thousandsWidthSeparator,cl5));
     //SetUseNativeColLabels(true);
     //UseNativeColHeader(true);
     SetCellHighlightColour(wxColor(0, 0, 0));
@@ -1256,14 +1311,14 @@ int recurse(ctlSQLGrid* g, int pos, int row, double& transfer) {
                     leveltime = leveltime + lastnode;
                 }
                 if (isstd)
-                        g->grp->ColoriseRow(row, wxColour(224, 255, 224)); // green
+                        g->grp->ColoriseRow(row, g->GetColorFor(PlanRow)); // green
                     else
-                        g->grp->ColoriseRow(row, wxColour(248, 240, 130)); // yellow
+                        g->grp->ColoriseRow(row, g->GetColorFor(PlanNode)); // yellow
 
             }
             else
             {
-                g->grp->ColoriseRow(row, wxColour(224, 255, 224)); // green
+                g->grp->ColoriseRow(row, g->GetColorFor(PlanRow)); // green
                 // end section
                 if (g->grp->endsectionrow==-1 && p==0 && pos==0) {
                         wxRegEx foundstr(wxT("Planning Time: ([0-9.]+)"), wxRE_ADVANCED);
@@ -1375,20 +1430,19 @@ retry:
             if (isSelected)
             {
                 wxColour clr;
-                if (wxWindow::FindFocus() == grid.GetGridWindow())
+                clr = grid.GetSelectionBackground();
+/*                if (wxWindow::FindFocus() == grid.GetGridWindow())
                     clr = grid.GetSelectionBackground();
                 else
                     clr = wxSystemSettings::GetColour(wxSYS_COLOUR_BTNSHADOW);
-
+*/
 
                 dc.SetBrush(*wxTheBrushList->FindOrCreateBrush(clr));
             }
             else
             {
-                wxColor color;
-                color.Set(239, 228, 176);
                 if ((sPos = text.Find(wxT('\n'))) != wxNOT_FOUND) {
-                    dc.SetBrush(*wxTheBrushList->FindOrCreateBrush(color));
+                    dc.SetBrush(*wxTheBrushList->FindOrCreateBrush(clrwithnewline));
                     multiline = true;
                 }
                 else
@@ -1416,7 +1470,8 @@ retry:
                 grid.StringToLines(text, lines);
                 wxRect r;
                 r.y = rect.y;
-                dc.SetBrush(*wxYELLOW_BRUSH);
+                extern wxBrush selectFindBrush;
+                dc.SetBrush(selectFindBrush);
                 size_t nLines = lines.GetCount();
                 for (size_t l = 0; l < nLines; l++)
                 {
@@ -1524,8 +1579,10 @@ retry:
         } 
 }
 
-CursorCellRenderer::CursorCellRenderer(int thous_pixel_sep):wxGridCellStringRenderer() {
+CursorCellRenderer::CursorCellRenderer(int thous_pixel_sep,const wxColour color_row_with_nl):wxGridCellStringRenderer() {
     thousands_pixel_sep=thous_pixel_sep;
+    clrwithnewline=color_row_with_nl;
+
 }
 wxSize CursorCellRenderer::GetBestSize(wxGrid& grid,
                                              wxGridCellAttr& attr,

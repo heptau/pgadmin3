@@ -81,6 +81,7 @@
 #define chkShowDBnameTree		    CTRL_CHECKBOX("chkShowDBnameTree")
 #define txtAutoRowCount             CTRL_TEXT("txtAutoRowCount")
 #define chkNumberPretty 		    CTRL_CHECKBOX("chkNumberPretty")
+#define chkExtendDepend 		    CTRL_CHECKBOX("chkExtendDepend")
 #define txtIndent                   CTRL_TEXT("txtIndent")
 #define chkSpacesForTabs			CTRL_CHECKBOX("chkSpacesForTabs")
 #define cbCopyQuote					CTRL_COMBOBOX("cbCopyQuote")
@@ -395,6 +396,7 @@ frmOptions::frmOptions(frmMain *parent)
 
 	chkJumpRoot->SetValue(settings->GetJumpRoot());
 	chkNumberPretty->SetValue(settings->GetNumberPretty());
+	chkExtendDepend->SetValue(settings->GetExtendDepend());
 	cbLanguage->Append(_("Default"));
 	int sel = 0;
 	wxLanguage langId = settings->GetCanonicalLanguage();
@@ -967,6 +969,11 @@ void frmOptions::OnOK(wxCommandEvent &ev)
 	{
 		changed = true;
 		settings->SetNumberPretty(chkNumberPretty->GetValue());
+	}
+	if (settings->GetExtendDepend() != chkExtendDepend->GetValue())
+	{
+		changed = true;
+		settings->SetExtendDepend(chkExtendDepend->GetValue());
 	}
 
 	// Change the language last, as it will affect our tests for changes

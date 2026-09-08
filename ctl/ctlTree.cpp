@@ -188,12 +188,13 @@ void ctlTree::DrawDbName(const wxTreeItemId& item) {
 			}
 			wxColour c;
 			wxClientDC dc(this);
+			extern wxBrush selectFindBrush;
 				if (s) {
 					if (!(s->GetColour().IsEmpty())) {
 						c=s->GetColour();
 						dc.SetBrush(*wxTheBrushList->FindOrCreateBrush(c));
 					} else
-						dc.SetBrush(*wxYELLOW_BRUSH);
+						dc.SetBrush(selectFindBrush);
 				}
 //			pgServer* s = wxColour(server->GetColour();
 			

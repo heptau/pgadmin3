@@ -1200,7 +1200,7 @@ int frmMain::ReconnectServer(pgServer *server, bool restore)
 
 			wxLogInfo(wxT("pgServer object initialised as required."));
 
-			server->ShowTreeDetail(browser);
+			server->ShowTreeDetail(browser,NULL,properties);
 
 			browser->Freeze();
 			if (restore && server->GetRestore())
