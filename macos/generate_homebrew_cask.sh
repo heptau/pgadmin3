@@ -49,10 +49,9 @@ cask "pgadmin3" do
 
   app "pgAdmin III.app"
 
-  postflight do
-    system_command "/usr/bin/xattr",
-                    args: ["-r", "-d", "com.apple.quarantine", "#{appdir}/pgAdmin III.app"],
-                    sudo: false
+  postflight_steps do
+    run "/usr/bin/xattr",
+        args: ["-r", "-d", "com.apple.quarantine", "{{appdir}}/pgAdmin III.app"]
   end
 
   zap trash: [
