@@ -6,8 +6,8 @@
     "configurations": [
         
         {
-            "name": "pgAdmin3",
-            "program": "${workspaceRoot}/build/pgAdmin3",
+            "name": "pgadmin3",
+            "program": "${workspaceRoot}/build/pgadmin3",
             "request": "launch",
             "stopAtEntry": false,
             "type": "cppdbg",

@@ -1,0 +1,15 @@
+[Desktop Entry]
+Name=pgadmin3
+Name[en_CA]=pgadmin3
+Name[en_GB]=pgadmin3
+Name[ru]=pgadmin3
+Comment=administration and development platform for the PostgreSQL.
+Comment[en_CA]=administration and development platform for the PostgreSQL.
+Comment[en_GB]=administration and development platform for the PostgreSQL.
+Comment[ru]=Администрирование и разработка для PostgreSQL.
+Exec=pgadmin3
+Terminal=false
+Type=Application
+Icon=pgadmin3
+Categories=Development;Database;
+StartupNotify=true
