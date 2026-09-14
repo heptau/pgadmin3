@@ -172,7 +172,7 @@ dlgServer::dlgServer(pgaFactory *f, frmMain *frame, pgServer *node)
 #else
 	for(size_t i = 0; i < nbNotebook->GetPageCount(); i++)
 	{
-		if(nbNotebook->GetPageText(i).compare(wxT("SSH Tunnel")) == 0)
+		if(nbNotebook->GetPageText(i).compare(_("SSH Tunnel")) == 0)
 		{
 			nbNotebook->RemovePage(i);
 		}

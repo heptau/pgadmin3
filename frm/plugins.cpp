@@ -28,7 +28,7 @@
 #include "utils/sysSettings.h"
 #include "utils/registry.h"
 #include "utils/utffile.h"
-
+#include <map>
 void frmMain::LoadPluginUtilities()
 {
 	if (pluginsDir.IsEmpty())
@@ -39,145 +39,171 @@ void frmMain::LoadPluginUtilities()
 
 	// Loop through all the ini files we find in the directory.
 	wxString iniFile;
-	wxDir iniDir(pluginsDir);
-
-	if (!iniDir.IsOpened())
-		return;
-
-	wxLogInfo(wxT("Loading plugin ini files from %s"), pluginsDir.c_str());
-
-	bool cont = iniDir.GetFirst(&iniFile, wxT("*.ini"), wxDIR_FILES);
-
-	while(cont)
+	wxArrayString paths;
+	extern wxString dataDir;
+	wxString p=dataDir+sepPath+"plugins.d";
+	std::map<wxString,wxString> uniq_title;
+	if (wxDirExists(p)) paths.Add(p);
+	paths.Add(pluginsDir);
+	for(int c=0;c<paths.Count();c++)
 	{
-		// Load the config file
-		wxFileName utilIni(pluginsDir + wxT("/") + iniFile);
-		if (!utilIni.FileExists())
-		{
-			cont = iniDir.GetNext(&iniFile);
+		wxDir iniDir(paths[c]);
+		if (!iniDir.IsOpened())
 			continue;
-		}
 
-		wxLogInfo(wxT("Loading plugin utilities from %s"), utilIni.GetFullPath().c_str());
-		wxString brCfg = FileRead(utilIni.GetFullPath());
+		wxLogInfo(wxT("Loading plugin ini files from %s"), paths[c].c_str());
 
-		wxStringTokenizer tkz(brCfg, wxT("\r\n"));
+		bool cont = iniDir.GetFirst(&iniFile, wxT("*.ini"), wxDIR_FILES);
 
-		// Loop round the lines in the file. Everytime we find a new 'Title' value
-		// we create the current plugin and start a new one
-		while(tkz.HasMoreTokens())
+		while(cont)
 		{
-			wxString token = tkz.GetNextToken();
-
-			if (token.Trim() == wxEmptyString || token.StartsWith(wxT(";")))
+			// Load the config file
+			wxFileName utilIni(paths[c] + wxT("/") + iniFile);
+			if (!utilIni.FileExists())
+			{
+				cont = iniDir.GetNext(&iniFile);
 				continue;
+			}
 
-			// Separator
-			if (token.Lower().StartsWith(wxT("[separator]")))
+			wxLogInfo(wxT("Loading plugin utilities from %s"), utilIni.GetFullPath().c_str());
+			wxString brCfg = FileRead(utilIni.GetFullPath());
+
+			wxStringTokenizer tkz(brCfg, wxT("\r\n"));
+
+			// Loop round the lines in the file. Everytime we find a new 'Title' value
+			// we create the current plugin and start a new one
+			while(tkz.HasMoreTokens())
 			{
-				// Add the previous app if required.
+				wxString token = tkz.GetNextToken();
+
+				if (token.Trim() == wxEmptyString || token.StartsWith(wxT(";")))
+					continue;
+
+				// Separator
+				if (token.Lower().StartsWith(wxT("[separator]")))
+				{
+					// Add the previous app if required.
+					if (uniq_title.count(util->command)==0)
+					{
+						int tmp=pluginUtilityCount;
+						wxString cmd=util->command;
+						AddPluginUtility(util);
+						if (tmp<pluginUtilityCount) uniq_title[cmd]="ok";
+					}
+					pluginsMenu->AppendSeparator();
+				}
+
+				// Title
+				if (token.Lower().StartsWith(wxT("title=")))
+				{
+					// Add the previous app if required.
+					if (uniq_title.count(util->command)==0)
+					{
+						wxString cmd=util->command;
+						int tmp=pluginUtilityCount;
+						AddPluginUtility(util);
+						if (tmp<pluginUtilityCount) uniq_title[cmd]="ok";
+					}
+					util->title = token.AfterFirst('=').Trim();
+				}
+
+				// Command
+				if (token.Lower().StartsWith(wxT("command=")))
+					util->command = token.AfterFirst('=').Trim();
+
+				// Description
+				if (token.Lower().StartsWith(wxT("description=")))
+					util->description = token.AfterFirst('=').Trim();
+
+				// KeyFile
+				if (token.Lower().StartsWith(wxT("keyfile=")))
+				{
+					wxString keyfile = token.AfterFirst('=').Trim();
+
+					// Substitute path placeholders
+					keyfile.Replace(wxT("$$BINDIR"), loadPath);
+					keyfile.Replace(wxT("$$WORKINGDIR"), wxGetCwd());
+					keyfile.Replace(wxT("$$PGBINDIR"), settings->GetPostgresqlPath());
+					keyfile.Replace(wxT("$$EDBBINDIR"), settings->GetEnterprisedbPath());
+					keyfile.Replace(wxT("$$SLONYBINDIR"), settings->GetSlonyPath());
+
+					util->keyfile = keyfile;
+				}
+
+				// Platform
+				if (token.Lower().StartsWith(wxT("platform=")))
+					util->platform = token.AfterFirst('=').Trim();
+
+				// Server types
+				if (token.Lower().StartsWith(wxT("servertype=")))
+				{
+					util->server_types.Clear();
+
+					// This is a comma delimited list of values going into an array.
+					wxStringTokenizer valueTkz(token.AfterFirst('='), wxT(","));
+
+					while(valueTkz.HasMoreTokens())
+						util->server_types.Add(valueTkz.GetNextToken());
+				}
+
+				// Database
+				if (token.Lower().StartsWith(wxT("database=")))
+				{
+					if (token.AfterFirst('=').Trim().Lower() == wxT("yes"))
+						util->database = true;
+					else
+						util->database = false;
+				}
+
+				// Applies to
+				if (token.Lower().StartsWith(wxT("appliesto=")))
+				{
+					util->applies_to.Clear();
+
+					// This is a comma delimited list of values going into an array.
+					wxStringTokenizer valueTkz(token.AfterFirst('='), wxT(","));
+
+					while(valueTkz.HasMoreTokens())
+						util->applies_to.Add(valueTkz.GetNextToken());
+				}
+
+				// Set password
+				if (token.Lower().StartsWith(wxT("setpassword=")))
+				{
+					if (token.AfterFirst('=').Trim().Lower() == wxT("yes"))
+						util->set_password = true;
+					else
+						util->set_password = false;
+				}
+				// Environment
+				if (token.Lower().StartsWith(wxT("environment=")))
+				{
+					util->set_env.Clear();
+
+					// This is a comma delimited list of values going into an array.
+					wxStringTokenizer valueTkz(token.AfterFirst('='), wxT(","));
+
+					while(valueTkz.HasMoreTokens())
+						util->set_env.Add(valueTkz.GetNextToken());
+				}
+			}
+
+			// Add the last app if required.
+			if (uniq_title.count(util->command)==0)
+			{
+				int tmp=pluginUtilityCount;
+				wxString cmd=util->command;
 				AddPluginUtility(util);
-				pluginsMenu->AppendSeparator();
+				if (tmp<pluginUtilityCount) uniq_title[cmd]="ok";
 			}
 
-			// Title
-			if (token.Lower().StartsWith(wxT("title=")))
-			{
-				// Add the previous app if required.
-				AddPluginUtility(util);
-				util->title = token.AfterFirst('=').Trim();
-			}
-
-			// Command
-			if (token.Lower().StartsWith(wxT("command=")))
-				util->command = token.AfterFirst('=').Trim();
-
-			// Description
-			if (token.Lower().StartsWith(wxT("description=")))
-				util->description = token.AfterFirst('=').Trim();
-
-			// KeyFile
-			if (token.Lower().StartsWith(wxT("keyfile=")))
-			{
-				wxString keyfile = token.AfterFirst('=').Trim();
-
-				// Substitute path placeholders
-				keyfile.Replace(wxT("$$BINDIR"), loadPath);
-				keyfile.Replace(wxT("$$WORKINGDIR"), wxGetCwd());
-				keyfile.Replace(wxT("$$PGBINDIR"), settings->GetPostgresqlPath());
-				keyfile.Replace(wxT("$$EDBBINDIR"), settings->GetEnterprisedbPath());
-				keyfile.Replace(wxT("$$SLONYBINDIR"), settings->GetSlonyPath());
-
-				util->keyfile = keyfile;
-			}
-
-			// Platform
-			if (token.Lower().StartsWith(wxT("platform=")))
-				util->platform = token.AfterFirst('=').Trim();
-
-			// Server types
-			if (token.Lower().StartsWith(wxT("servertype=")))
-			{
-				util->server_types.Clear();
-
-				// This is a comma delimited list of values going into an array.
-				wxStringTokenizer valueTkz(token.AfterFirst('='), wxT(","));
-
-				while(valueTkz.HasMoreTokens())
-					util->server_types.Add(valueTkz.GetNextToken());
-			}
-
-			// Database
-			if (token.Lower().StartsWith(wxT("database=")))
-			{
-				if (token.AfterFirst('=').Trim().Lower() == wxT("yes"))
-					util->database = true;
-				else
-					util->database = false;
-			}
-
-			// Applies to
-			if (token.Lower().StartsWith(wxT("appliesto=")))
-			{
-				util->applies_to.Clear();
-
-				// This is a comma delimited list of values going into an array.
-				wxStringTokenizer valueTkz(token.AfterFirst('='), wxT(","));
-
-				while(valueTkz.HasMoreTokens())
-					util->applies_to.Add(valueTkz.GetNextToken());
-			}
-
-			// Set password
-			if (token.Lower().StartsWith(wxT("setpassword=")))
-			{
-				if (token.AfterFirst('=').Trim().Lower() == wxT("yes"))
-					util->set_password = true;
-				else
-					util->set_password = false;
-			}
-			// Environment
-			if (token.Lower().StartsWith(wxT("environment=")))
-			{
-				util->set_env.Clear();
-
-				// This is a comma delimited list of values going into an array.
-				wxStringTokenizer valueTkz(token.AfterFirst('='), wxT(","));
-
-				while(valueTkz.HasMoreTokens())
-					util->set_env.Add(valueTkz.GetNextToken());
-			}
+			// Get the next file
+			cont = iniDir.GetNext(&iniFile);
 		}
-
-		// Add the last app if required.
-		AddPluginUtility(util);
-
-		// Get the next file
-		cont = iniDir.GetNext(&iniFile);
 	}
-
 	if (util)
 		delete util;
+
 }
 
 // Add a new plugin to the collection.

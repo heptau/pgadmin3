@@ -81,6 +81,8 @@ EVT_BUTTON(wxID_CANCEL, frmReport::OnCancel)
 END_EVENT_TABLE()
 
 extern wxString dataDir;
+extern wxString defPath;
+
 
 typedef std::vector<double> vectord;
 template<typename A, typename B>
@@ -1873,16 +1875,10 @@ MyListSql::iterator iter2;
 	tableshtml=wxEmptyString;
 
 // �������� �������
-#ifndef _DEBUG
-	wxString fDir=wxStandardPaths::Get().GetExecutablePath().BeforeLast('\\')+wxT("\\");
-#else
-	wxString fDir=wxStandardPaths::Get().GetExecutablePath().BeforeLast('\\')+wxT("\\");
-#endif
-	
-	wxString f=fDir+"textcompare_report.template";
+	wxString f=dataDir+sepPath+"textcompare_report.template";
 	wxString buffer;
 	if (!wxFileExists(f)) {
-		f=dataDir+wxFileName::GetPathSeparator()+"textcompare_report.template";
+		f=defPath+sepPath+"textcompare_report.template";
 	}
 	wxUtfFile file3(f, wxFile::read, wxFONTENCODING_UTF8);
 	if (file3.IsOpened())
@@ -1950,7 +1946,7 @@ MyListSql::iterator iter2;
 }
 
 	//head+="</div></body></html>";
-    fDir=wxStandardPaths::Get().GetTempDir()+wxFileName::GetPathSeparator()+wxT("cmp.html");
+    wxString fDir=wxStandardPaths::Get().GetTempDir()+wxFileName::GetPathSeparator()+wxT("cmp.html");
 	//fn="D:\\PostgreSQL\\cmp.html";
 	fn=fDir;
 	fn.MakeAbsolute();

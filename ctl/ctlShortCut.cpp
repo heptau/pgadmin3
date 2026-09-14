@@ -4,10 +4,28 @@
 
 ctlShortCut::ctlShortCut(frmMain* main,wxWindow* parent, wxWindowID id, const wxPoint& pos , const wxSize& size )
 {
-    wxSize sz(400, -1);
-    int style = wxCB_SIMPLE| wxTE_PROCESS_ENTER;
-    
     frm = main;
+    int style = wxCB_SIMPLE| wxTE_PROCESS_ENTER;
+    long maxWidth = 0;
+    wxClientDC dc(frm);
+    for (int i = 0; i<frm->shortcut.Count(); i++) {
+        wxString t = viewText(frm->shortcut[i]);
+        int w, h,n1=0,n2=0;
+        dc.GetTextExtent(t, &w, &h);
+        if (w > maxWidth) maxWidth = w;        
+    } 
+    // check servers list
+    for (int i = 0; i<frm->servers_find_list.Count(); i++) {
+        wxString t = viewText(frm->servers_find_list[i]);
+        int w, h,n1=0,n2=0;
+        dc.GetTextExtent(t, &w, &h);
+        if (w > maxWidth) maxWidth = w;        
+    }
+    maxWidth += 24; 
+    if (maxWidth<50) maxWidth=300;
+    if (maxWidth>900) maxWidth=900;
+    wxSize sz(maxWidth, -1);
+
     imageList = main->GetImageList();
     //wxComboCtrl* comboCustom = new wxComboCtrl();
     //wxCheckBox* cbox = new wxCheckBox();

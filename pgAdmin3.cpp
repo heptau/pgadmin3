@@ -119,7 +119,10 @@ wxString uiPath;                // Where ui data is stored
 wxString i18nPath;              // Where i18n data is stored
 wxString brandingPath;          // Where branding data is stored
 wxString pluginsDir;            // The plugins ini file directory
+wxString svgPath;              //  Where svg icons data is stored
+wxString defPath;              //  Where default main data is stored
 wxString settingsIni;           // The settings.ini file
+
 
 wxLog *logger;
 
@@ -477,11 +480,13 @@ bool pgAdmin3::OnInit()
 #endif
 
 	// Log the path info
+	wxLogInfo(wxT("load path     : %s"), loadPath.c_str());
 	wxLogInfo(wxT("i18n path     : %s"), i18nPath.c_str());
 	wxLogInfo(wxT("UI path       : %s"), uiPath.c_str());
 	wxLogInfo(wxT("Doc path      : %s"), docPath.c_str());
 	wxLogInfo(wxT("Branding path : %s"), brandingPath.c_str());
 	wxLogInfo(wxT("Plugins path  : %s"), pluginsDir.c_str());
+	wxLogInfo(wxT("Svg path      : %s"), svgPath.c_str());
 	wxLogInfo(wxT("Settings INI  : %s"), settingsIni.c_str());
 
 	wxLogInfo(wxT("PG pg_dump    : %s"), pgBackupExecutable.c_str());
@@ -1069,11 +1074,13 @@ void pgAdmin3::MacOpenFile(const wxString &fileName)
 void pgAdmin3::InitAppPaths()
 {
 	i18nPath = LocatePath(I18N_DIR, false);
+	svgPath = LocatePath("/svg", false);
 	docPath = LocatePath(DOC_DIR, false);
 	uiPath = LocatePath(UI_DIR, false);
 	brandingPath = LocatePath(BRANDING_DIR, false);
 	pluginsDir = LocatePath(PLUGINS_DIR, false);
 	settingsIni = LocatePath(SETTINGS_INI, true);
+	defPath=LocatePath(".", false);
 #ifdef __LINUX__
     wxString newdir;
 	wxString olddatadir=wxFileName::GetHomeDir()+sepPath+"postgresql";
@@ -1562,7 +1569,7 @@ void pgAdmin3::InitXtraPaths()
 
 wxString pgAdmin3::LocatePath(const wxString &pathToFind, const bool isFile)
 {
-	loadPath = wxPathOnly(argv[0]);
+	loadPath = wxPathOnly(wxStandardPaths::Get().GetExecutablePath());
 
 	if (loadPath.IsEmpty())
 		loadPath = wxT(".");

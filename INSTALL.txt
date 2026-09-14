@@ -1,40 +1,48 @@
 
 Зависимости
 --------------
-cmake 3.2
-gcc10-c++
+cmake
+gcc13-c++
 wxWidgets 3.2 (Был собран из исходников https://www.wxwidgets.org/downloads/)
-Postgresql 15.1
+Postgresql 18
 libxml2
 libxslt
 
+Установка зависимостей
+----------------------
+apt-get install cmake git
+apt-get install gcc13 gcc13-c++
+apt-get install libxslt libxslt-devel libxml2 libxml2-devel libpq5-18-devel postgresql18 libwxGTK3.2-devel catch2-devel
+
+
 Сборка
 -------
+git clone https://github.com/levinsv/pgadmin3.git
+
+cd pgadmin3
 mkdir build
 cd build
-cmake ../
-cmake --build . --config Release --target all -j 3 --
+cmake -DCMAKE_BUILD_TYPE=Release ..
+cmake --build . -j 3 --
 
-Полученный исполняемый файл pgAdmin3 нужно поместить в каталог оригального pgadmin3
+Установка
+---------
+cmake --install .
 
-Могут быть проблемы с отсутствующем файлом файлом kwlist.h
-Его можно взять в исходниках Postgresql 15 и положить в include/parser/
 
 Особенности/проблемы Linux
 
 Некоторых комбинации могут быть перехвачены оконными менеджерами:
+Исправления для некоторых комбинаций:
 F10. Отключение в настройках комбинаций клавиш оконного менеджера.
 ALT+Левая кнопка мыши на колонке результата. Отключение:
 	Для XFCE: xfconf-query -c xfwm4 -p /general/easy_click -s none
 
 
-
-ОС для сборки использовал «Альт Рабочая станция» 10
+ОС для сборки использовал «Альт Simply Linux» 11
 https://www.basealt.ru/alt-workstation/download#c1211
 
-Редактировал и собирал на Visual Studio Сode
-
-Сборка mingw (использоалась версия без установки llvm-mingw-20231128-msvcrt-ubuntu-20.04-x86_64)
+Сборка mingw (использовалась версия без установки llvm-mingw-20231128-msvcrt-ubuntu-20.04-x86_64)
 ------------
 MINGW=/home/sergey/mingw/llvm-mingw-20231128-msvcrt-ubuntu-20.04-x86_64
 1. сборка wxwidgets 3.2
@@ -46,12 +54,13 @@ MINGW=/home/sergey/mingw/llvm-mingw-20231128-msvcrt-ubuntu-20.04-x86_64
    wxWidgets_INCLUDE_DIRS=`./wx-config --cxxflags`
 
    
-2. сборка pgAdmin3
+2. сборка pgadmin3
    указать в mingw-windows-x64.cmake пути к нужным dll (exp файлам)
    mkdir build
    cd build
-   cmake -DCMAKE_TOOLCHAIN_FILE=../mingw-windows-x64.cmake ..
-   cmake --build . --config Release --target all -j 5 --
+   build=MinSizeRel
+   cmake -DCMAKE_TOOLCHAIN_FILE=../mingw-windows-x64.cmake -DCMAKE_BUILD_TYPE=$build ..
+   cmake --build . -j 5 --
 
 
 

@@ -1318,11 +1318,13 @@ void pgServer::ShowTreeDetail(ctlTree *browser, frmMain *form, ctlListView *prop
 					properties->AppendItem(_("SSL Mode"), sslMode);
 				}
 			}
-			properties->AppendItem(_("SSL Certificate File"), GetSSLCert());
-			properties->AppendItem(_("SSL Key File"), GetSSLKey());
-			properties->AppendItem(_("SSL Root Certificate File"), GetSSLRootCert());
-			properties->AppendItem(_("SSL Certificate Revocation List"), GetSSLCrl());
-			properties->AppendItem(_("SSL Compression?"), (GetSSLCompression() ? _("yes") : _("no")));
+			long rowid=properties->GetItemCount();
+			if (!GetSSLCert().IsEmpty()) properties->AppendItem(_("SSL Certificate File"), GetSSLCert());
+			if (!GetSSLKey().IsEmpty()) properties->AppendItem(_("SSL Key File"), GetSSLKey());
+			if (!GetSSLRootCert().IsEmpty()) properties->AppendItem(_("SSL Root Certificate File"), GetSSLRootCert());
+			if (!GetSSLCrl().IsEmpty()) properties->AppendItem(_("SSL Certificate Revocation List"), GetSSLCrl());
+			long newrowid=properties->GetItemCount();
+			if (newrowid!=rowid) properties->AppendItem(_("SSL Compression?"), (GetSSLCompression() ? _("yes") : _("no")));
 #endif
 		}
 		if (!serviceId.IsEmpty())

@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.23.0)
 #set(CMAKE_CXX_SYSROOT_FLAG_CODE "list(APPEND CMAKE_CXX_SOURCE_FILE_EXTENSIONS cc)")
-project(pgadmin3 VERSION 1.26.0)
+project(pgadmin3 VERSION 1.27.0)
 include_directories(. include)
 set(PRECOMP_FILE precomp.h)
 if(NOT CROSS_COMPILE)
@@ -21,7 +21,7 @@ if(NOT CROSS_COMPILE)
 	else()
 	    include_directories(${LIBXML2_INCLUDE_DIR})
 	    link_libraries(${LIBXML2_LIBRARIES})
-            message(STATUS "path libxml = ${LIBXML2_LIBRARIES}")
+            message(STATUS "path libxml2 = ${LIBXML2_LIBRARIES}")
 	endif()
 	find_package(wxWidgets 3.2 REQUIRED stc aui base net core xrc html xml)
 	if(NOT wxWidgets_FOUND)
@@ -44,7 +44,7 @@ if(NOT CROSS_COMPILE)
 	    link_libraries(${PostgreSQL_LIBRARIES})
             message(STATUS "path postgresql= ${PostgreSQL_LIBRARIES}")
 	endif()
-     add_compile_definitions(WX_PRECOMP)
+     add_compile_definitions(WX_PRECOMP PG_SSL)
 else()
 #windows
 
@@ -70,9 +70,15 @@ file(GLOB_RECURSE SOURCES
 )
 
 ##########################################################
-set(RPATH ".")
-list(APPEND CMAKE_BUILD_RPATH ${RPATH})
+if(CMAKE_BUILD_TYPE STREQUAL "Debug")
+	set(RPATH ".")
+	list(APPEND CMAKE_BUILD_RPATH ${RPATH})
+endif()
 add_executable(${PROJECT_NAME} )
+#
+
+
+if (CMAKE_BUILD_TYPE STREQUAL "Debug")
 # После сборки — разделить символы и приложение
 add_custom_command(TARGET ${PROJECT_NAME} POST_BUILD
     COMMAND ${CMAKE_COMMAND} -E echo "Extracting debug symbols..."
@@ -82,6 +88,7 @@ add_custom_command(TARGET ${PROJECT_NAME} POST_BUILD
     COMMENT "Split debug symbols into separate .debug file"
     VERBATIM
 )
+endif()
 target_compile_definitions(${PROJECT_NAME} PRIVATE  $<$<CONFIG:Debug>:_DEBUG>)
 target_sources(${PROJECT_NAME} PUBLIC pgAdmin3.cpp ${SOURCES})
 if(CROSS_COMPILE STREQUAL "Windows")
@@ -99,24 +106,45 @@ if (PRECOMP_FILE)
    message(STATUS "Precompile header include/${PRECOMP_FILE}")
 endif()
 if(CROSS_COMPILE STREQUAL "Windows")
-     #add_compile_definitions(_CRT_SECURE_NO_DEPRECATE=1 NDEBUG WIN32 _WINDOWS __WINDOWS__ __WIN95__ __WIN32__ WINVER=0x0500 STRICT __WXMSW__ WXUSINGDLL wxUSE_UNICODE=1 PG_SSL)
         add_compile_definitions(NDEBUG WIN32 WXPRECOMP WINVER=0x0600 STRICT wxUSE_UNICODE=1 PG_SSL)
-	##set(WXWIN /home/sergey/k/wxMSW-3.2.2 )
-	##set(PGDIR /home/sergey/k/pg17 )
-	##set(PGBUILD /home/sergey/k )
-	#set(/home/sergey/k/openssl )
-	#set(PROJECTDIR /home/sergey/k/openssl )
 	
 	include_directories(${WXWIN}/msw-build/lib/wx/include/x86_64-w64-mingw32-msw-unicode-3.2 ${WXWIN}/include ${PGDIR}/include ${PGDIR}/include/server )
 	include_directories(${PGBUILD}/libxml2/include ${PGBUILD}/libxslt/include ${PGBUILD}/iconv/include  )
-#	include_directories(${PGBUILD}/openssl/include 
-#	include_directories( ./include/libssh2 ./include/libssh2/Win32 )
 else()
+	if(CMAKE_BUILD_TYPE STREQUAL "Debug")
 	add_subdirectory(tests)
+	endif()
 endif()
 
 
 
 set(CPACK_PROJECT_NAME ${PROJECT_NAME})
 set(CPACK_PROJECT_VERSION ${PROJECT_VERSION})
+string(TOLOWER ${PROJECT_NAME} CPACK_PACKAGE_NAME)
+set(CPACK_PACKAGE_VENDOR "levinsv")
+set(CPACK_PACKAGE_CONTACT "https://github.com/levinsv")
+set(CPACK_PACKAGE_DESCRIPTION_SUMMARY "Administration and development platform for the PostgreSQL")
+SET(CPACK_PACKAGE_DESCRIPTION_FILE "${CMAKE_SOURCE_DIR}/README.md")
+set(CPACK_PACKAGE_VERSION_MAJOR ${VERSION_MAJOR})
+set(CPACK_PACKAGE_VERSION_MINOR ${VERSION_MINOR})
+SET(CPACK_PACKAGE_INSTALL_DIRECTORY ${CPACK_PACKAGE_NAME})
+SET(CPACK_PACKAGE_VERSION ${PROJECT_VERSION})
 
+
+install(TARGETS ${PROJECT_NAME} RUNTIME DESTINATION bin)
+
+# Установка переводов
+install(DIRECTORY pkg/i18n/ DESTINATION share/${PROJECT_NAME}/i18n PATTERN "*.po" EXCLUDE)
+install(DIRECTORY pkg/svg/ DESTINATION share/${PROJECT_NAME}/svg)
+install(FILES include/images/pgadmin3.svg DESTINATION share/icons)
+install(FILES pkg/textcompare_report.template DESTINATION share/${PROJECT_NAME})
+install(FILES pkg/${PROJECT_NAME}.desktop DESTINATION share/applications)
+install(FILES pkg/settings.ini DESTINATION share/${PROJECT_NAME})
+install(DIRECTORY pkg/plugins.d/ DESTINATION share/${PROJECT_NAME}/plugins.d)
+
+set(CPACK_RPM_PACKAGE_CHANGELOG_FILE "${CMAKE_SOURCE_DIR}/changelog.md")
+
+#set(CPACK_PACKAGE_FILE_NAME ${CPACK_PACKAGE_NAME}-${PROJECT_VERSION}-${CPACK_RPM_PACKAGE_RELEASE}.${CPACK_RPM_PACKAGE_ARCHITECTURE})
+set(CPACK_ARCHIVE_COMPONENT_INSTALL ON)
+set(CPACK_ARCHIVE_BASE_FILE_NAME ${CPACK_PACKAGE_FILE_NAME})
+include(CPack)
