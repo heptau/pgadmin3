@@ -44,7 +44,7 @@ if(NOT CROSS_COMPILE)
 	    link_libraries(${PostgreSQL_LIBRARIES})
             message(STATUS "path postgresql= ${PostgreSQL_LIBRARIES}")
 	endif()
-     add_compile_definitions(WX_PRECOMP)
+     add_compile_definitions(WX_PRECOMP PG_SSL)
 else()
 #windows
 
