@@ -315,7 +315,13 @@ wxBitmapBundle GetBundleSVG(wxBitmap* std, wxString name, wxSize sz) {
 	if (bb.IsOk()) return bb;
 	extern wxString dataDir;
 	wxString fullpath=dataDir+ sepPath +"svg" + sepPath + name; // 1. local data application
-	if (!wxFile::Exists(fullpath)) fullpath=loadPath + sepPath +"svg" + sepPath + name; // 2. execute path
+	if (name.Length()>0 && name[0]!='/')
+	{
+		if (!wxFile::Exists(fullpath)) {
+			extern wxString svgPath;
+			fullpath=svgPath + sepPath + name; // 2. svg global path
+		}
+	}
 	if (wxFile::Exists(fullpath)) { // name only filename.svg
 		bb=wxBitmapBundle::FromSVGFile(fullpath, sz);
 	}
