@@ -30,7 +30,8 @@ ExplainCanvas::ExplainCanvas(wxWindow *parent)
 {
 	SetDiagram(new wxDiagram);
 	GetDiagram()->SetCanvas(this);
-	SetBackgroundColour(*wxWHITE);
+	SetBackgroundColour(wxSystemSettings::GetColour(wxSYS_COLOUR_WINDOW) );
+	SetForegroundColour(wxSystemSettings::GetColour(wxSYS_COLOUR_WINDOWTEXT));
 	popup = NULL;
 }
 
@@ -338,8 +339,7 @@ END_EVENT_TABLE()
 
 ExplainText::ExplainText(ExplainPopup *parent, ExplainShape *s) : wxWindow(parent, -1)
 {
-	SetBackgroundColour(wxColour(255, 255, 224));
-
+	SetBackgroundColour(wxSystemSettings::GetColour(wxSYS_COLOUR_MENU));
 	popup = parent;
 
 	wxWindowDC dc(this);

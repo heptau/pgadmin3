@@ -276,7 +276,7 @@ void ExplainShape::OnDraw(wxDC &dc)
 
     x = WXROUND(m_xpos - w / 2.0);
     y += bmp.GetHeight() + BMP_BORDER;
-
+    SetTextColour(wxSystemSettings::GetColour(wxSYS_COLOUR_WINDOWTEXT));
     dc.DrawText(label.Trim(), x, y);
 }
 
