@@ -284,7 +284,7 @@ wxWindow *pluginUtilityFactory::StartDialog(frmMain *form, pgObject *obj)
 {
 	wxString execCmd = command;
 	wxArrayString environment = set_env;
-
+    pgServer* srv = NULL;
 	// Remember this as the last plugin used
 	form->SetLastPluginUtility(this);
 	if (!(form->GetLastPluginUtility() && form->GetLastPluginUtility()->CheckEnable(obj))) {
@@ -292,11 +292,12 @@ wxWindow *pluginUtilityFactory::StartDialog(frmMain *form, pgObject *obj)
 	}
 	wxString desc;
 	if (obj->GetMetaType()==PGM_SERVER && !obj->IsCollection()) {
-		pgServer* srv = (pgServer*) obj;
+		srv = (pgServer*) obj;
 		desc=srv->GetDescription();
 	} else 
 		if (obj->GetServer()) {
-			desc=obj->GetServer()->GetDescription();
+			srv = obj->GetServer();
+			desc=srv->GetDescription();
 	}
 	execCmd.Replace(wxT("$$DESCRIPTION"), desc);
 	// Replace all the place holders with appropriate values
@@ -331,24 +332,22 @@ wxWindow *pluginUtilityFactory::StartDialog(frmMain *form, pgObject *obj)
 		wxSetEnv(wxT("PGSSLROOTCERT"), obj->GetConnection()->GetSSLRootCert());
 		wxSetEnv(wxT("PGSSLCRL"), obj->GetConnection()->GetSSLCrl());
 	}
-	else
 	{
 		// Blank the rest
-		if (obj && obj->GetMetaType() == PGM_SERVER) {
-			pgServer* srv = (pgServer*) obj;
+		if (srv) {
 			execCmd.Replace(wxT("$$TITLE"), title);
 			execCmd.Replace(wxT("$$HOSTNAME"), srv->GetName());
 			execCmd.Replace(wxT("$$USERNAME"), srv->GetUsername());
 			execCmd.Replace(wxT("$$PORT"), NumToStr((long)srv->GetPort()));
-			if (!obj->IsCollection() && applies_to.Index("far2l") != wxNOT_FOUND ) {
+			if (applies_to.Index("far2l") != wxNOT_FOUND ) {
 						wxString path = wxFileName::GetHomeDir() + sepPath + ".config" + sepPath + "far2l"+ sepPath + "plugins"+ sepPath + "NetRocks";
 						if (wxDirExists(path)) {
 							if (winMain) {
 								wxMenu *m=winMain->GetPluginsMenu();
 								ctlTree *tree=winMain->GetBrowser();
-								wxString name=tree->GetItemText(obj->GetId()).BeforeFirst('(').Trim();;
+								wxString name=tree->GetItemText(srv->GetId()).BeforeFirst('(').Trim();;
 								//winMain->GetCurrentNodePath
-								wxString nameparent=tree->GetItemText(tree->GetItemParent(obj->GetId())).BeforeFirst('(').Trim();;
+								wxString nameparent=tree->GetItemText(tree->GetItemParent(srv->GetId())).BeforeFirst('(').Trim();;
 
 								path=path+sepPath+nameparent+".sites"+sepPath+"sites.cfg";
 								if (wxFileExists(path)) {
@@ -485,6 +484,7 @@ bool pluginUtilityFactory::CheckEnable(pgObject *obj)
 {
 	// First check that this is one of the supported server types
 	// for this plugin. If none are specified, then anything goes
+	if (!obj) return false;
 	if (database && server_types.Count() > 0)
 	{
 		// If we need a specific server type, we can't enable unless
@@ -501,6 +501,14 @@ bool pluginUtilityFactory::CheckEnable(pgObject *obj)
 		if (server_types.Index(serverType) == wxNOT_FOUND)
 			return false;
 	}
+	pgServer *srv = NULL;
+	if (obj->GetMetaType()==PGM_SERVER && !obj->IsCollection()) {
+		srv = (pgServer*) obj;
+	} else 
+		if (obj->GetServer()) {
+			srv = obj->GetServer();
+	}
+
 	// Now check that this is one of the supported object types
 	// for this plugin. If none are specified, then anything goes
 	if (obj && applies_to.Count() > 0)
@@ -512,14 +520,14 @@ bool pluginUtilityFactory::CheckEnable(pgObject *obj)
 				}
 				else {
 					//far2l
-					if (obj->GetMetaType()==PGM_SERVER && !obj->IsCollection()) {
+					if (srv) {
 						wxString path = wxFileName::GetHomeDir() + sepPath + ".config" + sepPath + "far2l"+ sepPath + "plugins"+ sepPath + "NetRocks";
 						if (wxDirExists(path)) {
 							if (winMain) {
 								ctlTree *tree=winMain->GetBrowser();
-								wxString name=tree->GetItemText(obj->GetId()).BeforeFirst('(').Trim();;
+								wxString name=tree->GetItemText(srv->GetId()).BeforeFirst('(').Trim();;
 								//winMain->GetCurrentNodePath
-								wxString nameparent=tree->GetItemText(tree->GetItemParent(obj->GetId())).BeforeFirst('(').Trim();;
+								wxString nameparent=tree->GetItemText(tree->GetItemParent(srv->GetId())).BeforeFirst('(').Trim();
 								path=path+sepPath+nameparent+".sites"+sepPath+"sites.cfg";
 								if (wxFileExists(path)) {
 									return true;
