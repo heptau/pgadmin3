@@ -395,8 +395,11 @@ void pgObject::ShowDependency(pgDatabase *db, ctlListView *list, const wxString 
 							//function
 							n=s+",'"+n+"','p'";
 						}
-						if (listT.Length()>0) listT+=',';
-						listT+="("+n+")";
+						wxString newel='('+n+')';
+						if (listT.Find(newel)==wxNOT_FOUND ) {
+							if (listT.Length()>0) listT+=',';
+							listT+=newel;
+						} 
 
 					}
 					

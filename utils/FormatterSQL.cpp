@@ -299,6 +299,17 @@ wxString FormatterSQL::BuildAutoComplite(int startIndex, int level) {
                 }
                 continue;
             }
+            if (vi->txt.Lower()=="into") {
+                        int i=found_index+1;
+                        while (next_item_no_space(i) != -1) {
+                            if (items[i].txt == ','||items[i].type == name)
+                            {
+                                i++;
+                            } else break;
+                        }
+                        found_index=i;
+                continue;
+            }
             if (vi->txt.Lower() == "insert") {
                 found_index++;
                 if ((next_item_no_space(found_index)!=-1) && items[found_index].txt.Lower()=="into") {
@@ -597,7 +608,16 @@ std::vector<complite_element> FormatterSQL::ParsePLpgsql(){
         }
         // извлечем информацию о таблицах и функциях
         BuildAutoComplite(0,0);
-        // 
+        // проверим определения рекурсивных таблиц (они используются ДО определения)
+        for(int i=0;i<listTable.size();i++) {
+            wxString a=listTable[i].alias.Lower();
+            if (listTable[i].table == "@" && a.Length()>0 && listTable[i].columnList.Length()>0) 
+            {
+                for(int j=0;j<i;j++) {
+                    if (listTable[j].table.Lower()==a) listTable[j].table="@";
+                }
+            }
+        }
         for(int i=0;i<listTable.size();i++) {
             wxString t=listTable[i].table;
             bool isColList=listTable[i].columnList.Length()>0;
@@ -609,7 +629,9 @@ std::vector<complite_element> FormatterSQL::ParsePLpgsql(){
             
             if (t=="@" || t=="-") continue;
             // with table 
-            if (isColList) continue;
+            if (isColList) {
+                continue;
+            }
             if (t.Len()>0) {
                 bool add=true;
                 for(int k=0;k<i;k++) {
