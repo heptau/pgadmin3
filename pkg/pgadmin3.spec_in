@@ -1,0 +1,50 @@
+
+%define app_id io.github.levinsv.pgadmin3
+
+Name: pgadmin3
+Version: 1.27.0
+Release: alt1
+
+Summary: Administration and development platform for the PostgreSQL
+
+Group: Databases
+License: BSD
+# Originally https://github.com/pgadmin-org/pgadmin3, switch to fork with current PG support
+URL: https://github.com/levinsv/pgadmin3
+VCS: https://github.com/levinsv/pgadmin3.git
+
+# Source-url: https://github.com/levinsv/pgadmin3/archive/refs/tags/v%version.tar.gz
+Source: %name-%version.tar
+
+BuildRequires(pre): rpm-macros-cmake
+BuildRequires: cmake
+BuildRequires: gcc-c++
+BuildRequires: postgresql18
+BuildRequires: libxslt-devel
+BuildRequires: libwxGTK3.2-devel
+BuildRequires: libxml2-devel
+BuildRequires: desktop-file-utils
+
+%description
+This fork of pgAdmin III is for administering and developing PostgreSQL databases,
+available for any use.
+The application runs on GNU/Linux and Windows 2010.
+This version of pgAdmin III is designed with extensive administration and development
+ capabilities - from writing simple SQL queries to developing complex databases.
+The graphical interface supports most PostgreSQL functions and simplifies administration.
+The application also includes an SQL editor, a server code editor, log processing, and much more.
+
+%prep
+%setup
+
+%build
+%cmake_build
+
+%install
+%cmake_install
+
+%files
+%_bindir/%name
+%_datadir/%name/
+%_desktopdir/pgadmin3.desktop
+%_iconsdir/pgadmin3.svg
