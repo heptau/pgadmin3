@@ -1,3 +1,16 @@
+## 2026-09-17: fix: Parser plpgsql with recursive query
+Таблица из рекурсивной секции with попадала в зависимости функции.
+Добавлена обработка into при разборе запросов plpgsql.
+Небольшие оптимизации.
+
+## 2026-09-16: refactor:  Support plugin far2l
+## 2026-09-16: fix(ui): Store color server empty
+## 2026-09-15: fix(ui): Support Dark mode(explain)
+## 2026-09-14: docs: Prepare release
+Исправлены инструкции. Изменена версия pgadmin3 на 1.27.0.
+Создан changelog.md из содержимого коммитов.
+Добавлена инструкция для инсталяции в linux.
+
 ## 2026-09-14: fix(ui): Correct visible SSL page for linux
 ## 2026-09-14: refactor: Move files for install
 Для установки некоторые файлы вынесены в каталог pkg.
@@ -229,8 +242,6 @@ SetPassword=No
 ## 2026-05-07: Copy bookmark selection.
 Выделеные **Ctrl+B** фрагменты текста теперь копируются в виде выделенного желтым фоновым цветом.
 
-## 2026-05-07: vscode setting
-## 2026-05-07: fix build mingw
 ## 2026-04-30: fix compare report.
 При сравнении баз некорректно определялся путь в дереве объектов.
 
@@ -273,10 +284,10 @@ LINUX  - ~/.local/share/pgadmin3/svg
 ## 2026-04-13: Support hotkey for context help window.
 Улучшена поддержка клавиши для навигации в контекстной справке.
 Краткий список:
-PAGEDOWN,PAGEUP,UP,DOWN,HOME,END - скроллинг окна.
-+ - увеличить размер окна.
-S - screenshot контекстной справки.
-C - копирование в html формате.
+**PAGEDOWN,PAGEUP,UP,DOWN,HOME,END** - скроллинг окна.
+**+** - увеличить размер окна.
+**S** - screenshot контекстной справки.
+**C** - копирование в html формате.
 
 ## 2026-04-13: Add support putty for Windows
 Добавлена поддержка туннелей организованных в putty.exe.
@@ -300,7 +311,6 @@ SetPassword=No
 ## 2026-03-27: fix view scale_factor value.
 Целые числа не показывались в значениях autovacuum_analyze_scale_factor и других подобных.
 
-## 2026-03-27: fix crash
 ## 2026-03-26: Full view server groups to the connection selection dialog.
 В диалоге выбора соединения список серверов имеет текстовое представление как в дереве объектов.
 
@@ -337,7 +347,6 @@ SetPassword=No
 
 ## 2026-03-03: Add help for options pgadmin3opt.Press **Ctrl+F1**
 ## 2026-03-03: Zoom in on the contexl help window by press "+"
-## 2026-03-02: fix bug frmLog
 ## 2026-02-27: In the query results, integers can be viewed in a human-readable form.
 В расширенном представлении ячейки большие числа будут показаны в удобочитаемом виде.
 
