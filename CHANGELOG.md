@@ -32,6 +32,8 @@ Format loosely follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
   `colorSelectFind`).
 - Basic support for running as a non-privileged PostgreSQL user (avoids
   `permission denied for table pg_proc` when listing table dependents).
+- Updated the committed `x64/Release/pgAdmin3.exe` to `master`'s latest
+  build, so the portable Windows zip picks up all of the above.
 
 ### Fixed
 - Fixed the plpgsql dependency parser: tables referenced only in a
