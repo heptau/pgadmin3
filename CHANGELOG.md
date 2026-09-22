@@ -5,6 +5,8 @@ Format loosely follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ## [Unreleased]
 
+## [2026.09.22]
+
 ### Added
 - Server properties can now show the values of selected `postgresql.conf`
   parameters (configured via the `showparams` array under `Servers` in
