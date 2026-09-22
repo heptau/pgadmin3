@@ -28,8 +28,25 @@ ctlStyledText::ctlStyledText()
 }
 void ctlStyledText::setDecorate() {
 	extern sysSettings* settings;
-	wxFont fntSQLBox = settings->GetSQLFont();
+	wxColour bgColor = settings->GetSQLBoxColourBackground();
+	if (settings->GetSQLBoxUseSystemBackground())
+	{
+		bgColor = wxSystemSettings::GetColour(wxSYS_COLOUR_WINDOW);
+	}
+	SetBackgroundColour(bgColor);
+	wxColour frColor = settings->GetSQLBoxColourForeground();
+	if (settings->GetSQLBoxUseSystemForeground())
+	{
+		frColor = wxSystemSettings::GetColour(wxSYS_COLOUR_WINDOWTEXT);
+	}
 
+	SetForegroundColour(frColor);
+	StyleSetBackground(wxSTC_STYLE_DEFAULT, bgColor);
+	StyleSetForeground(wxSTC_STYLE_DEFAULT, frColor);
+	StyleSetBackground(0, bgColor);
+	StyleSetForeground(0, frColor);
+
+	wxFont fntSQLBox = settings->GetSQLFont();
 	StyleSetBackground(wxSTC_STYLE_BRACELIGHT, wxColour(0x99, 0xF9, 0xFF));
 	StyleSetBackground(wxSTC_STYLE_BRACEBAD, wxColour(0xFF, 0xCF, 0x27));
 	StyleSetFont(wxSTC_STYLE_BRACELIGHT, fntSQLBox);
@@ -137,10 +154,25 @@ void RegExpParser::SetStyleControl(wxStyledTextCtrl* ctrl) {
 		intitstyle = false;
 		return;
 	}
-	//ctrl->StyleClearAll();
+	//((ctlStyledText *)ctrl)->setDecorate();
+	bool isdark=wxSystemSettings::GetAppearance().IsUsingDarkBackground() ;
 	for (int i = 0; i < sizeof(stylemap) / sizeof(stylemap[0]); i++) stylemap[i] = -1;
 	wxColour bgdef = ctrl->GetBackgroundColour();
 	wxColour fgdef = ctrl->GetForegroundColour();
+	if (isdark) {
+	tablestyle.push_back(styletextdef{ wxColour("#ddd0fe"),bgdef }); // 0 verb
+	tablestyle.push_back(styletextdef{ wxColour("#fed1ff"),bgdef }); // 1 conditional_pattern
+	tablestyle.push_back(styletextdef{ wxColour("#f6f4f7ff"),wxColour("#493155ff") }); // 2 backslash
+	tablestyle.push_back(styletextdef{ wxColour("#faaa4fff"),bgdef }); // 3 class char 
+	tablestyle.push_back(styletextdef{ wxColour("#99beff"),bgdef }); // 4 quantifier
+	tablestyle.push_back(styletextdef{ wxColour("#989898"),bgdef }); // 5 comment
+	tablestyle.push_back(styletextdef{ wxColour("#bae634"),bgdef }); // 6 capture (green)
+	tablestyle.push_back(styletextdef{ wxColour("#f5f45b"),bgdef }); // 7 subroutine_reference
+
+	tablestyle.push_back(styletextdef{ wxColour("#ed5c65"),bgdef }); // last color.  error bg
+
+	} else
+	{
 	tablestyle.push_back(styletextdef{ fgdef,wxColour("#ddd0fe") }); // 0 verb
 	tablestyle.push_back(styletextdef{ fgdef,wxColour("#fed1ff") }); // 1 conditional_pattern
 	tablestyle.push_back(styletextdef{ fgdef,wxColour("#e3e3e3") }); // 2 backslash
@@ -151,6 +183,7 @@ void RegExpParser::SetStyleControl(wxStyledTextCtrl* ctrl) {
 	tablestyle.push_back(styletextdef{ fgdef,wxColour("#f5f45b") }); // 7 subroutine_reference
 
 	tablestyle.push_back(styletextdef{ fgdef,wxColour("#ed5c65") }); // last color.  error bg
+	}
 	stylemap[0] = tablestyle.size() - 1; // error bg
 
 	stylemap[defrule::option_setting] = 0;

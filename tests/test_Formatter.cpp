@@ -299,10 +299,10 @@ SECTION( "plpgsql 1" ) {
 			end
 		 )");
 		 std::vector<complite_element> list = f2.ParsePLpgsql(); o=f2.GetListTable(list);
- 		 exp = "[ add_part,] \n[ now,] \n";
+ 		 exp = "[ add_part,@] \n[ now,@] \n";
 		 CHECK(o==exp);
 }
-SECTION( "plpgsql 2" ) {		 
+SECTION( "plpgsql 2" ) {
 		 FormatterSQL f2(R"(
 			declare
 			 x record;
@@ -317,9 +317,84 @@ delete from t2 using t4,t5 where t4.id=t5 and t2.id=t4.id returning t2.id;
 			end
 		 )");
 		 std::vector<complite_element> list = f2.ParsePLpgsql(); o=f2.GetListTable(list);
- 		 exp = "[ f1,] \n[ f2,] \n[ tab1,] \n[ f3,] \n[ f4,] \n[ t2,] \n[ t4,] \n[ t5,] \n";
+ 		 exp = "[ f1,@] \n[ f2,@] \n[ tab1,] \n[ f3,@] \n[ f4,@] \n[ t2,] \n[ t4,] \n[ t5,] \n";
  	 	CHECK(o==exp);
 }
+
+SECTION( "plpgsql 3" ) {
+		 FormatterSQL f2(R"(
+declare
+aArr int2[];
+aDays    int2[];
+rr record;
+i int2;
+begin
+select 1,2 from (select 'a' from obj) t into aArr,adays;
+  FOR rr IN
+        WITH RECURSIVE tree_obj( id,parent,name,type,PATH,LEVEL ) AS 
+         (
+        SELECT t1.id,t1.parent,t1.name,t1.type, CAST (id AS VARCHAR (50)) as PATH, 1
+        FROM obj t1 WHERE id=OBJ_START_ID
+        union 
+        select t2.id, t2.parent, t2.name, t2.type,CAST ( t.PATH ||'->'|| t2.id AS VARCHAR(50)) ,LEVEL + 1 
+        FROM obj T2 JOIN tree_obj t ON(t.id= T2.parent)
+         )
+         select * from tree_obj order by level
+  loop
+  end loop;
+    INSERT INTO sample_act_backend (
+      client_port,
+      backend_type,
+      backend_last_ts
+    )
+    WITH last_backend_state AS (
+      SELECT server_id, sample_id, pid, backend_start, max(subsample_ts) as subsample_ts
+      FROM last_stat_activity
+      WHERE (server_id, sample_id) = (sserver_id, s_id - 1)
+      GROUP BY server_id, sample_id, pid, backend_start
+    )
+    SELECT
+      subsample_ts
+    FROM
+      last_stat_activity
+      JOIN last_backend_state
+        USING (server_id, sample_id, pid, backend_start, subsample_ts)
+    WHERE (server_id, sample_id) = (sserver_id, s_id - 1)
+    ;
+select pg_wal_lsn_diff(pg_current_wal_lsn(),Repl_LSN)/1024/1024
+                from dblink('dbname='||current_database()||' host='||sHostName||' port=5432 user=a',
+                            'select pg_last_wal_replay_lsn() where pg_Is_In_Recovery()=true') as o(Repl_LSN pg_lsn);
+perform O."Get_max"(236);
+perform o.Get_obj_id_max(237);
+call proc1();
+with aa(col1,col2) as (
+select id,name from obj
+), b as (select * from t2 )
+select * from aa a1, b b2;
+raise warning E'%\n%', stack, text_err using hint=c_Place, detail='0', errcode=err_code;
+return '';
+end;		 )");
+		 std::vector<complite_element> list = f2.ParsePLpgsql(); o=f2.GetListTable(list);
+ 		 exp = R"([ obj,] 
+[ obj,] 
+[ obj,] 
+[ sample_act_backend,] 
+[ max,@] 
+[ last_stat_activity,] 
+[ last_stat_activity,] 
+[ pg_wal_lsn_diff,@] 
+[ pg_current_wal_lsn,@] 
+[ dblink,@] 
+[ current_database,@] 
+[ O."Get_max",@] 
+[ o.Get_obj_id_max,@] 
+[ proc1,@] 
+[ obj,] 
+[ t2,] 
+)";
+ 	 	CHECK(o==exp);
+}
+
 
 }
 

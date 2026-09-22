@@ -5,6 +5,53 @@ Format loosely follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ## [Unreleased]
 
+### Added
+- Server properties can now show the values of selected `postgresql.conf`
+  parameters (configured via the `showparams` array under `Servers` in
+  `pgadmin3opt.json`), including any pending-restart values a superuser has
+  changed but not yet applied.
+- Server properties show the server's configured search/keyword tags
+  (highlighted green, or red if a tag contains `#`).
+- The query tool can paste `Key=Value` server-connection info (Server,
+  Description, Username, Database, Group, Port, StorePwd, Restore) from the
+  clipboard directly into the "New server" dialog.
+- Query tool auto-loaded tabs can now also be matched by the server's
+  description (in addition to database name), so tabs no longer collide
+  between different servers that share a database name.
+- Plugin utility commands support a `$$DESCRIPTION` placeholder for the
+  server description, and the far2l/NetRocks integration now also applies
+  to non-server object types (via `obj->GetServer()`).
+- Optional dependency view: functions/procedures can show the tables,
+  views and functions they reference on the "Dependencies" tab (enabled via
+  a new "Show the dependencies of functions on tables,views,functions"
+  option). Parsing is best-effort and can miss temp tables/complex queries.
+- Linux/GTK dark-mode support for the SQL result grid, EXPLAIN plan canvas,
+  the text-transform dialog, and server properties, with colours
+  configurable via `pgadmin3opt.json` (`ctlSQLGrid`: `colorWithNewLine`,
+  `colorOdd`, `colorPlanRow`, `colorPlanNode`, `colorPlanNodeCollapse`,
+  `colorSelectFind`).
+- Basic support for running as a non-privileged PostgreSQL user (avoids
+  `permission denied for table pg_proc` when listing table dependents).
+
+### Fixed
+- Fixed the plpgsql dependency parser: tables referenced only in a
+  recursive CTE's recursive term were incorrectly counted as function
+  dependencies; `INTO` targets in embedded queries are now parsed too.
+- SQL identifiers starting with `_` were incorrectly treated as invalid.
+- The database's current/last system OID lookup (`datlastsysoid`) is now
+  computed from `template0`/`template1` via `max(oid)` instead of an exact
+  `template0` match, and the slony-specific dependency/schema-restriction
+  queries are now gated behind a `slonyversion` feature probe (via
+  `information_schema.routine_privileges`) instead of querying `pg_proc`
+  directly, for compatibility with restricted users.
+- A custom server tree/background colour that happens to match the current
+  window colour is no longer written to config as a fixed colour (so it
+  keeps following the OS light/dark appearance instead of getting stuck).
+- Fixed a crash in the JSON tree control (`ctlTreeJSON`).
+- Fixed the F4 "quick find" window not resizing correctly for its content.
+- Corrected `GetVersionNumber` parsing for unusual PostgreSQL version
+  strings.
+
 ## [2026.08.16]
 
 ### Added

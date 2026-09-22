@@ -234,6 +234,7 @@ wxString FormatterSQL::BuildAutoComplite(int startIndex, int level) {
 
     wxArrayString objName;
     wxString cols_name;
+    wxString lastkeyword;
     bool isfunction = false;
     bool isskipnext = false;
     bool isinsert = false;
@@ -250,7 +251,7 @@ wxString FormatterSQL::BuildAutoComplite(int startIndex, int level) {
         }
         if (vi->type == keyword) {
             union Byte z = zone;
-            if ((vi->txt.Lower() == "from" && vi->flags != 0) ) {
+            if ((vi->txt.Lower() == "from" && vi->flags != 0 && lastkeyword!="distinct") ) {
                 if (zone.b.select_list) {
                     if (!lastname.IsEmpty())cols.Add(lastname);
                 }
@@ -259,19 +260,55 @@ wxString FormatterSQL::BuildAutoComplite(int startIndex, int level) {
             }
             if (vi->txt.Lower() == "with") {
                 zone.b.with = 1; zone.b.skip = 1;
+                objName.Clear(); isfunction = false; isskipnext=false;
+                el.columnList = ""; el.alias = ""; el.table = "";
             }
             if (vi->txt.Lower() == "select") {
                 zone.b.select_list = 1; zone.b.with = 0; start_select_list = found_index + 1;
-                isfunction = false;
+                isfunction = false; isskipnext=false;
                 zone.b.skip = 0;
                 cols.Clear();
                 //el.startIndex = found_index + 1;
             }
             if ((vi->txt.Lower().Find("join") > -1) || vi->txt.Lower() == "using") {
-                goto close_element_from;
+                if (zone.b.from == 1) goto close_element_from;
             }
             if (vi->txt.Lower() == "on") {
                 goto close_element_from;
+            }
+            lastkeyword=vi->txt.Lower();
+            if (vi->txt.Lower() == "update") {
+                found_index++;
+                if ((next_item_no_space(found_index)!=-1) && items[found_index].txt.Lower()=="only") found_index++;
+                if ((next_item_no_space(found_index)!=-1) && (items[found_index].type==FSQL::type_item::identifier ||items[found_index].type==FSQL::type_item::name)) {
+                        // table name
+                        
+                        complite_element el2;
+                        el2.table=items[found_index].txt;
+                        el2.startIndex=el.endIndex=found_index;
+                        el2.level=level;
+                        found_index++;
+                        // check alias
+                        if ((next_item_no_space(found_index)!=-1) && (items[found_index].txt.Lower() == "as")) found_index++;
+                        if ((next_item_no_space(found_index)!=-1) && (items[found_index].type==FSQL::type_item::name)) {
+                            el2.alias=items[found_index].txt;
+                            found_index++;
+                        }
+
+                        listTable.push_back(el2);
+                }
+                continue;
+            }
+            if (vi->txt.Lower()=="into") {
+                        int i=found_index+1;
+                        while (next_item_no_space(i) != -1) {
+                            if (items[i].txt == ','||items[i].type == name)
+                            {
+                                i++;
+                            } else break;
+                        }
+                        found_index=i;
+                continue;
             }
             if (vi->txt.Lower() == "insert") {
                 found_index++;
@@ -285,38 +322,49 @@ wxString FormatterSQL::BuildAutoComplite(int startIndex, int level) {
                         el2.startIndex=el.endIndex=found_index;
                         el2.level=level;
                         found_index++;
+                        // check alias
+                        if ((next_item_no_space(found_index)!=-1) && (items[found_index].txt.Lower() == "as")) found_index++;
+                        if ((next_item_no_space(found_index)!=-1) && (items[found_index].type==FSQL::type_item::name)) {
+                            el2.alias=items[found_index].txt;
+                            found_index++;
+                        }
+
                         listTable.push_back(el2);
                     }
                 }
                 continue;
             }
 
-            if ((vi->flags & end_from) != 0) {
+            if ((vi->flags & end_from) != 0
+                ) {
+                if (zone.b.from == 1)  // WHERE without FROM skip
+                {
+                    //objName.Clear();
+                    if (colsfirst.GetCount() == 0) colsfirst = cols;
+                    // после from нам нужно дойти до union и прочих объединений
+
+                    if (objName.Count() > 0) {
+                        if (isfunction) {
+                            // [ LATERAL ] ( выборка ) [ AS ] псевдоним
+                            // [ LATERAL ] имя_функции ( [ аргумент [, ...] ] ) [WITH ORDINALITY] [[ AS ] псевдоним
+                            el.table = "@";
+                            el.alias = lastname;
+                        }
+                        else {
+                            //[ ONLY ] имя_таблицы [ * ] [ [ AS ] псевдоним 
+                            if (objName.GetCount() > 0) el.table = objName[0];
+                            if (objName.GetCount() > 1) el.alias = objName[1];
+                            el.columnList = "";
+                        }
+                        el.endIndex = found_index;
+                        listTable.push_back(el);
+                    }
+                }
+                el.columnList = ""; el.alias = ""; el.table = ""; el.level = level;
+                objName.Clear();
                 zone.b.from = 0;
                 zone.b.skip = 1;
                 isskipnext = true;
-                //objName.Clear();
-                if (colsfirst.GetCount() == 0) colsfirst = cols;
-                // после from нам нужно дойти до union и прочих объединений
-
-                if (objName.Count() > 0) {
-                    if (isfunction) {
-                        // [ LATERAL ] ( выборка ) [ AS ] псевдоним
-                        // [ LATERAL ] имя_функции ( [ аргумент [, ...] ] ) [WITH ORDINALITY] [[ AS ] псевдоним
-                        el.table = "@";
-                        el.alias = lastname;
-                    }
-                    else {
-                        //[ ONLY ] имя_таблицы [ * ] [ [ AS ] псевдоним 
-                        if (objName.GetCount() > 0) el.table = objName[0];
-                        if (objName.GetCount() > 1) el.alias = objName[1];
-                        el.columnList = "";
-                    }
-                    el.endIndex = found_index;
-                    listTable.push_back(el);
-                    el.columnList = ""; el.alias = ""; el.table = ""; el.level = level;
-                    objName.Clear();
-                }
             }
             if (z.byte != zone.byte) {
                 found_index++;
@@ -549,6 +597,10 @@ std::vector<complite_element> FormatterSQL::ParsePLpgsql(){
             // встретили оператор case
             //wxTrap();
             lastposition=errorposition;
+            if (e<-1) {
+                listdbobject.clear();
+                return listdbobject;
+            }
         }
         wxString currentsql=sql.substr(start,lastposition-start);
         if (currentsql.Len()>0) {
@@ -556,15 +608,30 @@ std::vector<complite_element> FormatterSQL::ParsePLpgsql(){
         }
         // извлечем информацию о таблицах и функциях
         BuildAutoComplite(0,0);
-        // 
+        // проверим определения рекурсивных таблиц (они используются ДО определения)
+        for(int i=0;i<listTable.size();i++) {
+            wxString a=listTable[i].alias.Lower();
+            if (listTable[i].table == "@" && a.Length()>0 && listTable[i].columnList.Length()>0) 
+            {
+                for(int j=0;j<i;j++) {
+                    if (listTable[j].table.Lower()==a) listTable[j].table="@";
+                }
+            }
+        }
         for(int i=0;i<listTable.size();i++) {
             wxString t=listTable[i].table;
+            bool isColList=listTable[i].columnList.Length()>0;
             // Удалим из функций синонимы таблиц
             for(int j=0;j<listFunction.size();j++) {
                 if (listTable[i].alias==listFunction[j].table)
-                    listFunction[j].table="";
+                    if (t!="@" || isColList ) listFunction[j].table="";
             }
-            if (t=="@") continue;
+            
+            if (t=="@" || t=="-") continue;
+            // with table 
+            if (isColList) {
+                continue;
+            }
             if (t.Len()>0) {
                 bool add=true;
                 for(int k=0;k<i;k++) {
@@ -577,7 +644,7 @@ std::vector<complite_element> FormatterSQL::ParsePLpgsql(){
                         complite_element it;
                         it.table=t;
                         wxString lt=t.Lower();
-                        bool ignore=(lt=="alter"||lt=="trigger"||lt=="index");
+                        bool ignore=(lt=="alter"||lt=="trigger"||lt=="index"||lt=="raise");
                         if (ignore) break;
                         if (!ignore) {
                             int itempos=listTable[i].startIndex;
@@ -605,10 +672,24 @@ std::vector<complite_element> FormatterSQL::ParsePLpgsql(){
                             fn.Lower()=="btree"||
                             fn.Lower()=="numeric"||
                             fn.Lower()=="bit"||
+                            fn.Lower()=="any"||
                             fn.Lower()=="return"||
                             fn.Lower()=="varying"||
                             fn.Lower()=="key"||
                             fn.Lower()=="range"||
+                            fn.Lower()=="if"||
+                            fn.Lower()=="for"||
+                            fn.Lower()=="exists"||
+                            fn.Lower()=="over"||
+                            fn.Lower()=="coalesce"||
+                            fn.Lower()=="cast"||
+                            fn.Lower()=="nullif"||
+                            fn.Lower()=="rollup"||
+                            fn.Lower()=="greatest"||
+                            fn.Lower()=="least"||
+                            fn.Lower()=="filter"||
+                            fn.Lower()=="grouping"||
+                            fn.Lower()=="elsif"||
                             fn.Lower()=="varbit"
                             ) continue;
                         it.table=fn;
@@ -617,6 +698,7 @@ std::vector<complite_element> FormatterSQL::ParsePLpgsql(){
                         if (check!=fn) {
                             std::cout << fn  << std::endl;
                         }
+                        it.alias="@";
                         listdbobject.push_back(it);
                 }
         }
@@ -644,7 +726,7 @@ int FormatterSQL::ParseSql(int flags) {
     bool newline = false;
     int iscomment = 0;
     wxRegEx regnumeric("^([0-9]*[.]?[0-9]*([Ee][-+]?[0-9]+)?)|(inf)|(nan)", wxRE_EXTENDED | wxRE_ICASE);
-    wxRegEx regident("(^[[:alpha:]][[:alnum:]_$]*)", wxRE_EXTENDED | wxRE_ICASE);
+    wxRegEx regident("(^[[:alpha:]_][[:alnum:]_$]*)", wxRE_EXTENDED | wxRE_ICASE);
     wxRegEx regdol("(^[[:alpha:]][[:alnum:]_]*[$])", wxRE_EXTENDED | wxRE_ICASE);
     wxChar qt;
     wxString cons;
@@ -1045,7 +1127,7 @@ int FormatterSQL::ParseSql(int flags) {
             continue;
         }
         // identifier
-        if ((c >= 'a' && c <= 'z') || ((c >= 'A' && c <= 'Z'))) {
+        if ((c >= 'a' && c <= 'z') || ((c >= 'A' && c <= 'Z')) || (c=='_')) {
             i--;
             wxString tmp = sql.substr(i, 64);
             bool matches = regident.Matches(tmp, 0);
@@ -1118,9 +1200,15 @@ int FormatterSQL::ParseSql(int flags) {
     // no sql command
         if (ex) break;
                     #ifdef _DEBUG
-                    int st=items[items.size()-1].srcpos+items[items.size()-1].txt.Length();
-                    wxString b=sql.substr(st,100);
-                    wxMessageBox(wxString::Format("Bad sql syntax : %s",b));
+                    //wxTrap();
+                    int lastidx=items.size()-1;
+                    int st=items[lastidx].srcpos;
+                    wxString textlast=items[lastidx].txt;
+                    st=st+textlast.length();
+                    if (st>=0) {
+                            wxString b=sql.substr(st,100);
+                            wxMessageBox(wxString::Format("Bad sql syntax : %s",b));
+                    }
                     #endif
         errorposition=i;
         return -3;

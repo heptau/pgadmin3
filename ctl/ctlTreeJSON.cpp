@@ -498,6 +498,7 @@ wxJSONValue ctlTreeJSON::copyjson(wxJSONValue& src) {
 void ctlTreeJSON::CopyNode(const wxTreeItemId& idSource) {
 	wxJSONValue v = conf[idSource];
 	wxTreeItemId pid = GetItemParent(idSource);
+	if (m_root == pid) return;
 	wxJSONValue pv = conf.at(pid);
 	wxJSONValue n = copyjson(conf[idSource]);
 
@@ -554,8 +555,14 @@ void ctlTreeJSON::CopyNode(const wxTreeItemId& idSource) {
 			}
 		}
 		else {
-			//wxString key = GetItemText(idSource).BeforeFirst(':');
-
+/*			
+				n.SetType(wxJSONTYPE_STRING);
+				wxString nvv="value";
+				n=nvv;
+				nid = addtree(pid, "newName:value", &n);
+				conf[nid] = n;
+				m_change = true;
+*/
 			return;
 		}
 		// copy only Object or Array

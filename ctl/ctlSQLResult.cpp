@@ -206,7 +206,7 @@ void ctlSQLResult::DisplayData(bool single)
 	for(int row = 0; row < NumRows(); ++row) {
 	    if (row%2==0) {
 			    wxGridCellAttr* pAttr = new wxGridCellAttr;
-			    pAttr->SetBackgroundColour(wxColour(224,255,224));
+			    pAttr->SetBackgroundColour(colorodd);
 				
 				pAttr->SetAlignment(h,v);
 				SetRowAttr(row,pAttr);
@@ -597,8 +597,8 @@ wxString ctlSQLResult::CheckSelColumnDate()
 								if (k == 1) { sp = tmp; dt_prev = dt; k++; continue; }
 								if (tmp.GetMilliseconds() != sp.GetMilliseconds()) {
 									wxGridCellAttr* pAttr = new wxGridCellAttr;
-									
-									pAttr->SetBackgroundColour(*wxYELLOW);
+            						extern wxBrush selectFindBrush;
+									pAttr->SetBackgroundColour(selectFindBrush.GetColour());
 									SetRowAttr(i, pAttr);
 									err++;
 								}

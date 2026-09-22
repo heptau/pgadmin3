@@ -87,6 +87,7 @@
 frmMain *winMain = 0;
 wxThread *updateThread = 0;
 bool iswayland=false;
+wxBrush selectFindBrush;
 
 #if defined(HAVE_OPENSSL_CRYPTO) || defined(HAVE_GCRYPT)
 #include "utils/sshTunnel.h"
@@ -317,7 +318,18 @@ bool pgAdmin3::OnInit()
 #endif
 		locale->AddCatalog(wxT("pgadmin3"));
 	}
-
+	wxString sselcol=getTextParameter("ctlSQLGrid","colorSelectFind");
+	wxColour cl5(sselcol);
+	if (cl5.IsOk()) 
+	{
+		selectFindBrush = wxBrush(cl5);
+	} else {
+		if (wxSystemSettings::GetAppearance().IsUsingDarkBackground()) {
+			selectFindBrush = wxBrush(wxColour("#A09E0D"));
+		} else {
+			selectFindBrush = wxBrush(*wxYELLOW_BRUSH);
+		}
+	}
 #ifdef DATABASEDESIGNER
 	//Initialize Font
 	hdFontAttribute::InitFont();
@@ -465,6 +477,7 @@ bool pgAdmin3::OnInit()
 #endif
 
 	// Log the path info
+	wxLogInfo(wxT("load path     : %s"), loadPath.c_str());
 	wxLogInfo(wxT("i18n path     : %s"), i18nPath.c_str());
 	wxLogInfo(wxT("UI path       : %s"), uiPath.c_str());
 	wxLogInfo(wxT("Doc path      : %s"), docPath.c_str());
@@ -1557,7 +1570,7 @@ void pgAdmin3::InitXtraPaths()
 
 wxString pgAdmin3::LocatePath(const wxString &pathToFind, const bool isFile)
 {
-	loadPath = wxPathOnly(argv[0]);
+	loadPath = wxPathOnly(wxStandardPaths::Get().GetExecutablePath());
 
 	if (loadPath.IsEmpty())
 		loadPath = wxT(".");

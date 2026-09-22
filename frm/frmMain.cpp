@@ -1215,7 +1215,7 @@ int frmMain::ReconnectServer(pgServer *server, bool restore)
 
 			wxLogInfo(wxT("pgServer object initialised as required."));
 
-			server->ShowTreeDetail(browser);
+			server->ShowTreeDetail(browser,NULL,properties);
 
 			browser->Freeze();
 			if (restore && server->GetRestore())
@@ -1374,6 +1374,12 @@ void frmMain::StoreServers()
 					settings->Write(key + wxT("LastDatabase"), server->GetLastDatabase());
 					settings->Write(key + wxT("LastSchema"), server->GetLastSchema());
 					settings->Write(key + wxT("DbRestriction"), server->GetDbRestriction());
+					wxString scolor=server->GetColour();
+					wxString defColour = wxSystemSettings::GetColour(wxSYS_COLOUR_WINDOW).GetAsString(wxC2S_HTML_SYNTAX);
+					if (!scolor.IsEmpty() && defColour==scolor)
+					{
+					 	server->iSetColour("");
+					}
 					settings->Write(key + wxT("Colour"), server->GetColour());
 					settings->WriteInt(key + wxT("SSL"), server->GetSSL());
 					settings->Write(key + wxT("Group"), server->GetGroup());

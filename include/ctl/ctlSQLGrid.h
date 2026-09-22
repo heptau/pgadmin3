@@ -18,6 +18,7 @@
 #include "utils/popuphelp.h"
 
 class GroupRows;
+enum  {PlanRow,PlanNode,PlanNodeCollapse};
 
 class ctlSQLGrid : public wxGrid
 {
@@ -58,6 +59,12 @@ public:
     bool FullArrayCollapseRowsPlan(bool clear);
     void AutoSizeColumn(int col, bool setAsMin = false, bool doLimit = true);
     void AutoSizeColumns(bool setAsMin);
+    wxColour GetColorFor( int type) {
+        if (type==PlanRow) return colorplanrow;
+        if (type==PlanNode) return colorplannode;
+        if (type==PlanNodeCollapse) return colorplannodecollapse;
+        return wxColour();
+    }
     wxString GetRowLabelValue(int row);
     void SetRowGroup(int row);
     GroupRows* grp;
@@ -65,7 +72,7 @@ public:
     wxString sqlquerytext;
     // Fast searh
     wxString searchStr;
-
+    wxColour colorodd,colorplanrow,colorplannode,colorplannodecollapse;
     WX_DECLARE_STRING_HASH_MAP(int, ColKeySizeHashMap);
 
     DECLARE_DYNAMIC_CLASS(ctlSQLGrid)
@@ -148,7 +155,7 @@ public:
                     g->HideRow(i);
                 }
                 wxGridCellAttr* pAttrg = new wxGridCellAttr;
-                pAttrg->SetBackgroundColour(wxColour(200, 191, 232)); // close group
+                pAttrg->SetBackgroundColour(g->GetColorFor(PlanNodeCollapse)); // close group
                 g->SetRowAttr(row, pAttrg);
             }
             else
@@ -160,9 +167,9 @@ public:
                 wxGridCellAttr* pAttrg = new wxGridCellAttr;
                 if (g->GetCellValue(row, 0).Contains("(never executed)") ) {
                     // not higtligth this row
-                    pAttrg->SetBackgroundColour(wxColour(224, 255, 224)); // green
+                    pAttrg->SetBackgroundColour(g->GetColorFor(PlanRow)); // green
                 } else 
-                    pAttrg->SetBackgroundColour(wxColour(248, 240, 130)); // yellow
+                    pAttrg->SetBackgroundColour(g->GetColorFor(PlanNode)); // yellow
                 g->SetRowAttr(row, pAttrg);
                 for (int i = r; i < (endg + 1); i++) {
                     gg = IsGroupRow(i);
@@ -254,9 +261,10 @@ wxSize GetBestSize(wxGrid& grid,
 public:
     void Draw(wxGrid& grid, wxGridCellAttr& attr, wxDC& dc,
         const wxRect& rect, int row, int col, bool isSelected) wxOVERRIDE;
-        CursorCellRenderer(int thous_pixel_sep);
+        CursorCellRenderer(int thous_pixel_sep, const wxColour color_row_with_nl);
 private:
 int thousands_pixel_sep;
+wxColour clrwithnewline;
 };
 
 #endif

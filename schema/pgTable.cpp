@@ -1509,11 +1509,14 @@ pgObject *pgTableFactory::CreateObjects(pgCollection *collection, ctlTree *brows
 	if (collection->GetConnection()->BackendMinimumVersion(8, 0))
 	{
 		query = wxT("SELECT rel.oid, rel.relname, rel.reltablespace AS spcoid, spc.spcname, pg_get_userbyid(rel.relowner) AS relowner, rel.relacl, ")
-		        wxT("rel.relhassubclass, rel.reltuples, des.description, con.conname, con.conkey,\n")
-		        wxT("       EXISTS(select 1 FROM pg_trigger\n")
+		        wxT("rel.relhassubclass, rel.reltuples, des.description, con.conname, con.conkey,\n");
+		if (collection->GetConnection()->HasFeature(FEATURE_SLONY))
+		    	query +=    wxT("       EXISTS(select 1 FROM pg_trigger\n")
 		        wxT("                       JOIN pg_proc pt ON pt.oid=tgfoid AND pt.proname='logtrigger'\n")
 		        wxT("                       JOIN pg_proc pc ON pc.pronamespace=pt.pronamespace AND pc.proname='slonyversion'\n")
 		        wxT("                     WHERE tgrelid=rel.oid) AS isrepl,\n");
+			else
+				query += "false AS isrepl,\n";
 
 		if (collection->GetConnection()->BackendMinimumVersion(9, 0))
 		{

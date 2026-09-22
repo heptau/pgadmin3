@@ -103,7 +103,7 @@ wxString ctlColourPicker::GetColourString()
 {
 	if (!m_colour_clr.IsOk())
 		return wxEmptyString;
-	return m_colour_clr.GetAsString();
+	return m_colour_clr.GetAsString(wxC2S_HTML_SYNTAX);
 }
 
 void ctlColourPicker::SetColour(const wxColour &colour)

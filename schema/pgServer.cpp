@@ -580,7 +580,7 @@ bool pgServer::GetPasswordIsStored()
 		                    + wxString(username.mb_str(wxConvUTF8), wxConvLibc) + wxT(":") ;
 	bool issecret=false;
 	int type = 	settings->GetStoreTypePass();
-#ifdef wxUSE_SECRETSTORE
+#if wxUSE_SECRETSTORE
 	if (type>0) {
 		wxSecretStore store = wxSecretStore::GetDefault();
 		wxString errmsg;
@@ -626,7 +626,7 @@ bool pgServer::GetPasswordIsStored()
 				if (str.Left(seekStr2.Length()) == seekStr2)
 					seeklen=seekStr2.Length();
 			if (seeklen>0) {
-#ifdef wxUSE_SECRETSTORE
+#if wxUSE_SECRETSTORE
 			if (type>0) {
 				wxSecretStore store = wxSecretStore::GetDefault();
 				if ( store.IsOk() )
@@ -653,7 +653,7 @@ void pgServer::StorePassword()
 		                   + username + wxT(":") ;
 	bool issecret=false;	
 	int type = 	settings->GetStoreTypePass();
-#ifdef wxUSE_SECRETSTORE
+#if wxUSE_SECRETSTORE
 	if (type>0) {
 		wxSecretStore store = wxSecretStore::GetDefault();
 		wxString errmsg;
@@ -1095,8 +1095,8 @@ wxString pgServer::GetVersionNumber()
 	{
 		if (versionNum.IsEmpty())
 		{
-			int major = 0, minor = 0;
-			sscanf(GetVersionString().ToAscii(), "%*s %d.%d", &major, &minor);
+			int major = conn->GetMajorVersion();
+			int minor = conn->GetMinorVersion();
 			versionNum.Printf(wxT("%d.%d"), major, minor);
 		}
 
@@ -1245,11 +1245,24 @@ void pgServer::ShowTreeDetail(ctlTree *browser, frmMain *form, ctlListView *prop
 	{
 		// Add the properties view columns
 		CreateListColumns(properties);
-
+		bool isdark = wxSystemSettings::GetAppearance().IsUsingDarkBackground();
+		wxString kw=GetKeywords();
 		// Display the Server properties
+		if (!kw.IsEmpty()) {
+		    wxColour col;
+			properties->AppendItem(_("Key words"), kw);
+			if (kw.Find('#')!=wxNOT_FOUND)
+				 	col="#facbcbff";
+				else
+					col="#a8f375ff";
+			if (isdark)
+					properties->SetItemTextColour(properties->GetItemCount()-1,col);
+				else
+					properties->SetItemBackgroundColour(properties->GetItemCount()-1,col);
+		}
 
 		properties->AppendItem(_("Description"), GetDescription());
-		properties->AppendItem(_("Service"), GetService());
+		if (!GetService().IsEmpty()) properties->AppendItem(_("Service"), GetService());
 		if (GetName().IsEmpty() || GetName().StartsWith(wxT("/")))
 		{
 			if (GetName().IsEmpty() && !GetService().IsEmpty())
@@ -1265,7 +1278,7 @@ void pgServer::ShowTreeDetail(ctlTree *browser, frmMain *form, ctlListView *prop
 		else
 		{
 			properties->AppendItem(_("Hostname"), GetName());
-			properties->AppendItem(_("Host Address"), GetHostAddr());
+			if (!GetHostAddr().IsEmpty()) properties->AppendItem(_("Host Address"), GetHostAddr());
 			if (GetPort() == 0 && !GetService().IsEmpty())
 				properties->AppendItem(_("Port"), wxEmptyString);
 			else
@@ -1305,11 +1318,13 @@ void pgServer::ShowTreeDetail(ctlTree *browser, frmMain *form, ctlListView *prop
 					properties->AppendItem(_("SSL Mode"), sslMode);
 				}
 			}
-			properties->AppendItem(_("SSL Certificate File"), GetSSLCert());
-			properties->AppendItem(_("SSL Key File"), GetSSLKey());
-			properties->AppendItem(_("SSL Root Certificate File"), GetSSLRootCert());
-			properties->AppendItem(_("SSL Certificate Revocation List"), GetSSLCrl());
-			properties->AppendItem(_("SSL Compression?"), (GetSSLCompression() ? _("yes") : _("no")));
+			long rowid=properties->GetItemCount();
+			if (!GetSSLCert().IsEmpty()) properties->AppendItem(_("SSL Certificate File"), GetSSLCert());
+			if (!GetSSLKey().IsEmpty()) properties->AppendItem(_("SSL Key File"), GetSSLKey());
+			if (!GetSSLRootCert().IsEmpty()) properties->AppendItem(_("SSL Root Certificate File"), GetSSLRootCert());
+			if (!GetSSLCrl().IsEmpty()) properties->AppendItem(_("SSL Certificate Revocation List"), GetSSLCrl());
+			long newrowid=properties->GetItemCount();
+			if (newrowid!=rowid) properties->AppendItem(_("SSL Compression?"), (GetSSLCompression() ? _("yes") : _("no")));
 #endif
 		}
 		if (!serviceId.IsEmpty())
@@ -1328,7 +1343,7 @@ void pgServer::ShowTreeDetail(ctlTree *browser, frmMain *form, ctlListView *prop
 		{
 			properties->AppendItem(_("Version string"), GetVersionString());
 			properties->AppendItem(_("Version number"), GetVersionNumber());
-			properties->AppendItem(_("Last system OID"), GetLastSystemOID());
+			//properties->AppendItem(_("Last system OID"), GetLastSystemOID());
 		}
 		properties->AppendYesNoItem(_("Connected?"), GetConnected());
 		if (GetConnected())
@@ -1341,17 +1356,21 @@ void pgServer::ShowTreeDetail(ctlTree *browser, frmMain *form, ctlListView *prop
 				properties->AppendItem(wxT("Autovacuum"), (autovacuumRunning ? _("running") : _("not running")));
 			if (conn->BackendMinimumVersion(8, 5))
 			{
-				properties->AppendItem(_("In recovery"), (GetInRecovery() ? _("yes") : _("no")));
-				properties->AppendItem(_("Last XLOG receive location"), GetReceiveLoc());
-				properties->AppendItem(_("Last XLOG replay location"), GetReplayLoc());
+				if (GetInRecovery()) {
+					properties->AppendItem(_("In recovery"), (GetInRecovery() ? _("yes") : _("no")));
+					properties->AppendItem(_("Last XLOG receive location"), GetReceiveLoc());
+					properties->AppendItem(_("Last XLOG replay location"), GetReplayLoc());
+				}
 			}
 			if (conn->BackendMinimumVersion(9, 1))
 			{
-				properties->AppendItem(_("Last XACT replay timestamp"), GetReplayTimestamp());
-				if (GetInRecovery())
-					properties->AppendItem(_("Replay paused"), (GetReplayPaused() ? _("paused") : _("running")));
-				else
-					properties->AppendItem(_("Replay paused"), wxEmptyString);
+				if (GetInRecovery()) {
+					properties->AppendItem(_("Last XACT replay timestamp"), GetReplayTimestamp());
+					if (GetInRecovery())
+						properties->AppendItem(_("Replay paused"), (GetReplayPaused() ? _("paused") : _("running")));
+					else
+						properties->AppendItem(_("Replay paused"), wxEmptyString);
+				}
 			}
 		}
 		if (GetServerControllable())
@@ -1373,6 +1392,68 @@ void pgServer::ShowTreeDetail(ctlTree *browser, frmMain *form, ctlListView *prop
 			}
 		}
 #endif
+		if (GetConnected()) {
+			wxJSONValue opt;
+			wxJSONValue def(wxJSONType::wxJSONTYPE_OBJECT);
+			wxJSONValue ar(wxJSONType::wxJSONTYPE_ARRAY);
+			opt.SetType(wxJSONType::wxJSONTYPE_OBJECT);
+			def["showparams"]=ar;
+			settings->ReloadJsonFileIfNeed();
+			settings->ReadJsonObect("Servers", opt, def);
+                int ar_size = opt["showparams"].Size();
+				wxString listp;
+                for (int i = 0; i < ar_size; i++) {
+                    wxString val = opt["showparams"][i].AsString();
+					if (val.Length()>64 || val.Length()==0) continue;
+                    //cb->AppendString(val);
+					if (listp.Length()>0) listp+=',';
+					listp+=qtDbString(val);
+                }
+			if (ar_size==0|| listp.Length()==0) listp="'#no visible params'";
+			wxString sql="select s.name,current_setting(s.name,true) curr, null next,context, 'users' ord from pg_settings s where name in ("+listp+")\n";
+			if (GetSuperUser()) {
+					sql+=R"(union all select f.name,current_setting(f.name,true) curr, f.setting next,s.context, 'diff' from pg_file_settings f,pg_settings s where s.name=f.name and 
+						current_setting(f.name,true)<>f.setting and  f.setting<>s.reset_val
+				)";	
+			}
+			sql+="order by ord";
+
+			pgSet *showparam = ExecuteSet(sql);
+			if (showparam)
+			{
+				int pos = 0;
+				std::map<wxString,int> uniq;
+				wxColour diff("#c6f2f3");
+				wxColour user("#dfdfdf");
+				wxColour c;
+				while (!showparam->Eof())
+				{
+					wxString name=showparam->GetVal("name");
+					bool isusers=showparam->GetVal("ord") == "users";
+					wxString context=showparam->GetVal("context");
+					wxString showtext=showparam->GetVal("curr");
+					long rowid=properties->GetItemCount();
+					if (uniq.find(name) == uniq.end()) {
+						uniq[name]=1;
+						if (!isusers) {
+							showtext+="("+showparam->GetVal("next")+")";
+						}
+						properties->AppendItem(name, showtext);
+						if (!isusers)
+								c=diff;
+							else
+								c=user;
+						if (isdark) 
+							properties->SetItemTextColour(rowid,c);
+							else
+							properties->SetItemBackgroundColour(rowid,c);
+					}
+				showparam->MoveNext();
+				}
+				delete showparam;
+			}
+			
+		}
 	}
 
 	if(!GetConnected())
@@ -2075,6 +2156,7 @@ wxWindow *addServerFactory::StartDialog(frmMain *form, pgObject *obj)
 				browser->SetItemText(parentitem, label);
 
 				form->StoreServers();
+				browser->SetFocus();
 				return 0;
 			}
 			case PGCONN_DNSERR:
