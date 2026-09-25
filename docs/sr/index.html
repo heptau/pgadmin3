@@ -58,8 +58,6 @@
   "url": "https://pgadmin3.80.cz/",
   "downloadUrl": "https://github.com/heptau/pgadmin3/releases",
   "softwareHelp": "https://github.com/heptau/pgadmin3/blob/main/AGENTS.md",
-  "softwareVersion": "2026.07.14",
-  "dateModified": "2026-07-14",
   "license": "https://opensource.org/licenses/postgresql",
   "author": {
     "@type": "Organization",
@@ -97,6 +95,12 @@
 <header>
   <div class="logo">pgAdmin <span>III</span></div>
   <div class="nav-links">
+    <a class="nav-icon-link nav-heart" href="https://github.com/sponsors/heptau" target="_blank" rel="noopener noreferrer" aria-label="Подржи" title="Подржи">
+      <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 21s-.87-.6-2.02-1.44C6.1 16.9 2 13.5 2 9.5c0-2.8 2.2-5 5-5 1.6 0 3.15.75 4.13 1.94L12 7.5l.87-1.06C13.85 5.25 15.4 4.5 17 4.5c2.8 0 5 2.2 5 5 0 4-4.1 7.4-7.98 10.06C12.87 20.4 12 21 12 21z"></path></svg>
+    </a>
+    <a class="nav-icon-link nav-star" href="https://github.com/heptau/pgadmin3" target="_blank" rel="noopener noreferrer" aria-label="Звездица на GitHub-у" title="Звездица на GitHub-у">
+      <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 21 12 17.77 5.82 21 7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg>
+    </a>
     <div class="dropdown" data-dropdown="lang">
       <button class="dropdown-trigger" aria-label="Change language" aria-haspopup="true" aria-expanded="false">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -247,7 +251,7 @@
     </div>
     <div class="feature-card">
       <h3>🌐 Локализација</h3>
-      <p>11 језика укључено, сви са уредивим .po изворима. Празнине у чешком, шпанском, немачком, француском, руском, пољском, кинеском и летонском попуњене у v2026.07.14.</p>
+      <p>45 језика укључено, сви са уредивим .po изворима и потпуним преводима.</p>
     </div>
     <div class="feature-card">
       <h3>🔌 Додаци</h3>
@@ -289,17 +293,35 @@ make build
 
 <section id="changelog">
   <h2><a href="#changelog">#</a> Шта је ново</h2>
-  <p>Version <strong>v2026.07.14</strong>:</p>
+  <h3>v2026.09.22</h3>
   <ul>
-    <li>Свих 11 испоручених језика сада имају уредиве <code>.po</code> изворе</li>
-    <li>Преводи на руски, пољски, кинески (zh_CN) и летонски — нове речи попуњене</li>
-    <li>Локализације на чешки, шпански, немачки и француски потпуно завршене</li>
-    <li>Изворна macOS верзија (arm64) са Homebrew Cask дистрибуцијом</li>
-    <li>Тамни / светли режим — пребацивање шеме боја уживо</li>
-    <li>Retina иконе алатне траке</li>
-    <li>Подршка за PostgreSQL 18</li>
-    <li>Потпуни дневник промена: <a href="https://github.com/heptau/pgadmin3/blob/main/CHANGELOG.md" target="_blank">CHANGELOG.md</a></li>
+    <li>Својства сервера приказују изабране параметре <code>postgresql.conf</code> (укључујући вредности које чекају поновно покретање) и ознаке сервера</li>
+    <li>Лепљење података о вези у облику <code>Кључ=Вредност</code> из оставе директно у дијалог „Нови сервер“</li>
+    <li>Опциони приказ зависности функција — табеле, погледи и функције на које упућују функције/процедуре, на картици Зависности</li>
+    <li>Тамни режим на Linux/GTK за мрежу резултата, EXPLAIN план и друго, са подесивим бојама</li>
+    <li>Основна подршка за непривилеговане PostgreSQL кориснике</li>
+    <li>Исправке: парсер зависности plpgsql, идентификатори који почињу са <code>_</code>, пад JSON стабла, прозор брзе претраге F4</li>
   </ul>
+  <h3>v2026.08.16</h3>
+  <ul>
+    <li>Опционо шифровано системско складиште за сачуване лозинке сервера</li>
+    <li>Интеграција са far2l (преко NetRocks)</li>
+    <li>Преносиви Windows zip уз свако издање на GitHub-у</li>
+  </ul>
+  <h3>v2026.08.07</h3>
+  <ul>
+    <li>Извоз у датотеку у PostgreSQL <code>COPY</code> формату</li>
+    <li>Поређење ред по ред у дијалогу за поређење, прегледнији извештаји о разликама</li>
+    <li>Исправљен Alt+E у мрежи резултата и пад при поновном покретању упита који се извршава</li>
+  </ul>
+  <h3>v2026.07.21 и старије</h3>
+  <ul>
+    <li>Свих 45 језика довршено, са изменљивим <code>.po</code> изворима</li>
+    <li>Guru документација савета на 18 језика</li>
+    <li>Нативна macOS верзија (arm64) преко Homebrew Cask, пребацивање тамног / светлог режима уживо, Retina иконе</li>
+    <li>Подршка за PostgreSQL 18</li>
+  </ul>
+  <p>Комплетан списак измена: <a href="https://github.com/heptau/pgadmin3/blob/main/CHANGELOG.md" target="_blank">CHANGELOG.md</a></p>
 </section>
 
 <section id="support">
@@ -317,7 +339,7 @@ make build
 <footer>
   <div class="container">
     <p>pgAdmin III је објављен под <a href="https://github.com/heptau/pgadmin3/blob/main/LICENSE" target="_blank">PostgreSQL лиценцом</a>.</p>
-    <p>Одржава <a href="https://github.com/heptau">heptau</a> · <a href="https://github.com/heptau/pgadmin3">GitHub</a></p>
+    <p>Одржава <a href="https://www.80.cz/" target="_blank">Zbyněk Vanžura</a> · <a href="https://github.com/heptau/pgadmin3">GitHub</a></p>
   </div>
 </footer>
 

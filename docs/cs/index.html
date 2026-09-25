@@ -58,8 +58,6 @@
   "url": "https://pgadmin3.80.cz/",
   "downloadUrl": "https://github.com/heptau/pgadmin3/releases",
   "softwareHelp": "https://github.com/heptau/pgadmin3/blob/main/AGENTS.md",
-  "softwareVersion": "2026.07.14",
-  "dateModified": "2026-07-14",
   "license": "https://opensource.org/licenses/postgresql",
   "author": {
     "@type": "Organization",
@@ -97,6 +95,12 @@
 <header>
   <div class="logo">pgAdmin <span>III</span></div>
   <div class="nav-links">
+    <a class="nav-icon-link nav-heart" href="https://github.com/sponsors/heptau" target="_blank" rel="noopener noreferrer" aria-label="Podpořit" title="Podpořit">
+      <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 21s-.87-.6-2.02-1.44C6.1 16.9 2 13.5 2 9.5c0-2.8 2.2-5 5-5 1.6 0 3.15.75 4.13 1.94L12 7.5l.87-1.06C13.85 5.25 15.4 4.5 17 4.5c2.8 0 5 2.2 5 5 0 4-4.1 7.4-7.98 10.06C12.87 20.4 12 21 12 21z"></path></svg>
+    </a>
+    <a class="nav-icon-link nav-star" href="https://github.com/heptau/pgadmin3" target="_blank" rel="noopener noreferrer" aria-label="Hvězdička na GitHubu" title="Hvězdička na GitHubu">
+      <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 21 12 17.77 5.82 21 7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg>
+    </a>
     <div class="dropdown" data-dropdown="lang">
       <button class="dropdown-trigger" aria-label="Change language" aria-haspopup="true" aria-expanded="false">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -247,7 +251,7 @@
     </div>
     <div class="feature-card">
       <h3>🌐 Lokalizace</h3>
-      <p>45 jazyků, všechny s editovatelnými .po zdroji. Čeština, španělština, němčina, francouzština, ruština, polština, čínština a lotyština — doplněny ve v2026.07.14.</p>
+      <p>45 jazyků, všechny s editovatelnými .po zdroji a kompletním překladem.</p>
     </div>
     <div class="feature-card">
       <h3>🔌 Pluginy</h3>
@@ -289,17 +293,35 @@ make build
 
 <section id="changelog">
   <h2><a href="#changelog">#</a> Co je nového</h2>
-  <p>Verze <strong>v2026.07.14</strong>:</p>
+  <h3>v2026.09.22</h3>
   <ul>
-    <li>Všech 45 dodávaných jazyků má nyní editovatelné <code>.po</code> zdroje, 0 nepřeložených řetězců</li>
-    <li>Čeština, španělština, němčina a francouzština — plně dokončeny (lidský překlad)</li>
-    <li>Ostatní jazyky doplněny automatickým překladem — vše ověřeno pomocí <code>msgfmt -c</code></li>
-    <li>Nativní macOS build (arm64) s Homebrew Cask distribucí</li>
-    <li>Dark / light mode — živé přepínání barev</li>
-    <li>Toolbar ikony pro Retina displeje</li>
-    <li>Podpora PostgreSQL 18</li>
-    <li>Plný changelog: <a href="https://github.com/heptau/pgadmin3/blob/main/CHANGELOG.md" target="_blank">CHANGELOG.md</a></li>
+    <li>Vlastnosti serveru zobrazují vybrané parametry <code>postgresql.conf</code> (včetně hodnot čekajících na restart) a štítky serveru</li>
+    <li>Vložení údajů o připojení ve tvaru <code>Klíč=Hodnota</code> ze schránky přímo do dialogu „Nový server“</li>
+    <li>Volitelné zobrazení závislostí funkcí — tabulky, pohledy a funkce, na které odkazují funkce/procedury, na kartě Závislosti</li>
+    <li>Tmavý režim pro Linux/GTK v mřížce výsledků, EXPLAIN plánu a dalších místech, s nastavitelnými barvami</li>
+    <li>Základní podpora pro neprivilegované uživatele PostgreSQL</li>
+    <li>Opravy: parser závislostí plpgsql, identifikátory začínající <code>_</code>, pád JSON stromu, okno rychlého hledání F4</li>
   </ul>
+  <h3>v2026.08.16</h3>
+  <ul>
+    <li>Volitelný šifrovaný systémový trezor pro uložená hesla k serverům</li>
+    <li>Integrace s far2l (přes NetRocks)</li>
+    <li>Přenosný zip pro Windows u každého vydání na GitHubu</li>
+  </ul>
+  <h3>v2026.08.07</h3>
+  <ul>
+    <li>Export do souboru ve formátu PostgreSQL <code>COPY</code></li>
+    <li>Porovnání po řádcích v dialogu porovnání, přehlednější diff reporty</li>
+    <li>Opraveno Alt+E v mřížce výsledků a pád při opakovaném spuštění běžícího dotazu</li>
+  </ul>
+  <h3>v2026.07.21 a starší</h3>
+  <ul>
+    <li>Všech 45 jazyků dokončeno, s editovatelnými <code>.po</code> zdroji</li>
+    <li>Dokumentace guru tipů v 18 jazycích</li>
+    <li>Nativní macOS build (arm64) přes Homebrew Cask, živé přepínání tmavého / světlého režimu, Retina ikony</li>
+    <li>Podpora PostgreSQL 18</li>
+  </ul>
+  <p>Úplný changelog: <a href="https://github.com/heptau/pgadmin3/blob/main/CHANGELOG.md" target="_blank">CHANGELOG.md</a></p>
 </section>
 
 <section id="support">
@@ -317,7 +339,7 @@ make build
 <footer>
   <div class="container">
     <p>pgAdmin III je vydán pod <a href="https://github.com/heptau/pgadmin3/blob/main/LICENSE" target="_blank">PostgreSQL licencí</a>.</p>
-    <p>Spravuje <a href="https://github.com/heptau">heptau</a> · <a href="https://github.com/heptau/pgadmin3">GitHub</a></p>
+    <p>Spravuje <a href="https://www.80.cz/" target="_blank">Zbyněk Vanžura</a> · <a href="https://github.com/heptau/pgadmin3">GitHub</a></p>
   </div>
 </footer>
 

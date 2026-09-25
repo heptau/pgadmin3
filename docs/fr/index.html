@@ -58,8 +58,6 @@
   "url": "https://pgadmin3.80.cz/",
   "downloadUrl": "https://github.com/heptau/pgadmin3/releases",
   "softwareHelp": "https://github.com/heptau/pgadmin3/blob/main/AGENTS.md",
-  "softwareVersion": "2026.07.14",
-  "dateModified": "2026-07-14",
   "license": "https://opensource.org/licenses/postgresql",
   "author": {
     "@type": "Organization",
@@ -97,6 +95,12 @@
 <header>
   <div class="logo">pgAdmin <span>III</span></div>
   <div class="nav-links">
+    <a class="nav-icon-link nav-heart" href="https://github.com/sponsors/heptau" target="_blank" rel="noopener noreferrer" aria-label="Soutenir" title="Soutenir">
+      <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 21s-.87-.6-2.02-1.44C6.1 16.9 2 13.5 2 9.5c0-2.8 2.2-5 5-5 1.6 0 3.15.75 4.13 1.94L12 7.5l.87-1.06C13.85 5.25 15.4 4.5 17 4.5c2.8 0 5 2.2 5 5 0 4-4.1 7.4-7.98 10.06C12.87 20.4 12 21 12 21z"></path></svg>
+    </a>
+    <a class="nav-icon-link nav-star" href="https://github.com/heptau/pgadmin3" target="_blank" rel="noopener noreferrer" aria-label="Étoile sur GitHub" title="Étoile sur GitHub">
+      <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 21 12 17.77 5.82 21 7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg>
+    </a>
     <div class="dropdown" data-dropdown="lang">
       <button class="dropdown-trigger" aria-label="Change language" aria-haspopup="true" aria-expanded="false">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -247,7 +251,7 @@
     </div>
     <div class="feature-card">
       <h3>🌐 Localisation</h3>
-      <p>45 langues fournies, toutes avec des sources .po modifiables. Les lacunes en tchèque, espagnol, allemand, français, russe, polonais, chinois et letton ont été comblées dans v2026.07.14.</p>
+      <p>45 langues fournies, toutes avec des sources .po modifiables et des traductions complètes.</p>
     </div>
     <div class="feature-card">
       <h3>🔌 Extensions</h3>
@@ -289,17 +293,35 @@ make build
 
 <section id="changelog">
   <h2><a href="#changelog">#</a> Nouveautés</h2>
-  <p>Version <strong>v2026.07.14</strong>:</p>
+  <h3>v2026.09.22</h3>
   <ul>
-    <li>Les 45 langues fournies ont désormais des sources <code>.po</code> modifiables, 0 chaînes non traduites</li>
-    <li>Localisations en tchèque, espagnol, allemand et français entièrement achevées (traduction humaine)</li>
-    <li>Langues restantes complétées par traduction automatique — toutes vérifiées avec <code>msgfmt -c</code></li>
-    <li>Compilation native macOS (arm64) avec distribution via Homebrew Cask</li>
-    <li>Mode sombre/clair — changement de jeu de couleurs en direct</li>
-    <li>Icônes Retina pour la barre d'outils</li>
-    <li>Prise en charge de PostgreSQL 18</li>
-    <li>Journal des modifications complet: <a href="https://github.com/heptau/pgadmin3/blob/main/CHANGELOG.md" target="_blank">CHANGELOG.md</a></li>
+    <li>Les propriétés du serveur affichent des paramètres choisis de <code>postgresql.conf</code> (y compris les valeurs en attente de redémarrage) et les étiquettes du serveur</li>
+    <li>Collez les informations de connexion <code>Clé=Valeur</code> du presse-papiers directement dans la boîte de dialogue « Nouveau serveur »</li>
+    <li>Vue optionnelle des dépendances des fonctions — tables, vues et fonctions référencées par les fonctions/procédures dans l'onglet Dépendances</li>
+    <li>Mode sombre sous Linux/GTK pour la grille de résultats, le plan EXPLAIN et plus, avec des couleurs configurables</li>
+    <li>Prise en charge de base des utilisateurs PostgreSQL non privilégiés</li>
+    <li>Corrections : analyseur de dépendances plpgsql, identifiants commençant par <code>_</code>, plantage de l'arbre JSON, fenêtre de recherche rapide F4</li>
   </ul>
+  <h3>v2026.08.16</h3>
+  <ul>
+    <li>Coffre-fort chiffré optionnel du système pour les mots de passe enregistrés des serveurs</li>
+    <li>Intégration avec far2l (via NetRocks)</li>
+    <li>Zip portable pour Windows publié avec chaque version sur GitHub</li>
+  </ul>
+  <h3>v2026.08.07</h3>
+  <ul>
+    <li>Export vers un fichier au format PostgreSQL <code>COPY</code></li>
+    <li>Comparaison ligne par ligne dans la boîte de comparaison, rapports de différences plus lisibles</li>
+    <li>Correction d'Alt+E dans la grille de résultats et d'un plantage lors de la réexécution d'une requête en cours</li>
+  </ul>
+  <h3>v2026.07.21 et antérieures</h3>
+  <ul>
+    <li>Les 45 langues complétées, avec des sources <code>.po</code> modifiables</li>
+    <li>Documentation des conseils guru en 18 langues</li>
+    <li>Build macOS natif (arm64) via Homebrew Cask, bascule sombre / clair en direct, icônes Retina</li>
+    <li>Prise en charge de PostgreSQL 18</li>
+  </ul>
+  <p>Journal des modifications complet : <a href="https://github.com/heptau/pgadmin3/blob/main/CHANGELOG.md" target="_blank">CHANGELOG.md</a></p>
 </section>
 
 <section id="support">
@@ -317,7 +339,7 @@ make build
 <footer>
   <div class="container">
     <p>pgAdmin III est publié sous la <a href="https://github.com/heptau/pgadmin3/blob/main/LICENSE" target="_blank">Licence PostgreSQL</a>.</p>
-    <p>Maintenu par <a href="https://github.com/heptau">heptau</a> · <a href="https://github.com/heptau/pgadmin3">GitHub</a></p>
+    <p>Maintenu par <a href="https://www.80.cz/" target="_blank">Zbyněk Vanžura</a> · <a href="https://github.com/heptau/pgadmin3">GitHub</a></p>
   </div>
 </footer>
 
