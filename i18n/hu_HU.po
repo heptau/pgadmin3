@@ -23917,4 +23917,402 @@ msgstr "Típusok"
 #~ msgid "|"
 #~ msgstr "|"
 
+#: pgAdmin3.cpp:389
+msgid "open server log window"
+msgstr "kiszolgálónapló ablak megnyitása"
 
+#: pgAdmin3.cpp:403
+msgid "export servers configuration to file pgadmin3.ini"
+msgstr "kiszolgálók konfigurációjának exportálása a pgadmin3.ini fájlba"
+
+#: pgAdmin3.cpp:404
+msgid "Enable Dark mode"
+msgstr "Sötét mód engedélyezése"
+
+#: pgAdmin3.cpp:1013
+msgid "Log - "
+msgstr "Napló - "
+
+#: pro_scheduler/pgproJob.cpp:36
+msgid "Retrieving details on pro_scheduler job"
+msgstr "A pro_scheduler feladat részleteinek lekérése"
+
+#: pro_scheduler/pgproJob.cpp:39
+msgid "Refreshing pro_scheduler job"
+msgstr "A pro_scheduler feladat frissítése"
+
+#: pro_scheduler/pgproJob.cpp:42
+msgid "pro_scheduler job properties report"
+msgstr "pro_scheduler feladat tulajdonságainak jelentése"
+
+#: pro_scheduler/pgproJob.cpp:48
+msgid "pro_scheduler job DDL report"
+msgstr "pro_scheduler feladat DDL jelentése"
+
+#: pro_scheduler/pgproJob.cpp:51
+msgid "pro_scheduler job dependencies report"
+msgstr "pro_scheduler feladat függőségi jelentése"
+
+#: pro_scheduler/pgproJob.cpp:54
+msgid "pro_scheduler job dependencies"
+msgstr "pro_scheduler feladat függőségei"
+
+#: pro_scheduler/pgproJob.cpp:57
+msgid "pro_scheduler job dependents report"
+msgstr "pro_scheduler feladat függő objektumainak jelentése"
+
+#: pro_scheduler/pgproJob.cpp:60
+msgid "pro_scheduler job dependents"
+msgstr "pro_scheduler feladat függő objektumai"
+
+#: pro_scheduler/pgproJob.cpp:140
+msgid "Started"
+msgstr "Elindítva"
+
+#: pro_scheduler/pgproJob.cpp:141
+msgid "Finished"
+msgstr "Befejezve"
+
+#: pro_scheduler/pgproJob.cpp:143
+msgid "Crontab"
+msgstr "Crontab"
+
+#: pro_scheduler/pgproJob.cpp:146
+msgid "Runas"
+msgstr "Futtatás mint"
+
+#: pro_scheduler/pgproJob.cpp:152
+msgid "Next start job"
+msgstr "A feladat következő indítása"
+
+#: pro_scheduler/pgproJob.cpp:185
+msgid "Previous sched time run skip"
+msgstr "Az előző ütemezett futás kihagyva"
+
+#: pro_scheduler/pgproJob.cpp:254
+msgid "Not run"
+msgstr "Nem futott"
+
+#: pro_scheduler/pgproJob.cpp:356
+msgid "Log_time"
+msgstr "Log_time"
+
+#: pro_scheduler/pgproJob.cpp:357
+msgid "Critical"
+msgstr "Kritikus"
+
+#: pro_scheduler/pgproJob.cpp:359
+msgid "Stage"
+msgstr "Szakasz"
+
+#: pro_scheduler/pgproJob.cpp:505
+msgid "Enabled or disabled job"
+msgstr "Feladat engedélyezve vagy letiltva"
+
+#: frm/frmQuery.cpp:4689
+msgid "Please enter name string with prefix dbname or description server\n"
+msgstr "Adja meg a nevet adatbázisnév vagy kiszolgálóleírás előtaggal\n"
+
+#: frm/frmQuery.cpp:4691
+msgid "Name autosave tab window."
+msgstr "Az automatikusan mentett lap neve."
+
+#: frm/frmOptions.cpp:615
+msgid "Color theme save to file %s"
+msgstr "Színtéma mentve a(z) %s fájlba"
+
+#: frm/frmOptions.cpp:637
+msgid "Color theme load from file %s"
+msgstr "Színtéma betöltve a(z) %s fájlból"
+
+#: frm/frmOptions.cpp:638
+msgid "Load theme"
+msgstr "Téma betöltése"
+
+#: schema/pgServer.cpp:1253
+msgid "Key words"
+msgstr "Kulcsszavak"
+
+#: hotdraw/utilities/hdRemoveDeleteDialog.cpp:117
+msgid "     Choose Remove from Diagram to remove only from current diagram.     "
+msgstr "     Válassza az Eltávolítás a diagramról lehetőséget, ha csak az aktuális diagramról kívánja eltávolítani.     "
+
+#: hotdraw/utilities/hdRemoveDeleteDialog.cpp:118
+msgid "     Choose Remove from Model to delete permanently.     "
+msgstr "     Válassza az Eltávolítás a modellből lehetőséget a végleges törléshez.     "
+
+#: hotdraw/main/hdDrawingView.cpp:457
+msgid "Sample Item"
+msgstr "Minta elem"
+
+#: hotdraw/main/hdDrawingView.cpp:466
+msgid "Sample menu item"
+msgstr "Minta menüelem"
+
+#: hotdraw/main/hdDrawingView.cpp:466
+msgid "Sample"
+msgstr "Minta"
+
+#: hotdraw/main/hdDrawingEditor.cpp:267
+msgid "Are you sure you wish to delete figure ?"
+msgstr "Biztosan törli az alakzatot?"
+
+#: hotdraw/main/hdDrawingEditor.cpp:267
+msgid "Delete figures?"
+msgstr "Törli az alakzatokat?"
+
+#: hotdraw/main/hdDrawingEditor.cpp:272
+msgid "Are you sure you wish to delete %d figures?"
+msgstr "Biztosan törli a(z) %d alakzatot?"
+
+#: ui/dlgFindReplace.xrc:65
+msgid "All find tabs"
+msgstr "Minden keresőlap"
+
+#: ui/dlgProJob.xrc:105
+msgid "Run as"
+msgstr "Futtatás mint"
+
+#: ui/dlgProJob.xrc:195
+msgid "Commands"
+msgstr "Parancsok"
+
+#: ui/dlgProJob.xrc:234
+msgid "use same transaction"
+msgstr "ugyanazon tranzakció használata"
+
+#: ui/dlgServer.xrc:190
+msgid "Select SSL Root Certificate File"
+msgstr "SSL főtanúsítvány fájl kiválasztása"
+
+#: ui/dlgServer.xrc:206
+msgid "Select SSL Certificate Revocation List File"
+msgstr "SSL tanúsítványvisszavonási lista fájl kiválasztása"
+
+#: ui/dlgServer.xrc:222
+msgid "Select SSL certificate file"
+msgstr "SSL tanúsítvány fájl kiválasztása"
+
+#: ui/dlgServer.xrc:238
+msgid "Select SSL key file"
+msgstr "SSL kulcs fájl kiválasztása"
+
+#: ui/dlgServer.xrc:361
+msgid "Select identity file"
+msgstr "Azonosító fájl kiválasztása"
+
+#: ui/dlgServer.xrc:377
+msgid "Select public key file"
+msgstr "Nyilvános kulcs fájl kiválasztása"
+
+#: ui/dlgServer.xrc:466
+msgid "Connect str"
+msgstr "Kapcsolati karakterlánc"
+
+#: ui/dlgTransformText.xrc:5
+msgid "Transform text"
+msgstr "Szöveg átalakítása"
+
+#: ui/dlgTransformText.xrc:17
+msgid "Source text options"
+msgstr "Forrásszöveg beállításai"
+
+#: ui/dlgTransformText.xrc:33
+msgid "PCRE regexp"
+msgstr "PCRE reguláris kifejezés"
+
+#: ui/dlgTransformText.xrc:50
+msgid "Replace expression"
+msgstr "Csere kifejezés"
+
+#: ui/dlgTransformText.xrc:67
+msgid "Rows limit"
+msgstr "Sorok korlátja"
+
+#: ui/dlgTransformText.xrc:87
+msgid "Chars limit"
+msgstr "Karakterek korlátja"
+
+#: ui/dlgTransformText.xrc:107
+msgid "Refresh highlight"
+msgstr "Kiemelés frissítése"
+
+#: ui/dlgTransformText.xrc:124
+msgid "Source text"
+msgstr "Forrásszöveg"
+
+#: ui/dlgTransformText.xrc:160
+msgid "Transform text options"
+msgstr "Szövegátalakítás beállításai"
+
+#: ui/dlgTransformText.xrc:176
+msgid "Append before row"
+msgstr "Hozzáfűzés a sor elé"
+
+#: ui/dlgTransformText.xrc:196
+msgid "After row"
+msgstr "A sor után"
+
+#: ui/dlgTransformText.xrc:230
+msgid "Field separator"
+msgstr "Mezőelválasztó"
+
+#: ui/dlgTransformText.xrc:267
+msgid "Load options"
+msgstr "Betöltési beállítások"
+
+#: ui/dlgTransformText.xrc:276
+msgid "First"
+msgstr "Első"
+
+#: ui/dlgTransformText.xrc:335
+msgid "Rows loading"
+msgstr "Sorok betöltése"
+
+#: ui/frmAwr.xrc:6
+msgid "AWR report"
+msgstr "AWR jelentés"
+
+#: ui/frmAwr.xrc:36
+msgid "Type report"
+msgstr "Jelentés típusa"
+
+#: ui/frmAwr.xrc:39
+msgid "Report"
+msgstr "Jelentés"
+
+#: ui/frmAwr.xrc:40
+msgid "Diff report"
+msgstr "Különbségi jelentés"
+
+#: ui/frmAwr.xrc:104
+msgid "Start Id1"
+msgstr "Kezdő Id1"
+
+#: ui/frmAwr.xrc:123
+msgid "End Id1"
+msgstr "Záró Id1"
+
+#: ui/frmAwr.xrc:166
+msgid "Start Id2"
+msgstr "Kezdő Id2"
+
+#: ui/frmAwr.xrc:185
+msgid "End Id2"
+msgstr "Záró Id2"
+
+#: ui/frmExport.xrc:110
+msgid "format COPY"
+msgstr "COPY formátum"
+
+#: ui/frmExport.xrc:116
+msgid "Xls fmt copy"
+msgstr "Xls formátumú másolás"
+
+#: ui/frmImport.xrc:33
+msgid "Select the file to import"
+msgstr "Válassza ki az importálandó fájlt"
+
+#: ui/frmOptions.xrc:131
+msgid "Select theme"
+msgstr "Téma kiválasztása"
+
+#: ui/frmOptions.xrc:154
+msgid "Load"
+msgstr "Betöltés"
+
+#: ui/frmOptions.xrc:222
+msgid "Options extended JSON:"
+msgstr "Bővített JSON beállítások:"
+
+#: ui/frmOptions.xrc:261
+msgid "Beautiful big numbers on the statistics page"
+msgstr "Nagy számok szép megjelenítése a statisztika oldalon"
+
+#: ui/frmOptions.xrc:272
+msgid "Show the dependencies of functions on tables,views,functions"
+msgstr "A függvények táblákra, nézetekre és függvényekre vonatkozó függőségeinek megjelenítése"
+
+#: ui/frmOptions.xrc:457
+msgid "Show DB name in tree"
+msgstr "Az adatbázis nevének megjelenítése a fában"
+
+#: ui/frmOptions.xrc:465
+msgid "Quick jump to the root node"
+msgstr "Gyors ugrás a gyökércsomópontra"
+
+#: ui/frmOptions.xrc:635
+msgid "Select utility to format text"
+msgstr "Válassza ki a szövegformázó segédprogramot"
+
+#: ui/frmOptions.xrc:645
+msgid "External alignment utlity"
+msgstr "Külső igazító segédprogram"
+
+#: ui/frmOptions.xrc:662
+msgid "Enable ASUTP style"
+msgstr "ASUTP stílus engedélyezése"
+
+#: ui/frmOptions.xrc:677
+msgid "Hide query history"
+msgstr "Lekérdezési előzmények elrejtése"
+
+#: ui/frmOptions.xrc:692
+msgid "Auto save query text"
+msgstr "Lekérdezés szövegének automatikus mentése"
+
+#: ui/frmOptions.xrc:707
+msgid "Use word hints"
+msgstr "Szósúgók használata"
+
+#: ui/frmOptions.xrc:722
+msgid "Replace variables in a query"
+msgstr "Változók cseréje a lekérdezésben"
+
+#: ui/frmOptions.xrc:821
+msgid "Use system background color caret line"
+msgstr "A rendszer háttérszínének használata a kurzor sorához"
+
+#: ui/frmOptions.xrc:876
+msgid "Width for keyboard layout"
+msgstr "Szélesség a billentyűzetkiosztáshoz"
+
+#: ui/frmOptions.xrc:1227
+msgid "Select file to store favourites queries"
+msgstr "Válassza ki a kedvenc lekérdezések tárolására szolgáló fájlt"
+
+#: ui/frmOptions.xrc:1255
+msgid "Select file to store macros"
+msgstr "Válassza ki a makrók tárolására szolgáló fájlt"
+
+#: ui/frmOptions.xrc:1283
+msgid "Select file to store queries history"
+msgstr "Válassza ki a lekérdezési előzmények tárolására szolgáló fájlt"
+
+#: ui/frmOptions.xrc:1388
+msgid "Blocked by Process Colour"
+msgstr "Blokkolt folyamat színe"
+
+#: ui/frmOptions.xrc:1402
+msgid "Idle&in&transaction&session&timeout Process Colour"
+msgstr "Idle&in&transaction&session&timeout folyamat színe"
+
+#: frm/frmOptions.cpp:1
+msgid "Appearance"
+msgstr "Megjelenés"
+
+#: frm/frmOptions.cpp:2
+msgid "Automatic"
+msgstr "Automatikus"
+
+#: frm/frmOptions.cpp:3
+msgid "Light"
+msgstr "Világos"
+
+#: frm/frmOptions.cpp:4
+msgid "Dark"
+msgstr "Sötét"
+
+#: frm/frmOptions.cpp:5
+msgid "Restart pgAdmin III to fully apply the appearance change."
+msgstr "A megjelenés módosításának teljes alkalmazásához indítsa újra a pgAdmin III-at."

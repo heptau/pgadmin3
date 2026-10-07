@@ -25952,3 +25952,1759 @@ msgstr "|"
 #, fuzzy
 #~ msgid "Add Table to Set."
 #~ msgstr "Нема табеле ни погледа."
+
+#: pgAdmin3.cpp:389
+msgid "open server log window"
+msgstr "отвори прозор дневника сервера"
+
+#: pgAdmin3.cpp:403
+msgid "export servers configuration to file pgadmin3.ini"
+msgstr "извези конфигурацију сервера у датотеку pgadmin3.ini"
+
+#: pgAdmin3.cpp:404
+msgid "Enable Dark mode"
+msgstr "Омогући тамни режим"
+
+#: pgAdmin3.cpp:1013
+msgid "Log - "
+msgstr "Дневник - "
+
+#: ctl/ctlTreeJSON.cpp:73
+msgid "Please enter find string\n"
+msgstr "Унесите тражени низ\n"
+
+#: ctl/ctlSQLGrid.cpp:993
+msgid "The line size is [ %s ] characters, do you want to continue?"
+msgstr "Величина реда је [ %s ] знакова, да ли желите да наставите?"
+
+#: ctl/ctlSQLBox.cpp:1426
+msgid "All line (use all EOL)"
+msgstr "Сви редови (користи све EOL)"
+
+#: ctl/ctlSQLBox.cpp:1427
+msgid "First line pattern (ignore all but the first EOL)"
+msgstr "Образац првог реда (занемари све осим првог EOL)"
+
+#: ctl/ctlSQLBox.cpp:1428
+msgid "Try looking for patterns above"
+msgstr "Покушајте да потражите обрасце изнад"
+
+#: ctl/ctlSQLBox.cpp:1429
+msgid "Compact view"
+msgstr "Збијени приказ"
+
+#: ctl/ctlSQLBox.cpp:1430
+msgid "Remove multi spaces"
+msgstr "Уклони вишеструке размаке"
+
+#: ctl/ctlSQLBox.cpp:1432
+msgid "A multi-choice convenience dialog"
+msgstr "Згодан дијалог са више избора"
+
+#: ctl/ctlSQLBox.cpp:1433
+msgid "Please select several align options"
+msgstr "Изаберите неколико опција поравнања"
+
+#: ctl/ctlSQLBox.cpp:1459
+msgid "Aligning complete."
+msgstr "Поравнање је завршено."
+
+#: ctl/ctlSQLBox.cpp:1476
+msgid "Formatting Ok"
+msgstr "Форматирање је у реду"
+
+#: ctl/ctlSQLBox.cpp:1500
+msgid "Couldn't run aligning command: "
+msgstr "Није могуће покренути команду за поравнање: "
+
+#: ctl/ctlSQLBox.cpp:1522
+msgid "Aligning command did not respond in %d ms"
+msgstr "Команда за поравнање није одговорила у року од %d ms"
+
+#: ctl/ctlSQLBox.cpp:1534
+msgid "Aligning command error: Output is empty."
+msgstr "Грешка команде за поравнање: излаз је празан."
+
+#: ctl/ctlListView.cpp:63
+msgid "CFS fragmentation"
+msgstr "CFS фрагментација"
+
+#: ctl/ctlListView.cpp:70
+msgid "CFS %"
+msgstr "CFS %"
+
+#: ctl/ctlNavigatePanel.cpp:46
+msgid "Search for a simple string."
+msgstr "Тражи једноставан низ."
+
+#: ctl/ctlNavigatePanel.cpp:50
+msgid "Go to the next marker."
+msgstr "Иди на следећу ознаку."
+
+#: ctl/ctlNavigatePanel.cpp:56
+msgid "Go to the next marker of the same type."
+msgstr "Иди на следећу ознаку истог типа."
+
+#: ctl/ctlNavigatePanel.cpp:61
+msgid "The next occurrence of the string."
+msgstr "Следеће појављивање низа."
+
+#: ctl/ctlNavigatePanel.cpp:66
+msgid "Previous occurrence of the string."
+msgstr "Претходно појављивање низа."
+
+#: ctl/ctlNavigatePanel.cpp:71
+msgid "Find all strings content current row Pid."
+msgstr "Пронађи све низове у садржају текућег реда Pid."
+
+#: ctl/ctlNavigatePanel.cpp:76
+msgid "Find all strings content current row State."
+msgstr "Пронађи све низове у садржају текућег реда State."
+
+#: ctl/ctlNavigatePanel.cpp:81
+msgid "Enable/disable auto hint."
+msgstr "Омогући/онемогући аутоматски савет."
+
+#: ctl/ctlNavigatePanel.cpp:309
+msgid "Incorrect hotkey \"%s\" for command \"%s\""
+msgstr "Неисправна пречица \"%s\" за команду \"%s\""
+
+#: ctl/ctlSQLResult.cpp:390
+msgid "Incorrect flag at the '%s' column."
+msgstr "Неисправна заставица у колони '%s'."
+
+#: ctl/ctlSQLResult.cpp:412
+msgid "The column name empty. '%s' ."
+msgstr "Име колоне је празно. '%s' ."
+
+#: ctl/ctlSQLResult.cpp:418
+msgid "The column name '%s' was not found in the query results."
+msgstr "Колона са именом '%s' није пронађена у резултатима упита."
+
+#: ctl/ctlSQLResult.cpp:442
+msgid "The column name  '%s' is not closed."
+msgstr "Име колоне  '%s' није затворено."
+
+#: dlg/dlgForeignTable.cpp:169
+msgid "Type %s not found in cbDatatype(%d)\n"
+msgstr "Тип %s није пронађен у cbDatatype(%d)\n"
+
+#: pro_scheduler/pgproJob.cpp:36
+msgid "Retrieving details on pro_scheduler job"
+msgstr "Добављање детаља о послу pro_scheduler"
+
+#: pro_scheduler/pgproJob.cpp:39
+msgid "Refreshing pro_scheduler job"
+msgstr "Освежавање посла pro_scheduler"
+
+#: pro_scheduler/pgproJob.cpp:42
+msgid "pro_scheduler job properties report"
+msgstr "Извештај о својствима посла pro_scheduler"
+
+#: pro_scheduler/pgproJob.cpp:48
+msgid "pro_scheduler job DDL report"
+msgstr "DDL извештај посла pro_scheduler"
+
+#: pro_scheduler/pgproJob.cpp:51
+msgid "pro_scheduler job dependencies report"
+msgstr "Извештај о зависностима посла pro_scheduler"
+
+#: pro_scheduler/pgproJob.cpp:54
+msgid "pro_scheduler job dependencies"
+msgstr "Зависности посла pro_scheduler"
+
+#: pro_scheduler/pgproJob.cpp:57
+msgid "pro_scheduler job dependents report"
+msgstr "Извештај о зависним објектима посла pro_scheduler"
+
+#: pro_scheduler/pgproJob.cpp:60
+msgid "pro_scheduler job dependents"
+msgstr "Зависни објекти посла pro_scheduler"
+
+#: pro_scheduler/pgproJob.cpp:140
+msgid "Started"
+msgstr "Покренуто"
+
+#: pro_scheduler/pgproJob.cpp:141
+msgid "Finished"
+msgstr "Завршено"
+
+#: pro_scheduler/pgproJob.cpp:143
+msgid "Crontab"
+msgstr "Crontab"
+
+#: pro_scheduler/pgproJob.cpp:146
+msgid "Runas"
+msgstr "Покрени као"
+
+#: pro_scheduler/pgproJob.cpp:152
+msgid "Next start job"
+msgstr "Следеће покретање посла"
+
+#: pro_scheduler/pgproJob.cpp:185
+msgid "Previous sched time run skip"
+msgstr "Претходно време распореда, покретање прескочено"
+
+#: pro_scheduler/pgproJob.cpp:254
+msgid "Not run"
+msgstr "Није покренуто"
+
+#: pro_scheduler/pgproJob.cpp:356
+msgid "Log_time"
+msgstr "Log_time"
+
+#: pro_scheduler/pgproJob.cpp:357
+msgid "Critical"
+msgstr "Критично"
+
+#: pro_scheduler/pgproJob.cpp:359
+msgid "Stage"
+msgstr "Фаза"
+
+#: pro_scheduler/pgproJob.cpp:505
+msgid "Enabled or disabled job"
+msgstr "Посао омогућен или онемогућен"
+
+#: utils/misc.cpp:201
+msgid "Bi"
+msgstr "Млрд"
+
+#: utils/misc.cpp:202
+msgid "Mi"
+msgstr "Мил"
+
+#: utils/misc.cpp:203
+msgid "ths"
+msgstr "хиљ"
+
+#: utils/FunctionPGHelper.cpp:238
+msgid "'The database is closed in the object browser.'"
+msgstr "'База података је затворена у прегледачу објеката.'"
+
+#: utils/dlgTransformText.cpp:76
+msgid "Transformation text"
+msgstr "Текст трансформације"
+
+#: utils/macros.cpp:272
+msgid "Failed to load AutoReplace file!"
+msgstr "Учитавање AutoReplace датотеке није успело!"
+
+#: utils/macros.cpp:279
+msgid "Failed to read AutoReplace file!"
+msgstr "Читање AutoReplace датотеке није успело!"
+
+#: utils/macros.cpp:298
+msgid "Failed to open AutoReplace file!"
+msgstr "Отварање AutoReplace датотеке није успело!"
+
+#: utils/macros.cpp:306
+msgid "Failed to write to AutoReplace file!"
+msgstr "Писање у AutoReplace датотеку није успело!"
+
+#: utils/sysSettings.cpp:95
+msgid "pgpro_scheduler"
+msgstr "pgpro_scheduler"
+
+#: utils/sysSettings.cpp:139
+msgid "Publications"
+msgstr "Публикације"
+
+#: utils/sshTunnel.cpp:618
+msgid " [%s]"
+msgstr " [%s]"
+
+#: frm/frmEditGrid.cpp:3383
+msgid "View F&iltered Rows...\tCtrl-F"
+msgstr "Прикажи &филтриране редове...\tCtrl-F"
+
+#: frm/frmEditGrid.cpp:3384
+msgid "View Filtered Rows\tCtrl-F"
+msgstr "Прикажи филтриране редове\tCtrl-F"
+
+#: frm/frmQuery.cpp:384
+msgid "New SQL &tab\tCtrl-T"
+msgstr "Нови &језичак SQL\tCtrl-T"
+
+#: frm/frmQuery.cpp:384
+msgid "Open a new query tab"
+msgstr "Отвори нови језичак упита"
+
+#: frm/frmQuery.cpp:387
+msgid "&Export...\tAlt+E"
+msgstr "&Извези...\tAlt+E"
+
+#: frm/frmQuery.cpp:422
+msgid "Double the single quote\tCtrl-'"
+msgstr "Удвостручи једноструки наводник\tCtrl-'"
+
+#: frm/frmQuery.cpp:422
+msgid "Double the single quote"
+msgstr "Удвостручи једноструки наводник"
+
+#: frm/frmQuery.cpp:423
+msgid "Undouble the single quote\tCtrl-Shift-'"
+msgstr "Поништи удвостручење једноструког наводника\tCtrl-Shift-'"
+
+#: frm/frmQuery.cpp:423
+msgid "Undouble the single quote"
+msgstr "Поништи удвостручење једноструког наводника"
+
+#: frm/frmQuery.cpp:426
+msgid "External Align...\tCtrl-Shift-A"
+msgstr "Спољашње поравнање...\tCtrl-Shift-A"
+
+#: frm/frmQuery.cpp:426
+msgid "Call external align command"
+msgstr "Позови спољашњу команду за поравнање"
+
+#: frm/frmQuery.cpp:429
+msgid "Manage autoreplace..."
+msgstr "Управљај аутоматском заменом..."
+
+#: frm/frmQuery.cpp:429
+msgid "Edit and delete autoreplace strings"
+msgstr "Измена и брисање низова аутоматске замене"
+
+#: frm/frmQuery.cpp:430
+msgid "Open object\tF4"
+msgstr "Отвори објекат\tF4"
+
+#: frm/frmQuery.cpp:430
+msgid "Open object in brouser tree"
+msgstr "Отвори објекат у стаблу прегледача"
+
+#: frm/frmQuery.cpp:431
+msgid "Text transform...\tCtrl+M"
+msgstr "Трансформација текста...\tCtrl+M"
+
+#: frm/frmQuery.cpp:431
+msgid "Open dialog transform"
+msgstr "Отвори дијалог трансформације"
+
+#: frm/frmQuery.cpp:438
+msgid "&Execute\tF8"
+msgstr "&Изврши\tF8"
+
+#: frm/frmQuery.cpp:439
+msgid "&Execute new output\tShift-F8"
+msgstr "&Изврши у нови излаз\tShift-F8"
+
+#: frm/frmQuery.cpp:439
+msgid "Execute query in new output"
+msgstr "Изврши упит у нови излаз"
+
+#: frm/frmQuery.cpp:441
+msgid "Execute to file\tF5"
+msgstr "Изврши у датотеку\tF5"
+
+#: frm/frmQuery.cpp:456
+msgid "&Auto-Select"
+msgstr "&Аутоматски избор"
+
+#: frm/frmQuery.cpp:456
+msgid "Auto select query"
+msgstr "Аутоматски избор упита"
+
+#: frm/frmQuery.cpp:462
+msgid "Commit\tF10"
+msgstr "Потврди\tF10"
+
+#: frm/frmQuery.cpp:463
+msgid "Rollback\tShift-F10"
+msgstr "Поништи трансакцију\tShift-F10"
+
+#: frm/frmQuery.cpp:617
+msgid "New SQL tab"
+msgstr "Нови језичак SQL"
+
+#: frm/frmQuery.cpp:624
+msgid "Compare the selected text with the clipboard"
+msgstr "Упореди изабрани текст са клипбордом"
+
+#: frm/frmQuery.cpp:646
+msgid "Mode transaction"
+msgstr "Режим трансакције"
+
+#: frm/frmQuery.cpp:2245
+msgid "Copy Insert format"
+msgstr "Копирај у Insert формату"
+
+#: frm/frmQuery.cpp:2245
+msgid "Copy Insert format."
+msgstr "Копирај у Insert формату."
+
+#: frm/frmQuery.cpp:2246
+msgid "List columns header"
+msgstr "Листа заглавља колона"
+
+#: frm/frmQuery.cpp:2246
+msgid "Copy list columns header"
+msgstr "Копирај листу заглавља колона"
+
+#: frm/frmQuery.cpp:2247
+msgid "IN list format copy"
+msgstr "Копирање у формату IN листе"
+
+#: frm/frmQuery.cpp:2247
+msgid "Copy In list format."
+msgstr "Копирај у формату IN листе."
+
+#: frm/frmQuery.cpp:2248
+msgid "WHERE list format copy"
+msgstr "Копирање у формату WHERE листе"
+
+#: frm/frmQuery.cpp:2248
+msgid "Copy where list format."
+msgstr "Копирај у формату WHERE листе."
+
+#: frm/frmQuery.cpp:2249
+msgid "Copy table html format"
+msgstr "Копирај табелу у HTML формату"
+
+#: frm/frmQuery.cpp:2249
+msgid "Copy table html format."
+msgstr "Копирај табелу у HTML формату."
+
+#: frm/frmQuery.cpp:2269
+msgid "Draw plot LY(bar) or LXY or XYYY..."
+msgstr "Нацртај график LY(стубићи) или LXY или XYYY..."
+
+#: frm/frmQuery.cpp:2269
+msgid "Draw plot LY(bar) LXY or XYYY..."
+msgstr "Нацртај график LY(стубићи) LXY или XYYY..."
+
+#: frm/frmQuery.cpp:2270
+msgid "Summary"
+msgstr "Сажетак"
+
+#: frm/frmQuery.cpp:2270
+msgid "Summary selected cells."
+msgstr "Сажетак изабраних ћелија."
+
+#: frm/frmQuery.cpp:2271
+msgid "Compare 2 Cells"
+msgstr "Упореди 2 ћелије"
+
+#: frm/frmQuery.cpp:2271
+msgid "Compare 2 selected cells."
+msgstr "Упореди 2 изабране ћелије."
+
+#: frm/frmQuery.cpp:2272
+msgid "Check the sequence of dates"
+msgstr "Провери редослед датума"
+
+#: frm/frmQuery.cpp:2273
+msgid "Clear filter"
+msgstr "Очисти филтер"
+
+#: frm/frmQuery.cpp:2333
+msgid "No template generate."
+msgstr "Шаблон није генерисан."
+
+#: frm/frmQuery.cpp:2558
+msgid "%i@"
+msgstr "%i@"
+
+#: frm/frmQuery.cpp:3070
+msgid "Out %i"
+msgstr "Излаз %i"
+
+#: frm/frmQuery.cpp:3413
+msgid "-- Executing query [%s]:[%s]\n"
+msgstr "-- Извршавање упита [%s]:[%s]\n"
+
+#: frm/frmQuery.cpp:4241
+msgid "Running aligning command..."
+msgstr "Покретање команде за поравнање..."
+
+#: frm/frmQuery.cpp:4471
+msgid "outputPane"
+msgstr "outputPane"
+
+#: frm/frmQuery.cpp:4491
+msgid "Output pane [%s]"
+msgstr "Окно излаза [%s]"
+
+#: frm/frmQuery.cpp:4597
+msgid "Cannot change to selected SQL tab now. Try again a bit later."
+msgstr "Тренутно није могуће прећи на изабрани језичак SQL. Покушајте поново мало касније."
+
+#: frm/frmQuery.cpp:4620
+msgid "Cannot add a new SQL tab now. Try again a bit later."
+msgstr "Тренутно није могуће додати нови језичак SQL. Покушајте поново мало касније."
+
+#: frm/frmQuery.cpp:4689
+msgid "Please enter name string with prefix dbname or description server\n"
+msgstr "Унесите низ имена са префиксом имена базе или описа сервера\n"
+
+#: frm/frmQuery.cpp:4691
+msgid "Name autosave tab window."
+msgstr "Име аутоматски сачуваног прозора језичка."
+
+#: frm/frmQuery.cpp:4717
+msgid "Cannot remove the last SQL tab"
+msgstr "Није могуће уклонити последњи језичак SQL"
+
+#: frm/frmQuery.cpp:4797
+msgid "Query %d"
+msgstr "Упит %d"
+
+#: frm/frmQuery.cpp:5148
+msgid "Script Recreate Cascade"
+msgstr "Скрипта поновног креирања са каскадом"
+
+#: frm/frmQuery.cpp:5148
+msgid "Start query tool with recreate cascade script."
+msgstr "Покрени алатку за упите са скриптом поновног креирања са каскадом."
+
+#: frm/frmOptions.cpp:61
+msgid "PgAdmin3opt settings"
+msgstr "Подешавања PgAdmin3opt"
+
+#: frm/frmOptions.cpp:615
+msgid "Color theme save to file %s"
+msgstr "Тема боја сачувана у датотеку %s"
+
+#: frm/frmOptions.cpp:637
+msgid "Color theme load from file %s"
+msgstr "Тема боја учитана из датотеке %s"
+
+#: frm/frmOptions.cpp:638
+msgid "Load theme"
+msgstr "Учитај тему"
+
+#: frm/frmOptions.cpp:1208
+msgid "&Options...\tCtrl-O"
+msgstr "&Опције...\tCtrl-O"
+
+#: frm/frmStatus.cpp:282
+msgid "&Wait trace"
+msgstr "&Праћење чекања"
+
+#: frm/frmStatus.cpp:282
+msgid "Enable the wait event."
+msgstr "Омогући догађај чекања."
+
+#: frm/frmStatus.cpp:283
+msgid "&Wait event save"
+msgstr "&Сачувај догађаје чекања"
+
+#: frm/frmStatus.cpp:283
+msgid "Enable the wait event save to file sample.dat."
+msgstr "Омогући чување догађаја чекања у датотеку sample.dat."
+
+#: frm/frmStatus.cpp:320
+msgid "Value parameter pg_wait_sampling.history_size = %ld greet 1000000  monitoring wait events disabled.\n"
+msgstr "Вредност параметра pg_wait_sampling.history_size = %ld је већа од 1000000, праћење догађаја чекања је онемогућено.\n"
+
+#: frm/frmStatus.cpp:383
+msgid "&Query state\tCtrl-Alt-Q"
+msgstr "&Стање упита\tCtrl-Alt-Q"
+
+#: frm/frmStatus.cpp:383
+msgid "Show or hide the query state tab."
+msgstr "Прикажи или сакриј језичак стања упита."
+
+#: frm/frmStatus.cpp:385
+msgid "Append verbose"
+msgstr "Додај verbose"
+
+#: frm/frmStatus.cpp:386
+msgid "Append use buffers"
+msgstr "Додај buffers"
+
+#: frm/frmStatus.cpp:387
+msgid "Append real timing"
+msgstr "Додај стварно време"
+
+#: frm/frmStatus.cpp:388
+msgid "Append triggers"
+msgstr "Додај окидаче"
+
+#: frm/frmStatus.cpp:396
+msgid "&Wait"
+msgstr "&Чекање"
+
+#: frm/frmStatus.cpp:436
+msgid "Highlight items only"
+msgstr "Истакни само ставке"
+
+#: frm/frmStatus.cpp:517
+msgid "QueryState"
+msgstr "QueryState"
+
+#: frm/frmStatus.cpp:853
+msgid "W_Event_T"
+msgstr "W_Event_T"
+
+#: frm/frmStatus.cpp:854
+msgid "W_Event"
+msgstr "W_Event"
+
+#: frm/frmStatus.cpp:1112
+msgid "Query State"
+msgstr "Стање упита"
+
+#: frm/frmStatus.cpp:1126
+msgid "Query Text"
+msgstr "Текст упита"
+
+#: frm/frmStatus.cpp:1127
+msgid "Plan"
+msgstr "План"
+
+#: frm/frmStatus.cpp:1251
+msgid "Functions pg_read_binary_file(text,bigint,bigint,boolean), pg_stat_file(text,boolean),pg_ls_logdir()  permission denied."
+msgstr "Функције pg_read_binary_file(text,bigint,bigint,boolean), pg_stat_file(text,boolean),pg_ls_logdir(): приступ одбијен."
+
+#: frm/frmStatus.cpp:1716
+msgid "Activity query long execute"
+msgstr "Активност: дуго извршавање упита"
+
+#: frm/frmStatus.cpp:2634
+msgid "Query state status long execute"
+msgstr "Стање упита: дуго извршавање"
+
+#: frm/frmStatus.cpp:2670
+msgid "Refreshing query state list."
+msgstr "Освежавање листе стања упита."
+
+#: frm/frmStatus.cpp:2959
+msgid "Wait..."
+msgstr "Сачекајте..."
+
+#: frm/frmStatus.cpp:4807
+msgid "&Server Status\tCtrl-S"
+msgstr "&Стање сервера\tCtrl-S"
+
+#: frm/frmPlot.cpp:120
+msgid "Lock aspect"
+msgstr "Закључај однос"
+
+#: frm/frmPlot.cpp:120
+msgid "Lock horizontal and vertical zoom aspect."
+msgstr "Закључај однос хоризонталног и вертикалног увећања."
+
+#: frm/frmPlot.cpp:442
+msgid "Save a screenshot"
+msgstr "Сачувај снимак екрана"
+
+#: frm/frmLog.cpp:1314
+msgid "Log view..."
+msgstr "Приказ дневника..."
+
+#: frm/frmLog.cpp:1314
+msgid "Log view CSV format"
+msgstr "Приказ дневника у CSV формату"
+
+#: frm/frmMain.cpp:200
+msgid "Git"
+msgstr "Git"
+
+#: frm/frmMain.cpp:472
+msgid "&Server"
+msgstr "&Сервер"
+
+#: frm/frmMain.cpp:472
+msgid "Server menu commands."
+msgstr "Команде менија сервера."
+
+#: frm/frmMain.cpp:1187
+msgid "Create putty tunnel error."
+msgstr "Креирање putty тунела није успело."
+
+#: frm/frmAwr.cpp:33
+msgid "Report AWR"
+msgstr "AWR извештај"
+
+#: frm/frmAwr.cpp:33
+msgid "Generate AWR report"
+msgstr "Генериши AWR извештај"
+
+#: schema/pgServer.cpp:1253
+msgid "Key words"
+msgstr "Кључне речи"
+
+#: schema/pgServer.cpp:1338
+msgid "Add connect str"
+msgstr "Додај конекциони низ"
+
+#: schema/pgServer.cpp:2264
+msgid "&Set keywords"
+msgstr "&Постави кључне речи"
+
+#: schema/pgServer.cpp:2264
+msgid "Set keywords list the selected server."
+msgstr "Постави листу кључних речи за изабрани сервер."
+
+#: schema/pgServer.cpp:2273
+msgid "Please enter keywords\n"
+msgstr "Унесите кључне речи\n"
+
+#: schema/pgServer.cpp:2275
+msgid "Keywords server"
+msgstr "Кључне речи сервера"
+
+#: schema/pgServer.cpp:2374
+msgid "Disconnec&t all servers"
+msgstr "Прекини везу са &свим серверима"
+
+#: schema/pgServer.cpp:2374
+msgid "Disconnect from all servers."
+msgstr "Прекини везу са свим серверима."
+
+#: schema/pgIndex.cpp:499
+msgid "Check Btree index"
+msgstr "Провери Btree индекс"
+
+#: schema/pgIndex.cpp:499
+msgid "Check Btree index function bt_index_parent_check(oid,true)"
+msgstr "Провери Btree индекс функцијом bt_index_parent_check(oid,true)"
+
+#: schema/pgIndex.cpp:568
+msgid "&Reset index statistics"
+msgstr "&Ресетуј статистике индекса"
+
+#: schema/pgIndex.cpp:568
+msgid "Reset statistics of the selected index."
+msgstr "Ресетуј статистике изабраног индекса."
+
+#: schema/pgIndex.cpp:574
+msgid "Are you sure you wish to reset statistics of this index?"
+msgstr "Да ли сте сигурни да желите да ресетујете статистике овог индекса?"
+
+#: schema/pgSubscription.cpp:33
+msgid "Retrieving details on subscription"
+msgstr "Добављање детаља о претплати"
+
+#: schema/pgSubscription.cpp:37
+msgid "Refreshing subscription"
+msgstr "Освежавање претплате"
+
+#: schema/pgSubscription.cpp:41
+msgid "Are you sure you wish to drop subscription \"%s\" including all objects that depend on it?"
+msgstr "Да ли сте сигурни да желите да обришете претплату \"%s\" заједно са свим објектима који зависе од ње?"
+
+#: schema/pgSubscription.cpp:45
+msgid "Are you sure you wish to drop subscription \"%s\"?"
+msgstr "Да ли сте сигурни да желите да обришете претплату \"%s\"?"
+
+#: schema/pgSubscription.cpp:49
+msgid "Drop subscription cascaded?"
+msgstr "Обрисати претплату са каскадом?"
+
+#: schema/pgSubscription.cpp:52
+msgid "Drop subscription?"
+msgstr "Обрисати претплату?"
+
+#: schema/pgSubscription.cpp:55
+msgid "Subscription properties report"
+msgstr "Извештај о својствима претплате"
+
+#: schema/pgSubscription.cpp:59
+msgid "Subscription properties"
+msgstr "Својства претплате"
+
+#: schema/pgSubscription.cpp:62
+msgid "Subscription DDL report"
+msgstr "DDL извештај претплате"
+
+#: schema/pgSubscription.cpp:66
+msgid "Subscription DDL"
+msgstr "DDL претплате"
+
+#: schema/pgSubscription.cpp:69
+msgid "Subscription dependencies report"
+msgstr "Извештај о зависностима претплате"
+
+#: schema/pgSubscription.cpp:73
+msgid "Subscription dependencies"
+msgstr "Зависности претплате"
+
+#: schema/pgSubscription.cpp:76
+msgid "Subscription dependents report"
+msgstr "Извештај о зависним објектима претплате"
+
+#: schema/pgSubscription.cpp:80
+msgid "Subscription dependents"
+msgstr "Зависни објекти претплате"
+
+#: schema/pgSubscription.cpp:210
+msgid "Retrieving details on subscriptions"
+msgstr "Добављање детаља о претплатама"
+
+#: schema/pgSubscription.cpp:213
+msgid "Refreshing subscriptions"
+msgstr "Освежавање претплата"
+
+#: schema/pgSubscription.cpp:216
+msgid "Subscriptions list report"
+msgstr "Извештај о листи претплата"
+
+#: schema/pgPublication.cpp:33
+msgid "Retrieving details on publication"
+msgstr "Добављање детаља о публикацији"
+
+#: schema/pgPublication.cpp:37
+msgid "Refreshing publication"
+msgstr "Освежавање публикације"
+
+#: schema/pgPublication.cpp:41
+msgid "Are you sure you wish to drop publication \"%s\" including all objects that depend on it?"
+msgstr "Да ли сте сигурни да желите да обришете публикацију \"%s\" заједно са свим објектима који зависе од ње?"
+
+#: schema/pgPublication.cpp:45
+msgid "Are you sure you wish to drop publication \"%s\"?"
+msgstr "Да ли сте сигурни да желите да обришете публикацију \"%s\"?"
+
+#: schema/pgPublication.cpp:49
+msgid "Drop publication cascaded?"
+msgstr "Обрисати публикацију са каскадом?"
+
+#: schema/pgPublication.cpp:52
+msgid "Drop publication?"
+msgstr "Обрисати публикацију?"
+
+#: schema/pgPublication.cpp:55
+msgid "Publication properties report"
+msgstr "Извештај о својствима публикације"
+
+#: schema/pgPublication.cpp:59
+msgid "Publication properties"
+msgstr "Својства публикације"
+
+#: schema/pgPublication.cpp:62
+msgid "Publication DDL report"
+msgstr "DDL извештај публикације"
+
+#: schema/pgPublication.cpp:66
+msgid "Publication DDL"
+msgstr "DDL публикације"
+
+#: schema/pgPublication.cpp:69
+msgid "Publication dependencies report"
+msgstr "Извештај о зависностима публикације"
+
+#: schema/pgPublication.cpp:73
+msgid "Publication dependencies"
+msgstr "Зависности публикације"
+
+#: schema/pgPublication.cpp:76
+msgid "Publication dependents report"
+msgstr "Извештај о зависним објектима публикације"
+
+#: schema/pgPublication.cpp:80
+msgid "Publication dependents"
+msgstr "Зависни објекти публикације"
+
+#: schema/pgPublication.cpp:318
+msgid "Retrieving details on publications"
+msgstr "Добављање детаља о публикацијама"
+
+#: schema/pgPublication.cpp:321
+msgid "Refreshing publications"
+msgstr "Освежавање публикација"
+
+#: schema/pgPublication.cpp:324
+msgid "Publications list report"
+msgstr "Извештај о листи публикација"
+
+#: schema/pgTable.cpp:1096
+msgid "Create table timestamp"
+msgstr "Време креирања табеле"
+
+#: schema/pgObject.cpp:621
+msgid "extension"
+msgstr "проширење"
+
+#: schema/pgFunction.cpp:410
+msgid "Parallel"
+msgstr "Паралелно"
+
+#: schema/pgFunction.cpp:426
+msgid "Last change timestamp"
+msgstr "Време последње измене"
+
+#: dd/ddmodel/ddDBReverseEnginering.cpp:175
+msgid "Schema not found"
+msgstr "Шема није пронађена"
+
+#: dd/ddmodel/ddDBReverseEnginering.cpp:175
+msgid "getting table OID"
+msgstr "добављање OID-а табеле"
+
+#: dd/ddmodel/ddDBReverseEnginering.cpp:216
+msgid "Table not found"
+msgstr "Табела није пронађена"
+
+#: dd/ddmodel/ddDBReverseEnginering.cpp:665
+msgid "Error detecting kind of foreign key source: from Pk or from Uk"
+msgstr "Грешка при откривању врсте извора страног кључа: из Pk или из Uk"
+
+#: dd/ddmodel/ddDBReverseEnginering.cpp:665
+msgid "Error importing relationship"
+msgstr "Грешка при увозу релације"
+
+#: dd/ddmodel/ddDBReverseEnginering.cpp:786
+msgid "Error detecting kind of foreign key: null or not null"
+msgstr "Грешка при откривању врсте страног кључа: null или not null"
+
+#: dd/ddmodel/ddDBReverseEnginering.cpp:1333
+msgid "Error fk is repeated"
+msgstr "Грешка: страни кључ је поновљен"
+
+#: dd/ddmodel/ddDBReverseEnginering.cpp:1333
+msgid "Error comparing relationships"
+msgstr "Грешка при поређењу релација"
+
+#: dd/ddmodel/ddDBReverseEnginering.cpp:1673
+msgid "Please, select a schema to use at import tables process:"
+msgstr "Изаберите шему која ће се користити при увозу табела:"
+
+#: dd/ddmodel/ddDBReverseEnginering.cpp:1698
+msgid "Please, select a Schema to continue to next step."
+msgstr "Изаберите шему да бисте наставили на следећи корак."
+
+#: dd/ddmodel/ddDBReverseEnginering.cpp:1698
+msgid "Select a Schema..."
+msgstr "Изаберите шему..."
+
+#: dd/ddmodel/ddDBReverseEnginering.cpp:1806
+msgid "Table(s) from selected schema"
+msgstr "Табеле из изабране шеме"
+
+#: dd/ddmodel/ddDBReverseEnginering.cpp:1811
+msgid "Tables(s) to be imported"
+msgstr "Табеле за увоз"
+
+#: dd/ddmodel/ddDBReverseEnginering.cpp:1826
+msgid "Add the selected table(s)"
+msgstr "Додај изабране табеле"
+
+#: dd/ddmodel/ddDBReverseEnginering.cpp:1828
+msgid "Add all tables"
+msgstr "Додај све табеле"
+
+#: dd/ddmodel/ddDBReverseEnginering.cpp:1830
+msgid "Remove the selected table(s)"
+msgstr "Уклони изабране табеле"
+
+#: dd/ddmodel/ddDBReverseEnginering.cpp:1832
+msgid "Remove all tables"
+msgstr "Уклони све табеле"
+
+#: dd/ddmodel/ddDBReverseEnginering.cpp:1981
+msgid "Please, select at least a table to continue to next step."
+msgstr "Изаберите бар једну табелу да бисте наставили на следећи корак."
+
+#: dd/ddmodel/ddDBReverseEnginering.cpp:1981
+msgid "Select some Tables..."
+msgstr "Изаберите неке табеле..."
+
+#: dd/ddmodel/ddDBReverseEnginering.cpp:1997
+msgid "Error when preparing to import table: "
+msgstr "Грешка при припреми увоза табеле: "
+
+#: dd/ddmodel/ddDBReverseEnginering.cpp:2009
+msgid "Prepared to import table: "
+msgstr "Припремљено за увоз табеле: "
+
+#: dd/ddmodel/ddDBReverseEnginering.cpp:2009
+msgid "\n"
+msgstr "\n"
+
+#: dd/ddmodel/ddDBReverseEnginering.cpp:2029
+msgid "Returning to previous dialog will remove all selected tables, do you like to continue?"
+msgstr "Повратак на претходни дијалог уклониће све изабране табеле. Да ли желите да наставите?"
+
+#: dd/ddmodel/ddDBReverseEnginering.cpp:2077
+msgid "Returning to previous dialog will delete imported tables before adding it to the model?"
+msgstr "Повратак на претходни дијалог обрисаће увезене табеле пре њиховог додавања у модел. Наставити?"
+
+#: dd/ddmodel/ddDrawingView.cpp:33
+msgid "Add new Table"
+msgstr "Додај нову табелу"
+
+#: dd/ddmodel/ddDrawingView.cpp:84
+msgid "Table exists already at this diagram"
+msgstr "Табела већ постоји у овом дијаграму"
+
+#: dd/ddmodel/ddDrawingView.cpp:84
+msgid "Drag and drop warning"
+msgstr "Упозорење о превлачењу и испуштању"
+
+#: dd/ddmodel/ddModelBrowser.cpp:39
+msgid "Database Design"
+msgstr "Дизајн базе података"
+
+#: dd/ddmodel/ddGenerationWizard.cpp:99
+msgid "Create table"
+msgstr "Креирај табелу"
+
+#: dd/ddmodel/ddGenerationWizard.cpp:100
+msgid "Alter table"
+msgstr "Измени табелу"
+
+#: dd/ddmodel/ddGenerationWizard.cpp:100
+msgid "Drop, then create"
+msgstr "Обриши, па креирај"
+
+#: dd/ddmodel/ddGenerationWizard.cpp:100
+msgid "Create table [conflict]"
+msgstr "Креирај табелу [сукоб]"
+
+#: dd/ddmodel/ddGenerationWizard.cpp:157
+msgid "Tables(s) to be generated"
+msgstr "Табеле за генерисање"
+
+#: dd/ddmodel/ddGenerationWizard.cpp:369
+msgid "Please select at least one table to move to next step."
+msgstr "Изаберите бар једну табелу да бисте прешли на следећи корак."
+
+#: dd/ddmodel/ddGenerationWizard.cpp:369
+msgid "No tables selected"
+msgstr "Ниједна табела није изабрана"
+
+#: dd/ddmodel/ddGenerationWizard.cpp:396
+msgid "No schema"
+msgstr "Нема шеме"
+
+#: dd/ddmodel/ddGenerationWizard.cpp:415
+msgid "Please select an item to move to next step."
+msgstr "Изаберите ставку да бисте прешли на следећи корак."
+
+#: dd/ddmodel/ddGenerationWizard.cpp:415
+msgid "No choice made"
+msgstr "Избор није направљен"
+
+#: dd/ddmodel/ddGenerationWizard.cpp:528
+msgid "Please check the choice for each table:"
+msgstr "Проверите избор за сваку табелу:"
+
+#: dd/ddmodel/ddGenerationWizard.cpp:555
+msgid "Select an action"
+msgstr "Изаберите радњу"
+
+#: dd/ddmodel/ddGenerationWizard.cpp:580
+msgid "Metadata of table to be generated not found at database designer model"
+msgstr "Метаподаци табеле за генерисање нису пронађени у моделу дизајнера базе података"
+
+#: dd/ddmodel/ddGenerationWizard.cpp:580
+msgid "Error at generation process"
+msgstr "Грешка у процесу генерисања"
+
+#: dd/ddmodel/ddGenerationWizard.cpp:599
+msgid "Error importing at generation process"
+msgstr "Грешка при увозу током процеса генерисања"
+
+#: dd/ddmodel/ddGenerationWizard.cpp:615
+msgid "Going back?"
+msgstr "Враћање назад?"
+
+#: dd/ddmodel/ddDrawingEditor.cpp:87
+msgid "Are you sure you wish to delete table "
+msgstr "Да ли сте сигурни да желите да обришете табелу "
+
+#: dd/ddmodel/ddDrawingEditor.cpp:87
+msgid "Delete table?"
+msgstr "Обрисати табелу?"
+
+#: dd/ddmodel/ddDrawingEditor.cpp:95
+msgid "Are you sure you wish to delete relationship "
+msgstr "Да ли сте сигурни да желите да обришете релацију "
+
+#: dd/ddmodel/ddDrawingEditor.cpp:95
+msgid "Delete relationship?"
+msgstr "Обрисати релацију?"
+
+#: dd/ddmodel/ddDrawingEditor.cpp:114
+msgid "Are you sure you wish to delete %d tables, removing from model related relationships?"
+msgstr "Да ли сте сигурни да желите да обришете %d табела и из модела уклоните повезане релације?"
+
+#: dd/ddmodel/ddDrawingEditor.cpp:115
+msgid "Delete tables?"
+msgstr "Обрисати табеле?"
+
+#: dd/ddmodel/ddDrawingEditor.cpp:165
+msgid "Invalid figure kind found"
+msgstr "Пронађена неисправна врста фигуре"
+
+#: dd/ddmodel/ddDrawingEditor.cpp:165
+msgid "Error while deleting tables"
+msgstr "Грешка при брисању табела"
+
+#: dd/ddmodel/ddDrawingEditor.cpp:188
+msgid "Error while deleting table"
+msgstr "Грешка при брисању табеле"
+
+#: dd/ddmodel/ddDrawingEditor.cpp:223
+msgid "Error while deleting realtionships"
+msgstr "Грешка при брисању релација"
+
+#: dd/ddmodel/ddDatabaseDesign.cpp:142
+msgid "Invalid number of arguments in call of function generate tables of list"
+msgstr "Неисправан број аргумената у позиву функције за генерисање листе табела"
+
+#: dd/ddmodel/ddDatabaseDesign.cpp:162
+msgid "Generating Create sentence(s) for table(s) "
+msgstr "Генерисање Create исказа за табеле: "
+
+#: dd/ddmodel/ddDatabaseDesign.cpp:185
+msgid "Generating Pk sentence for table(s) "
+msgstr "Генерисање Pk исказа за табеле: "
+
+#: dd/ddmodel/ddDatabaseDesign.cpp:201
+msgid "Generating Uk sentence(s) for table(s) "
+msgstr "Генерисање Uk исказа за табеле: "
+
+#: dd/ddmodel/ddDatabaseDesign.cpp:217
+msgid "Generating Fk sentence(s) for table(s) "
+msgstr "Генерисање Fk исказа за табеле: "
+
+#: dd/ddmodel/ddDatabaseDesign.cpp:243
+msgid "No connection found when building ALTER objects DDL."
+msgstr "Веза није пронађена при изградњи DDL-а за ALTER објекте."
+
+#: dd/ddmodel/ddDatabaseDesign.cpp:250
+msgid "Schema defined when building ALTER TABLE DDL"
+msgstr "Шема дефинисана при изградњи DDL-а за ALTER TABLE"
+
+#: dd/ddmodel/ddDatabaseDesign.cpp:257
+msgid "Generating Alter table sentence(s) for table(s) "
+msgstr "Генерисање Alter table исказа за табеле: "
+
+#: dd/ddmodel/ddDatabaseDesign.cpp:527
+msgid "Failed to write the model file!"
+msgstr "Писање датотеке модела није успело!"
+
+#: hotdraw/utilities/hdRemoveDeleteDialog.cpp:117
+msgid "     Choose Remove from Diagram to remove only from current diagram.     "
+msgstr "     Изаберите Уклони из дијаграма да бисте уклонили само из текућег дијаграма.     "
+
+#: hotdraw/utilities/hdRemoveDeleteDialog.cpp:118
+msgid "     Choose Remove from Model to delete permanently.     "
+msgstr "     Изаберите Уклони из модела за трајно брисање.     "
+
+#: hotdraw/main/hdDrawingView.cpp:457
+msgid "Sample Item"
+msgstr "Пример ставке"
+
+#: hotdraw/main/hdDrawingView.cpp:466
+msgid "Sample menu item"
+msgstr "Пример ставке менија"
+
+#: hotdraw/main/hdDrawingView.cpp:466
+msgid "Sample"
+msgstr "Пример"
+
+#: hotdraw/main/hdDrawingEditor.cpp:267
+msgid "Are you sure you wish to delete figure ?"
+msgstr "Да ли сте сигурни да желите да обришете фигуру?"
+
+#: hotdraw/main/hdDrawingEditor.cpp:267
+msgid "Delete figures?"
+msgstr "Обрисати фигуре?"
+
+#: hotdraw/main/hdDrawingEditor.cpp:272
+msgid "Are you sure you wish to delete %d figures?"
+msgstr "Да ли сте сигурни да желите да обришете %d фигура?"
+
+#: dd/dditems/utilities/ddSelectKindFksDialog.cpp:103
+msgid "From Primary"
+msgstr "Из примарног"
+
+#: dd/dditems/utilities/ddSelectKindFksDialog.cpp:110
+msgid "Unique Key: "
+msgstr "Јединствени кључ: "
+
+#: dd/dditems/utilities/ddSelectKindFksDialog.cpp:199
+msgid "Automatically Generated"
+msgstr "Аутоматски генерисано"
+
+#: dd/dditems/figures/ddColumnKindIcon.cpp:62
+msgid "Unique key"
+msgstr "Јединствени кључ"
+
+#: dd/dditems/figures/ddTableFigure.cpp:1178
+msgid "Cannot build an ALTER TABLE statement for a non existing table (%s.%s)."
+msgstr "Није могуће изградити ALTER TABLE исказ за непостојећу табелу (%s.%s)."
+
+#: dd/dditems/figures/ddTableFigure.cpp:1179
+msgid "Error when trying to get table OID"
+msgstr "Грешка при добављању OID-а табеле"
+
+#: dd/dditems/figures/ddTableFigure.cpp:1186
+msgid "Cannot reverse engineering table %s.%s."
+msgstr "Није могуће обрнутим инжењерингом обрадити табелу %s.%s."
+
+#: dd/dditems/figures/ddTableFigure.cpp:1187
+msgid "Error when trying to get stub table"
+msgstr "Грешка при добављању привремене табеле"
+
+#: dd/dditems/figures/ddTableFigure.cpp:1442
+msgid "\" SET NOT NULL;"
+msgstr "\" SET NOT NULL;"
+
+#: dd/dditems/figures/ddTableFigure.cpp:1469
+msgid "Trying to build ALTER sentences"
+msgstr "Покушај изградње ALTER исказа"
+
+#: dd/dditems/figures/ddColumnFigure.cpp:491
+msgid "relation between table: "
+msgstr "релација између табеле: "
+
+#: dd/dditems/figures/ddColumnFigure.cpp:491
+msgid " and table: "
+msgstr " и табеле: "
+
+#: dd/dditems/figures/ddColumnFigure.cpp:492
+msgid " is marked as identifying but user created foreign key column: "
+msgstr " је означена као идентификујућа, али колона страног кључа коју је креирао корисник: "
+
+#: dd/dditems/figures/ddColumnFigure.cpp:493
+msgid " isn't set as primary key \n"
+msgstr " није постављена као примарни кључ \n"
+
+#: dd/dditems/figures/ddColumnFigure.cpp:500
+msgid "relation between table:"
+msgstr "релација између табеле:"
+
+#: dd/dditems/figures/ddColumnFigure.cpp:501
+msgid "is marked as optional but user created foreign key column: "
+msgstr "је означена као опциона, али колона страног кључа коју је креирао корисник: "
+
+#: dd/dditems/figures/ddColumnFigure.cpp:502
+msgid "is set as mandatory \n"
+msgstr "је постављена као обавезна \n"
+
+#: dd/dditems/figures/ddColumnFigure.cpp:510
+msgid " is marked as mandatory but user created foreign key column: "
+msgstr " је означена као обавезна, али колона страног кључа коју је креирао корисник: "
+
+#: dd/dditems/figures/ddColumnFigure.cpp:511
+msgid "is set as optional \n"
+msgstr "је постављена као опциона \n"
+
+#: dd/dditems/figures/ddColumnFigure.cpp:519
+msgid "User created foreign key column: "
+msgstr "Колона страног кључа коју је креирао корисник: "
+
+#: dd/dditems/figures/ddColumnFigure.cpp:519
+msgid "have different datatype from source column of relationship: "
+msgstr "има другачији тип података од изворне колоне релације: "
+
+#: dd/dditems/figures/ddColumnFigure.cpp:520
+msgid " \n"
+msgstr " \n"
+
+#: dd/dditems/figures/ddTextTableItemFigure.cpp:243
+msgid "Varchar size"
+msgstr "Величина varchar"
+
+#: dd/dditems/figures/ddTextTableItemFigure.cpp:244
+msgid "Size for varchar datatype"
+msgstr "Величина за varchar тип података"
+
+#: dd/dditems/figures/ddTextTableItemFigure.cpp:264
+msgid "datatype size"
+msgstr "величина типа података"
+
+#: dd/dditems/figures/ddTextTableItemFigure.cpp:265
+msgid "Size for datatype"
+msgstr "Величина за тип података"
+
+#: dd/dditems/figures/ddTextTableItemFigure.cpp:354
+msgid "Add a column..."
+msgstr "Додај колону..."
+
+#: dd/dditems/figures/ddTextTableItemFigure.cpp:355
+msgid "Delete the selected column..."
+msgstr "Обриши изабрану колону..."
+
+#: dd/dditems/figures/ddTextTableItemFigure.cpp:358
+msgid "Rename the selected column..."
+msgstr "Преименуј изабрану колону..."
+
+#: dd/dditems/figures/ddTextTableItemFigure.cpp:360
+msgid "Activate fk auto-naming..."
+msgstr "Активирај аутоматско именовање fk..."
+
+#: dd/dditems/figures/ddTextTableItemFigure.cpp:362
+msgid "Not NULL constraint"
+msgstr "Ограничење Not NULL"
+
+#: dd/dditems/figures/ddTextTableItemFigure.cpp:373
+msgid "Unique Key"
+msgstr "Јединствени кључ"
+
+#: dd/dditems/figures/ddTextTableItemFigure.cpp:378
+msgid "Column datatype"
+msgstr "Тип података колоне"
+
+#: dd/dditems/figures/ddTextTableItemFigure.cpp:381
+msgid "serial"
+msgstr "serial"
+
+#: dd/dditems/figures/ddTextTableItemFigure.cpp:383
+msgid "boolean"
+msgstr "boolean"
+
+#: dd/dditems/figures/ddTextTableItemFigure.cpp:385
+msgid "integer"
+msgstr "integer"
+
+#: dd/dditems/figures/ddTextTableItemFigure.cpp:387
+msgid "money"
+msgstr "money"
+
+#: dd/dditems/figures/ddTextTableItemFigure.cpp:389
+msgid "varchar(n)"
+msgstr "varchar(n)"
+
+#: dd/dditems/figures/ddTextTableItemFigure.cpp:391
+msgid "Choose another datatype..."
+msgstr "Изабери други тип података..."
+
+#: dd/dditems/figures/ddTextTableItemFigure.cpp:393
+msgid "Primary Key Constraint name..."
+msgstr "Име ограничења примарног кључа..."
+
+#: dd/dditems/figures/ddTextTableItemFigure.cpp:394
+msgid "Unique Key Constraint name..."
+msgstr "Име ограничења јединственог кључа..."
+
+#: dd/dditems/figures/ddTextTableItemFigure.cpp:396
+msgid "Delete table..."
+msgstr "Обриши табелу..."
+
+#: dd/dditems/figures/ddRelationshipFigure.cpp:241
+msgid "Select one"
+msgstr "Изаберите једно"
+
+#: dd/dditems/figures/ddRelationshipFigure.cpp:243
+msgid "Foreign Key From"
+msgstr "Страни кључ из"
+
+#: dd/dditems/figures/ddRelationshipFigure.cpp:264
+msgid "Mandatory relationship kind"
+msgstr "Врста обавезне релације"
+
+#: dd/dditems/figures/ddRelationshipFigure.cpp:266
+msgid "Identifying relationship"
+msgstr "Идентификујућа релација"
+
+#: dd/dditems/figures/ddRelationshipFigure.cpp:269
+msgid "1:M"
+msgstr "1:M"
+
+#: dd/dditems/figures/ddRelationshipFigure.cpp:272
+msgid "Foreign Key Constraint Name"
+msgstr "Име ограничења страног кључа"
+
+#: dd/dditems/figures/ddRelationshipFigure.cpp:275
+msgid "Type Simple"
+msgstr "Тип Simple"
+
+#: dd/dditems/figures/ddRelationshipFigure.cpp:277
+msgid "Type Full"
+msgstr "Тип Full"
+
+#: dd/dditems/figures/ddRelationshipFigure.cpp:279
+msgid "Match Type "
+msgstr "Тип поклапања "
+
+#: dd/dditems/figures/ddRelationshipFigure.cpp:281
+msgid "[ Simple ]"
+msgstr "[ Simple ]"
+
+#: dd/dditems/figures/ddRelationshipFigure.cpp:283
+msgid "[ Full ]"
+msgstr "[ Full ]"
+
+#: dd/dditems/figures/ddRelationshipFigure.cpp:286
+msgid "On Delete "
+msgstr "При брисању "
+
+#: dd/dditems/figures/ddRelationshipFigure.cpp:288
+msgid "No Action"
+msgstr "Без радње"
+
+#: dd/dditems/figures/ddRelationshipFigure.cpp:291
+msgid "[ No Action ]"
+msgstr "[ Без радње ]"
+
+#: dd/dditems/figures/ddRelationshipFigure.cpp:292
+msgid "Restrict"
+msgstr "Ограничи"
+
+#: dd/dditems/figures/ddRelationshipFigure.cpp:295
+msgid "[ Restrict ]"
+msgstr "[ Ограничи ]"
+
+#: dd/dditems/figures/ddRelationshipFigure.cpp:296
+msgid "Cascade"
+msgstr "Каскадно"
+
+#: dd/dditems/figures/ddRelationshipFigure.cpp:299
+msgid "[ Cascade ]"
+msgstr "[ Каскадно ]"
+
+#: dd/dditems/figures/ddRelationshipFigure.cpp:300
+msgid "Set Null"
+msgstr "Постави Null"
+
+#: dd/dditems/figures/ddRelationshipFigure.cpp:303
+msgid "[ Set Null ]"
+msgstr "[ Постави Null ]"
+
+#: dd/dditems/figures/ddRelationshipFigure.cpp:304
+msgid "Set Default"
+msgstr "Постави подразумевано"
+
+#: dd/dditems/figures/ddRelationshipFigure.cpp:307
+msgid "[ Set Default ]"
+msgstr "[ Постави подразумевано ]"
+
+#: dd/dditems/figures/ddRelationshipFigure.cpp:310
+msgid "On Update "
+msgstr "При ажурирању "
+
+#: dd/dditems/figures/ddRelationshipFigure.cpp:335
+msgid "Delete Relationship..."
+msgstr "Обриши релацију..."
+
+#: dd/dditems/figures/ddRelationshipFigure.cpp:452
+msgid "Are you sure you wish to delete relationship between tables %s and %s?"
+msgstr "Да ли сте сигурни да желите да обришете релацију између табела %s и %s?"
+
+#: include/frm/frmReport.h:156
+msgid "&Compare other objects"
+msgstr "&Упореди остале објекте"
+
+#: include/frm/frmReport.h:156
+msgid "Compare other host database select objects."
+msgstr "Упореди изабране објекте базе података на другом хосту."
+
+#: ui/dlgFindReplace.xrc:65
+msgid "All find tabs"
+msgstr "Сви језичци претраге"
+
+#: ui/dlgProJob.xrc:105
+msgid "Run as"
+msgstr "Покрени као"
+
+#: ui/dlgProJob.xrc:195
+msgid "Commands"
+msgstr "Команде"
+
+#: ui/dlgProJob.xrc:234
+msgid "use same transaction"
+msgstr "користи исту трансакцију"
+
+#: ui/dlgServer.xrc:190
+msgid "Select SSL Root Certificate File"
+msgstr "Изаберите корени SSL сертификат"
+
+#: ui/dlgServer.xrc:206
+msgid "Select SSL Certificate Revocation List File"
+msgstr "Изаберите датотеку листе опозваних SSL сертификата"
+
+#: ui/dlgServer.xrc:222
+msgid "Select SSL certificate file"
+msgstr "Изаберите датотеку SSL сертификата"
+
+#: ui/dlgServer.xrc:238
+msgid "Select SSL key file"
+msgstr "Изаберите датотеку SSL кључа"
+
+#: ui/dlgServer.xrc:361
+msgid "Select identity file"
+msgstr "Изаберите датотеку идентитета"
+
+#: ui/dlgServer.xrc:377
+msgid "Select public key file"
+msgstr "Изаберите датотеку јавног кључа"
+
+#: ui/dlgServer.xrc:466
+msgid "Connect str"
+msgstr "Конекциони низ"
+
+#: ui/dlgTransformText.xrc:5
+msgid "Transform text"
+msgstr "Трансформиши текст"
+
+#: ui/dlgTransformText.xrc:17
+msgid "Source text options"
+msgstr "Опције изворног текста"
+
+#: ui/dlgTransformText.xrc:33
+msgid "PCRE regexp"
+msgstr "PCRE регуларни израз"
+
+#: ui/dlgTransformText.xrc:50
+msgid "Replace expression"
+msgstr "Израз за замену"
+
+#: ui/dlgTransformText.xrc:67
+msgid "Rows limit"
+msgstr "Ограничење редова"
+
+#: ui/dlgTransformText.xrc:87
+msgid "Chars limit"
+msgstr "Ограничење знакова"
+
+#: ui/dlgTransformText.xrc:107
+msgid "Refresh highlight"
+msgstr "Освежи истицање"
+
+#: ui/dlgTransformText.xrc:124
+msgid "Source text"
+msgstr "Изворни текст"
+
+#: ui/dlgTransformText.xrc:160
+msgid "Transform text options"
+msgstr "Опције трансформисаног текста"
+
+#: ui/dlgTransformText.xrc:176
+msgid "Append before row"
+msgstr "Додај пре реда"
+
+#: ui/dlgTransformText.xrc:196
+msgid "After row"
+msgstr "После реда"
+
+#: ui/dlgTransformText.xrc:230
+msgid "Field separator"
+msgstr "Раздвојник поља"
+
+#: ui/dlgTransformText.xrc:267
+msgid "Load options"
+msgstr "Опције учитавања"
+
+#: ui/dlgTransformText.xrc:276
+msgid "First"
+msgstr "Први"
+
+#: ui/dlgTransformText.xrc:335
+msgid "Rows loading"
+msgstr "Учитавање редова"
+
+#: ui/frmAwr.xrc:6
+msgid "AWR report"
+msgstr "AWR извештај"
+
+#: ui/frmAwr.xrc:36
+msgid "Type report"
+msgstr "Врста извештаја"
+
+#: ui/frmAwr.xrc:39
+msgid "Report"
+msgstr "Извештај"
+
+#: ui/frmAwr.xrc:40
+msgid "Diff report"
+msgstr "Упоредни извештај"
+
+#: ui/frmAwr.xrc:104
+msgid "Start Id1"
+msgstr "Почетни Id1"
+
+#: ui/frmAwr.xrc:123
+msgid "End Id1"
+msgstr "Крајњи Id1"
+
+#: ui/frmAwr.xrc:166
+msgid "Start Id2"
+msgstr "Почетни Id2"
+
+#: ui/frmAwr.xrc:185
+msgid "End Id2"
+msgstr "Крајњи Id2"
+
+#: ui/frmExport.xrc:110
+msgid "format COPY"
+msgstr "COPY формат"
+
+#: ui/frmExport.xrc:116
+msgid "Xls fmt copy"
+msgstr "Копирање у Xls формату"
+
+#: ui/frmImport.xrc:33
+msgid "Select the file to import"
+msgstr "Изаберите датотеку за увоз"
+
+#: ui/frmOptions.xrc:131
+msgid "Select theme"
+msgstr "Изаберите тему"
+
+#: ui/frmOptions.xrc:154
+msgid "Load"
+msgstr "Учитај"
+
+#: ui/frmOptions.xrc:222
+msgid "Options extended JSON:"
+msgstr "Проширене JSON опције:"
+
+#: ui/frmOptions.xrc:261
+msgid "Beautiful big numbers on the statistics page"
+msgstr "Лепши приказ великих бројева на страници статистике"
+
+#: ui/frmOptions.xrc:272
+msgid "Show the dependencies of functions on tables,views,functions"
+msgstr "Прикажи зависности функција од табела, погледа и функција"
+
+#: ui/frmOptions.xrc:457
+msgid "Show DB name in tree"
+msgstr "Прикажи име базе података у стаблу"
+
+#: ui/frmOptions.xrc:465
+msgid "Quick jump to the root node"
+msgstr "Брзи скок на корени чвор"
+
+#: ui/frmOptions.xrc:635
+msgid "Select utility to format text"
+msgstr "Изаберите алатку за форматирање текста"
+
+#: ui/frmOptions.xrc:645
+msgid "External alignment utlity"
+msgstr "Спољашња алатка за поравнање"
+
+#: ui/frmOptions.xrc:662
+msgid "Enable ASUTP style"
+msgstr "Омогући ASUTP стил"
+
+#: ui/frmOptions.xrc:677
+msgid "Hide query history"
+msgstr "Сакриј историју упита"
+
+#: ui/frmOptions.xrc:692
+msgid "Auto save query text"
+msgstr "Аутоматски сачувај текст упита"
+
+#: ui/frmOptions.xrc:707
+msgid "Use word hints"
+msgstr "Користи савете речи"
+
+#: ui/frmOptions.xrc:722
+msgid "Replace variables in a query"
+msgstr "Замени променљиве у упиту"
+
+#: ui/frmOptions.xrc:821
+msgid "Use system background color caret line"
+msgstr "Користи системску боју позадине за ред са курсором"
+
+#: ui/frmOptions.xrc:876
+msgid "Width for keyboard layout"
+msgstr "Ширина за распоред тастатуре"
+
+#: ui/frmOptions.xrc:1227
+msgid "Select file to store favourites queries"
+msgstr "Изаберите датотеку за чување омиљених упита"
+
+#: ui/frmOptions.xrc:1255
+msgid "Select file to store macros"
+msgstr "Изаберите датотеку за чување макроа"
+
+#: ui/frmOptions.xrc:1283
+msgid "Select file to store queries history"
+msgstr "Изаберите датотеку за чување историје упита"
+
+#: ui/frmOptions.xrc:1388
+msgid "Blocked by Process Colour"
+msgstr "Боја процеса блокираног другим процесом"
+
+#: ui/frmOptions.xrc:1402
+msgid "Idle&in&transaction&session&timeout Process Colour"
+msgstr "Боја процеса Idle&in&transaction&session&timeout"
+
+#: frm/mathplot.cpp:1424
+msgid "Center"
+msgstr "Центрирај"
+
+#: frm/mathplot.cpp:1425
+msgid "Center plot view to this position"
+msgstr "Центрирај приказ графика на ову позицију"
+
+#: frm/mathplot.cpp:1426
+msgid "Fit"
+msgstr "Прилагоди"
+
+#: frm/mathplot.cpp:1426
+msgid "Set plot view to show all items"
+msgstr "Постави приказ графика тако да приказује све ставке"
+
+#: frm/mathplot.cpp:1427
+msgid "Zoom in"
+msgstr "Увећај"
+
+#: frm/mathplot.cpp:1427
+msgid "Zoom in plot view."
+msgstr "Увећај приказ графика."
+
+#: frm/mathplot.cpp:1428
+msgid "Zoom out"
+msgstr "Умањи"
+
+#: frm/mathplot.cpp:1428
+msgid "Zoom out plot view."
+msgstr "Умањи приказ графика."
+
+#: frm/mathplot.cpp:1431
+msgid "Show mouse commands..."
+msgstr "Прикажи команде миша..."
+
+#: frm/mathplot.cpp:1432
+msgid "Show help about the mouse commands."
+msgstr "Прикажи помоћ о командама миша."
+
+#: frm/mathplot.cpp:1935
+msgid "wxMathPlot help"
+msgstr "wxMathPlot помоћ"
+
+#: dd/dditems/figures/xml/ddXmlStorage.cpp:91
+msgid "Error saving model: not source model have been set"
+msgstr "Грешка при чувању модела: изворни модел није постављен"
+
+#: dd/dditems/figures/xml/ddXmlStorage.cpp:123
+msgid "Fatal Error at libxml for figure persistency"
+msgstr "Кобна грешка libxml при трајном чувању фигуре"
+
+#: dd/dditems/figures/xml/ddXmlStorage.cpp:624
+msgid "Model is not following embedded DTD definition, check it.\n"
+msgstr "Модел не прати уграђену DTD дефиницију, проверите га.\n"
+
+#: dd/dditems/figures/xml/ddXmlStorage.cpp:656
+msgid "Failed to load document from disk"
+msgstr "Учитавање документа са диска није успело"
+
+#: dd/dditems/figures/xml/ddXmlStorage.cpp:754
+msgid "Invalid version of XML file for pgAdmin database designer found"
+msgstr "Пронађена неисправна верзија XML датотеке за дизајнера база података pgAdmin"
+
+#: dd/dditems/figures/xml/ddXmlStorage.cpp:754
+msgid "Invalid XML"
+msgstr "Неисправан XML"
+
+#: dd/dditems/figures/xml/ddXmlStorage.cpp:1054
+msgid "Table initial metadata info not found"
+msgstr "Почетни метаподаци табеле нису пронађени"
+
+#: frm/frmOptions.cpp:1
+msgid "Appearance"
+msgstr "Изглед"
+
+#: frm/frmOptions.cpp:2
+msgid "Automatic"
+msgstr "Аутоматски"
+
+#: frm/frmOptions.cpp:3
+msgid "Light"
+msgstr "Светла"
+
+#: frm/frmOptions.cpp:4
+msgid "Dark"
+msgstr "Тамна"
+
+#: frm/frmOptions.cpp:5
+msgid "Restart pgAdmin III to fully apply the appearance change."
+msgstr "Поново покрените pgAdmin III да бисте у потпуности применили промену изгледа."

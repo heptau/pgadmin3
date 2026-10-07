@@ -25457,3 +25457,1759 @@ msgstr "|"
 
 #~ msgid "?"
 #~ msgstr "?"
+
+#: pgAdmin3.cpp:389
+msgid "open server log window"
+msgstr "otevřít okno protokolu serveru"
+
+#: pgAdmin3.cpp:403
+msgid "export servers configuration to file pgadmin3.ini"
+msgstr "exportovat konfiguraci serverů do souboru pgadmin3.ini"
+
+#: pgAdmin3.cpp:404
+msgid "Enable Dark mode"
+msgstr "Povolit tmavý režim"
+
+#: pgAdmin3.cpp:1013
+msgid "Log - "
+msgstr "Protokol - "
+
+#: ctl/ctlTreeJSON.cpp:73
+msgid "Please enter find string\n"
+msgstr "Zadejte hledaný řetězec\n"
+
+#: ctl/ctlSQLGrid.cpp:993
+msgid "The line size is [ %s ] characters, do you want to continue?"
+msgstr "Délka řádku je [ %s ] znaků, chcete pokračovat?"
+
+#: ctl/ctlSQLBox.cpp:1426
+msgid "All line (use all EOL)"
+msgstr "Všechny řádky (použít všechny EOL)"
+
+#: ctl/ctlSQLBox.cpp:1427
+msgid "First line pattern (ignore all but the first EOL)"
+msgstr "Vzor prvního řádku (ignorovat všechny EOL kromě prvního)"
+
+#: ctl/ctlSQLBox.cpp:1428
+msgid "Try looking for patterns above"
+msgstr "Zkusit hledat vzory výše"
+
+#: ctl/ctlSQLBox.cpp:1429
+msgid "Compact view"
+msgstr "Kompaktní zobrazení"
+
+#: ctl/ctlSQLBox.cpp:1430
+msgid "Remove multi spaces"
+msgstr "Odstranit vícenásobné mezery"
+
+#: ctl/ctlSQLBox.cpp:1432
+msgid "A multi-choice convenience dialog"
+msgstr "Dialog s výběrem více možností"
+
+#: ctl/ctlSQLBox.cpp:1433
+msgid "Please select several align options"
+msgstr "Vyberte prosím několik voleb zarovnání"
+
+#: ctl/ctlSQLBox.cpp:1459
+msgid "Aligning complete."
+msgstr "Zarovnání dokončeno."
+
+#: ctl/ctlSQLBox.cpp:1476
+msgid "Formatting Ok"
+msgstr "Formátování v pořádku"
+
+#: ctl/ctlSQLBox.cpp:1500
+msgid "Couldn't run aligning command: "
+msgstr "Nelze spustit příkaz zarovnání: "
+
+#: ctl/ctlSQLBox.cpp:1522
+msgid "Aligning command did not respond in %d ms"
+msgstr "Příkaz zarovnání neodpověděl do %d ms"
+
+#: ctl/ctlSQLBox.cpp:1534
+msgid "Aligning command error: Output is empty."
+msgstr "Chyba příkazu zarovnání: výstup je prázdný."
+
+#: ctl/ctlListView.cpp:63
+msgid "CFS fragmentation"
+msgstr "Fragmentace CFS"
+
+#: ctl/ctlListView.cpp:70
+msgid "CFS %"
+msgstr "CFS %"
+
+#: ctl/ctlNavigatePanel.cpp:46
+msgid "Search for a simple string."
+msgstr "Hledat jednoduchý řetězec."
+
+#: ctl/ctlNavigatePanel.cpp:50
+msgid "Go to the next marker."
+msgstr "Přejít na další značku."
+
+#: ctl/ctlNavigatePanel.cpp:56
+msgid "Go to the next marker of the same type."
+msgstr "Přejít na další značku stejného typu."
+
+#: ctl/ctlNavigatePanel.cpp:61
+msgid "The next occurrence of the string."
+msgstr "Další výskyt řetězce."
+
+#: ctl/ctlNavigatePanel.cpp:66
+msgid "Previous occurrence of the string."
+msgstr "Předchozí výskyt řetězce."
+
+#: ctl/ctlNavigatePanel.cpp:71
+msgid "Find all strings content current row Pid."
+msgstr "Najít všechny řetězce obsahující Pid aktuálního řádku."
+
+#: ctl/ctlNavigatePanel.cpp:76
+msgid "Find all strings content current row State."
+msgstr "Najít všechny řetězce obsahující State aktuálního řádku."
+
+#: ctl/ctlNavigatePanel.cpp:81
+msgid "Enable/disable auto hint."
+msgstr "Zapnout/vypnout automatickou nápovědu."
+
+#: ctl/ctlNavigatePanel.cpp:309
+msgid "Incorrect hotkey \"%s\" for command \"%s\""
+msgstr "Nesprávná klávesová zkratka \"%s\" pro příkaz \"%s\""
+
+#: ctl/ctlSQLResult.cpp:390
+msgid "Incorrect flag at the '%s' column."
+msgstr "Nesprávný příznak ve sloupci '%s'."
+
+#: ctl/ctlSQLResult.cpp:412
+msgid "The column name empty. '%s' ."
+msgstr "Název sloupce je prázdný. '%s' ."
+
+#: ctl/ctlSQLResult.cpp:418
+msgid "The column name '%s' was not found in the query results."
+msgstr "Sloupec '%s' nebyl ve výsledcích dotazu nalezen."
+
+#: ctl/ctlSQLResult.cpp:442
+msgid "The column name  '%s' is not closed."
+msgstr "Název sloupce '%s' není uzavřen."
+
+#: dlg/dlgForeignTable.cpp:169
+msgid "Type %s not found in cbDatatype(%d)\n"
+msgstr "Typ %s nebyl nalezen v cbDatatype(%d)\n"
+
+#: pro_scheduler/pgproJob.cpp:36
+msgid "Retrieving details on pro_scheduler job"
+msgstr "Získávají se podrobnosti o úloze pro_scheduler"
+
+#: pro_scheduler/pgproJob.cpp:39
+msgid "Refreshing pro_scheduler job"
+msgstr "Obnovuje se úloha pro_scheduler"
+
+#: pro_scheduler/pgproJob.cpp:42
+msgid "pro_scheduler job properties report"
+msgstr "Zpráva o vlastnostech úlohy pro_scheduler"
+
+#: pro_scheduler/pgproJob.cpp:48
+msgid "pro_scheduler job DDL report"
+msgstr "Zpráva o DDL úlohy pro_scheduler"
+
+#: pro_scheduler/pgproJob.cpp:51
+msgid "pro_scheduler job dependencies report"
+msgstr "Zpráva o závislostech úlohy pro_scheduler"
+
+#: pro_scheduler/pgproJob.cpp:54
+msgid "pro_scheduler job dependencies"
+msgstr "Závislosti úlohy pro_scheduler"
+
+#: pro_scheduler/pgproJob.cpp:57
+msgid "pro_scheduler job dependents report"
+msgstr "Zpráva o závislých objektech úlohy pro_scheduler"
+
+#: pro_scheduler/pgproJob.cpp:60
+msgid "pro_scheduler job dependents"
+msgstr "Závislé objekty úlohy pro_scheduler"
+
+#: pro_scheduler/pgproJob.cpp:140
+msgid "Started"
+msgstr "Spuštěno"
+
+#: pro_scheduler/pgproJob.cpp:141
+msgid "Finished"
+msgstr "Dokončeno"
+
+#: pro_scheduler/pgproJob.cpp:143
+msgid "Crontab"
+msgstr "Crontab"
+
+#: pro_scheduler/pgproJob.cpp:146
+msgid "Runas"
+msgstr "Spustit jako"
+
+#: pro_scheduler/pgproJob.cpp:152
+msgid "Next start job"
+msgstr "Další spuštění úlohy"
+
+#: pro_scheduler/pgproJob.cpp:185
+msgid "Previous sched time run skip"
+msgstr "Předchozí naplánovaný čas, spuštění přeskočeno"
+
+#: pro_scheduler/pgproJob.cpp:254
+msgid "Not run"
+msgstr "Nespuštěno"
+
+#: pro_scheduler/pgproJob.cpp:356
+msgid "Log_time"
+msgstr "Čas_protokolu"
+
+#: pro_scheduler/pgproJob.cpp:357
+msgid "Critical"
+msgstr "Kritické"
+
+#: pro_scheduler/pgproJob.cpp:359
+msgid "Stage"
+msgstr "Fáze"
+
+#: pro_scheduler/pgproJob.cpp:505
+msgid "Enabled or disabled job"
+msgstr "Úloha povolena nebo zakázána"
+
+#: utils/misc.cpp:201
+msgid "Bi"
+msgstr "mld"
+
+#: utils/misc.cpp:202
+msgid "Mi"
+msgstr "mil"
+
+#: utils/misc.cpp:203
+msgid "ths"
+msgstr "tis"
+
+#: utils/FunctionPGHelper.cpp:238
+msgid "'The database is closed in the object browser.'"
+msgstr "'Databáze je v prohlížeči objektů zavřena.'"
+
+#: utils/dlgTransformText.cpp:76
+msgid "Transformation text"
+msgstr "Transformace textu"
+
+#: utils/macros.cpp:272
+msgid "Failed to load AutoReplace file!"
+msgstr "Nepodařilo se načíst soubor AutoReplace!"
+
+#: utils/macros.cpp:279
+msgid "Failed to read AutoReplace file!"
+msgstr "Nepodařilo se přečíst soubor AutoReplace!"
+
+#: utils/macros.cpp:298
+msgid "Failed to open AutoReplace file!"
+msgstr "Nepodařilo se otevřít soubor AutoReplace!"
+
+#: utils/macros.cpp:306
+msgid "Failed to write to AutoReplace file!"
+msgstr "Nepodařilo se zapsat do souboru AutoReplace!"
+
+#: utils/sysSettings.cpp:95
+msgid "pgpro_scheduler"
+msgstr "pgpro_scheduler"
+
+#: utils/sysSettings.cpp:139
+msgid "Publications"
+msgstr "Publikace"
+
+#: utils/sshTunnel.cpp:618
+msgid " [%s]"
+msgstr " [%s]"
+
+#: frm/frmEditGrid.cpp:3383
+msgid "View F&iltered Rows...\tCtrl-F"
+msgstr "Zobrazit &filtrované řádky...\tCtrl-F"
+
+#: frm/frmEditGrid.cpp:3384
+msgid "View Filtered Rows\tCtrl-F"
+msgstr "Zobrazit filtrované řádky\tCtrl-F"
+
+#: frm/frmQuery.cpp:384
+msgid "New SQL &tab\tCtrl-T"
+msgstr "Nová &karta SQL\tCtrl-T"
+
+#: frm/frmQuery.cpp:384
+msgid "Open a new query tab"
+msgstr "Otevřít novou kartu dotazu"
+
+#: frm/frmQuery.cpp:387
+msgid "&Export...\tAlt+E"
+msgstr "&Exportovat...\tAlt+E"
+
+#: frm/frmQuery.cpp:422
+msgid "Double the single quote\tCtrl-'"
+msgstr "Zdvojit jednoduchý apostrof\tCtrl-'"
+
+#: frm/frmQuery.cpp:422
+msgid "Double the single quote"
+msgstr "Zdvojit jednoduchý apostrof"
+
+#: frm/frmQuery.cpp:423
+msgid "Undouble the single quote\tCtrl-Shift-'"
+msgstr "Zrušit zdvojení jednoduchého apostrofu\tCtrl-Shift-'"
+
+#: frm/frmQuery.cpp:423
+msgid "Undouble the single quote"
+msgstr "Zrušit zdvojení jednoduchého apostrofu"
+
+#: frm/frmQuery.cpp:426
+msgid "External Align...\tCtrl-Shift-A"
+msgstr "Externí zarovnání...\tCtrl-Shift-A"
+
+#: frm/frmQuery.cpp:426
+msgid "Call external align command"
+msgstr "Zavolat externí příkaz zarovnání"
+
+#: frm/frmQuery.cpp:429
+msgid "Manage autoreplace..."
+msgstr "Spravovat automatické nahrazování..."
+
+#: frm/frmQuery.cpp:429
+msgid "Edit and delete autoreplace strings"
+msgstr "Upravit a odstranit řetězce automatického nahrazování"
+
+#: frm/frmQuery.cpp:430
+msgid "Open object\tF4"
+msgstr "Otevřít objekt\tF4"
+
+#: frm/frmQuery.cpp:430
+msgid "Open object in brouser tree"
+msgstr "Otevřít objekt ve stromu prohlížeče"
+
+#: frm/frmQuery.cpp:431
+msgid "Text transform...\tCtrl+M"
+msgstr "Transformace textu...\tCtrl+M"
+
+#: frm/frmQuery.cpp:431
+msgid "Open dialog transform"
+msgstr "Otevřít dialog transformace"
+
+#: frm/frmQuery.cpp:438
+msgid "&Execute\tF8"
+msgstr "&Spustit\tF8"
+
+#: frm/frmQuery.cpp:439
+msgid "&Execute new output\tShift-F8"
+msgstr "&Spustit do nového výstupu\tShift-F8"
+
+#: frm/frmQuery.cpp:439
+msgid "Execute query in new output"
+msgstr "Spustit dotaz do nového výstupu"
+
+#: frm/frmQuery.cpp:441
+msgid "Execute to file\tF5"
+msgstr "Spustit do souboru\tF5"
+
+#: frm/frmQuery.cpp:456
+msgid "&Auto-Select"
+msgstr "&Automatický výběr"
+
+#: frm/frmQuery.cpp:456
+msgid "Auto select query"
+msgstr "Automatický výběr dotazu"
+
+#: frm/frmQuery.cpp:462
+msgid "Commit\tF10"
+msgstr "Potvrdit\tF10"
+
+#: frm/frmQuery.cpp:463
+msgid "Rollback\tShift-F10"
+msgstr "Vrátit zpět\tShift-F10"
+
+#: frm/frmQuery.cpp:617
+msgid "New SQL tab"
+msgstr "Nová karta SQL"
+
+#: frm/frmQuery.cpp:624
+msgid "Compare the selected text with the clipboard"
+msgstr "Porovnat vybraný text se schránkou"
+
+#: frm/frmQuery.cpp:646
+msgid "Mode transaction"
+msgstr "Režim transakce"
+
+#: frm/frmQuery.cpp:2245
+msgid "Copy Insert format"
+msgstr "Kopírovat ve formátu Insert"
+
+#: frm/frmQuery.cpp:2245
+msgid "Copy Insert format."
+msgstr "Kopírovat ve formátu Insert."
+
+#: frm/frmQuery.cpp:2246
+msgid "List columns header"
+msgstr "Seznam záhlaví sloupců"
+
+#: frm/frmQuery.cpp:2246
+msgid "Copy list columns header"
+msgstr "Kopírovat seznam záhlaví sloupců"
+
+#: frm/frmQuery.cpp:2247
+msgid "IN list format copy"
+msgstr "Kopírovat ve formátu seznamu IN"
+
+#: frm/frmQuery.cpp:2247
+msgid "Copy In list format."
+msgstr "Kopírovat ve formátu seznamu IN."
+
+#: frm/frmQuery.cpp:2248
+msgid "WHERE list format copy"
+msgstr "Kopírovat ve formátu seznamu WHERE"
+
+#: frm/frmQuery.cpp:2248
+msgid "Copy where list format."
+msgstr "Kopírovat ve formátu seznamu WHERE."
+
+#: frm/frmQuery.cpp:2249
+msgid "Copy table html format"
+msgstr "Kopírovat tabulku ve formátu HTML"
+
+#: frm/frmQuery.cpp:2249
+msgid "Copy table html format."
+msgstr "Kopírovat tabulku ve formátu HTML."
+
+#: frm/frmQuery.cpp:2269
+msgid "Draw plot LY(bar) or LXY or XYYY..."
+msgstr "Nakreslit graf LY (sloupcový) nebo LXY nebo XYYY..."
+
+#: frm/frmQuery.cpp:2269
+msgid "Draw plot LY(bar) LXY or XYYY..."
+msgstr "Nakreslit graf LY (sloupcový), LXY nebo XYYY..."
+
+#: frm/frmQuery.cpp:2270
+msgid "Summary"
+msgstr "Souhrn"
+
+#: frm/frmQuery.cpp:2270
+msgid "Summary selected cells."
+msgstr "Souhrn vybraných buněk."
+
+#: frm/frmQuery.cpp:2271
+msgid "Compare 2 Cells"
+msgstr "Porovnat 2 buňky"
+
+#: frm/frmQuery.cpp:2271
+msgid "Compare 2 selected cells."
+msgstr "Porovnat 2 vybrané buňky."
+
+#: frm/frmQuery.cpp:2272
+msgid "Check the sequence of dates"
+msgstr "Zkontrolovat posloupnost dat"
+
+#: frm/frmQuery.cpp:2273
+msgid "Clear filter"
+msgstr "Zrušit filtr"
+
+#: frm/frmQuery.cpp:2333
+msgid "No template generate."
+msgstr "Nebyla vygenerována žádná šablona."
+
+#: frm/frmQuery.cpp:2558
+msgid "%i@"
+msgstr "%i@"
+
+#: frm/frmQuery.cpp:3070
+msgid "Out %i"
+msgstr "Výstup %i"
+
+#: frm/frmQuery.cpp:3413
+msgid "-- Executing query [%s]:[%s]\n"
+msgstr "-- Provádí se dotaz [%s]:[%s]\n"
+
+#: frm/frmQuery.cpp:4241
+msgid "Running aligning command..."
+msgstr "Spouští se příkaz zarovnání..."
+
+#: frm/frmQuery.cpp:4471
+msgid "outputPane"
+msgstr "outputPane"
+
+#: frm/frmQuery.cpp:4491
+msgid "Output pane [%s]"
+msgstr "Výstupní panel [%s]"
+
+#: frm/frmQuery.cpp:4597
+msgid "Cannot change to selected SQL tab now. Try again a bit later."
+msgstr "Nyní nelze přepnout na vybranou kartu SQL. Zkuste to znovu za chvíli."
+
+#: frm/frmQuery.cpp:4620
+msgid "Cannot add a new SQL tab now. Try again a bit later."
+msgstr "Nyní nelze přidat novou kartu SQL. Zkuste to znovu za chvíli."
+
+#: frm/frmQuery.cpp:4689
+msgid "Please enter name string with prefix dbname or description server\n"
+msgstr "Zadejte řetězec názvu s prefixem názvu databáze nebo popisem serveru\n"
+
+#: frm/frmQuery.cpp:4691
+msgid "Name autosave tab window."
+msgstr "Název okna karty pro automatické uložení."
+
+#: frm/frmQuery.cpp:4717
+msgid "Cannot remove the last SQL tab"
+msgstr "Nelze odebrat poslední kartu SQL"
+
+#: frm/frmQuery.cpp:4797
+msgid "Query %d"
+msgstr "Dotaz %d"
+
+#: frm/frmQuery.cpp:5148
+msgid "Script Recreate Cascade"
+msgstr "Skript pro opětovné vytvoření kaskádově"
+
+#: frm/frmQuery.cpp:5148
+msgid "Start query tool with recreate cascade script."
+msgstr "Spustit nástroj dotazů se skriptem pro opětovné vytvoření kaskádově."
+
+#: frm/frmOptions.cpp:61
+msgid "PgAdmin3opt settings"
+msgstr "Nastavení PgAdmin3opt"
+
+#: frm/frmOptions.cpp:615
+msgid "Color theme save to file %s"
+msgstr "Barevný motiv uložen do souboru %s"
+
+#: frm/frmOptions.cpp:637
+msgid "Color theme load from file %s"
+msgstr "Barevný motiv načten ze souboru %s"
+
+#: frm/frmOptions.cpp:638
+msgid "Load theme"
+msgstr "Načíst motiv"
+
+#: frm/frmOptions.cpp:1208
+msgid "&Options...\tCtrl-O"
+msgstr "&Volby...\tCtrl-O"
+
+#: frm/frmStatus.cpp:282
+msgid "&Wait trace"
+msgstr "&Trasování čekání"
+
+#: frm/frmStatus.cpp:282
+msgid "Enable the wait event."
+msgstr "Povolit událost čekání."
+
+#: frm/frmStatus.cpp:283
+msgid "&Wait event save"
+msgstr "&Uložení událostí čekání"
+
+#: frm/frmStatus.cpp:283
+msgid "Enable the wait event save to file sample.dat."
+msgstr "Povolit ukládání událostí čekání do souboru sample.dat."
+
+#: frm/frmStatus.cpp:320
+msgid "Value parameter pg_wait_sampling.history_size = %ld greet 1000000  monitoring wait events disabled.\n"
+msgstr "Hodnota parametru pg_wait_sampling.history_size = %ld je větší než 1000000, sledování událostí čekání je zakázáno.\n"
+
+#: frm/frmStatus.cpp:383
+msgid "&Query state\tCtrl-Alt-Q"
+msgstr "&Stav dotazu\tCtrl-Alt-Q"
+
+#: frm/frmStatus.cpp:383
+msgid "Show or hide the query state tab."
+msgstr "Zobrazit nebo skrýt kartu stavu dotazu."
+
+#: frm/frmStatus.cpp:385
+msgid "Append verbose"
+msgstr "Přidat podrobný výpis"
+
+#: frm/frmStatus.cpp:386
+msgid "Append use buffers"
+msgstr "Přidat použití vyrovnávacích pamětí"
+
+#: frm/frmStatus.cpp:387
+msgid "Append real timing"
+msgstr "Přidat skutečné časování"
+
+#: frm/frmStatus.cpp:388
+msgid "Append triggers"
+msgstr "Přidat triggery"
+
+#: frm/frmStatus.cpp:396
+msgid "&Wait"
+msgstr "&Čekání"
+
+#: frm/frmStatus.cpp:436
+msgid "Highlight items only"
+msgstr "Zvýraznit pouze položky"
+
+#: frm/frmStatus.cpp:517
+msgid "QueryState"
+msgstr "StavDotazu"
+
+#: frm/frmStatus.cpp:853
+msgid "W_Event_T"
+msgstr "W_Event_T"
+
+#: frm/frmStatus.cpp:854
+msgid "W_Event"
+msgstr "W_Event"
+
+#: frm/frmStatus.cpp:1112
+msgid "Query State"
+msgstr "Stav dotazu"
+
+#: frm/frmStatus.cpp:1126
+msgid "Query Text"
+msgstr "Text dotazu"
+
+#: frm/frmStatus.cpp:1127
+msgid "Plan"
+msgstr "Plán"
+
+#: frm/frmStatus.cpp:1251
+msgid "Functions pg_read_binary_file(text,bigint,bigint,boolean), pg_stat_file(text,boolean),pg_ls_logdir()  permission denied."
+msgstr "Funkce pg_read_binary_file(text,bigint,bigint,boolean), pg_stat_file(text,boolean),pg_ls_logdir() - přístup odepřen."
+
+#: frm/frmStatus.cpp:1716
+msgid "Activity query long execute"
+msgstr "Aktivita dlouho běžícího dotazu"
+
+#: frm/frmStatus.cpp:2634
+msgid "Query state status long execute"
+msgstr "Stav dlouho běžícího dotazu"
+
+#: frm/frmStatus.cpp:2670
+msgid "Refreshing query state list."
+msgstr "Obnovuje se seznam stavů dotazů."
+
+#: frm/frmStatus.cpp:2959
+msgid "Wait..."
+msgstr "Čekání..."
+
+#: frm/frmStatus.cpp:4807
+msgid "&Server Status\tCtrl-S"
+msgstr "&Stav serveru\tCtrl-S"
+
+#: frm/frmPlot.cpp:120
+msgid "Lock aspect"
+msgstr "Zamknout poměr"
+
+#: frm/frmPlot.cpp:120
+msgid "Lock horizontal and vertical zoom aspect."
+msgstr "Zamknout poměr vodorovného a svislého přiblížení."
+
+#: frm/frmPlot.cpp:442
+msgid "Save a screenshot"
+msgstr "Uložit snímek obrazovky"
+
+#: frm/frmLog.cpp:1314
+msgid "Log view..."
+msgstr "Zobrazení protokolu..."
+
+#: frm/frmLog.cpp:1314
+msgid "Log view CSV format"
+msgstr "Zobrazení protokolu ve formátu CSV"
+
+#: frm/frmMain.cpp:200
+msgid "Git"
+msgstr "Git"
+
+#: frm/frmMain.cpp:472
+msgid "&Server"
+msgstr "&Server"
+
+#: frm/frmMain.cpp:472
+msgid "Server menu commands."
+msgstr "Příkazy nabídky serveru."
+
+#: frm/frmMain.cpp:1187
+msgid "Create putty tunnel error."
+msgstr "Chyba při vytváření tunelu putty."
+
+#: frm/frmAwr.cpp:33
+msgid "Report AWR"
+msgstr "Zpráva AWR"
+
+#: frm/frmAwr.cpp:33
+msgid "Generate AWR report"
+msgstr "Vygenerovat zprávu AWR"
+
+#: schema/pgServer.cpp:1253
+msgid "Key words"
+msgstr "Klíčová slova"
+
+#: schema/pgServer.cpp:1338
+msgid "Add connect str"
+msgstr "Přidat připojovací řetězec"
+
+#: schema/pgServer.cpp:2264
+msgid "&Set keywords"
+msgstr "&Nastavit klíčová slova"
+
+#: schema/pgServer.cpp:2264
+msgid "Set keywords list the selected server."
+msgstr "Nastavit seznam klíčových slov pro vybraný server."
+
+#: schema/pgServer.cpp:2273
+msgid "Please enter keywords\n"
+msgstr "Zadejte klíčová slova\n"
+
+#: schema/pgServer.cpp:2275
+msgid "Keywords server"
+msgstr "Klíčová slova serveru"
+
+#: schema/pgServer.cpp:2374
+msgid "Disconnec&t all servers"
+msgstr "Odpojit &všechny servery"
+
+#: schema/pgServer.cpp:2374
+msgid "Disconnect from all servers."
+msgstr "Odpojit se od všech serverů."
+
+#: schema/pgIndex.cpp:499
+msgid "Check Btree index"
+msgstr "Zkontrolovat index Btree"
+
+#: schema/pgIndex.cpp:499
+msgid "Check Btree index function bt_index_parent_check(oid,true)"
+msgstr "Kontrola indexu Btree funkcí bt_index_parent_check(oid,true)"
+
+#: schema/pgIndex.cpp:568
+msgid "&Reset index statistics"
+msgstr "&Resetovat statistiky indexu"
+
+#: schema/pgIndex.cpp:568
+msgid "Reset statistics of the selected index."
+msgstr "Resetovat statistiky vybraného indexu."
+
+#: schema/pgIndex.cpp:574
+msgid "Are you sure you wish to reset statistics of this index?"
+msgstr "Opravdu si přejete resetovat statistiky tohoto indexu?"
+
+#: schema/pgSubscription.cpp:33
+msgid "Retrieving details on subscription"
+msgstr "Získávají se podrobnosti o odběru"
+
+#: schema/pgSubscription.cpp:37
+msgid "Refreshing subscription"
+msgstr "Obnovuje se odběr"
+
+#: schema/pgSubscription.cpp:41
+msgid "Are you sure you wish to drop subscription \"%s\" including all objects that depend on it?"
+msgstr "Opravdu si přejete odstranit odběr \"%s\" včetně všech objektů, které na něm závisejí?"
+
+#: schema/pgSubscription.cpp:45
+msgid "Are you sure you wish to drop subscription \"%s\"?"
+msgstr "Opravdu si přejete odstranit odběr \"%s\"?"
+
+#: schema/pgSubscription.cpp:49
+msgid "Drop subscription cascaded?"
+msgstr "Odstranit odběr kaskádově?"
+
+#: schema/pgSubscription.cpp:52
+msgid "Drop subscription?"
+msgstr "Odstranit odběr?"
+
+#: schema/pgSubscription.cpp:55
+msgid "Subscription properties report"
+msgstr "Zpráva o vlastnostech odběru"
+
+#: schema/pgSubscription.cpp:59
+msgid "Subscription properties"
+msgstr "Vlastnosti odběru"
+
+#: schema/pgSubscription.cpp:62
+msgid "Subscription DDL report"
+msgstr "Zpráva o DDL odběru"
+
+#: schema/pgSubscription.cpp:66
+msgid "Subscription DDL"
+msgstr "DDL odběru"
+
+#: schema/pgSubscription.cpp:69
+msgid "Subscription dependencies report"
+msgstr "Zpráva o závislostech odběru"
+
+#: schema/pgSubscription.cpp:73
+msgid "Subscription dependencies"
+msgstr "Závislosti odběru"
+
+#: schema/pgSubscription.cpp:76
+msgid "Subscription dependents report"
+msgstr "Zpráva o závislých objektech odběru"
+
+#: schema/pgSubscription.cpp:80
+msgid "Subscription dependents"
+msgstr "Závislé objekty odběru"
+
+#: schema/pgSubscription.cpp:210
+msgid "Retrieving details on subscriptions"
+msgstr "Získávají se podrobnosti o odběrech"
+
+#: schema/pgSubscription.cpp:213
+msgid "Refreshing subscriptions"
+msgstr "Obnovují se odběry"
+
+#: schema/pgSubscription.cpp:216
+msgid "Subscriptions list report"
+msgstr "Zpráva o seznamu odběrů"
+
+#: schema/pgPublication.cpp:33
+msgid "Retrieving details on publication"
+msgstr "Získávají se podrobnosti o publikaci"
+
+#: schema/pgPublication.cpp:37
+msgid "Refreshing publication"
+msgstr "Obnovuje se publikace"
+
+#: schema/pgPublication.cpp:41
+msgid "Are you sure you wish to drop publication \"%s\" including all objects that depend on it?"
+msgstr "Opravdu si přejete odstranit publikaci \"%s\" včetně všech objektů, které na ní závisejí?"
+
+#: schema/pgPublication.cpp:45
+msgid "Are you sure you wish to drop publication \"%s\"?"
+msgstr "Opravdu si přejete odstranit publikaci \"%s\"?"
+
+#: schema/pgPublication.cpp:49
+msgid "Drop publication cascaded?"
+msgstr "Odstranit publikaci kaskádově?"
+
+#: schema/pgPublication.cpp:52
+msgid "Drop publication?"
+msgstr "Odstranit publikaci?"
+
+#: schema/pgPublication.cpp:55
+msgid "Publication properties report"
+msgstr "Zpráva o vlastnostech publikace"
+
+#: schema/pgPublication.cpp:59
+msgid "Publication properties"
+msgstr "Vlastnosti publikace"
+
+#: schema/pgPublication.cpp:62
+msgid "Publication DDL report"
+msgstr "Zpráva o DDL publikace"
+
+#: schema/pgPublication.cpp:66
+msgid "Publication DDL"
+msgstr "DDL publikace"
+
+#: schema/pgPublication.cpp:69
+msgid "Publication dependencies report"
+msgstr "Zpráva o závislostech publikace"
+
+#: schema/pgPublication.cpp:73
+msgid "Publication dependencies"
+msgstr "Závislosti publikace"
+
+#: schema/pgPublication.cpp:76
+msgid "Publication dependents report"
+msgstr "Zpráva o závislých objektech publikace"
+
+#: schema/pgPublication.cpp:80
+msgid "Publication dependents"
+msgstr "Závislé objekty publikace"
+
+#: schema/pgPublication.cpp:318
+msgid "Retrieving details on publications"
+msgstr "Získávají se podrobnosti o publikacích"
+
+#: schema/pgPublication.cpp:321
+msgid "Refreshing publications"
+msgstr "Obnovují se publikace"
+
+#: schema/pgPublication.cpp:324
+msgid "Publications list report"
+msgstr "Zpráva o seznamu publikací"
+
+#: schema/pgTable.cpp:1096
+msgid "Create table timestamp"
+msgstr "Čas vytvoření tabulky"
+
+#: schema/pgObject.cpp:621
+msgid "extension"
+msgstr "rozšíření"
+
+#: schema/pgFunction.cpp:410
+msgid "Parallel"
+msgstr "Paralelně"
+
+#: schema/pgFunction.cpp:426
+msgid "Last change timestamp"
+msgstr "Čas poslední změny"
+
+#: dd/ddmodel/ddDBReverseEnginering.cpp:175
+msgid "Schema not found"
+msgstr "Schéma nebylo nalezeno"
+
+#: dd/ddmodel/ddDBReverseEnginering.cpp:175
+msgid "getting table OID"
+msgstr "zjišťuje se OID tabulky"
+
+#: dd/ddmodel/ddDBReverseEnginering.cpp:216
+msgid "Table not found"
+msgstr "Tabulka nebyla nalezena"
+
+#: dd/ddmodel/ddDBReverseEnginering.cpp:665
+msgid "Error detecting kind of foreign key source: from Pk or from Uk"
+msgstr "Chyba při zjišťování druhu zdroje cizího klíče: z PK nebo z UK"
+
+#: dd/ddmodel/ddDBReverseEnginering.cpp:665
+msgid "Error importing relationship"
+msgstr "Chyba při importu vztahu"
+
+#: dd/ddmodel/ddDBReverseEnginering.cpp:786
+msgid "Error detecting kind of foreign key: null or not null"
+msgstr "Chyba při zjišťování druhu cizího klíče: null nebo not null"
+
+#: dd/ddmodel/ddDBReverseEnginering.cpp:1333
+msgid "Error fk is repeated"
+msgstr "Chyba: cizí klíč se opakuje"
+
+#: dd/ddmodel/ddDBReverseEnginering.cpp:1333
+msgid "Error comparing relationships"
+msgstr "Chyba při porovnávání vztahů"
+
+#: dd/ddmodel/ddDBReverseEnginering.cpp:1673
+msgid "Please, select a schema to use at import tables process:"
+msgstr "Vyberte schéma, které se použije při importu tabulek:"
+
+#: dd/ddmodel/ddDBReverseEnginering.cpp:1698
+msgid "Please, select a Schema to continue to next step."
+msgstr "Pro přechod k dalšímu kroku vyberte schéma."
+
+#: dd/ddmodel/ddDBReverseEnginering.cpp:1698
+msgid "Select a Schema..."
+msgstr "Vyberte schéma..."
+
+#: dd/ddmodel/ddDBReverseEnginering.cpp:1806
+msgid "Table(s) from selected schema"
+msgstr "Tabulky z vybraného schématu"
+
+#: dd/ddmodel/ddDBReverseEnginering.cpp:1811
+msgid "Tables(s) to be imported"
+msgstr "Tabulky k importu"
+
+#: dd/ddmodel/ddDBReverseEnginering.cpp:1826
+msgid "Add the selected table(s)"
+msgstr "Přidat vybrané tabulky"
+
+#: dd/ddmodel/ddDBReverseEnginering.cpp:1828
+msgid "Add all tables"
+msgstr "Přidat všechny tabulky"
+
+#: dd/ddmodel/ddDBReverseEnginering.cpp:1830
+msgid "Remove the selected table(s)"
+msgstr "Odebrat vybrané tabulky"
+
+#: dd/ddmodel/ddDBReverseEnginering.cpp:1832
+msgid "Remove all tables"
+msgstr "Odebrat všechny tabulky"
+
+#: dd/ddmodel/ddDBReverseEnginering.cpp:1981
+msgid "Please, select at least a table to continue to next step."
+msgstr "Pro přechod k dalšímu kroku vyberte alespoň jednu tabulku."
+
+#: dd/ddmodel/ddDBReverseEnginering.cpp:1981
+msgid "Select some Tables..."
+msgstr "Vyberte tabulky..."
+
+#: dd/ddmodel/ddDBReverseEnginering.cpp:1997
+msgid "Error when preparing to import table: "
+msgstr "Chyba při přípravě importu tabulky: "
+
+#: dd/ddmodel/ddDBReverseEnginering.cpp:2009
+msgid "Prepared to import table: "
+msgstr "Připraveno k importu tabulky: "
+
+#: dd/ddmodel/ddDBReverseEnginering.cpp:2009
+msgid "\n"
+msgstr "\n"
+
+#: dd/ddmodel/ddDBReverseEnginering.cpp:2029
+msgid "Returning to previous dialog will remove all selected tables, do you like to continue?"
+msgstr "Návrat do předchozího dialogu odstraní všechny vybrané tabulky, chcete pokračovat?"
+
+#: dd/ddmodel/ddDBReverseEnginering.cpp:2077
+msgid "Returning to previous dialog will delete imported tables before adding it to the model?"
+msgstr "Návrat do předchozího dialogu odstraní importované tabulky před jejich přidáním do modelu?"
+
+#: dd/ddmodel/ddDrawingView.cpp:33
+msgid "Add new Table"
+msgstr "Přidat novou tabulku"
+
+#: dd/ddmodel/ddDrawingView.cpp:84
+msgid "Table exists already at this diagram"
+msgstr "Tabulka již v tomto diagramu existuje"
+
+#: dd/ddmodel/ddDrawingView.cpp:84
+msgid "Drag and drop warning"
+msgstr "Upozornění na přetažení"
+
+#: dd/ddmodel/ddModelBrowser.cpp:39
+msgid "Database Design"
+msgstr "Návrh databáze"
+
+#: dd/ddmodel/ddGenerationWizard.cpp:99
+msgid "Create table"
+msgstr "Vytvořit tabulku"
+
+#: dd/ddmodel/ddGenerationWizard.cpp:100
+msgid "Alter table"
+msgstr "Změnit tabulku"
+
+#: dd/ddmodel/ddGenerationWizard.cpp:100
+msgid "Drop, then create"
+msgstr "Odstranit a znovu vytvořit"
+
+#: dd/ddmodel/ddGenerationWizard.cpp:100
+msgid "Create table [conflict]"
+msgstr "Vytvořit tabulku [konflikt]"
+
+#: dd/ddmodel/ddGenerationWizard.cpp:157
+msgid "Tables(s) to be generated"
+msgstr "Tabulky k vygenerování"
+
+#: dd/ddmodel/ddGenerationWizard.cpp:369
+msgid "Please select at least one table to move to next step."
+msgstr "Pro přechod k dalšímu kroku vyberte alespoň jednu tabulku."
+
+#: dd/ddmodel/ddGenerationWizard.cpp:369
+msgid "No tables selected"
+msgstr "Nejsou vybrány žádné tabulky"
+
+#: dd/ddmodel/ddGenerationWizard.cpp:396
+msgid "No schema"
+msgstr "Žádné schéma"
+
+#: dd/ddmodel/ddGenerationWizard.cpp:415
+msgid "Please select an item to move to next step."
+msgstr "Pro přechod k dalšímu kroku vyberte položku."
+
+#: dd/ddmodel/ddGenerationWizard.cpp:415
+msgid "No choice made"
+msgstr "Nebyla provedena žádná volba"
+
+#: dd/ddmodel/ddGenerationWizard.cpp:528
+msgid "Please check the choice for each table:"
+msgstr "Zkontrolujte volbu pro každou tabulku:"
+
+#: dd/ddmodel/ddGenerationWizard.cpp:555
+msgid "Select an action"
+msgstr "Vyberte akci"
+
+#: dd/ddmodel/ddGenerationWizard.cpp:580
+msgid "Metadata of table to be generated not found at database designer model"
+msgstr "Metadata tabulky k vygenerování nebyla v modelu návrháře databáze nalezena"
+
+#: dd/ddmodel/ddGenerationWizard.cpp:580
+msgid "Error at generation process"
+msgstr "Chyba v procesu generování"
+
+#: dd/ddmodel/ddGenerationWizard.cpp:599
+msgid "Error importing at generation process"
+msgstr "Chyba importu v procesu generování"
+
+#: dd/ddmodel/ddGenerationWizard.cpp:615
+msgid "Going back?"
+msgstr "Vrátit se zpět?"
+
+#: dd/ddmodel/ddDrawingEditor.cpp:87
+msgid "Are you sure you wish to delete table "
+msgstr "Opravdu si přejete odstranit tabulku "
+
+#: dd/ddmodel/ddDrawingEditor.cpp:87
+msgid "Delete table?"
+msgstr "Odstranit tabulku?"
+
+#: dd/ddmodel/ddDrawingEditor.cpp:95
+msgid "Are you sure you wish to delete relationship "
+msgstr "Opravdu si přejete odstranit vztah "
+
+#: dd/ddmodel/ddDrawingEditor.cpp:95
+msgid "Delete relationship?"
+msgstr "Odstranit vztah?"
+
+#: dd/ddmodel/ddDrawingEditor.cpp:114
+msgid "Are you sure you wish to delete %d tables, removing from model related relationships?"
+msgstr "Opravdu si přejete odstranit %d tabulek a z modelu odebrat související vztahy?"
+
+#: dd/ddmodel/ddDrawingEditor.cpp:115
+msgid "Delete tables?"
+msgstr "Odstranit tabulky?"
+
+#: dd/ddmodel/ddDrawingEditor.cpp:165
+msgid "Invalid figure kind found"
+msgstr "Nalezen neplatný druh obrazce"
+
+#: dd/ddmodel/ddDrawingEditor.cpp:165
+msgid "Error while deleting tables"
+msgstr "Chyba při odstraňování tabulek"
+
+#: dd/ddmodel/ddDrawingEditor.cpp:188
+msgid "Error while deleting table"
+msgstr "Chyba při odstraňování tabulky"
+
+#: dd/ddmodel/ddDrawingEditor.cpp:223
+msgid "Error while deleting realtionships"
+msgstr "Chyba při odstraňování vztahů"
+
+#: dd/ddmodel/ddDatabaseDesign.cpp:142
+msgid "Invalid number of arguments in call of function generate tables of list"
+msgstr "Neplatný počet argumentů při volání funkce generování tabulek ze seznamu"
+
+#: dd/ddmodel/ddDatabaseDesign.cpp:162
+msgid "Generating Create sentence(s) for table(s) "
+msgstr "Generují se příkazy Create pro tabulky "
+
+#: dd/ddmodel/ddDatabaseDesign.cpp:185
+msgid "Generating Pk sentence for table(s) "
+msgstr "Generují se příkazy PK pro tabulky "
+
+#: dd/ddmodel/ddDatabaseDesign.cpp:201
+msgid "Generating Uk sentence(s) for table(s) "
+msgstr "Generují se příkazy UK pro tabulky "
+
+#: dd/ddmodel/ddDatabaseDesign.cpp:217
+msgid "Generating Fk sentence(s) for table(s) "
+msgstr "Generují se příkazy FK pro tabulky "
+
+#: dd/ddmodel/ddDatabaseDesign.cpp:243
+msgid "No connection found when building ALTER objects DDL."
+msgstr "Při sestavování DDL objektů ALTER nebylo nalezeno žádné připojení."
+
+#: dd/ddmodel/ddDatabaseDesign.cpp:250
+msgid "Schema defined when building ALTER TABLE DDL"
+msgstr "Schéma bylo definováno při sestavování DDL ALTER TABLE"
+
+#: dd/ddmodel/ddDatabaseDesign.cpp:257
+msgid "Generating Alter table sentence(s) for table(s) "
+msgstr "Generují se příkazy Alter table pro tabulky "
+
+#: dd/ddmodel/ddDatabaseDesign.cpp:527
+msgid "Failed to write the model file!"
+msgstr "Nepodařilo se zapsat soubor modelu!"
+
+#: hotdraw/utilities/hdRemoveDeleteDialog.cpp:117
+msgid "     Choose Remove from Diagram to remove only from current diagram.     "
+msgstr "     Zvolte Odebrat z diagramu pro odebrání pouze z aktuálního diagramu.     "
+
+#: hotdraw/utilities/hdRemoveDeleteDialog.cpp:118
+msgid "     Choose Remove from Model to delete permanently.     "
+msgstr "     Zvolte Odebrat z modelu pro trvalé odstranění.     "
+
+#: hotdraw/main/hdDrawingView.cpp:457
+msgid "Sample Item"
+msgstr "Ukázková položka"
+
+#: hotdraw/main/hdDrawingView.cpp:466
+msgid "Sample menu item"
+msgstr "Ukázková položka nabídky"
+
+#: hotdraw/main/hdDrawingView.cpp:466
+msgid "Sample"
+msgstr "Ukázka"
+
+#: hotdraw/main/hdDrawingEditor.cpp:267
+msgid "Are you sure you wish to delete figure ?"
+msgstr "Opravdu si přejete odstranit obrazec?"
+
+#: hotdraw/main/hdDrawingEditor.cpp:267
+msgid "Delete figures?"
+msgstr "Odstranit obrazce?"
+
+#: hotdraw/main/hdDrawingEditor.cpp:272
+msgid "Are you sure you wish to delete %d figures?"
+msgstr "Opravdu si přejete odstranit %d obrazců?"
+
+#: dd/dditems/utilities/ddSelectKindFksDialog.cpp:103
+msgid "From Primary"
+msgstr "Z primárního"
+
+#: dd/dditems/utilities/ddSelectKindFksDialog.cpp:110
+msgid "Unique Key: "
+msgstr "Unikátní klíč: "
+
+#: dd/dditems/utilities/ddSelectKindFksDialog.cpp:199
+msgid "Automatically Generated"
+msgstr "Automaticky vygenerováno"
+
+#: dd/dditems/figures/ddColumnKindIcon.cpp:62
+msgid "Unique key"
+msgstr "Unikátní klíč"
+
+#: dd/dditems/figures/ddTableFigure.cpp:1178
+msgid "Cannot build an ALTER TABLE statement for a non existing table (%s.%s)."
+msgstr "Nelze sestavit příkaz ALTER TABLE pro neexistující tabulku (%s.%s)."
+
+#: dd/dditems/figures/ddTableFigure.cpp:1179
+msgid "Error when trying to get table OID"
+msgstr "Chyba při zjišťování OID tabulky"
+
+#: dd/dditems/figures/ddTableFigure.cpp:1186
+msgid "Cannot reverse engineering table %s.%s."
+msgstr "Nelze provést reverzní inženýrství tabulky %s.%s."
+
+#: dd/dditems/figures/ddTableFigure.cpp:1187
+msgid "Error when trying to get stub table"
+msgstr "Chyba při zjišťování zástupné tabulky"
+
+#: dd/dditems/figures/ddTableFigure.cpp:1442
+msgid "\" SET NOT NULL;"
+msgstr "\" SET NOT NULL;"
+
+#: dd/dditems/figures/ddTableFigure.cpp:1469
+msgid "Trying to build ALTER sentences"
+msgstr "Pokus o sestavení příkazů ALTER"
+
+#: dd/dditems/figures/ddColumnFigure.cpp:491
+msgid "relation between table: "
+msgstr "vztah mezi tabulkou: "
+
+#: dd/dditems/figures/ddColumnFigure.cpp:491
+msgid " and table: "
+msgstr " a tabulkou: "
+
+#: dd/dditems/figures/ddColumnFigure.cpp:492
+msgid " is marked as identifying but user created foreign key column: "
+msgstr " je označen jako identifikující, ale uživatelem vytvořený sloupec cizího klíče: "
+
+#: dd/dditems/figures/ddColumnFigure.cpp:493
+msgid " isn't set as primary key \n"
+msgstr " není nastaven jako primární klíč \n"
+
+#: dd/dditems/figures/ddColumnFigure.cpp:500
+msgid "relation between table:"
+msgstr "vztah mezi tabulkou:"
+
+#: dd/dditems/figures/ddColumnFigure.cpp:501
+msgid "is marked as optional but user created foreign key column: "
+msgstr "je označen jako nepovinný, ale uživatelem vytvořený sloupec cizího klíče: "
+
+#: dd/dditems/figures/ddColumnFigure.cpp:502
+msgid "is set as mandatory \n"
+msgstr "je nastaven jako povinný \n"
+
+#: dd/dditems/figures/ddColumnFigure.cpp:510
+msgid " is marked as mandatory but user created foreign key column: "
+msgstr " je označen jako povinný, ale uživatelem vytvořený sloupec cizího klíče: "
+
+#: dd/dditems/figures/ddColumnFigure.cpp:511
+msgid "is set as optional \n"
+msgstr "je nastaven jako nepovinný \n"
+
+#: dd/dditems/figures/ddColumnFigure.cpp:519
+msgid "User created foreign key column: "
+msgstr "Uživatelem vytvořený sloupec cizího klíče: "
+
+#: dd/dditems/figures/ddColumnFigure.cpp:519
+msgid "have different datatype from source column of relationship: "
+msgstr "má jiný datový typ než zdrojový sloupec vztahu: "
+
+#: dd/dditems/figures/ddColumnFigure.cpp:520
+msgid " \n"
+msgstr " \n"
+
+#: dd/dditems/figures/ddTextTableItemFigure.cpp:243
+msgid "Varchar size"
+msgstr "Velikost varchar"
+
+#: dd/dditems/figures/ddTextTableItemFigure.cpp:244
+msgid "Size for varchar datatype"
+msgstr "Velikost datového typu varchar"
+
+#: dd/dditems/figures/ddTextTableItemFigure.cpp:264
+msgid "datatype size"
+msgstr "velikost datového typu"
+
+#: dd/dditems/figures/ddTextTableItemFigure.cpp:265
+msgid "Size for datatype"
+msgstr "Velikost datového typu"
+
+#: dd/dditems/figures/ddTextTableItemFigure.cpp:354
+msgid "Add a column..."
+msgstr "Přidat sloupec..."
+
+#: dd/dditems/figures/ddTextTableItemFigure.cpp:355
+msgid "Delete the selected column..."
+msgstr "Odstranit vybraný sloupec..."
+
+#: dd/dditems/figures/ddTextTableItemFigure.cpp:358
+msgid "Rename the selected column..."
+msgstr "Přejmenovat vybraný sloupec..."
+
+#: dd/dditems/figures/ddTextTableItemFigure.cpp:360
+msgid "Activate fk auto-naming..."
+msgstr "Aktivovat automatické pojmenování FK..."
+
+#: dd/dditems/figures/ddTextTableItemFigure.cpp:362
+msgid "Not NULL constraint"
+msgstr "Omezení NOT NULL"
+
+#: dd/dditems/figures/ddTextTableItemFigure.cpp:373
+msgid "Unique Key"
+msgstr "Unikátní klíč"
+
+#: dd/dditems/figures/ddTextTableItemFigure.cpp:378
+msgid "Column datatype"
+msgstr "Datový typ sloupce"
+
+#: dd/dditems/figures/ddTextTableItemFigure.cpp:381
+msgid "serial"
+msgstr "serial"
+
+#: dd/dditems/figures/ddTextTableItemFigure.cpp:383
+msgid "boolean"
+msgstr "boolean"
+
+#: dd/dditems/figures/ddTextTableItemFigure.cpp:385
+msgid "integer"
+msgstr "integer"
+
+#: dd/dditems/figures/ddTextTableItemFigure.cpp:387
+msgid "money"
+msgstr "money"
+
+#: dd/dditems/figures/ddTextTableItemFigure.cpp:389
+msgid "varchar(n)"
+msgstr "varchar(n)"
+
+#: dd/dditems/figures/ddTextTableItemFigure.cpp:391
+msgid "Choose another datatype..."
+msgstr "Zvolit jiný datový typ..."
+
+#: dd/dditems/figures/ddTextTableItemFigure.cpp:393
+msgid "Primary Key Constraint name..."
+msgstr "Název omezení primárního klíče..."
+
+#: dd/dditems/figures/ddTextTableItemFigure.cpp:394
+msgid "Unique Key Constraint name..."
+msgstr "Název omezení unikátního klíče..."
+
+#: dd/dditems/figures/ddTextTableItemFigure.cpp:396
+msgid "Delete table..."
+msgstr "Odstranit tabulku..."
+
+#: dd/dditems/figures/ddRelationshipFigure.cpp:241
+msgid "Select one"
+msgstr "Vyberte jednu"
+
+#: dd/dditems/figures/ddRelationshipFigure.cpp:243
+msgid "Foreign Key From"
+msgstr "Cizí klíč z"
+
+#: dd/dditems/figures/ddRelationshipFigure.cpp:264
+msgid "Mandatory relationship kind"
+msgstr "Druh povinného vztahu"
+
+#: dd/dditems/figures/ddRelationshipFigure.cpp:266
+msgid "Identifying relationship"
+msgstr "Identifikující vztah"
+
+#: dd/dditems/figures/ddRelationshipFigure.cpp:269
+msgid "1:M"
+msgstr "1:M"
+
+#: dd/dditems/figures/ddRelationshipFigure.cpp:272
+msgid "Foreign Key Constraint Name"
+msgstr "Název omezení cizího klíče"
+
+#: dd/dditems/figures/ddRelationshipFigure.cpp:275
+msgid "Type Simple"
+msgstr "Typ Simple"
+
+#: dd/dditems/figures/ddRelationshipFigure.cpp:277
+msgid "Type Full"
+msgstr "Typ Full"
+
+#: dd/dditems/figures/ddRelationshipFigure.cpp:279
+msgid "Match Type "
+msgstr "Typ shody "
+
+#: dd/dditems/figures/ddRelationshipFigure.cpp:281
+msgid "[ Simple ]"
+msgstr "[ Simple ]"
+
+#: dd/dditems/figures/ddRelationshipFigure.cpp:283
+msgid "[ Full ]"
+msgstr "[ Full ]"
+
+#: dd/dditems/figures/ddRelationshipFigure.cpp:286
+msgid "On Delete "
+msgstr "Při odstranění "
+
+#: dd/dditems/figures/ddRelationshipFigure.cpp:288
+msgid "No Action"
+msgstr "Žádná akce"
+
+#: dd/dditems/figures/ddRelationshipFigure.cpp:291
+msgid "[ No Action ]"
+msgstr "[ Žádná akce ]"
+
+#: dd/dditems/figures/ddRelationshipFigure.cpp:292
+msgid "Restrict"
+msgstr "Omezit"
+
+#: dd/dditems/figures/ddRelationshipFigure.cpp:295
+msgid "[ Restrict ]"
+msgstr "[ Omezit ]"
+
+#: dd/dditems/figures/ddRelationshipFigure.cpp:296
+msgid "Cascade"
+msgstr "Kaskádově"
+
+#: dd/dditems/figures/ddRelationshipFigure.cpp:299
+msgid "[ Cascade ]"
+msgstr "[ Kaskádově ]"
+
+#: dd/dditems/figures/ddRelationshipFigure.cpp:300
+msgid "Set Null"
+msgstr "Nastavit Null"
+
+#: dd/dditems/figures/ddRelationshipFigure.cpp:303
+msgid "[ Set Null ]"
+msgstr "[ Nastavit Null ]"
+
+#: dd/dditems/figures/ddRelationshipFigure.cpp:304
+msgid "Set Default"
+msgstr "Nastavit výchozí"
+
+#: dd/dditems/figures/ddRelationshipFigure.cpp:307
+msgid "[ Set Default ]"
+msgstr "[ Nastavit výchozí ]"
+
+#: dd/dditems/figures/ddRelationshipFigure.cpp:310
+msgid "On Update "
+msgstr "Při aktualizaci "
+
+#: dd/dditems/figures/ddRelationshipFigure.cpp:335
+msgid "Delete Relationship..."
+msgstr "Odstranit vztah..."
+
+#: dd/dditems/figures/ddRelationshipFigure.cpp:452
+msgid "Are you sure you wish to delete relationship between tables %s and %s?"
+msgstr "Opravdu si přejete odstranit vztah mezi tabulkami %s a %s?"
+
+#: include/frm/frmReport.h:156
+msgid "&Compare other objects"
+msgstr "&Porovnat jiné objekty"
+
+#: include/frm/frmReport.h:156
+msgid "Compare other host database select objects."
+msgstr "Porovnat vybrané objekty databáze jiného hostitele."
+
+#: ui/dlgFindReplace.xrc:65
+msgid "All find tabs"
+msgstr "Všechny karty hledání"
+
+#: ui/dlgProJob.xrc:105
+msgid "Run as"
+msgstr "Spustit jako"
+
+#: ui/dlgProJob.xrc:195
+msgid "Commands"
+msgstr "Příkazy"
+
+#: ui/dlgProJob.xrc:234
+msgid "use same transaction"
+msgstr "použít stejnou transakci"
+
+#: ui/dlgServer.xrc:190
+msgid "Select SSL Root Certificate File"
+msgstr "Vyberte soubor kořenového certifikátu SSL"
+
+#: ui/dlgServer.xrc:206
+msgid "Select SSL Certificate Revocation List File"
+msgstr "Vyberte soubor seznamu odvolaných certifikátů SSL"
+
+#: ui/dlgServer.xrc:222
+msgid "Select SSL certificate file"
+msgstr "Vyberte soubor certifikátu SSL"
+
+#: ui/dlgServer.xrc:238
+msgid "Select SSL key file"
+msgstr "Vyberte soubor klíče SSL"
+
+#: ui/dlgServer.xrc:361
+msgid "Select identity file"
+msgstr "Vyberte soubor identity"
+
+#: ui/dlgServer.xrc:377
+msgid "Select public key file"
+msgstr "Vyberte soubor veřejného klíče"
+
+#: ui/dlgServer.xrc:466
+msgid "Connect str"
+msgstr "Připojovací řetězec"
+
+#: ui/dlgTransformText.xrc:5
+msgid "Transform text"
+msgstr "Transformovat text"
+
+#: ui/dlgTransformText.xrc:17
+msgid "Source text options"
+msgstr "Volby zdrojového textu"
+
+#: ui/dlgTransformText.xrc:33
+msgid "PCRE regexp"
+msgstr "Regulární výraz PCRE"
+
+#: ui/dlgTransformText.xrc:50
+msgid "Replace expression"
+msgstr "Nahrazující výraz"
+
+#: ui/dlgTransformText.xrc:67
+msgid "Rows limit"
+msgstr "Limit řádků"
+
+#: ui/dlgTransformText.xrc:87
+msgid "Chars limit"
+msgstr "Limit znaků"
+
+#: ui/dlgTransformText.xrc:107
+msgid "Refresh highlight"
+msgstr "Obnovit zvýraznění"
+
+#: ui/dlgTransformText.xrc:124
+msgid "Source text"
+msgstr "Zdrojový text"
+
+#: ui/dlgTransformText.xrc:160
+msgid "Transform text options"
+msgstr "Volby transformace textu"
+
+#: ui/dlgTransformText.xrc:176
+msgid "Append before row"
+msgstr "Přidat před řádek"
+
+#: ui/dlgTransformText.xrc:196
+msgid "After row"
+msgstr "Za řádkem"
+
+#: ui/dlgTransformText.xrc:230
+msgid "Field separator"
+msgstr "Oddělovač polí"
+
+#: ui/dlgTransformText.xrc:267
+msgid "Load options"
+msgstr "Volby načtení"
+
+#: ui/dlgTransformText.xrc:276
+msgid "First"
+msgstr "První"
+
+#: ui/dlgTransformText.xrc:335
+msgid "Rows loading"
+msgstr "Načítání řádků"
+
+#: ui/frmAwr.xrc:6
+msgid "AWR report"
+msgstr "Zpráva AWR"
+
+#: ui/frmAwr.xrc:36
+msgid "Type report"
+msgstr "Typ zprávy"
+
+#: ui/frmAwr.xrc:39
+msgid "Report"
+msgstr "Zpráva"
+
+#: ui/frmAwr.xrc:40
+msgid "Diff report"
+msgstr "Rozdílová zpráva"
+
+#: ui/frmAwr.xrc:104
+msgid "Start Id1"
+msgstr "Počáteční Id1"
+
+#: ui/frmAwr.xrc:123
+msgid "End Id1"
+msgstr "Koncové Id1"
+
+#: ui/frmAwr.xrc:166
+msgid "Start Id2"
+msgstr "Počáteční Id2"
+
+#: ui/frmAwr.xrc:185
+msgid "End Id2"
+msgstr "Koncové Id2"
+
+#: ui/frmExport.xrc:110
+msgid "format COPY"
+msgstr "formát COPY"
+
+#: ui/frmExport.xrc:116
+msgid "Xls fmt copy"
+msgstr "Kopie ve formátu Xls"
+
+#: ui/frmImport.xrc:33
+msgid "Select the file to import"
+msgstr "Vyberte soubor k importu"
+
+#: ui/frmOptions.xrc:131
+msgid "Select theme"
+msgstr "Vyberte motiv"
+
+#: ui/frmOptions.xrc:154
+msgid "Load"
+msgstr "Načíst"
+
+#: ui/frmOptions.xrc:222
+msgid "Options extended JSON:"
+msgstr "Rozšířené volby JSON:"
+
+#: ui/frmOptions.xrc:261
+msgid "Beautiful big numbers on the statistics page"
+msgstr "Přehledné zobrazení velkých čísel na stránce statistik"
+
+#: ui/frmOptions.xrc:272
+msgid "Show the dependencies of functions on tables,views,functions"
+msgstr "Zobrazit závislosti funkcí na tabulkách, pohledech a funkcích"
+
+#: ui/frmOptions.xrc:457
+msgid "Show DB name in tree"
+msgstr "Zobrazit název DB ve stromu"
+
+#: ui/frmOptions.xrc:465
+msgid "Quick jump to the root node"
+msgstr "Rychlý skok na kořenový uzel"
+
+#: ui/frmOptions.xrc:635
+msgid "Select utility to format text"
+msgstr "Vyberte nástroj pro formátování textu"
+
+#: ui/frmOptions.xrc:645
+msgid "External alignment utlity"
+msgstr "Externí nástroj pro zarovnání"
+
+#: ui/frmOptions.xrc:662
+msgid "Enable ASUTP style"
+msgstr "Povolit styl ASUTP"
+
+#: ui/frmOptions.xrc:677
+msgid "Hide query history"
+msgstr "Skrýt historii dotazů"
+
+#: ui/frmOptions.xrc:692
+msgid "Auto save query text"
+msgstr "Automaticky ukládat text dotazu"
+
+#: ui/frmOptions.xrc:707
+msgid "Use word hints"
+msgstr "Používat nápovědu slov"
+
+#: ui/frmOptions.xrc:722
+msgid "Replace variables in a query"
+msgstr "Nahrazovat proměnné v dotazu"
+
+#: ui/frmOptions.xrc:821
+msgid "Use system background color caret line"
+msgstr "Použít systémovou barvu pozadí pro řádek s kurzorem"
+
+#: ui/frmOptions.xrc:876
+msgid "Width for keyboard layout"
+msgstr "Šířka pro rozložení klávesnice"
+
+#: ui/frmOptions.xrc:1227
+msgid "Select file to store favourites queries"
+msgstr "Vyberte soubor pro uložení oblíbených dotazů"
+
+#: ui/frmOptions.xrc:1255
+msgid "Select file to store macros"
+msgstr "Vyberte soubor pro uložení maker"
+
+#: ui/frmOptions.xrc:1283
+msgid "Select file to store queries history"
+msgstr "Vyberte soubor pro uložení historie dotazů"
+
+#: ui/frmOptions.xrc:1388
+msgid "Blocked by Process Colour"
+msgstr "Barva procesu blokovaného jiným procesem"
+
+#: ui/frmOptions.xrc:1402
+msgid "Idle&in&transaction&session&timeout Process Colour"
+msgstr "Barva procesu Idle&in&transaction&session&timeout"
+
+#: frm/mathplot.cpp:1424
+msgid "Center"
+msgstr "Na střed"
+
+#: frm/mathplot.cpp:1425
+msgid "Center plot view to this position"
+msgstr "Vycentrovat zobrazení grafu na tuto pozici"
+
+#: frm/mathplot.cpp:1426
+msgid "Fit"
+msgstr "Přizpůsobit"
+
+#: frm/mathplot.cpp:1426
+msgid "Set plot view to show all items"
+msgstr "Nastavit zobrazení grafu tak, aby se zobrazily všechny položky"
+
+#: frm/mathplot.cpp:1427
+msgid "Zoom in"
+msgstr "Přiblížit"
+
+#: frm/mathplot.cpp:1427
+msgid "Zoom in plot view."
+msgstr "Přiblížit zobrazení grafu."
+
+#: frm/mathplot.cpp:1428
+msgid "Zoom out"
+msgstr "Oddálit"
+
+#: frm/mathplot.cpp:1428
+msgid "Zoom out plot view."
+msgstr "Oddálit zobrazení grafu."
+
+#: frm/mathplot.cpp:1431
+msgid "Show mouse commands..."
+msgstr "Zobrazit příkazy myši..."
+
+#: frm/mathplot.cpp:1432
+msgid "Show help about the mouse commands."
+msgstr "Zobrazit nápovědu k příkazům myši."
+
+#: frm/mathplot.cpp:1935
+msgid "wxMathPlot help"
+msgstr "Nápověda wxMathPlot"
+
+#: dd/dditems/figures/xml/ddXmlStorage.cpp:91
+msgid "Error saving model: not source model have been set"
+msgstr "Chyba při ukládání modelu: nebyl nastaven žádný zdrojový model"
+
+#: dd/dditems/figures/xml/ddXmlStorage.cpp:123
+msgid "Fatal Error at libxml for figure persistency"
+msgstr "Závažná chyba knihovny libxml při ukládání obrazců"
+
+#: dd/dditems/figures/xml/ddXmlStorage.cpp:624
+msgid "Model is not following embedded DTD definition, check it.\n"
+msgstr "Model neodpovídá vestavěné definici DTD, zkontrolujte ho.\n"
+
+#: dd/dditems/figures/xml/ddXmlStorage.cpp:656
+msgid "Failed to load document from disk"
+msgstr "Nepodařilo se načíst dokument z disku"
+
+#: dd/dditems/figures/xml/ddXmlStorage.cpp:754
+msgid "Invalid version of XML file for pgAdmin database designer found"
+msgstr "Nalezena neplatná verze souboru XML pro návrháře databází pgAdmin"
+
+#: dd/dditems/figures/xml/ddXmlStorage.cpp:754
+msgid "Invalid XML"
+msgstr "Neplatné XML"
+
+#: dd/dditems/figures/xml/ddXmlStorage.cpp:1054
+msgid "Table initial metadata info not found"
+msgstr "Počáteční metadata tabulky nebyla nalezena"
+
+#: frm/frmOptions.cpp:1
+msgid "Appearance"
+msgstr "Vzhled"
+
+#: frm/frmOptions.cpp:2
+msgid "Automatic"
+msgstr "Automaticky"
+
+#: frm/frmOptions.cpp:3
+msgid "Light"
+msgstr "Světlý"
+
+#: frm/frmOptions.cpp:4
+msgid "Dark"
+msgstr "Tmavý"
+
+#: frm/frmOptions.cpp:5
+msgid "Restart pgAdmin III to fully apply the appearance change."
+msgstr "Restartujte pgAdmin III, aby se změna vzhledu plně projevila."

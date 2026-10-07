@@ -2127,7 +2127,7 @@ msgstr "Sunteti sigur ca doriti sa renuntati la %s %s?"
 msgid ""
 "Are you sure you wish to delete %d tables, removing from model related "
 "relationships?"
-msgstr ""
+msgstr "Sigur doriți să ștergeți %d tabele, eliminând din model relațiile asociate?"
 
 #: /Users/zv/Code/pgadmin3/dd/ddmodel/ddDrawingEditor.cpp:95
 msgid "Are you sure you wish to delete relationship "
@@ -2706,7 +2706,7 @@ msgstr "Sunteti sigur ca doriti sa renuntati la %s %s?"
 msgid ""
 "Are you sure you wish to drop publication \"%s\" including all objects that "
 "depend on it?"
-msgstr ""
+msgstr "Sigur doriți să ștergeți publicația \"%s\" împreună cu toate obiectele care depind de ea?"
 
 #: /Users/zv/Code/pgadmin3/schema/pgPublication.cpp:45
 #, c-format
@@ -2793,7 +2793,7 @@ msgstr "Sunteti sigur ca doriti sa renuntati la %s %s?"
 msgid ""
 "Are you sure you wish to drop subscription \"%s\" including all objects that "
 "depend on it?"
-msgstr ""
+msgstr "Sigur doriți să ștergeți abonamentul \"%s\" împreună cu toate obiectele care depind de el?"
 
 #: /Users/zv/Code/pgadmin3/schema/pgSubscription.cpp:45
 #, c-format
@@ -8745,7 +8745,7 @@ msgstr "%s report listă"
 msgid ""
 "Functions pg_read_binary_file(text,bigint,bigint,boolean), "
 "pg_stat_file(text,boolean),pg_ls_logdir()  permission denied."
-msgstr ""
+msgstr "Funcțiile pg_read_binary_file(text,bigint,bigint,boolean), pg_stat_file(text,boolean),pg_ls_logdir() permisiune refuzată."
 
 #: /Users/zv/Code/pgadmin3/debugger/debugger.cpp:58
 #: /Users/zv/Code/pgadmin3/debugger/debugger.cpp:163
@@ -15550,13 +15550,13 @@ msgstr "Tipul returnat"
 msgid ""
 "Returning to previous dialog will delete imported tables before adding it to "
 "the model?"
-msgstr ""
+msgstr "Revenirea la dialogul anterior va șterge tabelele importate înainte de a le adăuga în model?"
 
 #: /Users/zv/Code/pgadmin3/dd/ddmodel/ddDBReverseEnginering.cpp:2029
 msgid ""
 "Returning to previous dialog will remove all selected tables, do you like to "
 "continue?"
-msgstr ""
+msgstr "Revenirea la dialogul anterior va elimina toate tabelele selectate, doriți să continuați?"
 
 #: /Users/zv/Code/pgadmin3/schema/pgFunction.cpp:393
 msgid "Returns a set?"
@@ -20313,7 +20313,7 @@ msgstr "Modifica"
 msgid ""
 "Value parameter pg_wait_sampling.history_size = %ld greet 1000000  "
 "monitoring wait events disabled.\n"
-msgstr ""
+msgstr "Valoarea parametrului pg_wait_sampling.history_size = %ld este mai mare de 1000000, monitorizarea evenimentelor de așteptare este dezactivată.\n"
 
 #: /Users/zv/Code/pgadmin3/dd/dditems/figures/ddTextTableItemFigure.cpp:243
 #: /Users/zv/Code/pgadmin3/dd/dditems/figures/ddTextTableItemFigure.cpp:245
@@ -26878,4 +26878,402 @@ msgstr "Tipuri"
 #~ msgid "|"
 #~ msgstr "|"
 
+#: pgAdmin3.cpp:389
+msgid "open server log window"
+msgstr "deschide fereastra jurnalului serverului"
 
+#: pgAdmin3.cpp:403
+msgid "export servers configuration to file pgadmin3.ini"
+msgstr "exportă configurația serverelor în fișierul pgadmin3.ini"
+
+#: pgAdmin3.cpp:404
+msgid "Enable Dark mode"
+msgstr "Activează modul întunecat"
+
+#: pgAdmin3.cpp:1013
+msgid "Log - "
+msgstr "Jurnal - "
+
+#: pro_scheduler/pgproJob.cpp:36
+msgid "Retrieving details on pro_scheduler job"
+msgstr "Se preiau detaliile jobului pro_scheduler"
+
+#: pro_scheduler/pgproJob.cpp:39
+msgid "Refreshing pro_scheduler job"
+msgstr "Se reîmprospătează jobul pro_scheduler"
+
+#: pro_scheduler/pgproJob.cpp:42
+msgid "pro_scheduler job properties report"
+msgstr "Raport proprietăți job pro_scheduler"
+
+#: pro_scheduler/pgproJob.cpp:48
+msgid "pro_scheduler job DDL report"
+msgstr "Raport DDL job pro_scheduler"
+
+#: pro_scheduler/pgproJob.cpp:51
+msgid "pro_scheduler job dependencies report"
+msgstr "Raport dependențe job pro_scheduler"
+
+#: pro_scheduler/pgproJob.cpp:54
+msgid "pro_scheduler job dependencies"
+msgstr "Dependențe job pro_scheduler"
+
+#: pro_scheduler/pgproJob.cpp:57
+msgid "pro_scheduler job dependents report"
+msgstr "Raport obiecte dependente job pro_scheduler"
+
+#: pro_scheduler/pgproJob.cpp:60
+msgid "pro_scheduler job dependents"
+msgstr "Obiecte dependente job pro_scheduler"
+
+#: pro_scheduler/pgproJob.cpp:140
+msgid "Started"
+msgstr "Pornit"
+
+#: pro_scheduler/pgproJob.cpp:141
+msgid "Finished"
+msgstr "Terminat"
+
+#: pro_scheduler/pgproJob.cpp:143
+msgid "Crontab"
+msgstr "Crontab"
+
+#: pro_scheduler/pgproJob.cpp:146
+msgid "Runas"
+msgstr "Rulează ca"
+
+#: pro_scheduler/pgproJob.cpp:152
+msgid "Next start job"
+msgstr "Următoarea pornire a jobului"
+
+#: pro_scheduler/pgproJob.cpp:185
+msgid "Previous sched time run skip"
+msgstr "Rularea programată anterioară omisă"
+
+#: pro_scheduler/pgproJob.cpp:254
+msgid "Not run"
+msgstr "Nerulat"
+
+#: pro_scheduler/pgproJob.cpp:356
+msgid "Log_time"
+msgstr "Ora_jurnal"
+
+#: pro_scheduler/pgproJob.cpp:357
+msgid "Critical"
+msgstr "Critic"
+
+#: pro_scheduler/pgproJob.cpp:359
+msgid "Stage"
+msgstr "Etapă"
+
+#: pro_scheduler/pgproJob.cpp:505
+msgid "Enabled or disabled job"
+msgstr "Job activat sau dezactivat"
+
+#: frm/frmQuery.cpp:4689
+msgid "Please enter name string with prefix dbname or description server\n"
+msgstr "Introduceți un șir de nume cu prefixul numelui bazei de date sau descrierea serverului\n"
+
+#: frm/frmQuery.cpp:4691
+msgid "Name autosave tab window."
+msgstr "Numele ferestrei filei de salvare automată."
+
+#: frm/frmOptions.cpp:615
+msgid "Color theme save to file %s"
+msgstr "Salvare temă de culori în fișierul %s"
+
+#: frm/frmOptions.cpp:637
+msgid "Color theme load from file %s"
+msgstr "Încărcare temă de culori din fișierul %s"
+
+#: frm/frmOptions.cpp:638
+msgid "Load theme"
+msgstr "Încarcă tema"
+
+#: schema/pgServer.cpp:1253
+msgid "Key words"
+msgstr "Cuvinte cheie"
+
+#: hotdraw/utilities/hdRemoveDeleteDialog.cpp:117
+msgid "     Choose Remove from Diagram to remove only from current diagram.     "
+msgstr "     Alegeți Elimină din diagramă pentru a elimina doar din diagrama curentă.     "
+
+#: hotdraw/utilities/hdRemoveDeleteDialog.cpp:118
+msgid "     Choose Remove from Model to delete permanently.     "
+msgstr "     Alegeți Elimină din model pentru a șterge definitiv.     "
+
+#: hotdraw/main/hdDrawingView.cpp:457
+msgid "Sample Item"
+msgstr "Element exemplu"
+
+#: hotdraw/main/hdDrawingView.cpp:466
+msgid "Sample menu item"
+msgstr "Element exemplu de meniu"
+
+#: hotdraw/main/hdDrawingView.cpp:466
+msgid "Sample"
+msgstr "Exemplu"
+
+#: hotdraw/main/hdDrawingEditor.cpp:267
+msgid "Are you sure you wish to delete figure ?"
+msgstr "Sigur doriți să ștergeți figura?"
+
+#: hotdraw/main/hdDrawingEditor.cpp:267
+msgid "Delete figures?"
+msgstr "Ștergeți figurile?"
+
+#: hotdraw/main/hdDrawingEditor.cpp:272
+msgid "Are you sure you wish to delete %d figures?"
+msgstr "Sigur doriți să ștergeți %d figuri?"
+
+#: ui/dlgFindReplace.xrc:65
+msgid "All find tabs"
+msgstr "Toate filele de căutare"
+
+#: ui/dlgProJob.xrc:105
+msgid "Run as"
+msgstr "Rulează ca"
+
+#: ui/dlgProJob.xrc:195
+msgid "Commands"
+msgstr "Comenzi"
+
+#: ui/dlgProJob.xrc:234
+msgid "use same transaction"
+msgstr "folosește aceeași tranzacție"
+
+#: ui/dlgServer.xrc:190
+msgid "Select SSL Root Certificate File"
+msgstr "Selectați fișierul certificatului rădăcină SSL"
+
+#: ui/dlgServer.xrc:206
+msgid "Select SSL Certificate Revocation List File"
+msgstr "Selectați fișierul listei de revocare a certificatelor SSL"
+
+#: ui/dlgServer.xrc:222
+msgid "Select SSL certificate file"
+msgstr "Selectați fișierul certificatului SSL"
+
+#: ui/dlgServer.xrc:238
+msgid "Select SSL key file"
+msgstr "Selectați fișierul cheii SSL"
+
+#: ui/dlgServer.xrc:361
+msgid "Select identity file"
+msgstr "Selectați fișierul de identitate"
+
+#: ui/dlgServer.xrc:377
+msgid "Select public key file"
+msgstr "Selectați fișierul cheii publice"
+
+#: ui/dlgServer.xrc:466
+msgid "Connect str"
+msgstr "Șir de conectare"
+
+#: ui/dlgTransformText.xrc:5
+msgid "Transform text"
+msgstr "Transformare text"
+
+#: ui/dlgTransformText.xrc:17
+msgid "Source text options"
+msgstr "Opțiuni text sursă"
+
+#: ui/dlgTransformText.xrc:33
+msgid "PCRE regexp"
+msgstr "Expresie regulată PCRE"
+
+#: ui/dlgTransformText.xrc:50
+msgid "Replace expression"
+msgstr "Expresie de înlocuire"
+
+#: ui/dlgTransformText.xrc:67
+msgid "Rows limit"
+msgstr "Limită de rânduri"
+
+#: ui/dlgTransformText.xrc:87
+msgid "Chars limit"
+msgstr "Limită de caractere"
+
+#: ui/dlgTransformText.xrc:107
+msgid "Refresh highlight"
+msgstr "Reîmprospătează evidențierea"
+
+#: ui/dlgTransformText.xrc:124
+msgid "Source text"
+msgstr "Text sursă"
+
+#: ui/dlgTransformText.xrc:160
+msgid "Transform text options"
+msgstr "Opțiuni de transformare a textului"
+
+#: ui/dlgTransformText.xrc:176
+msgid "Append before row"
+msgstr "Adaugă înaintea rândului"
+
+#: ui/dlgTransformText.xrc:196
+msgid "After row"
+msgstr "După rând"
+
+#: ui/dlgTransformText.xrc:230
+msgid "Field separator"
+msgstr "Separator de câmpuri"
+
+#: ui/dlgTransformText.xrc:267
+msgid "Load options"
+msgstr "Opțiuni de încărcare"
+
+#: ui/dlgTransformText.xrc:276
+msgid "First"
+msgstr "Primele"
+
+#: ui/dlgTransformText.xrc:335
+msgid "Rows loading"
+msgstr "Încărcare rânduri"
+
+#: ui/frmAwr.xrc:6
+msgid "AWR report"
+msgstr "Raport AWR"
+
+#: ui/frmAwr.xrc:36
+msgid "Type report"
+msgstr "Tip raport"
+
+#: ui/frmAwr.xrc:39
+msgid "Report"
+msgstr "Raport"
+
+#: ui/frmAwr.xrc:40
+msgid "Diff report"
+msgstr "Raport diferențial"
+
+#: ui/frmAwr.xrc:104
+msgid "Start Id1"
+msgstr "Id1 de start"
+
+#: ui/frmAwr.xrc:123
+msgid "End Id1"
+msgstr "Id1 de sfârșit"
+
+#: ui/frmAwr.xrc:166
+msgid "Start Id2"
+msgstr "Id2 de start"
+
+#: ui/frmAwr.xrc:185
+msgid "End Id2"
+msgstr "Id2 de sfârșit"
+
+#: ui/frmExport.xrc:110
+msgid "format COPY"
+msgstr "format COPY"
+
+#: ui/frmExport.xrc:116
+msgid "Xls fmt copy"
+msgstr "Copiere în format Xls"
+
+#: ui/frmImport.xrc:33
+msgid "Select the file to import"
+msgstr "Selectați fișierul de importat"
+
+#: ui/frmOptions.xrc:131
+msgid "Select theme"
+msgstr "Selectați tema"
+
+#: ui/frmOptions.xrc:154
+msgid "Load"
+msgstr "Încarcă"
+
+#: ui/frmOptions.xrc:222
+msgid "Options extended JSON:"
+msgstr "Opțiuni JSON extins:"
+
+#: ui/frmOptions.xrc:261
+msgid "Beautiful big numbers on the statistics page"
+msgstr "Afișare frumoasă a numerelor mari în pagina de statistici"
+
+#: ui/frmOptions.xrc:272
+msgid "Show the dependencies of functions on tables,views,functions"
+msgstr "Afișează dependențele funcțiilor de tabele, vizualizări, funcții"
+
+#: ui/frmOptions.xrc:457
+msgid "Show DB name in tree"
+msgstr "Afișează numele bazei de date în arbore"
+
+#: ui/frmOptions.xrc:465
+msgid "Quick jump to the root node"
+msgstr "Salt rapid la nodul rădăcină"
+
+#: ui/frmOptions.xrc:635
+msgid "Select utility to format text"
+msgstr "Selectați utilitarul pentru formatarea textului"
+
+#: ui/frmOptions.xrc:645
+msgid "External alignment utlity"
+msgstr "Utilitar extern de aliniere"
+
+#: ui/frmOptions.xrc:662
+msgid "Enable ASUTP style"
+msgstr "Activează stilul ASUTP"
+
+#: ui/frmOptions.xrc:677
+msgid "Hide query history"
+msgstr "Ascunde istoricul interogărilor"
+
+#: ui/frmOptions.xrc:692
+msgid "Auto save query text"
+msgstr "Salvare automată a textului interogării"
+
+#: ui/frmOptions.xrc:707
+msgid "Use word hints"
+msgstr "Folosește sugestii de cuvinte"
+
+#: ui/frmOptions.xrc:722
+msgid "Replace variables in a query"
+msgstr "Înlocuiește variabilele dintr-o interogare"
+
+#: ui/frmOptions.xrc:821
+msgid "Use system background color caret line"
+msgstr "Folosește culoarea de fundal a sistemului pentru linia cursorului"
+
+#: ui/frmOptions.xrc:876
+msgid "Width for keyboard layout"
+msgstr "Lățime pentru aranjamentul tastaturii"
+
+#: ui/frmOptions.xrc:1227
+msgid "Select file to store favourites queries"
+msgstr "Selectați fișierul pentru stocarea interogărilor favorite"
+
+#: ui/frmOptions.xrc:1255
+msgid "Select file to store macros"
+msgstr "Selectați fișierul pentru stocarea macrocomenzilor"
+
+#: ui/frmOptions.xrc:1283
+msgid "Select file to store queries history"
+msgstr "Selectați fișierul pentru stocarea istoricului interogărilor"
+
+#: ui/frmOptions.xrc:1388
+msgid "Blocked by Process Colour"
+msgstr "Culoarea procesului blocat"
+
+#: ui/frmOptions.xrc:1402
+msgid "Idle&in&transaction&session&timeout Process Colour"
+msgstr "Culoarea&procesului&cu&timeout&de sesiune idle in transaction"
+
+#: frm/frmOptions.cpp:1
+msgid "Appearance"
+msgstr "Aspect"
+
+#: frm/frmOptions.cpp:2
+msgid "Automatic"
+msgstr "Automat"
+
+#: frm/frmOptions.cpp:3
+msgid "Light"
+msgstr "Luminos"
+
+#: frm/frmOptions.cpp:4
+msgid "Dark"
+msgstr "Întunecat"
+
+#: frm/frmOptions.cpp:5
+msgid "Restart pgAdmin III to fully apply the appearance change."
+msgstr "Reporniți pgAdmin III pentru a aplica complet modificarea aspectului."

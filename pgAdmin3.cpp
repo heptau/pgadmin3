@@ -87,6 +87,7 @@
 frmMain *winMain = 0;
 wxThread *updateThread = 0;
 bool iswayland=false;
+bool isdark=false;
 wxBrush selectFindBrush;
 
 #if defined(HAVE_OPENSSL_CRYPTO) || defined(HAVE_GCRYPT)
@@ -115,6 +116,7 @@ wxString gpRestoreExecutable;
 wxString loadPath;              // Where the program is loaded from
 wxString dataDir;               // The program data directory
 wxString docPath;               // Where docs are stored
+wxString defPath;              //  Where default main data is stored
 wxString uiPath;                // Where ui data is stored
 wxString i18nPath;              // Where i18n data is stored
 wxString brandingPath;          // Where branding data is stored
@@ -298,7 +300,17 @@ bool pgAdmin3::OnInit()
 
 	// Setup additional helper paths etc. Requires settings!
 	InitXtraPaths();
-
+#ifdef __WXMAC__
+	ApplyAppearanceMode(settings->GetAppearanceMode());
+#endif
+#if defined(__WXMSW__) && wxCHECK_VERSION(3,3,0)
+	// wxwidgets 3.2 not support dark mode from windows
+	isdark=wxSystemSettings::GetAppearance().IsDark();
+#else
+	#ifndef __WXMSW__
+		isdark=wxSystemSettings::GetAppearance().IsDark();
+	#endif
+#endif
 	locale = new wxLocale();
 	locale->AddCatalogLookupPathPrefix(i18nPath);
 
@@ -324,7 +336,7 @@ bool pgAdmin3::OnInit()
 	{
 		selectFindBrush = wxBrush(cl5);
 	} else {
-		if (wxSystemSettings::GetAppearance().IsUsingDarkBackground()) {
+		if (isDark()) {
 			selectFindBrush = wxBrush(wxColour("#A09E0D"));
 		} else {
 			selectFindBrush = wxBrush(*wxYELLOW_BRUSH);
@@ -392,6 +404,7 @@ bool pgAdmin3::OnInit()
 		{wxCMD_LINE_OPTION, "c", NULL, _("edit configuration files in cluster directory"), wxCMD_LINE_VAL_STRING, wxCMD_LINE_PARAM_MULTIPLE},
 		{wxCMD_LINE_SWITCH, "t", NULL, _("dialog translation test mode"), wxCMD_LINE_VAL_NONE},
 		{wxCMD_LINE_SWITCH, "el", NULL, _("export servers configuration to file pgadmin3.ini"), wxCMD_LINE_VAL_NONE},
+		{wxCMD_LINE_SWITCH, "dark", NULL, _("Enable Dark mode"), wxCMD_LINE_VAL_NONE},
 #else
 		{wxCMD_LINE_SWITCH, wxT("v"), wxT("version"), _("show the version, and quit"), wxCMD_LINE_VAL_NONE},
 		{wxCMD_LINE_SWITCH, wxT("h"), wxT("help"), _("show the help message, and quit"), wxCMD_LINE_VAL_NONE, wxCMD_LINE_OPTION_HELP },
@@ -478,6 +491,7 @@ bool pgAdmin3::OnInit()
 
 	// Log the path info
 	wxLogInfo(wxT("load path     : %s"), loadPath.c_str());
+	wxLogInfo(wxT("def  path     : %s"), defPath.c_str());
 	wxLogInfo(wxT("i18n path     : %s"), i18nPath.c_str());
 	wxLogInfo(wxT("UI path       : %s"), uiPath.c_str());
 	wxLogInfo(wxT("Doc path      : %s"), docPath.c_str());
@@ -551,7 +565,10 @@ bool pgAdmin3::OnInit()
 	wxLogInfo(wxT("EDB Help      : %s"), settings->GetEdbHelpPath().c_str());
 	wxLogInfo(wxT("Greenplum Help: %s"), settings->GetGpHelpPath().c_str());
 	wxLogInfo(wxT("Slony Help    : %s"), settings->GetSlonyHelpPath().c_str());
-
+	if (cmdParser.Found(wxT("dark"))) {
+			isdark=true;
+			wxLogInfo(wxT("Enable Dark mode"));
+	}
 #ifndef __WXDEBUG__
 	wxTheApp->Yield(true);
 	wxSleep(2);
@@ -942,10 +959,10 @@ bool pgAdmin3::OnInit()
 			wxLogWarning(wxT("Import servers configure to file %s"), file.c_str());
 			return false;
 #endif
-
 		}
 		else
 		{
+
 			// Create & show the main form
 			winMain = new frmMain(appearanceFactory->GetLongAppName());
 
@@ -1075,6 +1092,16 @@ void pgAdmin3::InitAppPaths()
 	brandingPath = LocatePath(BRANDING_DIR, false);
 	pluginsDir = LocatePath(PLUGINS_DIR, false);
 	settingsIni = LocatePath(SETTINGS_INI, true);
+#ifdef __WXMAC__
+	// "." would be appended to the bundle's SharedSupport dir without a
+	// separator ("SharedSupport."), so look up the dir itself.
+	defPath=LocatePath(wxEmptyString,false);
+#else
+	if (wxDir::Exists(loadPath + wxT("/../share/pgadmin3")))
+			defPath=sanitizePath(loadPath + wxT("/../share/pgadmin3"));
+		else 
+			defPath=LocatePath(".",false);
+#endif
 #ifdef __LINUX__
     wxString newdir;
 	wxString olddatadir=wxFileName::GetHomeDir()+sepPath+"postgresql";

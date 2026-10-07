@@ -31322,3 +31322,1759 @@ msgstr "|"
 #~ "Running...\n"
 #~ "\n"
 #~ msgstr "가동중"
+
+#: pgAdmin3.cpp:389
+msgid "open server log window"
+msgstr "서버 로그 창 열기"
+
+#: pgAdmin3.cpp:403
+msgid "export servers configuration to file pgadmin3.ini"
+msgstr "서버 구성을 pgadmin3.ini 파일로 내보내기"
+
+#: pgAdmin3.cpp:404
+msgid "Enable Dark mode"
+msgstr "다크 모드 사용"
+
+#: pgAdmin3.cpp:1013
+msgid "Log - "
+msgstr "로그 - "
+
+#: ctl/ctlTreeJSON.cpp:73
+msgid "Please enter find string\n"
+msgstr "검색할 문자열을 입력하십시오\n"
+
+#: ctl/ctlSQLGrid.cpp:993
+msgid "The line size is [ %s ] characters, do you want to continue?"
+msgstr "줄 크기가 [ %s ]자입니다. 계속하시겠습니까?"
+
+#: ctl/ctlSQLBox.cpp:1426
+msgid "All line (use all EOL)"
+msgstr "모든 줄(모든 EOL 사용)"
+
+#: ctl/ctlSQLBox.cpp:1427
+msgid "First line pattern (ignore all but the first EOL)"
+msgstr "첫 줄 패턴(첫 번째 EOL을 제외한 모든 EOL 무시)"
+
+#: ctl/ctlSQLBox.cpp:1428
+msgid "Try looking for patterns above"
+msgstr "위쪽에서 패턴 찾기 시도"
+
+#: ctl/ctlSQLBox.cpp:1429
+msgid "Compact view"
+msgstr "간결하게 보기"
+
+#: ctl/ctlSQLBox.cpp:1430
+msgid "Remove multi spaces"
+msgstr "중복 공백 제거"
+
+#: ctl/ctlSQLBox.cpp:1432
+msgid "A multi-choice convenience dialog"
+msgstr "다중 선택 편의 대화 상자"
+
+#: ctl/ctlSQLBox.cpp:1433
+msgid "Please select several align options"
+msgstr "정렬 옵션을 여러 개 선택하십시오"
+
+#: ctl/ctlSQLBox.cpp:1459
+msgid "Aligning complete."
+msgstr "정렬이 완료되었습니다."
+
+#: ctl/ctlSQLBox.cpp:1476
+msgid "Formatting Ok"
+msgstr "서식 지정 완료"
+
+#: ctl/ctlSQLBox.cpp:1500
+msgid "Couldn't run aligning command: "
+msgstr "정렬 명령을 실행할 수 없습니다: "
+
+#: ctl/ctlSQLBox.cpp:1522
+msgid "Aligning command did not respond in %d ms"
+msgstr "정렬 명령이 %d ms 내에 응답하지 않았습니다"
+
+#: ctl/ctlSQLBox.cpp:1534
+msgid "Aligning command error: Output is empty."
+msgstr "정렬 명령 오류: 출력이 비어 있습니다."
+
+#: ctl/ctlListView.cpp:63
+msgid "CFS fragmentation"
+msgstr "CFS 단편화"
+
+#: ctl/ctlListView.cpp:70
+msgid "CFS %"
+msgstr "CFS %"
+
+#: ctl/ctlNavigatePanel.cpp:46
+msgid "Search for a simple string."
+msgstr "간단한 문자열을 검색합니다."
+
+#: ctl/ctlNavigatePanel.cpp:50
+msgid "Go to the next marker."
+msgstr "다음 마커로 이동합니다."
+
+#: ctl/ctlNavigatePanel.cpp:56
+msgid "Go to the next marker of the same type."
+msgstr "같은 유형의 다음 마커로 이동합니다."
+
+#: ctl/ctlNavigatePanel.cpp:61
+msgid "The next occurrence of the string."
+msgstr "문자열의 다음 항목입니다."
+
+#: ctl/ctlNavigatePanel.cpp:66
+msgid "Previous occurrence of the string."
+msgstr "문자열의 이전 항목입니다."
+
+#: ctl/ctlNavigatePanel.cpp:71
+msgid "Find all strings content current row Pid."
+msgstr "현재 행의 Pid가 포함된 모든 문자열을 찾습니다."
+
+#: ctl/ctlNavigatePanel.cpp:76
+msgid "Find all strings content current row State."
+msgstr "현재 행의 State가 포함된 모든 문자열을 찾습니다."
+
+#: ctl/ctlNavigatePanel.cpp:81
+msgid "Enable/disable auto hint."
+msgstr "자동 힌트를 사용/사용 안 함으로 전환합니다."
+
+#: ctl/ctlNavigatePanel.cpp:309
+msgid "Incorrect hotkey \"%s\" for command \"%s\""
+msgstr "단축키 \"%s\"(명령 \"%s\")이(가) 올바르지 않습니다"
+
+#: ctl/ctlSQLResult.cpp:390
+msgid "Incorrect flag at the '%s' column."
+msgstr "'%s' 열의 플래그가 올바르지 않습니다."
+
+#: ctl/ctlSQLResult.cpp:412
+msgid "The column name empty. '%s' ."
+msgstr "열 이름이 비어 있습니다. '%s' ."
+
+#: ctl/ctlSQLResult.cpp:418
+msgid "The column name '%s' was not found in the query results."
+msgstr "쿼리 결과에서 열 이름 '%s'을(를) 찾을 수 없습니다."
+
+#: ctl/ctlSQLResult.cpp:442
+msgid "The column name  '%s' is not closed."
+msgstr "열 이름 '%s'이(가) 닫히지 않았습니다."
+
+#: dlg/dlgForeignTable.cpp:169
+msgid "Type %s not found in cbDatatype(%d)\n"
+msgstr "%s 유형을 cbDatatype(%d)에서 찾을 수 없습니다\n"
+
+#: pro_scheduler/pgproJob.cpp:36
+msgid "Retrieving details on pro_scheduler job"
+msgstr "pro_scheduler 작업의 세부 정보를 가져오는 중"
+
+#: pro_scheduler/pgproJob.cpp:39
+msgid "Refreshing pro_scheduler job"
+msgstr "pro_scheduler 작업을 새로 고치는 중"
+
+#: pro_scheduler/pgproJob.cpp:42
+msgid "pro_scheduler job properties report"
+msgstr "pro_scheduler 작업 속성 보고서"
+
+#: pro_scheduler/pgproJob.cpp:48
+msgid "pro_scheduler job DDL report"
+msgstr "pro_scheduler 작업 DDL 보고서"
+
+#: pro_scheduler/pgproJob.cpp:51
+msgid "pro_scheduler job dependencies report"
+msgstr "pro_scheduler 작업 종속성 보고서"
+
+#: pro_scheduler/pgproJob.cpp:54
+msgid "pro_scheduler job dependencies"
+msgstr "pro_scheduler 작업 종속성"
+
+#: pro_scheduler/pgproJob.cpp:57
+msgid "pro_scheduler job dependents report"
+msgstr "pro_scheduler 작업 종속 항목 보고서"
+
+#: pro_scheduler/pgproJob.cpp:60
+msgid "pro_scheduler job dependents"
+msgstr "pro_scheduler 작업 종속 항목"
+
+#: pro_scheduler/pgproJob.cpp:140
+msgid "Started"
+msgstr "시작됨"
+
+#: pro_scheduler/pgproJob.cpp:141
+msgid "Finished"
+msgstr "완료됨"
+
+#: pro_scheduler/pgproJob.cpp:143
+msgid "Crontab"
+msgstr "Crontab"
+
+#: pro_scheduler/pgproJob.cpp:146
+msgid "Runas"
+msgstr "실행 사용자"
+
+#: pro_scheduler/pgproJob.cpp:152
+msgid "Next start job"
+msgstr "다음 작업 시작"
+
+#: pro_scheduler/pgproJob.cpp:185
+msgid "Previous sched time run skip"
+msgstr "이전 예약 시간 실행 건너뜀"
+
+#: pro_scheduler/pgproJob.cpp:254
+msgid "Not run"
+msgstr "실행 안 함"
+
+#: pro_scheduler/pgproJob.cpp:356
+msgid "Log_time"
+msgstr "Log_time"
+
+#: pro_scheduler/pgproJob.cpp:357
+msgid "Critical"
+msgstr "치명적"
+
+#: pro_scheduler/pgproJob.cpp:359
+msgid "Stage"
+msgstr "단계"
+
+#: pro_scheduler/pgproJob.cpp:505
+msgid "Enabled or disabled job"
+msgstr "작업 사용 또는 사용 안 함"
+
+#: utils/misc.cpp:201
+msgid "Bi"
+msgstr "십억"
+
+#: utils/misc.cpp:202
+msgid "Mi"
+msgstr "백만"
+
+#: utils/misc.cpp:203
+msgid "ths"
+msgstr "천"
+
+#: utils/FunctionPGHelper.cpp:238
+msgid "'The database is closed in the object browser.'"
+msgstr "'데이터베이스가 개체 브라우저에서 닫혀 있습니다.'"
+
+#: utils/dlgTransformText.cpp:76
+msgid "Transformation text"
+msgstr "텍스트 변환"
+
+#: utils/macros.cpp:272
+msgid "Failed to load AutoReplace file!"
+msgstr "AutoReplace 파일을 불러오지 못했습니다!"
+
+#: utils/macros.cpp:279
+msgid "Failed to read AutoReplace file!"
+msgstr "AutoReplace 파일을 읽지 못했습니다!"
+
+#: utils/macros.cpp:298
+msgid "Failed to open AutoReplace file!"
+msgstr "AutoReplace 파일을 열지 못했습니다!"
+
+#: utils/macros.cpp:306
+msgid "Failed to write to AutoReplace file!"
+msgstr "AutoReplace 파일에 쓰지 못했습니다!"
+
+#: utils/sysSettings.cpp:95
+msgid "pgpro_scheduler"
+msgstr "pgpro_scheduler"
+
+#: utils/sysSettings.cpp:139
+msgid "Publications"
+msgstr "게시"
+
+#: utils/sshTunnel.cpp:618
+msgid " [%s]"
+msgstr " [%s]"
+
+#: frm/frmEditGrid.cpp:3383
+msgid "View F&iltered Rows...\tCtrl-F"
+msgstr "필터링된 행 보기(&I)...\tCtrl-F"
+
+#: frm/frmEditGrid.cpp:3384
+msgid "View Filtered Rows\tCtrl-F"
+msgstr "필터링된 행 보기\tCtrl-F"
+
+#: frm/frmQuery.cpp:384
+msgid "New SQL &tab\tCtrl-T"
+msgstr "새 SQL 탭(&T)\tCtrl-T"
+
+#: frm/frmQuery.cpp:384
+msgid "Open a new query tab"
+msgstr "새 쿼리 탭 열기"
+
+#: frm/frmQuery.cpp:387
+msgid "&Export...\tAlt+E"
+msgstr "내보내기(&E)...\tAlt+E"
+
+#: frm/frmQuery.cpp:422
+msgid "Double the single quote\tCtrl-'"
+msgstr "작은따옴표 두 배로\tCtrl-'"
+
+#: frm/frmQuery.cpp:422
+msgid "Double the single quote"
+msgstr "작은따옴표 두 배로"
+
+#: frm/frmQuery.cpp:423
+msgid "Undouble the single quote\tCtrl-Shift-'"
+msgstr "작은따옴표 두 배 해제\tCtrl-Shift-'"
+
+#: frm/frmQuery.cpp:423
+msgid "Undouble the single quote"
+msgstr "작은따옴표 두 배 해제"
+
+#: frm/frmQuery.cpp:426
+msgid "External Align...\tCtrl-Shift-A"
+msgstr "외부 정렬...\tCtrl-Shift-A"
+
+#: frm/frmQuery.cpp:426
+msgid "Call external align command"
+msgstr "외부 정렬 명령 호출"
+
+#: frm/frmQuery.cpp:429
+msgid "Manage autoreplace..."
+msgstr "자동 바꾸기 관리..."
+
+#: frm/frmQuery.cpp:429
+msgid "Edit and delete autoreplace strings"
+msgstr "자동 바꾸기 문자열 편집 및 삭제"
+
+#: frm/frmQuery.cpp:430
+msgid "Open object\tF4"
+msgstr "개체 열기\tF4"
+
+#: frm/frmQuery.cpp:430
+msgid "Open object in brouser tree"
+msgstr "브라우저 트리에서 개체 열기"
+
+#: frm/frmQuery.cpp:431
+msgid "Text transform...\tCtrl+M"
+msgstr "텍스트 변환...\tCtrl+M"
+
+#: frm/frmQuery.cpp:431
+msgid "Open dialog transform"
+msgstr "변환 대화 상자 열기"
+
+#: frm/frmQuery.cpp:438
+msgid "&Execute\tF8"
+msgstr "실행(&E)\tF8"
+
+#: frm/frmQuery.cpp:439
+msgid "&Execute new output\tShift-F8"
+msgstr "새 출력으로 실행(&E)\tShift-F8"
+
+#: frm/frmQuery.cpp:439
+msgid "Execute query in new output"
+msgstr "새 출력에서 쿼리 실행"
+
+#: frm/frmQuery.cpp:441
+msgid "Execute to file\tF5"
+msgstr "파일로 실행\tF5"
+
+#: frm/frmQuery.cpp:456
+msgid "&Auto-Select"
+msgstr "자동 선택(&A)"
+
+#: frm/frmQuery.cpp:456
+msgid "Auto select query"
+msgstr "쿼리 자동 선택"
+
+#: frm/frmQuery.cpp:462
+msgid "Commit\tF10"
+msgstr "커밋\tF10"
+
+#: frm/frmQuery.cpp:463
+msgid "Rollback\tShift-F10"
+msgstr "롤백\tShift-F10"
+
+#: frm/frmQuery.cpp:617
+msgid "New SQL tab"
+msgstr "새 SQL 탭"
+
+#: frm/frmQuery.cpp:624
+msgid "Compare the selected text with the clipboard"
+msgstr "선택한 텍스트를 클립보드와 비교"
+
+#: frm/frmQuery.cpp:646
+msgid "Mode transaction"
+msgstr "트랜잭션 모드"
+
+#: frm/frmQuery.cpp:2245
+msgid "Copy Insert format"
+msgstr "INSERT 형식으로 복사"
+
+#: frm/frmQuery.cpp:2245
+msgid "Copy Insert format."
+msgstr "INSERT 형식으로 복사."
+
+#: frm/frmQuery.cpp:2246
+msgid "List columns header"
+msgstr "열 목록 머리글"
+
+#: frm/frmQuery.cpp:2246
+msgid "Copy list columns header"
+msgstr "열 목록 머리글 복사"
+
+#: frm/frmQuery.cpp:2247
+msgid "IN list format copy"
+msgstr "IN 목록 형식 복사"
+
+#: frm/frmQuery.cpp:2247
+msgid "Copy In list format."
+msgstr "IN 목록 형식으로 복사."
+
+#: frm/frmQuery.cpp:2248
+msgid "WHERE list format copy"
+msgstr "WHERE 목록 형식 복사"
+
+#: frm/frmQuery.cpp:2248
+msgid "Copy where list format."
+msgstr "WHERE 목록 형식으로 복사."
+
+#: frm/frmQuery.cpp:2249
+msgid "Copy table html format"
+msgstr "테이블 HTML 형식 복사"
+
+#: frm/frmQuery.cpp:2249
+msgid "Copy table html format."
+msgstr "테이블 HTML 형식으로 복사."
+
+#: frm/frmQuery.cpp:2269
+msgid "Draw plot LY(bar) or LXY or XYYY..."
+msgstr "플롯 그리기 LY(막대) 또는 LXY 또는 XYYY..."
+
+#: frm/frmQuery.cpp:2269
+msgid "Draw plot LY(bar) LXY or XYYY..."
+msgstr "플롯 그리기 LY(막대), LXY 또는 XYYY..."
+
+#: frm/frmQuery.cpp:2270
+msgid "Summary"
+msgstr "요약"
+
+#: frm/frmQuery.cpp:2270
+msgid "Summary selected cells."
+msgstr "선택한 셀 요약."
+
+#: frm/frmQuery.cpp:2271
+msgid "Compare 2 Cells"
+msgstr "셀 2개 비교"
+
+#: frm/frmQuery.cpp:2271
+msgid "Compare 2 selected cells."
+msgstr "선택한 셀 2개를 비교합니다."
+
+#: frm/frmQuery.cpp:2272
+msgid "Check the sequence of dates"
+msgstr "날짜 순서 확인"
+
+#: frm/frmQuery.cpp:2273
+msgid "Clear filter"
+msgstr "필터 지우기"
+
+#: frm/frmQuery.cpp:2333
+msgid "No template generate."
+msgstr "생성된 템플릿이 없습니다."
+
+#: frm/frmQuery.cpp:2558
+msgid "%i@"
+msgstr "%i@"
+
+#: frm/frmQuery.cpp:3070
+msgid "Out %i"
+msgstr "출력 %i"
+
+#: frm/frmQuery.cpp:3413
+msgid "-- Executing query [%s]:[%s]\n"
+msgstr "-- 쿼리 실행 중 [%s]:[%s]\n"
+
+#: frm/frmQuery.cpp:4241
+msgid "Running aligning command..."
+msgstr "정렬 명령 실행 중..."
+
+#: frm/frmQuery.cpp:4471
+msgid "outputPane"
+msgstr "outputPane"
+
+#: frm/frmQuery.cpp:4491
+msgid "Output pane [%s]"
+msgstr "출력 창 [%s]"
+
+#: frm/frmQuery.cpp:4597
+msgid "Cannot change to selected SQL tab now. Try again a bit later."
+msgstr "지금은 선택한 SQL 탭으로 전환할 수 없습니다. 잠시 후 다시 시도하십시오."
+
+#: frm/frmQuery.cpp:4620
+msgid "Cannot add a new SQL tab now. Try again a bit later."
+msgstr "지금은 새 SQL 탭을 추가할 수 없습니다. 잠시 후 다시 시도하십시오."
+
+#: frm/frmQuery.cpp:4689
+msgid "Please enter name string with prefix dbname or description server\n"
+msgstr "데이터베이스 이름 접두사 또는 서버 설명이 포함된 이름 문자열을 입력하십시오\n"
+
+#: frm/frmQuery.cpp:4691
+msgid "Name autosave tab window."
+msgstr "탭 창 자동 저장 이름."
+
+#: frm/frmQuery.cpp:4717
+msgid "Cannot remove the last SQL tab"
+msgstr "마지막 SQL 탭은 제거할 수 없습니다"
+
+#: frm/frmQuery.cpp:4797
+msgid "Query %d"
+msgstr "쿼리 %d"
+
+#: frm/frmQuery.cpp:5148
+msgid "Script Recreate Cascade"
+msgstr "스크립트 재생성 CASCADE"
+
+#: frm/frmQuery.cpp:5148
+msgid "Start query tool with recreate cascade script."
+msgstr "재생성 CASCADE 스크립트로 쿼리 도구 시작."
+
+#: frm/frmOptions.cpp:61
+msgid "PgAdmin3opt settings"
+msgstr "PgAdmin3opt 설정"
+
+#: frm/frmOptions.cpp:615
+msgid "Color theme save to file %s"
+msgstr "색상 테마를 파일 %s에 저장"
+
+#: frm/frmOptions.cpp:637
+msgid "Color theme load from file %s"
+msgstr "파일 %s에서 색상 테마 불러오기"
+
+#: frm/frmOptions.cpp:638
+msgid "Load theme"
+msgstr "테마 불러오기"
+
+#: frm/frmOptions.cpp:1208
+msgid "&Options...\tCtrl-O"
+msgstr "옵션(&O)...\tCtrl-O"
+
+#: frm/frmStatus.cpp:282
+msgid "&Wait trace"
+msgstr "대기 추적(&W)"
+
+#: frm/frmStatus.cpp:282
+msgid "Enable the wait event."
+msgstr "대기 이벤트를 사용합니다."
+
+#: frm/frmStatus.cpp:283
+msgid "&Wait event save"
+msgstr "대기 이벤트 저장(&W)"
+
+#: frm/frmStatus.cpp:283
+msgid "Enable the wait event save to file sample.dat."
+msgstr "대기 이벤트를 sample.dat 파일에 저장하도록 설정합니다."
+
+#: frm/frmStatus.cpp:320
+msgid "Value parameter pg_wait_sampling.history_size = %ld greet 1000000  monitoring wait events disabled.\n"
+msgstr "매개변수 pg_wait_sampling.history_size = %ld 값이 1000000보다 커서 대기 이벤트 모니터링이 비활성화되었습니다.\n"
+
+#: frm/frmStatus.cpp:383
+msgid "&Query state\tCtrl-Alt-Q"
+msgstr "쿼리 상태(&Q)\tCtrl-Alt-Q"
+
+#: frm/frmStatus.cpp:383
+msgid "Show or hide the query state tab."
+msgstr "쿼리 상태 탭을 표시하거나 숨깁니다."
+
+#: frm/frmStatus.cpp:385
+msgid "Append verbose"
+msgstr "VERBOSE 추가"
+
+#: frm/frmStatus.cpp:386
+msgid "Append use buffers"
+msgstr "BUFFERS 사용 추가"
+
+#: frm/frmStatus.cpp:387
+msgid "Append real timing"
+msgstr "실제 타이밍 추가"
+
+#: frm/frmStatus.cpp:388
+msgid "Append triggers"
+msgstr "트리거 추가"
+
+#: frm/frmStatus.cpp:396
+msgid "&Wait"
+msgstr "대기(&W)"
+
+#: frm/frmStatus.cpp:436
+msgid "Highlight items only"
+msgstr "항목만 강조 표시"
+
+#: frm/frmStatus.cpp:517
+msgid "QueryState"
+msgstr "QueryState"
+
+#: frm/frmStatus.cpp:853
+msgid "W_Event_T"
+msgstr "W_Event_T"
+
+#: frm/frmStatus.cpp:854
+msgid "W_Event"
+msgstr "W_Event"
+
+#: frm/frmStatus.cpp:1112
+msgid "Query State"
+msgstr "쿼리 상태"
+
+#: frm/frmStatus.cpp:1126
+msgid "Query Text"
+msgstr "쿼리 텍스트"
+
+#: frm/frmStatus.cpp:1127
+msgid "Plan"
+msgstr "계획"
+
+#: frm/frmStatus.cpp:1251
+msgid "Functions pg_read_binary_file(text,bigint,bigint,boolean), pg_stat_file(text,boolean),pg_ls_logdir()  permission denied."
+msgstr "함수 pg_read_binary_file(text,bigint,bigint,boolean), pg_stat_file(text,boolean),pg_ls_logdir()에 대한 권한이 거부되었습니다."
+
+#: frm/frmStatus.cpp:1716
+msgid "Activity query long execute"
+msgstr "오래 실행되는 활동 쿼리"
+
+#: frm/frmStatus.cpp:2634
+msgid "Query state status long execute"
+msgstr "오래 실행되는 쿼리 상태"
+
+#: frm/frmStatus.cpp:2670
+msgid "Refreshing query state list."
+msgstr "쿼리 상태 목록을 새로 고치는 중."
+
+#: frm/frmStatus.cpp:2959
+msgid "Wait..."
+msgstr "대기 중..."
+
+#: frm/frmStatus.cpp:4807
+msgid "&Server Status\tCtrl-S"
+msgstr "서버 상태(&S)\tCtrl-S"
+
+#: frm/frmPlot.cpp:120
+msgid "Lock aspect"
+msgstr "비율 고정"
+
+#: frm/frmPlot.cpp:120
+msgid "Lock horizontal and vertical zoom aspect."
+msgstr "가로 및 세로 확대/축소 비율을 고정합니다."
+
+#: frm/frmPlot.cpp:442
+msgid "Save a screenshot"
+msgstr "스크린샷 저장"
+
+#: frm/frmLog.cpp:1314
+msgid "Log view..."
+msgstr "로그 보기..."
+
+#: frm/frmLog.cpp:1314
+msgid "Log view CSV format"
+msgstr "CSV 형식 로그 보기"
+
+#: frm/frmMain.cpp:200
+msgid "Git"
+msgstr "Git"
+
+#: frm/frmMain.cpp:472
+msgid "&Server"
+msgstr "서버(&S)"
+
+#: frm/frmMain.cpp:472
+msgid "Server menu commands."
+msgstr "서버 메뉴 명령."
+
+#: frm/frmMain.cpp:1187
+msgid "Create putty tunnel error."
+msgstr "PuTTY 터널 생성 오류."
+
+#: frm/frmAwr.cpp:33
+msgid "Report AWR"
+msgstr "AWR 보고서"
+
+#: frm/frmAwr.cpp:33
+msgid "Generate AWR report"
+msgstr "AWR 보고서 생성"
+
+#: schema/pgServer.cpp:1253
+msgid "Key words"
+msgstr "키워드"
+
+#: schema/pgServer.cpp:1338
+msgid "Add connect str"
+msgstr "연결 문자열 추가"
+
+#: schema/pgServer.cpp:2264
+msgid "&Set keywords"
+msgstr "키워드 설정(&S)"
+
+#: schema/pgServer.cpp:2264
+msgid "Set keywords list the selected server."
+msgstr "선택한 서버의 키워드 목록을 설정합니다."
+
+#: schema/pgServer.cpp:2273
+msgid "Please enter keywords\n"
+msgstr "키워드를 입력하십시오\n"
+
+#: schema/pgServer.cpp:2275
+msgid "Keywords server"
+msgstr "서버 키워드"
+
+#: schema/pgServer.cpp:2374
+msgid "Disconnec&t all servers"
+msgstr "모든 서버 연결 끊기(&T)"
+
+#: schema/pgServer.cpp:2374
+msgid "Disconnect from all servers."
+msgstr "모든 서버에서 연결을 끊습니다."
+
+#: schema/pgIndex.cpp:499
+msgid "Check Btree index"
+msgstr "Btree 인덱스 검사"
+
+#: schema/pgIndex.cpp:499
+msgid "Check Btree index function bt_index_parent_check(oid,true)"
+msgstr "Btree 인덱스 검사 함수 bt_index_parent_check(oid,true)"
+
+#: schema/pgIndex.cpp:568
+msgid "&Reset index statistics"
+msgstr "인덱스 통계 재설정(&R)"
+
+#: schema/pgIndex.cpp:568
+msgid "Reset statistics of the selected index."
+msgstr "선택한 인덱스의 통계를 재설정합니다."
+
+#: schema/pgIndex.cpp:574
+msgid "Are you sure you wish to reset statistics of this index?"
+msgstr "이 인덱스의 통계를 재설정하시겠습니까?"
+
+#: schema/pgSubscription.cpp:33
+msgid "Retrieving details on subscription"
+msgstr "구독 세부 정보를 가져오는 중"
+
+#: schema/pgSubscription.cpp:37
+msgid "Refreshing subscription"
+msgstr "구독을 새로 고치는 중"
+
+#: schema/pgSubscription.cpp:41
+msgid "Are you sure you wish to drop subscription \"%s\" including all objects that depend on it?"
+msgstr "구독 \"%s\"을(를) 이에 종속된 모든 개체와 함께 삭제하시겠습니까?"
+
+#: schema/pgSubscription.cpp:45
+msgid "Are you sure you wish to drop subscription \"%s\"?"
+msgstr "구독 \"%s\"을(를) 삭제하시겠습니까?"
+
+#: schema/pgSubscription.cpp:49
+msgid "Drop subscription cascaded?"
+msgstr "구독을 CASCADE로 삭제하시겠습니까?"
+
+#: schema/pgSubscription.cpp:52
+msgid "Drop subscription?"
+msgstr "구독을 삭제하시겠습니까?"
+
+#: schema/pgSubscription.cpp:55
+msgid "Subscription properties report"
+msgstr "구독 속성 보고서"
+
+#: schema/pgSubscription.cpp:59
+msgid "Subscription properties"
+msgstr "구독 속성"
+
+#: schema/pgSubscription.cpp:62
+msgid "Subscription DDL report"
+msgstr "구독 DDL 보고서"
+
+#: schema/pgSubscription.cpp:66
+msgid "Subscription DDL"
+msgstr "구독 DDL"
+
+#: schema/pgSubscription.cpp:69
+msgid "Subscription dependencies report"
+msgstr "구독 종속성 보고서"
+
+#: schema/pgSubscription.cpp:73
+msgid "Subscription dependencies"
+msgstr "구독 종속성"
+
+#: schema/pgSubscription.cpp:76
+msgid "Subscription dependents report"
+msgstr "구독 종속 항목 보고서"
+
+#: schema/pgSubscription.cpp:80
+msgid "Subscription dependents"
+msgstr "구독 종속 항목"
+
+#: schema/pgSubscription.cpp:210
+msgid "Retrieving details on subscriptions"
+msgstr "구독 목록 세부 정보를 가져오는 중"
+
+#: schema/pgSubscription.cpp:213
+msgid "Refreshing subscriptions"
+msgstr "구독 목록을 새로 고치는 중"
+
+#: schema/pgSubscription.cpp:216
+msgid "Subscriptions list report"
+msgstr "구독 목록 보고서"
+
+#: schema/pgPublication.cpp:33
+msgid "Retrieving details on publication"
+msgstr "게시 세부 정보를 가져오는 중"
+
+#: schema/pgPublication.cpp:37
+msgid "Refreshing publication"
+msgstr "게시를 새로 고치는 중"
+
+#: schema/pgPublication.cpp:41
+msgid "Are you sure you wish to drop publication \"%s\" including all objects that depend on it?"
+msgstr "게시 \"%s\"을(를) 이에 종속된 모든 개체와 함께 삭제하시겠습니까?"
+
+#: schema/pgPublication.cpp:45
+msgid "Are you sure you wish to drop publication \"%s\"?"
+msgstr "게시 \"%s\"을(를) 삭제하시겠습니까?"
+
+#: schema/pgPublication.cpp:49
+msgid "Drop publication cascaded?"
+msgstr "게시를 CASCADE로 삭제하시겠습니까?"
+
+#: schema/pgPublication.cpp:52
+msgid "Drop publication?"
+msgstr "게시를 삭제하시겠습니까?"
+
+#: schema/pgPublication.cpp:55
+msgid "Publication properties report"
+msgstr "게시 속성 보고서"
+
+#: schema/pgPublication.cpp:59
+msgid "Publication properties"
+msgstr "게시 속성"
+
+#: schema/pgPublication.cpp:62
+msgid "Publication DDL report"
+msgstr "게시 DDL 보고서"
+
+#: schema/pgPublication.cpp:66
+msgid "Publication DDL"
+msgstr "게시 DDL"
+
+#: schema/pgPublication.cpp:69
+msgid "Publication dependencies report"
+msgstr "게시 종속성 보고서"
+
+#: schema/pgPublication.cpp:73
+msgid "Publication dependencies"
+msgstr "게시 종속성"
+
+#: schema/pgPublication.cpp:76
+msgid "Publication dependents report"
+msgstr "게시 종속 항목 보고서"
+
+#: schema/pgPublication.cpp:80
+msgid "Publication dependents"
+msgstr "게시 종속 항목"
+
+#: schema/pgPublication.cpp:318
+msgid "Retrieving details on publications"
+msgstr "게시 목록 세부 정보를 가져오는 중"
+
+#: schema/pgPublication.cpp:321
+msgid "Refreshing publications"
+msgstr "게시 목록을 새로 고치는 중"
+
+#: schema/pgPublication.cpp:324
+msgid "Publications list report"
+msgstr "게시 목록 보고서"
+
+#: schema/pgTable.cpp:1096
+msgid "Create table timestamp"
+msgstr "테이블 타임스탬프 생성"
+
+#: schema/pgObject.cpp:621
+msgid "extension"
+msgstr "확장"
+
+#: schema/pgFunction.cpp:410
+msgid "Parallel"
+msgstr "병렬"
+
+#: schema/pgFunction.cpp:426
+msgid "Last change timestamp"
+msgstr "마지막 변경 타임스탬프"
+
+#: dd/ddmodel/ddDBReverseEnginering.cpp:175
+msgid "Schema not found"
+msgstr "스키마를 찾을 수 없습니다"
+
+#: dd/ddmodel/ddDBReverseEnginering.cpp:175
+msgid "getting table OID"
+msgstr "테이블 OID를 가져오는 중"
+
+#: dd/ddmodel/ddDBReverseEnginering.cpp:216
+msgid "Table not found"
+msgstr "테이블을 찾을 수 없습니다"
+
+#: dd/ddmodel/ddDBReverseEnginering.cpp:665
+msgid "Error detecting kind of foreign key source: from Pk or from Uk"
+msgstr "외래 키 원본 종류 감지 오류: Pk 또는 Uk에서"
+
+#: dd/ddmodel/ddDBReverseEnginering.cpp:665
+msgid "Error importing relationship"
+msgstr "관계 가져오기 오류"
+
+#: dd/ddmodel/ddDBReverseEnginering.cpp:786
+msgid "Error detecting kind of foreign key: null or not null"
+msgstr "외래 키 종류 감지 오류: null 또는 not null"
+
+#: dd/ddmodel/ddDBReverseEnginering.cpp:1333
+msgid "Error fk is repeated"
+msgstr "오류: fk가 중복되었습니다"
+
+#: dd/ddmodel/ddDBReverseEnginering.cpp:1333
+msgid "Error comparing relationships"
+msgstr "관계 비교 오류"
+
+#: dd/ddmodel/ddDBReverseEnginering.cpp:1673
+msgid "Please, select a schema to use at import tables process:"
+msgstr "테이블 가져오기 과정에서 사용할 스키마를 선택하십시오:"
+
+#: dd/ddmodel/ddDBReverseEnginering.cpp:1698
+msgid "Please, select a Schema to continue to next step."
+msgstr "다음 단계로 계속하려면 스키마를 선택하십시오."
+
+#: dd/ddmodel/ddDBReverseEnginering.cpp:1698
+msgid "Select a Schema..."
+msgstr "스키마 선택..."
+
+#: dd/ddmodel/ddDBReverseEnginering.cpp:1806
+msgid "Table(s) from selected schema"
+msgstr "선택한 스키마의 테이블"
+
+#: dd/ddmodel/ddDBReverseEnginering.cpp:1811
+msgid "Tables(s) to be imported"
+msgstr "가져올 테이블"
+
+#: dd/ddmodel/ddDBReverseEnginering.cpp:1826
+msgid "Add the selected table(s)"
+msgstr "선택한 테이블 추가"
+
+#: dd/ddmodel/ddDBReverseEnginering.cpp:1828
+msgid "Add all tables"
+msgstr "모든 테이블 추가"
+
+#: dd/ddmodel/ddDBReverseEnginering.cpp:1830
+msgid "Remove the selected table(s)"
+msgstr "선택한 테이블 제거"
+
+#: dd/ddmodel/ddDBReverseEnginering.cpp:1832
+msgid "Remove all tables"
+msgstr "모든 테이블 제거"
+
+#: dd/ddmodel/ddDBReverseEnginering.cpp:1981
+msgid "Please, select at least a table to continue to next step."
+msgstr "다음 단계로 계속하려면 테이블을 하나 이상 선택하십시오."
+
+#: dd/ddmodel/ddDBReverseEnginering.cpp:1981
+msgid "Select some Tables..."
+msgstr "테이블 선택..."
+
+#: dd/ddmodel/ddDBReverseEnginering.cpp:1997
+msgid "Error when preparing to import table: "
+msgstr "테이블 가져오기 준비 중 오류: "
+
+#: dd/ddmodel/ddDBReverseEnginering.cpp:2009
+msgid "Prepared to import table: "
+msgstr "테이블 가져오기 준비 완료: "
+
+#: dd/ddmodel/ddDBReverseEnginering.cpp:2009
+msgid "\n"
+msgstr "\n"
+
+#: dd/ddmodel/ddDBReverseEnginering.cpp:2029
+msgid "Returning to previous dialog will remove all selected tables, do you like to continue?"
+msgstr "이전 대화 상자로 돌아가면 선택한 모든 테이블이 제거됩니다. 계속하시겠습니까?"
+
+#: dd/ddmodel/ddDBReverseEnginering.cpp:2077
+msgid "Returning to previous dialog will delete imported tables before adding it to the model?"
+msgstr "이전 대화 상자로 돌아가면 가져온 테이블이 모델에 추가되기 전에 삭제됩니다. 계속하시겠습니까?"
+
+#: dd/ddmodel/ddDrawingView.cpp:33
+msgid "Add new Table"
+msgstr "새 테이블 추가"
+
+#: dd/ddmodel/ddDrawingView.cpp:84
+msgid "Table exists already at this diagram"
+msgstr "이 다이어그램에 테이블이 이미 있습니다"
+
+#: dd/ddmodel/ddDrawingView.cpp:84
+msgid "Drag and drop warning"
+msgstr "끌어서 놓기 경고"
+
+#: dd/ddmodel/ddModelBrowser.cpp:39
+msgid "Database Design"
+msgstr "데이터베이스 설계"
+
+#: dd/ddmodel/ddGenerationWizard.cpp:99
+msgid "Create table"
+msgstr "테이블 생성"
+
+#: dd/ddmodel/ddGenerationWizard.cpp:100
+msgid "Alter table"
+msgstr "테이블 변경"
+
+#: dd/ddmodel/ddGenerationWizard.cpp:100
+msgid "Drop, then create"
+msgstr "삭제 후 생성"
+
+#: dd/ddmodel/ddGenerationWizard.cpp:100
+msgid "Create table [conflict]"
+msgstr "테이블 생성 [충돌]"
+
+#: dd/ddmodel/ddGenerationWizard.cpp:157
+msgid "Tables(s) to be generated"
+msgstr "생성할 테이블"
+
+#: dd/ddmodel/ddGenerationWizard.cpp:369
+msgid "Please select at least one table to move to next step."
+msgstr "다음 단계로 이동하려면 테이블을 하나 이상 선택하십시오."
+
+#: dd/ddmodel/ddGenerationWizard.cpp:369
+msgid "No tables selected"
+msgstr "선택한 테이블 없음"
+
+#: dd/ddmodel/ddGenerationWizard.cpp:396
+msgid "No schema"
+msgstr "스키마 없음"
+
+#: dd/ddmodel/ddGenerationWizard.cpp:415
+msgid "Please select an item to move to next step."
+msgstr "다음 단계로 이동하려면 항목을 선택하십시오."
+
+#: dd/ddmodel/ddGenerationWizard.cpp:415
+msgid "No choice made"
+msgstr "선택 항목 없음"
+
+#: dd/ddmodel/ddGenerationWizard.cpp:528
+msgid "Please check the choice for each table:"
+msgstr "각 테이블의 선택 항목을 확인하십시오:"
+
+#: dd/ddmodel/ddGenerationWizard.cpp:555
+msgid "Select an action"
+msgstr "작업 선택"
+
+#: dd/ddmodel/ddGenerationWizard.cpp:580
+msgid "Metadata of table to be generated not found at database designer model"
+msgstr "생성할 테이블의 메타데이터를 데이터베이스 디자이너 모델에서 찾을 수 없습니다"
+
+#: dd/ddmodel/ddGenerationWizard.cpp:580
+msgid "Error at generation process"
+msgstr "생성 과정 오류"
+
+#: dd/ddmodel/ddGenerationWizard.cpp:599
+msgid "Error importing at generation process"
+msgstr "생성 과정 가져오기 오류"
+
+#: dd/ddmodel/ddGenerationWizard.cpp:615
+msgid "Going back?"
+msgstr "돌아가시겠습니까?"
+
+#: dd/ddmodel/ddDrawingEditor.cpp:87
+msgid "Are you sure you wish to delete table "
+msgstr "다음 테이블을 삭제하시겠습니까? "
+
+#: dd/ddmodel/ddDrawingEditor.cpp:87
+msgid "Delete table?"
+msgstr "테이블을 삭제하시겠습니까?"
+
+#: dd/ddmodel/ddDrawingEditor.cpp:95
+msgid "Are you sure you wish to delete relationship "
+msgstr "다음 관계를 삭제하시겠습니까? "
+
+#: dd/ddmodel/ddDrawingEditor.cpp:95
+msgid "Delete relationship?"
+msgstr "관계를 삭제하시겠습니까?"
+
+#: dd/ddmodel/ddDrawingEditor.cpp:114
+msgid "Are you sure you wish to delete %d tables, removing from model related relationships?"
+msgstr "테이블 %d개를 삭제하고 모델에서 관련 관계도 제거하시겠습니까?"
+
+#: dd/ddmodel/ddDrawingEditor.cpp:115
+msgid "Delete tables?"
+msgstr "테이블을 삭제하시겠습니까?"
+
+#: dd/ddmodel/ddDrawingEditor.cpp:165
+msgid "Invalid figure kind found"
+msgstr "잘못된 도형 종류가 발견되었습니다"
+
+#: dd/ddmodel/ddDrawingEditor.cpp:165
+msgid "Error while deleting tables"
+msgstr "테이블 삭제 중 오류"
+
+#: dd/ddmodel/ddDrawingEditor.cpp:188
+msgid "Error while deleting table"
+msgstr "테이블 삭제 중 오류"
+
+#: dd/ddmodel/ddDrawingEditor.cpp:223
+msgid "Error while deleting realtionships"
+msgstr "관계 삭제 중 오류"
+
+#: dd/ddmodel/ddDatabaseDesign.cpp:142
+msgid "Invalid number of arguments in call of function generate tables of list"
+msgstr "테이블 목록 생성 함수 호출의 인수 개수가 올바르지 않습니다"
+
+#: dd/ddmodel/ddDatabaseDesign.cpp:162
+msgid "Generating Create sentence(s) for table(s) "
+msgstr "테이블에 대한 CREATE 문 생성 중 "
+
+#: dd/ddmodel/ddDatabaseDesign.cpp:185
+msgid "Generating Pk sentence for table(s) "
+msgstr "테이블에 대한 Pk 문 생성 중 "
+
+#: dd/ddmodel/ddDatabaseDesign.cpp:201
+msgid "Generating Uk sentence(s) for table(s) "
+msgstr "테이블에 대한 Uk 문 생성 중 "
+
+#: dd/ddmodel/ddDatabaseDesign.cpp:217
+msgid "Generating Fk sentence(s) for table(s) "
+msgstr "테이블에 대한 Fk 문 생성 중 "
+
+#: dd/ddmodel/ddDatabaseDesign.cpp:243
+msgid "No connection found when building ALTER objects DDL."
+msgstr "ALTER 개체 DDL을 빌드하는 동안 연결을 찾을 수 없습니다."
+
+#: dd/ddmodel/ddDatabaseDesign.cpp:250
+msgid "Schema defined when building ALTER TABLE DDL"
+msgstr "ALTER TABLE DDL을 빌드하는 동안 스키마가 정의되었습니다"
+
+#: dd/ddmodel/ddDatabaseDesign.cpp:257
+msgid "Generating Alter table sentence(s) for table(s) "
+msgstr "테이블에 대한 ALTER TABLE 문 생성 중 "
+
+#: dd/ddmodel/ddDatabaseDesign.cpp:527
+msgid "Failed to write the model file!"
+msgstr "모델 파일을 쓰지 못했습니다!"
+
+#: hotdraw/utilities/hdRemoveDeleteDialog.cpp:117
+msgid "     Choose Remove from Diagram to remove only from current diagram.     "
+msgstr "     다이어그램에서만 제거하려면 다이어그램에서 제거를 선택하십시오.     "
+
+#: hotdraw/utilities/hdRemoveDeleteDialog.cpp:118
+msgid "     Choose Remove from Model to delete permanently.     "
+msgstr "     영구적으로 삭제하려면 모델에서 제거를 선택하십시오.     "
+
+#: hotdraw/main/hdDrawingView.cpp:457
+msgid "Sample Item"
+msgstr "샘플 항목"
+
+#: hotdraw/main/hdDrawingView.cpp:466
+msgid "Sample menu item"
+msgstr "샘플 메뉴 항목"
+
+#: hotdraw/main/hdDrawingView.cpp:466
+msgid "Sample"
+msgstr "샘플"
+
+#: hotdraw/main/hdDrawingEditor.cpp:267
+msgid "Are you sure you wish to delete figure ?"
+msgstr "도형을 삭제하시겠습니까?"
+
+#: hotdraw/main/hdDrawingEditor.cpp:267
+msgid "Delete figures?"
+msgstr "도형을 삭제하시겠습니까?"
+
+#: hotdraw/main/hdDrawingEditor.cpp:272
+msgid "Are you sure you wish to delete %d figures?"
+msgstr "도형 %d개를 삭제하시겠습니까?"
+
+#: dd/dditems/utilities/ddSelectKindFksDialog.cpp:103
+msgid "From Primary"
+msgstr "기본 키에서"
+
+#: dd/dditems/utilities/ddSelectKindFksDialog.cpp:110
+msgid "Unique Key: "
+msgstr "유니크 키: "
+
+#: dd/dditems/utilities/ddSelectKindFksDialog.cpp:199
+msgid "Automatically Generated"
+msgstr "자동 생성됨"
+
+#: dd/dditems/figures/ddColumnKindIcon.cpp:62
+msgid "Unique key"
+msgstr "유니크 키"
+
+#: dd/dditems/figures/ddTableFigure.cpp:1178
+msgid "Cannot build an ALTER TABLE statement for a non existing table (%s.%s)."
+msgstr "존재하지 않는 테이블(%s.%s)에 대한 ALTER TABLE 문을 만들 수 없습니다."
+
+#: dd/dditems/figures/ddTableFigure.cpp:1179
+msgid "Error when trying to get table OID"
+msgstr "테이블 OID를 가져오는 중 오류"
+
+#: dd/dditems/figures/ddTableFigure.cpp:1186
+msgid "Cannot reverse engineering table %s.%s."
+msgstr "테이블 %s.%s을(를) 리버스 엔지니어링할 수 없습니다."
+
+#: dd/dditems/figures/ddTableFigure.cpp:1187
+msgid "Error when trying to get stub table"
+msgstr "스텁 테이블을 가져오는 중 오류"
+
+#: dd/dditems/figures/ddTableFigure.cpp:1442
+msgid "\" SET NOT NULL;"
+msgstr "\" SET NOT NULL;"
+
+#: dd/dditems/figures/ddTableFigure.cpp:1469
+msgid "Trying to build ALTER sentences"
+msgstr "ALTER 문을 빌드하는 중"
+
+#: dd/dditems/figures/ddColumnFigure.cpp:491
+msgid "relation between table: "
+msgstr "테이블 간 관계: "
+
+#: dd/dditems/figures/ddColumnFigure.cpp:491
+msgid " and table: "
+msgstr " 와(과) 테이블: "
+
+#: dd/dditems/figures/ddColumnFigure.cpp:492
+msgid " is marked as identifying but user created foreign key column: "
+msgstr " 이(가) 식별 관계로 표시되어 있지만 사용자가 만든 외래 키 열: "
+
+#: dd/dditems/figures/ddColumnFigure.cpp:493
+msgid " isn't set as primary key \n"
+msgstr " 이(가) 기본 키로 설정되어 있지 않습니다 \n"
+
+#: dd/dditems/figures/ddColumnFigure.cpp:500
+msgid "relation between table:"
+msgstr "테이블 간 관계:"
+
+#: dd/dditems/figures/ddColumnFigure.cpp:501
+msgid "is marked as optional but user created foreign key column: "
+msgstr "이(가) 선택 관계로 표시되어 있지만 사용자가 만든 외래 키 열: "
+
+#: dd/dditems/figures/ddColumnFigure.cpp:502
+msgid "is set as mandatory \n"
+msgstr "이(가) 필수로 설정되어 있습니다 \n"
+
+#: dd/dditems/figures/ddColumnFigure.cpp:510
+msgid " is marked as mandatory but user created foreign key column: "
+msgstr " 이(가) 필수 관계로 표시되어 있지만 사용자가 만든 외래 키 열: "
+
+#: dd/dditems/figures/ddColumnFigure.cpp:511
+msgid "is set as optional \n"
+msgstr "이(가) 선택으로 설정되어 있습니다 \n"
+
+#: dd/dditems/figures/ddColumnFigure.cpp:519
+msgid "User created foreign key column: "
+msgstr "사용자가 만든 외래 키 열: "
+
+#: dd/dditems/figures/ddColumnFigure.cpp:519
+msgid "have different datatype from source column of relationship: "
+msgstr "이(가) 관계의 원본 열과 데이터 형식이 다릅니다: "
+
+#: dd/dditems/figures/ddColumnFigure.cpp:520
+msgid " \n"
+msgstr " \n"
+
+#: dd/dditems/figures/ddTextTableItemFigure.cpp:243
+msgid "Varchar size"
+msgstr "Varchar 크기"
+
+#: dd/dditems/figures/ddTextTableItemFigure.cpp:244
+msgid "Size for varchar datatype"
+msgstr "varchar 데이터 형식의 크기"
+
+#: dd/dditems/figures/ddTextTableItemFigure.cpp:264
+msgid "datatype size"
+msgstr "데이터 형식 크기"
+
+#: dd/dditems/figures/ddTextTableItemFigure.cpp:265
+msgid "Size for datatype"
+msgstr "데이터 형식의 크기"
+
+#: dd/dditems/figures/ddTextTableItemFigure.cpp:354
+msgid "Add a column..."
+msgstr "열 추가..."
+
+#: dd/dditems/figures/ddTextTableItemFigure.cpp:355
+msgid "Delete the selected column..."
+msgstr "선택한 열 삭제..."
+
+#: dd/dditems/figures/ddTextTableItemFigure.cpp:358
+msgid "Rename the selected column..."
+msgstr "선택한 열 이름 바꾸기..."
+
+#: dd/dditems/figures/ddTextTableItemFigure.cpp:360
+msgid "Activate fk auto-naming..."
+msgstr "fk 자동 이름 지정 활성화..."
+
+#: dd/dditems/figures/ddTextTableItemFigure.cpp:362
+msgid "Not NULL constraint"
+msgstr "NOT NULL 제약 조건"
+
+#: dd/dditems/figures/ddTextTableItemFigure.cpp:373
+msgid "Unique Key"
+msgstr "유니크 키"
+
+#: dd/dditems/figures/ddTextTableItemFigure.cpp:378
+msgid "Column datatype"
+msgstr "열 데이터 형식"
+
+#: dd/dditems/figures/ddTextTableItemFigure.cpp:381
+msgid "serial"
+msgstr "serial"
+
+#: dd/dditems/figures/ddTextTableItemFigure.cpp:383
+msgid "boolean"
+msgstr "boolean"
+
+#: dd/dditems/figures/ddTextTableItemFigure.cpp:385
+msgid "integer"
+msgstr "integer"
+
+#: dd/dditems/figures/ddTextTableItemFigure.cpp:387
+msgid "money"
+msgstr "money"
+
+#: dd/dditems/figures/ddTextTableItemFigure.cpp:389
+msgid "varchar(n)"
+msgstr "varchar(n)"
+
+#: dd/dditems/figures/ddTextTableItemFigure.cpp:391
+msgid "Choose another datatype..."
+msgstr "다른 데이터 형식 선택..."
+
+#: dd/dditems/figures/ddTextTableItemFigure.cpp:393
+msgid "Primary Key Constraint name..."
+msgstr "기본 키 제약 조건 이름..."
+
+#: dd/dditems/figures/ddTextTableItemFigure.cpp:394
+msgid "Unique Key Constraint name..."
+msgstr "유니크 키 제약 조건 이름..."
+
+#: dd/dditems/figures/ddTextTableItemFigure.cpp:396
+msgid "Delete table..."
+msgstr "테이블 삭제..."
+
+#: dd/dditems/figures/ddRelationshipFigure.cpp:241
+msgid "Select one"
+msgstr "하나 선택"
+
+#: dd/dditems/figures/ddRelationshipFigure.cpp:243
+msgid "Foreign Key From"
+msgstr "외래 키 출처"
+
+#: dd/dditems/figures/ddRelationshipFigure.cpp:264
+msgid "Mandatory relationship kind"
+msgstr "필수 관계 종류"
+
+#: dd/dditems/figures/ddRelationshipFigure.cpp:266
+msgid "Identifying relationship"
+msgstr "식별 관계"
+
+#: dd/dditems/figures/ddRelationshipFigure.cpp:269
+msgid "1:M"
+msgstr "1:M"
+
+#: dd/dditems/figures/ddRelationshipFigure.cpp:272
+msgid "Foreign Key Constraint Name"
+msgstr "외래 키 제약 조건 이름"
+
+#: dd/dditems/figures/ddRelationshipFigure.cpp:275
+msgid "Type Simple"
+msgstr "단순 유형"
+
+#: dd/dditems/figures/ddRelationshipFigure.cpp:277
+msgid "Type Full"
+msgstr "전체 유형"
+
+#: dd/dditems/figures/ddRelationshipFigure.cpp:279
+msgid "Match Type "
+msgstr "일치 유형 "
+
+#: dd/dditems/figures/ddRelationshipFigure.cpp:281
+msgid "[ Simple ]"
+msgstr "[ Simple ]"
+
+#: dd/dditems/figures/ddRelationshipFigure.cpp:283
+msgid "[ Full ]"
+msgstr "[ Full ]"
+
+#: dd/dditems/figures/ddRelationshipFigure.cpp:286
+msgid "On Delete "
+msgstr "삭제 시 "
+
+#: dd/dditems/figures/ddRelationshipFigure.cpp:288
+msgid "No Action"
+msgstr "작업 없음"
+
+#: dd/dditems/figures/ddRelationshipFigure.cpp:291
+msgid "[ No Action ]"
+msgstr "[ 작업 없음 ]"
+
+#: dd/dditems/figures/ddRelationshipFigure.cpp:292
+msgid "Restrict"
+msgstr "제한"
+
+#: dd/dditems/figures/ddRelationshipFigure.cpp:295
+msgid "[ Restrict ]"
+msgstr "[ 제한 ]"
+
+#: dd/dditems/figures/ddRelationshipFigure.cpp:296
+msgid "Cascade"
+msgstr "Cascade"
+
+#: dd/dditems/figures/ddRelationshipFigure.cpp:299
+msgid "[ Cascade ]"
+msgstr "[ Cascade ]"
+
+#: dd/dditems/figures/ddRelationshipFigure.cpp:300
+msgid "Set Null"
+msgstr "NULL로 설정"
+
+#: dd/dditems/figures/ddRelationshipFigure.cpp:303
+msgid "[ Set Null ]"
+msgstr "[ NULL로 설정 ]"
+
+#: dd/dditems/figures/ddRelationshipFigure.cpp:304
+msgid "Set Default"
+msgstr "기본값으로 설정"
+
+#: dd/dditems/figures/ddRelationshipFigure.cpp:307
+msgid "[ Set Default ]"
+msgstr "[ 기본값으로 설정 ]"
+
+#: dd/dditems/figures/ddRelationshipFigure.cpp:310
+msgid "On Update "
+msgstr "업데이트 시 "
+
+#: dd/dditems/figures/ddRelationshipFigure.cpp:335
+msgid "Delete Relationship..."
+msgstr "관계 삭제..."
+
+#: dd/dditems/figures/ddRelationshipFigure.cpp:452
+msgid "Are you sure you wish to delete relationship between tables %s and %s?"
+msgstr "테이블 %s과(와) %s 사이의 관계를 삭제하시겠습니까?"
+
+#: include/frm/frmReport.h:156
+msgid "&Compare other objects"
+msgstr "다른 개체 비교(&C)"
+
+#: include/frm/frmReport.h:156
+msgid "Compare other host database select objects."
+msgstr "다른 호스트 데이터베이스의 선택한 개체를 비교합니다."
+
+#: ui/dlgFindReplace.xrc:65
+msgid "All find tabs"
+msgstr "모든 검색 탭"
+
+#: ui/dlgProJob.xrc:105
+msgid "Run as"
+msgstr "다음 사용자로 실행"
+
+#: ui/dlgProJob.xrc:195
+msgid "Commands"
+msgstr "명령"
+
+#: ui/dlgProJob.xrc:234
+msgid "use same transaction"
+msgstr "같은 트랜잭션 사용"
+
+#: ui/dlgServer.xrc:190
+msgid "Select SSL Root Certificate File"
+msgstr "SSL 루트 인증서 파일 선택"
+
+#: ui/dlgServer.xrc:206
+msgid "Select SSL Certificate Revocation List File"
+msgstr "SSL 인증서 해지 목록 파일 선택"
+
+#: ui/dlgServer.xrc:222
+msgid "Select SSL certificate file"
+msgstr "SSL 인증서 파일 선택"
+
+#: ui/dlgServer.xrc:238
+msgid "Select SSL key file"
+msgstr "SSL 키 파일 선택"
+
+#: ui/dlgServer.xrc:361
+msgid "Select identity file"
+msgstr "ID 파일 선택"
+
+#: ui/dlgServer.xrc:377
+msgid "Select public key file"
+msgstr "공개 키 파일 선택"
+
+#: ui/dlgServer.xrc:466
+msgid "Connect str"
+msgstr "연결 문자열"
+
+#: ui/dlgTransformText.xrc:5
+msgid "Transform text"
+msgstr "텍스트 변환"
+
+#: ui/dlgTransformText.xrc:17
+msgid "Source text options"
+msgstr "원본 텍스트 옵션"
+
+#: ui/dlgTransformText.xrc:33
+msgid "PCRE regexp"
+msgstr "PCRE 정규식"
+
+#: ui/dlgTransformText.xrc:50
+msgid "Replace expression"
+msgstr "바꿀 표현식"
+
+#: ui/dlgTransformText.xrc:67
+msgid "Rows limit"
+msgstr "행 제한"
+
+#: ui/dlgTransformText.xrc:87
+msgid "Chars limit"
+msgstr "문자 제한"
+
+#: ui/dlgTransformText.xrc:107
+msgid "Refresh highlight"
+msgstr "강조 표시 새로 고침"
+
+#: ui/dlgTransformText.xrc:124
+msgid "Source text"
+msgstr "원본 텍스트"
+
+#: ui/dlgTransformText.xrc:160
+msgid "Transform text options"
+msgstr "텍스트 변환 옵션"
+
+#: ui/dlgTransformText.xrc:176
+msgid "Append before row"
+msgstr "행 앞에 추가"
+
+#: ui/dlgTransformText.xrc:196
+msgid "After row"
+msgstr "행 뒤에"
+
+#: ui/dlgTransformText.xrc:230
+msgid "Field separator"
+msgstr "필드 구분자"
+
+#: ui/dlgTransformText.xrc:267
+msgid "Load options"
+msgstr "불러오기 옵션"
+
+#: ui/dlgTransformText.xrc:276
+msgid "First"
+msgstr "처음"
+
+#: ui/dlgTransformText.xrc:335
+msgid "Rows loading"
+msgstr "행 불러오기"
+
+#: ui/frmAwr.xrc:6
+msgid "AWR report"
+msgstr "AWR 보고서"
+
+#: ui/frmAwr.xrc:36
+msgid "Type report"
+msgstr "보고서 유형"
+
+#: ui/frmAwr.xrc:39
+msgid "Report"
+msgstr "보고서"
+
+#: ui/frmAwr.xrc:40
+msgid "Diff report"
+msgstr "차이 보고서"
+
+#: ui/frmAwr.xrc:104
+msgid "Start Id1"
+msgstr "시작 Id1"
+
+#: ui/frmAwr.xrc:123
+msgid "End Id1"
+msgstr "종료 Id1"
+
+#: ui/frmAwr.xrc:166
+msgid "Start Id2"
+msgstr "시작 Id2"
+
+#: ui/frmAwr.xrc:185
+msgid "End Id2"
+msgstr "종료 Id2"
+
+#: ui/frmExport.xrc:110
+msgid "format COPY"
+msgstr "COPY 형식"
+
+#: ui/frmExport.xrc:116
+msgid "Xls fmt copy"
+msgstr "Xls 형식 복사"
+
+#: ui/frmImport.xrc:33
+msgid "Select the file to import"
+msgstr "가져올 파일 선택"
+
+#: ui/frmOptions.xrc:131
+msgid "Select theme"
+msgstr "테마 선택"
+
+#: ui/frmOptions.xrc:154
+msgid "Load"
+msgstr "불러오기"
+
+#: ui/frmOptions.xrc:222
+msgid "Options extended JSON:"
+msgstr "확장 JSON 옵션:"
+
+#: ui/frmOptions.xrc:261
+msgid "Beautiful big numbers on the statistics page"
+msgstr "통계 페이지의 큰 숫자를 보기 좋게 표시"
+
+#: ui/frmOptions.xrc:272
+msgid "Show the dependencies of functions on tables,views,functions"
+msgstr "함수의 테이블, 뷰, 함수에 대한 종속성 표시"
+
+#: ui/frmOptions.xrc:457
+msgid "Show DB name in tree"
+msgstr "트리에 DB 이름 표시"
+
+#: ui/frmOptions.xrc:465
+msgid "Quick jump to the root node"
+msgstr "루트 노드로 빠르게 이동"
+
+#: ui/frmOptions.xrc:635
+msgid "Select utility to format text"
+msgstr "텍스트 서식 유틸리티 선택"
+
+#: ui/frmOptions.xrc:645
+msgid "External alignment utlity"
+msgstr "외부 정렬 유틸리티"
+
+#: ui/frmOptions.xrc:662
+msgid "Enable ASUTP style"
+msgstr "ASUTP 스타일 사용"
+
+#: ui/frmOptions.xrc:677
+msgid "Hide query history"
+msgstr "쿼리 기록 숨기기"
+
+#: ui/frmOptions.xrc:692
+msgid "Auto save query text"
+msgstr "쿼리 텍스트 자동 저장"
+
+#: ui/frmOptions.xrc:707
+msgid "Use word hints"
+msgstr "단어 힌트 사용"
+
+#: ui/frmOptions.xrc:722
+msgid "Replace variables in a query"
+msgstr "쿼리의 변수 바꾸기"
+
+#: ui/frmOptions.xrc:821
+msgid "Use system background color caret line"
+msgstr "캐럿 줄에 시스템 배경색 사용"
+
+#: ui/frmOptions.xrc:876
+msgid "Width for keyboard layout"
+msgstr "키보드 레이아웃 너비"
+
+#: ui/frmOptions.xrc:1227
+msgid "Select file to store favourites queries"
+msgstr "즐겨찾기 쿼리를 저장할 파일 선택"
+
+#: ui/frmOptions.xrc:1255
+msgid "Select file to store macros"
+msgstr "매크로를 저장할 파일 선택"
+
+#: ui/frmOptions.xrc:1283
+msgid "Select file to store queries history"
+msgstr "쿼리 기록을 저장할 파일 선택"
+
+#: ui/frmOptions.xrc:1388
+msgid "Blocked by Process Colour"
+msgstr "프로세스에 의해 차단됨 색상"
+
+#: ui/frmOptions.xrc:1402
+msgid "Idle&in&transaction&session&timeout Process Colour"
+msgstr "Idle&in&transaction&session&timeout 프로세스 색상"
+
+#: frm/mathplot.cpp:1424
+msgid "Center"
+msgstr "가운데"
+
+#: frm/mathplot.cpp:1425
+msgid "Center plot view to this position"
+msgstr "플롯 보기를 이 위치로 가운데 맞춤"
+
+#: frm/mathplot.cpp:1426
+msgid "Fit"
+msgstr "맞춤"
+
+#: frm/mathplot.cpp:1426
+msgid "Set plot view to show all items"
+msgstr "모든 항목이 보이도록 플롯 보기 설정"
+
+#: frm/mathplot.cpp:1427
+msgid "Zoom in"
+msgstr "확대"
+
+#: frm/mathplot.cpp:1427
+msgid "Zoom in plot view."
+msgstr "플롯 보기 확대."
+
+#: frm/mathplot.cpp:1428
+msgid "Zoom out"
+msgstr "축소"
+
+#: frm/mathplot.cpp:1428
+msgid "Zoom out plot view."
+msgstr "플롯 보기 축소."
+
+#: frm/mathplot.cpp:1431
+msgid "Show mouse commands..."
+msgstr "마우스 명령 표시..."
+
+#: frm/mathplot.cpp:1432
+msgid "Show help about the mouse commands."
+msgstr "마우스 명령에 대한 도움말을 표시합니다."
+
+#: frm/mathplot.cpp:1935
+msgid "wxMathPlot help"
+msgstr "wxMathPlot 도움말"
+
+#: dd/dditems/figures/xml/ddXmlStorage.cpp:91
+msgid "Error saving model: not source model have been set"
+msgstr "모델 저장 오류: 원본 모델이 설정되지 않았습니다"
+
+#: dd/dditems/figures/xml/ddXmlStorage.cpp:123
+msgid "Fatal Error at libxml for figure persistency"
+msgstr "도형 지속성에 대한 libxml 치명적 오류"
+
+#: dd/dditems/figures/xml/ddXmlStorage.cpp:624
+msgid "Model is not following embedded DTD definition, check it.\n"
+msgstr "모델이 포함된 DTD 정의를 따르지 않습니다. 확인하십시오.\n"
+
+#: dd/dditems/figures/xml/ddXmlStorage.cpp:656
+msgid "Failed to load document from disk"
+msgstr "디스크에서 문서를 불러오지 못했습니다"
+
+#: dd/dditems/figures/xml/ddXmlStorage.cpp:754
+msgid "Invalid version of XML file for pgAdmin database designer found"
+msgstr "pgAdmin 데이터베이스 디자이너에 대한 XML 파일 버전이 올바르지 않습니다"
+
+#: dd/dditems/figures/xml/ddXmlStorage.cpp:754
+msgid "Invalid XML"
+msgstr "잘못된 XML"
+
+#: dd/dditems/figures/xml/ddXmlStorage.cpp:1054
+msgid "Table initial metadata info not found"
+msgstr "테이블 초기 메타데이터 정보를 찾을 수 없습니다"
+
+#: frm/frmOptions.cpp:1
+msgid "Appearance"
+msgstr "모양"
+
+#: frm/frmOptions.cpp:2
+msgid "Automatic"
+msgstr "자동"
+
+#: frm/frmOptions.cpp:3
+msgid "Light"
+msgstr "밝게"
+
+#: frm/frmOptions.cpp:4
+msgid "Dark"
+msgstr "어둡게"
+
+#: frm/frmOptions.cpp:5
+msgid "Restart pgAdmin III to fully apply the appearance change."
+msgstr "모양 변경을 완전히 적용하려면 pgAdmin III를 다시 시작하십시오."

@@ -24925,3 +24925,1759 @@ msgstr "|"
 #, fuzzy
 #~ msgid "Add Table to Set."
 #~ msgstr "Nav Tabulas vai skata."
+
+#: pgAdmin3.cpp:389
+msgid "open server log window"
+msgstr "atvērt servera žurnāla logu"
+
+#: pgAdmin3.cpp:403
+msgid "export servers configuration to file pgadmin3.ini"
+msgstr "eksportēt serveru konfigurāciju uz failu pgadmin3.ini"
+
+#: pgAdmin3.cpp:404
+msgid "Enable Dark mode"
+msgstr "Iespējot tumšo režīmu"
+
+#: pgAdmin3.cpp:1013
+msgid "Log - "
+msgstr "Žurnāls - "
+
+#: ctl/ctlTreeJSON.cpp:73
+msgid "Please enter find string\n"
+msgstr "Lūdzu, ievadiet meklējamo virkni\n"
+
+#: ctl/ctlSQLGrid.cpp:993
+msgid "The line size is [ %s ] characters, do you want to continue?"
+msgstr "Rindas garums ir [ %s ] rakstzīmes. Vai vēlaties turpināt?"
+
+#: ctl/ctlSQLBox.cpp:1426
+msgid "All line (use all EOL)"
+msgstr "Visas rindas (izmantot visus EOL)"
+
+#: ctl/ctlSQLBox.cpp:1427
+msgid "First line pattern (ignore all but the first EOL)"
+msgstr "Pirmās rindas šablons (ignorēt visus EOL, izņemot pirmo)"
+
+#: ctl/ctlSQLBox.cpp:1428
+msgid "Try looking for patterns above"
+msgstr "Mēģināt meklēt iepriekš norādītos šablonus"
+
+#: ctl/ctlSQLBox.cpp:1429
+msgid "Compact view"
+msgstr "Kompakts skats"
+
+#: ctl/ctlSQLBox.cpp:1430
+msgid "Remove multi spaces"
+msgstr "Noņemt atkārtotas atstarpes"
+
+#: ctl/ctlSQLBox.cpp:1432
+msgid "A multi-choice convenience dialog"
+msgstr "Ērtības dialoglodziņš ar vairākām izvēlēm"
+
+#: ctl/ctlSQLBox.cpp:1433
+msgid "Please select several align options"
+msgstr "Lūdzu, izvēlieties vairākas līdzināšanas opcijas"
+
+#: ctl/ctlSQLBox.cpp:1459
+msgid "Aligning complete."
+msgstr "Līdzināšana pabeigta."
+
+#: ctl/ctlSQLBox.cpp:1476
+msgid "Formatting Ok"
+msgstr "Formatēšana veiksmīga"
+
+#: ctl/ctlSQLBox.cpp:1500
+msgid "Couldn't run aligning command: "
+msgstr "Nevarēja palaist līdzināšanas komandu: "
+
+#: ctl/ctlSQLBox.cpp:1522
+msgid "Aligning command did not respond in %d ms"
+msgstr "Līdzināšanas komanda neatbildēja %d ms laikā"
+
+#: ctl/ctlSQLBox.cpp:1534
+msgid "Aligning command error: Output is empty."
+msgstr "Līdzināšanas komandas kļūda: izvade ir tukša."
+
+#: ctl/ctlListView.cpp:63
+msgid "CFS fragmentation"
+msgstr "CFS fragmentācija"
+
+#: ctl/ctlListView.cpp:70
+msgid "CFS %"
+msgstr "CFS %"
+
+#: ctl/ctlNavigatePanel.cpp:46
+msgid "Search for a simple string."
+msgstr "Meklēt vienkāršu virkni."
+
+#: ctl/ctlNavigatePanel.cpp:50
+msgid "Go to the next marker."
+msgstr "Pāriet uz nākamo marķieri."
+
+#: ctl/ctlNavigatePanel.cpp:56
+msgid "Go to the next marker of the same type."
+msgstr "Pāriet uz nākamo tā paša veida marķieri."
+
+#: ctl/ctlNavigatePanel.cpp:61
+msgid "The next occurrence of the string."
+msgstr "Nākamais virknes atkārtojums."
+
+#: ctl/ctlNavigatePanel.cpp:66
+msgid "Previous occurrence of the string."
+msgstr "Iepriekšējais virknes atkārtojums."
+
+#: ctl/ctlNavigatePanel.cpp:71
+msgid "Find all strings content current row Pid."
+msgstr "Atrast visas virknes, kas satur pašreizējās rindas Pid."
+
+#: ctl/ctlNavigatePanel.cpp:76
+msgid "Find all strings content current row State."
+msgstr "Atrast visas virknes, kas satur pašreizējās rindas State."
+
+#: ctl/ctlNavigatePanel.cpp:81
+msgid "Enable/disable auto hint."
+msgstr "Iespējot/atspējot automātisko ieteikumu."
+
+#: ctl/ctlNavigatePanel.cpp:309
+msgid "Incorrect hotkey \"%s\" for command \"%s\""
+msgstr "Nederīgs īsinājumtaustiņš \"%s\" komandai \"%s\""
+
+#: ctl/ctlSQLResult.cpp:390
+msgid "Incorrect flag at the '%s' column."
+msgstr "Nederīgs karodziņš kolonnā '%s'."
+
+#: ctl/ctlSQLResult.cpp:412
+msgid "The column name empty. '%s' ."
+msgstr "Kolonnas nosaukums ir tukšs. '%s' ."
+
+#: ctl/ctlSQLResult.cpp:418
+msgid "The column name '%s' was not found in the query results."
+msgstr "Kolonna '%s' vaicājuma rezultātos netika atrasta."
+
+#: ctl/ctlSQLResult.cpp:442
+msgid "The column name  '%s' is not closed."
+msgstr "Kolonnas nosaukums '%s' nav aizvērts."
+
+#: dlg/dlgForeignTable.cpp:169
+msgid "Type %s not found in cbDatatype(%d)\n"
+msgstr "Tips %s netika atrasts cbDatatype(%d)\n"
+
+#: pro_scheduler/pgproJob.cpp:36
+msgid "Retrieving details on pro_scheduler job"
+msgstr "Tiek iegūta informācija par pro_scheduler darbu"
+
+#: pro_scheduler/pgproJob.cpp:39
+msgid "Refreshing pro_scheduler job"
+msgstr "Tiek atsvaidzināts pro_scheduler darbs"
+
+#: pro_scheduler/pgproJob.cpp:42
+msgid "pro_scheduler job properties report"
+msgstr "pro_scheduler darba rekvizītu pārskats"
+
+#: pro_scheduler/pgproJob.cpp:48
+msgid "pro_scheduler job DDL report"
+msgstr "pro_scheduler darba DDL pārskats"
+
+#: pro_scheduler/pgproJob.cpp:51
+msgid "pro_scheduler job dependencies report"
+msgstr "pro_scheduler darba atkarību pārskats"
+
+#: pro_scheduler/pgproJob.cpp:54
+msgid "pro_scheduler job dependencies"
+msgstr "pro_scheduler darba atkarības"
+
+#: pro_scheduler/pgproJob.cpp:57
+msgid "pro_scheduler job dependents report"
+msgstr "pro_scheduler darba atkarīgo objektu pārskats"
+
+#: pro_scheduler/pgproJob.cpp:60
+msgid "pro_scheduler job dependents"
+msgstr "pro_scheduler darba atkarīgie objekti"
+
+#: pro_scheduler/pgproJob.cpp:140
+msgid "Started"
+msgstr "Sākts"
+
+#: pro_scheduler/pgproJob.cpp:141
+msgid "Finished"
+msgstr "Pabeigts"
+
+#: pro_scheduler/pgproJob.cpp:143
+msgid "Crontab"
+msgstr "Crontab"
+
+#: pro_scheduler/pgproJob.cpp:146
+msgid "Runas"
+msgstr "Palaist kā"
+
+#: pro_scheduler/pgproJob.cpp:152
+msgid "Next start job"
+msgstr "Darba nākamā palaišana"
+
+#: pro_scheduler/pgproJob.cpp:185
+msgid "Previous sched time run skip"
+msgstr "Iepriekšējā plānotā palaišana izlaista"
+
+#: pro_scheduler/pgproJob.cpp:254
+msgid "Not run"
+msgstr "Nav palaists"
+
+#: pro_scheduler/pgproJob.cpp:356
+msgid "Log_time"
+msgstr "Log_time"
+
+#: pro_scheduler/pgproJob.cpp:357
+msgid "Critical"
+msgstr "Kritisks"
+
+#: pro_scheduler/pgproJob.cpp:359
+msgid "Stage"
+msgstr "Posms"
+
+#: pro_scheduler/pgproJob.cpp:505
+msgid "Enabled or disabled job"
+msgstr "Darbs iespējots vai atspējots"
+
+#: utils/misc.cpp:201
+msgid "Bi"
+msgstr "mljrd."
+
+#: utils/misc.cpp:202
+msgid "Mi"
+msgstr "milj."
+
+#: utils/misc.cpp:203
+msgid "ths"
+msgstr "tūkst."
+
+#: utils/FunctionPGHelper.cpp:238
+msgid "'The database is closed in the object browser.'"
+msgstr "'Datubāze objektu pārlūkā ir aizvērta.'"
+
+#: utils/dlgTransformText.cpp:76
+msgid "Transformation text"
+msgstr "Teksta pārveidošana"
+
+#: utils/macros.cpp:272
+msgid "Failed to load AutoReplace file!"
+msgstr "Neizdevās ielādēt AutoReplace failu!"
+
+#: utils/macros.cpp:279
+msgid "Failed to read AutoReplace file!"
+msgstr "Neizdevās nolasīt AutoReplace failu!"
+
+#: utils/macros.cpp:298
+msgid "Failed to open AutoReplace file!"
+msgstr "Neizdevās atvērt AutoReplace failu!"
+
+#: utils/macros.cpp:306
+msgid "Failed to write to AutoReplace file!"
+msgstr "Neizdevās ierakstīt AutoReplace failā!"
+
+#: utils/sysSettings.cpp:95
+msgid "pgpro_scheduler"
+msgstr "pgpro_scheduler"
+
+#: utils/sysSettings.cpp:139
+msgid "Publications"
+msgstr "Publikācijas"
+
+#: utils/sshTunnel.cpp:618
+msgid " [%s]"
+msgstr " [%s]"
+
+#: frm/frmEditGrid.cpp:3383
+msgid "View F&iltered Rows...\tCtrl-F"
+msgstr "Skatīt &filtrētās rindas...\tCtrl-F"
+
+#: frm/frmEditGrid.cpp:3384
+msgid "View Filtered Rows\tCtrl-F"
+msgstr "Skatīt filtrētās rindas\tCtrl-F"
+
+#: frm/frmQuery.cpp:384
+msgid "New SQL &tab\tCtrl-T"
+msgstr "Jauna SQL &cilne\tCtrl-T"
+
+#: frm/frmQuery.cpp:384
+msgid "Open a new query tab"
+msgstr "Atvērt jaunu vaicājumu cilni"
+
+#: frm/frmQuery.cpp:387
+msgid "&Export...\tAlt+E"
+msgstr "&Eksportēt...\tAlt+E"
+
+#: frm/frmQuery.cpp:422
+msgid "Double the single quote\tCtrl-'"
+msgstr "Dubultot vienpēdiņu\tCtrl-'"
+
+#: frm/frmQuery.cpp:422
+msgid "Double the single quote"
+msgstr "Dubultot vienpēdiņu"
+
+#: frm/frmQuery.cpp:423
+msgid "Undouble the single quote\tCtrl-Shift-'"
+msgstr "Atcelt vienpēdiņas dubultošanu\tCtrl-Shift-'"
+
+#: frm/frmQuery.cpp:423
+msgid "Undouble the single quote"
+msgstr "Atcelt vienpēdiņas dubultošanu"
+
+#: frm/frmQuery.cpp:426
+msgid "External Align...\tCtrl-Shift-A"
+msgstr "Ārējā līdzināšana...\tCtrl-Shift-A"
+
+#: frm/frmQuery.cpp:426
+msgid "Call external align command"
+msgstr "Izsaukt ārējo līdzināšanas komandu"
+
+#: frm/frmQuery.cpp:429
+msgid "Manage autoreplace..."
+msgstr "Pārvaldīt automātisko aizvietošanu..."
+
+#: frm/frmQuery.cpp:429
+msgid "Edit and delete autoreplace strings"
+msgstr "Rediģēt un dzēst automātiskās aizvietošanas virknes"
+
+#: frm/frmQuery.cpp:430
+msgid "Open object\tF4"
+msgstr "Atvērt objektu\tF4"
+
+#: frm/frmQuery.cpp:430
+msgid "Open object in brouser tree"
+msgstr "Atvērt objektu pārlūka kokā"
+
+#: frm/frmQuery.cpp:431
+msgid "Text transform...\tCtrl+M"
+msgstr "Teksta pārveidošana...\tCtrl+M"
+
+#: frm/frmQuery.cpp:431
+msgid "Open dialog transform"
+msgstr "Atvērt pārveidošanas dialogu"
+
+#: frm/frmQuery.cpp:438
+msgid "&Execute\tF8"
+msgstr "&Izpildīt\tF8"
+
+#: frm/frmQuery.cpp:439
+msgid "&Execute new output\tShift-F8"
+msgstr "&Izpildīt jaunā izvadē\tShift-F8"
+
+#: frm/frmQuery.cpp:439
+msgid "Execute query in new output"
+msgstr "Izpildīt vaicājumu jaunā izvadē"
+
+#: frm/frmQuery.cpp:441
+msgid "Execute to file\tF5"
+msgstr "Izpildīt uz failu\tF5"
+
+#: frm/frmQuery.cpp:456
+msgid "&Auto-Select"
+msgstr "&Automātiskā atlase"
+
+#: frm/frmQuery.cpp:456
+msgid "Auto select query"
+msgstr "Automātiski atlasīt vaicājumu"
+
+#: frm/frmQuery.cpp:462
+msgid "Commit\tF10"
+msgstr "Apstiprināt (Commit)\tF10"
+
+#: frm/frmQuery.cpp:463
+msgid "Rollback\tShift-F10"
+msgstr "Atritināt (Rollback)\tShift-F10"
+
+#: frm/frmQuery.cpp:617
+msgid "New SQL tab"
+msgstr "Jauna SQL cilne"
+
+#: frm/frmQuery.cpp:624
+msgid "Compare the selected text with the clipboard"
+msgstr "Salīdzināt atlasīto tekstu ar starpliktuvi"
+
+#: frm/frmQuery.cpp:646
+msgid "Mode transaction"
+msgstr "Transakcijas režīms"
+
+#: frm/frmQuery.cpp:2245
+msgid "Copy Insert format"
+msgstr "Kopēt INSERT formātā"
+
+#: frm/frmQuery.cpp:2245
+msgid "Copy Insert format."
+msgstr "Kopēt INSERT formātā."
+
+#: frm/frmQuery.cpp:2246
+msgid "List columns header"
+msgstr "Kolonnu saraksta galvene"
+
+#: frm/frmQuery.cpp:2246
+msgid "Copy list columns header"
+msgstr "Kopēt kolonnu saraksta galveni"
+
+#: frm/frmQuery.cpp:2247
+msgid "IN list format copy"
+msgstr "Kopēt IN saraksta formātā"
+
+#: frm/frmQuery.cpp:2247
+msgid "Copy In list format."
+msgstr "Kopēt IN saraksta formātā."
+
+#: frm/frmQuery.cpp:2248
+msgid "WHERE list format copy"
+msgstr "Kopēt WHERE saraksta formātā"
+
+#: frm/frmQuery.cpp:2248
+msgid "Copy where list format."
+msgstr "Kopēt WHERE saraksta formātā."
+
+#: frm/frmQuery.cpp:2249
+msgid "Copy table html format"
+msgstr "Kopēt tabulu HTML formātā"
+
+#: frm/frmQuery.cpp:2249
+msgid "Copy table html format."
+msgstr "Kopēt tabulu HTML formātā."
+
+#: frm/frmQuery.cpp:2269
+msgid "Draw plot LY(bar) or LXY or XYYY..."
+msgstr "Zīmēt diagrammu LY (joslu) vai LXY vai XYYY..."
+
+#: frm/frmQuery.cpp:2269
+msgid "Draw plot LY(bar) LXY or XYYY..."
+msgstr "Zīmēt diagrammu LY (joslu), LXY vai XYYY..."
+
+#: frm/frmQuery.cpp:2270
+msgid "Summary"
+msgstr "Kopsavilkums"
+
+#: frm/frmQuery.cpp:2270
+msgid "Summary selected cells."
+msgstr "Atlasīto šūnu kopsavilkums."
+
+#: frm/frmQuery.cpp:2271
+msgid "Compare 2 Cells"
+msgstr "Salīdzināt 2 šūnas"
+
+#: frm/frmQuery.cpp:2271
+msgid "Compare 2 selected cells."
+msgstr "Salīdzināt 2 atlasītās šūnas."
+
+#: frm/frmQuery.cpp:2272
+msgid "Check the sequence of dates"
+msgstr "Pārbaudīt datumu secību"
+
+#: frm/frmQuery.cpp:2273
+msgid "Clear filter"
+msgstr "Notīrīt filtru"
+
+#: frm/frmQuery.cpp:2333
+msgid "No template generate."
+msgstr "Veidne nav izveidota."
+
+#: frm/frmQuery.cpp:2558
+msgid "%i@"
+msgstr "%i@"
+
+#: frm/frmQuery.cpp:3070
+msgid "Out %i"
+msgstr "Izvade %i"
+
+#: frm/frmQuery.cpp:3413
+msgid "-- Executing query [%s]:[%s]\n"
+msgstr "-- Tiek izpildīts vaicājums [%s]:[%s]\n"
+
+#: frm/frmQuery.cpp:4241
+msgid "Running aligning command..."
+msgstr "Tiek palaista līdzināšanas komanda..."
+
+#: frm/frmQuery.cpp:4471
+msgid "outputPane"
+msgstr "outputPane"
+
+#: frm/frmQuery.cpp:4491
+msgid "Output pane [%s]"
+msgstr "Izvades rūts [%s]"
+
+#: frm/frmQuery.cpp:4597
+msgid "Cannot change to selected SQL tab now. Try again a bit later."
+msgstr "Pašlaik nevar pārslēgties uz atlasīto SQL cilni. Mēģiniet vēlreiz nedaudz vēlāk."
+
+#: frm/frmQuery.cpp:4620
+msgid "Cannot add a new SQL tab now. Try again a bit later."
+msgstr "Pašlaik nevar pievienot jaunu SQL cilni. Mēģiniet vēlreiz nedaudz vēlāk."
+
+#: frm/frmQuery.cpp:4689
+msgid "Please enter name string with prefix dbname or description server\n"
+msgstr "Lūdzu, ievadiet nosaukuma virkni ar datubāzes prefiksu vai servera aprakstu\n"
+
+#: frm/frmQuery.cpp:4691
+msgid "Name autosave tab window."
+msgstr "Cilnes loga automātiski saglabātais nosaukums."
+
+#: frm/frmQuery.cpp:4717
+msgid "Cannot remove the last SQL tab"
+msgstr "Nevar noņemt pēdējo SQL cilni"
+
+#: frm/frmQuery.cpp:4797
+msgid "Query %d"
+msgstr "Vaicājums %d"
+
+#: frm/frmQuery.cpp:5148
+msgid "Script Recreate Cascade"
+msgstr "Skripts: pārveidot ar Cascade"
+
+#: frm/frmQuery.cpp:5148
+msgid "Start query tool with recreate cascade script."
+msgstr "Palaist vaicājumu rīku ar pārveidošanas ar Cascade skriptu."
+
+#: frm/frmOptions.cpp:61
+msgid "PgAdmin3opt settings"
+msgstr "PgAdmin3opt iestatījumi"
+
+#: frm/frmOptions.cpp:615
+msgid "Color theme save to file %s"
+msgstr "Krāsu tēma saglabāta failā %s"
+
+#: frm/frmOptions.cpp:637
+msgid "Color theme load from file %s"
+msgstr "Krāsu tēma ielādēta no faila %s"
+
+#: frm/frmOptions.cpp:638
+msgid "Load theme"
+msgstr "Ielādēt tēmu"
+
+#: frm/frmOptions.cpp:1208
+msgid "&Options...\tCtrl-O"
+msgstr "&Opcijas...\tCtrl-O"
+
+#: frm/frmStatus.cpp:282
+msgid "&Wait trace"
+msgstr "&Gaidīšanas izsekošana"
+
+#: frm/frmStatus.cpp:282
+msgid "Enable the wait event."
+msgstr "Iespējot gaidīšanas notikumu."
+
+#: frm/frmStatus.cpp:283
+msgid "&Wait event save"
+msgstr "&Gaidīšanas notikuma saglabāšana"
+
+#: frm/frmStatus.cpp:283
+msgid "Enable the wait event save to file sample.dat."
+msgstr "Iespējot gaidīšanas notikumu saglabāšanu failā sample.dat."
+
+#: frm/frmStatus.cpp:320
+msgid "Value parameter pg_wait_sampling.history_size = %ld greet 1000000  monitoring wait events disabled.\n"
+msgstr "Parametra pg_wait_sampling.history_size = %ld vērtība ir lielāka par 1000000, gaidīšanas notikumu uzraudzība atspējota.\n"
+
+#: frm/frmStatus.cpp:383
+msgid "&Query state\tCtrl-Alt-Q"
+msgstr "&Vaicājuma stāvoklis\tCtrl-Alt-Q"
+
+#: frm/frmStatus.cpp:383
+msgid "Show or hide the query state tab."
+msgstr "Rādīt vai slēpt vaicājuma stāvokļa cilni."
+
+#: frm/frmStatus.cpp:385
+msgid "Append verbose"
+msgstr "Pievienot VERBOSE"
+
+#: frm/frmStatus.cpp:386
+msgid "Append use buffers"
+msgstr "Pievienot BUFFERS izmantošanu"
+
+#: frm/frmStatus.cpp:387
+msgid "Append real timing"
+msgstr "Pievienot reālo laiku"
+
+#: frm/frmStatus.cpp:388
+msgid "Append triggers"
+msgstr "Pievienot trigerus"
+
+#: frm/frmStatus.cpp:396
+msgid "&Wait"
+msgstr "&Gaidīt"
+
+#: frm/frmStatus.cpp:436
+msgid "Highlight items only"
+msgstr "Izcelt tikai elementus"
+
+#: frm/frmStatus.cpp:517
+msgid "QueryState"
+msgstr "QueryState"
+
+#: frm/frmStatus.cpp:853
+msgid "W_Event_T"
+msgstr "W_Event_T"
+
+#: frm/frmStatus.cpp:854
+msgid "W_Event"
+msgstr "W_Event"
+
+#: frm/frmStatus.cpp:1112
+msgid "Query State"
+msgstr "Vaicājuma stāvoklis"
+
+#: frm/frmStatus.cpp:1126
+msgid "Query Text"
+msgstr "Vaicājuma teksts"
+
+#: frm/frmStatus.cpp:1127
+msgid "Plan"
+msgstr "Plāns"
+
+#: frm/frmStatus.cpp:1251
+msgid "Functions pg_read_binary_file(text,bigint,bigint,boolean), pg_stat_file(text,boolean),pg_ls_logdir()  permission denied."
+msgstr "Funkcijām pg_read_binary_file(text,bigint,bigint,boolean), pg_stat_file(text,boolean),pg_ls_logdir() piekļuve liegta."
+
+#: frm/frmStatus.cpp:1716
+msgid "Activity query long execute"
+msgstr "Ilgi izpildāms aktivitātes vaicājums"
+
+#: frm/frmStatus.cpp:2634
+msgid "Query state status long execute"
+msgstr "Ilgi izpildāms vaicājuma stāvoklis"
+
+#: frm/frmStatus.cpp:2670
+msgid "Refreshing query state list."
+msgstr "Tiek atsvaidzināts vaicājuma stāvokļa saraksts."
+
+#: frm/frmStatus.cpp:2959
+msgid "Wait..."
+msgstr "Uzgaidiet..."
+
+#: frm/frmStatus.cpp:4807
+msgid "&Server Status\tCtrl-S"
+msgstr "&Servera statuss\tCtrl-S"
+
+#: frm/frmPlot.cpp:120
+msgid "Lock aspect"
+msgstr "Bloķēt proporcijas"
+
+#: frm/frmPlot.cpp:120
+msgid "Lock horizontal and vertical zoom aspect."
+msgstr "Bloķēt horizontālā un vertikālā tālummaiņas proporcijas."
+
+#: frm/frmPlot.cpp:442
+msgid "Save a screenshot"
+msgstr "Saglabāt ekrānuzņēmumu"
+
+#: frm/frmLog.cpp:1314
+msgid "Log view..."
+msgstr "Žurnāla skats..."
+
+#: frm/frmLog.cpp:1314
+msgid "Log view CSV format"
+msgstr "Žurnāla skats CSV formātā"
+
+#: frm/frmMain.cpp:200
+msgid "Git"
+msgstr "Git"
+
+#: frm/frmMain.cpp:472
+msgid "&Server"
+msgstr "&Serveris"
+
+#: frm/frmMain.cpp:472
+msgid "Server menu commands."
+msgstr "Servera izvēlnes komandas."
+
+#: frm/frmMain.cpp:1187
+msgid "Create putty tunnel error."
+msgstr "Kļūda, izveidojot PuTTY tuneli."
+
+#: frm/frmAwr.cpp:33
+msgid "Report AWR"
+msgstr "AWR pārskats"
+
+#: frm/frmAwr.cpp:33
+msgid "Generate AWR report"
+msgstr "Ģenerēt AWR pārskatu"
+
+#: schema/pgServer.cpp:1253
+msgid "Key words"
+msgstr "Atslēgvārdi"
+
+#: schema/pgServer.cpp:1338
+msgid "Add connect str"
+msgstr "Pievienot savienojuma virkni"
+
+#: schema/pgServer.cpp:2264
+msgid "&Set keywords"
+msgstr "&Iestatīt atslēgvārdus"
+
+#: schema/pgServer.cpp:2264
+msgid "Set keywords list the selected server."
+msgstr "Iestatīt atlasītā servera atslēgvārdu sarakstu."
+
+#: schema/pgServer.cpp:2273
+msgid "Please enter keywords\n"
+msgstr "Lūdzu, ievadiet atslēgvārdus\n"
+
+#: schema/pgServer.cpp:2275
+msgid "Keywords server"
+msgstr "Servera atslēgvārdi"
+
+#: schema/pgServer.cpp:2374
+msgid "Disconnec&t all servers"
+msgstr "Atvienoties no &visiem serveriem"
+
+#: schema/pgServer.cpp:2374
+msgid "Disconnect from all servers."
+msgstr "Atvienoties no visiem serveriem."
+
+#: schema/pgIndex.cpp:499
+msgid "Check Btree index"
+msgstr "Pārbaudīt Btree indeksu"
+
+#: schema/pgIndex.cpp:499
+msgid "Check Btree index function bt_index_parent_check(oid,true)"
+msgstr "Btree indeksa pārbaudes funkcija bt_index_parent_check(oid,true)"
+
+#: schema/pgIndex.cpp:568
+msgid "&Reset index statistics"
+msgstr "&Atiestatīt indeksa statistiku"
+
+#: schema/pgIndex.cpp:568
+msgid "Reset statistics of the selected index."
+msgstr "Atiestatīt atlasītā indeksa statistiku."
+
+#: schema/pgIndex.cpp:574
+msgid "Are you sure you wish to reset statistics of this index?"
+msgstr "Vai tiešām vēlaties atiestatīt šī indeksa statistiku?"
+
+#: schema/pgSubscription.cpp:33
+msgid "Retrieving details on subscription"
+msgstr "Tiek iegūta informācija par abonementu"
+
+#: schema/pgSubscription.cpp:37
+msgid "Refreshing subscription"
+msgstr "Tiek atsvaidzināts abonements"
+
+#: schema/pgSubscription.cpp:41
+msgid "Are you sure you wish to drop subscription \"%s\" including all objects that depend on it?"
+msgstr "Vai tiešām vēlaties dzēst abonementu \"%s\" kopā ar visiem no tā atkarīgajiem objektiem?"
+
+#: schema/pgSubscription.cpp:45
+msgid "Are you sure you wish to drop subscription \"%s\"?"
+msgstr "Vai tiešām vēlaties dzēst abonementu \"%s\"?"
+
+#: schema/pgSubscription.cpp:49
+msgid "Drop subscription cascaded?"
+msgstr "Dzēst abonementu ar Cascade?"
+
+#: schema/pgSubscription.cpp:52
+msgid "Drop subscription?"
+msgstr "Dzēst abonementu?"
+
+#: schema/pgSubscription.cpp:55
+msgid "Subscription properties report"
+msgstr "Abonementa rekvizītu pārskats"
+
+#: schema/pgSubscription.cpp:59
+msgid "Subscription properties"
+msgstr "Abonementa rekvizīti"
+
+#: schema/pgSubscription.cpp:62
+msgid "Subscription DDL report"
+msgstr "Abonementa DDL pārskats"
+
+#: schema/pgSubscription.cpp:66
+msgid "Subscription DDL"
+msgstr "Abonementa DDL"
+
+#: schema/pgSubscription.cpp:69
+msgid "Subscription dependencies report"
+msgstr "Abonementa atkarību pārskats"
+
+#: schema/pgSubscription.cpp:73
+msgid "Subscription dependencies"
+msgstr "Abonementa atkarības"
+
+#: schema/pgSubscription.cpp:76
+msgid "Subscription dependents report"
+msgstr "Abonementa atkarīgo objektu pārskats"
+
+#: schema/pgSubscription.cpp:80
+msgid "Subscription dependents"
+msgstr "Abonementa atkarīgie objekti"
+
+#: schema/pgSubscription.cpp:210
+msgid "Retrieving details on subscriptions"
+msgstr "Tiek iegūta informācija par abonementiem"
+
+#: schema/pgSubscription.cpp:213
+msgid "Refreshing subscriptions"
+msgstr "Tiek atsvaidzināti abonementi"
+
+#: schema/pgSubscription.cpp:216
+msgid "Subscriptions list report"
+msgstr "Abonementu saraksta pārskats"
+
+#: schema/pgPublication.cpp:33
+msgid "Retrieving details on publication"
+msgstr "Tiek iegūta informācija par publikāciju"
+
+#: schema/pgPublication.cpp:37
+msgid "Refreshing publication"
+msgstr "Tiek atsvaidzināta publikācija"
+
+#: schema/pgPublication.cpp:41
+msgid "Are you sure you wish to drop publication \"%s\" including all objects that depend on it?"
+msgstr "Vai tiešām vēlaties dzēst publikāciju \"%s\" kopā ar visiem no tās atkarīgajiem objektiem?"
+
+#: schema/pgPublication.cpp:45
+msgid "Are you sure you wish to drop publication \"%s\"?"
+msgstr "Vai tiešām vēlaties dzēst publikāciju \"%s\"?"
+
+#: schema/pgPublication.cpp:49
+msgid "Drop publication cascaded?"
+msgstr "Dzēst publikāciju ar Cascade?"
+
+#: schema/pgPublication.cpp:52
+msgid "Drop publication?"
+msgstr "Dzēst publikāciju?"
+
+#: schema/pgPublication.cpp:55
+msgid "Publication properties report"
+msgstr "Publikācijas rekvizītu pārskats"
+
+#: schema/pgPublication.cpp:59
+msgid "Publication properties"
+msgstr "Publikācijas rekvizīti"
+
+#: schema/pgPublication.cpp:62
+msgid "Publication DDL report"
+msgstr "Publikācijas DDL pārskats"
+
+#: schema/pgPublication.cpp:66
+msgid "Publication DDL"
+msgstr "Publikācijas DDL"
+
+#: schema/pgPublication.cpp:69
+msgid "Publication dependencies report"
+msgstr "Publikācijas atkarību pārskats"
+
+#: schema/pgPublication.cpp:73
+msgid "Publication dependencies"
+msgstr "Publikācijas atkarības"
+
+#: schema/pgPublication.cpp:76
+msgid "Publication dependents report"
+msgstr "Publikācijas atkarīgo objektu pārskats"
+
+#: schema/pgPublication.cpp:80
+msgid "Publication dependents"
+msgstr "Publikācijas atkarīgie objekti"
+
+#: schema/pgPublication.cpp:318
+msgid "Retrieving details on publications"
+msgstr "Tiek iegūta informācija par publikācijām"
+
+#: schema/pgPublication.cpp:321
+msgid "Refreshing publications"
+msgstr "Tiek atsvaidzinātas publikācijas"
+
+#: schema/pgPublication.cpp:324
+msgid "Publications list report"
+msgstr "Publikāciju saraksta pārskats"
+
+#: schema/pgTable.cpp:1096
+msgid "Create table timestamp"
+msgstr "Izveidot tabulu ar laika zīmogu"
+
+#: schema/pgObject.cpp:621
+msgid "extension"
+msgstr "paplašinājums"
+
+#: schema/pgFunction.cpp:410
+msgid "Parallel"
+msgstr "Paralēli"
+
+#: schema/pgFunction.cpp:426
+msgid "Last change timestamp"
+msgstr "Pēdējo izmaiņu laika zīmogs"
+
+#: dd/ddmodel/ddDBReverseEnginering.cpp:175
+msgid "Schema not found"
+msgstr "Shēma nav atrasta"
+
+#: dd/ddmodel/ddDBReverseEnginering.cpp:175
+msgid "getting table OID"
+msgstr "tiek iegūts tabulas OID"
+
+#: dd/ddmodel/ddDBReverseEnginering.cpp:216
+msgid "Table not found"
+msgstr "Tabula nav atrasta"
+
+#: dd/ddmodel/ddDBReverseEnginering.cpp:665
+msgid "Error detecting kind of foreign key source: from Pk or from Uk"
+msgstr "Kļūda, nosakot ārējās atslēgas avota veidu: no Pk vai no Uk"
+
+#: dd/ddmodel/ddDBReverseEnginering.cpp:665
+msgid "Error importing relationship"
+msgstr "Kļūda, importējot attiecību"
+
+#: dd/ddmodel/ddDBReverseEnginering.cpp:786
+msgid "Error detecting kind of foreign key: null or not null"
+msgstr "Kļūda, nosakot ārējās atslēgas veidu: null vai not null"
+
+#: dd/ddmodel/ddDBReverseEnginering.cpp:1333
+msgid "Error fk is repeated"
+msgstr "Kļūda: fk atkārtojas"
+
+#: dd/ddmodel/ddDBReverseEnginering.cpp:1333
+msgid "Error comparing relationships"
+msgstr "Kļūda, salīdzinot attiecības"
+
+#: dd/ddmodel/ddDBReverseEnginering.cpp:1673
+msgid "Please, select a schema to use at import tables process:"
+msgstr "Lūdzu, izvēlieties shēmu, ko izmantot tabulu importēšanas laikā:"
+
+#: dd/ddmodel/ddDBReverseEnginering.cpp:1698
+msgid "Please, select a Schema to continue to next step."
+msgstr "Lūdzu, izvēlieties shēmu, lai turpinātu nākamajā solī."
+
+#: dd/ddmodel/ddDBReverseEnginering.cpp:1698
+msgid "Select a Schema..."
+msgstr "Izvēlieties shēmu..."
+
+#: dd/ddmodel/ddDBReverseEnginering.cpp:1806
+msgid "Table(s) from selected schema"
+msgstr "Tabulas no izvēlētās shēmas"
+
+#: dd/ddmodel/ddDBReverseEnginering.cpp:1811
+msgid "Tables(s) to be imported"
+msgstr "Importējamās tabulas"
+
+#: dd/ddmodel/ddDBReverseEnginering.cpp:1826
+msgid "Add the selected table(s)"
+msgstr "Pievienot atlasītās tabulas"
+
+#: dd/ddmodel/ddDBReverseEnginering.cpp:1828
+msgid "Add all tables"
+msgstr "Pievienot visas tabulas"
+
+#: dd/ddmodel/ddDBReverseEnginering.cpp:1830
+msgid "Remove the selected table(s)"
+msgstr "Noņemt atlasītās tabulas"
+
+#: dd/ddmodel/ddDBReverseEnginering.cpp:1832
+msgid "Remove all tables"
+msgstr "Noņemt visas tabulas"
+
+#: dd/ddmodel/ddDBReverseEnginering.cpp:1981
+msgid "Please, select at least a table to continue to next step."
+msgstr "Lūdzu, izvēlieties vismaz vienu tabulu, lai turpinātu nākamajā solī."
+
+#: dd/ddmodel/ddDBReverseEnginering.cpp:1981
+msgid "Select some Tables..."
+msgstr "Izvēlieties tabulas..."
+
+#: dd/ddmodel/ddDBReverseEnginering.cpp:1997
+msgid "Error when preparing to import table: "
+msgstr "Kļūda, gatavojoties importēt tabulu: "
+
+#: dd/ddmodel/ddDBReverseEnginering.cpp:2009
+msgid "Prepared to import table: "
+msgstr "Sagatavots importēt tabulu: "
+
+#: dd/ddmodel/ddDBReverseEnginering.cpp:2009
+msgid "\n"
+msgstr "\n"
+
+#: dd/ddmodel/ddDBReverseEnginering.cpp:2029
+msgid "Returning to previous dialog will remove all selected tables, do you like to continue?"
+msgstr "Atgriežoties iepriekšējā dialogā, visas atlasītās tabulas tiks noņemtas. Vai vēlaties turpināt?"
+
+#: dd/ddmodel/ddDBReverseEnginering.cpp:2077
+msgid "Returning to previous dialog will delete imported tables before adding it to the model?"
+msgstr "Atgriežoties iepriekšējā dialogā, importētās tabulas tiks izdzēstas pirms to pievienošanas modelim. Vai turpināt?"
+
+#: dd/ddmodel/ddDrawingView.cpp:33
+msgid "Add new Table"
+msgstr "Pievienot jaunu tabulu"
+
+#: dd/ddmodel/ddDrawingView.cpp:84
+msgid "Table exists already at this diagram"
+msgstr "Tabula šajā diagrammā jau pastāv"
+
+#: dd/ddmodel/ddDrawingView.cpp:84
+msgid "Drag and drop warning"
+msgstr "Brīdinājums par vilkšanu un nomešanu"
+
+#: dd/ddmodel/ddModelBrowser.cpp:39
+msgid "Database Design"
+msgstr "Datubāzes projektēšana"
+
+#: dd/ddmodel/ddGenerationWizard.cpp:99
+msgid "Create table"
+msgstr "Izveidot tabulu"
+
+#: dd/ddmodel/ddGenerationWizard.cpp:100
+msgid "Alter table"
+msgstr "Mainīt tabulu"
+
+#: dd/ddmodel/ddGenerationWizard.cpp:100
+msgid "Drop, then create"
+msgstr "Dzēst, pēc tam izveidot"
+
+#: dd/ddmodel/ddGenerationWizard.cpp:100
+msgid "Create table [conflict]"
+msgstr "Izveidot tabulu [konflikts]"
+
+#: dd/ddmodel/ddGenerationWizard.cpp:157
+msgid "Tables(s) to be generated"
+msgstr "Ģenerējamās tabulas"
+
+#: dd/ddmodel/ddGenerationWizard.cpp:369
+msgid "Please select at least one table to move to next step."
+msgstr "Lūdzu, izvēlieties vismaz vienu tabulu, lai pārietu uz nākamo soli."
+
+#: dd/ddmodel/ddGenerationWizard.cpp:369
+msgid "No tables selected"
+msgstr "Nav izvēlēta neviena tabula"
+
+#: dd/ddmodel/ddGenerationWizard.cpp:396
+msgid "No schema"
+msgstr "Nav shēmas"
+
+#: dd/ddmodel/ddGenerationWizard.cpp:415
+msgid "Please select an item to move to next step."
+msgstr "Lūdzu, izvēlieties vienumu, lai pārietu uz nākamo soli."
+
+#: dd/ddmodel/ddGenerationWizard.cpp:415
+msgid "No choice made"
+msgstr "Izvēle nav veikta"
+
+#: dd/ddmodel/ddGenerationWizard.cpp:528
+msgid "Please check the choice for each table:"
+msgstr "Lūdzu, pārbaudiet izvēli katrai tabulai:"
+
+#: dd/ddmodel/ddGenerationWizard.cpp:555
+msgid "Select an action"
+msgstr "Izvēlieties darbību"
+
+#: dd/ddmodel/ddGenerationWizard.cpp:580
+msgid "Metadata of table to be generated not found at database designer model"
+msgstr "Ģenerējamās tabulas metadati datubāzes projektēšanas modelī nav atrasti"
+
+#: dd/ddmodel/ddGenerationWizard.cpp:580
+msgid "Error at generation process"
+msgstr "Kļūda ģenerēšanas procesā"
+
+#: dd/ddmodel/ddGenerationWizard.cpp:599
+msgid "Error importing at generation process"
+msgstr "Kļūda importēšanā ģenerēšanas procesā"
+
+#: dd/ddmodel/ddGenerationWizard.cpp:615
+msgid "Going back?"
+msgstr "Atgriezties?"
+
+#: dd/ddmodel/ddDrawingEditor.cpp:87
+msgid "Are you sure you wish to delete table "
+msgstr "Vai tiešām vēlaties dzēst tabulu "
+
+#: dd/ddmodel/ddDrawingEditor.cpp:87
+msgid "Delete table?"
+msgstr "Dzēst tabulu?"
+
+#: dd/ddmodel/ddDrawingEditor.cpp:95
+msgid "Are you sure you wish to delete relationship "
+msgstr "Vai tiešām vēlaties dzēst attiecību "
+
+#: dd/ddmodel/ddDrawingEditor.cpp:95
+msgid "Delete relationship?"
+msgstr "Dzēst attiecību?"
+
+#: dd/ddmodel/ddDrawingEditor.cpp:114
+msgid "Are you sure you wish to delete %d tables, removing from model related relationships?"
+msgstr "Vai tiešām vēlaties dzēst %d tabulas, no modeļa noņemot ar tām saistītās attiecības?"
+
+#: dd/ddmodel/ddDrawingEditor.cpp:115
+msgid "Delete tables?"
+msgstr "Dzēst tabulas?"
+
+#: dd/ddmodel/ddDrawingEditor.cpp:165
+msgid "Invalid figure kind found"
+msgstr "Atrasts nederīgs figūras veids"
+
+#: dd/ddmodel/ddDrawingEditor.cpp:165
+msgid "Error while deleting tables"
+msgstr "Kļūda, dzēšot tabulas"
+
+#: dd/ddmodel/ddDrawingEditor.cpp:188
+msgid "Error while deleting table"
+msgstr "Kļūda, dzēšot tabulu"
+
+#: dd/ddmodel/ddDrawingEditor.cpp:223
+msgid "Error while deleting realtionships"
+msgstr "Kļūda, dzēšot attiecības"
+
+#: dd/ddmodel/ddDatabaseDesign.cpp:142
+msgid "Invalid number of arguments in call of function generate tables of list"
+msgstr "Nederīgs argumentu skaits tabulu saraksta ģenerēšanas funkcijas izsaukumā"
+
+#: dd/ddmodel/ddDatabaseDesign.cpp:162
+msgid "Generating Create sentence(s) for table(s) "
+msgstr "Tiek ģenerēti CREATE teikumi tabulām "
+
+#: dd/ddmodel/ddDatabaseDesign.cpp:185
+msgid "Generating Pk sentence for table(s) "
+msgstr "Tiek ģenerēti Pk teikumi tabulām "
+
+#: dd/ddmodel/ddDatabaseDesign.cpp:201
+msgid "Generating Uk sentence(s) for table(s) "
+msgstr "Tiek ģenerēti Uk teikumi tabulām "
+
+#: dd/ddmodel/ddDatabaseDesign.cpp:217
+msgid "Generating Fk sentence(s) for table(s) "
+msgstr "Tiek ģenerēti Fk teikumi tabulām "
+
+#: dd/ddmodel/ddDatabaseDesign.cpp:243
+msgid "No connection found when building ALTER objects DDL."
+msgstr "Veidojot ALTER objektu DDL, savienojums nav atrasts."
+
+#: dd/ddmodel/ddDatabaseDesign.cpp:250
+msgid "Schema defined when building ALTER TABLE DDL"
+msgstr "Veidojot ALTER TABLE DDL, shēma ir definēta"
+
+#: dd/ddmodel/ddDatabaseDesign.cpp:257
+msgid "Generating Alter table sentence(s) for table(s) "
+msgstr "Tiek ģenerēti ALTER TABLE teikumi tabulām "
+
+#: dd/ddmodel/ddDatabaseDesign.cpp:527
+msgid "Failed to write the model file!"
+msgstr "Neizdevās ierakstīt modeļa failu!"
+
+#: hotdraw/utilities/hdRemoveDeleteDialog.cpp:117
+msgid "     Choose Remove from Diagram to remove only from current diagram.     "
+msgstr "     Izvēlieties Noņemt no diagrammas, lai noņemtu tikai no pašreizējās diagrammas.     "
+
+#: hotdraw/utilities/hdRemoveDeleteDialog.cpp:118
+msgid "     Choose Remove from Model to delete permanently.     "
+msgstr "     Izvēlieties Noņemt no modeļa, lai dzēstu neatgriezeniski.     "
+
+#: hotdraw/main/hdDrawingView.cpp:457
+msgid "Sample Item"
+msgstr "Parauga vienums"
+
+#: hotdraw/main/hdDrawingView.cpp:466
+msgid "Sample menu item"
+msgstr "Parauga izvēlnes vienums"
+
+#: hotdraw/main/hdDrawingView.cpp:466
+msgid "Sample"
+msgstr "Paraugs"
+
+#: hotdraw/main/hdDrawingEditor.cpp:267
+msgid "Are you sure you wish to delete figure ?"
+msgstr "Vai tiešām vēlaties dzēst figūru?"
+
+#: hotdraw/main/hdDrawingEditor.cpp:267
+msgid "Delete figures?"
+msgstr "Dzēst figūras?"
+
+#: hotdraw/main/hdDrawingEditor.cpp:272
+msgid "Are you sure you wish to delete %d figures?"
+msgstr "Vai tiešām vēlaties dzēst %d figūras?"
+
+#: dd/dditems/utilities/ddSelectKindFksDialog.cpp:103
+msgid "From Primary"
+msgstr "No primārās"
+
+#: dd/dditems/utilities/ddSelectKindFksDialog.cpp:110
+msgid "Unique Key: "
+msgstr "Unikālā atslēga: "
+
+#: dd/dditems/utilities/ddSelectKindFksDialog.cpp:199
+msgid "Automatically Generated"
+msgstr "Automātiski ģenerēts"
+
+#: dd/dditems/figures/ddColumnKindIcon.cpp:62
+msgid "Unique key"
+msgstr "Unikālā atslēga"
+
+#: dd/dditems/figures/ddTableFigure.cpp:1178
+msgid "Cannot build an ALTER TABLE statement for a non existing table (%s.%s)."
+msgstr "Nevar izveidot ALTER TABLE izteikumu neesošai tabulai (%s.%s)."
+
+#: dd/dditems/figures/ddTableFigure.cpp:1179
+msgid "Error when trying to get table OID"
+msgstr "Kļūda, mēģinot iegūt tabulas OID"
+
+#: dd/dditems/figures/ddTableFigure.cpp:1186
+msgid "Cannot reverse engineering table %s.%s."
+msgstr "Nevar veikt tabulas %s.%s apgriezto inženieriju."
+
+#: dd/dditems/figures/ddTableFigure.cpp:1187
+msgid "Error when trying to get stub table"
+msgstr "Kļūda, mēģinot iegūt stub tabulu"
+
+#: dd/dditems/figures/ddTableFigure.cpp:1442
+msgid "\" SET NOT NULL;"
+msgstr "\" SET NOT NULL;"
+
+#: dd/dditems/figures/ddTableFigure.cpp:1469
+msgid "Trying to build ALTER sentences"
+msgstr "Mēģina izveidot ALTER teikumus"
+
+#: dd/dditems/figures/ddColumnFigure.cpp:491
+msgid "relation between table: "
+msgstr "attiecība starp tabulu: "
+
+#: dd/dditems/figures/ddColumnFigure.cpp:491
+msgid " and table: "
+msgstr " un tabulu: "
+
+#: dd/dditems/figures/ddColumnFigure.cpp:492
+msgid " is marked as identifying but user created foreign key column: "
+msgstr " ir atzīmēta kā identificējoša, bet lietotāja izveidotā ārējās atslēgas kolonna: "
+
+#: dd/dditems/figures/ddColumnFigure.cpp:493
+msgid " isn't set as primary key \n"
+msgstr " nav iestatīta kā primārā atslēga \n"
+
+#: dd/dditems/figures/ddColumnFigure.cpp:500
+msgid "relation between table:"
+msgstr "attiecība starp tabulu:"
+
+#: dd/dditems/figures/ddColumnFigure.cpp:501
+msgid "is marked as optional but user created foreign key column: "
+msgstr "ir atzīmēta kā neobligāta, bet lietotāja izveidotā ārējās atslēgas kolonna: "
+
+#: dd/dditems/figures/ddColumnFigure.cpp:502
+msgid "is set as mandatory \n"
+msgstr "ir iestatīta kā obligāta \n"
+
+#: dd/dditems/figures/ddColumnFigure.cpp:510
+msgid " is marked as mandatory but user created foreign key column: "
+msgstr " ir atzīmēta kā obligāta, bet lietotāja izveidotā ārējās atslēgas kolonna: "
+
+#: dd/dditems/figures/ddColumnFigure.cpp:511
+msgid "is set as optional \n"
+msgstr "ir iestatīta kā neobligāta \n"
+
+#: dd/dditems/figures/ddColumnFigure.cpp:519
+msgid "User created foreign key column: "
+msgstr "Lietotāja izveidotā ārējās atslēgas kolonna: "
+
+#: dd/dditems/figures/ddColumnFigure.cpp:519
+msgid "have different datatype from source column of relationship: "
+msgstr "ir cits datu tips nekā attiecības avota kolonnai: "
+
+#: dd/dditems/figures/ddColumnFigure.cpp:520
+msgid " \n"
+msgstr " \n"
+
+#: dd/dditems/figures/ddTextTableItemFigure.cpp:243
+msgid "Varchar size"
+msgstr "Varchar izmērs"
+
+#: dd/dditems/figures/ddTextTableItemFigure.cpp:244
+msgid "Size for varchar datatype"
+msgstr "Varchar datu tipa izmērs"
+
+#: dd/dditems/figures/ddTextTableItemFigure.cpp:264
+msgid "datatype size"
+msgstr "datu tipa izmērs"
+
+#: dd/dditems/figures/ddTextTableItemFigure.cpp:265
+msgid "Size for datatype"
+msgstr "Datu tipa izmērs"
+
+#: dd/dditems/figures/ddTextTableItemFigure.cpp:354
+msgid "Add a column..."
+msgstr "Pievienot kolonnu..."
+
+#: dd/dditems/figures/ddTextTableItemFigure.cpp:355
+msgid "Delete the selected column..."
+msgstr "Dzēst atlasīto kolonnu..."
+
+#: dd/dditems/figures/ddTextTableItemFigure.cpp:358
+msgid "Rename the selected column..."
+msgstr "Pārdēvēt atlasīto kolonnu..."
+
+#: dd/dditems/figures/ddTextTableItemFigure.cpp:360
+msgid "Activate fk auto-naming..."
+msgstr "Aktivizēt fk automātisko nosaukšanu..."
+
+#: dd/dditems/figures/ddTextTableItemFigure.cpp:362
+msgid "Not NULL constraint"
+msgstr "NOT NULL ierobežojums"
+
+#: dd/dditems/figures/ddTextTableItemFigure.cpp:373
+msgid "Unique Key"
+msgstr "Unikālā atslēga"
+
+#: dd/dditems/figures/ddTextTableItemFigure.cpp:378
+msgid "Column datatype"
+msgstr "Kolonnas datu tips"
+
+#: dd/dditems/figures/ddTextTableItemFigure.cpp:381
+msgid "serial"
+msgstr "serial"
+
+#: dd/dditems/figures/ddTextTableItemFigure.cpp:383
+msgid "boolean"
+msgstr "boolean"
+
+#: dd/dditems/figures/ddTextTableItemFigure.cpp:385
+msgid "integer"
+msgstr "integer"
+
+#: dd/dditems/figures/ddTextTableItemFigure.cpp:387
+msgid "money"
+msgstr "money"
+
+#: dd/dditems/figures/ddTextTableItemFigure.cpp:389
+msgid "varchar(n)"
+msgstr "varchar(n)"
+
+#: dd/dditems/figures/ddTextTableItemFigure.cpp:391
+msgid "Choose another datatype..."
+msgstr "Izvēlēties citu datu tipu..."
+
+#: dd/dditems/figures/ddTextTableItemFigure.cpp:393
+msgid "Primary Key Constraint name..."
+msgstr "Primārās atslēgas ierobežojuma nosaukums..."
+
+#: dd/dditems/figures/ddTextTableItemFigure.cpp:394
+msgid "Unique Key Constraint name..."
+msgstr "Unikālās atslēgas ierobežojuma nosaukums..."
+
+#: dd/dditems/figures/ddTextTableItemFigure.cpp:396
+msgid "Delete table..."
+msgstr "Dzēst tabulu..."
+
+#: dd/dditems/figures/ddRelationshipFigure.cpp:241
+msgid "Select one"
+msgstr "Izvēlieties vienu"
+
+#: dd/dditems/figures/ddRelationshipFigure.cpp:243
+msgid "Foreign Key From"
+msgstr "Ārējā atslēga no"
+
+#: dd/dditems/figures/ddRelationshipFigure.cpp:264
+msgid "Mandatory relationship kind"
+msgstr "Obligātas attiecības veids"
+
+#: dd/dditems/figures/ddRelationshipFigure.cpp:266
+msgid "Identifying relationship"
+msgstr "Identificējoša attiecība"
+
+#: dd/dditems/figures/ddRelationshipFigure.cpp:269
+msgid "1:M"
+msgstr "1:M"
+
+#: dd/dditems/figures/ddRelationshipFigure.cpp:272
+msgid "Foreign Key Constraint Name"
+msgstr "Ārējās atslēgas ierobežojuma nosaukums"
+
+#: dd/dditems/figures/ddRelationshipFigure.cpp:275
+msgid "Type Simple"
+msgstr "Tips Simple"
+
+#: dd/dditems/figures/ddRelationshipFigure.cpp:277
+msgid "Type Full"
+msgstr "Tips Full"
+
+#: dd/dditems/figures/ddRelationshipFigure.cpp:279
+msgid "Match Type "
+msgstr "Atbilstības tips "
+
+#: dd/dditems/figures/ddRelationshipFigure.cpp:281
+msgid "[ Simple ]"
+msgstr "[ Simple ]"
+
+#: dd/dditems/figures/ddRelationshipFigure.cpp:283
+msgid "[ Full ]"
+msgstr "[ Full ]"
+
+#: dd/dditems/figures/ddRelationshipFigure.cpp:286
+msgid "On Delete "
+msgstr "Dzēšot "
+
+#: dd/dditems/figures/ddRelationshipFigure.cpp:288
+msgid "No Action"
+msgstr "Nav darbības"
+
+#: dd/dditems/figures/ddRelationshipFigure.cpp:291
+msgid "[ No Action ]"
+msgstr "[ Nav darbības ]"
+
+#: dd/dditems/figures/ddRelationshipFigure.cpp:292
+msgid "Restrict"
+msgstr "Ierobežot"
+
+#: dd/dditems/figures/ddRelationshipFigure.cpp:295
+msgid "[ Restrict ]"
+msgstr "[ Ierobežot ]"
+
+#: dd/dditems/figures/ddRelationshipFigure.cpp:296
+msgid "Cascade"
+msgstr "Cascade"
+
+#: dd/dditems/figures/ddRelationshipFigure.cpp:299
+msgid "[ Cascade ]"
+msgstr "[ Cascade ]"
+
+#: dd/dditems/figures/ddRelationshipFigure.cpp:300
+msgid "Set Null"
+msgstr "Iestatīt NULL"
+
+#: dd/dditems/figures/ddRelationshipFigure.cpp:303
+msgid "[ Set Null ]"
+msgstr "[ Iestatīt NULL ]"
+
+#: dd/dditems/figures/ddRelationshipFigure.cpp:304
+msgid "Set Default"
+msgstr "Iestatīt noklusējumu"
+
+#: dd/dditems/figures/ddRelationshipFigure.cpp:307
+msgid "[ Set Default ]"
+msgstr "[ Iestatīt noklusējumu ]"
+
+#: dd/dditems/figures/ddRelationshipFigure.cpp:310
+msgid "On Update "
+msgstr "Atjauninot "
+
+#: dd/dditems/figures/ddRelationshipFigure.cpp:335
+msgid "Delete Relationship..."
+msgstr "Dzēst attiecību..."
+
+#: dd/dditems/figures/ddRelationshipFigure.cpp:452
+msgid "Are you sure you wish to delete relationship between tables %s and %s?"
+msgstr "Vai tiešām vēlaties dzēst attiecību starp tabulām %s un %s?"
+
+#: include/frm/frmReport.h:156
+msgid "&Compare other objects"
+msgstr "&Salīdzināt citus objektus"
+
+#: include/frm/frmReport.h:156
+msgid "Compare other host database select objects."
+msgstr "Salīdzināt cita resursdatora datubāzes atlasītos objektus."
+
+#: ui/dlgFindReplace.xrc:65
+msgid "All find tabs"
+msgstr "Visas meklēšanas cilnes"
+
+#: ui/dlgProJob.xrc:105
+msgid "Run as"
+msgstr "Palaist kā"
+
+#: ui/dlgProJob.xrc:195
+msgid "Commands"
+msgstr "Komandas"
+
+#: ui/dlgProJob.xrc:234
+msgid "use same transaction"
+msgstr "izmantot to pašu transakciju"
+
+#: ui/dlgServer.xrc:190
+msgid "Select SSL Root Certificate File"
+msgstr "Izvēlieties SSL saknes sertifikāta failu"
+
+#: ui/dlgServer.xrc:206
+msgid "Select SSL Certificate Revocation List File"
+msgstr "Izvēlieties SSL sertifikātu atsaukšanas saraksta failu"
+
+#: ui/dlgServer.xrc:222
+msgid "Select SSL certificate file"
+msgstr "Izvēlieties SSL sertifikāta failu"
+
+#: ui/dlgServer.xrc:238
+msgid "Select SSL key file"
+msgstr "Izvēlieties SSL atslēgas failu"
+
+#: ui/dlgServer.xrc:361
+msgid "Select identity file"
+msgstr "Izvēlieties identitātes failu"
+
+#: ui/dlgServer.xrc:377
+msgid "Select public key file"
+msgstr "Izvēlieties publiskās atslēgas failu"
+
+#: ui/dlgServer.xrc:466
+msgid "Connect str"
+msgstr "Savienojuma virkne"
+
+#: ui/dlgTransformText.xrc:5
+msgid "Transform text"
+msgstr "Pārveidot tekstu"
+
+#: ui/dlgTransformText.xrc:17
+msgid "Source text options"
+msgstr "Avota teksta opcijas"
+
+#: ui/dlgTransformText.xrc:33
+msgid "PCRE regexp"
+msgstr "PCRE regulārā izteiksme"
+
+#: ui/dlgTransformText.xrc:50
+msgid "Replace expression"
+msgstr "Aizvietošanas izteiksme"
+
+#: ui/dlgTransformText.xrc:67
+msgid "Rows limit"
+msgstr "Rindu ierobežojums"
+
+#: ui/dlgTransformText.xrc:87
+msgid "Chars limit"
+msgstr "Rakstzīmju ierobežojums"
+
+#: ui/dlgTransformText.xrc:107
+msgid "Refresh highlight"
+msgstr "Atsvaidzināt izcelšanu"
+
+#: ui/dlgTransformText.xrc:124
+msgid "Source text"
+msgstr "Avota teksts"
+
+#: ui/dlgTransformText.xrc:160
+msgid "Transform text options"
+msgstr "Teksta pārveidošanas opcijas"
+
+#: ui/dlgTransformText.xrc:176
+msgid "Append before row"
+msgstr "Pievienot pirms rindas"
+
+#: ui/dlgTransformText.xrc:196
+msgid "After row"
+msgstr "Pēc rindas"
+
+#: ui/dlgTransformText.xrc:230
+msgid "Field separator"
+msgstr "Lauku atdalītājs"
+
+#: ui/dlgTransformText.xrc:267
+msgid "Load options"
+msgstr "Ielādes opcijas"
+
+#: ui/dlgTransformText.xrc:276
+msgid "First"
+msgstr "Pirmā"
+
+#: ui/dlgTransformText.xrc:335
+msgid "Rows loading"
+msgstr "Rindu ielāde"
+
+#: ui/frmAwr.xrc:6
+msgid "AWR report"
+msgstr "AWR pārskats"
+
+#: ui/frmAwr.xrc:36
+msgid "Type report"
+msgstr "Pārskata veids"
+
+#: ui/frmAwr.xrc:39
+msgid "Report"
+msgstr "Pārskats"
+
+#: ui/frmAwr.xrc:40
+msgid "Diff report"
+msgstr "Atšķirību pārskats"
+
+#: ui/frmAwr.xrc:104
+msgid "Start Id1"
+msgstr "Sākuma Id1"
+
+#: ui/frmAwr.xrc:123
+msgid "End Id1"
+msgstr "Beigu Id1"
+
+#: ui/frmAwr.xrc:166
+msgid "Start Id2"
+msgstr "Sākuma Id2"
+
+#: ui/frmAwr.xrc:185
+msgid "End Id2"
+msgstr "Beigu Id2"
+
+#: ui/frmExport.xrc:110
+msgid "format COPY"
+msgstr "COPY formāts"
+
+#: ui/frmExport.xrc:116
+msgid "Xls fmt copy"
+msgstr "Xls formāta kopēšana"
+
+#: ui/frmImport.xrc:33
+msgid "Select the file to import"
+msgstr "Izvēlieties importējamo failu"
+
+#: ui/frmOptions.xrc:131
+msgid "Select theme"
+msgstr "Izvēlieties tēmu"
+
+#: ui/frmOptions.xrc:154
+msgid "Load"
+msgstr "Ielādēt"
+
+#: ui/frmOptions.xrc:222
+msgid "Options extended JSON:"
+msgstr "Paplašinātā JSON opcijas:"
+
+#: ui/frmOptions.xrc:261
+msgid "Beautiful big numbers on the statistics page"
+msgstr "Skaisti attēlot lielus skaitļus statistikas lapā"
+
+#: ui/frmOptions.xrc:272
+msgid "Show the dependencies of functions on tables,views,functions"
+msgstr "Rādīt funkciju atkarības no tabulām, skatiem, funkcijām"
+
+#: ui/frmOptions.xrc:457
+msgid "Show DB name in tree"
+msgstr "Rādīt DB nosaukumu kokā"
+
+#: ui/frmOptions.xrc:465
+msgid "Quick jump to the root node"
+msgstr "Ātri pāriet uz saknes mezglu"
+
+#: ui/frmOptions.xrc:635
+msgid "Select utility to format text"
+msgstr "Izvēlieties utilītu teksta formatēšanai"
+
+#: ui/frmOptions.xrc:645
+msgid "External alignment utlity"
+msgstr "Ārējā līdzināšanas utilīta"
+
+#: ui/frmOptions.xrc:662
+msgid "Enable ASUTP style"
+msgstr "Iespējot ASUTP stilu"
+
+#: ui/frmOptions.xrc:677
+msgid "Hide query history"
+msgstr "Slēpt vaicājumu vēsturi"
+
+#: ui/frmOptions.xrc:692
+msgid "Auto save query text"
+msgstr "Automātiski saglabāt vaicājuma tekstu"
+
+#: ui/frmOptions.xrc:707
+msgid "Use word hints"
+msgstr "Izmantot vārdu ieteikumus"
+
+#: ui/frmOptions.xrc:722
+msgid "Replace variables in a query"
+msgstr "Aizvietot mainīgos vaicājumā"
+
+#: ui/frmOptions.xrc:821
+msgid "Use system background color caret line"
+msgstr "Izmantot sistēmas fona krāsu kursora rindai"
+
+#: ui/frmOptions.xrc:876
+msgid "Width for keyboard layout"
+msgstr "Platums tastatūras izkārtojumam"
+
+#: ui/frmOptions.xrc:1227
+msgid "Select file to store favourites queries"
+msgstr "Izvēlieties failu izlases vaicājumu glabāšanai"
+
+#: ui/frmOptions.xrc:1255
+msgid "Select file to store macros"
+msgstr "Izvēlieties failu makrosu glabāšanai"
+
+#: ui/frmOptions.xrc:1283
+msgid "Select file to store queries history"
+msgstr "Izvēlieties failu vaicājumu vēstures glabāšanai"
+
+#: ui/frmOptions.xrc:1388
+msgid "Blocked by Process Colour"
+msgstr "Procesa bloķēšanas krāsa"
+
+#: ui/frmOptions.xrc:1402
+msgid "Idle&in&transaction&session&timeout Process Colour"
+msgstr "Idle&in&transaction&session&timeout procesa krāsa"
+
+#: frm/mathplot.cpp:1424
+msgid "Center"
+msgstr "Centrēt"
+
+#: frm/mathplot.cpp:1425
+msgid "Center plot view to this position"
+msgstr "Centrēt diagrammas skatu uz šo pozīciju"
+
+#: frm/mathplot.cpp:1426
+msgid "Fit"
+msgstr "Ietilpināt"
+
+#: frm/mathplot.cpp:1426
+msgid "Set plot view to show all items"
+msgstr "Iestatīt diagrammas skatu, lai tiktu rādīti visi vienumi"
+
+#: frm/mathplot.cpp:1427
+msgid "Zoom in"
+msgstr "Tuvināt"
+
+#: frm/mathplot.cpp:1427
+msgid "Zoom in plot view."
+msgstr "Tuvināt diagrammas skatu."
+
+#: frm/mathplot.cpp:1428
+msgid "Zoom out"
+msgstr "Tālināt"
+
+#: frm/mathplot.cpp:1428
+msgid "Zoom out plot view."
+msgstr "Tālināt diagrammas skatu."
+
+#: frm/mathplot.cpp:1431
+msgid "Show mouse commands..."
+msgstr "Rādīt peles komandas..."
+
+#: frm/mathplot.cpp:1432
+msgid "Show help about the mouse commands."
+msgstr "Rādīt palīdzību par peles komandām."
+
+#: frm/mathplot.cpp:1935
+msgid "wxMathPlot help"
+msgstr "wxMathPlot palīdzība"
+
+#: dd/dditems/figures/xml/ddXmlStorage.cpp:91
+msgid "Error saving model: not source model have been set"
+msgstr "Kļūda, saglabājot modeli: avota modelis nav iestatīts"
+
+#: dd/dditems/figures/xml/ddXmlStorage.cpp:123
+msgid "Fatal Error at libxml for figure persistency"
+msgstr "Kritiska libxml kļūda figūru saglabāšanā"
+
+#: dd/dditems/figures/xml/ddXmlStorage.cpp:624
+msgid "Model is not following embedded DTD definition, check it.\n"
+msgstr "Modelis neatbilst iegultajai DTD definīcijai, pārbaudiet to.\n"
+
+#: dd/dditems/figures/xml/ddXmlStorage.cpp:656
+msgid "Failed to load document from disk"
+msgstr "Neizdevās ielādēt dokumentu no diska"
+
+#: dd/dditems/figures/xml/ddXmlStorage.cpp:754
+msgid "Invalid version of XML file for pgAdmin database designer found"
+msgstr "Atrasta nederīga pgAdmin datubāzes projektētāja XML faila versija"
+
+#: dd/dditems/figures/xml/ddXmlStorage.cpp:754
+msgid "Invalid XML"
+msgstr "Nederīgs XML"
+
+#: dd/dditems/figures/xml/ddXmlStorage.cpp:1054
+msgid "Table initial metadata info not found"
+msgstr "Tabulas sākotnējā metadatu informācija nav atrasta"
+
+#: frm/frmOptions.cpp:1
+msgid "Appearance"
+msgstr "Izskats"
+
+#: frm/frmOptions.cpp:2
+msgid "Automatic"
+msgstr "Automātisks"
+
+#: frm/frmOptions.cpp:3
+msgid "Light"
+msgstr "Gaišs"
+
+#: frm/frmOptions.cpp:4
+msgid "Dark"
+msgstr "Tumšs"
+
+#: frm/frmOptions.cpp:5
+msgid "Restart pgAdmin III to fully apply the appearance change."
+msgstr "Restartējiet pgAdmin III, lai pilnībā lietotu izskata izmaiņas."

@@ -22907,4 +22907,402 @@ msgstr "Typy"
 #~ msgid "|"
 #~ msgstr "|"
 
+#: pgAdmin3.cpp:389
+msgid "open server log window"
+msgstr "otvoriť okno denníka servera"
 
+#: pgAdmin3.cpp:403
+msgid "export servers configuration to file pgadmin3.ini"
+msgstr "exportovať konfiguráciu serverov do súboru pgadmin3.ini"
+
+#: pgAdmin3.cpp:404
+msgid "Enable Dark mode"
+msgstr "Zapnúť tmavý režim"
+
+#: pgAdmin3.cpp:1013
+msgid "Log - "
+msgstr "Denník - "
+
+#: pro_scheduler/pgproJob.cpp:36
+msgid "Retrieving details on pro_scheduler job"
+msgstr "Získavajú sa podrobnosti o úlohe pro_scheduler"
+
+#: pro_scheduler/pgproJob.cpp:39
+msgid "Refreshing pro_scheduler job"
+msgstr "Obnovuje sa úloha pro_scheduler"
+
+#: pro_scheduler/pgproJob.cpp:42
+msgid "pro_scheduler job properties report"
+msgstr "Prehľad vlastností úlohy pro_scheduler"
+
+#: pro_scheduler/pgproJob.cpp:48
+msgid "pro_scheduler job DDL report"
+msgstr "Prehľad DDL úlohy pro_scheduler"
+
+#: pro_scheduler/pgproJob.cpp:51
+msgid "pro_scheduler job dependencies report"
+msgstr "Prehľad závislostí úlohy pro_scheduler"
+
+#: pro_scheduler/pgproJob.cpp:54
+msgid "pro_scheduler job dependencies"
+msgstr "Závislosti úlohy pro_scheduler"
+
+#: pro_scheduler/pgproJob.cpp:57
+msgid "pro_scheduler job dependents report"
+msgstr "Prehľad závislých objektov úlohy pro_scheduler"
+
+#: pro_scheduler/pgproJob.cpp:60
+msgid "pro_scheduler job dependents"
+msgstr "Závislé objekty úlohy pro_scheduler"
+
+#: pro_scheduler/pgproJob.cpp:140
+msgid "Started"
+msgstr "Spustené"
+
+#: pro_scheduler/pgproJob.cpp:141
+msgid "Finished"
+msgstr "Dokončené"
+
+#: pro_scheduler/pgproJob.cpp:143
+msgid "Crontab"
+msgstr "Crontab"
+
+#: pro_scheduler/pgproJob.cpp:146
+msgid "Runas"
+msgstr "Spustiť ako"
+
+#: pro_scheduler/pgproJob.cpp:152
+msgid "Next start job"
+msgstr "Ďalšie spustenie úlohy"
+
+#: pro_scheduler/pgproJob.cpp:185
+msgid "Previous sched time run skip"
+msgstr "Predchádzajúce plánované spustenie vynechané"
+
+#: pro_scheduler/pgproJob.cpp:254
+msgid "Not run"
+msgstr "Nespustené"
+
+#: pro_scheduler/pgproJob.cpp:356
+msgid "Log_time"
+msgstr "Čas_denníka"
+
+#: pro_scheduler/pgproJob.cpp:357
+msgid "Critical"
+msgstr "Kritický"
+
+#: pro_scheduler/pgproJob.cpp:359
+msgid "Stage"
+msgstr "Fáza"
+
+#: pro_scheduler/pgproJob.cpp:505
+msgid "Enabled or disabled job"
+msgstr "Úloha je zapnutá alebo vypnutá"
+
+#: frm/frmQuery.cpp:4689
+msgid "Please enter name string with prefix dbname or description server\n"
+msgstr "Zadajte reťazec názvu s predponou názvu databázy alebo popisom servera\n"
+
+#: frm/frmQuery.cpp:4691
+msgid "Name autosave tab window."
+msgstr "Názov okna karty automatického ukladania."
+
+#: frm/frmOptions.cpp:615
+msgid "Color theme save to file %s"
+msgstr "Uloženie farebnej témy do súboru %s"
+
+#: frm/frmOptions.cpp:637
+msgid "Color theme load from file %s"
+msgstr "Načítanie farebnej témy zo súboru %s"
+
+#: frm/frmOptions.cpp:638
+msgid "Load theme"
+msgstr "Načítať tému"
+
+#: schema/pgServer.cpp:1253
+msgid "Key words"
+msgstr "Kľúčové slová"
+
+#: hotdraw/utilities/hdRemoveDeleteDialog.cpp:117
+msgid "     Choose Remove from Diagram to remove only from current diagram.     "
+msgstr "     Vyberte Odstrániť z diagramu, ak chcete odstrániť iba z aktuálneho diagramu.     "
+
+#: hotdraw/utilities/hdRemoveDeleteDialog.cpp:118
+msgid "     Choose Remove from Model to delete permanently.     "
+msgstr "     Vyberte Odstrániť z modelu pre trvalé odstránenie.     "
+
+#: hotdraw/main/hdDrawingView.cpp:457
+msgid "Sample Item"
+msgstr "Vzorová položka"
+
+#: hotdraw/main/hdDrawingView.cpp:466
+msgid "Sample menu item"
+msgstr "Vzorová položka ponuky"
+
+#: hotdraw/main/hdDrawingView.cpp:466
+msgid "Sample"
+msgstr "Vzor"
+
+#: hotdraw/main/hdDrawingEditor.cpp:267
+msgid "Are you sure you wish to delete figure ?"
+msgstr "Naozaj chcete odstrániť útvar?"
+
+#: hotdraw/main/hdDrawingEditor.cpp:267
+msgid "Delete figures?"
+msgstr "Odstrániť útvary?"
+
+#: hotdraw/main/hdDrawingEditor.cpp:272
+msgid "Are you sure you wish to delete %d figures?"
+msgstr "Naozaj chcete odstrániť %d útvarov?"
+
+#: ui/dlgFindReplace.xrc:65
+msgid "All find tabs"
+msgstr "Všetky karty hľadania"
+
+#: ui/dlgProJob.xrc:105
+msgid "Run as"
+msgstr "Spustiť ako"
+
+#: ui/dlgProJob.xrc:195
+msgid "Commands"
+msgstr "Príkazy"
+
+#: ui/dlgProJob.xrc:234
+msgid "use same transaction"
+msgstr "použiť tú istú transakciu"
+
+#: ui/dlgServer.xrc:190
+msgid "Select SSL Root Certificate File"
+msgstr "Vyberte súbor koreňového certifikátu SSL"
+
+#: ui/dlgServer.xrc:206
+msgid "Select SSL Certificate Revocation List File"
+msgstr "Vyberte súbor zoznamu zrušených certifikátov SSL"
+
+#: ui/dlgServer.xrc:222
+msgid "Select SSL certificate file"
+msgstr "Vyberte súbor certifikátu SSL"
+
+#: ui/dlgServer.xrc:238
+msgid "Select SSL key file"
+msgstr "Vyberte súbor kľúča SSL"
+
+#: ui/dlgServer.xrc:361
+msgid "Select identity file"
+msgstr "Vyberte súbor identity"
+
+#: ui/dlgServer.xrc:377
+msgid "Select public key file"
+msgstr "Vyberte súbor verejného kľúča"
+
+#: ui/dlgServer.xrc:466
+msgid "Connect str"
+msgstr "Spojovací reťazec"
+
+#: ui/dlgTransformText.xrc:5
+msgid "Transform text"
+msgstr "Transformácia textu"
+
+#: ui/dlgTransformText.xrc:17
+msgid "Source text options"
+msgstr "Možnosti zdrojového textu"
+
+#: ui/dlgTransformText.xrc:33
+msgid "PCRE regexp"
+msgstr "Regulárny výraz PCRE"
+
+#: ui/dlgTransformText.xrc:50
+msgid "Replace expression"
+msgstr "Výraz náhrady"
+
+#: ui/dlgTransformText.xrc:67
+msgid "Rows limit"
+msgstr "Limit riadkov"
+
+#: ui/dlgTransformText.xrc:87
+msgid "Chars limit"
+msgstr "Limit znakov"
+
+#: ui/dlgTransformText.xrc:107
+msgid "Refresh highlight"
+msgstr "Obnoviť zvýraznenie"
+
+#: ui/dlgTransformText.xrc:124
+msgid "Source text"
+msgstr "Zdrojový text"
+
+#: ui/dlgTransformText.xrc:160
+msgid "Transform text options"
+msgstr "Možnosti transformácie textu"
+
+#: ui/dlgTransformText.xrc:176
+msgid "Append before row"
+msgstr "Pridať pred riadok"
+
+#: ui/dlgTransformText.xrc:196
+msgid "After row"
+msgstr "Za riadkom"
+
+#: ui/dlgTransformText.xrc:230
+msgid "Field separator"
+msgstr "Oddeľovač polí"
+
+#: ui/dlgTransformText.xrc:267
+msgid "Load options"
+msgstr "Možnosti načítania"
+
+#: ui/dlgTransformText.xrc:276
+msgid "First"
+msgstr "Prvé"
+
+#: ui/dlgTransformText.xrc:335
+msgid "Rows loading"
+msgstr "Načítanie riadkov"
+
+#: ui/frmAwr.xrc:6
+msgid "AWR report"
+msgstr "Správa AWR"
+
+#: ui/frmAwr.xrc:36
+msgid "Type report"
+msgstr "Typ správy"
+
+#: ui/frmAwr.xrc:39
+msgid "Report"
+msgstr "Správa"
+
+#: ui/frmAwr.xrc:40
+msgid "Diff report"
+msgstr "Rozdielová správa"
+
+#: ui/frmAwr.xrc:104
+msgid "Start Id1"
+msgstr "Začiatočné Id1"
+
+#: ui/frmAwr.xrc:123
+msgid "End Id1"
+msgstr "Koncové Id1"
+
+#: ui/frmAwr.xrc:166
+msgid "Start Id2"
+msgstr "Začiatočné Id2"
+
+#: ui/frmAwr.xrc:185
+msgid "End Id2"
+msgstr "Koncové Id2"
+
+#: ui/frmExport.xrc:110
+msgid "format COPY"
+msgstr "formát COPY"
+
+#: ui/frmExport.xrc:116
+msgid "Xls fmt copy"
+msgstr "Kopírovanie vo formáte Xls"
+
+#: ui/frmImport.xrc:33
+msgid "Select the file to import"
+msgstr "Vyberte súbor na import"
+
+#: ui/frmOptions.xrc:131
+msgid "Select theme"
+msgstr "Vyberte tému"
+
+#: ui/frmOptions.xrc:154
+msgid "Load"
+msgstr "Načítať"
+
+#: ui/frmOptions.xrc:222
+msgid "Options extended JSON:"
+msgstr "Rozšírené možnosti JSON:"
+
+#: ui/frmOptions.xrc:261
+msgid "Beautiful big numbers on the statistics page"
+msgstr "Prehľadné zobrazenie veľkých čísel na stránke štatistík"
+
+#: ui/frmOptions.xrc:272
+msgid "Show the dependencies of functions on tables,views,functions"
+msgstr "Zobraziť závislosti funkcií od tabuliek, pohľadov, funkcií"
+
+#: ui/frmOptions.xrc:457
+msgid "Show DB name in tree"
+msgstr "Zobraziť názov databázy v strome"
+
+#: ui/frmOptions.xrc:465
+msgid "Quick jump to the root node"
+msgstr "Rýchly skok na koreňový uzol"
+
+#: ui/frmOptions.xrc:635
+msgid "Select utility to format text"
+msgstr "Vyberte nástroj na formátovanie textu"
+
+#: ui/frmOptions.xrc:645
+msgid "External alignment utlity"
+msgstr "Externý nástroj na zarovnanie"
+
+#: ui/frmOptions.xrc:662
+msgid "Enable ASUTP style"
+msgstr "Zapnúť štýl ASUTP"
+
+#: ui/frmOptions.xrc:677
+msgid "Hide query history"
+msgstr "Skryť históriu dotazov"
+
+#: ui/frmOptions.xrc:692
+msgid "Auto save query text"
+msgstr "Automatické ukladanie textu dotazu"
+
+#: ui/frmOptions.xrc:707
+msgid "Use word hints"
+msgstr "Používať nápovedu slov"
+
+#: ui/frmOptions.xrc:722
+msgid "Replace variables in a query"
+msgstr "Nahrádzať premenné v dotaze"
+
+#: ui/frmOptions.xrc:821
+msgid "Use system background color caret line"
+msgstr "Použiť systémovú farbu pozadia pre riadok kurzora"
+
+#: ui/frmOptions.xrc:876
+msgid "Width for keyboard layout"
+msgstr "Šírka pre rozloženie klávesnice"
+
+#: ui/frmOptions.xrc:1227
+msgid "Select file to store favourites queries"
+msgstr "Vyberte súbor na ukladanie obľúbených dotazov"
+
+#: ui/frmOptions.xrc:1255
+msgid "Select file to store macros"
+msgstr "Vyberte súbor na ukladanie makier"
+
+#: ui/frmOptions.xrc:1283
+msgid "Select file to store queries history"
+msgstr "Vyberte súbor na ukladanie histórie dotazov"
+
+#: ui/frmOptions.xrc:1388
+msgid "Blocked by Process Colour"
+msgstr "Farba blokovaného procesu"
+
+#: ui/frmOptions.xrc:1402
+msgid "Idle&in&transaction&session&timeout Process Colour"
+msgstr "Farba&procesu&s&časovým&limitom relácie idle in transaction"
+
+#: frm/frmOptions.cpp:1
+msgid "Appearance"
+msgstr "Vzhľad"
+
+#: frm/frmOptions.cpp:2
+msgid "Automatic"
+msgstr "Automaticky"
+
+#: frm/frmOptions.cpp:3
+msgid "Light"
+msgstr "Svetlý"
+
+#: frm/frmOptions.cpp:4
+msgid "Dark"
+msgstr "Tmavý"
+
+#: frm/frmOptions.cpp:5
+msgid "Restart pgAdmin III to fully apply the appearance change."
+msgstr "Ak chcete zmenu vzhľadu úplne použiť, reštartujte pgAdmin III."

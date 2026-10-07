@@ -312,6 +312,7 @@ frmStatus::frmStatus(frmMain *form, const wxString &_title, pgConn *conn) : pgFr
                 idle_in_transaction_session_timeout= dataSet1->GetLong(wxT("idle_in_transaction_session_timeout"));
                 isrecovery = (v == wxT("t"));
                 track_commit_timestamp = connection->HasFeature(FEATURE_TRACK_COMMIT_TS);
+                file_namemask=connection->GetLogFileNameMask();
                 long sz = dataSet1->GetLong(wxT("hsize"));
                 long p = dataSet1->GetLong(wxT("hperiod"));
                 if (!dataSet1->GetBool(wxT("wsh"))) p = 0;
@@ -1238,7 +1239,11 @@ void frmStatus::AddLogPane()
     grdLog->Fit(pnlLog);
 
     logcol[0] = logList->GetBackgroundColour();
-    logcol[1] = wxColour("#afafaf");
+    if (isDark()) {
+        logcol[1] = AddColorComponent(logcol[0],30);
+    }
+        else logcol[1] = wxColour("#afafaf");
+
     // We don't need this report (but we need the pane)
     // if server release is less than 8.0 or if server has no adminpack
     if (!is_read_log) {
@@ -1493,7 +1498,7 @@ void frmStatus::OnToggleLogPane(wxCommandEvent &event)
         cbRate->SetValue(rateToCboString(logRate));
         if (logRate > 0 && logTimer)
             logTimer->Start(logRate * 1000L);
-        wxTimerEvent e(*logTimer);
+        wxTimerEvent e(*refreshUITimer);
         OnRefreshLogTimer(e);
     }
     else
@@ -1574,7 +1579,7 @@ void frmStatus::OnDefaultView(wxCommandEvent &event)
 
 void frmStatus::OnHighlightStatus(wxCommandEvent &event)
 {
-    wxTimerEvent evt(*statusTimer);
+    wxTimerEvent evt(*refreshUITimer);
 
     OnRefreshStatusTimer(evt);
 }
@@ -3003,7 +3008,7 @@ void frmStatus::OnRefreshLogTimer(wxTimerEvent &event)
 
 void frmStatus::OnRefresh(wxCommandEvent &event)
 {
-    wxTimerEvent evt(*statusTimer);
+    wxTimerEvent evt(*refreshUITimer);
 
     OnRefreshStatusTimer(evt);
     OnRefreshLocksTimer(evt);
@@ -3055,8 +3060,9 @@ void frmStatus::addLogFile(wxDateTime *dt, bool skipFirst)
 {
     pgSet* set;
     if (settings->GetASUTPstyle()) {
+        wxString log_filenamemask= file_namemask;
         wxString sql = "select current_setting('log_directory')||'/'||name filename,modification filetime,size len\n"
-            "  FROM pg_ls_logdir()  where name ~ '.csv' and modification >= '" + DateToAnsiStr(*dt) + "'::timestamp order by modification-'" + DateToAnsiStr(*dt) + "'::timestamp limit 1";
+            "  FROM pg_ls_logdir()  where name ~ '"+log_filenamemask+"' and modification >= '" + DateToAnsiStr(*dt) + "'::timestamp order by modification-'" + DateToAnsiStr(*dt) + "'::timestamp limit 1";
         set = logconn->ExecuteSet(sql);
     } else
         set = logconn->ExecuteSet(
@@ -3134,10 +3140,17 @@ void frmStatus::addLogLine(const wxString &str, bool formatted, bool csv_log_for
     if (!logFormatKnown) {
         logList->AppendItemLong(-1, str);
         int colorindex = nav->TryMarkItem(row, str);
-        if (colorindex>=0)
-            logList->SetItemBackgroundColour(row, nav->GetColorByIndex(colorindex));
-        else 
+        if (isDark()) {
             logList->SetItemBackgroundColour(row, logcol[addodd % 2]);
+            if (colorindex>=0)
+                logList->SetItemTextColour(row, nav->GetColorByIndex(colorindex));
+        } else 
+        {
+            if (colorindex>=0)
+                logList->SetItemBackgroundColour(row, nav->GetColorByIndex(colorindex));
+            else 
+                logList->SetItemBackgroundColour(row, logcol[addodd % 2]);
+        }
     }
     else if ((!csv_log_format) && str.Find(':') < 0)
     {
@@ -3465,12 +3478,13 @@ int frmStatus::fillLogfileCombo()
     else
         count--;
     pgSet* set;
-    if (settings->GetASUTPstyle())
+    if (settings->GetASUTPstyle()) {
+        wxString filemask=file_namemask;
         set = logconn->ExecuteSet(
         wxT("select name filename,modification filetime\n")
-        wxT("  FROM pg_ls_logdir()  where name ~ '.csv'\n")
+        wxT("  FROM pg_ls_logdir()  where name ~ '"+filemask+"'\n")
         wxT(" ORDER BY modification DESC"),false);
-
+        }
     else set = logconn->ExecuteSet(
            wxT("SELECT name filename,modification filetime\n")
            wxT("  FROM pg_ls_logdir()\n")
@@ -3804,7 +3818,7 @@ void frmStatus::OnAddLabelTextThread(wxThreadEvent& event) {
         return;
     }
     {
-        wxTimerEvent event(*logTimer);
+        wxTimerEvent event(*refreshUITimer);
         OnRefreshLogTimer(event);
     }
     
@@ -4245,7 +4259,7 @@ void frmStatus::OnSelStatusItem(wxListEvent &event)
     toolBar->EnableTool(MNU_COPY_QUERY, statusList->GetFirstSelected() >= 0);
 
     //OnRefresh(event);
-    wxTimerEvent evt(*statusTimer);
+    wxTimerEvent evt(*refreshUITimer);
     OnRefreshStatusTimer(evt);
     OnRefreshLocksTimer(evt);
     OnRefreshXactTimer(evt);
@@ -4472,7 +4486,7 @@ void frmStatus::OnRightClickStatusItem(wxListEvent& event)
     toolBar->EnableTool(MNU_CLEAR_FILTER_SERVER_STATUS, true);
     toolBar->EnableTool(MNU_SET_FILTER_HIGHLIGHT_STATUS, false);
     
-    wxTimerEvent evt(*statusTimer);
+    wxTimerEvent evt(*refreshUITimer);
     OnRefreshStatusTimer(evt);
 }
 
@@ -4490,7 +4504,7 @@ void frmStatus::OnClearFilter(wxCommandEvent& event) {
     filterColumn.Clear();
     filterValue.Clear();
     onlyhightligth = false;
-    wxTimerEvent evt(*statusTimer);
+    wxTimerEvent evt(*refreshUITimer);
     OnRefreshStatusTimer(evt);
 
 }
@@ -4526,7 +4540,7 @@ void frmStatus::OnSortStatusGrid(wxListEvent &event)
         SetColumnImage(statusList, statusSortColumn - 1, 1);
 
     // Refresh grid
-    wxTimerEvent evt(*statusTimer);
+    wxTimerEvent evt(*refreshUITimer);
     OnRefreshStatusTimer(evt);
 }
 
@@ -4567,7 +4581,7 @@ void frmStatus::OnSortLockGrid(wxListEvent &event)
         SetColumnImage(lockList, lockSortColumn - 1, 1);
 
     // Refresh grid
-    wxTimerEvent evt(*locksTimer);
+    wxTimerEvent evt(*refreshUITimer);
     OnRefreshLocksTimer(evt);
 }
 
@@ -4608,7 +4622,7 @@ void frmStatus::OnSortXactGrid(wxListEvent &event)
         SetColumnImage(xactList, xactSortColumn - 1, 1);
 
     // Refresh grid
-    wxTimerEvent evt(*xactTimer);
+    wxTimerEvent evt(*refreshUITimer);
     OnRefreshXactTimer(evt);
 }
 
@@ -4749,7 +4763,7 @@ void frmStatus::OnRightClickLogGrid(wxListEvent& event)
 {
     delayHitLog->Stop();
     lastmouse = wxGetMousePosition();
-    wxTimerEvent tm(*delayHitLog);
+    wxTimerEvent tm(*refreshUITimer);
     //logList->GetItem();
     //int flags = wxLIST_HITTEST_ONITEMLABEL;
     //long item=logList->HitTest(mp,flags);

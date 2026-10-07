@@ -22958,4 +22958,402 @@ msgstr "Types"
 #~ msgid "|"
 #~ msgstr "|"
 
+#: pgAdmin3.cpp:389
+msgid "open server log window"
+msgstr "άνοιγμα παραθύρου αρχείου καταγραφής του διακομιστή"
 
+#: pgAdmin3.cpp:403
+msgid "export servers configuration to file pgadmin3.ini"
+msgstr "εξαγωγή της διαμόρφωσης διακομιστών στο αρχείο pgadmin3.ini"
+
+#: pgAdmin3.cpp:404
+msgid "Enable Dark mode"
+msgstr "Ενεργοποίηση σκοτεινής λειτουργίας"
+
+#: pgAdmin3.cpp:1013
+msgid "Log - "
+msgstr "Καταγραφή - "
+
+#: pro_scheduler/pgproJob.cpp:36
+msgid "Retrieving details on pro_scheduler job"
+msgstr "Ανάκτηση λεπτομερειών για την εργασία pro_scheduler"
+
+#: pro_scheduler/pgproJob.cpp:39
+msgid "Refreshing pro_scheduler job"
+msgstr "Ανανέωση της εργασίας pro_scheduler"
+
+#: pro_scheduler/pgproJob.cpp:42
+msgid "pro_scheduler job properties report"
+msgstr "Αναφορά ιδιοτήτων εργασίας pro_scheduler"
+
+#: pro_scheduler/pgproJob.cpp:48
+msgid "pro_scheduler job DDL report"
+msgstr "Αναφορά DDL εργασίας pro_scheduler"
+
+#: pro_scheduler/pgproJob.cpp:51
+msgid "pro_scheduler job dependencies report"
+msgstr "Αναφορά εξαρτήσεων εργασίας pro_scheduler"
+
+#: pro_scheduler/pgproJob.cpp:54
+msgid "pro_scheduler job dependencies"
+msgstr "Εξαρτήσεις εργασίας pro_scheduler"
+
+#: pro_scheduler/pgproJob.cpp:57
+msgid "pro_scheduler job dependents report"
+msgstr "Αναφορά εξαρτώμενων της εργασίας pro_scheduler"
+
+#: pro_scheduler/pgproJob.cpp:60
+msgid "pro_scheduler job dependents"
+msgstr "Εξαρτώμενα της εργασίας pro_scheduler"
+
+#: pro_scheduler/pgproJob.cpp:140
+msgid "Started"
+msgstr "Ξεκίνησε"
+
+#: pro_scheduler/pgproJob.cpp:141
+msgid "Finished"
+msgstr "Ολοκληρώθηκε"
+
+#: pro_scheduler/pgproJob.cpp:143
+msgid "Crontab"
+msgstr "Crontab"
+
+#: pro_scheduler/pgproJob.cpp:146
+msgid "Runas"
+msgstr "Εκτέλεση ως"
+
+#: pro_scheduler/pgproJob.cpp:152
+msgid "Next start job"
+msgstr "Επόμενη εκκίνηση εργασίας"
+
+#: pro_scheduler/pgproJob.cpp:185
+msgid "Previous sched time run skip"
+msgstr "Παράλειψη προηγούμενης προγραμματισμένης εκτέλεσης"
+
+#: pro_scheduler/pgproJob.cpp:254
+msgid "Not run"
+msgstr "Δεν εκτελέστηκε"
+
+#: pro_scheduler/pgproJob.cpp:356
+msgid "Log_time"
+msgstr "Χρόνος καταγραφής"
+
+#: pro_scheduler/pgproJob.cpp:357
+msgid "Critical"
+msgstr "Κρίσιμο"
+
+#: pro_scheduler/pgproJob.cpp:359
+msgid "Stage"
+msgstr "Στάδιο"
+
+#: pro_scheduler/pgproJob.cpp:505
+msgid "Enabled or disabled job"
+msgstr "Ενεργοποιημένη ή απενεργοποιημένη εργασία"
+
+#: frm/frmQuery.cpp:4689
+msgid "Please enter name string with prefix dbname or description server\n"
+msgstr "Παρακαλώ εισάγετε συμβολοσειρά ονόματος με πρόθεμα το όνομα βάσης δεδομένων ή την περιγραφή διακομιστή\n"
+
+#: frm/frmQuery.cpp:4691
+msgid "Name autosave tab window."
+msgstr "Όνομα παραθύρου καρτέλας αυτόματης αποθήκευσης."
+
+#: frm/frmOptions.cpp:615
+msgid "Color theme save to file %s"
+msgstr "Αποθήκευση χρωματικού θέματος στο αρχείο %s"
+
+#: frm/frmOptions.cpp:637
+msgid "Color theme load from file %s"
+msgstr "Φόρτωση χρωματικού θέματος από το αρχείο %s"
+
+#: frm/frmOptions.cpp:638
+msgid "Load theme"
+msgstr "Φόρτωση θέματος"
+
+#: schema/pgServer.cpp:1253
+msgid "Key words"
+msgstr "Λέξεις-κλειδιά"
+
+#: hotdraw/utilities/hdRemoveDeleteDialog.cpp:117
+msgid "     Choose Remove from Diagram to remove only from current diagram.     "
+msgstr "     Επιλέξτε Remove from Diagram για αφαίρεση μόνο από το τρέχον διάγραμμα.     "
+
+#: hotdraw/utilities/hdRemoveDeleteDialog.cpp:118
+msgid "     Choose Remove from Model to delete permanently.     "
+msgstr "     Επιλέξτε Remove from Model για μόνιμη διαγραφή.     "
+
+#: hotdraw/main/hdDrawingView.cpp:457
+msgid "Sample Item"
+msgstr "Στοιχείο δείγματος"
+
+#: hotdraw/main/hdDrawingView.cpp:466
+msgid "Sample menu item"
+msgstr "Στοιχείο μενού δείγματος"
+
+#: hotdraw/main/hdDrawingView.cpp:466
+msgid "Sample"
+msgstr "Δείγμα"
+
+#: hotdraw/main/hdDrawingEditor.cpp:267
+msgid "Are you sure you wish to delete figure ?"
+msgstr "Είστε βέβαιοι ότι θέλετε να διαγράψετε το σχήμα;"
+
+#: hotdraw/main/hdDrawingEditor.cpp:267
+msgid "Delete figures?"
+msgstr "Διαγραφή σχημάτων;"
+
+#: hotdraw/main/hdDrawingEditor.cpp:272
+msgid "Are you sure you wish to delete %d figures?"
+msgstr "Είστε βέβαιοι ότι θέλετε να διαγράψετε %d σχήματα;"
+
+#: ui/dlgFindReplace.xrc:65
+msgid "All find tabs"
+msgstr "Όλες οι καρτέλες αναζήτησης"
+
+#: ui/dlgProJob.xrc:105
+msgid "Run as"
+msgstr "Εκτέλεση ως"
+
+#: ui/dlgProJob.xrc:195
+msgid "Commands"
+msgstr "Εντολές"
+
+#: ui/dlgProJob.xrc:234
+msgid "use same transaction"
+msgstr "χρήση της ίδιας συναλλαγής"
+
+#: ui/dlgServer.xrc:190
+msgid "Select SSL Root Certificate File"
+msgstr "Επιλογή αρχείου ριζικού πιστοποιητικού SSL"
+
+#: ui/dlgServer.xrc:206
+msgid "Select SSL Certificate Revocation List File"
+msgstr "Επιλογή αρχείου λίστας ανάκλησης πιστοποιητικών SSL"
+
+#: ui/dlgServer.xrc:222
+msgid "Select SSL certificate file"
+msgstr "Επιλογή αρχείου πιστοποιητικού SSL"
+
+#: ui/dlgServer.xrc:238
+msgid "Select SSL key file"
+msgstr "Επιλογή αρχείου κλειδιού SSL"
+
+#: ui/dlgServer.xrc:361
+msgid "Select identity file"
+msgstr "Επιλογή αρχείου ταυτότητας"
+
+#: ui/dlgServer.xrc:377
+msgid "Select public key file"
+msgstr "Επιλογή αρχείου δημόσιου κλειδιού"
+
+#: ui/dlgServer.xrc:466
+msgid "Connect str"
+msgstr "Συμβολοσειρά σύνδεσης"
+
+#: ui/dlgTransformText.xrc:5
+msgid "Transform text"
+msgstr "Μετασχηματισμός κειμένου"
+
+#: ui/dlgTransformText.xrc:17
+msgid "Source text options"
+msgstr "Επιλογές κειμένου προέλευσης"
+
+#: ui/dlgTransformText.xrc:33
+msgid "PCRE regexp"
+msgstr "Κανονική έκφραση PCRE"
+
+#: ui/dlgTransformText.xrc:50
+msgid "Replace expression"
+msgstr "Έκφραση αντικατάστασης"
+
+#: ui/dlgTransformText.xrc:67
+msgid "Rows limit"
+msgstr "Όριο γραμμών"
+
+#: ui/dlgTransformText.xrc:87
+msgid "Chars limit"
+msgstr "Όριο χαρακτήρων"
+
+#: ui/dlgTransformText.xrc:107
+msgid "Refresh highlight"
+msgstr "Ανανέωση επισήμανσης"
+
+#: ui/dlgTransformText.xrc:124
+msgid "Source text"
+msgstr "Κείμενο προέλευσης"
+
+#: ui/dlgTransformText.xrc:160
+msgid "Transform text options"
+msgstr "Επιλογές μετασχηματισμού κειμένου"
+
+#: ui/dlgTransformText.xrc:176
+msgid "Append before row"
+msgstr "Προσθήκη πριν από τη γραμμή"
+
+#: ui/dlgTransformText.xrc:196
+msgid "After row"
+msgstr "Μετά τη γραμμή"
+
+#: ui/dlgTransformText.xrc:230
+msgid "Field separator"
+msgstr "Διαχωριστής πεδίων"
+
+#: ui/dlgTransformText.xrc:267
+msgid "Load options"
+msgstr "Επιλογές φόρτωσης"
+
+#: ui/dlgTransformText.xrc:276
+msgid "First"
+msgstr "Πρώτες"
+
+#: ui/dlgTransformText.xrc:335
+msgid "Rows loading"
+msgstr "Φόρτωση γραμμών"
+
+#: ui/frmAwr.xrc:6
+msgid "AWR report"
+msgstr "Αναφορά AWR"
+
+#: ui/frmAwr.xrc:36
+msgid "Type report"
+msgstr "Τύπος αναφοράς"
+
+#: ui/frmAwr.xrc:39
+msgid "Report"
+msgstr "Αναφορά"
+
+#: ui/frmAwr.xrc:40
+msgid "Diff report"
+msgstr "Αναφορά διαφορών"
+
+#: ui/frmAwr.xrc:104
+msgid "Start Id1"
+msgstr "Id1 έναρξης"
+
+#: ui/frmAwr.xrc:123
+msgid "End Id1"
+msgstr "Id1 λήξης"
+
+#: ui/frmAwr.xrc:166
+msgid "Start Id2"
+msgstr "Id2 έναρξης"
+
+#: ui/frmAwr.xrc:185
+msgid "End Id2"
+msgstr "Id2 λήξης"
+
+#: ui/frmExport.xrc:110
+msgid "format COPY"
+msgstr "μορφή COPY"
+
+#: ui/frmExport.xrc:116
+msgid "Xls fmt copy"
+msgstr "Αντιγραφή σε μορφή Xls"
+
+#: ui/frmImport.xrc:33
+msgid "Select the file to import"
+msgstr "Επιλογή αρχείου προς εισαγωγή"
+
+#: ui/frmOptions.xrc:131
+msgid "Select theme"
+msgstr "Επιλογή θέματος"
+
+#: ui/frmOptions.xrc:154
+msgid "Load"
+msgstr "Φόρτωση"
+
+#: ui/frmOptions.xrc:222
+msgid "Options extended JSON:"
+msgstr "Εκτεταμένες επιλογές JSON:"
+
+#: ui/frmOptions.xrc:261
+msgid "Beautiful big numbers on the statistics page"
+msgstr "Ευανάγνωστη εμφάνιση μεγάλων αριθμών στη σελίδα στατιστικών"
+
+#: ui/frmOptions.xrc:272
+msgid "Show the dependencies of functions on tables,views,functions"
+msgstr "Εμφάνιση των εξαρτήσεων συναρτήσεων από πίνακες, προβολές, συναρτήσεις"
+
+#: ui/frmOptions.xrc:457
+msgid "Show DB name in tree"
+msgstr "Εμφάνιση ονόματος βάσης δεδομένων στο δέντρο"
+
+#: ui/frmOptions.xrc:465
+msgid "Quick jump to the root node"
+msgstr "Γρήγορη μετάβαση στον ριζικό κόμβο"
+
+#: ui/frmOptions.xrc:635
+msgid "Select utility to format text"
+msgstr "Επιλογή βοηθητικού προγράμματος μορφοποίησης κειμένου"
+
+#: ui/frmOptions.xrc:645
+msgid "External alignment utlity"
+msgstr "Εξωτερικό βοηθητικό πρόγραμμα στοίχισης"
+
+#: ui/frmOptions.xrc:662
+msgid "Enable ASUTP style"
+msgstr "Ενεργοποίηση στυλ ASUTP"
+
+#: ui/frmOptions.xrc:677
+msgid "Hide query history"
+msgstr "Απόκρυψη ιστορικού ερωτημάτων"
+
+#: ui/frmOptions.xrc:692
+msgid "Auto save query text"
+msgstr "Αυτόματη αποθήκευση κειμένου ερωτήματος"
+
+#: ui/frmOptions.xrc:707
+msgid "Use word hints"
+msgstr "Χρήση υποδείξεων λέξεων"
+
+#: ui/frmOptions.xrc:722
+msgid "Replace variables in a query"
+msgstr "Αντικατάσταση μεταβλητών σε ερώτημα"
+
+#: ui/frmOptions.xrc:821
+msgid "Use system background color caret line"
+msgstr "Χρήση του χρώματος φόντου του συστήματος για τη γραμμή του δρομέα"
+
+#: ui/frmOptions.xrc:876
+msgid "Width for keyboard layout"
+msgstr "Πλάτος για διάταξη πληκτρολογίου"
+
+#: ui/frmOptions.xrc:1227
+msgid "Select file to store favourites queries"
+msgstr "Επιλογή αρχείου αποθήκευσης αγαπημένων ερωτημάτων"
+
+#: ui/frmOptions.xrc:1255
+msgid "Select file to store macros"
+msgstr "Επιλογή αρχείου αποθήκευσης μακροεντολών"
+
+#: ui/frmOptions.xrc:1283
+msgid "Select file to store queries history"
+msgstr "Επιλογή αρχείου αποθήκευσης ιστορικού ερωτημάτων"
+
+#: ui/frmOptions.xrc:1388
+msgid "Blocked by Process Colour"
+msgstr "Χρώμα διεργασίας που έχει αποκλειστεί"
+
+#: ui/frmOptions.xrc:1402
+msgid "Idle&in&transaction&session&timeout Process Colour"
+msgstr "Χρώμα διεργασίας&idle&in&transaction&session timeout"
+
+#: frm/frmOptions.cpp:1
+msgid "Appearance"
+msgstr "Εμφάνιση"
+
+#: frm/frmOptions.cpp:2
+msgid "Automatic"
+msgstr "Αυτόματο"
+
+#: frm/frmOptions.cpp:3
+msgid "Light"
+msgstr "Φωτεινό"
+
+#: frm/frmOptions.cpp:4
+msgid "Dark"
+msgstr "Σκούρο"
+
+#: frm/frmOptions.cpp:5
+msgid "Restart pgAdmin III to fully apply the appearance change."
+msgstr "Επανεκκινήστε το pgAdmin III για πλήρη εφαρμογή της αλλαγής εμφάνισης."

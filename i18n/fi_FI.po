@@ -22320,4 +22320,402 @@ msgstr "Tyypit"
 #~ msgid "|"
 #~ msgstr "|"
 
+#: pgAdmin3.cpp:389
+msgid "open server log window"
+msgstr "avaa palvelimen lokiikkuna"
 
+#: pgAdmin3.cpp:403
+msgid "export servers configuration to file pgadmin3.ini"
+msgstr "vie palvelinten asetukset tiedostoon pgadmin3.ini"
+
+#: pgAdmin3.cpp:404
+msgid "Enable Dark mode"
+msgstr "Ota tumma tila käyttöön"
+
+#: pgAdmin3.cpp:1013
+msgid "Log - "
+msgstr "Loki - "
+
+#: pro_scheduler/pgproJob.cpp:36
+msgid "Retrieving details on pro_scheduler job"
+msgstr "Haetaan pro_scheduler-työn tietoja"
+
+#: pro_scheduler/pgproJob.cpp:39
+msgid "Refreshing pro_scheduler job"
+msgstr "Päivitetään pro_scheduler-työ"
+
+#: pro_scheduler/pgproJob.cpp:42
+msgid "pro_scheduler job properties report"
+msgstr "pro_scheduler-työn ominaisuusraportti"
+
+#: pro_scheduler/pgproJob.cpp:48
+msgid "pro_scheduler job DDL report"
+msgstr "pro_scheduler-työn DDL-raportti"
+
+#: pro_scheduler/pgproJob.cpp:51
+msgid "pro_scheduler job dependencies report"
+msgstr "pro_scheduler-työn riippuvuusraportti"
+
+#: pro_scheduler/pgproJob.cpp:54
+msgid "pro_scheduler job dependencies"
+msgstr "pro_scheduler-työn riippuvuudet"
+
+#: pro_scheduler/pgproJob.cpp:57
+msgid "pro_scheduler job dependents report"
+msgstr "pro_scheduler-työn riippuvaisten raportti"
+
+#: pro_scheduler/pgproJob.cpp:60
+msgid "pro_scheduler job dependents"
+msgstr "pro_scheduler-työn riippuvaiset"
+
+#: pro_scheduler/pgproJob.cpp:140
+msgid "Started"
+msgstr "Käynnistetty"
+
+#: pro_scheduler/pgproJob.cpp:141
+msgid "Finished"
+msgstr "Valmistunut"
+
+#: pro_scheduler/pgproJob.cpp:143
+msgid "Crontab"
+msgstr "Crontab"
+
+#: pro_scheduler/pgproJob.cpp:146
+msgid "Runas"
+msgstr "Suorita käyttäjänä"
+
+#: pro_scheduler/pgproJob.cpp:152
+msgid "Next start job"
+msgstr "Työn seuraava käynnistys"
+
+#: pro_scheduler/pgproJob.cpp:185
+msgid "Previous sched time run skip"
+msgstr "Edellinen ajastettu suoritusaika ohitettu"
+
+#: pro_scheduler/pgproJob.cpp:254
+msgid "Not run"
+msgstr "Ei suoritettu"
+
+#: pro_scheduler/pgproJob.cpp:356
+msgid "Log_time"
+msgstr "Log_time"
+
+#: pro_scheduler/pgproJob.cpp:357
+msgid "Critical"
+msgstr "Kriittinen"
+
+#: pro_scheduler/pgproJob.cpp:359
+msgid "Stage"
+msgstr "Vaihe"
+
+#: pro_scheduler/pgproJob.cpp:505
+msgid "Enabled or disabled job"
+msgstr "Työ otettu käyttöön tai poistettu käytöstä"
+
+#: frm/frmQuery.cpp:4689
+msgid "Please enter name string with prefix dbname or description server\n"
+msgstr "Anna nimimerkkijono, jonka etuliitteenä on tietokannan nimi tai palvelimen kuvaus\n"
+
+#: frm/frmQuery.cpp:4691
+msgid "Name autosave tab window."
+msgstr "Välilehtiikkunan automaattitallennuksen nimi."
+
+#: frm/frmOptions.cpp:615
+msgid "Color theme save to file %s"
+msgstr "Väriteema tallennettu tiedostoon %s"
+
+#: frm/frmOptions.cpp:637
+msgid "Color theme load from file %s"
+msgstr "Väriteema ladattu tiedostosta %s"
+
+#: frm/frmOptions.cpp:638
+msgid "Load theme"
+msgstr "Lataa teema"
+
+#: schema/pgServer.cpp:1253
+msgid "Key words"
+msgstr "Avainsanat"
+
+#: hotdraw/utilities/hdRemoveDeleteDialog.cpp:117
+msgid "     Choose Remove from Diagram to remove only from current diagram.     "
+msgstr "     Valitse Poista kaaviosta poistaaksesi vain nykyisestä kaaviosta.     "
+
+#: hotdraw/utilities/hdRemoveDeleteDialog.cpp:118
+msgid "     Choose Remove from Model to delete permanently.     "
+msgstr "     Valitse Poista mallista poistaaksesi pysyvästi.     "
+
+#: hotdraw/main/hdDrawingView.cpp:457
+msgid "Sample Item"
+msgstr "Esimerkkikohde"
+
+#: hotdraw/main/hdDrawingView.cpp:466
+msgid "Sample menu item"
+msgstr "Esimerkkivalikkokohde"
+
+#: hotdraw/main/hdDrawingView.cpp:466
+msgid "Sample"
+msgstr "Esimerkki"
+
+#: hotdraw/main/hdDrawingEditor.cpp:267
+msgid "Are you sure you wish to delete figure ?"
+msgstr "Haluatko varmasti poistaa kuvion?"
+
+#: hotdraw/main/hdDrawingEditor.cpp:267
+msgid "Delete figures?"
+msgstr "Poistetaanko kuviot?"
+
+#: hotdraw/main/hdDrawingEditor.cpp:272
+msgid "Are you sure you wish to delete %d figures?"
+msgstr "Haluatko varmasti poistaa %d kuviota?"
+
+#: ui/dlgFindReplace.xrc:65
+msgid "All find tabs"
+msgstr "Kaikki hakuvälilehdet"
+
+#: ui/dlgProJob.xrc:105
+msgid "Run as"
+msgstr "Suorita käyttäjänä"
+
+#: ui/dlgProJob.xrc:195
+msgid "Commands"
+msgstr "Komennot"
+
+#: ui/dlgProJob.xrc:234
+msgid "use same transaction"
+msgstr "käytä samaa tapahtumaa"
+
+#: ui/dlgServer.xrc:190
+msgid "Select SSL Root Certificate File"
+msgstr "Valitse SSL-juurivarmennetiedosto"
+
+#: ui/dlgServer.xrc:206
+msgid "Select SSL Certificate Revocation List File"
+msgstr "Valitse SSL-varmenteiden mitätöintiluettelotiedosto"
+
+#: ui/dlgServer.xrc:222
+msgid "Select SSL certificate file"
+msgstr "Valitse SSL-varmennetiedosto"
+
+#: ui/dlgServer.xrc:238
+msgid "Select SSL key file"
+msgstr "Valitse SSL-avaintiedosto"
+
+#: ui/dlgServer.xrc:361
+msgid "Select identity file"
+msgstr "Valitse identiteettitiedosto"
+
+#: ui/dlgServer.xrc:377
+msgid "Select public key file"
+msgstr "Valitse julkisen avaimen tiedosto"
+
+#: ui/dlgServer.xrc:466
+msgid "Connect str"
+msgstr "Yhteysmerkkijono"
+
+#: ui/dlgTransformText.xrc:5
+msgid "Transform text"
+msgstr "Muunna teksti"
+
+#: ui/dlgTransformText.xrc:17
+msgid "Source text options"
+msgstr "Lähdetekstin asetukset"
+
+#: ui/dlgTransformText.xrc:33
+msgid "PCRE regexp"
+msgstr "PCRE-säännöllinen lauseke"
+
+#: ui/dlgTransformText.xrc:50
+msgid "Replace expression"
+msgstr "Korvauslauseke"
+
+#: ui/dlgTransformText.xrc:67
+msgid "Rows limit"
+msgstr "Rivien raja"
+
+#: ui/dlgTransformText.xrc:87
+msgid "Chars limit"
+msgstr "Merkkien raja"
+
+#: ui/dlgTransformText.xrc:107
+msgid "Refresh highlight"
+msgstr "Päivitä korostus"
+
+#: ui/dlgTransformText.xrc:124
+msgid "Source text"
+msgstr "Lähdeteksti"
+
+#: ui/dlgTransformText.xrc:160
+msgid "Transform text options"
+msgstr "Tekstin muunnoksen asetukset"
+
+#: ui/dlgTransformText.xrc:176
+msgid "Append before row"
+msgstr "Lisää ennen riviä"
+
+#: ui/dlgTransformText.xrc:196
+msgid "After row"
+msgstr "Rivin jälkeen"
+
+#: ui/dlgTransformText.xrc:230
+msgid "Field separator"
+msgstr "Kentän erotin"
+
+#: ui/dlgTransformText.xrc:267
+msgid "Load options"
+msgstr "Latausasetukset"
+
+#: ui/dlgTransformText.xrc:276
+msgid "First"
+msgstr "Ensimmäinen"
+
+#: ui/dlgTransformText.xrc:335
+msgid "Rows loading"
+msgstr "Rivien lataus"
+
+#: ui/frmAwr.xrc:6
+msgid "AWR report"
+msgstr "AWR-raportti"
+
+#: ui/frmAwr.xrc:36
+msgid "Type report"
+msgstr "Raportin tyyppi"
+
+#: ui/frmAwr.xrc:39
+msgid "Report"
+msgstr "Raportti"
+
+#: ui/frmAwr.xrc:40
+msgid "Diff report"
+msgstr "Erotusraportti"
+
+#: ui/frmAwr.xrc:104
+msgid "Start Id1"
+msgstr "Alku-Id1"
+
+#: ui/frmAwr.xrc:123
+msgid "End Id1"
+msgstr "Loppu-Id1"
+
+#: ui/frmAwr.xrc:166
+msgid "Start Id2"
+msgstr "Alku-Id2"
+
+#: ui/frmAwr.xrc:185
+msgid "End Id2"
+msgstr "Loppu-Id2"
+
+#: ui/frmExport.xrc:110
+msgid "format COPY"
+msgstr "COPY-muoto"
+
+#: ui/frmExport.xrc:116
+msgid "Xls fmt copy"
+msgstr "Xls-muotoinen kopio"
+
+#: ui/frmImport.xrc:33
+msgid "Select the file to import"
+msgstr "Valitse tuotava tiedosto"
+
+#: ui/frmOptions.xrc:131
+msgid "Select theme"
+msgstr "Valitse teema"
+
+#: ui/frmOptions.xrc:154
+msgid "Load"
+msgstr "Lataa"
+
+#: ui/frmOptions.xrc:222
+msgid "Options extended JSON:"
+msgstr "Laajennetun JSON:n asetukset:"
+
+#: ui/frmOptions.xrc:261
+msgid "Beautiful big numbers on the statistics page"
+msgstr "Kauniit suuret luvut tilastosivulla"
+
+#: ui/frmOptions.xrc:272
+msgid "Show the dependencies of functions on tables,views,functions"
+msgstr "Näytä funktioiden riippuvuudet tauluista, näkymistä ja funktioista"
+
+#: ui/frmOptions.xrc:457
+msgid "Show DB name in tree"
+msgstr "Näytä tietokannan nimi puussa"
+
+#: ui/frmOptions.xrc:465
+msgid "Quick jump to the root node"
+msgstr "Pikasiirtymä juurisolmuun"
+
+#: ui/frmOptions.xrc:635
+msgid "Select utility to format text"
+msgstr "Valitse tekstin muotoiluohjelma"
+
+#: ui/frmOptions.xrc:645
+msgid "External alignment utlity"
+msgstr "Ulkoinen tasausohjelma"
+
+#: ui/frmOptions.xrc:662
+msgid "Enable ASUTP style"
+msgstr "Ota ASUTP-tyyli käyttöön"
+
+#: ui/frmOptions.xrc:677
+msgid "Hide query history"
+msgstr "Piilota kyselyhistoria"
+
+#: ui/frmOptions.xrc:692
+msgid "Auto save query text"
+msgstr "Tallenna kyselyn teksti automaattisesti"
+
+#: ui/frmOptions.xrc:707
+msgid "Use word hints"
+msgstr "Käytä sanavihjeitä"
+
+#: ui/frmOptions.xrc:722
+msgid "Replace variables in a query"
+msgstr "Korvaa muuttujat kyselyssä"
+
+#: ui/frmOptions.xrc:821
+msgid "Use system background color caret line"
+msgstr "Käytä järjestelmän taustaväriä kohdistinrivillä"
+
+#: ui/frmOptions.xrc:876
+msgid "Width for keyboard layout"
+msgstr "Näppäimistöasettelun leveys"
+
+#: ui/frmOptions.xrc:1227
+msgid "Select file to store favourites queries"
+msgstr "Valitse tiedosto suosikkikyselyjen tallennukseen"
+
+#: ui/frmOptions.xrc:1255
+msgid "Select file to store macros"
+msgstr "Valitse tiedosto makrojen tallennukseen"
+
+#: ui/frmOptions.xrc:1283
+msgid "Select file to store queries history"
+msgstr "Valitse tiedosto kyselyhistorian tallennukseen"
+
+#: ui/frmOptions.xrc:1388
+msgid "Blocked by Process Colour"
+msgstr "Estetyn prosessin väri"
+
+#: ui/frmOptions.xrc:1402
+msgid "Idle&in&transaction&session&timeout Process Colour"
+msgstr "Idle&in&transaction&session&timeout-prosessin väri"
+
+#: frm/frmOptions.cpp:1
+msgid "Appearance"
+msgstr "Ulkoasu"
+
+#: frm/frmOptions.cpp:2
+msgid "Automatic"
+msgstr "Automaattinen"
+
+#: frm/frmOptions.cpp:3
+msgid "Light"
+msgstr "Vaalea"
+
+#: frm/frmOptions.cpp:4
+msgid "Dark"
+msgstr "Tumma"
+
+#: frm/frmOptions.cpp:5
+msgid "Restart pgAdmin III to fully apply the appearance change."
+msgstr "Käynnistä pgAdmin III uudelleen ottaaksesi ulkoasumuutoksen täysin käyttöön."

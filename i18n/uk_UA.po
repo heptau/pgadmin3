@@ -16192,4 +16192,402 @@ msgstr "yes"
 #~ msgid "NO ACTION"
 #~ msgstr "NO ACTION"
 
+#: pgAdmin3.cpp:389
+msgid "open server log window"
+msgstr "відкрити вікно журналу сервера"
 
+#: pgAdmin3.cpp:403
+msgid "export servers configuration to file pgadmin3.ini"
+msgstr "експортувати конфігурацію серверів у файл pgadmin3.ini"
+
+#: pgAdmin3.cpp:404
+msgid "Enable Dark mode"
+msgstr "Увімкнути темний режим"
+
+#: pgAdmin3.cpp:1013
+msgid "Log - "
+msgstr "Журнал - "
+
+#: pro_scheduler/pgproJob.cpp:36
+msgid "Retrieving details on pro_scheduler job"
+msgstr "Отримання відомостей про завдання pro_scheduler"
+
+#: pro_scheduler/pgproJob.cpp:39
+msgid "Refreshing pro_scheduler job"
+msgstr "Оновлення завдання pro_scheduler"
+
+#: pro_scheduler/pgproJob.cpp:42
+msgid "pro_scheduler job properties report"
+msgstr "Звіт про властивості завдання pro_scheduler"
+
+#: pro_scheduler/pgproJob.cpp:48
+msgid "pro_scheduler job DDL report"
+msgstr "Звіт про DDL завдання pro_scheduler"
+
+#: pro_scheduler/pgproJob.cpp:51
+msgid "pro_scheduler job dependencies report"
+msgstr "Звіт про залежності завдання pro_scheduler"
+
+#: pro_scheduler/pgproJob.cpp:54
+msgid "pro_scheduler job dependencies"
+msgstr "Залежності завдання pro_scheduler"
+
+#: pro_scheduler/pgproJob.cpp:57
+msgid "pro_scheduler job dependents report"
+msgstr "Звіт про залежні об'єкти завдання pro_scheduler"
+
+#: pro_scheduler/pgproJob.cpp:60
+msgid "pro_scheduler job dependents"
+msgstr "Залежні об'єкти завдання pro_scheduler"
+
+#: pro_scheduler/pgproJob.cpp:140
+msgid "Started"
+msgstr "Розпочато"
+
+#: pro_scheduler/pgproJob.cpp:141
+msgid "Finished"
+msgstr "Завершено"
+
+#: pro_scheduler/pgproJob.cpp:143
+msgid "Crontab"
+msgstr "Crontab"
+
+#: pro_scheduler/pgproJob.cpp:146
+msgid "Runas"
+msgstr "Запуск від імені"
+
+#: pro_scheduler/pgproJob.cpp:152
+msgid "Next start job"
+msgstr "Наступний запуск завдання"
+
+#: pro_scheduler/pgproJob.cpp:185
+msgid "Previous sched time run skip"
+msgstr "Попередній запуск за розкладом пропущено"
+
+#: pro_scheduler/pgproJob.cpp:254
+msgid "Not run"
+msgstr "Не запускалося"
+
+#: pro_scheduler/pgproJob.cpp:356
+msgid "Log_time"
+msgstr "Час журналу"
+
+#: pro_scheduler/pgproJob.cpp:357
+msgid "Critical"
+msgstr "Критичний"
+
+#: pro_scheduler/pgproJob.cpp:359
+msgid "Stage"
+msgstr "Етап"
+
+#: pro_scheduler/pgproJob.cpp:505
+msgid "Enabled or disabled job"
+msgstr "Завдання увімкнено або вимкнено"
+
+#: frm/frmQuery.cpp:4689
+msgid "Please enter name string with prefix dbname or description server\n"
+msgstr "Введіть рядок назви з префіксом імені БД або опису сервера\n"
+
+#: frm/frmQuery.cpp:4691
+msgid "Name autosave tab window."
+msgstr "Назва вікна автозбереженої вкладки."
+
+#: frm/frmOptions.cpp:615
+msgid "Color theme save to file %s"
+msgstr "Колірну тему збережено у файл %s"
+
+#: frm/frmOptions.cpp:637
+msgid "Color theme load from file %s"
+msgstr "Колірну тему завантажено з файлу %s"
+
+#: frm/frmOptions.cpp:638
+msgid "Load theme"
+msgstr "Завантажити тему"
+
+#: schema/pgServer.cpp:1253
+msgid "Key words"
+msgstr "Ключові слова"
+
+#: hotdraw/utilities/hdRemoveDeleteDialog.cpp:117
+msgid "     Choose Remove from Diagram to remove only from current diagram.     "
+msgstr "     Виберіть «Видалити з діаграми», щоб видалити лише з поточної діаграми.     "
+
+#: hotdraw/utilities/hdRemoveDeleteDialog.cpp:118
+msgid "     Choose Remove from Model to delete permanently.     "
+msgstr "     Виберіть «Видалити з моделі», щоб видалити остаточно.     "
+
+#: hotdraw/main/hdDrawingView.cpp:457
+msgid "Sample Item"
+msgstr "Зразок елемента"
+
+#: hotdraw/main/hdDrawingView.cpp:466
+msgid "Sample menu item"
+msgstr "Зразок пункту меню"
+
+#: hotdraw/main/hdDrawingView.cpp:466
+msgid "Sample"
+msgstr "Зразок"
+
+#: hotdraw/main/hdDrawingEditor.cpp:267
+msgid "Are you sure you wish to delete figure ?"
+msgstr "Ви впевнені, що хочете видалити фігуру?"
+
+#: hotdraw/main/hdDrawingEditor.cpp:267
+msgid "Delete figures?"
+msgstr "Видалити фігури?"
+
+#: hotdraw/main/hdDrawingEditor.cpp:272
+msgid "Are you sure you wish to delete %d figures?"
+msgstr "Ви впевнені, що хочете видалити фігури: %d?"
+
+#: ui/dlgFindReplace.xrc:65
+msgid "All find tabs"
+msgstr "Усі вкладки пошуку"
+
+#: ui/dlgProJob.xrc:105
+msgid "Run as"
+msgstr "Запустити від імені"
+
+#: ui/dlgProJob.xrc:195
+msgid "Commands"
+msgstr "Команди"
+
+#: ui/dlgProJob.xrc:234
+msgid "use same transaction"
+msgstr "використовувати ту саму транзакцію"
+
+#: ui/dlgServer.xrc:190
+msgid "Select SSL Root Certificate File"
+msgstr "Виберіть файл кореневого сертифіката SSL"
+
+#: ui/dlgServer.xrc:206
+msgid "Select SSL Certificate Revocation List File"
+msgstr "Виберіть файл списку відкликаних сертифікатів SSL"
+
+#: ui/dlgServer.xrc:222
+msgid "Select SSL certificate file"
+msgstr "Виберіть файл сертифіката SSL"
+
+#: ui/dlgServer.xrc:238
+msgid "Select SSL key file"
+msgstr "Виберіть файл ключа SSL"
+
+#: ui/dlgServer.xrc:361
+msgid "Select identity file"
+msgstr "Виберіть файл ідентифікації"
+
+#: ui/dlgServer.xrc:377
+msgid "Select public key file"
+msgstr "Виберіть файл відкритого ключа"
+
+#: ui/dlgServer.xrc:466
+msgid "Connect str"
+msgstr "Рядок підключення"
+
+#: ui/dlgTransformText.xrc:5
+msgid "Transform text"
+msgstr "Перетворити текст"
+
+#: ui/dlgTransformText.xrc:17
+msgid "Source text options"
+msgstr "Параметри вихідного тексту"
+
+#: ui/dlgTransformText.xrc:33
+msgid "PCRE regexp"
+msgstr "Регулярний вираз PCRE"
+
+#: ui/dlgTransformText.xrc:50
+msgid "Replace expression"
+msgstr "Вираз заміни"
+
+#: ui/dlgTransformText.xrc:67
+msgid "Rows limit"
+msgstr "Ліміт рядків"
+
+#: ui/dlgTransformText.xrc:87
+msgid "Chars limit"
+msgstr "Ліміт символів"
+
+#: ui/dlgTransformText.xrc:107
+msgid "Refresh highlight"
+msgstr "Оновити виділення"
+
+#: ui/dlgTransformText.xrc:124
+msgid "Source text"
+msgstr "Вихідний текст"
+
+#: ui/dlgTransformText.xrc:160
+msgid "Transform text options"
+msgstr "Параметри перетвореного тексту"
+
+#: ui/dlgTransformText.xrc:176
+msgid "Append before row"
+msgstr "Додати перед рядком"
+
+#: ui/dlgTransformText.xrc:196
+msgid "After row"
+msgstr "Після рядка"
+
+#: ui/dlgTransformText.xrc:230
+msgid "Field separator"
+msgstr "Роздільник полів"
+
+#: ui/dlgTransformText.xrc:267
+msgid "Load options"
+msgstr "Параметри завантаження"
+
+#: ui/dlgTransformText.xrc:276
+msgid "First"
+msgstr "Перший"
+
+#: ui/dlgTransformText.xrc:335
+msgid "Rows loading"
+msgstr "Завантаження рядків"
+
+#: ui/frmAwr.xrc:6
+msgid "AWR report"
+msgstr "Звіт AWR"
+
+#: ui/frmAwr.xrc:36
+msgid "Type report"
+msgstr "Тип звіту"
+
+#: ui/frmAwr.xrc:39
+msgid "Report"
+msgstr "Звіт"
+
+#: ui/frmAwr.xrc:40
+msgid "Diff report"
+msgstr "Звіт про відмінності"
+
+#: ui/frmAwr.xrc:104
+msgid "Start Id1"
+msgstr "Початковий Id1"
+
+#: ui/frmAwr.xrc:123
+msgid "End Id1"
+msgstr "Кінцевий Id1"
+
+#: ui/frmAwr.xrc:166
+msgid "Start Id2"
+msgstr "Початковий Id2"
+
+#: ui/frmAwr.xrc:185
+msgid "End Id2"
+msgstr "Кінцевий Id2"
+
+#: ui/frmExport.xrc:110
+msgid "format COPY"
+msgstr "формат COPY"
+
+#: ui/frmExport.xrc:116
+msgid "Xls fmt copy"
+msgstr "Копіювання у форматі Xls"
+
+#: ui/frmImport.xrc:33
+msgid "Select the file to import"
+msgstr "Виберіть файл для імпорту"
+
+#: ui/frmOptions.xrc:131
+msgid "Select theme"
+msgstr "Виберіть тему"
+
+#: ui/frmOptions.xrc:154
+msgid "Load"
+msgstr "Завантажити"
+
+#: ui/frmOptions.xrc:222
+msgid "Options extended JSON:"
+msgstr "Розширені параметри JSON:"
+
+#: ui/frmOptions.xrc:261
+msgid "Beautiful big numbers on the statistics page"
+msgstr "Гарне відображення великих чисел на сторінці статистики"
+
+#: ui/frmOptions.xrc:272
+msgid "Show the dependencies of functions on tables,views,functions"
+msgstr "Показувати залежності функцій від таблиць, представлень, функцій"
+
+#: ui/frmOptions.xrc:457
+msgid "Show DB name in tree"
+msgstr "Показувати назву БД у дереві"
+
+#: ui/frmOptions.xrc:465
+msgid "Quick jump to the root node"
+msgstr "Швидкий перехід до кореневого вузла"
+
+#: ui/frmOptions.xrc:635
+msgid "Select utility to format text"
+msgstr "Виберіть утиліту для форматування тексту"
+
+#: ui/frmOptions.xrc:645
+msgid "External alignment utlity"
+msgstr "Зовнішня утиліта вирівнювання"
+
+#: ui/frmOptions.xrc:662
+msgid "Enable ASUTP style"
+msgstr "Увімкнути стиль ASUTP"
+
+#: ui/frmOptions.xrc:677
+msgid "Hide query history"
+msgstr "Приховати історію запитів"
+
+#: ui/frmOptions.xrc:692
+msgid "Auto save query text"
+msgstr "Автозбереження тексту запиту"
+
+#: ui/frmOptions.xrc:707
+msgid "Use word hints"
+msgstr "Використовувати підказки слів"
+
+#: ui/frmOptions.xrc:722
+msgid "Replace variables in a query"
+msgstr "Замінювати змінні в запиті"
+
+#: ui/frmOptions.xrc:821
+msgid "Use system background color caret line"
+msgstr "Використовувати системний колір тла для рядка курсору"
+
+#: ui/frmOptions.xrc:876
+msgid "Width for keyboard layout"
+msgstr "Ширина для розкладки клавіатури"
+
+#: ui/frmOptions.xrc:1227
+msgid "Select file to store favourites queries"
+msgstr "Виберіть файл для збереження улюблених запитів"
+
+#: ui/frmOptions.xrc:1255
+msgid "Select file to store macros"
+msgstr "Виберіть файл для збереження макросів"
+
+#: ui/frmOptions.xrc:1283
+msgid "Select file to store queries history"
+msgstr "Виберіть файл для збереження історії запитів"
+
+#: ui/frmOptions.xrc:1388
+msgid "Blocked by Process Colour"
+msgstr "Колір процесу, заблокованого іншим"
+
+#: ui/frmOptions.xrc:1402
+msgid "Idle&in&transaction&session&timeout Process Colour"
+msgstr "Колір процесу Idle&in&transaction&session&timeout"
+
+#: frm/frmOptions.cpp:1
+msgid "Appearance"
+msgstr "Вигляд"
+
+#: frm/frmOptions.cpp:2
+msgid "Automatic"
+msgstr "Автоматично"
+
+#: frm/frmOptions.cpp:3
+msgid "Light"
+msgstr "Світла"
+
+#: frm/frmOptions.cpp:4
+msgid "Dark"
+msgstr "Темна"
+
+#: frm/frmOptions.cpp:5
+msgid "Restart pgAdmin III to fully apply the appearance change."
+msgstr "Перезапустіть pgAdmin III, щоб повністю застосувати зміну вигляду."

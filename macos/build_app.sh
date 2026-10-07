@@ -150,6 +150,11 @@ fi
 # as the separator) and falls back to dataDir -- the mac-only part of that
 # fallback already works once dataDir resolves correctly, this just needs
 # the file to actually be there.
+if [ -d "$REPO_ROOT/pkg/themes" ]; then
+	rm -rf "$SHAREDSUPPORT_DIR/themes"
+	cp -R "$REPO_ROOT/pkg/themes" "$SHAREDSUPPORT_DIR/themes"
+fi
+
 if [ -f "$REPO_ROOT/x64/Release/textcompare_report.template" ]; then
 	cp "$REPO_ROOT/x64/Release/textcompare_report.template" "$SHAREDSUPPORT_DIR/"
 fi

@@ -26670,3 +26670,1759 @@ msgstr "|"
 
 #~ msgid "Auto-vacuum enabled?"
 #~ msgstr "启用自动空间回收？"
+
+#: pgAdmin3.cpp:389
+msgid "open server log window"
+msgstr "打开服务器日志窗口"
+
+#: pgAdmin3.cpp:403
+msgid "export servers configuration to file pgadmin3.ini"
+msgstr "将服务器配置导出到文件 pgadmin3.ini"
+
+#: pgAdmin3.cpp:404
+msgid "Enable Dark mode"
+msgstr "启用深色模式"
+
+#: pgAdmin3.cpp:1013
+msgid "Log - "
+msgstr "日志 - "
+
+#: ctl/ctlTreeJSON.cpp:73
+msgid "Please enter find string\n"
+msgstr "请输入查找字符串\n"
+
+#: ctl/ctlSQLGrid.cpp:993
+msgid "The line size is [ %s ] characters, do you want to continue?"
+msgstr "行大小为 [ %s ] 个字符，是否继续？"
+
+#: ctl/ctlSQLBox.cpp:1426
+msgid "All line (use all EOL)"
+msgstr "所有行（使用所有换行符）"
+
+#: ctl/ctlSQLBox.cpp:1427
+msgid "First line pattern (ignore all but the first EOL)"
+msgstr "首行模式（忽略除第一个换行符之外的所有换行符）"
+
+#: ctl/ctlSQLBox.cpp:1428
+msgid "Try looking for patterns above"
+msgstr "尝试查找上方的模式"
+
+#: ctl/ctlSQLBox.cpp:1429
+msgid "Compact view"
+msgstr "紧凑视图"
+
+#: ctl/ctlSQLBox.cpp:1430
+msgid "Remove multi spaces"
+msgstr "删除多余空格"
+
+#: ctl/ctlSQLBox.cpp:1432
+msgid "A multi-choice convenience dialog"
+msgstr "多选便捷对话框"
+
+#: ctl/ctlSQLBox.cpp:1433
+msgid "Please select several align options"
+msgstr "请选择若干对齐选项"
+
+#: ctl/ctlSQLBox.cpp:1459
+msgid "Aligning complete."
+msgstr "对齐完成。"
+
+#: ctl/ctlSQLBox.cpp:1476
+msgid "Formatting Ok"
+msgstr "格式化成功"
+
+#: ctl/ctlSQLBox.cpp:1500
+msgid "Couldn't run aligning command: "
+msgstr "无法运行对齐命令： "
+
+#: ctl/ctlSQLBox.cpp:1522
+msgid "Aligning command did not respond in %d ms"
+msgstr "对齐命令在 %d 毫秒内未响应"
+
+#: ctl/ctlSQLBox.cpp:1534
+msgid "Aligning command error: Output is empty."
+msgstr "对齐命令出错：输出为空。"
+
+#: ctl/ctlListView.cpp:63
+msgid "CFS fragmentation"
+msgstr "CFS 碎片化"
+
+#: ctl/ctlListView.cpp:70
+msgid "CFS %"
+msgstr "CFS %"
+
+#: ctl/ctlNavigatePanel.cpp:46
+msgid "Search for a simple string."
+msgstr "搜索简单字符串。"
+
+#: ctl/ctlNavigatePanel.cpp:50
+msgid "Go to the next marker."
+msgstr "转到下一个标记。"
+
+#: ctl/ctlNavigatePanel.cpp:56
+msgid "Go to the next marker of the same type."
+msgstr "转到下一个相同类型的标记。"
+
+#: ctl/ctlNavigatePanel.cpp:61
+msgid "The next occurrence of the string."
+msgstr "字符串的下一个匹配项。"
+
+#: ctl/ctlNavigatePanel.cpp:66
+msgid "Previous occurrence of the string."
+msgstr "字符串的上一个匹配项。"
+
+#: ctl/ctlNavigatePanel.cpp:71
+msgid "Find all strings content current row Pid."
+msgstr "查找包含当前行 Pid 的所有字符串。"
+
+#: ctl/ctlNavigatePanel.cpp:76
+msgid "Find all strings content current row State."
+msgstr "查找包含当前行 State 的所有字符串。"
+
+#: ctl/ctlNavigatePanel.cpp:81
+msgid "Enable/disable auto hint."
+msgstr "启用/禁用自动提示。"
+
+#: ctl/ctlNavigatePanel.cpp:309
+msgid "Incorrect hotkey \"%s\" for command \"%s\""
+msgstr "命令“%2$s”的快捷键“%1$s”不正确"
+
+#: ctl/ctlSQLResult.cpp:390
+msgid "Incorrect flag at the '%s' column."
+msgstr "“%s”列的标志不正确。"
+
+#: ctl/ctlSQLResult.cpp:412
+msgid "The column name empty. '%s' ."
+msgstr "列名为空。“%s”。"
+
+#: ctl/ctlSQLResult.cpp:418
+msgid "The column name '%s' was not found in the query results."
+msgstr "在查询结果中未找到列名“%s”。"
+
+#: ctl/ctlSQLResult.cpp:442
+msgid "The column name  '%s' is not closed."
+msgstr "列名“%s”未闭合。"
+
+#: dlg/dlgForeignTable.cpp:169
+msgid "Type %s not found in cbDatatype(%d)\n"
+msgstr "在 cbDatatype(%d) 中未找到类型 %s\n"
+
+#: pro_scheduler/pgproJob.cpp:36
+msgid "Retrieving details on pro_scheduler job"
+msgstr "正在获取 pro_scheduler 作业的详细信息"
+
+#: pro_scheduler/pgproJob.cpp:39
+msgid "Refreshing pro_scheduler job"
+msgstr "正在刷新 pro_scheduler 作业"
+
+#: pro_scheduler/pgproJob.cpp:42
+msgid "pro_scheduler job properties report"
+msgstr "pro_scheduler 作业属性报告"
+
+#: pro_scheduler/pgproJob.cpp:48
+msgid "pro_scheduler job DDL report"
+msgstr "pro_scheduler 作业 DDL 报告"
+
+#: pro_scheduler/pgproJob.cpp:51
+msgid "pro_scheduler job dependencies report"
+msgstr "pro_scheduler 作业依赖关系报告"
+
+#: pro_scheduler/pgproJob.cpp:54
+msgid "pro_scheduler job dependencies"
+msgstr "pro_scheduler 作业依赖关系"
+
+#: pro_scheduler/pgproJob.cpp:57
+msgid "pro_scheduler job dependents report"
+msgstr "pro_scheduler 作业被依赖关系报告"
+
+#: pro_scheduler/pgproJob.cpp:60
+msgid "pro_scheduler job dependents"
+msgstr "pro_scheduler 作业被依赖关系"
+
+#: pro_scheduler/pgproJob.cpp:140
+msgid "Started"
+msgstr "已开始"
+
+#: pro_scheduler/pgproJob.cpp:141
+msgid "Finished"
+msgstr "已完成"
+
+#: pro_scheduler/pgproJob.cpp:143
+msgid "Crontab"
+msgstr "Crontab"
+
+#: pro_scheduler/pgproJob.cpp:146
+msgid "Runas"
+msgstr "运行身份"
+
+#: pro_scheduler/pgproJob.cpp:152
+msgid "Next start job"
+msgstr "作业下次启动时间"
+
+#: pro_scheduler/pgproJob.cpp:185
+msgid "Previous sched time run skip"
+msgstr "上次计划时间运行被跳过"
+
+#: pro_scheduler/pgproJob.cpp:254
+msgid "Not run"
+msgstr "未运行"
+
+#: pro_scheduler/pgproJob.cpp:356
+msgid "Log_time"
+msgstr "日志时间"
+
+#: pro_scheduler/pgproJob.cpp:357
+msgid "Critical"
+msgstr "严重"
+
+#: pro_scheduler/pgproJob.cpp:359
+msgid "Stage"
+msgstr "阶段"
+
+#: pro_scheduler/pgproJob.cpp:505
+msgid "Enabled or disabled job"
+msgstr "启用或禁用作业"
+
+#: utils/misc.cpp:201
+msgid "Bi"
+msgstr "亿"
+
+#: utils/misc.cpp:202
+msgid "Mi"
+msgstr "百万"
+
+#: utils/misc.cpp:203
+msgid "ths"
+msgstr "千"
+
+#: utils/FunctionPGHelper.cpp:238
+msgid "'The database is closed in the object browser.'"
+msgstr "‘该数据库在对象浏览器中已关闭。’"
+
+#: utils/dlgTransformText.cpp:76
+msgid "Transformation text"
+msgstr "文本转换"
+
+#: utils/macros.cpp:272
+msgid "Failed to load AutoReplace file!"
+msgstr "加载自动替换文件失败！"
+
+#: utils/macros.cpp:279
+msgid "Failed to read AutoReplace file!"
+msgstr "读取自动替换文件失败！"
+
+#: utils/macros.cpp:298
+msgid "Failed to open AutoReplace file!"
+msgstr "打开自动替换文件失败！"
+
+#: utils/macros.cpp:306
+msgid "Failed to write to AutoReplace file!"
+msgstr "写入自动替换文件失败！"
+
+#: utils/sysSettings.cpp:95
+msgid "pgpro_scheduler"
+msgstr "pgpro_scheduler"
+
+#: utils/sysSettings.cpp:139
+msgid "Publications"
+msgstr "发布"
+
+#: utils/sshTunnel.cpp:618
+msgid " [%s]"
+msgstr " [%s]"
+
+#: frm/frmEditGrid.cpp:3383
+msgid "View F&iltered Rows...\tCtrl-F"
+msgstr "查看过滤后的行(&I)...\tCtrl-F"
+
+#: frm/frmEditGrid.cpp:3384
+msgid "View Filtered Rows\tCtrl-F"
+msgstr "查看过滤后的行\tCtrl-F"
+
+#: frm/frmQuery.cpp:384
+msgid "New SQL &tab\tCtrl-T"
+msgstr "新建 SQL 标签页(&T)\tCtrl-T"
+
+#: frm/frmQuery.cpp:384
+msgid "Open a new query tab"
+msgstr "打开新的查询标签页"
+
+#: frm/frmQuery.cpp:387
+msgid "&Export...\tAlt+E"
+msgstr "导出(&E)...\tAlt+E"
+
+#: frm/frmQuery.cpp:422
+msgid "Double the single quote\tCtrl-'"
+msgstr "将单引号加倍\tCtrl-'"
+
+#: frm/frmQuery.cpp:422
+msgid "Double the single quote"
+msgstr "将单引号加倍"
+
+#: frm/frmQuery.cpp:423
+msgid "Undouble the single quote\tCtrl-Shift-'"
+msgstr "将单引号还原\tCtrl-Shift-'"
+
+#: frm/frmQuery.cpp:423
+msgid "Undouble the single quote"
+msgstr "将单引号还原"
+
+#: frm/frmQuery.cpp:426
+msgid "External Align...\tCtrl-Shift-A"
+msgstr "外部对齐...\tCtrl-Shift-A"
+
+#: frm/frmQuery.cpp:426
+msgid "Call external align command"
+msgstr "调用外部对齐命令"
+
+#: frm/frmQuery.cpp:429
+msgid "Manage autoreplace..."
+msgstr "管理自动替换..."
+
+#: frm/frmQuery.cpp:429
+msgid "Edit and delete autoreplace strings"
+msgstr "编辑和删除自动替换字符串"
+
+#: frm/frmQuery.cpp:430
+msgid "Open object\tF4"
+msgstr "打开对象\tF4"
+
+#: frm/frmQuery.cpp:430
+msgid "Open object in brouser tree"
+msgstr "在浏览器树中打开对象"
+
+#: frm/frmQuery.cpp:431
+msgid "Text transform...\tCtrl+M"
+msgstr "文本转换...\tCtrl+M"
+
+#: frm/frmQuery.cpp:431
+msgid "Open dialog transform"
+msgstr "打开转换对话框"
+
+#: frm/frmQuery.cpp:438
+msgid "&Execute\tF8"
+msgstr "执行(&E)\tF8"
+
+#: frm/frmQuery.cpp:439
+msgid "&Execute new output\tShift-F8"
+msgstr "执行到新输出(&E)\tShift-F8"
+
+#: frm/frmQuery.cpp:439
+msgid "Execute query in new output"
+msgstr "在新输出中执行查询"
+
+#: frm/frmQuery.cpp:441
+msgid "Execute to file\tF5"
+msgstr "执行到文件\tF5"
+
+#: frm/frmQuery.cpp:456
+msgid "&Auto-Select"
+msgstr "自动选择(&A)"
+
+#: frm/frmQuery.cpp:456
+msgid "Auto select query"
+msgstr "自动选择查询"
+
+#: frm/frmQuery.cpp:462
+msgid "Commit\tF10"
+msgstr "提交\tF10"
+
+#: frm/frmQuery.cpp:463
+msgid "Rollback\tShift-F10"
+msgstr "回滚\tShift-F10"
+
+#: frm/frmQuery.cpp:617
+msgid "New SQL tab"
+msgstr "新建 SQL 标签页"
+
+#: frm/frmQuery.cpp:624
+msgid "Compare the selected text with the clipboard"
+msgstr "将所选文本与剪贴板比较"
+
+#: frm/frmQuery.cpp:646
+msgid "Mode transaction"
+msgstr "事务模式"
+
+#: frm/frmQuery.cpp:2245
+msgid "Copy Insert format"
+msgstr "复制为 Insert 格式"
+
+#: frm/frmQuery.cpp:2245
+msgid "Copy Insert format."
+msgstr "复制为 Insert 格式。"
+
+#: frm/frmQuery.cpp:2246
+msgid "List columns header"
+msgstr "列标题列表"
+
+#: frm/frmQuery.cpp:2246
+msgid "Copy list columns header"
+msgstr "复制列标题列表"
+
+#: frm/frmQuery.cpp:2247
+msgid "IN list format copy"
+msgstr "复制为 IN 列表格式"
+
+#: frm/frmQuery.cpp:2247
+msgid "Copy In list format."
+msgstr "复制为 IN 列表格式。"
+
+#: frm/frmQuery.cpp:2248
+msgid "WHERE list format copy"
+msgstr "复制为 WHERE 列表格式"
+
+#: frm/frmQuery.cpp:2248
+msgid "Copy where list format."
+msgstr "复制为 WHERE 列表格式。"
+
+#: frm/frmQuery.cpp:2249
+msgid "Copy table html format"
+msgstr "复制为 HTML 表格格式"
+
+#: frm/frmQuery.cpp:2249
+msgid "Copy table html format."
+msgstr "复制为 HTML 表格格式。"
+
+#: frm/frmQuery.cpp:2269
+msgid "Draw plot LY(bar) or LXY or XYYY..."
+msgstr "绘制图表 LY(柱状图) 或 LXY 或 XYYY..."
+
+#: frm/frmQuery.cpp:2269
+msgid "Draw plot LY(bar) LXY or XYYY..."
+msgstr "绘制图表 LY(柱状图) LXY 或 XYYY..."
+
+#: frm/frmQuery.cpp:2270
+msgid "Summary"
+msgstr "汇总"
+
+#: frm/frmQuery.cpp:2270
+msgid "Summary selected cells."
+msgstr "汇总所选单元格。"
+
+#: frm/frmQuery.cpp:2271
+msgid "Compare 2 Cells"
+msgstr "比较两个单元格"
+
+#: frm/frmQuery.cpp:2271
+msgid "Compare 2 selected cells."
+msgstr "比较两个选定的单元格。"
+
+#: frm/frmQuery.cpp:2272
+msgid "Check the sequence of dates"
+msgstr "检查日期顺序"
+
+#: frm/frmQuery.cpp:2273
+msgid "Clear filter"
+msgstr "清除过滤器"
+
+#: frm/frmQuery.cpp:2333
+msgid "No template generate."
+msgstr "未生成模板。"
+
+#: frm/frmQuery.cpp:2558
+msgid "%i@"
+msgstr "%i@"
+
+#: frm/frmQuery.cpp:3070
+msgid "Out %i"
+msgstr "输出 %i"
+
+#: frm/frmQuery.cpp:3413
+msgid "-- Executing query [%s]:[%s]\n"
+msgstr "-- 正在执行查询 [%s]:[%s]\n"
+
+#: frm/frmQuery.cpp:4241
+msgid "Running aligning command..."
+msgstr "正在运行对齐命令..."
+
+#: frm/frmQuery.cpp:4471
+msgid "outputPane"
+msgstr "outputPane"
+
+#: frm/frmQuery.cpp:4491
+msgid "Output pane [%s]"
+msgstr "输出面板 [%s]"
+
+#: frm/frmQuery.cpp:4597
+msgid "Cannot change to selected SQL tab now. Try again a bit later."
+msgstr "现在无法切换到所选的 SQL 标签页。请稍后再试。"
+
+#: frm/frmQuery.cpp:4620
+msgid "Cannot add a new SQL tab now. Try again a bit later."
+msgstr "现在无法添加新的 SQL 标签页。请稍后再试。"
+
+#: frm/frmQuery.cpp:4689
+msgid "Please enter name string with prefix dbname or description server\n"
+msgstr "请输入名称字符串，以数据库名或服务器描述为前缀\n"
+
+#: frm/frmQuery.cpp:4691
+msgid "Name autosave tab window."
+msgstr "自动保存标签页窗口的名称。"
+
+#: frm/frmQuery.cpp:4717
+msgid "Cannot remove the last SQL tab"
+msgstr "无法删除最后一个 SQL 标签页"
+
+#: frm/frmQuery.cpp:4797
+msgid "Query %d"
+msgstr "查询 %d"
+
+#: frm/frmQuery.cpp:5148
+msgid "Script Recreate Cascade"
+msgstr "脚本：级联重建"
+
+#: frm/frmQuery.cpp:5148
+msgid "Start query tool with recreate cascade script."
+msgstr "使用级联重建脚本启动查询工具。"
+
+#: frm/frmOptions.cpp:61
+msgid "PgAdmin3opt settings"
+msgstr "PgAdmin3opt 设置"
+
+#: frm/frmOptions.cpp:615
+msgid "Color theme save to file %s"
+msgstr "颜色主题保存到文件 %s"
+
+#: frm/frmOptions.cpp:637
+msgid "Color theme load from file %s"
+msgstr "从文件 %s 加载颜色主题"
+
+#: frm/frmOptions.cpp:638
+msgid "Load theme"
+msgstr "加载主题"
+
+#: frm/frmOptions.cpp:1208
+msgid "&Options...\tCtrl-O"
+msgstr "选项(&O)...\tCtrl-O"
+
+#: frm/frmStatus.cpp:282
+msgid "&Wait trace"
+msgstr "等待跟踪(&W)"
+
+#: frm/frmStatus.cpp:282
+msgid "Enable the wait event."
+msgstr "启用等待事件。"
+
+#: frm/frmStatus.cpp:283
+msgid "&Wait event save"
+msgstr "保存等待事件(&W)"
+
+#: frm/frmStatus.cpp:283
+msgid "Enable the wait event save to file sample.dat."
+msgstr "启用将等待事件保存到文件 sample.dat。"
+
+#: frm/frmStatus.cpp:320
+msgid "Value parameter pg_wait_sampling.history_size = %ld greet 1000000  monitoring wait events disabled.\n"
+msgstr "参数 pg_wait_sampling.history_size = %ld 大于 1000000，等待事件监控已禁用。\n"
+
+#: frm/frmStatus.cpp:383
+msgid "&Query state\tCtrl-Alt-Q"
+msgstr "查询状态(&Q)\tCtrl-Alt-Q"
+
+#: frm/frmStatus.cpp:383
+msgid "Show or hide the query state tab."
+msgstr "显示或隐藏查询状态标签页。"
+
+#: frm/frmStatus.cpp:385
+msgid "Append verbose"
+msgstr "附加 verbose"
+
+#: frm/frmStatus.cpp:386
+msgid "Append use buffers"
+msgstr "附加 buffers 使用情况"
+
+#: frm/frmStatus.cpp:387
+msgid "Append real timing"
+msgstr "附加实际耗时"
+
+#: frm/frmStatus.cpp:388
+msgid "Append triggers"
+msgstr "附加触发器"
+
+#: frm/frmStatus.cpp:396
+msgid "&Wait"
+msgstr "等待(&W)"
+
+#: frm/frmStatus.cpp:436
+msgid "Highlight items only"
+msgstr "仅高亮项目"
+
+#: frm/frmStatus.cpp:517
+msgid "QueryState"
+msgstr "查询状态"
+
+#: frm/frmStatus.cpp:853
+msgid "W_Event_T"
+msgstr "W_Event_T"
+
+#: frm/frmStatus.cpp:854
+msgid "W_Event"
+msgstr "W_Event"
+
+#: frm/frmStatus.cpp:1112
+msgid "Query State"
+msgstr "查询状态"
+
+#: frm/frmStatus.cpp:1126
+msgid "Query Text"
+msgstr "查询文本"
+
+#: frm/frmStatus.cpp:1127
+msgid "Plan"
+msgstr "执行计划"
+
+#: frm/frmStatus.cpp:1251
+msgid "Functions pg_read_binary_file(text,bigint,bigint,boolean), pg_stat_file(text,boolean),pg_ls_logdir()  permission denied."
+msgstr "函数 pg_read_binary_file(text,bigint,bigint,boolean)、pg_stat_file(text,boolean)、pg_ls_logdir() 权限被拒绝。"
+
+#: frm/frmStatus.cpp:1716
+msgid "Activity query long execute"
+msgstr "长时间执行的活动查询"
+
+#: frm/frmStatus.cpp:2634
+msgid "Query state status long execute"
+msgstr "长时间执行的查询状态"
+
+#: frm/frmStatus.cpp:2670
+msgid "Refreshing query state list."
+msgstr "正在刷新查询状态列表。"
+
+#: frm/frmStatus.cpp:2959
+msgid "Wait..."
+msgstr "等待..."
+
+#: frm/frmStatus.cpp:4807
+msgid "&Server Status\tCtrl-S"
+msgstr "服务器状态(&S)\tCtrl-S"
+
+#: frm/frmPlot.cpp:120
+msgid "Lock aspect"
+msgstr "锁定比例"
+
+#: frm/frmPlot.cpp:120
+msgid "Lock horizontal and vertical zoom aspect."
+msgstr "锁定水平和垂直缩放比例。"
+
+#: frm/frmPlot.cpp:442
+msgid "Save a screenshot"
+msgstr "保存截图"
+
+#: frm/frmLog.cpp:1314
+msgid "Log view..."
+msgstr "日志查看..."
+
+#: frm/frmLog.cpp:1314
+msgid "Log view CSV format"
+msgstr "日志查看 CSV 格式"
+
+#: frm/frmMain.cpp:200
+msgid "Git"
+msgstr "Git"
+
+#: frm/frmMain.cpp:472
+msgid "&Server"
+msgstr "服务器(&S)"
+
+#: frm/frmMain.cpp:472
+msgid "Server menu commands."
+msgstr "服务器菜单命令。"
+
+#: frm/frmMain.cpp:1187
+msgid "Create putty tunnel error."
+msgstr "创建 putty 隧道出错。"
+
+#: frm/frmAwr.cpp:33
+msgid "Report AWR"
+msgstr "AWR 报告"
+
+#: frm/frmAwr.cpp:33
+msgid "Generate AWR report"
+msgstr "生成 AWR 报告"
+
+#: schema/pgServer.cpp:1253
+msgid "Key words"
+msgstr "关键字"
+
+#: schema/pgServer.cpp:1338
+msgid "Add connect str"
+msgstr "添加连接字符串"
+
+#: schema/pgServer.cpp:2264
+msgid "&Set keywords"
+msgstr "设置关键字(&S)"
+
+#: schema/pgServer.cpp:2264
+msgid "Set keywords list the selected server."
+msgstr "设置所选服务器的关键字列表。"
+
+#: schema/pgServer.cpp:2273
+msgid "Please enter keywords\n"
+msgstr "请输入关键字\n"
+
+#: schema/pgServer.cpp:2275
+msgid "Keywords server"
+msgstr "服务器关键字"
+
+#: schema/pgServer.cpp:2374
+msgid "Disconnec&t all servers"
+msgstr "断开所有服务器(&T)"
+
+#: schema/pgServer.cpp:2374
+msgid "Disconnect from all servers."
+msgstr "断开所有服务器的连接。"
+
+#: schema/pgIndex.cpp:499
+msgid "Check Btree index"
+msgstr "检查 Btree 索引"
+
+#: schema/pgIndex.cpp:499
+msgid "Check Btree index function bt_index_parent_check(oid,true)"
+msgstr "检查 Btree 索引，函数 bt_index_parent_check(oid,true)"
+
+#: schema/pgIndex.cpp:568
+msgid "&Reset index statistics"
+msgstr "重置索引统计信息(&R)"
+
+#: schema/pgIndex.cpp:568
+msgid "Reset statistics of the selected index."
+msgstr "重置所选索引的统计信息。"
+
+#: schema/pgIndex.cpp:574
+msgid "Are you sure you wish to reset statistics of this index?"
+msgstr "您确定要重置此索引的统计信息吗？"
+
+#: schema/pgSubscription.cpp:33
+msgid "Retrieving details on subscription"
+msgstr "正在获取订阅的详细信息"
+
+#: schema/pgSubscription.cpp:37
+msgid "Refreshing subscription"
+msgstr "正在刷新订阅"
+
+#: schema/pgSubscription.cpp:41
+msgid "Are you sure you wish to drop subscription \"%s\" including all objects that depend on it?"
+msgstr "您确定要删除订阅“%s”及所有依赖于它的对象吗？"
+
+#: schema/pgSubscription.cpp:45
+msgid "Are you sure you wish to drop subscription \"%s\"?"
+msgstr "您确定要删除订阅“%s”吗？"
+
+#: schema/pgSubscription.cpp:49
+msgid "Drop subscription cascaded?"
+msgstr "级联删除订阅？"
+
+#: schema/pgSubscription.cpp:52
+msgid "Drop subscription?"
+msgstr "删除订阅？"
+
+#: schema/pgSubscription.cpp:55
+msgid "Subscription properties report"
+msgstr "订阅属性报告"
+
+#: schema/pgSubscription.cpp:59
+msgid "Subscription properties"
+msgstr "订阅属性"
+
+#: schema/pgSubscription.cpp:62
+msgid "Subscription DDL report"
+msgstr "订阅 DDL 报告"
+
+#: schema/pgSubscription.cpp:66
+msgid "Subscription DDL"
+msgstr "订阅 DDL"
+
+#: schema/pgSubscription.cpp:69
+msgid "Subscription dependencies report"
+msgstr "订阅依赖关系报告"
+
+#: schema/pgSubscription.cpp:73
+msgid "Subscription dependencies"
+msgstr "订阅依赖关系"
+
+#: schema/pgSubscription.cpp:76
+msgid "Subscription dependents report"
+msgstr "订阅被依赖关系报告"
+
+#: schema/pgSubscription.cpp:80
+msgid "Subscription dependents"
+msgstr "订阅被依赖关系"
+
+#: schema/pgSubscription.cpp:210
+msgid "Retrieving details on subscriptions"
+msgstr "正在获取订阅列表的详细信息"
+
+#: schema/pgSubscription.cpp:213
+msgid "Refreshing subscriptions"
+msgstr "正在刷新订阅列表"
+
+#: schema/pgSubscription.cpp:216
+msgid "Subscriptions list report"
+msgstr "订阅列表报告"
+
+#: schema/pgPublication.cpp:33
+msgid "Retrieving details on publication"
+msgstr "正在获取发布的详细信息"
+
+#: schema/pgPublication.cpp:37
+msgid "Refreshing publication"
+msgstr "正在刷新发布"
+
+#: schema/pgPublication.cpp:41
+msgid "Are you sure you wish to drop publication \"%s\" including all objects that depend on it?"
+msgstr "您确定要删除发布“%s”及所有依赖于它的对象吗？"
+
+#: schema/pgPublication.cpp:45
+msgid "Are you sure you wish to drop publication \"%s\"?"
+msgstr "您确定要删除发布“%s”吗？"
+
+#: schema/pgPublication.cpp:49
+msgid "Drop publication cascaded?"
+msgstr "级联删除发布？"
+
+#: schema/pgPublication.cpp:52
+msgid "Drop publication?"
+msgstr "删除发布？"
+
+#: schema/pgPublication.cpp:55
+msgid "Publication properties report"
+msgstr "发布属性报告"
+
+#: schema/pgPublication.cpp:59
+msgid "Publication properties"
+msgstr "发布属性"
+
+#: schema/pgPublication.cpp:62
+msgid "Publication DDL report"
+msgstr "发布 DDL 报告"
+
+#: schema/pgPublication.cpp:66
+msgid "Publication DDL"
+msgstr "发布 DDL"
+
+#: schema/pgPublication.cpp:69
+msgid "Publication dependencies report"
+msgstr "发布依赖关系报告"
+
+#: schema/pgPublication.cpp:73
+msgid "Publication dependencies"
+msgstr "发布依赖关系"
+
+#: schema/pgPublication.cpp:76
+msgid "Publication dependents report"
+msgstr "发布被依赖关系报告"
+
+#: schema/pgPublication.cpp:80
+msgid "Publication dependents"
+msgstr "发布被依赖关系"
+
+#: schema/pgPublication.cpp:318
+msgid "Retrieving details on publications"
+msgstr "正在获取发布列表的详细信息"
+
+#: schema/pgPublication.cpp:321
+msgid "Refreshing publications"
+msgstr "正在刷新发布列表"
+
+#: schema/pgPublication.cpp:324
+msgid "Publications list report"
+msgstr "发布列表报告"
+
+#: schema/pgTable.cpp:1096
+msgid "Create table timestamp"
+msgstr "数据表创建时间"
+
+#: schema/pgObject.cpp:621
+msgid "extension"
+msgstr "扩展"
+
+#: schema/pgFunction.cpp:410
+msgid "Parallel"
+msgstr "并行"
+
+#: schema/pgFunction.cpp:426
+msgid "Last change timestamp"
+msgstr "最后修改时间"
+
+#: dd/ddmodel/ddDBReverseEnginering.cpp:175
+msgid "Schema not found"
+msgstr "未找到模式"
+
+#: dd/ddmodel/ddDBReverseEnginering.cpp:175
+msgid "getting table OID"
+msgstr "正在获取数据表 OID"
+
+#: dd/ddmodel/ddDBReverseEnginering.cpp:216
+msgid "Table not found"
+msgstr "未找到数据表"
+
+#: dd/ddmodel/ddDBReverseEnginering.cpp:665
+msgid "Error detecting kind of foreign key source: from Pk or from Uk"
+msgstr "检测外键来源类型时出错：来自主键还是唯一键"
+
+#: dd/ddmodel/ddDBReverseEnginering.cpp:665
+msgid "Error importing relationship"
+msgstr "导入关系时出错"
+
+#: dd/ddmodel/ddDBReverseEnginering.cpp:786
+msgid "Error detecting kind of foreign key: null or not null"
+msgstr "检测外键类型时出错：可为空还是非空"
+
+#: dd/ddmodel/ddDBReverseEnginering.cpp:1333
+msgid "Error fk is repeated"
+msgstr "错误：外键重复"
+
+#: dd/ddmodel/ddDBReverseEnginering.cpp:1333
+msgid "Error comparing relationships"
+msgstr "比较关系时出错"
+
+#: dd/ddmodel/ddDBReverseEnginering.cpp:1673
+msgid "Please, select a schema to use at import tables process:"
+msgstr "请选择导入数据表时要使用的模式："
+
+#: dd/ddmodel/ddDBReverseEnginering.cpp:1698
+msgid "Please, select a Schema to continue to next step."
+msgstr "请选择一个模式以继续下一步。"
+
+#: dd/ddmodel/ddDBReverseEnginering.cpp:1698
+msgid "Select a Schema..."
+msgstr "选择模式..."
+
+#: dd/ddmodel/ddDBReverseEnginering.cpp:1806
+msgid "Table(s) from selected schema"
+msgstr "所选模式中的数据表"
+
+#: dd/ddmodel/ddDBReverseEnginering.cpp:1811
+msgid "Tables(s) to be imported"
+msgstr "要导入的数据表"
+
+#: dd/ddmodel/ddDBReverseEnginering.cpp:1826
+msgid "Add the selected table(s)"
+msgstr "添加所选数据表"
+
+#: dd/ddmodel/ddDBReverseEnginering.cpp:1828
+msgid "Add all tables"
+msgstr "添加所有数据表"
+
+#: dd/ddmodel/ddDBReverseEnginering.cpp:1830
+msgid "Remove the selected table(s)"
+msgstr "移除所选数据表"
+
+#: dd/ddmodel/ddDBReverseEnginering.cpp:1832
+msgid "Remove all tables"
+msgstr "移除所有数据表"
+
+#: dd/ddmodel/ddDBReverseEnginering.cpp:1981
+msgid "Please, select at least a table to continue to next step."
+msgstr "请至少选择一个数据表以继续下一步。"
+
+#: dd/ddmodel/ddDBReverseEnginering.cpp:1981
+msgid "Select some Tables..."
+msgstr "选择数据表..."
+
+#: dd/ddmodel/ddDBReverseEnginering.cpp:1997
+msgid "Error when preparing to import table: "
+msgstr "准备导入数据表时出错： "
+
+#: dd/ddmodel/ddDBReverseEnginering.cpp:2009
+msgid "Prepared to import table: "
+msgstr "已准备导入数据表： "
+
+#: dd/ddmodel/ddDBReverseEnginering.cpp:2009
+msgid "\n"
+msgstr "\n"
+
+#: dd/ddmodel/ddDBReverseEnginering.cpp:2029
+msgid "Returning to previous dialog will remove all selected tables, do you like to continue?"
+msgstr "返回上一个对话框将移除所有已选数据表，是否继续？"
+
+#: dd/ddmodel/ddDBReverseEnginering.cpp:2077
+msgid "Returning to previous dialog will delete imported tables before adding it to the model?"
+msgstr "返回上一个对话框将在添加到模型之前删除已导入的数据表，是否继续？"
+
+#: dd/ddmodel/ddDrawingView.cpp:33
+msgid "Add new Table"
+msgstr "添加新数据表"
+
+#: dd/ddmodel/ddDrawingView.cpp:84
+msgid "Table exists already at this diagram"
+msgstr "数据表已存在于此图中"
+
+#: dd/ddmodel/ddDrawingView.cpp:84
+msgid "Drag and drop warning"
+msgstr "拖放警告"
+
+#: dd/ddmodel/ddModelBrowser.cpp:39
+msgid "Database Design"
+msgstr "数据库设计"
+
+#: dd/ddmodel/ddGenerationWizard.cpp:99
+msgid "Create table"
+msgstr "创建数据表"
+
+#: dd/ddmodel/ddGenerationWizard.cpp:100
+msgid "Alter table"
+msgstr "修改数据表"
+
+#: dd/ddmodel/ddGenerationWizard.cpp:100
+msgid "Drop, then create"
+msgstr "先删除再创建"
+
+#: dd/ddmodel/ddGenerationWizard.cpp:100
+msgid "Create table [conflict]"
+msgstr "创建数据表 [冲突]"
+
+#: dd/ddmodel/ddGenerationWizard.cpp:157
+msgid "Tables(s) to be generated"
+msgstr "要生成的数据表"
+
+#: dd/ddmodel/ddGenerationWizard.cpp:369
+msgid "Please select at least one table to move to next step."
+msgstr "请至少选择一个数据表以继续下一步。"
+
+#: dd/ddmodel/ddGenerationWizard.cpp:369
+msgid "No tables selected"
+msgstr "未选择数据表"
+
+#: dd/ddmodel/ddGenerationWizard.cpp:396
+msgid "No schema"
+msgstr "无模式"
+
+#: dd/ddmodel/ddGenerationWizard.cpp:415
+msgid "Please select an item to move to next step."
+msgstr "请选择一项以继续下一步。"
+
+#: dd/ddmodel/ddGenerationWizard.cpp:415
+msgid "No choice made"
+msgstr "未做出选择"
+
+#: dd/ddmodel/ddGenerationWizard.cpp:528
+msgid "Please check the choice for each table:"
+msgstr "请检查每个数据表的选择："
+
+#: dd/ddmodel/ddGenerationWizard.cpp:555
+msgid "Select an action"
+msgstr "选择操作"
+
+#: dd/ddmodel/ddGenerationWizard.cpp:580
+msgid "Metadata of table to be generated not found at database designer model"
+msgstr "在数据库设计器模型中未找到要生成的数据表的元数据"
+
+#: dd/ddmodel/ddGenerationWizard.cpp:580
+msgid "Error at generation process"
+msgstr "生成过程中出错"
+
+#: dd/ddmodel/ddGenerationWizard.cpp:599
+msgid "Error importing at generation process"
+msgstr "生成过程中导入出错"
+
+#: dd/ddmodel/ddGenerationWizard.cpp:615
+msgid "Going back?"
+msgstr "返回？"
+
+#: dd/ddmodel/ddDrawingEditor.cpp:87
+msgid "Are you sure you wish to delete table "
+msgstr "您确定要删除数据表 "
+
+#: dd/ddmodel/ddDrawingEditor.cpp:87
+msgid "Delete table?"
+msgstr "删除数据表？"
+
+#: dd/ddmodel/ddDrawingEditor.cpp:95
+msgid "Are you sure you wish to delete relationship "
+msgstr "您确定要删除关系 "
+
+#: dd/ddmodel/ddDrawingEditor.cpp:95
+msgid "Delete relationship?"
+msgstr "删除关系？"
+
+#: dd/ddmodel/ddDrawingEditor.cpp:114
+msgid "Are you sure you wish to delete %d tables, removing from model related relationships?"
+msgstr "您确定要删除 %d 个数据表，并从模型中移除相关的关系吗？"
+
+#: dd/ddmodel/ddDrawingEditor.cpp:115
+msgid "Delete tables?"
+msgstr "删除数据表？"
+
+#: dd/ddmodel/ddDrawingEditor.cpp:165
+msgid "Invalid figure kind found"
+msgstr "发现无效的图形类型"
+
+#: dd/ddmodel/ddDrawingEditor.cpp:165
+msgid "Error while deleting tables"
+msgstr "删除数据表时出错"
+
+#: dd/ddmodel/ddDrawingEditor.cpp:188
+msgid "Error while deleting table"
+msgstr "删除数据表时出错"
+
+#: dd/ddmodel/ddDrawingEditor.cpp:223
+msgid "Error while deleting realtionships"
+msgstr "删除关系时出错"
+
+#: dd/ddmodel/ddDatabaseDesign.cpp:142
+msgid "Invalid number of arguments in call of function generate tables of list"
+msgstr "调用函数 generate tables of list 时参数数量无效"
+
+#: dd/ddmodel/ddDatabaseDesign.cpp:162
+msgid "Generating Create sentence(s) for table(s) "
+msgstr "正在为数据表生成 Create 语句 "
+
+#: dd/ddmodel/ddDatabaseDesign.cpp:185
+msgid "Generating Pk sentence for table(s) "
+msgstr "正在为数据表生成主键语句 "
+
+#: dd/ddmodel/ddDatabaseDesign.cpp:201
+msgid "Generating Uk sentence(s) for table(s) "
+msgstr "正在为数据表生成唯一键语句 "
+
+#: dd/ddmodel/ddDatabaseDesign.cpp:217
+msgid "Generating Fk sentence(s) for table(s) "
+msgstr "正在为数据表生成外键语句 "
+
+#: dd/ddmodel/ddDatabaseDesign.cpp:243
+msgid "No connection found when building ALTER objects DDL."
+msgstr "构建 ALTER 对象 DDL 时未找到连接。"
+
+#: dd/ddmodel/ddDatabaseDesign.cpp:250
+msgid "Schema defined when building ALTER TABLE DDL"
+msgstr "构建 ALTER TABLE DDL 时已定义模式"
+
+#: dd/ddmodel/ddDatabaseDesign.cpp:257
+msgid "Generating Alter table sentence(s) for table(s) "
+msgstr "正在为数据表生成 Alter table 语句 "
+
+#: dd/ddmodel/ddDatabaseDesign.cpp:527
+msgid "Failed to write the model file!"
+msgstr "写入模型文件失败！"
+
+#: hotdraw/utilities/hdRemoveDeleteDialog.cpp:117
+msgid "     Choose Remove from Diagram to remove only from current diagram.     "
+msgstr "     选择“从图中移除”仅从当前图中移除。     "
+
+#: hotdraw/utilities/hdRemoveDeleteDialog.cpp:118
+msgid "     Choose Remove from Model to delete permanently.     "
+msgstr "     选择“从模型中移除”将永久删除。     "
+
+#: hotdraw/main/hdDrawingView.cpp:457
+msgid "Sample Item"
+msgstr "示例项"
+
+#: hotdraw/main/hdDrawingView.cpp:466
+msgid "Sample menu item"
+msgstr "示例菜单项"
+
+#: hotdraw/main/hdDrawingView.cpp:466
+msgid "Sample"
+msgstr "示例"
+
+#: hotdraw/main/hdDrawingEditor.cpp:267
+msgid "Are you sure you wish to delete figure ?"
+msgstr "您确定要删除该图形吗？"
+
+#: hotdraw/main/hdDrawingEditor.cpp:267
+msgid "Delete figures?"
+msgstr "删除图形？"
+
+#: hotdraw/main/hdDrawingEditor.cpp:272
+msgid "Are you sure you wish to delete %d figures?"
+msgstr "您确定要删除 %d 个图形吗？"
+
+#: dd/dditems/utilities/ddSelectKindFksDialog.cpp:103
+msgid "From Primary"
+msgstr "来自主键"
+
+#: dd/dditems/utilities/ddSelectKindFksDialog.cpp:110
+msgid "Unique Key: "
+msgstr "唯一键： "
+
+#: dd/dditems/utilities/ddSelectKindFksDialog.cpp:199
+msgid "Automatically Generated"
+msgstr "自动生成"
+
+#: dd/dditems/figures/ddColumnKindIcon.cpp:62
+msgid "Unique key"
+msgstr "唯一键"
+
+#: dd/dditems/figures/ddTableFigure.cpp:1178
+msgid "Cannot build an ALTER TABLE statement for a non existing table (%s.%s)."
+msgstr "无法为不存在的数据表 (%s.%s) 构建 ALTER TABLE 语句。"
+
+#: dd/dditems/figures/ddTableFigure.cpp:1179
+msgid "Error when trying to get table OID"
+msgstr "尝试获取数据表 OID 时出错"
+
+#: dd/dditems/figures/ddTableFigure.cpp:1186
+msgid "Cannot reverse engineering table %s.%s."
+msgstr "无法对数据表 %s.%s 进行逆向工程。"
+
+#: dd/dditems/figures/ddTableFigure.cpp:1187
+msgid "Error when trying to get stub table"
+msgstr "尝试获取存根数据表时出错"
+
+#: dd/dditems/figures/ddTableFigure.cpp:1442
+msgid "\" SET NOT NULL;"
+msgstr "\" SET NOT NULL;"
+
+#: dd/dditems/figures/ddTableFigure.cpp:1469
+msgid "Trying to build ALTER sentences"
+msgstr "正在尝试构建 ALTER 语句"
+
+#: dd/dditems/figures/ddColumnFigure.cpp:491
+msgid "relation between table: "
+msgstr "数据表之间的关系： "
+
+#: dd/dditems/figures/ddColumnFigure.cpp:491
+msgid " and table: "
+msgstr " 和数据表： "
+
+#: dd/dditems/figures/ddColumnFigure.cpp:492
+msgid " is marked as identifying but user created foreign key column: "
+msgstr " 被标记为标识关系，但用户创建的外键列： "
+
+#: dd/dditems/figures/ddColumnFigure.cpp:493
+msgid " isn't set as primary key \n"
+msgstr " 未设置为主键 \n"
+
+#: dd/dditems/figures/ddColumnFigure.cpp:500
+msgid "relation between table:"
+msgstr "数据表之间的关系："
+
+#: dd/dditems/figures/ddColumnFigure.cpp:501
+msgid "is marked as optional but user created foreign key column: "
+msgstr "被标记为可选，但用户创建的外键列： "
+
+#: dd/dditems/figures/ddColumnFigure.cpp:502
+msgid "is set as mandatory \n"
+msgstr "被设置为必填 \n"
+
+#: dd/dditems/figures/ddColumnFigure.cpp:510
+msgid " is marked as mandatory but user created foreign key column: "
+msgstr " 被标记为必填，但用户创建的外键列： "
+
+#: dd/dditems/figures/ddColumnFigure.cpp:511
+msgid "is set as optional \n"
+msgstr "被设置为可选 \n"
+
+#: dd/dditems/figures/ddColumnFigure.cpp:519
+msgid "User created foreign key column: "
+msgstr "用户创建的外键列： "
+
+#: dd/dditems/figures/ddColumnFigure.cpp:519
+msgid "have different datatype from source column of relationship: "
+msgstr "其数据类型与关系的源列不同： "
+
+#: dd/dditems/figures/ddColumnFigure.cpp:520
+msgid " \n"
+msgstr " \n"
+
+#: dd/dditems/figures/ddTextTableItemFigure.cpp:243
+msgid "Varchar size"
+msgstr "Varchar 大小"
+
+#: dd/dditems/figures/ddTextTableItemFigure.cpp:244
+msgid "Size for varchar datatype"
+msgstr "varchar 数据类型的大小"
+
+#: dd/dditems/figures/ddTextTableItemFigure.cpp:264
+msgid "datatype size"
+msgstr "数据类型大小"
+
+#: dd/dditems/figures/ddTextTableItemFigure.cpp:265
+msgid "Size for datatype"
+msgstr "数据类型的大小"
+
+#: dd/dditems/figures/ddTextTableItemFigure.cpp:354
+msgid "Add a column..."
+msgstr "添加列..."
+
+#: dd/dditems/figures/ddTextTableItemFigure.cpp:355
+msgid "Delete the selected column..."
+msgstr "删除所选列..."
+
+#: dd/dditems/figures/ddTextTableItemFigure.cpp:358
+msgid "Rename the selected column..."
+msgstr "重命名所选列..."
+
+#: dd/dditems/figures/ddTextTableItemFigure.cpp:360
+msgid "Activate fk auto-naming..."
+msgstr "启用外键自动命名..."
+
+#: dd/dditems/figures/ddTextTableItemFigure.cpp:362
+msgid "Not NULL constraint"
+msgstr "非空约束"
+
+#: dd/dditems/figures/ddTextTableItemFigure.cpp:373
+msgid "Unique Key"
+msgstr "唯一键"
+
+#: dd/dditems/figures/ddTextTableItemFigure.cpp:378
+msgid "Column datatype"
+msgstr "列数据类型"
+
+#: dd/dditems/figures/ddTextTableItemFigure.cpp:381
+msgid "serial"
+msgstr "serial"
+
+#: dd/dditems/figures/ddTextTableItemFigure.cpp:383
+msgid "boolean"
+msgstr "boolean"
+
+#: dd/dditems/figures/ddTextTableItemFigure.cpp:385
+msgid "integer"
+msgstr "integer"
+
+#: dd/dditems/figures/ddTextTableItemFigure.cpp:387
+msgid "money"
+msgstr "money"
+
+#: dd/dditems/figures/ddTextTableItemFigure.cpp:389
+msgid "varchar(n)"
+msgstr "varchar(n)"
+
+#: dd/dditems/figures/ddTextTableItemFigure.cpp:391
+msgid "Choose another datatype..."
+msgstr "选择其他数据类型..."
+
+#: dd/dditems/figures/ddTextTableItemFigure.cpp:393
+msgid "Primary Key Constraint name..."
+msgstr "主键约束名称..."
+
+#: dd/dditems/figures/ddTextTableItemFigure.cpp:394
+msgid "Unique Key Constraint name..."
+msgstr "唯一键约束名称..."
+
+#: dd/dditems/figures/ddTextTableItemFigure.cpp:396
+msgid "Delete table..."
+msgstr "删除数据表..."
+
+#: dd/dditems/figures/ddRelationshipFigure.cpp:241
+msgid "Select one"
+msgstr "请选择"
+
+#: dd/dditems/figures/ddRelationshipFigure.cpp:243
+msgid "Foreign Key From"
+msgstr "外键来源"
+
+#: dd/dditems/figures/ddRelationshipFigure.cpp:264
+msgid "Mandatory relationship kind"
+msgstr "必填关系类型"
+
+#: dd/dditems/figures/ddRelationshipFigure.cpp:266
+msgid "Identifying relationship"
+msgstr "标识关系"
+
+#: dd/dditems/figures/ddRelationshipFigure.cpp:269
+msgid "1:M"
+msgstr "1:M"
+
+#: dd/dditems/figures/ddRelationshipFigure.cpp:272
+msgid "Foreign Key Constraint Name"
+msgstr "外键约束名称"
+
+#: dd/dditems/figures/ddRelationshipFigure.cpp:275
+msgid "Type Simple"
+msgstr "简单类型"
+
+#: dd/dditems/figures/ddRelationshipFigure.cpp:277
+msgid "Type Full"
+msgstr "完整类型"
+
+#: dd/dditems/figures/ddRelationshipFigure.cpp:279
+msgid "Match Type "
+msgstr "匹配类型 "
+
+#: dd/dditems/figures/ddRelationshipFigure.cpp:281
+msgid "[ Simple ]"
+msgstr "[ 简单 ]"
+
+#: dd/dditems/figures/ddRelationshipFigure.cpp:283
+msgid "[ Full ]"
+msgstr "[ 完整 ]"
+
+#: dd/dditems/figures/ddRelationshipFigure.cpp:286
+msgid "On Delete "
+msgstr "删除时 "
+
+#: dd/dditems/figures/ddRelationshipFigure.cpp:288
+msgid "No Action"
+msgstr "无操作"
+
+#: dd/dditems/figures/ddRelationshipFigure.cpp:291
+msgid "[ No Action ]"
+msgstr "[ 无操作 ]"
+
+#: dd/dditems/figures/ddRelationshipFigure.cpp:292
+msgid "Restrict"
+msgstr "限制"
+
+#: dd/dditems/figures/ddRelationshipFigure.cpp:295
+msgid "[ Restrict ]"
+msgstr "[ 限制 ]"
+
+#: dd/dditems/figures/ddRelationshipFigure.cpp:296
+msgid "Cascade"
+msgstr "级联"
+
+#: dd/dditems/figures/ddRelationshipFigure.cpp:299
+msgid "[ Cascade ]"
+msgstr "[ 级联 ]"
+
+#: dd/dditems/figures/ddRelationshipFigure.cpp:300
+msgid "Set Null"
+msgstr "设为空"
+
+#: dd/dditems/figures/ddRelationshipFigure.cpp:303
+msgid "[ Set Null ]"
+msgstr "[ 设为空 ]"
+
+#: dd/dditems/figures/ddRelationshipFigure.cpp:304
+msgid "Set Default"
+msgstr "设为默认值"
+
+#: dd/dditems/figures/ddRelationshipFigure.cpp:307
+msgid "[ Set Default ]"
+msgstr "[ 设为默认值 ]"
+
+#: dd/dditems/figures/ddRelationshipFigure.cpp:310
+msgid "On Update "
+msgstr "更新时 "
+
+#: dd/dditems/figures/ddRelationshipFigure.cpp:335
+msgid "Delete Relationship..."
+msgstr "删除关系..."
+
+#: dd/dditems/figures/ddRelationshipFigure.cpp:452
+msgid "Are you sure you wish to delete relationship between tables %s and %s?"
+msgstr "您确定要删除数据表 %s 和 %s 之间的关系吗？"
+
+#: include/frm/frmReport.h:156
+msgid "&Compare other objects"
+msgstr "比较其他对象(&C)"
+
+#: include/frm/frmReport.h:156
+msgid "Compare other host database select objects."
+msgstr "比较其他主机数据库的选定对象。"
+
+#: ui/dlgFindReplace.xrc:65
+msgid "All find tabs"
+msgstr "所有查找标签页"
+
+#: ui/dlgProJob.xrc:105
+msgid "Run as"
+msgstr "运行身份"
+
+#: ui/dlgProJob.xrc:195
+msgid "Commands"
+msgstr "命令"
+
+#: ui/dlgProJob.xrc:234
+msgid "use same transaction"
+msgstr "使用同一事务"
+
+#: ui/dlgServer.xrc:190
+msgid "Select SSL Root Certificate File"
+msgstr "选择 SSL 根证书文件"
+
+#: ui/dlgServer.xrc:206
+msgid "Select SSL Certificate Revocation List File"
+msgstr "选择 SSL 证书吊销列表文件"
+
+#: ui/dlgServer.xrc:222
+msgid "Select SSL certificate file"
+msgstr "选择 SSL 证书文件"
+
+#: ui/dlgServer.xrc:238
+msgid "Select SSL key file"
+msgstr "选择 SSL 密钥文件"
+
+#: ui/dlgServer.xrc:361
+msgid "Select identity file"
+msgstr "选择身份文件"
+
+#: ui/dlgServer.xrc:377
+msgid "Select public key file"
+msgstr "选择公钥文件"
+
+#: ui/dlgServer.xrc:466
+msgid "Connect str"
+msgstr "连接字符串"
+
+#: ui/dlgTransformText.xrc:5
+msgid "Transform text"
+msgstr "转换文本"
+
+#: ui/dlgTransformText.xrc:17
+msgid "Source text options"
+msgstr "源文本选项"
+
+#: ui/dlgTransformText.xrc:33
+msgid "PCRE regexp"
+msgstr "PCRE 正则表达式"
+
+#: ui/dlgTransformText.xrc:50
+msgid "Replace expression"
+msgstr "替换表达式"
+
+#: ui/dlgTransformText.xrc:67
+msgid "Rows limit"
+msgstr "行数限制"
+
+#: ui/dlgTransformText.xrc:87
+msgid "Chars limit"
+msgstr "字符数限制"
+
+#: ui/dlgTransformText.xrc:107
+msgid "Refresh highlight"
+msgstr "刷新高亮"
+
+#: ui/dlgTransformText.xrc:124
+msgid "Source text"
+msgstr "源文本"
+
+#: ui/dlgTransformText.xrc:160
+msgid "Transform text options"
+msgstr "转换文本选项"
+
+#: ui/dlgTransformText.xrc:176
+msgid "Append before row"
+msgstr "在行之前追加"
+
+#: ui/dlgTransformText.xrc:196
+msgid "After row"
+msgstr "行之后"
+
+#: ui/dlgTransformText.xrc:230
+msgid "Field separator"
+msgstr "字段分隔符"
+
+#: ui/dlgTransformText.xrc:267
+msgid "Load options"
+msgstr "加载选项"
+
+#: ui/dlgTransformText.xrc:276
+msgid "First"
+msgstr "首个"
+
+#: ui/dlgTransformText.xrc:335
+msgid "Rows loading"
+msgstr "行加载"
+
+#: ui/frmAwr.xrc:6
+msgid "AWR report"
+msgstr "AWR 报告"
+
+#: ui/frmAwr.xrc:36
+msgid "Type report"
+msgstr "报告类型"
+
+#: ui/frmAwr.xrc:39
+msgid "Report"
+msgstr "报告"
+
+#: ui/frmAwr.xrc:40
+msgid "Diff report"
+msgstr "差异报告"
+
+#: ui/frmAwr.xrc:104
+msgid "Start Id1"
+msgstr "起始 Id1"
+
+#: ui/frmAwr.xrc:123
+msgid "End Id1"
+msgstr "结束 Id1"
+
+#: ui/frmAwr.xrc:166
+msgid "Start Id2"
+msgstr "起始 Id2"
+
+#: ui/frmAwr.xrc:185
+msgid "End Id2"
+msgstr "结束 Id2"
+
+#: ui/frmExport.xrc:110
+msgid "format COPY"
+msgstr "COPY 格式"
+
+#: ui/frmExport.xrc:116
+msgid "Xls fmt copy"
+msgstr "Xls 格式复制"
+
+#: ui/frmImport.xrc:33
+msgid "Select the file to import"
+msgstr "选择要导入的文件"
+
+#: ui/frmOptions.xrc:131
+msgid "Select theme"
+msgstr "选择主题"
+
+#: ui/frmOptions.xrc:154
+msgid "Load"
+msgstr "加载"
+
+#: ui/frmOptions.xrc:222
+msgid "Options extended JSON:"
+msgstr "扩展 JSON 选项："
+
+#: ui/frmOptions.xrc:261
+msgid "Beautiful big numbers on the statistics page"
+msgstr "在统计页面上美化大数字"
+
+#: ui/frmOptions.xrc:272
+msgid "Show the dependencies of functions on tables,views,functions"
+msgstr "显示函数对数据表、视图、函数的依赖关系"
+
+#: ui/frmOptions.xrc:457
+msgid "Show DB name in tree"
+msgstr "在树中显示数据库名称"
+
+#: ui/frmOptions.xrc:465
+msgid "Quick jump to the root node"
+msgstr "快速跳转到根节点"
+
+#: ui/frmOptions.xrc:635
+msgid "Select utility to format text"
+msgstr "选择用于格式化文本的工具"
+
+#: ui/frmOptions.xrc:645
+msgid "External alignment utlity"
+msgstr "外部对齐工具"
+
+#: ui/frmOptions.xrc:662
+msgid "Enable ASUTP style"
+msgstr "启用 ASUTP 样式"
+
+#: ui/frmOptions.xrc:677
+msgid "Hide query history"
+msgstr "隐藏查询历史"
+
+#: ui/frmOptions.xrc:692
+msgid "Auto save query text"
+msgstr "自动保存查询文本"
+
+#: ui/frmOptions.xrc:707
+msgid "Use word hints"
+msgstr "使用单词提示"
+
+#: ui/frmOptions.xrc:722
+msgid "Replace variables in a query"
+msgstr "替换查询中的变量"
+
+#: ui/frmOptions.xrc:821
+msgid "Use system background color caret line"
+msgstr "使用系统背景色作为光标行颜色"
+
+#: ui/frmOptions.xrc:876
+msgid "Width for keyboard layout"
+msgstr "键盘布局宽度"
+
+#: ui/frmOptions.xrc:1227
+msgid "Select file to store favourites queries"
+msgstr "选择用于存储收藏查询的文件"
+
+#: ui/frmOptions.xrc:1255
+msgid "Select file to store macros"
+msgstr "选择用于存储宏的文件"
+
+#: ui/frmOptions.xrc:1283
+msgid "Select file to store queries history"
+msgstr "选择用于存储查询历史的文件"
+
+#: ui/frmOptions.xrc:1388
+msgid "Blocked by Process Colour"
+msgstr "被进程阻塞的颜色"
+
+#: ui/frmOptions.xrc:1402
+msgid "Idle&in&transaction&session&timeout Process Colour"
+msgstr "空闲&事务&会话&超时&进程颜色"
+
+#: frm/mathplot.cpp:1424
+msgid "Center"
+msgstr "居中"
+
+#: frm/mathplot.cpp:1425
+msgid "Center plot view to this position"
+msgstr "将图表视图居中到此位置"
+
+#: frm/mathplot.cpp:1426
+msgid "Fit"
+msgstr "适应"
+
+#: frm/mathplot.cpp:1426
+msgid "Set plot view to show all items"
+msgstr "将图表视图设置为显示所有项目"
+
+#: frm/mathplot.cpp:1427
+msgid "Zoom in"
+msgstr "放大"
+
+#: frm/mathplot.cpp:1427
+msgid "Zoom in plot view."
+msgstr "放大图表视图。"
+
+#: frm/mathplot.cpp:1428
+msgid "Zoom out"
+msgstr "缩小"
+
+#: frm/mathplot.cpp:1428
+msgid "Zoom out plot view."
+msgstr "缩小图表视图。"
+
+#: frm/mathplot.cpp:1431
+msgid "Show mouse commands..."
+msgstr "显示鼠标命令..."
+
+#: frm/mathplot.cpp:1432
+msgid "Show help about the mouse commands."
+msgstr "显示有关鼠标命令的帮助。"
+
+#: frm/mathplot.cpp:1935
+msgid "wxMathPlot help"
+msgstr "wxMathPlot 帮助"
+
+#: dd/dditems/figures/xml/ddXmlStorage.cpp:91
+msgid "Error saving model: not source model have been set"
+msgstr "保存模型时出错：未设置源模型"
+
+#: dd/dditems/figures/xml/ddXmlStorage.cpp:123
+msgid "Fatal Error at libxml for figure persistency"
+msgstr "libxml 在图形持久化时发生致命错误"
+
+#: dd/dditems/figures/xml/ddXmlStorage.cpp:624
+msgid "Model is not following embedded DTD definition, check it.\n"
+msgstr "模型不符合内嵌的 DTD 定义，请检查。\n"
+
+#: dd/dditems/figures/xml/ddXmlStorage.cpp:656
+msgid "Failed to load document from disk"
+msgstr "从磁盘加载文档失败"
+
+#: dd/dditems/figures/xml/ddXmlStorage.cpp:754
+msgid "Invalid version of XML file for pgAdmin database designer found"
+msgstr "发现 pgAdmin 数据库设计器的 XML 文件版本无效"
+
+#: dd/dditems/figures/xml/ddXmlStorage.cpp:754
+msgid "Invalid XML"
+msgstr "无效的 XML"
+
+#: dd/dditems/figures/xml/ddXmlStorage.cpp:1054
+msgid "Table initial metadata info not found"
+msgstr "未找到数据表初始元数据信息"
+
+#: frm/frmOptions.cpp:1
+msgid "Appearance"
+msgstr "外观"
+
+#: frm/frmOptions.cpp:2
+msgid "Automatic"
+msgstr "自动"
+
+#: frm/frmOptions.cpp:3
+msgid "Light"
+msgstr "浅色"
+
+#: frm/frmOptions.cpp:4
+msgid "Dark"
+msgstr "深色"
+
+#: frm/frmOptions.cpp:5
+msgid "Restart pgAdmin III to fully apply the appearance change."
+msgstr "请重启 pgAdmin III 以完全应用外观更改。"

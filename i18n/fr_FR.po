@@ -109,7 +109,7 @@ msgstr " \n"
 #: hotdraw/utilities/hdRemoveDeleteDialog.cpp:117
 msgid ""
 "     Choose Remove from Diagram to remove only from current diagram.     "
-msgstr ""
+msgstr "     Choisissez Retirer du diagramme pour retirer uniquement du diagramme courant.     "
 
 #: hotdraw/utilities/hdRemoveDeleteDialog.cpp:118
 msgid "     Choose Remove from Model to delete permanently.     "
@@ -1862,7 +1862,7 @@ msgstr "Sei sûr de voler supprimer %d figure?"
 msgid ""
 "Are you sure you wish to delete %d tables, removing from model related "
 "relationships?"
-msgstr ""
+msgstr "Êtes-vous sûr de vouloir supprimer %d tables, ce qui retirera du modèle les relations associées ?"
 
 #: hotdraw/main/hdDrawingEditor.cpp:267
 msgid "Are you sure you wish to delete figure ?"
@@ -2532,7 +2532,7 @@ msgstr "Êtes-vous sûr de vouloir supprimer la procédure « %s » ?"
 msgid ""
 "Are you sure you wish to drop publication \"%s\" including all objects that "
 "depend on it?"
-msgstr ""
+msgstr "Êtes-vous sûr de vouloir supprimer la publication \"%s\" ainsi que tous les objets qui en dépendent ?"
 
 #: schema/pgPublication.cpp:45
 #, c-format
@@ -2629,7 +2629,7 @@ msgstr "Êtes-vous sûr de vouloir supprimer l'étape « %s » ?"
 msgid ""
 "Are you sure you wish to drop subscription \"%s\" including all objects that "
 "depend on it?"
-msgstr ""
+msgstr "Êtes-vous sûr de vouloir supprimer l'abonnement \"%s\" ainsi que tous les objets qui en dépendent ?"
 
 #: schema/pgSubscription.cpp:45
 #, c-format
@@ -7363,7 +7363,7 @@ msgstr "Liste des fonctions"
 msgid ""
 "Functions pg_read_binary_file(text,bigint,bigint,boolean), "
 "pg_stat_file(text,boolean),pg_ls_logdir()  permission denied."
-msgstr ""
+msgstr "Les fonctions pg_read_binary_file(text,bigint,bigint,boolean), pg_stat_file(text,boolean),pg_ls_logdir() : permission refusée."
 
 #: debugger/debugger.cpp:58 debugger/debugger.cpp:163
 msgid "Functions with a colon in the name cannot be debugged."
@@ -12664,13 +12664,13 @@ msgstr "Type renvoyé"
 msgid ""
 "Returning to previous dialog will delete imported tables before adding it to "
 "the model?"
-msgstr ""
+msgstr "Revenir à la boîte de dialogue précédente supprimera les tables importées avant leur ajout au modèle ?"
 
 #: dd/ddmodel/ddDBReverseEnginering.cpp:2029
 msgid ""
 "Returning to previous dialog will remove all selected tables, do you like to "
 "continue?"
-msgstr ""
+msgstr "Revenir à la boîte de dialogue précédente supprimera toutes les tables sélectionnées, voulez-vous continuer ?"
 
 #: schema/pgFunction.cpp:393
 msgid "Returns a set?"
@@ -16258,7 +16258,7 @@ msgstr "Valeur modifiée"
 msgid ""
 "Value parameter pg_wait_sampling.history_size = %ld greet 1000000  "
 "monitoring wait events disabled.\n"
-msgstr ""
+msgstr "La valeur du paramètre pg_wait_sampling.history_size = %ld est supérieure à 1000000, la surveillance des événements d'attente est désactivée.\n"
 
 #: dd/dditems/figures/ddTextTableItemFigure.cpp:243
 #: dd/dditems/figures/ddTextTableItemFigure.cpp:245
@@ -23594,3 +23594,283 @@ msgstr "oui"
 # standard
 #~ msgid "|"
 #~ msgstr "|"
+
+#: pgAdmin3.cpp:404
+msgid "Enable Dark mode"
+msgstr "Activer le mode sombre"
+
+#: frm/frmQuery.cpp:4689
+msgid "Please enter name string with prefix dbname or description server\n"
+msgstr "Veuillez saisir une chaîne de nom avec le préfixe du nom de la base ou la description du serveur\n"
+
+#: frm/frmQuery.cpp:4691
+msgid "Name autosave tab window."
+msgstr "Nom de la fenêtre d'onglet d'enregistrement automatique."
+
+#: frm/frmOptions.cpp:615
+msgid "Color theme save to file %s"
+msgstr "Thème de couleurs enregistré dans le fichier %s"
+
+#: frm/frmOptions.cpp:637
+msgid "Color theme load from file %s"
+msgstr "Thème de couleurs chargé depuis le fichier %s"
+
+#: frm/frmOptions.cpp:638
+msgid "Load theme"
+msgstr "Charger un thème"
+
+#: schema/pgServer.cpp:1253
+msgid "Key words"
+msgstr "Mots-clés"
+
+#: ui/dlgFindReplace.xrc:65
+msgid "All find tabs"
+msgstr "Tous les onglets de recherche"
+
+#: ui/dlgProJob.xrc:105
+msgid "Run as"
+msgstr "Exécuter en tant que"
+
+#: ui/dlgProJob.xrc:195
+msgid "Commands"
+msgstr "Commandes"
+
+#: ui/dlgProJob.xrc:234
+msgid "use same transaction"
+msgstr "utiliser la même transaction"
+
+#: ui/dlgServer.xrc:190
+msgid "Select SSL Root Certificate File"
+msgstr "Sélectionner le fichier de certificat racine SSL"
+
+#: ui/dlgServer.xrc:206
+msgid "Select SSL Certificate Revocation List File"
+msgstr "Sélectionner le fichier de liste de révocation de certificats SSL"
+
+#: ui/dlgServer.xrc:222
+msgid "Select SSL certificate file"
+msgstr "Sélectionner le fichier de certificat SSL"
+
+#: ui/dlgServer.xrc:238
+msgid "Select SSL key file"
+msgstr "Sélectionner le fichier de clé SSL"
+
+#: ui/dlgServer.xrc:361
+msgid "Select identity file"
+msgstr "Sélectionner le fichier d'identité"
+
+#: ui/dlgServer.xrc:377
+msgid "Select public key file"
+msgstr "Sélectionner le fichier de clé publique"
+
+#: ui/dlgServer.xrc:466
+msgid "Connect str"
+msgstr "Chaîne de connexion"
+
+#: ui/dlgTransformText.xrc:5
+msgid "Transform text"
+msgstr "Transformer le texte"
+
+#: ui/dlgTransformText.xrc:17
+msgid "Source text options"
+msgstr "Options du texte source"
+
+#: ui/dlgTransformText.xrc:33
+msgid "PCRE regexp"
+msgstr "Expression régulière PCRE"
+
+#: ui/dlgTransformText.xrc:50
+msgid "Replace expression"
+msgstr "Expression de remplacement"
+
+#: ui/dlgTransformText.xrc:67
+msgid "Rows limit"
+msgstr "Limite de lignes"
+
+#: ui/dlgTransformText.xrc:87
+msgid "Chars limit"
+msgstr "Limite de caractères"
+
+#: ui/dlgTransformText.xrc:107
+msgid "Refresh highlight"
+msgstr "Actualiser la surbrillance"
+
+#: ui/dlgTransformText.xrc:124
+msgid "Source text"
+msgstr "Texte source"
+
+#: ui/dlgTransformText.xrc:160
+msgid "Transform text options"
+msgstr "Options de transformation du texte"
+
+#: ui/dlgTransformText.xrc:176
+msgid "Append before row"
+msgstr "Ajouter avant la ligne"
+
+#: ui/dlgTransformText.xrc:196
+msgid "After row"
+msgstr "Après la ligne"
+
+#: ui/dlgTransformText.xrc:230
+msgid "Field separator"
+msgstr "Séparateur de champs"
+
+#: ui/dlgTransformText.xrc:267
+msgid "Load options"
+msgstr "Options de chargement"
+
+#: ui/dlgTransformText.xrc:276
+msgid "First"
+msgstr "Premier"
+
+#: ui/dlgTransformText.xrc:335
+msgid "Rows loading"
+msgstr "Chargement des lignes"
+
+#: ui/frmAwr.xrc:6
+msgid "AWR report"
+msgstr "Rapport AWR"
+
+#: ui/frmAwr.xrc:36
+msgid "Type report"
+msgstr "Type de rapport"
+
+#: ui/frmAwr.xrc:39
+msgid "Report"
+msgstr "Rapport"
+
+#: ui/frmAwr.xrc:40
+msgid "Diff report"
+msgstr "Rapport de différences"
+
+#: ui/frmAwr.xrc:104
+msgid "Start Id1"
+msgstr "Id1 de début"
+
+#: ui/frmAwr.xrc:123
+msgid "End Id1"
+msgstr "Id1 de fin"
+
+#: ui/frmAwr.xrc:166
+msgid "Start Id2"
+msgstr "Id2 de début"
+
+#: ui/frmAwr.xrc:185
+msgid "End Id2"
+msgstr "Id2 de fin"
+
+#: ui/frmExport.xrc:110
+msgid "format COPY"
+msgstr "format COPY"
+
+#: ui/frmExport.xrc:116
+msgid "Xls fmt copy"
+msgstr "Copie au format Xls"
+
+#: ui/frmImport.xrc:33
+msgid "Select the file to import"
+msgstr "Sélectionner le fichier à importer"
+
+#: ui/frmOptions.xrc:131
+msgid "Select theme"
+msgstr "Sélectionner un thème"
+
+#: ui/frmOptions.xrc:154
+msgid "Load"
+msgstr "Charger"
+
+#: ui/frmOptions.xrc:222
+msgid "Options extended JSON:"
+msgstr "Options JSON étendu :"
+
+#: ui/frmOptions.xrc:261
+msgid "Beautiful big numbers on the statistics page"
+msgstr "Affichage lisible des grands nombres dans la page de statistiques"
+
+#: ui/frmOptions.xrc:272
+msgid "Show the dependencies of functions on tables,views,functions"
+msgstr "Afficher les dépendances des fonctions envers les tables, vues, fonctions"
+
+#: ui/frmOptions.xrc:457
+msgid "Show DB name in tree"
+msgstr "Afficher le nom de la base dans l'arborescence"
+
+#: ui/frmOptions.xrc:465
+msgid "Quick jump to the root node"
+msgstr "Saut rapide vers le nœud racine"
+
+#: ui/frmOptions.xrc:635
+msgid "Select utility to format text"
+msgstr "Sélectionner l'utilitaire de formatage du texte"
+
+#: ui/frmOptions.xrc:645
+msgid "External alignment utlity"
+msgstr "Utilitaire d'alignement externe"
+
+#: ui/frmOptions.xrc:662
+msgid "Enable ASUTP style"
+msgstr "Activer le style ASUTP"
+
+#: ui/frmOptions.xrc:677
+msgid "Hide query history"
+msgstr "Masquer l'historique des requêtes"
+
+#: ui/frmOptions.xrc:692
+msgid "Auto save query text"
+msgstr "Enregistrer automatiquement le texte de la requête"
+
+#: ui/frmOptions.xrc:707
+msgid "Use word hints"
+msgstr "Utiliser les suggestions de mots"
+
+#: ui/frmOptions.xrc:722
+msgid "Replace variables in a query"
+msgstr "Remplacer les variables dans une requête"
+
+#: ui/frmOptions.xrc:821
+msgid "Use system background color caret line"
+msgstr "Utiliser la couleur d'arrière-plan système pour la ligne du curseur"
+
+#: ui/frmOptions.xrc:876
+msgid "Width for keyboard layout"
+msgstr "Largeur pour la disposition du clavier"
+
+#: ui/frmOptions.xrc:1227
+msgid "Select file to store favourites queries"
+msgstr "Sélectionner le fichier de stockage des requêtes favorites"
+
+#: ui/frmOptions.xrc:1255
+msgid "Select file to store macros"
+msgstr "Sélectionner le fichier de stockage des macros"
+
+#: ui/frmOptions.xrc:1283
+msgid "Select file to store queries history"
+msgstr "Sélectionner le fichier de stockage de l'historique des requêtes"
+
+#: ui/frmOptions.xrc:1388
+msgid "Blocked by Process Colour"
+msgstr "Couleur du processus bloqué par"
+
+#: ui/frmOptions.xrc:1402
+msgid "Idle&in&transaction&session&timeout Process Colour"
+msgstr "Couleur du processus Idle&in&transaction&session&timeout"
+
+#: frm/frmOptions.cpp:1
+msgid "Appearance"
+msgstr "Apparence"
+
+#: frm/frmOptions.cpp:2
+msgid "Automatic"
+msgstr "Automatique"
+
+#: frm/frmOptions.cpp:3
+msgid "Light"
+msgstr "Clair"
+
+#: frm/frmOptions.cpp:4
+msgid "Dark"
+msgstr "Sombre"
+
+#: frm/frmOptions.cpp:5
+msgid "Restart pgAdmin III to fully apply the appearance change."
+msgstr "Redémarrez pgAdmin III pour appliquer complètement le changement d'apparence."

@@ -23084,4 +23084,402 @@ msgstr "Tipi"
 #~ msgid "|"
 #~ msgstr "|"
 
+#: pgAdmin3.cpp:389
+msgid "open server log window"
+msgstr "odpri okno dnevnika strežnika"
 
+#: pgAdmin3.cpp:403
+msgid "export servers configuration to file pgadmin3.ini"
+msgstr "izvozi konfiguracijo strežnikov v datoteko pgadmin3.ini"
+
+#: pgAdmin3.cpp:404
+msgid "Enable Dark mode"
+msgstr "Omogoči temni način"
+
+#: pgAdmin3.cpp:1013
+msgid "Log - "
+msgstr "Dnevnik - "
+
+#: pro_scheduler/pgproJob.cpp:36
+msgid "Retrieving details on pro_scheduler job"
+msgstr "Pridobivanje podrobnosti o opravilu pro_scheduler"
+
+#: pro_scheduler/pgproJob.cpp:39
+msgid "Refreshing pro_scheduler job"
+msgstr "Osveževanje opravila pro_scheduler"
+
+#: pro_scheduler/pgproJob.cpp:42
+msgid "pro_scheduler job properties report"
+msgstr "Poročilo o lastnostih opravila pro_scheduler"
+
+#: pro_scheduler/pgproJob.cpp:48
+msgid "pro_scheduler job DDL report"
+msgstr "Poročilo DDL opravila pro_scheduler"
+
+#: pro_scheduler/pgproJob.cpp:51
+msgid "pro_scheduler job dependencies report"
+msgstr "Poročilo o odvisnostih opravila pro_scheduler"
+
+#: pro_scheduler/pgproJob.cpp:54
+msgid "pro_scheduler job dependencies"
+msgstr "Odvisnosti opravila pro_scheduler"
+
+#: pro_scheduler/pgproJob.cpp:57
+msgid "pro_scheduler job dependents report"
+msgstr "Poročilo o odvisnih objektih opravila pro_scheduler"
+
+#: pro_scheduler/pgproJob.cpp:60
+msgid "pro_scheduler job dependents"
+msgstr "Odvisni objekti opravila pro_scheduler"
+
+#: pro_scheduler/pgproJob.cpp:140
+msgid "Started"
+msgstr "Začeto"
+
+#: pro_scheduler/pgproJob.cpp:141
+msgid "Finished"
+msgstr "Končano"
+
+#: pro_scheduler/pgproJob.cpp:143
+msgid "Crontab"
+msgstr "Crontab"
+
+#: pro_scheduler/pgproJob.cpp:146
+msgid "Runas"
+msgstr "Zaženi kot"
+
+#: pro_scheduler/pgproJob.cpp:152
+msgid "Next start job"
+msgstr "Naslednji zagon opravila"
+
+#: pro_scheduler/pgproJob.cpp:185
+msgid "Previous sched time run skip"
+msgstr "Prejšnji čas razporeditve, zagon preskočen"
+
+#: pro_scheduler/pgproJob.cpp:254
+msgid "Not run"
+msgstr "Ni zagnano"
+
+#: pro_scheduler/pgproJob.cpp:356
+msgid "Log_time"
+msgstr "Log_time"
+
+#: pro_scheduler/pgproJob.cpp:357
+msgid "Critical"
+msgstr "Kritično"
+
+#: pro_scheduler/pgproJob.cpp:359
+msgid "Stage"
+msgstr "Faza"
+
+#: pro_scheduler/pgproJob.cpp:505
+msgid "Enabled or disabled job"
+msgstr "Opravilo omogočeno ali onemogočeno"
+
+#: frm/frmQuery.cpp:4689
+msgid "Please enter name string with prefix dbname or description server\n"
+msgstr "Vnesite niz imena s predpono imena baze ali opisa strežnika\n"
+
+#: frm/frmQuery.cpp:4691
+msgid "Name autosave tab window."
+msgstr "Ime samodejno shranjenega okna zavihka."
+
+#: frm/frmOptions.cpp:615
+msgid "Color theme save to file %s"
+msgstr "Barvna tema shranjena v datoteko %s"
+
+#: frm/frmOptions.cpp:637
+msgid "Color theme load from file %s"
+msgstr "Barvna tema naložena iz datoteke %s"
+
+#: frm/frmOptions.cpp:638
+msgid "Load theme"
+msgstr "Naloži temo"
+
+#: schema/pgServer.cpp:1253
+msgid "Key words"
+msgstr "Ključne besede"
+
+#: hotdraw/utilities/hdRemoveDeleteDialog.cpp:117
+msgid "     Choose Remove from Diagram to remove only from current diagram.     "
+msgstr "     Izberite Odstrani iz diagrama, če želite odstraniti samo iz trenutnega diagrama.     "
+
+#: hotdraw/utilities/hdRemoveDeleteDialog.cpp:118
+msgid "     Choose Remove from Model to delete permanently.     "
+msgstr "     Izberite Odstrani iz modela za trajno brisanje.     "
+
+#: hotdraw/main/hdDrawingView.cpp:457
+msgid "Sample Item"
+msgstr "Vzorčni element"
+
+#: hotdraw/main/hdDrawingView.cpp:466
+msgid "Sample menu item"
+msgstr "Vzorčni element menija"
+
+#: hotdraw/main/hdDrawingView.cpp:466
+msgid "Sample"
+msgstr "Vzorec"
+
+#: hotdraw/main/hdDrawingEditor.cpp:267
+msgid "Are you sure you wish to delete figure ?"
+msgstr "Ali res želite izbrisati lik?"
+
+#: hotdraw/main/hdDrawingEditor.cpp:267
+msgid "Delete figures?"
+msgstr "Izbrisati like?"
+
+#: hotdraw/main/hdDrawingEditor.cpp:272
+msgid "Are you sure you wish to delete %d figures?"
+msgstr "Ali res želite izbrisati %d likov?"
+
+#: ui/dlgFindReplace.xrc:65
+msgid "All find tabs"
+msgstr "Vsi zavihki iskanja"
+
+#: ui/dlgProJob.xrc:105
+msgid "Run as"
+msgstr "Zaženi kot"
+
+#: ui/dlgProJob.xrc:195
+msgid "Commands"
+msgstr "Ukazi"
+
+#: ui/dlgProJob.xrc:234
+msgid "use same transaction"
+msgstr "uporabi isto transakcijo"
+
+#: ui/dlgServer.xrc:190
+msgid "Select SSL Root Certificate File"
+msgstr "Izberite korensko potrdilo SSL"
+
+#: ui/dlgServer.xrc:206
+msgid "Select SSL Certificate Revocation List File"
+msgstr "Izberite datoteko s seznamom preklicanih potrdil SSL"
+
+#: ui/dlgServer.xrc:222
+msgid "Select SSL certificate file"
+msgstr "Izberite datoteko potrdila SSL"
+
+#: ui/dlgServer.xrc:238
+msgid "Select SSL key file"
+msgstr "Izberite datoteko ključa SSL"
+
+#: ui/dlgServer.xrc:361
+msgid "Select identity file"
+msgstr "Izberite datoteko identitete"
+
+#: ui/dlgServer.xrc:377
+msgid "Select public key file"
+msgstr "Izberite datoteko javnega ključa"
+
+#: ui/dlgServer.xrc:466
+msgid "Connect str"
+msgstr "Povezovalni niz"
+
+#: ui/dlgTransformText.xrc:5
+msgid "Transform text"
+msgstr "Preoblikuj besedilo"
+
+#: ui/dlgTransformText.xrc:17
+msgid "Source text options"
+msgstr "Možnosti izvornega besedila"
+
+#: ui/dlgTransformText.xrc:33
+msgid "PCRE regexp"
+msgstr "Regularni izraz PCRE"
+
+#: ui/dlgTransformText.xrc:50
+msgid "Replace expression"
+msgstr "Izraz za zamenjavo"
+
+#: ui/dlgTransformText.xrc:67
+msgid "Rows limit"
+msgstr "Omejitev vrstic"
+
+#: ui/dlgTransformText.xrc:87
+msgid "Chars limit"
+msgstr "Omejitev znakov"
+
+#: ui/dlgTransformText.xrc:107
+msgid "Refresh highlight"
+msgstr "Osveži označevanje"
+
+#: ui/dlgTransformText.xrc:124
+msgid "Source text"
+msgstr "Izvorno besedilo"
+
+#: ui/dlgTransformText.xrc:160
+msgid "Transform text options"
+msgstr "Možnosti preoblikovanega besedila"
+
+#: ui/dlgTransformText.xrc:176
+msgid "Append before row"
+msgstr "Dodaj pred vrstico"
+
+#: ui/dlgTransformText.xrc:196
+msgid "After row"
+msgstr "Za vrstico"
+
+#: ui/dlgTransformText.xrc:230
+msgid "Field separator"
+msgstr "Ločilo polj"
+
+#: ui/dlgTransformText.xrc:267
+msgid "Load options"
+msgstr "Možnosti nalaganja"
+
+#: ui/dlgTransformText.xrc:276
+msgid "First"
+msgstr "Prvi"
+
+#: ui/dlgTransformText.xrc:335
+msgid "Rows loading"
+msgstr "Nalaganje vrstic"
+
+#: ui/frmAwr.xrc:6
+msgid "AWR report"
+msgstr "Poročilo AWR"
+
+#: ui/frmAwr.xrc:36
+msgid "Type report"
+msgstr "Vrsta poročila"
+
+#: ui/frmAwr.xrc:39
+msgid "Report"
+msgstr "Poročilo"
+
+#: ui/frmAwr.xrc:40
+msgid "Diff report"
+msgstr "Primerjalno poročilo"
+
+#: ui/frmAwr.xrc:104
+msgid "Start Id1"
+msgstr "Začetni Id1"
+
+#: ui/frmAwr.xrc:123
+msgid "End Id1"
+msgstr "Končni Id1"
+
+#: ui/frmAwr.xrc:166
+msgid "Start Id2"
+msgstr "Začetni Id2"
+
+#: ui/frmAwr.xrc:185
+msgid "End Id2"
+msgstr "Končni Id2"
+
+#: ui/frmExport.xrc:110
+msgid "format COPY"
+msgstr "oblika COPY"
+
+#: ui/frmExport.xrc:116
+msgid "Xls fmt copy"
+msgstr "Kopiranje v obliki Xls"
+
+#: ui/frmImport.xrc:33
+msgid "Select the file to import"
+msgstr "Izberite datoteko za uvoz"
+
+#: ui/frmOptions.xrc:131
+msgid "Select theme"
+msgstr "Izberite temo"
+
+#: ui/frmOptions.xrc:154
+msgid "Load"
+msgstr "Naloži"
+
+#: ui/frmOptions.xrc:222
+msgid "Options extended JSON:"
+msgstr "Razširjene možnosti JSON:"
+
+#: ui/frmOptions.xrc:261
+msgid "Beautiful big numbers on the statistics page"
+msgstr "Lepši prikaz velikih števil na strani statistike"
+
+#: ui/frmOptions.xrc:272
+msgid "Show the dependencies of functions on tables,views,functions"
+msgstr "Prikaži odvisnosti funkcij od tabel, pogledov in funkcij"
+
+#: ui/frmOptions.xrc:457
+msgid "Show DB name in tree"
+msgstr "Prikaži ime baze v drevesu"
+
+#: ui/frmOptions.xrc:465
+msgid "Quick jump to the root node"
+msgstr "Hiter skok na korensko vozlišče"
+
+#: ui/frmOptions.xrc:635
+msgid "Select utility to format text"
+msgstr "Izberite orodje za oblikovanje besedila"
+
+#: ui/frmOptions.xrc:645
+msgid "External alignment utlity"
+msgstr "Zunanje orodje za poravnavo"
+
+#: ui/frmOptions.xrc:662
+msgid "Enable ASUTP style"
+msgstr "Omogoči slog ASUTP"
+
+#: ui/frmOptions.xrc:677
+msgid "Hide query history"
+msgstr "Skrij zgodovino stavkov"
+
+#: ui/frmOptions.xrc:692
+msgid "Auto save query text"
+msgstr "Samodejno shrani besedilo stavka"
+
+#: ui/frmOptions.xrc:707
+msgid "Use word hints"
+msgstr "Uporabi namige besed"
+
+#: ui/frmOptions.xrc:722
+msgid "Replace variables in a query"
+msgstr "Zamenjaj spremenljivke v stavku"
+
+#: ui/frmOptions.xrc:821
+msgid "Use system background color caret line"
+msgstr "Uporabi sistemsko barvo ozadja za vrstico s kazalko"
+
+#: ui/frmOptions.xrc:876
+msgid "Width for keyboard layout"
+msgstr "Širina za razporeditev tipkovnice"
+
+#: ui/frmOptions.xrc:1227
+msgid "Select file to store favourites queries"
+msgstr "Izberite datoteko za shranjevanje priljubljenih stavkov"
+
+#: ui/frmOptions.xrc:1255
+msgid "Select file to store macros"
+msgstr "Izberite datoteko za shranjevanje makrov"
+
+#: ui/frmOptions.xrc:1283
+msgid "Select file to store queries history"
+msgstr "Izberite datoteko za shranjevanje zgodovine stavkov"
+
+#: ui/frmOptions.xrc:1388
+msgid "Blocked by Process Colour"
+msgstr "Barva procesa, ki ga blokira drug proces"
+
+#: ui/frmOptions.xrc:1402
+msgid "Idle&in&transaction&session&timeout Process Colour"
+msgstr "Barva procesa Idle&in&transaction&session&timeout"
+
+#: frm/frmOptions.cpp:1
+msgid "Appearance"
+msgstr "Videz"
+
+#: frm/frmOptions.cpp:2
+msgid "Automatic"
+msgstr "Samodejno"
+
+#: frm/frmOptions.cpp:3
+msgid "Light"
+msgstr "Svetla"
+
+#: frm/frmOptions.cpp:4
+msgid "Dark"
+msgstr "Temna"
+
+#: frm/frmOptions.cpp:5
+msgid "Restart pgAdmin III to fully apply the appearance change."
+msgstr "Za popolno uveljavitev spremembe videza znova zaženite pgAdmin III."

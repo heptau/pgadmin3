@@ -26990,3 +26990,1759 @@ msgstr "|"
 #, fuzzy
 #~ msgid "Running...\n"
 #~ msgstr "Uruchomiony...\n"
+
+#: pgAdmin3.cpp:389
+msgid "open server log window"
+msgstr "otwórz okno dziennika serwera"
+
+#: pgAdmin3.cpp:403
+msgid "export servers configuration to file pgadmin3.ini"
+msgstr "eksportuj konfigurację serwerów do pliku pgadmin3.ini"
+
+#: pgAdmin3.cpp:404
+msgid "Enable Dark mode"
+msgstr "Włącz tryb ciemny"
+
+#: pgAdmin3.cpp:1013
+msgid "Log - "
+msgstr "Dziennik - "
+
+#: ctl/ctlTreeJSON.cpp:73
+msgid "Please enter find string\n"
+msgstr "Wprowadź szukany tekst\n"
+
+#: ctl/ctlSQLGrid.cpp:993
+msgid "The line size is [ %s ] characters, do you want to continue?"
+msgstr "Długość wiersza wynosi [ %s ] znaków, czy chcesz kontynuować?"
+
+#: ctl/ctlSQLBox.cpp:1426
+msgid "All line (use all EOL)"
+msgstr "Wszystkie wiersze (użyj wszystkich EOL)"
+
+#: ctl/ctlSQLBox.cpp:1427
+msgid "First line pattern (ignore all but the first EOL)"
+msgstr "Wzorzec pierwszego wiersza (ignoruj wszystkie EOL oprócz pierwszego)"
+
+#: ctl/ctlSQLBox.cpp:1428
+msgid "Try looking for patterns above"
+msgstr "Spróbuj wyszukać wzorce powyżej"
+
+#: ctl/ctlSQLBox.cpp:1429
+msgid "Compact view"
+msgstr "Widok kompaktowy"
+
+#: ctl/ctlSQLBox.cpp:1430
+msgid "Remove multi spaces"
+msgstr "Usuń wielokrotne spacje"
+
+#: ctl/ctlSQLBox.cpp:1432
+msgid "A multi-choice convenience dialog"
+msgstr "Wygodne okno dialogowe wielokrotnego wyboru"
+
+#: ctl/ctlSQLBox.cpp:1433
+msgid "Please select several align options"
+msgstr "Wybierz kilka opcji wyrównania"
+
+#: ctl/ctlSQLBox.cpp:1459
+msgid "Aligning complete."
+msgstr "Wyrównywanie zakończone."
+
+#: ctl/ctlSQLBox.cpp:1476
+msgid "Formatting Ok"
+msgstr "Formatowanie zakończone"
+
+#: ctl/ctlSQLBox.cpp:1500
+msgid "Couldn't run aligning command: "
+msgstr "Nie można uruchomić polecenia wyrównywania: "
+
+#: ctl/ctlSQLBox.cpp:1522
+msgid "Aligning command did not respond in %d ms"
+msgstr "Polecenie wyrównywania nie odpowiedziało w ciągu %d ms"
+
+#: ctl/ctlSQLBox.cpp:1534
+msgid "Aligning command error: Output is empty."
+msgstr "Błąd polecenia wyrównywania: dane wyjściowe są puste."
+
+#: ctl/ctlListView.cpp:63
+msgid "CFS fragmentation"
+msgstr "Fragmentacja CFS"
+
+#: ctl/ctlListView.cpp:70
+msgid "CFS %"
+msgstr "CFS %"
+
+#: ctl/ctlNavigatePanel.cpp:46
+msgid "Search for a simple string."
+msgstr "Wyszukaj prosty ciąg znaków."
+
+#: ctl/ctlNavigatePanel.cpp:50
+msgid "Go to the next marker."
+msgstr "Przejdź do następnego znacznika."
+
+#: ctl/ctlNavigatePanel.cpp:56
+msgid "Go to the next marker of the same type."
+msgstr "Przejdź do następnego znacznika tego samego typu."
+
+#: ctl/ctlNavigatePanel.cpp:61
+msgid "The next occurrence of the string."
+msgstr "Następne wystąpienie ciągu."
+
+#: ctl/ctlNavigatePanel.cpp:66
+msgid "Previous occurrence of the string."
+msgstr "Poprzednie wystąpienie ciągu."
+
+#: ctl/ctlNavigatePanel.cpp:71
+msgid "Find all strings content current row Pid."
+msgstr "Znajdź wszystkie ciągi zawierające Pid bieżącego wiersza."
+
+#: ctl/ctlNavigatePanel.cpp:76
+msgid "Find all strings content current row State."
+msgstr "Znajdź wszystkie ciągi zawierające State bieżącego wiersza."
+
+#: ctl/ctlNavigatePanel.cpp:81
+msgid "Enable/disable auto hint."
+msgstr "Włącz/wyłącz automatyczną podpowiedź."
+
+#: ctl/ctlNavigatePanel.cpp:309
+msgid "Incorrect hotkey \"%s\" for command \"%s\""
+msgstr "Nieprawidłowy skrót \"%s\" dla polecenia \"%s\""
+
+#: ctl/ctlSQLResult.cpp:390
+msgid "Incorrect flag at the '%s' column."
+msgstr "Nieprawidłowa flaga w kolumnie '%s'."
+
+#: ctl/ctlSQLResult.cpp:412
+msgid "The column name empty. '%s' ."
+msgstr "Nazwa kolumny jest pusta. '%s' ."
+
+#: ctl/ctlSQLResult.cpp:418
+msgid "The column name '%s' was not found in the query results."
+msgstr "Nie znaleziono nazwy kolumny '%s' w wynikach zapytania."
+
+#: ctl/ctlSQLResult.cpp:442
+msgid "The column name  '%s' is not closed."
+msgstr "Nazwa kolumny  '%s' nie jest zamknięta."
+
+#: dlg/dlgForeignTable.cpp:169
+msgid "Type %s not found in cbDatatype(%d)\n"
+msgstr "Nie znaleziono typu %s w cbDatatype(%d)\n"
+
+#: pro_scheduler/pgproJob.cpp:36
+msgid "Retrieving details on pro_scheduler job"
+msgstr "Pobieranie szczegółów zadania pro_scheduler"
+
+#: pro_scheduler/pgproJob.cpp:39
+msgid "Refreshing pro_scheduler job"
+msgstr "Odświeżanie zadania pro_scheduler"
+
+#: pro_scheduler/pgproJob.cpp:42
+msgid "pro_scheduler job properties report"
+msgstr "Raport właściwości zadania pro_scheduler"
+
+#: pro_scheduler/pgproJob.cpp:48
+msgid "pro_scheduler job DDL report"
+msgstr "Raport DDL zadania pro_scheduler"
+
+#: pro_scheduler/pgproJob.cpp:51
+msgid "pro_scheduler job dependencies report"
+msgstr "Raport zależności zadania pro_scheduler"
+
+#: pro_scheduler/pgproJob.cpp:54
+msgid "pro_scheduler job dependencies"
+msgstr "Zależności zadania pro_scheduler"
+
+#: pro_scheduler/pgproJob.cpp:57
+msgid "pro_scheduler job dependents report"
+msgstr "Raport obiektów zależnych od zadania pro_scheduler"
+
+#: pro_scheduler/pgproJob.cpp:60
+msgid "pro_scheduler job dependents"
+msgstr "Obiekty zależne od zadania pro_scheduler"
+
+#: pro_scheduler/pgproJob.cpp:140
+msgid "Started"
+msgstr "Rozpoczęto"
+
+#: pro_scheduler/pgproJob.cpp:141
+msgid "Finished"
+msgstr "Zakończono"
+
+#: pro_scheduler/pgproJob.cpp:143
+msgid "Crontab"
+msgstr "Crontab"
+
+#: pro_scheduler/pgproJob.cpp:146
+msgid "Runas"
+msgstr "Uruchom jako"
+
+#: pro_scheduler/pgproJob.cpp:152
+msgid "Next start job"
+msgstr "Następne uruchomienie zadania"
+
+#: pro_scheduler/pgproJob.cpp:185
+msgid "Previous sched time run skip"
+msgstr "Poprzednie zaplanowane uruchomienie pominięte"
+
+#: pro_scheduler/pgproJob.cpp:254
+msgid "Not run"
+msgstr "Nie uruchomiono"
+
+#: pro_scheduler/pgproJob.cpp:356
+msgid "Log_time"
+msgstr "Log_time"
+
+#: pro_scheduler/pgproJob.cpp:357
+msgid "Critical"
+msgstr "Krytyczny"
+
+#: pro_scheduler/pgproJob.cpp:359
+msgid "Stage"
+msgstr "Etap"
+
+#: pro_scheduler/pgproJob.cpp:505
+msgid "Enabled or disabled job"
+msgstr "Zadanie włączone lub wyłączone"
+
+#: utils/misc.cpp:201
+msgid "Bi"
+msgstr "mld"
+
+#: utils/misc.cpp:202
+msgid "Mi"
+msgstr "mln"
+
+#: utils/misc.cpp:203
+msgid "ths"
+msgstr "tys."
+
+#: utils/FunctionPGHelper.cpp:238
+msgid "'The database is closed in the object browser.'"
+msgstr "'Baza danych jest zamknięta w przeglądarce obiektów.'"
+
+#: utils/dlgTransformText.cpp:76
+msgid "Transformation text"
+msgstr "Transformacja tekstu"
+
+#: utils/macros.cpp:272
+msgid "Failed to load AutoReplace file!"
+msgstr "Nie udało się wczytać pliku AutoReplace!"
+
+#: utils/macros.cpp:279
+msgid "Failed to read AutoReplace file!"
+msgstr "Nie udało się odczytać pliku AutoReplace!"
+
+#: utils/macros.cpp:298
+msgid "Failed to open AutoReplace file!"
+msgstr "Nie udało się otworzyć pliku AutoReplace!"
+
+#: utils/macros.cpp:306
+msgid "Failed to write to AutoReplace file!"
+msgstr "Nie udało się zapisać pliku AutoReplace!"
+
+#: utils/sysSettings.cpp:95
+msgid "pgpro_scheduler"
+msgstr "pgpro_scheduler"
+
+#: utils/sysSettings.cpp:139
+msgid "Publications"
+msgstr "Publikacje"
+
+#: utils/sshTunnel.cpp:618
+msgid " [%s]"
+msgstr " [%s]"
+
+#: frm/frmEditGrid.cpp:3383
+msgid "View F&iltered Rows...\tCtrl-F"
+msgstr "Wyświetl &przefiltrowane wiersze...\tCtrl-F"
+
+#: frm/frmEditGrid.cpp:3384
+msgid "View Filtered Rows\tCtrl-F"
+msgstr "Wyświetl przefiltrowane wiersze\tCtrl-F"
+
+#: frm/frmQuery.cpp:384
+msgid "New SQL &tab\tCtrl-T"
+msgstr "Nowa &karta SQL\tCtrl-T"
+
+#: frm/frmQuery.cpp:384
+msgid "Open a new query tab"
+msgstr "Otwórz nową kartę zapytania"
+
+#: frm/frmQuery.cpp:387
+msgid "&Export...\tAlt+E"
+msgstr "&Eksportuj...\tAlt+E"
+
+#: frm/frmQuery.cpp:422
+msgid "Double the single quote\tCtrl-'"
+msgstr "Podwój apostrof\tCtrl-'"
+
+#: frm/frmQuery.cpp:422
+msgid "Double the single quote"
+msgstr "Podwój apostrof"
+
+#: frm/frmQuery.cpp:423
+msgid "Undouble the single quote\tCtrl-Shift-'"
+msgstr "Cofnij podwojenie apostrofu\tCtrl-Shift-'"
+
+#: frm/frmQuery.cpp:423
+msgid "Undouble the single quote"
+msgstr "Cofnij podwojenie apostrofu"
+
+#: frm/frmQuery.cpp:426
+msgid "External Align...\tCtrl-Shift-A"
+msgstr "Zewnętrzne wyrównywanie...\tCtrl-Shift-A"
+
+#: frm/frmQuery.cpp:426
+msgid "Call external align command"
+msgstr "Wywołaj zewnętrzne polecenie wyrównywania"
+
+#: frm/frmQuery.cpp:429
+msgid "Manage autoreplace..."
+msgstr "Zarządzaj autoreplace..."
+
+#: frm/frmQuery.cpp:429
+msgid "Edit and delete autoreplace strings"
+msgstr "Edytuj i usuwaj ciągi autoreplace"
+
+#: frm/frmQuery.cpp:430
+msgid "Open object\tF4"
+msgstr "Otwórz obiekt\tF4"
+
+#: frm/frmQuery.cpp:430
+msgid "Open object in brouser tree"
+msgstr "Otwórz obiekt w drzewie przeglądarki"
+
+#: frm/frmQuery.cpp:431
+msgid "Text transform...\tCtrl+M"
+msgstr "Transformacja tekstu...\tCtrl+M"
+
+#: frm/frmQuery.cpp:431
+msgid "Open dialog transform"
+msgstr "Otwórz okno transformacji"
+
+#: frm/frmQuery.cpp:438
+msgid "&Execute\tF8"
+msgstr "&Wykonaj\tF8"
+
+#: frm/frmQuery.cpp:439
+msgid "&Execute new output\tShift-F8"
+msgstr "&Wykonaj w nowym wyniku\tShift-F8"
+
+#: frm/frmQuery.cpp:439
+msgid "Execute query in new output"
+msgstr "Wykonaj zapytanie w nowym wyniku"
+
+#: frm/frmQuery.cpp:441
+msgid "Execute to file\tF5"
+msgstr "Wykonaj do pliku\tF5"
+
+#: frm/frmQuery.cpp:456
+msgid "&Auto-Select"
+msgstr "&Automatyczne zaznaczanie"
+
+#: frm/frmQuery.cpp:456
+msgid "Auto select query"
+msgstr "Automatyczne zaznaczanie zapytania"
+
+#: frm/frmQuery.cpp:462
+msgid "Commit\tF10"
+msgstr "Zatwierdź\tF10"
+
+#: frm/frmQuery.cpp:463
+msgid "Rollback\tShift-F10"
+msgstr "Wycofaj\tShift-F10"
+
+#: frm/frmQuery.cpp:617
+msgid "New SQL tab"
+msgstr "Nowa karta SQL"
+
+#: frm/frmQuery.cpp:624
+msgid "Compare the selected text with the clipboard"
+msgstr "Porównaj zaznaczony tekst ze schowkiem"
+
+#: frm/frmQuery.cpp:646
+msgid "Mode transaction"
+msgstr "Tryb transakcji"
+
+#: frm/frmQuery.cpp:2245
+msgid "Copy Insert format"
+msgstr "Kopiuj w formacie Insert"
+
+#: frm/frmQuery.cpp:2245
+msgid "Copy Insert format."
+msgstr "Kopiuj w formacie Insert."
+
+#: frm/frmQuery.cpp:2246
+msgid "List columns header"
+msgstr "Wyświetl nagłówek listy kolumn"
+
+#: frm/frmQuery.cpp:2246
+msgid "Copy list columns header"
+msgstr "Kopiuj nagłówek listy kolumn"
+
+#: frm/frmQuery.cpp:2247
+msgid "IN list format copy"
+msgstr "Kopiuj w formacie listy IN"
+
+#: frm/frmQuery.cpp:2247
+msgid "Copy In list format."
+msgstr "Kopiuj w formacie listy In."
+
+#: frm/frmQuery.cpp:2248
+msgid "WHERE list format copy"
+msgstr "Kopiuj w formacie listy WHERE"
+
+#: frm/frmQuery.cpp:2248
+msgid "Copy where list format."
+msgstr "Kopiuj w formacie listy where."
+
+#: frm/frmQuery.cpp:2249
+msgid "Copy table html format"
+msgstr "Kopiuj tabelę w formacie HTML"
+
+#: frm/frmQuery.cpp:2249
+msgid "Copy table html format."
+msgstr "Kopiuj tabelę w formacie HTML."
+
+#: frm/frmQuery.cpp:2269
+msgid "Draw plot LY(bar) or LXY or XYYY..."
+msgstr "Rysuj wykres LY(słupkowy) lub LXY lub XYYY..."
+
+#: frm/frmQuery.cpp:2269
+msgid "Draw plot LY(bar) LXY or XYYY..."
+msgstr "Rysuj wykres LY(słupkowy) LXY lub XYYY..."
+
+#: frm/frmQuery.cpp:2270
+msgid "Summary"
+msgstr "Podsumowanie"
+
+#: frm/frmQuery.cpp:2270
+msgid "Summary selected cells."
+msgstr "Podsumowanie zaznaczonych komórek."
+
+#: frm/frmQuery.cpp:2271
+msgid "Compare 2 Cells"
+msgstr "Porównaj 2 komórki"
+
+#: frm/frmQuery.cpp:2271
+msgid "Compare 2 selected cells."
+msgstr "Porównaj 2 zaznaczone komórki."
+
+#: frm/frmQuery.cpp:2272
+msgid "Check the sequence of dates"
+msgstr "Sprawdź kolejność dat"
+
+#: frm/frmQuery.cpp:2273
+msgid "Clear filter"
+msgstr "Wyczyść filtr"
+
+#: frm/frmQuery.cpp:2333
+msgid "No template generate."
+msgstr "Nie wygenerowano szablonu."
+
+#: frm/frmQuery.cpp:2558
+msgid "%i@"
+msgstr "%i@"
+
+#: frm/frmQuery.cpp:3070
+msgid "Out %i"
+msgstr "Wynik %i"
+
+#: frm/frmQuery.cpp:3413
+msgid "-- Executing query [%s]:[%s]\n"
+msgstr "-- Wykonywanie zapytania [%s]:[%s]\n"
+
+#: frm/frmQuery.cpp:4241
+msgid "Running aligning command..."
+msgstr "Uruchamianie polecenia wyrównywania..."
+
+#: frm/frmQuery.cpp:4471
+msgid "outputPane"
+msgstr "outputPane"
+
+#: frm/frmQuery.cpp:4491
+msgid "Output pane [%s]"
+msgstr "Panel wyników [%s]"
+
+#: frm/frmQuery.cpp:4597
+msgid "Cannot change to selected SQL tab now. Try again a bit later."
+msgstr "Nie można teraz przełączyć na wybraną kartę SQL. Spróbuj ponownie za chwilę."
+
+#: frm/frmQuery.cpp:4620
+msgid "Cannot add a new SQL tab now. Try again a bit later."
+msgstr "Nie można teraz dodać nowej karty SQL. Spróbuj ponownie za chwilę."
+
+#: frm/frmQuery.cpp:4689
+msgid "Please enter name string with prefix dbname or description server\n"
+msgstr "Wprowadź nazwę z prefiksem dbname lub opisem serwera\n"
+
+#: frm/frmQuery.cpp:4691
+msgid "Name autosave tab window."
+msgstr "Nazwa okna karty autozapisu."
+
+#: frm/frmQuery.cpp:4717
+msgid "Cannot remove the last SQL tab"
+msgstr "Nie można usunąć ostatniej karty SQL"
+
+#: frm/frmQuery.cpp:4797
+msgid "Query %d"
+msgstr "Zapytanie %d"
+
+#: frm/frmQuery.cpp:5148
+msgid "Script Recreate Cascade"
+msgstr "Skrypt ponownego utworzenia kaskadowego"
+
+#: frm/frmQuery.cpp:5148
+msgid "Start query tool with recreate cascade script."
+msgstr "Uruchom narzędzie zapytań ze skryptem ponownego utworzenia kaskadowego."
+
+#: frm/frmOptions.cpp:61
+msgid "PgAdmin3opt settings"
+msgstr "Ustawienia PgAdmin3opt"
+
+#: frm/frmOptions.cpp:615
+msgid "Color theme save to file %s"
+msgstr "Motyw kolorów zapisano do pliku %s"
+
+#: frm/frmOptions.cpp:637
+msgid "Color theme load from file %s"
+msgstr "Motyw kolorów wczytano z pliku %s"
+
+#: frm/frmOptions.cpp:638
+msgid "Load theme"
+msgstr "Wczytaj motyw"
+
+#: frm/frmOptions.cpp:1208
+msgid "&Options...\tCtrl-O"
+msgstr "&Opcje...\tCtrl-O"
+
+#: frm/frmStatus.cpp:282
+msgid "&Wait trace"
+msgstr "&Śledzenie oczekiwań"
+
+#: frm/frmStatus.cpp:282
+msgid "Enable the wait event."
+msgstr "Włącz zdarzenie oczekiwania."
+
+#: frm/frmStatus.cpp:283
+msgid "&Wait event save"
+msgstr "&Zapis zdarzeń oczekiwania"
+
+#: frm/frmStatus.cpp:283
+msgid "Enable the wait event save to file sample.dat."
+msgstr "Włącz zapis zdarzeń oczekiwania do pliku sample.dat."
+
+#: frm/frmStatus.cpp:320
+msgid "Value parameter pg_wait_sampling.history_size = %ld greet 1000000  monitoring wait events disabled.\n"
+msgstr "Wartość parametru pg_wait_sampling.history_size = %ld jest większa niż 1000000; monitorowanie zdarzeń oczekiwania jest wyłączone.\n"
+
+#: frm/frmStatus.cpp:383
+msgid "&Query state\tCtrl-Alt-Q"
+msgstr "&Stan zapytania\tCtrl-Alt-Q"
+
+#: frm/frmStatus.cpp:383
+msgid "Show or hide the query state tab."
+msgstr "Pokaż lub ukryj kartę stanu zapytania."
+
+#: frm/frmStatus.cpp:385
+msgid "Append verbose"
+msgstr "Dołącz verbose"
+
+#: frm/frmStatus.cpp:386
+msgid "Append use buffers"
+msgstr "Dołącz użycie buforów"
+
+#: frm/frmStatus.cpp:387
+msgid "Append real timing"
+msgstr "Dołącz rzeczywisty czas"
+
+#: frm/frmStatus.cpp:388
+msgid "Append triggers"
+msgstr "Dołącz wyzwalacze"
+
+#: frm/frmStatus.cpp:396
+msgid "&Wait"
+msgstr "&Oczekiwanie"
+
+#: frm/frmStatus.cpp:436
+msgid "Highlight items only"
+msgstr "Wyróżnij tylko elementy"
+
+#: frm/frmStatus.cpp:517
+msgid "QueryState"
+msgstr "QueryState"
+
+#: frm/frmStatus.cpp:853
+msgid "W_Event_T"
+msgstr "W_Event_T"
+
+#: frm/frmStatus.cpp:854
+msgid "W_Event"
+msgstr "W_Event"
+
+#: frm/frmStatus.cpp:1112
+msgid "Query State"
+msgstr "Stan zapytania"
+
+#: frm/frmStatus.cpp:1126
+msgid "Query Text"
+msgstr "Tekst zapytania"
+
+#: frm/frmStatus.cpp:1127
+msgid "Plan"
+msgstr "Plan"
+
+#: frm/frmStatus.cpp:1251
+msgid "Functions pg_read_binary_file(text,bigint,bigint,boolean), pg_stat_file(text,boolean),pg_ls_logdir()  permission denied."
+msgstr "Brak uprawnień do funkcji pg_read_binary_file(text,bigint,bigint,boolean), pg_stat_file(text,boolean),pg_ls_logdir()."
+
+#: frm/frmStatus.cpp:1716
+msgid "Activity query long execute"
+msgstr "Długo wykonywane zapytanie aktywności"
+
+#: frm/frmStatus.cpp:2634
+msgid "Query state status long execute"
+msgstr "Stan długo wykonywanego zapytania"
+
+#: frm/frmStatus.cpp:2670
+msgid "Refreshing query state list."
+msgstr "Odświeżanie listy stanu zapytań."
+
+#: frm/frmStatus.cpp:2959
+msgid "Wait..."
+msgstr "Czekaj..."
+
+#: frm/frmStatus.cpp:4807
+msgid "&Server Status\tCtrl-S"
+msgstr "&Stan serwera\tCtrl-S"
+
+#: frm/frmPlot.cpp:120
+msgid "Lock aspect"
+msgstr "Zablokuj proporcje"
+
+#: frm/frmPlot.cpp:120
+msgid "Lock horizontal and vertical zoom aspect."
+msgstr "Zablokuj proporcje powiększenia w poziomie i w pionie."
+
+#: frm/frmPlot.cpp:442
+msgid "Save a screenshot"
+msgstr "Zapisz zrzut ekranu"
+
+#: frm/frmLog.cpp:1314
+msgid "Log view..."
+msgstr "Podgląd dziennika..."
+
+#: frm/frmLog.cpp:1314
+msgid "Log view CSV format"
+msgstr "Podgląd dziennika w formacie CSV"
+
+#: frm/frmMain.cpp:200
+msgid "Git"
+msgstr "Git"
+
+#: frm/frmMain.cpp:472
+msgid "&Server"
+msgstr "&Serwer"
+
+#: frm/frmMain.cpp:472
+msgid "Server menu commands."
+msgstr "Polecenia menu serwera."
+
+#: frm/frmMain.cpp:1187
+msgid "Create putty tunnel error."
+msgstr "Błąd tworzenia tunelu putty."
+
+#: frm/frmAwr.cpp:33
+msgid "Report AWR"
+msgstr "Raport AWR"
+
+#: frm/frmAwr.cpp:33
+msgid "Generate AWR report"
+msgstr "Wygeneruj raport AWR"
+
+#: schema/pgServer.cpp:1253
+msgid "Key words"
+msgstr "Słowa kluczowe"
+
+#: schema/pgServer.cpp:1338
+msgid "Add connect str"
+msgstr "Dodaj ciąg połączenia"
+
+#: schema/pgServer.cpp:2264
+msgid "&Set keywords"
+msgstr "&Ustaw słowa kluczowe"
+
+#: schema/pgServer.cpp:2264
+msgid "Set keywords list the selected server."
+msgstr "Ustaw listę słów kluczowych dla wybranego serwera."
+
+#: schema/pgServer.cpp:2273
+msgid "Please enter keywords\n"
+msgstr "Wprowadź słowa kluczowe\n"
+
+#: schema/pgServer.cpp:2275
+msgid "Keywords server"
+msgstr "Słowa kluczowe serwera"
+
+#: schema/pgServer.cpp:2374
+msgid "Disconnec&t all servers"
+msgstr "Rozłąc&z wszystkie serwery"
+
+#: schema/pgServer.cpp:2374
+msgid "Disconnect from all servers."
+msgstr "Rozłącz ze wszystkimi serwerami."
+
+#: schema/pgIndex.cpp:499
+msgid "Check Btree index"
+msgstr "Sprawdź indeks Btree"
+
+#: schema/pgIndex.cpp:499
+msgid "Check Btree index function bt_index_parent_check(oid,true)"
+msgstr "Sprawdź indeks Btree funkcją bt_index_parent_check(oid,true)"
+
+#: schema/pgIndex.cpp:568
+msgid "&Reset index statistics"
+msgstr "&Zresetuj statystyki indeksu"
+
+#: schema/pgIndex.cpp:568
+msgid "Reset statistics of the selected index."
+msgstr "Zresetuj statystyki wybranego indeksu."
+
+#: schema/pgIndex.cpp:574
+msgid "Are you sure you wish to reset statistics of this index?"
+msgstr "Czy na pewno chcesz zresetować statystyki tego indeksu?"
+
+#: schema/pgSubscription.cpp:33
+msgid "Retrieving details on subscription"
+msgstr "Pobieranie szczegółów subskrypcji"
+
+#: schema/pgSubscription.cpp:37
+msgid "Refreshing subscription"
+msgstr "Odświeżanie subskrypcji"
+
+#: schema/pgSubscription.cpp:41
+msgid "Are you sure you wish to drop subscription \"%s\" including all objects that depend on it?"
+msgstr "Czy na pewno chcesz usunąć subskrypcję \"%s\" wraz ze wszystkimi zależnymi od niej obiektami?"
+
+#: schema/pgSubscription.cpp:45
+msgid "Are you sure you wish to drop subscription \"%s\"?"
+msgstr "Czy na pewno chcesz usunąć subskrypcję \"%s\"?"
+
+#: schema/pgSubscription.cpp:49
+msgid "Drop subscription cascaded?"
+msgstr "Usunąć subskrypcję kaskadowo?"
+
+#: schema/pgSubscription.cpp:52
+msgid "Drop subscription?"
+msgstr "Usunąć subskrypcję?"
+
+#: schema/pgSubscription.cpp:55
+msgid "Subscription properties report"
+msgstr "Raport właściwości subskrypcji"
+
+#: schema/pgSubscription.cpp:59
+msgid "Subscription properties"
+msgstr "Właściwości subskrypcji"
+
+#: schema/pgSubscription.cpp:62
+msgid "Subscription DDL report"
+msgstr "Raport DDL subskrypcji"
+
+#: schema/pgSubscription.cpp:66
+msgid "Subscription DDL"
+msgstr "DDL subskrypcji"
+
+#: schema/pgSubscription.cpp:69
+msgid "Subscription dependencies report"
+msgstr "Raport zależności subskrypcji"
+
+#: schema/pgSubscription.cpp:73
+msgid "Subscription dependencies"
+msgstr "Zależności subskrypcji"
+
+#: schema/pgSubscription.cpp:76
+msgid "Subscription dependents report"
+msgstr "Raport obiektów zależnych od subskrypcji"
+
+#: schema/pgSubscription.cpp:80
+msgid "Subscription dependents"
+msgstr "Obiekty zależne od subskrypcji"
+
+#: schema/pgSubscription.cpp:210
+msgid "Retrieving details on subscriptions"
+msgstr "Pobieranie szczegółów subskrypcji"
+
+#: schema/pgSubscription.cpp:213
+msgid "Refreshing subscriptions"
+msgstr "Odświeżanie subskrypcji"
+
+#: schema/pgSubscription.cpp:216
+msgid "Subscriptions list report"
+msgstr "Raport listy subskrypcji"
+
+#: schema/pgPublication.cpp:33
+msgid "Retrieving details on publication"
+msgstr "Pobieranie szczegółów publikacji"
+
+#: schema/pgPublication.cpp:37
+msgid "Refreshing publication"
+msgstr "Odświeżanie publikacji"
+
+#: schema/pgPublication.cpp:41
+msgid "Are you sure you wish to drop publication \"%s\" including all objects that depend on it?"
+msgstr "Czy na pewno chcesz usunąć publikację \"%s\" wraz ze wszystkimi zależnymi od niej obiektami?"
+
+#: schema/pgPublication.cpp:45
+msgid "Are you sure you wish to drop publication \"%s\"?"
+msgstr "Czy na pewno chcesz usunąć publikację \"%s\"?"
+
+#: schema/pgPublication.cpp:49
+msgid "Drop publication cascaded?"
+msgstr "Usunąć publikację kaskadowo?"
+
+#: schema/pgPublication.cpp:52
+msgid "Drop publication?"
+msgstr "Usunąć publikację?"
+
+#: schema/pgPublication.cpp:55
+msgid "Publication properties report"
+msgstr "Raport właściwości publikacji"
+
+#: schema/pgPublication.cpp:59
+msgid "Publication properties"
+msgstr "Właściwości publikacji"
+
+#: schema/pgPublication.cpp:62
+msgid "Publication DDL report"
+msgstr "Raport DDL publikacji"
+
+#: schema/pgPublication.cpp:66
+msgid "Publication DDL"
+msgstr "DDL publikacji"
+
+#: schema/pgPublication.cpp:69
+msgid "Publication dependencies report"
+msgstr "Raport zależności publikacji"
+
+#: schema/pgPublication.cpp:73
+msgid "Publication dependencies"
+msgstr "Zależności publikacji"
+
+#: schema/pgPublication.cpp:76
+msgid "Publication dependents report"
+msgstr "Raport obiektów zależnych od publikacji"
+
+#: schema/pgPublication.cpp:80
+msgid "Publication dependents"
+msgstr "Obiekty zależne od publikacji"
+
+#: schema/pgPublication.cpp:318
+msgid "Retrieving details on publications"
+msgstr "Pobieranie szczegółów publikacji"
+
+#: schema/pgPublication.cpp:321
+msgid "Refreshing publications"
+msgstr "Odświeżanie publikacji"
+
+#: schema/pgPublication.cpp:324
+msgid "Publications list report"
+msgstr "Raport listy publikacji"
+
+#: schema/pgTable.cpp:1096
+msgid "Create table timestamp"
+msgstr "Znacznik czasu utworzenia tabeli"
+
+#: schema/pgObject.cpp:621
+msgid "extension"
+msgstr "rozszerzenie"
+
+#: schema/pgFunction.cpp:410
+msgid "Parallel"
+msgstr "Równoległe"
+
+#: schema/pgFunction.cpp:426
+msgid "Last change timestamp"
+msgstr "Znacznik czasu ostatniej zmiany"
+
+#: dd/ddmodel/ddDBReverseEnginering.cpp:175
+msgid "Schema not found"
+msgstr "Nie znaleziono schematu"
+
+#: dd/ddmodel/ddDBReverseEnginering.cpp:175
+msgid "getting table OID"
+msgstr "pobieranie OID tabeli"
+
+#: dd/ddmodel/ddDBReverseEnginering.cpp:216
+msgid "Table not found"
+msgstr "Nie znaleziono tabeli"
+
+#: dd/ddmodel/ddDBReverseEnginering.cpp:665
+msgid "Error detecting kind of foreign key source: from Pk or from Uk"
+msgstr "Błąd wykrywania rodzaju źródła klucza obcego: z Pk lub z Uk"
+
+#: dd/ddmodel/ddDBReverseEnginering.cpp:665
+msgid "Error importing relationship"
+msgstr "Błąd importu relacji"
+
+#: dd/ddmodel/ddDBReverseEnginering.cpp:786
+msgid "Error detecting kind of foreign key: null or not null"
+msgstr "Błąd wykrywania rodzaju klucza obcego: null lub not null"
+
+#: dd/ddmodel/ddDBReverseEnginering.cpp:1333
+msgid "Error fk is repeated"
+msgstr "Błąd: fk się powtarza"
+
+#: dd/ddmodel/ddDBReverseEnginering.cpp:1333
+msgid "Error comparing relationships"
+msgstr "Błąd porównywania relacji"
+
+#: dd/ddmodel/ddDBReverseEnginering.cpp:1673
+msgid "Please, select a schema to use at import tables process:"
+msgstr "Wybierz schemat do użycia w procesie importu tabel:"
+
+#: dd/ddmodel/ddDBReverseEnginering.cpp:1698
+msgid "Please, select a Schema to continue to next step."
+msgstr "Wybierz schemat, aby przejść do następnego kroku."
+
+#: dd/ddmodel/ddDBReverseEnginering.cpp:1698
+msgid "Select a Schema..."
+msgstr "Wybierz schemat..."
+
+#: dd/ddmodel/ddDBReverseEnginering.cpp:1806
+msgid "Table(s) from selected schema"
+msgstr "Tabele z wybranego schematu"
+
+#: dd/ddmodel/ddDBReverseEnginering.cpp:1811
+msgid "Tables(s) to be imported"
+msgstr "Tabele do zaimportowania"
+
+#: dd/ddmodel/ddDBReverseEnginering.cpp:1826
+msgid "Add the selected table(s)"
+msgstr "Dodaj wybrane tabele"
+
+#: dd/ddmodel/ddDBReverseEnginering.cpp:1828
+msgid "Add all tables"
+msgstr "Dodaj wszystkie tabele"
+
+#: dd/ddmodel/ddDBReverseEnginering.cpp:1830
+msgid "Remove the selected table(s)"
+msgstr "Usuń wybrane tabele"
+
+#: dd/ddmodel/ddDBReverseEnginering.cpp:1832
+msgid "Remove all tables"
+msgstr "Usuń wszystkie tabele"
+
+#: dd/ddmodel/ddDBReverseEnginering.cpp:1981
+msgid "Please, select at least a table to continue to next step."
+msgstr "Wybierz co najmniej jedną tabelę, aby przejść do następnego kroku."
+
+#: dd/ddmodel/ddDBReverseEnginering.cpp:1981
+msgid "Select some Tables..."
+msgstr "Wybierz tabele..."
+
+#: dd/ddmodel/ddDBReverseEnginering.cpp:1997
+msgid "Error when preparing to import table: "
+msgstr "Błąd podczas przygotowania importu tabeli: "
+
+#: dd/ddmodel/ddDBReverseEnginering.cpp:2009
+msgid "Prepared to import table: "
+msgstr "Przygotowano do importu tabelę: "
+
+#: dd/ddmodel/ddDBReverseEnginering.cpp:2009
+msgid "\n"
+msgstr "\n"
+
+#: dd/ddmodel/ddDBReverseEnginering.cpp:2029
+msgid "Returning to previous dialog will remove all selected tables, do you like to continue?"
+msgstr "Powrót do poprzedniego okna usunie wszystkie wybrane tabele, czy chcesz kontynuować?"
+
+#: dd/ddmodel/ddDBReverseEnginering.cpp:2077
+msgid "Returning to previous dialog will delete imported tables before adding it to the model?"
+msgstr "Powrót do poprzedniego okna usunie zaimportowane tabele przed dodaniem ich do modelu?"
+
+#: dd/ddmodel/ddDrawingView.cpp:33
+msgid "Add new Table"
+msgstr "Dodaj nową tabelę"
+
+#: dd/ddmodel/ddDrawingView.cpp:84
+msgid "Table exists already at this diagram"
+msgstr "Tabela już istnieje na tym diagramie"
+
+#: dd/ddmodel/ddDrawingView.cpp:84
+msgid "Drag and drop warning"
+msgstr "Ostrzeżenie o przeciąganiu i upuszczaniu"
+
+#: dd/ddmodel/ddModelBrowser.cpp:39
+msgid "Database Design"
+msgstr "Projekt bazy danych"
+
+#: dd/ddmodel/ddGenerationWizard.cpp:99
+msgid "Create table"
+msgstr "Utwórz tabelę"
+
+#: dd/ddmodel/ddGenerationWizard.cpp:100
+msgid "Alter table"
+msgstr "Zmień tabelę"
+
+#: dd/ddmodel/ddGenerationWizard.cpp:100
+msgid "Drop, then create"
+msgstr "Usuń, a następnie utwórz"
+
+#: dd/ddmodel/ddGenerationWizard.cpp:100
+msgid "Create table [conflict]"
+msgstr "Utwórz tabelę [konflikt]"
+
+#: dd/ddmodel/ddGenerationWizard.cpp:157
+msgid "Tables(s) to be generated"
+msgstr "Tabele do wygenerowania"
+
+#: dd/ddmodel/ddGenerationWizard.cpp:369
+msgid "Please select at least one table to move to next step."
+msgstr "Wybierz co najmniej jedną tabelę, aby przejść do następnego kroku."
+
+#: dd/ddmodel/ddGenerationWizard.cpp:369
+msgid "No tables selected"
+msgstr "Nie wybrano tabel"
+
+#: dd/ddmodel/ddGenerationWizard.cpp:396
+msgid "No schema"
+msgstr "Brak schematu"
+
+#: dd/ddmodel/ddGenerationWizard.cpp:415
+msgid "Please select an item to move to next step."
+msgstr "Wybierz element, aby przejść do następnego kroku."
+
+#: dd/ddmodel/ddGenerationWizard.cpp:415
+msgid "No choice made"
+msgstr "Nie dokonano wyboru"
+
+#: dd/ddmodel/ddGenerationWizard.cpp:528
+msgid "Please check the choice for each table:"
+msgstr "Sprawdź wybór dla każdej tabeli:"
+
+#: dd/ddmodel/ddGenerationWizard.cpp:555
+msgid "Select an action"
+msgstr "Wybierz akcję"
+
+#: dd/ddmodel/ddGenerationWizard.cpp:580
+msgid "Metadata of table to be generated not found at database designer model"
+msgstr "Nie znaleziono metadanych tabeli do wygenerowania w modelu projektanta bazy danych"
+
+#: dd/ddmodel/ddGenerationWizard.cpp:580
+msgid "Error at generation process"
+msgstr "Błąd w procesie generowania"
+
+#: dd/ddmodel/ddGenerationWizard.cpp:599
+msgid "Error importing at generation process"
+msgstr "Błąd importu w procesie generowania"
+
+#: dd/ddmodel/ddGenerationWizard.cpp:615
+msgid "Going back?"
+msgstr "Wrócić?"
+
+#: dd/ddmodel/ddDrawingEditor.cpp:87
+msgid "Are you sure you wish to delete table "
+msgstr "Czy na pewno chcesz usunąć tabelę "
+
+#: dd/ddmodel/ddDrawingEditor.cpp:87
+msgid "Delete table?"
+msgstr "Usunąć tabelę?"
+
+#: dd/ddmodel/ddDrawingEditor.cpp:95
+msgid "Are you sure you wish to delete relationship "
+msgstr "Czy na pewno chcesz usunąć relację "
+
+#: dd/ddmodel/ddDrawingEditor.cpp:95
+msgid "Delete relationship?"
+msgstr "Usunąć relację?"
+
+#: dd/ddmodel/ddDrawingEditor.cpp:114
+msgid "Are you sure you wish to delete %d tables, removing from model related relationships?"
+msgstr "Czy na pewno chcesz usunąć %d tabel, usuwając z modelu powiązane relacje?"
+
+#: dd/ddmodel/ddDrawingEditor.cpp:115
+msgid "Delete tables?"
+msgstr "Usunąć tabele?"
+
+#: dd/ddmodel/ddDrawingEditor.cpp:165
+msgid "Invalid figure kind found"
+msgstr "Znaleziono nieprawidłowy rodzaj figury"
+
+#: dd/ddmodel/ddDrawingEditor.cpp:165
+msgid "Error while deleting tables"
+msgstr "Błąd podczas usuwania tabel"
+
+#: dd/ddmodel/ddDrawingEditor.cpp:188
+msgid "Error while deleting table"
+msgstr "Błąd podczas usuwania tabeli"
+
+#: dd/ddmodel/ddDrawingEditor.cpp:223
+msgid "Error while deleting realtionships"
+msgstr "Błąd podczas usuwania relacji"
+
+#: dd/ddmodel/ddDatabaseDesign.cpp:142
+msgid "Invalid number of arguments in call of function generate tables of list"
+msgstr "Nieprawidłowa liczba argumentów w wywołaniu funkcji generowania tabel z listy"
+
+#: dd/ddmodel/ddDatabaseDesign.cpp:162
+msgid "Generating Create sentence(s) for table(s) "
+msgstr "Generowanie poleceń Create dla tabel "
+
+#: dd/ddmodel/ddDatabaseDesign.cpp:185
+msgid "Generating Pk sentence for table(s) "
+msgstr "Generowanie polecenia Pk dla tabel "
+
+#: dd/ddmodel/ddDatabaseDesign.cpp:201
+msgid "Generating Uk sentence(s) for table(s) "
+msgstr "Generowanie poleceń Uk dla tabel "
+
+#: dd/ddmodel/ddDatabaseDesign.cpp:217
+msgid "Generating Fk sentence(s) for table(s) "
+msgstr "Generowanie poleceń Fk dla tabel "
+
+#: dd/ddmodel/ddDatabaseDesign.cpp:243
+msgid "No connection found when building ALTER objects DDL."
+msgstr "Nie znaleziono połączenia podczas budowania DDL obiektów ALTER."
+
+#: dd/ddmodel/ddDatabaseDesign.cpp:250
+msgid "Schema defined when building ALTER TABLE DDL"
+msgstr "Zdefiniowano schemat podczas budowania DDL ALTER TABLE"
+
+#: dd/ddmodel/ddDatabaseDesign.cpp:257
+msgid "Generating Alter table sentence(s) for table(s) "
+msgstr "Generowanie poleceń Alter table dla tabel "
+
+#: dd/ddmodel/ddDatabaseDesign.cpp:527
+msgid "Failed to write the model file!"
+msgstr "Nie udało się zapisać pliku modelu!"
+
+#: hotdraw/utilities/hdRemoveDeleteDialog.cpp:117
+msgid "     Choose Remove from Diagram to remove only from current diagram.     "
+msgstr "     Wybierz Usuń z diagramu, aby usunąć tylko z bieżącego diagramu.     "
+
+#: hotdraw/utilities/hdRemoveDeleteDialog.cpp:118
+msgid "     Choose Remove from Model to delete permanently.     "
+msgstr "     Wybierz Usuń z modelu, aby usunąć na stałe.     "
+
+#: hotdraw/main/hdDrawingView.cpp:457
+msgid "Sample Item"
+msgstr "Przykładowy element"
+
+#: hotdraw/main/hdDrawingView.cpp:466
+msgid "Sample menu item"
+msgstr "Przykładowy element menu"
+
+#: hotdraw/main/hdDrawingView.cpp:466
+msgid "Sample"
+msgstr "Przykład"
+
+#: hotdraw/main/hdDrawingEditor.cpp:267
+msgid "Are you sure you wish to delete figure ?"
+msgstr "Czy na pewno chcesz usunąć figurę?"
+
+#: hotdraw/main/hdDrawingEditor.cpp:267
+msgid "Delete figures?"
+msgstr "Usunąć figury?"
+
+#: hotdraw/main/hdDrawingEditor.cpp:272
+msgid "Are you sure you wish to delete %d figures?"
+msgstr "Czy na pewno chcesz usunąć %d figur?"
+
+#: dd/dditems/utilities/ddSelectKindFksDialog.cpp:103
+msgid "From Primary"
+msgstr "Z klucza głównego"
+
+#: dd/dditems/utilities/ddSelectKindFksDialog.cpp:110
+msgid "Unique Key: "
+msgstr "Klucz unikalny: "
+
+#: dd/dditems/utilities/ddSelectKindFksDialog.cpp:199
+msgid "Automatically Generated"
+msgstr "Generowany automatycznie"
+
+#: dd/dditems/figures/ddColumnKindIcon.cpp:62
+msgid "Unique key"
+msgstr "Klucz unikalny"
+
+#: dd/dditems/figures/ddTableFigure.cpp:1178
+msgid "Cannot build an ALTER TABLE statement for a non existing table (%s.%s)."
+msgstr "Nie można zbudować instrukcji ALTER TABLE dla nieistniejącej tabeli (%s.%s)."
+
+#: dd/dditems/figures/ddTableFigure.cpp:1179
+msgid "Error when trying to get table OID"
+msgstr "Błąd podczas pobierania OID tabeli"
+
+#: dd/dditems/figures/ddTableFigure.cpp:1186
+msgid "Cannot reverse engineering table %s.%s."
+msgstr "Nie można wykonać inżynierii wstecznej tabeli %s.%s."
+
+#: dd/dditems/figures/ddTableFigure.cpp:1187
+msgid "Error when trying to get stub table"
+msgstr "Błąd podczas pobierania tabeli zastępczej"
+
+#: dd/dditems/figures/ddTableFigure.cpp:1442
+msgid "\" SET NOT NULL;"
+msgstr "\" SET NOT NULL;"
+
+#: dd/dditems/figures/ddTableFigure.cpp:1469
+msgid "Trying to build ALTER sentences"
+msgstr "Próba zbudowania poleceń ALTER"
+
+#: dd/dditems/figures/ddColumnFigure.cpp:491
+msgid "relation between table: "
+msgstr "relacja między tabelą: "
+
+#: dd/dditems/figures/ddColumnFigure.cpp:491
+msgid " and table: "
+msgstr " a tabelą: "
+
+#: dd/dditems/figures/ddColumnFigure.cpp:492
+msgid " is marked as identifying but user created foreign key column: "
+msgstr " jest oznaczona jako identyfikująca, ale kolumna klucza obcego utworzona przez użytkownika: "
+
+#: dd/dditems/figures/ddColumnFigure.cpp:493
+msgid " isn't set as primary key \n"
+msgstr " nie jest ustawiona jako klucz główny \n"
+
+#: dd/dditems/figures/ddColumnFigure.cpp:500
+msgid "relation between table:"
+msgstr "relacja między tabelą:"
+
+#: dd/dditems/figures/ddColumnFigure.cpp:501
+msgid "is marked as optional but user created foreign key column: "
+msgstr "jest oznaczona jako opcjonalna, ale kolumna klucza obcego utworzona przez użytkownika: "
+
+#: dd/dditems/figures/ddColumnFigure.cpp:502
+msgid "is set as mandatory \n"
+msgstr "jest ustawiona jako wymagana \n"
+
+#: dd/dditems/figures/ddColumnFigure.cpp:510
+msgid " is marked as mandatory but user created foreign key column: "
+msgstr " jest oznaczona jako wymagana, ale kolumna klucza obcego utworzona przez użytkownika: "
+
+#: dd/dditems/figures/ddColumnFigure.cpp:511
+msgid "is set as optional \n"
+msgstr "jest ustawiona jako opcjonalna \n"
+
+#: dd/dditems/figures/ddColumnFigure.cpp:519
+msgid "User created foreign key column: "
+msgstr "Kolumna klucza obcego utworzona przez użytkownika: "
+
+#: dd/dditems/figures/ddColumnFigure.cpp:519
+msgid "have different datatype from source column of relationship: "
+msgstr "ma inny typ danych niż kolumna źródłowa relacji: "
+
+#: dd/dditems/figures/ddColumnFigure.cpp:520
+msgid " \n"
+msgstr " \n"
+
+#: dd/dditems/figures/ddTextTableItemFigure.cpp:243
+msgid "Varchar size"
+msgstr "Rozmiar varchar"
+
+#: dd/dditems/figures/ddTextTableItemFigure.cpp:244
+msgid "Size for varchar datatype"
+msgstr "Rozmiar dla typu danych varchar"
+
+#: dd/dditems/figures/ddTextTableItemFigure.cpp:264
+msgid "datatype size"
+msgstr "rozmiar typu danych"
+
+#: dd/dditems/figures/ddTextTableItemFigure.cpp:265
+msgid "Size for datatype"
+msgstr "Rozmiar dla typu danych"
+
+#: dd/dditems/figures/ddTextTableItemFigure.cpp:354
+msgid "Add a column..."
+msgstr "Dodaj kolumnę..."
+
+#: dd/dditems/figures/ddTextTableItemFigure.cpp:355
+msgid "Delete the selected column..."
+msgstr "Usuń wybraną kolumnę..."
+
+#: dd/dditems/figures/ddTextTableItemFigure.cpp:358
+msgid "Rename the selected column..."
+msgstr "Zmień nazwę wybranej kolumny..."
+
+#: dd/dditems/figures/ddTextTableItemFigure.cpp:360
+msgid "Activate fk auto-naming..."
+msgstr "Aktywuj automatyczne nazywanie fk..."
+
+#: dd/dditems/figures/ddTextTableItemFigure.cpp:362
+msgid "Not NULL constraint"
+msgstr "Ograniczenie Not NULL"
+
+#: dd/dditems/figures/ddTextTableItemFigure.cpp:373
+msgid "Unique Key"
+msgstr "Klucz unikalny"
+
+#: dd/dditems/figures/ddTextTableItemFigure.cpp:378
+msgid "Column datatype"
+msgstr "Typ danych kolumny"
+
+#: dd/dditems/figures/ddTextTableItemFigure.cpp:381
+msgid "serial"
+msgstr "serial"
+
+#: dd/dditems/figures/ddTextTableItemFigure.cpp:383
+msgid "boolean"
+msgstr "boolean"
+
+#: dd/dditems/figures/ddTextTableItemFigure.cpp:385
+msgid "integer"
+msgstr "integer"
+
+#: dd/dditems/figures/ddTextTableItemFigure.cpp:387
+msgid "money"
+msgstr "money"
+
+#: dd/dditems/figures/ddTextTableItemFigure.cpp:389
+msgid "varchar(n)"
+msgstr "varchar(n)"
+
+#: dd/dditems/figures/ddTextTableItemFigure.cpp:391
+msgid "Choose another datatype..."
+msgstr "Wybierz inny typ danych..."
+
+#: dd/dditems/figures/ddTextTableItemFigure.cpp:393
+msgid "Primary Key Constraint name..."
+msgstr "Nazwa ograniczenia klucza głównego..."
+
+#: dd/dditems/figures/ddTextTableItemFigure.cpp:394
+msgid "Unique Key Constraint name..."
+msgstr "Nazwa ograniczenia klucza unikalnego..."
+
+#: dd/dditems/figures/ddTextTableItemFigure.cpp:396
+msgid "Delete table..."
+msgstr "Usuń tabelę..."
+
+#: dd/dditems/figures/ddRelationshipFigure.cpp:241
+msgid "Select one"
+msgstr "Wybierz jeden"
+
+#: dd/dditems/figures/ddRelationshipFigure.cpp:243
+msgid "Foreign Key From"
+msgstr "Klucz obcy z"
+
+#: dd/dditems/figures/ddRelationshipFigure.cpp:264
+msgid "Mandatory relationship kind"
+msgstr "Rodzaj relacji obowiązkowej"
+
+#: dd/dditems/figures/ddRelationshipFigure.cpp:266
+msgid "Identifying relationship"
+msgstr "Relacja identyfikująca"
+
+#: dd/dditems/figures/ddRelationshipFigure.cpp:269
+msgid "1:M"
+msgstr "1:M"
+
+#: dd/dditems/figures/ddRelationshipFigure.cpp:272
+msgid "Foreign Key Constraint Name"
+msgstr "Nazwa ograniczenia klucza obcego"
+
+#: dd/dditems/figures/ddRelationshipFigure.cpp:275
+msgid "Type Simple"
+msgstr "Typ Simple"
+
+#: dd/dditems/figures/ddRelationshipFigure.cpp:277
+msgid "Type Full"
+msgstr "Typ Full"
+
+#: dd/dditems/figures/ddRelationshipFigure.cpp:279
+msgid "Match Type "
+msgstr "Typ dopasowania "
+
+#: dd/dditems/figures/ddRelationshipFigure.cpp:281
+msgid "[ Simple ]"
+msgstr "[ Simple ]"
+
+#: dd/dditems/figures/ddRelationshipFigure.cpp:283
+msgid "[ Full ]"
+msgstr "[ Full ]"
+
+#: dd/dditems/figures/ddRelationshipFigure.cpp:286
+msgid "On Delete "
+msgstr "On Delete "
+
+#: dd/dditems/figures/ddRelationshipFigure.cpp:288
+msgid "No Action"
+msgstr "No Action"
+
+#: dd/dditems/figures/ddRelationshipFigure.cpp:291
+msgid "[ No Action ]"
+msgstr "[ No Action ]"
+
+#: dd/dditems/figures/ddRelationshipFigure.cpp:292
+msgid "Restrict"
+msgstr "Restrict"
+
+#: dd/dditems/figures/ddRelationshipFigure.cpp:295
+msgid "[ Restrict ]"
+msgstr "[ Restrict ]"
+
+#: dd/dditems/figures/ddRelationshipFigure.cpp:296
+msgid "Cascade"
+msgstr "Cascade"
+
+#: dd/dditems/figures/ddRelationshipFigure.cpp:299
+msgid "[ Cascade ]"
+msgstr "[ Cascade ]"
+
+#: dd/dditems/figures/ddRelationshipFigure.cpp:300
+msgid "Set Null"
+msgstr "Set Null"
+
+#: dd/dditems/figures/ddRelationshipFigure.cpp:303
+msgid "[ Set Null ]"
+msgstr "[ Set Null ]"
+
+#: dd/dditems/figures/ddRelationshipFigure.cpp:304
+msgid "Set Default"
+msgstr "Set Default"
+
+#: dd/dditems/figures/ddRelationshipFigure.cpp:307
+msgid "[ Set Default ]"
+msgstr "[ Set Default ]"
+
+#: dd/dditems/figures/ddRelationshipFigure.cpp:310
+msgid "On Update "
+msgstr "On Update "
+
+#: dd/dditems/figures/ddRelationshipFigure.cpp:335
+msgid "Delete Relationship..."
+msgstr "Usuń relację..."
+
+#: dd/dditems/figures/ddRelationshipFigure.cpp:452
+msgid "Are you sure you wish to delete relationship between tables %s and %s?"
+msgstr "Czy na pewno chcesz usunąć relację między tabelami %s i %s?"
+
+#: include/frm/frmReport.h:156
+msgid "&Compare other objects"
+msgstr "&Porównaj inne obiekty"
+
+#: include/frm/frmReport.h:156
+msgid "Compare other host database select objects."
+msgstr "Porównaj wybrane obiekty z bazy danych innego hosta."
+
+#: ui/dlgFindReplace.xrc:65
+msgid "All find tabs"
+msgstr "Wszystkie karty wyszukiwania"
+
+#: ui/dlgProJob.xrc:105
+msgid "Run as"
+msgstr "Uruchom jako"
+
+#: ui/dlgProJob.xrc:195
+msgid "Commands"
+msgstr "Polecenia"
+
+#: ui/dlgProJob.xrc:234
+msgid "use same transaction"
+msgstr "użyj tej samej transakcji"
+
+#: ui/dlgServer.xrc:190
+msgid "Select SSL Root Certificate File"
+msgstr "Wybierz plik głównego certyfikatu SSL"
+
+#: ui/dlgServer.xrc:206
+msgid "Select SSL Certificate Revocation List File"
+msgstr "Wybierz plik listy odwołanych certyfikatów SSL"
+
+#: ui/dlgServer.xrc:222
+msgid "Select SSL certificate file"
+msgstr "Wybierz plik certyfikatu SSL"
+
+#: ui/dlgServer.xrc:238
+msgid "Select SSL key file"
+msgstr "Wybierz plik klucza SSL"
+
+#: ui/dlgServer.xrc:361
+msgid "Select identity file"
+msgstr "Wybierz plik tożsamości"
+
+#: ui/dlgServer.xrc:377
+msgid "Select public key file"
+msgstr "Wybierz plik klucza publicznego"
+
+#: ui/dlgServer.xrc:466
+msgid "Connect str"
+msgstr "Ciąg połączenia"
+
+#: ui/dlgTransformText.xrc:5
+msgid "Transform text"
+msgstr "Transformuj tekst"
+
+#: ui/dlgTransformText.xrc:17
+msgid "Source text options"
+msgstr "Opcje tekstu źródłowego"
+
+#: ui/dlgTransformText.xrc:33
+msgid "PCRE regexp"
+msgstr "Wyrażenie regularne PCRE"
+
+#: ui/dlgTransformText.xrc:50
+msgid "Replace expression"
+msgstr "Wyrażenie zastępujące"
+
+#: ui/dlgTransformText.xrc:67
+msgid "Rows limit"
+msgstr "Limit wierszy"
+
+#: ui/dlgTransformText.xrc:87
+msgid "Chars limit"
+msgstr "Limit znaków"
+
+#: ui/dlgTransformText.xrc:107
+msgid "Refresh highlight"
+msgstr "Odśwież wyróżnienie"
+
+#: ui/dlgTransformText.xrc:124
+msgid "Source text"
+msgstr "Tekst źródłowy"
+
+#: ui/dlgTransformText.xrc:160
+msgid "Transform text options"
+msgstr "Opcje transformacji tekstu"
+
+#: ui/dlgTransformText.xrc:176
+msgid "Append before row"
+msgstr "Dołącz przed wierszem"
+
+#: ui/dlgTransformText.xrc:196
+msgid "After row"
+msgstr "Po wierszu"
+
+#: ui/dlgTransformText.xrc:230
+msgid "Field separator"
+msgstr "Separator pól"
+
+#: ui/dlgTransformText.xrc:267
+msgid "Load options"
+msgstr "Opcje wczytywania"
+
+#: ui/dlgTransformText.xrc:276
+msgid "First"
+msgstr "Pierwszy"
+
+#: ui/dlgTransformText.xrc:335
+msgid "Rows loading"
+msgstr "Wczytywanie wierszy"
+
+#: ui/frmAwr.xrc:6
+msgid "AWR report"
+msgstr "Raport AWR"
+
+#: ui/frmAwr.xrc:36
+msgid "Type report"
+msgstr "Typ raportu"
+
+#: ui/frmAwr.xrc:39
+msgid "Report"
+msgstr "Raport"
+
+#: ui/frmAwr.xrc:40
+msgid "Diff report"
+msgstr "Raport różnic"
+
+#: ui/frmAwr.xrc:104
+msgid "Start Id1"
+msgstr "Id1 początkowe"
+
+#: ui/frmAwr.xrc:123
+msgid "End Id1"
+msgstr "Id1 końcowe"
+
+#: ui/frmAwr.xrc:166
+msgid "Start Id2"
+msgstr "Id2 początkowe"
+
+#: ui/frmAwr.xrc:185
+msgid "End Id2"
+msgstr "Id2 końcowe"
+
+#: ui/frmExport.xrc:110
+msgid "format COPY"
+msgstr "format COPY"
+
+#: ui/frmExport.xrc:116
+msgid "Xls fmt copy"
+msgstr "Kopia w formacie Xls"
+
+#: ui/frmImport.xrc:33
+msgid "Select the file to import"
+msgstr "Wybierz plik do zaimportowania"
+
+#: ui/frmOptions.xrc:131
+msgid "Select theme"
+msgstr "Wybierz motyw"
+
+#: ui/frmOptions.xrc:154
+msgid "Load"
+msgstr "Wczytaj"
+
+#: ui/frmOptions.xrc:222
+msgid "Options extended JSON:"
+msgstr "Rozszerzone opcje JSON:"
+
+#: ui/frmOptions.xrc:261
+msgid "Beautiful big numbers on the statistics page"
+msgstr "Czytelne duże liczby na stronie statystyk"
+
+#: ui/frmOptions.xrc:272
+msgid "Show the dependencies of functions on tables,views,functions"
+msgstr "Pokaż zależności funkcji od tabel, widoków i funkcji"
+
+#: ui/frmOptions.xrc:457
+msgid "Show DB name in tree"
+msgstr "Pokaż nazwę bazy w drzewie"
+
+#: ui/frmOptions.xrc:465
+msgid "Quick jump to the root node"
+msgstr "Szybki skok do węzła głównego"
+
+#: ui/frmOptions.xrc:635
+msgid "Select utility to format text"
+msgstr "Wybierz narzędzie do formatowania tekstu"
+
+#: ui/frmOptions.xrc:645
+msgid "External alignment utlity"
+msgstr "Zewnętrzne narzędzie wyrównywania"
+
+#: ui/frmOptions.xrc:662
+msgid "Enable ASUTP style"
+msgstr "Włącz styl ASUTP"
+
+#: ui/frmOptions.xrc:677
+msgid "Hide query history"
+msgstr "Ukryj historię zapytań"
+
+#: ui/frmOptions.xrc:692
+msgid "Auto save query text"
+msgstr "Automatycznie zapisuj tekst zapytania"
+
+#: ui/frmOptions.xrc:707
+msgid "Use word hints"
+msgstr "Użyj podpowiedzi słów"
+
+#: ui/frmOptions.xrc:722
+msgid "Replace variables in a query"
+msgstr "Zastępuj zmienne w zapytaniu"
+
+#: ui/frmOptions.xrc:821
+msgid "Use system background color caret line"
+msgstr "Użyj systemowego koloru tła dla linii kursora"
+
+#: ui/frmOptions.xrc:876
+msgid "Width for keyboard layout"
+msgstr "Szerokość dla układu klawiatury"
+
+#: ui/frmOptions.xrc:1227
+msgid "Select file to store favourites queries"
+msgstr "Wybierz plik do przechowywania ulubionych zapytań"
+
+#: ui/frmOptions.xrc:1255
+msgid "Select file to store macros"
+msgstr "Wybierz plik do przechowywania makr"
+
+#: ui/frmOptions.xrc:1283
+msgid "Select file to store queries history"
+msgstr "Wybierz plik do przechowywania historii zapytań"
+
+#: ui/frmOptions.xrc:1388
+msgid "Blocked by Process Colour"
+msgstr "Kolor procesu zablokowanego"
+
+#: ui/frmOptions.xrc:1402
+msgid "Idle&in&transaction&session&timeout Process Colour"
+msgstr "Kolor procesu Idle&in&transaction&session&timeout"
+
+#: frm/mathplot.cpp:1424
+msgid "Center"
+msgstr "Wyśrodkuj"
+
+#: frm/mathplot.cpp:1425
+msgid "Center plot view to this position"
+msgstr "Wyśrodkuj widok wykresu na tej pozycji"
+
+#: frm/mathplot.cpp:1426
+msgid "Fit"
+msgstr "Dopasuj"
+
+#: frm/mathplot.cpp:1426
+msgid "Set plot view to show all items"
+msgstr "Ustaw widok wykresu tak, aby pokazywał wszystkie elementy"
+
+#: frm/mathplot.cpp:1427
+msgid "Zoom in"
+msgstr "Powiększ"
+
+#: frm/mathplot.cpp:1427
+msgid "Zoom in plot view."
+msgstr "Powiększ widok wykresu."
+
+#: frm/mathplot.cpp:1428
+msgid "Zoom out"
+msgstr "Pomniejsz"
+
+#: frm/mathplot.cpp:1428
+msgid "Zoom out plot view."
+msgstr "Pomniejsz widok wykresu."
+
+#: frm/mathplot.cpp:1431
+msgid "Show mouse commands..."
+msgstr "Pokaż polecenia myszy..."
+
+#: frm/mathplot.cpp:1432
+msgid "Show help about the mouse commands."
+msgstr "Pokaż pomoc dotyczącą poleceń myszy."
+
+#: frm/mathplot.cpp:1935
+msgid "wxMathPlot help"
+msgstr "Pomoc wxMathPlot"
+
+#: dd/dditems/figures/xml/ddXmlStorage.cpp:91
+msgid "Error saving model: not source model have been set"
+msgstr "Błąd zapisu modelu: nie ustawiono modelu źródłowego"
+
+#: dd/dditems/figures/xml/ddXmlStorage.cpp:123
+msgid "Fatal Error at libxml for figure persistency"
+msgstr "Błąd krytyczny libxml przy zapisie figury"
+
+#: dd/dditems/figures/xml/ddXmlStorage.cpp:624
+msgid "Model is not following embedded DTD definition, check it.\n"
+msgstr "Model nie jest zgodny z osadzoną definicją DTD, sprawdź go.\n"
+
+#: dd/dditems/figures/xml/ddXmlStorage.cpp:656
+msgid "Failed to load document from disk"
+msgstr "Nie udało się wczytać dokumentu z dysku"
+
+#: dd/dditems/figures/xml/ddXmlStorage.cpp:754
+msgid "Invalid version of XML file for pgAdmin database designer found"
+msgstr "Znaleziono nieprawidłową wersję pliku XML projektanta bazy danych pgAdmin"
+
+#: dd/dditems/figures/xml/ddXmlStorage.cpp:754
+msgid "Invalid XML"
+msgstr "Nieprawidłowy XML"
+
+#: dd/dditems/figures/xml/ddXmlStorage.cpp:1054
+msgid "Table initial metadata info not found"
+msgstr "Nie znaleziono początkowych metadanych tabeli"
+
+#: frm/frmOptions.cpp:1
+msgid "Appearance"
+msgstr "Wygląd"
+
+#: frm/frmOptions.cpp:2
+msgid "Automatic"
+msgstr "Automatyczny"
+
+#: frm/frmOptions.cpp:3
+msgid "Light"
+msgstr "Jasny"
+
+#: frm/frmOptions.cpp:4
+msgid "Dark"
+msgstr "Ciemny"
+
+#: frm/frmOptions.cpp:5
+msgid "Restart pgAdmin III to fully apply the appearance change."
+msgstr "Uruchom ponownie pgAdmin III, aby w pełni zastosować zmianę wyglądu."

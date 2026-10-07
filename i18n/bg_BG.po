@@ -23968,4 +23968,402 @@ msgstr "Типове"
 #~ msgid "|"
 #~ msgstr "|"
 
+#: pgAdmin3.cpp:389
+msgid "open server log window"
+msgstr "отваряне на прозореца с дневника на сървъра"
 
+#: pgAdmin3.cpp:403
+msgid "export servers configuration to file pgadmin3.ini"
+msgstr "експортиране на конфигурацията на сървърите във файл pgadmin3.ini"
+
+#: pgAdmin3.cpp:404
+msgid "Enable Dark mode"
+msgstr "Включване на тъмен режим"
+
+#: pgAdmin3.cpp:1013
+msgid "Log - "
+msgstr "Дневник - "
+
+#: pro_scheduler/pgproJob.cpp:36
+msgid "Retrieving details on pro_scheduler job"
+msgstr "Извличане на подробности за задача pro_scheduler"
+
+#: pro_scheduler/pgproJob.cpp:39
+msgid "Refreshing pro_scheduler job"
+msgstr "Обновяване на задача pro_scheduler"
+
+#: pro_scheduler/pgproJob.cpp:42
+msgid "pro_scheduler job properties report"
+msgstr "Отчет за свойствата на задача pro_scheduler"
+
+#: pro_scheduler/pgproJob.cpp:48
+msgid "pro_scheduler job DDL report"
+msgstr "Отчет за DDL на задача pro_scheduler"
+
+#: pro_scheduler/pgproJob.cpp:51
+msgid "pro_scheduler job dependencies report"
+msgstr "Отчет за зависимостите на задача pro_scheduler"
+
+#: pro_scheduler/pgproJob.cpp:54
+msgid "pro_scheduler job dependencies"
+msgstr "Зависимости на задача pro_scheduler"
+
+#: pro_scheduler/pgproJob.cpp:57
+msgid "pro_scheduler job dependents report"
+msgstr "Отчет за зависимите от задача pro_scheduler"
+
+#: pro_scheduler/pgproJob.cpp:60
+msgid "pro_scheduler job dependents"
+msgstr "Зависими от задача pro_scheduler"
+
+#: pro_scheduler/pgproJob.cpp:140
+msgid "Started"
+msgstr "Стартирана"
+
+#: pro_scheduler/pgproJob.cpp:141
+msgid "Finished"
+msgstr "Завършена"
+
+#: pro_scheduler/pgproJob.cpp:143
+msgid "Crontab"
+msgstr "Crontab"
+
+#: pro_scheduler/pgproJob.cpp:146
+msgid "Runas"
+msgstr "Runas"
+
+#: pro_scheduler/pgproJob.cpp:152
+msgid "Next start job"
+msgstr "Следващо стартиране на задачата"
+
+#: pro_scheduler/pgproJob.cpp:185
+msgid "Previous sched time run skip"
+msgstr "Пропуснато предишно планирано време"
+
+#: pro_scheduler/pgproJob.cpp:254
+msgid "Not run"
+msgstr "Не е изпълнена"
+
+#: pro_scheduler/pgproJob.cpp:356
+msgid "Log_time"
+msgstr "Log_time"
+
+#: pro_scheduler/pgproJob.cpp:357
+msgid "Critical"
+msgstr "Критично"
+
+#: pro_scheduler/pgproJob.cpp:359
+msgid "Stage"
+msgstr "Етап"
+
+#: pro_scheduler/pgproJob.cpp:505
+msgid "Enabled or disabled job"
+msgstr "Включена или изключена задача"
+
+#: frm/frmQuery.cpp:4689
+msgid "Please enter name string with prefix dbname or description server\n"
+msgstr "Моля, въведете низ с име с префикс dbname или описание на сървъра\n"
+
+#: frm/frmQuery.cpp:4691
+msgid "Name autosave tab window."
+msgstr "Име на прозореца за автоматично запазване на раздели."
+
+#: frm/frmOptions.cpp:615
+msgid "Color theme save to file %s"
+msgstr "Цветовата тема е запазена във файл %s"
+
+#: frm/frmOptions.cpp:637
+msgid "Color theme load from file %s"
+msgstr "Цветовата тема е заредена от файл %s"
+
+#: frm/frmOptions.cpp:638
+msgid "Load theme"
+msgstr "Зареждане на тема"
+
+#: schema/pgServer.cpp:1253
+msgid "Key words"
+msgstr "Ключови думи"
+
+#: hotdraw/utilities/hdRemoveDeleteDialog.cpp:117
+msgid "     Choose Remove from Diagram to remove only from current diagram.     "
+msgstr "     Изберете Премахване от диаграмата, за да премахнете само от текущата диаграма.     "
+
+#: hotdraw/utilities/hdRemoveDeleteDialog.cpp:118
+msgid "     Choose Remove from Model to delete permanently.     "
+msgstr "     Изберете Премахване от модела, за да изтриете окончателно.     "
+
+#: hotdraw/main/hdDrawingView.cpp:457
+msgid "Sample Item"
+msgstr "Примерен елемент"
+
+#: hotdraw/main/hdDrawingView.cpp:466
+msgid "Sample menu item"
+msgstr "Примерен елемент на менюто"
+
+#: hotdraw/main/hdDrawingView.cpp:466
+msgid "Sample"
+msgstr "Пример"
+
+#: hotdraw/main/hdDrawingEditor.cpp:267
+msgid "Are you sure you wish to delete figure ?"
+msgstr "Сигурни ли сте, че искате да изтриете фигурата?"
+
+#: hotdraw/main/hdDrawingEditor.cpp:267
+msgid "Delete figures?"
+msgstr "Изтриване на фигури?"
+
+#: hotdraw/main/hdDrawingEditor.cpp:272
+msgid "Are you sure you wish to delete %d figures?"
+msgstr "Сигурни ли сте, че искате да изтриете %d фигури?"
+
+#: ui/dlgFindReplace.xrc:65
+msgid "All find tabs"
+msgstr "Всички раздели за търсене"
+
+#: ui/dlgProJob.xrc:105
+msgid "Run as"
+msgstr "Изпълнение като"
+
+#: ui/dlgProJob.xrc:195
+msgid "Commands"
+msgstr "Команди"
+
+#: ui/dlgProJob.xrc:234
+msgid "use same transaction"
+msgstr "използване на същата транзакция"
+
+#: ui/dlgServer.xrc:190
+msgid "Select SSL Root Certificate File"
+msgstr "Изберете файл с основен SSL сертификат"
+
+#: ui/dlgServer.xrc:206
+msgid "Select SSL Certificate Revocation List File"
+msgstr "Изберете файл със списък за отмяна на SSL сертификати"
+
+#: ui/dlgServer.xrc:222
+msgid "Select SSL certificate file"
+msgstr "Изберете файл със SSL сертификат"
+
+#: ui/dlgServer.xrc:238
+msgid "Select SSL key file"
+msgstr "Изберете файл със SSL ключ"
+
+#: ui/dlgServer.xrc:361
+msgid "Select identity file"
+msgstr "Изберете файл с идентичност"
+
+#: ui/dlgServer.xrc:377
+msgid "Select public key file"
+msgstr "Изберете файл с публичен ключ"
+
+#: ui/dlgServer.xrc:466
+msgid "Connect str"
+msgstr "Низ за връзка"
+
+#: ui/dlgTransformText.xrc:5
+msgid "Transform text"
+msgstr "Трансформиране на текст"
+
+#: ui/dlgTransformText.xrc:17
+msgid "Source text options"
+msgstr "Опции на изходния текст"
+
+#: ui/dlgTransformText.xrc:33
+msgid "PCRE regexp"
+msgstr "PCRE регулярен израз"
+
+#: ui/dlgTransformText.xrc:50
+msgid "Replace expression"
+msgstr "Израз за замяна"
+
+#: ui/dlgTransformText.xrc:67
+msgid "Rows limit"
+msgstr "Ограничение на редовете"
+
+#: ui/dlgTransformText.xrc:87
+msgid "Chars limit"
+msgstr "Ограничение на знаците"
+
+#: ui/dlgTransformText.xrc:107
+msgid "Refresh highlight"
+msgstr "Обновяване на осветяването"
+
+#: ui/dlgTransformText.xrc:124
+msgid "Source text"
+msgstr "Изходен текст"
+
+#: ui/dlgTransformText.xrc:160
+msgid "Transform text options"
+msgstr "Опции за трансформиране на текст"
+
+#: ui/dlgTransformText.xrc:176
+msgid "Append before row"
+msgstr "Добавяне преди реда"
+
+#: ui/dlgTransformText.xrc:196
+msgid "After row"
+msgstr "След реда"
+
+#: ui/dlgTransformText.xrc:230
+msgid "Field separator"
+msgstr "Разделител на полета"
+
+#: ui/dlgTransformText.xrc:267
+msgid "Load options"
+msgstr "Опции за зареждане"
+
+#: ui/dlgTransformText.xrc:276
+msgid "First"
+msgstr "Първи"
+
+#: ui/dlgTransformText.xrc:335
+msgid "Rows loading"
+msgstr "Зареждане на редове"
+
+#: ui/frmAwr.xrc:6
+msgid "AWR report"
+msgstr "AWR отчет"
+
+#: ui/frmAwr.xrc:36
+msgid "Type report"
+msgstr "Тип отчет"
+
+#: ui/frmAwr.xrc:39
+msgid "Report"
+msgstr "Отчет"
+
+#: ui/frmAwr.xrc:40
+msgid "Diff report"
+msgstr "Отчет за разликите"
+
+#: ui/frmAwr.xrc:104
+msgid "Start Id1"
+msgstr "Начало Id1"
+
+#: ui/frmAwr.xrc:123
+msgid "End Id1"
+msgstr "Край Id1"
+
+#: ui/frmAwr.xrc:166
+msgid "Start Id2"
+msgstr "Начало Id2"
+
+#: ui/frmAwr.xrc:185
+msgid "End Id2"
+msgstr "Край Id2"
+
+#: ui/frmExport.xrc:110
+msgid "format COPY"
+msgstr "формат COPY"
+
+#: ui/frmExport.xrc:116
+msgid "Xls fmt copy"
+msgstr "Копиране във формат Xls"
+
+#: ui/frmImport.xrc:33
+msgid "Select the file to import"
+msgstr "Изберете файла за импортиране"
+
+#: ui/frmOptions.xrc:131
+msgid "Select theme"
+msgstr "Избор на тема"
+
+#: ui/frmOptions.xrc:154
+msgid "Load"
+msgstr "Зареждане"
+
+#: ui/frmOptions.xrc:222
+msgid "Options extended JSON:"
+msgstr "Разширени JSON опции:"
+
+#: ui/frmOptions.xrc:261
+msgid "Beautiful big numbers on the statistics page"
+msgstr "Красиви големи числа на страницата със статистика"
+
+#: ui/frmOptions.xrc:272
+msgid "Show the dependencies of functions on tables,views,functions"
+msgstr "Показване на зависимостите на функциите от таблици, изгледи, функции"
+
+#: ui/frmOptions.xrc:457
+msgid "Show DB name in tree"
+msgstr "Показване на името на БД в дървото"
+
+#: ui/frmOptions.xrc:465
+msgid "Quick jump to the root node"
+msgstr "Бърз преход към корена"
+
+#: ui/frmOptions.xrc:635
+msgid "Select utility to format text"
+msgstr "Изберете помощна програма за форматиране на текст"
+
+#: ui/frmOptions.xrc:645
+msgid "External alignment utlity"
+msgstr "Външна помощна програма за подравняване"
+
+#: ui/frmOptions.xrc:662
+msgid "Enable ASUTP style"
+msgstr "Включване на ASUTP стил"
+
+#: ui/frmOptions.xrc:677
+msgid "Hide query history"
+msgstr "Скриване на историята на заявките"
+
+#: ui/frmOptions.xrc:692
+msgid "Auto save query text"
+msgstr "Автоматично запазване на текста на заявките"
+
+#: ui/frmOptions.xrc:707
+msgid "Use word hints"
+msgstr "Използване на подсказки за думи"
+
+#: ui/frmOptions.xrc:722
+msgid "Replace variables in a query"
+msgstr "Замяна на променливи в заявка"
+
+#: ui/frmOptions.xrc:821
+msgid "Use system background color caret line"
+msgstr "Използване на системния цвят на фона за реда с курсора"
+
+#: ui/frmOptions.xrc:876
+msgid "Width for keyboard layout"
+msgstr "Ширина за клавиатурната подредба"
+
+#: ui/frmOptions.xrc:1227
+msgid "Select file to store favourites queries"
+msgstr "Изберете файл за съхранение на любимите заявки"
+
+#: ui/frmOptions.xrc:1255
+msgid "Select file to store macros"
+msgstr "Изберете файл за съхранение на макроси"
+
+#: ui/frmOptions.xrc:1283
+msgid "Select file to store queries history"
+msgstr "Изберете файл за съхранение на историята на заявките"
+
+#: ui/frmOptions.xrc:1388
+msgid "Blocked by Process Colour"
+msgstr "Цвят на блокиран процес"
+
+#: ui/frmOptions.xrc:1402
+msgid "Idle&in&transaction&session&timeout Process Colour"
+msgstr "Цвят&на&процес&със&изтекло време в бездействие в транзакция"
+
+#: frm/frmOptions.cpp:1
+msgid "Appearance"
+msgstr "Външен вид"
+
+#: frm/frmOptions.cpp:2
+msgid "Automatic"
+msgstr "Автоматично"
+
+#: frm/frmOptions.cpp:3
+msgid "Light"
+msgstr "Светъл"
+
+#: frm/frmOptions.cpp:4
+msgid "Dark"
+msgstr "Тъмен"
+
+#: frm/frmOptions.cpp:5
+msgid "Restart pgAdmin III to fully apply the appearance change."
+msgstr "Рестартирайте pgAdmin III, за да се приложи напълно промяната във външния вид."

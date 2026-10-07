@@ -283,9 +283,27 @@ wxString qtTypeIdent(const wxString &value);    // add " if necessary
 bool make_identifier(const wxString &strname, wxString &s, wxString &n, bool islower);
 wxSize getScreenSizeForPoint(const wxPoint screenPos);
 void showHelpHtml(wxWindow *parent, const wxString &htmlHelp,wxPoint screenPos, wxSize size);
+wxString GetLinkColor();
+bool isDark();
+wxColour AddColorComponent(const wxColour &src, int delta);
 wxString getTextParameter(const wxString section, const wxString namepar);
 bool isPortOpen(const wxString& host, int port , int timeout_ms);
 FunctionPGHelper* GetFunctionPGHelper();
+
+#ifdef __WXMAC__
+// Apply the appearance setting (0 = system, 1 = light, 2 = dark) to the whole app
+void ApplyAppearanceMode(int mode);
+#endif
+
+#ifdef __WXMAC__
+// The native NSAlert behind wxMessageBox aborts intermittently on recent macOS
+// (alert icon rendered with a zero size), so route message boxes through the
+// generic wx dialog there.
+int pgMessageBox(const wxString &message, const wxString &caption = wxMessageBoxCaptionStr,
+                 long style = wxOK | wxCENTRE, wxWindow *parent = NULL,
+                 int x = wxDefaultCoord, int y = wxDefaultCoord);
+#define wxMessageBox pgMessageBox
+#endif
 
 #endif
 

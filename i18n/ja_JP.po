@@ -31989,3 +31989,1759 @@ msgstr "|"
 
 #~ msgid "Get Token"
 #~ msgstr "トークン取得"
+
+#: pgAdmin3.cpp:389
+msgid "open server log window"
+msgstr "サーバログウィンドウを開く"
+
+#: pgAdmin3.cpp:403
+msgid "export servers configuration to file pgadmin3.ini"
+msgstr "サーバ設定をファイル pgadmin3.ini にエクスポートする"
+
+#: pgAdmin3.cpp:404
+msgid "Enable Dark mode"
+msgstr "ダークモードを有効にする"
+
+#: pgAdmin3.cpp:1013
+msgid "Log - "
+msgstr "ログ - "
+
+#: ctl/ctlTreeJSON.cpp:73
+msgid "Please enter find string\n"
+msgstr "検索する文字列を入力してください\n"
+
+#: ctl/ctlSQLGrid.cpp:993
+msgid "The line size is [ %s ] characters, do you want to continue?"
+msgstr "行の長さが [ %s ] 文字です。続行しますか?"
+
+#: ctl/ctlSQLBox.cpp:1426
+msgid "All line (use all EOL)"
+msgstr "すべての行 (すべての EOL を使用)"
+
+#: ctl/ctlSQLBox.cpp:1427
+msgid "First line pattern (ignore all but the first EOL)"
+msgstr "先頭行パターン (最初の EOL 以外は無視)"
+
+#: ctl/ctlSQLBox.cpp:1428
+msgid "Try looking for patterns above"
+msgstr "上記のパターンを検索してみてください"
+
+#: ctl/ctlSQLBox.cpp:1429
+msgid "Compact view"
+msgstr "コンパクト表示"
+
+#: ctl/ctlSQLBox.cpp:1430
+msgid "Remove multi spaces"
+msgstr "連続する空白を削除"
+
+#: ctl/ctlSQLBox.cpp:1432
+msgid "A multi-choice convenience dialog"
+msgstr "複数選択の簡易ダイアログ"
+
+#: ctl/ctlSQLBox.cpp:1433
+msgid "Please select several align options"
+msgstr "整列オプションを複数選択してください"
+
+#: ctl/ctlSQLBox.cpp:1459
+msgid "Aligning complete."
+msgstr "整列が完了しました。"
+
+#: ctl/ctlSQLBox.cpp:1476
+msgid "Formatting Ok"
+msgstr "フォーマット完了"
+
+#: ctl/ctlSQLBox.cpp:1500
+msgid "Couldn't run aligning command: "
+msgstr "整列コマンドを実行できませんでした: "
+
+#: ctl/ctlSQLBox.cpp:1522
+msgid "Aligning command did not respond in %d ms"
+msgstr "整列コマンドが %d ms 以内に応答しませんでした"
+
+#: ctl/ctlSQLBox.cpp:1534
+msgid "Aligning command error: Output is empty."
+msgstr "整列コマンドエラー: 出力が空です。"
+
+#: ctl/ctlListView.cpp:63
+msgid "CFS fragmentation"
+msgstr "CFS 断片化"
+
+#: ctl/ctlListView.cpp:70
+msgid "CFS %"
+msgstr "CFS %"
+
+#: ctl/ctlNavigatePanel.cpp:46
+msgid "Search for a simple string."
+msgstr "単純な文字列を検索します。"
+
+#: ctl/ctlNavigatePanel.cpp:50
+msgid "Go to the next marker."
+msgstr "次のマーカーへ移動します。"
+
+#: ctl/ctlNavigatePanel.cpp:56
+msgid "Go to the next marker of the same type."
+msgstr "同じ種類の次のマーカーへ移動します。"
+
+#: ctl/ctlNavigatePanel.cpp:61
+msgid "The next occurrence of the string."
+msgstr "文字列の次の出現箇所。"
+
+#: ctl/ctlNavigatePanel.cpp:66
+msgid "Previous occurrence of the string."
+msgstr "文字列の前の出現箇所。"
+
+#: ctl/ctlNavigatePanel.cpp:71
+msgid "Find all strings content current row Pid."
+msgstr "現在行の Pid を含むすべての文字列を検索します。"
+
+#: ctl/ctlNavigatePanel.cpp:76
+msgid "Find all strings content current row State."
+msgstr "現在行の State を含むすべての文字列を検索します。"
+
+#: ctl/ctlNavigatePanel.cpp:81
+msgid "Enable/disable auto hint."
+msgstr "自動ヒントの有効/無効を切り替えます。"
+
+#: ctl/ctlNavigatePanel.cpp:309
+msgid "Incorrect hotkey \"%s\" for command \"%s\""
+msgstr "ホットキー \"%s\" はコマンド \"%s\" に対して正しくありません"
+
+#: ctl/ctlSQLResult.cpp:390
+msgid "Incorrect flag at the '%s' column."
+msgstr "'%s' 列のフラグが正しくありません。"
+
+#: ctl/ctlSQLResult.cpp:412
+msgid "The column name empty. '%s' ."
+msgstr "列名が空です。'%s' 。"
+
+#: ctl/ctlSQLResult.cpp:418
+msgid "The column name '%s' was not found in the query results."
+msgstr "列名 '%s' がクエリ結果に見つかりませんでした。"
+
+#: ctl/ctlSQLResult.cpp:442
+msgid "The column name  '%s' is not closed."
+msgstr "列名 '%s' が閉じられていません。"
+
+#: dlg/dlgForeignTable.cpp:169
+msgid "Type %s not found in cbDatatype(%d)\n"
+msgstr "型 %s が cbDatatype(%d) に見つかりません\n"
+
+#: pro_scheduler/pgproJob.cpp:36
+msgid "Retrieving details on pro_scheduler job"
+msgstr "pro_scheduler ジョブの詳細を取得しています"
+
+#: pro_scheduler/pgproJob.cpp:39
+msgid "Refreshing pro_scheduler job"
+msgstr "pro_scheduler ジョブを更新しています"
+
+#: pro_scheduler/pgproJob.cpp:42
+msgid "pro_scheduler job properties report"
+msgstr "pro_scheduler ジョブのプロパティレポート"
+
+#: pro_scheduler/pgproJob.cpp:48
+msgid "pro_scheduler job DDL report"
+msgstr "pro_scheduler ジョブの DDL レポート"
+
+#: pro_scheduler/pgproJob.cpp:51
+msgid "pro_scheduler job dependencies report"
+msgstr "pro_scheduler ジョブの属性情報レポート"
+
+#: pro_scheduler/pgproJob.cpp:54
+msgid "pro_scheduler job dependencies"
+msgstr "pro_scheduler ジョブの属性情報"
+
+#: pro_scheduler/pgproJob.cpp:57
+msgid "pro_scheduler job dependents report"
+msgstr "pro_scheduler ジョブの依存関係レポート"
+
+#: pro_scheduler/pgproJob.cpp:60
+msgid "pro_scheduler job dependents"
+msgstr "pro_scheduler ジョブの依存関係"
+
+#: pro_scheduler/pgproJob.cpp:140
+msgid "Started"
+msgstr "開始済み"
+
+#: pro_scheduler/pgproJob.cpp:141
+msgid "Finished"
+msgstr "完了"
+
+#: pro_scheduler/pgproJob.cpp:143
+msgid "Crontab"
+msgstr "Crontab"
+
+#: pro_scheduler/pgproJob.cpp:146
+msgid "Runas"
+msgstr "実行ユーザ"
+
+#: pro_scheduler/pgproJob.cpp:152
+msgid "Next start job"
+msgstr "ジョブの次回開始"
+
+#: pro_scheduler/pgproJob.cpp:185
+msgid "Previous sched time run skip"
+msgstr "前回のスケジュール時刻の実行をスキップ"
+
+#: pro_scheduler/pgproJob.cpp:254
+msgid "Not run"
+msgstr "未実行"
+
+#: pro_scheduler/pgproJob.cpp:356
+msgid "Log_time"
+msgstr "Log_time"
+
+#: pro_scheduler/pgproJob.cpp:357
+msgid "Critical"
+msgstr "重大"
+
+#: pro_scheduler/pgproJob.cpp:359
+msgid "Stage"
+msgstr "ステージ"
+
+#: pro_scheduler/pgproJob.cpp:505
+msgid "Enabled or disabled job"
+msgstr "ジョブの有効/無効"
+
+#: utils/misc.cpp:201
+msgid "Bi"
+msgstr "10億"
+
+#: utils/misc.cpp:202
+msgid "Mi"
+msgstr "100万"
+
+#: utils/misc.cpp:203
+msgid "ths"
+msgstr "千"
+
+#: utils/FunctionPGHelper.cpp:238
+msgid "'The database is closed in the object browser.'"
+msgstr "'データベースはオブジェクトブラウザで閉じられています。'"
+
+#: utils/dlgTransformText.cpp:76
+msgid "Transformation text"
+msgstr "変換テキスト"
+
+#: utils/macros.cpp:272
+msgid "Failed to load AutoReplace file!"
+msgstr "AutoReplace ファイルを読み込めませんでした!"
+
+#: utils/macros.cpp:279
+msgid "Failed to read AutoReplace file!"
+msgstr "AutoReplace ファイルを読み取れませんでした!"
+
+#: utils/macros.cpp:298
+msgid "Failed to open AutoReplace file!"
+msgstr "AutoReplace ファイルを開けませんでした!"
+
+#: utils/macros.cpp:306
+msgid "Failed to write to AutoReplace file!"
+msgstr "AutoReplace ファイルに書き込めませんでした!"
+
+#: utils/sysSettings.cpp:95
+msgid "pgpro_scheduler"
+msgstr "pgpro_scheduler"
+
+#: utils/sysSettings.cpp:139
+msgid "Publications"
+msgstr "パブリケーション"
+
+#: utils/sshTunnel.cpp:618
+msgid " [%s]"
+msgstr " [%s]"
+
+#: frm/frmEditGrid.cpp:3383
+msgid "View F&iltered Rows...\tCtrl-F"
+msgstr "フィルタ済みの行を表示(&I)...\tCtrl-F"
+
+#: frm/frmEditGrid.cpp:3384
+msgid "View Filtered Rows\tCtrl-F"
+msgstr "フィルタ済みの行を表示\tCtrl-F"
+
+#: frm/frmQuery.cpp:384
+msgid "New SQL &tab\tCtrl-T"
+msgstr "新規 SQL タブ(&T)\tCtrl-T"
+
+#: frm/frmQuery.cpp:384
+msgid "Open a new query tab"
+msgstr "新しいクエリタブを開く"
+
+#: frm/frmQuery.cpp:387
+msgid "&Export...\tAlt+E"
+msgstr "エクスポート(&E)...\tAlt+E"
+
+#: frm/frmQuery.cpp:422
+msgid "Double the single quote\tCtrl-'"
+msgstr "単一引用符を二重にする\tCtrl-'"
+
+#: frm/frmQuery.cpp:422
+msgid "Double the single quote"
+msgstr "単一引用符を二重にする"
+
+#: frm/frmQuery.cpp:423
+msgid "Undouble the single quote\tCtrl-Shift-'"
+msgstr "単一引用符の二重化を解除する\tCtrl-Shift-'"
+
+#: frm/frmQuery.cpp:423
+msgid "Undouble the single quote"
+msgstr "単一引用符の二重化を解除する"
+
+#: frm/frmQuery.cpp:426
+msgid "External Align...\tCtrl-Shift-A"
+msgstr "外部整列...\tCtrl-Shift-A"
+
+#: frm/frmQuery.cpp:426
+msgid "Call external align command"
+msgstr "外部整列コマンドを呼び出す"
+
+#: frm/frmQuery.cpp:429
+msgid "Manage autoreplace..."
+msgstr "自動置換の管理..."
+
+#: frm/frmQuery.cpp:429
+msgid "Edit and delete autoreplace strings"
+msgstr "自動置換文字列を編集・削除する"
+
+#: frm/frmQuery.cpp:430
+msgid "Open object\tF4"
+msgstr "オブジェクトを開く\tF4"
+
+#: frm/frmQuery.cpp:430
+msgid "Open object in brouser tree"
+msgstr "ブラウザツリーでオブジェクトを開く"
+
+#: frm/frmQuery.cpp:431
+msgid "Text transform...\tCtrl+M"
+msgstr "テキスト変換...\tCtrl+M"
+
+#: frm/frmQuery.cpp:431
+msgid "Open dialog transform"
+msgstr "変換ダイアログを開く"
+
+#: frm/frmQuery.cpp:438
+msgid "&Execute\tF8"
+msgstr "実行(&E)\tF8"
+
+#: frm/frmQuery.cpp:439
+msgid "&Execute new output\tShift-F8"
+msgstr "新しい出力に実行(&E)\tShift-F8"
+
+#: frm/frmQuery.cpp:439
+msgid "Execute query in new output"
+msgstr "新しい出力でクエリを実行"
+
+#: frm/frmQuery.cpp:441
+msgid "Execute to file\tF5"
+msgstr "ファイルへ実行\tF5"
+
+#: frm/frmQuery.cpp:456
+msgid "&Auto-Select"
+msgstr "自動選択(&A)"
+
+#: frm/frmQuery.cpp:456
+msgid "Auto select query"
+msgstr "クエリを自動選択"
+
+#: frm/frmQuery.cpp:462
+msgid "Commit\tF10"
+msgstr "反映\tF10"
+
+#: frm/frmQuery.cpp:463
+msgid "Rollback\tShift-F10"
+msgstr "ロールバック\tShift-F10"
+
+#: frm/frmQuery.cpp:617
+msgid "New SQL tab"
+msgstr "新規 SQL タブ"
+
+#: frm/frmQuery.cpp:624
+msgid "Compare the selected text with the clipboard"
+msgstr "選択したテキストをクリップボードと比較"
+
+#: frm/frmQuery.cpp:646
+msgid "Mode transaction"
+msgstr "トランザクションモード"
+
+#: frm/frmQuery.cpp:2245
+msgid "Copy Insert format"
+msgstr "Insert 形式でコピー"
+
+#: frm/frmQuery.cpp:2245
+msgid "Copy Insert format."
+msgstr "Insert 形式でコピー。"
+
+#: frm/frmQuery.cpp:2246
+msgid "List columns header"
+msgstr "列ヘッダ一覧"
+
+#: frm/frmQuery.cpp:2246
+msgid "Copy list columns header"
+msgstr "列ヘッダ一覧をコピー"
+
+#: frm/frmQuery.cpp:2247
+msgid "IN list format copy"
+msgstr "IN リスト形式でコピー"
+
+#: frm/frmQuery.cpp:2247
+msgid "Copy In list format."
+msgstr "IN リスト形式でコピー。"
+
+#: frm/frmQuery.cpp:2248
+msgid "WHERE list format copy"
+msgstr "WHERE リスト形式でコピー"
+
+#: frm/frmQuery.cpp:2248
+msgid "Copy where list format."
+msgstr "WHERE リスト形式でコピー。"
+
+#: frm/frmQuery.cpp:2249
+msgid "Copy table html format"
+msgstr "テーブルを HTML 形式でコピー"
+
+#: frm/frmQuery.cpp:2249
+msgid "Copy table html format."
+msgstr "テーブルを HTML 形式でコピー。"
+
+#: frm/frmQuery.cpp:2269
+msgid "Draw plot LY(bar) or LXY or XYYY..."
+msgstr "プロットを描画: LY(棒グラフ)、LXY、XYYY..."
+
+#: frm/frmQuery.cpp:2269
+msgid "Draw plot LY(bar) LXY or XYYY..."
+msgstr "プロットを描画: LY(棒グラフ)、LXY、XYYY..."
+
+#: frm/frmQuery.cpp:2270
+msgid "Summary"
+msgstr "サマリ"
+
+#: frm/frmQuery.cpp:2270
+msgid "Summary selected cells."
+msgstr "選択したセルのサマリ。"
+
+#: frm/frmQuery.cpp:2271
+msgid "Compare 2 Cells"
+msgstr "2 つのセルを比較"
+
+#: frm/frmQuery.cpp:2271
+msgid "Compare 2 selected cells."
+msgstr "選択した 2 つのセルを比較。"
+
+#: frm/frmQuery.cpp:2272
+msgid "Check the sequence of dates"
+msgstr "日付の並びを確認"
+
+#: frm/frmQuery.cpp:2273
+msgid "Clear filter"
+msgstr "フィルタをクリア"
+
+#: frm/frmQuery.cpp:2333
+msgid "No template generate."
+msgstr "テンプレートが生成されません。"
+
+#: frm/frmQuery.cpp:2558
+msgid "%i@"
+msgstr "%i@"
+
+#: frm/frmQuery.cpp:3070
+msgid "Out %i"
+msgstr "出力 %i"
+
+#: frm/frmQuery.cpp:3413
+msgid "-- Executing query [%s]:[%s]\n"
+msgstr "-- クエリを実行中 [%s]:[%s]\n"
+
+#: frm/frmQuery.cpp:4241
+msgid "Running aligning command..."
+msgstr "整列コマンドを実行中..."
+
+#: frm/frmQuery.cpp:4471
+msgid "outputPane"
+msgstr "outputPane"
+
+#: frm/frmQuery.cpp:4491
+msgid "Output pane [%s]"
+msgstr "出力ペイン [%s]"
+
+#: frm/frmQuery.cpp:4597
+msgid "Cannot change to selected SQL tab now. Try again a bit later."
+msgstr "現在は選択した SQL タブに切り替えられません。しばらくしてからやり直してください。"
+
+#: frm/frmQuery.cpp:4620
+msgid "Cannot add a new SQL tab now. Try again a bit later."
+msgstr "現在は新しい SQL タブを追加できません。しばらくしてからやり直してください。"
+
+#: frm/frmQuery.cpp:4689
+msgid "Please enter name string with prefix dbname or description server\n"
+msgstr "プレフィックス dbname またはサーバの説明を付けた名前文字列を入力してください\n"
+
+#: frm/frmQuery.cpp:4691
+msgid "Name autosave tab window."
+msgstr "タブウィンドウの自動保存名。"
+
+#: frm/frmQuery.cpp:4717
+msgid "Cannot remove the last SQL tab"
+msgstr "最後の SQL タブは削除できません"
+
+#: frm/frmQuery.cpp:4797
+msgid "Query %d"
+msgstr "クエリ %d"
+
+#: frm/frmQuery.cpp:5148
+msgid "Script Recreate Cascade"
+msgstr "カスケード再作成スクリプト"
+
+#: frm/frmQuery.cpp:5148
+msgid "Start query tool with recreate cascade script."
+msgstr "カスケード再作成スクリプトでクエリツールを起動します。"
+
+#: frm/frmOptions.cpp:61
+msgid "PgAdmin3opt settings"
+msgstr "PgAdmin3opt 設定"
+
+#: frm/frmOptions.cpp:615
+msgid "Color theme save to file %s"
+msgstr "カラーテーマをファイル %s に保存しました"
+
+#: frm/frmOptions.cpp:637
+msgid "Color theme load from file %s"
+msgstr "カラーテーマをファイル %s から読み込みました"
+
+#: frm/frmOptions.cpp:638
+msgid "Load theme"
+msgstr "テーマを読み込む"
+
+#: frm/frmOptions.cpp:1208
+msgid "&Options...\tCtrl-O"
+msgstr "オプション(&O)...\tCtrl-O"
+
+#: frm/frmStatus.cpp:282
+msgid "&Wait trace"
+msgstr "待機トレース(&W)"
+
+#: frm/frmStatus.cpp:282
+msgid "Enable the wait event."
+msgstr "待機イベントを有効にします。"
+
+#: frm/frmStatus.cpp:283
+msgid "&Wait event save"
+msgstr "待機イベントの保存(&W)"
+
+#: frm/frmStatus.cpp:283
+msgid "Enable the wait event save to file sample.dat."
+msgstr "待機イベントをファイル sample.dat に保存することを有効にします。"
+
+#: frm/frmStatus.cpp:320
+msgid "Value parameter pg_wait_sampling.history_size = %ld greet 1000000  monitoring wait events disabled.\n"
+msgstr "パラメータ pg_wait_sampling.history_size = %ld が 1000000 を超えているため、待機イベントの監視は無効です。\n"
+
+#: frm/frmStatus.cpp:383
+msgid "&Query state\tCtrl-Alt-Q"
+msgstr "クエリ状態(&Q)\tCtrl-Alt-Q"
+
+#: frm/frmStatus.cpp:383
+msgid "Show or hide the query state tab."
+msgstr "クエリ状態タブを表示または非表示にします。"
+
+#: frm/frmStatus.cpp:385
+msgid "Append verbose"
+msgstr "verbose を追加"
+
+#: frm/frmStatus.cpp:386
+msgid "Append use buffers"
+msgstr "バッファ使用量を追加"
+
+#: frm/frmStatus.cpp:387
+msgid "Append real timing"
+msgstr "実時間を追加"
+
+#: frm/frmStatus.cpp:388
+msgid "Append triggers"
+msgstr "トリガを追加"
+
+#: frm/frmStatus.cpp:396
+msgid "&Wait"
+msgstr "待機(&W)"
+
+#: frm/frmStatus.cpp:436
+msgid "Highlight items only"
+msgstr "項目のみ強調表示"
+
+#: frm/frmStatus.cpp:517
+msgid "QueryState"
+msgstr "QueryState"
+
+#: frm/frmStatus.cpp:853
+msgid "W_Event_T"
+msgstr "W_Event_T"
+
+#: frm/frmStatus.cpp:854
+msgid "W_Event"
+msgstr "W_Event"
+
+#: frm/frmStatus.cpp:1112
+msgid "Query State"
+msgstr "クエリ状態"
+
+#: frm/frmStatus.cpp:1126
+msgid "Query Text"
+msgstr "クエリテキスト"
+
+#: frm/frmStatus.cpp:1127
+msgid "Plan"
+msgstr "プラン"
+
+#: frm/frmStatus.cpp:1251
+msgid "Functions pg_read_binary_file(text,bigint,bigint,boolean), pg_stat_file(text,boolean),pg_ls_logdir()  permission denied."
+msgstr "関数 pg_read_binary_file(text,bigint,bigint,boolean)、pg_stat_file(text,boolean)、pg_ls_logdir() の権限がありません。"
+
+#: frm/frmStatus.cpp:1716
+msgid "Activity query long execute"
+msgstr "実行時間の長いアクティビティクエリ"
+
+#: frm/frmStatus.cpp:2634
+msgid "Query state status long execute"
+msgstr "実行時間の長いクエリ状態"
+
+#: frm/frmStatus.cpp:2670
+msgid "Refreshing query state list."
+msgstr "クエリ状態の一覧を更新しています。"
+
+#: frm/frmStatus.cpp:2959
+msgid "Wait..."
+msgstr "お待ちください..."
+
+#: frm/frmStatus.cpp:4807
+msgid "&Server Status\tCtrl-S"
+msgstr "サーバステータス(&S)\tCtrl-S"
+
+#: frm/frmPlot.cpp:120
+msgid "Lock aspect"
+msgstr "縦横比を固定"
+
+#: frm/frmPlot.cpp:120
+msgid "Lock horizontal and vertical zoom aspect."
+msgstr "水平・垂直ズームの縦横比を固定します。"
+
+#: frm/frmPlot.cpp:442
+msgid "Save a screenshot"
+msgstr "スクリーンショットを保存"
+
+#: frm/frmLog.cpp:1314
+msgid "Log view..."
+msgstr "ログ表示..."
+
+#: frm/frmLog.cpp:1314
+msgid "Log view CSV format"
+msgstr "ログを CSV 形式で表示"
+
+#: frm/frmMain.cpp:200
+msgid "Git"
+msgstr "Git"
+
+#: frm/frmMain.cpp:472
+msgid "&Server"
+msgstr "サーバ(&S)"
+
+#: frm/frmMain.cpp:472
+msgid "Server menu commands."
+msgstr "サーバメニューのコマンド。"
+
+#: frm/frmMain.cpp:1187
+msgid "Create putty tunnel error."
+msgstr "putty トンネルの作成エラー。"
+
+#: frm/frmAwr.cpp:33
+msgid "Report AWR"
+msgstr "AWR レポート"
+
+#: frm/frmAwr.cpp:33
+msgid "Generate AWR report"
+msgstr "AWR レポートを生成"
+
+#: schema/pgServer.cpp:1253
+msgid "Key words"
+msgstr "キーワード"
+
+#: schema/pgServer.cpp:1338
+msgid "Add connect str"
+msgstr "接続文字列を追加"
+
+#: schema/pgServer.cpp:2264
+msgid "&Set keywords"
+msgstr "キーワードを設定(&S)"
+
+#: schema/pgServer.cpp:2264
+msgid "Set keywords list the selected server."
+msgstr "選択したサーバのキーワード一覧を設定します。"
+
+#: schema/pgServer.cpp:2273
+msgid "Please enter keywords\n"
+msgstr "キーワードを入力してください\n"
+
+#: schema/pgServer.cpp:2275
+msgid "Keywords server"
+msgstr "サーバのキーワード"
+
+#: schema/pgServer.cpp:2374
+msgid "Disconnec&t all servers"
+msgstr "すべてのサーバを切断(&T)"
+
+#: schema/pgServer.cpp:2374
+msgid "Disconnect from all servers."
+msgstr "すべてのサーバから切断します。"
+
+#: schema/pgIndex.cpp:499
+msgid "Check Btree index"
+msgstr "Btree インデックスを検査"
+
+#: schema/pgIndex.cpp:499
+msgid "Check Btree index function bt_index_parent_check(oid,true)"
+msgstr "Btree インデックス検査関数 bt_index_parent_check(oid,true)"
+
+#: schema/pgIndex.cpp:568
+msgid "&Reset index statistics"
+msgstr "インデックス統計をリセット(&R)"
+
+#: schema/pgIndex.cpp:568
+msgid "Reset statistics of the selected index."
+msgstr "選択したインデックスの統計情報をリセットします。"
+
+#: schema/pgIndex.cpp:574
+msgid "Are you sure you wish to reset statistics of this index?"
+msgstr "このインデックスの統計情報をリセットしてもよろしいですか?"
+
+#: schema/pgSubscription.cpp:33
+msgid "Retrieving details on subscription"
+msgstr "サブスクリプションの詳細を取得しています"
+
+#: schema/pgSubscription.cpp:37
+msgid "Refreshing subscription"
+msgstr "サブスクリプションを更新しています"
+
+#: schema/pgSubscription.cpp:41
+msgid "Are you sure you wish to drop subscription \"%s\" including all objects that depend on it?"
+msgstr "サブスクリプション \"%s\" と、それに依存するすべてのオブジェクトを削除してもよろしいですか?"
+
+#: schema/pgSubscription.cpp:45
+msgid "Are you sure you wish to drop subscription \"%s\"?"
+msgstr "サブスクリプション \"%s\" を削除してもよろしいですか?"
+
+#: schema/pgSubscription.cpp:49
+msgid "Drop subscription cascaded?"
+msgstr "サブスクリプションをカスケード削除しますか?"
+
+#: schema/pgSubscription.cpp:52
+msgid "Drop subscription?"
+msgstr "サブスクリプションを削除しますか?"
+
+#: schema/pgSubscription.cpp:55
+msgid "Subscription properties report"
+msgstr "サブスクリプションのプロパティレポート"
+
+#: schema/pgSubscription.cpp:59
+msgid "Subscription properties"
+msgstr "サブスクリプションのプロパティ"
+
+#: schema/pgSubscription.cpp:62
+msgid "Subscription DDL report"
+msgstr "サブスクリプションの DDL レポート"
+
+#: schema/pgSubscription.cpp:66
+msgid "Subscription DDL"
+msgstr "サブスクリプションの DDL"
+
+#: schema/pgSubscription.cpp:69
+msgid "Subscription dependencies report"
+msgstr "サブスクリプションの属性情報レポート"
+
+#: schema/pgSubscription.cpp:73
+msgid "Subscription dependencies"
+msgstr "サブスクリプションの属性情報"
+
+#: schema/pgSubscription.cpp:76
+msgid "Subscription dependents report"
+msgstr "サブスクリプションの依存関係レポート"
+
+#: schema/pgSubscription.cpp:80
+msgid "Subscription dependents"
+msgstr "サブスクリプションの依存関係"
+
+#: schema/pgSubscription.cpp:210
+msgid "Retrieving details on subscriptions"
+msgstr "サブスクリプションの詳細を取得しています"
+
+#: schema/pgSubscription.cpp:213
+msgid "Refreshing subscriptions"
+msgstr "サブスクリプションを更新しています"
+
+#: schema/pgSubscription.cpp:216
+msgid "Subscriptions list report"
+msgstr "サブスクリプション一覧レポート"
+
+#: schema/pgPublication.cpp:33
+msgid "Retrieving details on publication"
+msgstr "パブリケーションの詳細を取得しています"
+
+#: schema/pgPublication.cpp:37
+msgid "Refreshing publication"
+msgstr "パブリケーションを更新しています"
+
+#: schema/pgPublication.cpp:41
+msgid "Are you sure you wish to drop publication \"%s\" including all objects that depend on it?"
+msgstr "パブリケーション \"%s\" と、それに依存するすべてのオブジェクトを削除してもよろしいですか?"
+
+#: schema/pgPublication.cpp:45
+msgid "Are you sure you wish to drop publication \"%s\"?"
+msgstr "パブリケーション \"%s\" を削除してもよろしいですか?"
+
+#: schema/pgPublication.cpp:49
+msgid "Drop publication cascaded?"
+msgstr "パブリケーションをカスケード削除しますか?"
+
+#: schema/pgPublication.cpp:52
+msgid "Drop publication?"
+msgstr "パブリケーションを削除しますか?"
+
+#: schema/pgPublication.cpp:55
+msgid "Publication properties report"
+msgstr "パブリケーションのプロパティレポート"
+
+#: schema/pgPublication.cpp:59
+msgid "Publication properties"
+msgstr "パブリケーションのプロパティ"
+
+#: schema/pgPublication.cpp:62
+msgid "Publication DDL report"
+msgstr "パブリケーションの DDL レポート"
+
+#: schema/pgPublication.cpp:66
+msgid "Publication DDL"
+msgstr "パブリケーションの DDL"
+
+#: schema/pgPublication.cpp:69
+msgid "Publication dependencies report"
+msgstr "パブリケーションの属性情報レポート"
+
+#: schema/pgPublication.cpp:73
+msgid "Publication dependencies"
+msgstr "パブリケーションの属性情報"
+
+#: schema/pgPublication.cpp:76
+msgid "Publication dependents report"
+msgstr "パブリケーションの依存関係レポート"
+
+#: schema/pgPublication.cpp:80
+msgid "Publication dependents"
+msgstr "パブリケーションの依存関係"
+
+#: schema/pgPublication.cpp:318
+msgid "Retrieving details on publications"
+msgstr "パブリケーションの詳細を取得しています"
+
+#: schema/pgPublication.cpp:321
+msgid "Refreshing publications"
+msgstr "パブリケーションを更新しています"
+
+#: schema/pgPublication.cpp:324
+msgid "Publications list report"
+msgstr "パブリケーション一覧レポート"
+
+#: schema/pgTable.cpp:1096
+msgid "Create table timestamp"
+msgstr "テーブル作成日時"
+
+#: schema/pgObject.cpp:621
+msgid "extension"
+msgstr "拡張機能"
+
+#: schema/pgFunction.cpp:410
+msgid "Parallel"
+msgstr "並列"
+
+#: schema/pgFunction.cpp:426
+msgid "Last change timestamp"
+msgstr "最終変更日時"
+
+#: dd/ddmodel/ddDBReverseEnginering.cpp:175
+msgid "Schema not found"
+msgstr "スキーマが見つかりません"
+
+#: dd/ddmodel/ddDBReverseEnginering.cpp:175
+msgid "getting table OID"
+msgstr "テーブル OID を取得中"
+
+#: dd/ddmodel/ddDBReverseEnginering.cpp:216
+msgid "Table not found"
+msgstr "テーブルが見つかりません"
+
+#: dd/ddmodel/ddDBReverseEnginering.cpp:665
+msgid "Error detecting kind of foreign key source: from Pk or from Uk"
+msgstr "外部キーのソース種別 (Pk か Uk か) の検出でエラーが発生しました"
+
+#: dd/ddmodel/ddDBReverseEnginering.cpp:665
+msgid "Error importing relationship"
+msgstr "リレーションシップのインポートでエラーが発生しました"
+
+#: dd/ddmodel/ddDBReverseEnginering.cpp:786
+msgid "Error detecting kind of foreign key: null or not null"
+msgstr "外部キー種別 (null か not null か) の検出でエラーが発生しました"
+
+#: dd/ddmodel/ddDBReverseEnginering.cpp:1333
+msgid "Error fk is repeated"
+msgstr "エラー: fk が重複しています"
+
+#: dd/ddmodel/ddDBReverseEnginering.cpp:1333
+msgid "Error comparing relationships"
+msgstr "リレーションシップの比較でエラーが発生しました"
+
+#: dd/ddmodel/ddDBReverseEnginering.cpp:1673
+msgid "Please, select a schema to use at import tables process:"
+msgstr "テーブルのインポート処理で使用するスキーマを選択してください:"
+
+#: dd/ddmodel/ddDBReverseEnginering.cpp:1698
+msgid "Please, select a Schema to continue to next step."
+msgstr "次のステップへ進むにはスキーマを選択してください。"
+
+#: dd/ddmodel/ddDBReverseEnginering.cpp:1698
+msgid "Select a Schema..."
+msgstr "スキーマを選択..."
+
+#: dd/ddmodel/ddDBReverseEnginering.cpp:1806
+msgid "Table(s) from selected schema"
+msgstr "選択したスキーマのテーブル"
+
+#: dd/ddmodel/ddDBReverseEnginering.cpp:1811
+msgid "Tables(s) to be imported"
+msgstr "インポートするテーブル"
+
+#: dd/ddmodel/ddDBReverseEnginering.cpp:1826
+msgid "Add the selected table(s)"
+msgstr "選択したテーブルを追加"
+
+#: dd/ddmodel/ddDBReverseEnginering.cpp:1828
+msgid "Add all tables"
+msgstr "すべてのテーブルを追加"
+
+#: dd/ddmodel/ddDBReverseEnginering.cpp:1830
+msgid "Remove the selected table(s)"
+msgstr "選択したテーブルを削除"
+
+#: dd/ddmodel/ddDBReverseEnginering.cpp:1832
+msgid "Remove all tables"
+msgstr "すべてのテーブルを削除"
+
+#: dd/ddmodel/ddDBReverseEnginering.cpp:1981
+msgid "Please, select at least a table to continue to next step."
+msgstr "次のステップへ進むには少なくとも 1 つのテーブルを選択してください。"
+
+#: dd/ddmodel/ddDBReverseEnginering.cpp:1981
+msgid "Select some Tables..."
+msgstr "テーブルを選択..."
+
+#: dd/ddmodel/ddDBReverseEnginering.cpp:1997
+msgid "Error when preparing to import table: "
+msgstr "テーブルのインポート準備中にエラーが発生しました: "
+
+#: dd/ddmodel/ddDBReverseEnginering.cpp:2009
+msgid "Prepared to import table: "
+msgstr "インポート準備完了のテーブル: "
+
+#: dd/ddmodel/ddDBReverseEnginering.cpp:2009
+msgid "\n"
+msgstr "\n"
+
+#: dd/ddmodel/ddDBReverseEnginering.cpp:2029
+msgid "Returning to previous dialog will remove all selected tables, do you like to continue?"
+msgstr "前のダイアログに戻ると選択したすべてのテーブルが削除されます。続行しますか?"
+
+#: dd/ddmodel/ddDBReverseEnginering.cpp:2077
+msgid "Returning to previous dialog will delete imported tables before adding it to the model?"
+msgstr "前のダイアログに戻ると、モデルに追加する前にインポートしたテーブルが削除されます。続行しますか?"
+
+#: dd/ddmodel/ddDrawingView.cpp:33
+msgid "Add new Table"
+msgstr "新しいテーブルを追加"
+
+#: dd/ddmodel/ddDrawingView.cpp:84
+msgid "Table exists already at this diagram"
+msgstr "このダイアグラムには既にテーブルが存在します"
+
+#: dd/ddmodel/ddDrawingView.cpp:84
+msgid "Drag and drop warning"
+msgstr "ドラッグアンドドロップの警告"
+
+#: dd/ddmodel/ddModelBrowser.cpp:39
+msgid "Database Design"
+msgstr "データベース設計"
+
+#: dd/ddmodel/ddGenerationWizard.cpp:99
+msgid "Create table"
+msgstr "テーブルを作成"
+
+#: dd/ddmodel/ddGenerationWizard.cpp:100
+msgid "Alter table"
+msgstr "テーブルを変更"
+
+#: dd/ddmodel/ddGenerationWizard.cpp:100
+msgid "Drop, then create"
+msgstr "削除してから作成"
+
+#: dd/ddmodel/ddGenerationWizard.cpp:100
+msgid "Create table [conflict]"
+msgstr "テーブルを作成 [競合]"
+
+#: dd/ddmodel/ddGenerationWizard.cpp:157
+msgid "Tables(s) to be generated"
+msgstr "生成するテーブル"
+
+#: dd/ddmodel/ddGenerationWizard.cpp:369
+msgid "Please select at least one table to move to next step."
+msgstr "次のステップへ進むには少なくとも 1 つのテーブルを選択してください。"
+
+#: dd/ddmodel/ddGenerationWizard.cpp:369
+msgid "No tables selected"
+msgstr "テーブルが選択されていません"
+
+#: dd/ddmodel/ddGenerationWizard.cpp:396
+msgid "No schema"
+msgstr "スキーマがありません"
+
+#: dd/ddmodel/ddGenerationWizard.cpp:415
+msgid "Please select an item to move to next step."
+msgstr "次のステップへ進むには項目を選択してください。"
+
+#: dd/ddmodel/ddGenerationWizard.cpp:415
+msgid "No choice made"
+msgstr "選択されていません"
+
+#: dd/ddmodel/ddGenerationWizard.cpp:528
+msgid "Please check the choice for each table:"
+msgstr "各テーブルの選択を確認してください:"
+
+#: dd/ddmodel/ddGenerationWizard.cpp:555
+msgid "Select an action"
+msgstr "アクションを選択"
+
+#: dd/ddmodel/ddGenerationWizard.cpp:580
+msgid "Metadata of table to be generated not found at database designer model"
+msgstr "生成するテーブルのメタデータがデータベース設計モデルに見つかりません"
+
+#: dd/ddmodel/ddGenerationWizard.cpp:580
+msgid "Error at generation process"
+msgstr "生成処理でエラーが発生しました"
+
+#: dd/ddmodel/ddGenerationWizard.cpp:599
+msgid "Error importing at generation process"
+msgstr "生成処理中のインポートでエラーが発生しました"
+
+#: dd/ddmodel/ddGenerationWizard.cpp:615
+msgid "Going back?"
+msgstr "戻りますか?"
+
+#: dd/ddmodel/ddDrawingEditor.cpp:87
+msgid "Are you sure you wish to delete table "
+msgstr "次のテーブルを削除してもよろしいですか: "
+
+#: dd/ddmodel/ddDrawingEditor.cpp:87
+msgid "Delete table?"
+msgstr "テーブルを削除しますか?"
+
+#: dd/ddmodel/ddDrawingEditor.cpp:95
+msgid "Are you sure you wish to delete relationship "
+msgstr "次のリレーションシップを削除してもよろしいですか: "
+
+#: dd/ddmodel/ddDrawingEditor.cpp:95
+msgid "Delete relationship?"
+msgstr "リレーションシップを削除しますか?"
+
+#: dd/ddmodel/ddDrawingEditor.cpp:114
+msgid "Are you sure you wish to delete %d tables, removing from model related relationships?"
+msgstr "%d 個のテーブルを削除し、関連するリレーションシップをモデルから削除してもよろしいですか?"
+
+#: dd/ddmodel/ddDrawingEditor.cpp:115
+msgid "Delete tables?"
+msgstr "テーブルを削除しますか?"
+
+#: dd/ddmodel/ddDrawingEditor.cpp:165
+msgid "Invalid figure kind found"
+msgstr "無効な図形の種類が見つかりました"
+
+#: dd/ddmodel/ddDrawingEditor.cpp:165
+msgid "Error while deleting tables"
+msgstr "テーブルの削除中にエラーが発生しました"
+
+#: dd/ddmodel/ddDrawingEditor.cpp:188
+msgid "Error while deleting table"
+msgstr "テーブルの削除中にエラーが発生しました"
+
+#: dd/ddmodel/ddDrawingEditor.cpp:223
+msgid "Error while deleting realtionships"
+msgstr "リレーションシップの削除中にエラーが発生しました"
+
+#: dd/ddmodel/ddDatabaseDesign.cpp:142
+msgid "Invalid number of arguments in call of function generate tables of list"
+msgstr "リストからテーブルを生成する関数の呼び出しの引数の数が無効です"
+
+#: dd/ddmodel/ddDatabaseDesign.cpp:162
+msgid "Generating Create sentence(s) for table(s) "
+msgstr "次のテーブルの Create 文を生成しています: "
+
+#: dd/ddmodel/ddDatabaseDesign.cpp:185
+msgid "Generating Pk sentence for table(s) "
+msgstr "次のテーブルの Pk 文を生成しています: "
+
+#: dd/ddmodel/ddDatabaseDesign.cpp:201
+msgid "Generating Uk sentence(s) for table(s) "
+msgstr "次のテーブルの Uk 文を生成しています: "
+
+#: dd/ddmodel/ddDatabaseDesign.cpp:217
+msgid "Generating Fk sentence(s) for table(s) "
+msgstr "次のテーブルの Fk 文を生成しています: "
+
+#: dd/ddmodel/ddDatabaseDesign.cpp:243
+msgid "No connection found when building ALTER objects DDL."
+msgstr "ALTER オブジェクトの DDL 作成中に接続が見つかりませんでした。"
+
+#: dd/ddmodel/ddDatabaseDesign.cpp:250
+msgid "Schema defined when building ALTER TABLE DDL"
+msgstr "ALTER TABLE の DDL 作成中にスキーマが定義されました"
+
+#: dd/ddmodel/ddDatabaseDesign.cpp:257
+msgid "Generating Alter table sentence(s) for table(s) "
+msgstr "次のテーブルの Alter table 文を生成しています: "
+
+#: dd/ddmodel/ddDatabaseDesign.cpp:527
+msgid "Failed to write the model file!"
+msgstr "モデルファイルの書き込みに失敗しました!"
+
+#: hotdraw/utilities/hdRemoveDeleteDialog.cpp:117
+msgid "     Choose Remove from Diagram to remove only from current diagram.     "
+msgstr "     現在のダイアグラムからのみ削除するには「ダイアグラムから削除」を選択してください。     "
+
+#: hotdraw/utilities/hdRemoveDeleteDialog.cpp:118
+msgid "     Choose Remove from Model to delete permanently.     "
+msgstr "     完全に削除するには「モデルから削除」を選択してください。     "
+
+#: hotdraw/main/hdDrawingView.cpp:457
+msgid "Sample Item"
+msgstr "サンプル項目"
+
+#: hotdraw/main/hdDrawingView.cpp:466
+msgid "Sample menu item"
+msgstr "サンプルメニュー項目"
+
+#: hotdraw/main/hdDrawingView.cpp:466
+msgid "Sample"
+msgstr "サンプル"
+
+#: hotdraw/main/hdDrawingEditor.cpp:267
+msgid "Are you sure you wish to delete figure ?"
+msgstr "図形を削除してもよろしいですか?"
+
+#: hotdraw/main/hdDrawingEditor.cpp:267
+msgid "Delete figures?"
+msgstr "図形を削除しますか?"
+
+#: hotdraw/main/hdDrawingEditor.cpp:272
+msgid "Are you sure you wish to delete %d figures?"
+msgstr "%d 個の図形を削除してもよろしいですか?"
+
+#: dd/dditems/utilities/ddSelectKindFksDialog.cpp:103
+msgid "From Primary"
+msgstr "主キーから"
+
+#: dd/dditems/utilities/ddSelectKindFksDialog.cpp:110
+msgid "Unique Key: "
+msgstr "一意キー: "
+
+#: dd/dditems/utilities/ddSelectKindFksDialog.cpp:199
+msgid "Automatically Generated"
+msgstr "自動生成"
+
+#: dd/dditems/figures/ddColumnKindIcon.cpp:62
+msgid "Unique key"
+msgstr "一意キー"
+
+#: dd/dditems/figures/ddTableFigure.cpp:1178
+msgid "Cannot build an ALTER TABLE statement for a non existing table (%s.%s)."
+msgstr "存在しないテーブル (%s.%s) の ALTER TABLE 文は作成できません。"
+
+#: dd/dditems/figures/ddTableFigure.cpp:1179
+msgid "Error when trying to get table OID"
+msgstr "テーブル OID の取得中にエラーが発生しました"
+
+#: dd/dditems/figures/ddTableFigure.cpp:1186
+msgid "Cannot reverse engineering table %s.%s."
+msgstr "テーブル %s.%s をリバースエンジニアリングできません。"
+
+#: dd/dditems/figures/ddTableFigure.cpp:1187
+msgid "Error when trying to get stub table"
+msgstr "スタブテーブルの取得中にエラーが発生しました"
+
+#: dd/dditems/figures/ddTableFigure.cpp:1442
+msgid "\" SET NOT NULL;"
+msgstr "\" SET NOT NULL;"
+
+#: dd/dditems/figures/ddTableFigure.cpp:1469
+msgid "Trying to build ALTER sentences"
+msgstr "ALTER 文を作成中"
+
+#: dd/dditems/figures/ddColumnFigure.cpp:491
+msgid "relation between table: "
+msgstr "次のテーブル間のリレーション: "
+
+#: dd/dditems/figures/ddColumnFigure.cpp:491
+msgid " and table: "
+msgstr " と次のテーブル: "
+
+#: dd/dditems/figures/ddColumnFigure.cpp:492
+msgid " is marked as identifying but user created foreign key column: "
+msgstr " は識別リレーションとしてマークされていますが、ユーザが作成した外部キー列: "
+
+#: dd/dditems/figures/ddColumnFigure.cpp:493
+msgid " isn't set as primary key \n"
+msgstr " が主キーに設定されていません \n"
+
+#: dd/dditems/figures/ddColumnFigure.cpp:500
+msgid "relation between table:"
+msgstr "次のテーブル間のリレーション:"
+
+#: dd/dditems/figures/ddColumnFigure.cpp:501
+msgid "is marked as optional but user created foreign key column: "
+msgstr "は任意としてマークされていますが、ユーザが作成した外部キー列: "
+
+#: dd/dditems/figures/ddColumnFigure.cpp:502
+msgid "is set as mandatory \n"
+msgstr "は必須に設定されています \n"
+
+#: dd/dditems/figures/ddColumnFigure.cpp:510
+msgid " is marked as mandatory but user created foreign key column: "
+msgstr " は必須としてマークされていますが、ユーザが作成した外部キー列: "
+
+#: dd/dditems/figures/ddColumnFigure.cpp:511
+msgid "is set as optional \n"
+msgstr "は任意に設定されています \n"
+
+#: dd/dditems/figures/ddColumnFigure.cpp:519
+msgid "User created foreign key column: "
+msgstr "ユーザが作成した外部キー列: "
+
+#: dd/dditems/figures/ddColumnFigure.cpp:519
+msgid "have different datatype from source column of relationship: "
+msgstr "はリレーションシップのソース列とデータ型が異なります: "
+
+#: dd/dditems/figures/ddColumnFigure.cpp:520
+msgid " \n"
+msgstr " \n"
+
+#: dd/dditems/figures/ddTextTableItemFigure.cpp:243
+msgid "Varchar size"
+msgstr "varchar のサイズ"
+
+#: dd/dditems/figures/ddTextTableItemFigure.cpp:244
+msgid "Size for varchar datatype"
+msgstr "varchar データ型のサイズ"
+
+#: dd/dditems/figures/ddTextTableItemFigure.cpp:264
+msgid "datatype size"
+msgstr "データ型のサイズ"
+
+#: dd/dditems/figures/ddTextTableItemFigure.cpp:265
+msgid "Size for datatype"
+msgstr "データ型のサイズ"
+
+#: dd/dditems/figures/ddTextTableItemFigure.cpp:354
+msgid "Add a column..."
+msgstr "列を追加..."
+
+#: dd/dditems/figures/ddTextTableItemFigure.cpp:355
+msgid "Delete the selected column..."
+msgstr "選択した列を削除..."
+
+#: dd/dditems/figures/ddTextTableItemFigure.cpp:358
+msgid "Rename the selected column..."
+msgstr "選択した列の名前を変更..."
+
+#: dd/dditems/figures/ddTextTableItemFigure.cpp:360
+msgid "Activate fk auto-naming..."
+msgstr "fk の自動命名を有効化..."
+
+#: dd/dditems/figures/ddTextTableItemFigure.cpp:362
+msgid "Not NULL constraint"
+msgstr "Not NULL 制約"
+
+#: dd/dditems/figures/ddTextTableItemFigure.cpp:373
+msgid "Unique Key"
+msgstr "一意キー"
+
+#: dd/dditems/figures/ddTextTableItemFigure.cpp:378
+msgid "Column datatype"
+msgstr "列のデータ型"
+
+#: dd/dditems/figures/ddTextTableItemFigure.cpp:381
+msgid "serial"
+msgstr "serial"
+
+#: dd/dditems/figures/ddTextTableItemFigure.cpp:383
+msgid "boolean"
+msgstr "boolean"
+
+#: dd/dditems/figures/ddTextTableItemFigure.cpp:385
+msgid "integer"
+msgstr "integer"
+
+#: dd/dditems/figures/ddTextTableItemFigure.cpp:387
+msgid "money"
+msgstr "money"
+
+#: dd/dditems/figures/ddTextTableItemFigure.cpp:389
+msgid "varchar(n)"
+msgstr "varchar(n)"
+
+#: dd/dditems/figures/ddTextTableItemFigure.cpp:391
+msgid "Choose another datatype..."
+msgstr "別のデータ型を選択..."
+
+#: dd/dditems/figures/ddTextTableItemFigure.cpp:393
+msgid "Primary Key Constraint name..."
+msgstr "主キー制約名..."
+
+#: dd/dditems/figures/ddTextTableItemFigure.cpp:394
+msgid "Unique Key Constraint name..."
+msgstr "一意キー制約名..."
+
+#: dd/dditems/figures/ddTextTableItemFigure.cpp:396
+msgid "Delete table..."
+msgstr "テーブルを削除..."
+
+#: dd/dditems/figures/ddRelationshipFigure.cpp:241
+msgid "Select one"
+msgstr "1 つ選択"
+
+#: dd/dditems/figures/ddRelationshipFigure.cpp:243
+msgid "Foreign Key From"
+msgstr "外部キーの参照元"
+
+#: dd/dditems/figures/ddRelationshipFigure.cpp:264
+msgid "Mandatory relationship kind"
+msgstr "必須リレーションシップの種類"
+
+#: dd/dditems/figures/ddRelationshipFigure.cpp:266
+msgid "Identifying relationship"
+msgstr "識別リレーションシップ"
+
+#: dd/dditems/figures/ddRelationshipFigure.cpp:269
+msgid "1:M"
+msgstr "1:M"
+
+#: dd/dditems/figures/ddRelationshipFigure.cpp:272
+msgid "Foreign Key Constraint Name"
+msgstr "外部キー制約名"
+
+#: dd/dditems/figures/ddRelationshipFigure.cpp:275
+msgid "Type Simple"
+msgstr "Simple 型"
+
+#: dd/dditems/figures/ddRelationshipFigure.cpp:277
+msgid "Type Full"
+msgstr "Full 型"
+
+#: dd/dditems/figures/ddRelationshipFigure.cpp:279
+msgid "Match Type "
+msgstr "一致タイプ "
+
+#: dd/dditems/figures/ddRelationshipFigure.cpp:281
+msgid "[ Simple ]"
+msgstr "[ Simple ]"
+
+#: dd/dditems/figures/ddRelationshipFigure.cpp:283
+msgid "[ Full ]"
+msgstr "[ Full ]"
+
+#: dd/dditems/figures/ddRelationshipFigure.cpp:286
+msgid "On Delete "
+msgstr "削除時 "
+
+#: dd/dditems/figures/ddRelationshipFigure.cpp:288
+msgid "No Action"
+msgstr "No Action"
+
+#: dd/dditems/figures/ddRelationshipFigure.cpp:291
+msgid "[ No Action ]"
+msgstr "[ No Action ]"
+
+#: dd/dditems/figures/ddRelationshipFigure.cpp:292
+msgid "Restrict"
+msgstr "Restrict"
+
+#: dd/dditems/figures/ddRelationshipFigure.cpp:295
+msgid "[ Restrict ]"
+msgstr "[ Restrict ]"
+
+#: dd/dditems/figures/ddRelationshipFigure.cpp:296
+msgid "Cascade"
+msgstr "Cascade"
+
+#: dd/dditems/figures/ddRelationshipFigure.cpp:299
+msgid "[ Cascade ]"
+msgstr "[ Cascade ]"
+
+#: dd/dditems/figures/ddRelationshipFigure.cpp:300
+msgid "Set Null"
+msgstr "Set Null"
+
+#: dd/dditems/figures/ddRelationshipFigure.cpp:303
+msgid "[ Set Null ]"
+msgstr "[ Set Null ]"
+
+#: dd/dditems/figures/ddRelationshipFigure.cpp:304
+msgid "Set Default"
+msgstr "Set Default"
+
+#: dd/dditems/figures/ddRelationshipFigure.cpp:307
+msgid "[ Set Default ]"
+msgstr "[ Set Default ]"
+
+#: dd/dditems/figures/ddRelationshipFigure.cpp:310
+msgid "On Update "
+msgstr "更新時 "
+
+#: dd/dditems/figures/ddRelationshipFigure.cpp:335
+msgid "Delete Relationship..."
+msgstr "リレーションシップを削除..."
+
+#: dd/dditems/figures/ddRelationshipFigure.cpp:452
+msgid "Are you sure you wish to delete relationship between tables %s and %s?"
+msgstr "テーブル %s と %s の間のリレーションシップを削除してもよろしいですか?"
+
+#: include/frm/frmReport.h:156
+msgid "&Compare other objects"
+msgstr "他のオブジェクトを比較(&C)"
+
+#: include/frm/frmReport.h:156
+msgid "Compare other host database select objects."
+msgstr "他のホストのデータベースの選択したオブジェクトを比較します。"
+
+#: ui/dlgFindReplace.xrc:65
+msgid "All find tabs"
+msgstr "すべての検索タブ"
+
+#: ui/dlgProJob.xrc:105
+msgid "Run as"
+msgstr "実行ユーザ"
+
+#: ui/dlgProJob.xrc:195
+msgid "Commands"
+msgstr "コマンド"
+
+#: ui/dlgProJob.xrc:234
+msgid "use same transaction"
+msgstr "同じトランザクションを使用"
+
+#: ui/dlgServer.xrc:190
+msgid "Select SSL Root Certificate File"
+msgstr "SSL ルート証明書ファイルを選択"
+
+#: ui/dlgServer.xrc:206
+msgid "Select SSL Certificate Revocation List File"
+msgstr "SSL 証明書失効リストファイルを選択"
+
+#: ui/dlgServer.xrc:222
+msgid "Select SSL certificate file"
+msgstr "SSL 証明書ファイルを選択"
+
+#: ui/dlgServer.xrc:238
+msgid "Select SSL key file"
+msgstr "SSL 鍵ファイルを選択"
+
+#: ui/dlgServer.xrc:361
+msgid "Select identity file"
+msgstr "識別ファイルを選択"
+
+#: ui/dlgServer.xrc:377
+msgid "Select public key file"
+msgstr "公開鍵ファイルを選択"
+
+#: ui/dlgServer.xrc:466
+msgid "Connect str"
+msgstr "接続文字列"
+
+#: ui/dlgTransformText.xrc:5
+msgid "Transform text"
+msgstr "テキストを変換"
+
+#: ui/dlgTransformText.xrc:17
+msgid "Source text options"
+msgstr "ソーステキストのオプション"
+
+#: ui/dlgTransformText.xrc:33
+msgid "PCRE regexp"
+msgstr "PCRE 正規表現"
+
+#: ui/dlgTransformText.xrc:50
+msgid "Replace expression"
+msgstr "置換式"
+
+#: ui/dlgTransformText.xrc:67
+msgid "Rows limit"
+msgstr "行数の上限"
+
+#: ui/dlgTransformText.xrc:87
+msgid "Chars limit"
+msgstr "文字数の上限"
+
+#: ui/dlgTransformText.xrc:107
+msgid "Refresh highlight"
+msgstr "強調表示を更新"
+
+#: ui/dlgTransformText.xrc:124
+msgid "Source text"
+msgstr "ソーステキスト"
+
+#: ui/dlgTransformText.xrc:160
+msgid "Transform text options"
+msgstr "変換テキストのオプション"
+
+#: ui/dlgTransformText.xrc:176
+msgid "Append before row"
+msgstr "行の前に追加"
+
+#: ui/dlgTransformText.xrc:196
+msgid "After row"
+msgstr "行の後"
+
+#: ui/dlgTransformText.xrc:230
+msgid "Field separator"
+msgstr "フィールド区切り文字"
+
+#: ui/dlgTransformText.xrc:267
+msgid "Load options"
+msgstr "読み込みオプション"
+
+#: ui/dlgTransformText.xrc:276
+msgid "First"
+msgstr "最初"
+
+#: ui/dlgTransformText.xrc:335
+msgid "Rows loading"
+msgstr "行の読み込み"
+
+#: ui/frmAwr.xrc:6
+msgid "AWR report"
+msgstr "AWR レポート"
+
+#: ui/frmAwr.xrc:36
+msgid "Type report"
+msgstr "レポートの種類"
+
+#: ui/frmAwr.xrc:39
+msgid "Report"
+msgstr "レポート"
+
+#: ui/frmAwr.xrc:40
+msgid "Diff report"
+msgstr "差分レポート"
+
+#: ui/frmAwr.xrc:104
+msgid "Start Id1"
+msgstr "開始 Id1"
+
+#: ui/frmAwr.xrc:123
+msgid "End Id1"
+msgstr "終了 Id1"
+
+#: ui/frmAwr.xrc:166
+msgid "Start Id2"
+msgstr "開始 Id2"
+
+#: ui/frmAwr.xrc:185
+msgid "End Id2"
+msgstr "終了 Id2"
+
+#: ui/frmExport.xrc:110
+msgid "format COPY"
+msgstr "COPY 形式"
+
+#: ui/frmExport.xrc:116
+msgid "Xls fmt copy"
+msgstr "Xls 形式でコピー"
+
+#: ui/frmImport.xrc:33
+msgid "Select the file to import"
+msgstr "インポートするファイルを選択"
+
+#: ui/frmOptions.xrc:131
+msgid "Select theme"
+msgstr "テーマを選択"
+
+#: ui/frmOptions.xrc:154
+msgid "Load"
+msgstr "読み込み"
+
+#: ui/frmOptions.xrc:222
+msgid "Options extended JSON:"
+msgstr "拡張 JSON オプション:"
+
+#: ui/frmOptions.xrc:261
+msgid "Beautiful big numbers on the statistics page"
+msgstr "統計ページで大きな数値を見やすく表示"
+
+#: ui/frmOptions.xrc:272
+msgid "Show the dependencies of functions on tables,views,functions"
+msgstr "関数のテーブル、ビュー、関数への依存関係を表示"
+
+#: ui/frmOptions.xrc:457
+msgid "Show DB name in tree"
+msgstr "ツリーに DB 名を表示"
+
+#: ui/frmOptions.xrc:465
+msgid "Quick jump to the root node"
+msgstr "ルートノードへのクイックジャンプ"
+
+#: ui/frmOptions.xrc:635
+msgid "Select utility to format text"
+msgstr "テキストを整形するユーティリティを選択"
+
+#: ui/frmOptions.xrc:645
+msgid "External alignment utlity"
+msgstr "外部整列ユーティリティ"
+
+#: ui/frmOptions.xrc:662
+msgid "Enable ASUTP style"
+msgstr "ASUTP スタイルを有効にする"
+
+#: ui/frmOptions.xrc:677
+msgid "Hide query history"
+msgstr "クエリ履歴を非表示"
+
+#: ui/frmOptions.xrc:692
+msgid "Auto save query text"
+msgstr "クエリテキストを自動保存"
+
+#: ui/frmOptions.xrc:707
+msgid "Use word hints"
+msgstr "単語ヒントを使用"
+
+#: ui/frmOptions.xrc:722
+msgid "Replace variables in a query"
+msgstr "クエリ内の変数を置換"
+
+#: ui/frmOptions.xrc:821
+msgid "Use system background color caret line"
+msgstr "カーソル行にシステムの背景色を使用"
+
+#: ui/frmOptions.xrc:876
+msgid "Width for keyboard layout"
+msgstr "キーボードレイアウトの幅"
+
+#: ui/frmOptions.xrc:1227
+msgid "Select file to store favourites queries"
+msgstr "お気に入りクエリを保存するファイルを選択"
+
+#: ui/frmOptions.xrc:1255
+msgid "Select file to store macros"
+msgstr "マクロを保存するファイルを選択"
+
+#: ui/frmOptions.xrc:1283
+msgid "Select file to store queries history"
+msgstr "クエリ履歴を保存するファイルを選択"
+
+#: ui/frmOptions.xrc:1388
+msgid "Blocked by Process Colour"
+msgstr "ブロックされたプロセスの色"
+
+#: ui/frmOptions.xrc:1402
+msgid "Idle&in&transaction&session&timeout Process Colour"
+msgstr "Idle&in&transaction&session&timeout プロセスの色"
+
+#: frm/mathplot.cpp:1424
+msgid "Center"
+msgstr "中央"
+
+#: frm/mathplot.cpp:1425
+msgid "Center plot view to this position"
+msgstr "プロットビューをこの位置に中央揃えする"
+
+#: frm/mathplot.cpp:1426
+msgid "Fit"
+msgstr "全体表示"
+
+#: frm/mathplot.cpp:1426
+msgid "Set plot view to show all items"
+msgstr "すべての項目が表示されるようにプロットビューを設定"
+
+#: frm/mathplot.cpp:1427
+msgid "Zoom in"
+msgstr "拡大"
+
+#: frm/mathplot.cpp:1427
+msgid "Zoom in plot view."
+msgstr "プロットビューを拡大。"
+
+#: frm/mathplot.cpp:1428
+msgid "Zoom out"
+msgstr "縮小"
+
+#: frm/mathplot.cpp:1428
+msgid "Zoom out plot view."
+msgstr "プロットビューを縮小。"
+
+#: frm/mathplot.cpp:1431
+msgid "Show mouse commands..."
+msgstr "マウスコマンドを表示..."
+
+#: frm/mathplot.cpp:1432
+msgid "Show help about the mouse commands."
+msgstr "マウスコマンドのヘルプを表示します。"
+
+#: frm/mathplot.cpp:1935
+msgid "wxMathPlot help"
+msgstr "wxMathPlot ヘルプ"
+
+#: dd/dditems/figures/xml/ddXmlStorage.cpp:91
+msgid "Error saving model: not source model have been set"
+msgstr "モデル保存エラー: ソースモデルが設定されていません"
+
+#: dd/dditems/figures/xml/ddXmlStorage.cpp:123
+msgid "Fatal Error at libxml for figure persistency"
+msgstr "図形の永続化における libxml の致命的エラー"
+
+#: dd/dditems/figures/xml/ddXmlStorage.cpp:624
+msgid "Model is not following embedded DTD definition, check it.\n"
+msgstr "モデルが埋め込み DTD 定義に従っていません。確認してください。\n"
+
+#: dd/dditems/figures/xml/ddXmlStorage.cpp:656
+msgid "Failed to load document from disk"
+msgstr "ディスクからドキュメントを読み込めませんでした"
+
+#: dd/dditems/figures/xml/ddXmlStorage.cpp:754
+msgid "Invalid version of XML file for pgAdmin database designer found"
+msgstr "pgAdmin データベースデザイナの XML ファイルのバージョンが無効です"
+
+#: dd/dditems/figures/xml/ddXmlStorage.cpp:754
+msgid "Invalid XML"
+msgstr "無効な XML"
+
+#: dd/dditems/figures/xml/ddXmlStorage.cpp:1054
+msgid "Table initial metadata info not found"
+msgstr "テーブルの初期メタデータ情報が見つかりません"
+
+#: frm/frmOptions.cpp:1
+msgid "Appearance"
+msgstr "外観"
+
+#: frm/frmOptions.cpp:2
+msgid "Automatic"
+msgstr "自動"
+
+#: frm/frmOptions.cpp:3
+msgid "Light"
+msgstr "ライト"
+
+#: frm/frmOptions.cpp:4
+msgid "Dark"
+msgstr "ダーク"
+
+#: frm/frmOptions.cpp:5
+msgid "Restart pgAdmin III to fully apply the appearance change."
+msgstr "外観の変更を完全に適用するには、pgAdmin III を再起動してください。"

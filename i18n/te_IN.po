@@ -16284,4 +16284,402 @@ msgstr "yes"
 #~ msgid "VOLATILE"
 #~ msgstr "VOLATILE"
 
+#: pgAdmin3.cpp:389
+msgid "open server log window"
+msgstr "సర్వర్ లాగ్ విండోను తెరవండి"
 
+#: pgAdmin3.cpp:403
+msgid "export servers configuration to file pgadmin3.ini"
+msgstr "సర్వర్ల కాన్ఫిగరేషన్‌ను pgadmin3.ini ఫైల్‌కు ఎగుమతి చేయండి"
+
+#: pgAdmin3.cpp:404
+msgid "Enable Dark mode"
+msgstr "డార్క్ మోడ్‌ను ప్రారంభించండి"
+
+#: pgAdmin3.cpp:1013
+msgid "Log - "
+msgstr "లాగ్ - "
+
+#: pro_scheduler/pgproJob.cpp:36
+msgid "Retrieving details on pro_scheduler job"
+msgstr "pro_scheduler జాబ్ వివరాలను తిరిగి పొందుతోంది"
+
+#: pro_scheduler/pgproJob.cpp:39
+msgid "Refreshing pro_scheduler job"
+msgstr "pro_scheduler జాబ్‌ను రిఫ్రెష్ చేస్తోంది"
+
+#: pro_scheduler/pgproJob.cpp:42
+msgid "pro_scheduler job properties report"
+msgstr "pro_scheduler జాబ్ లక్షణాల నివేదిక"
+
+#: pro_scheduler/pgproJob.cpp:48
+msgid "pro_scheduler job DDL report"
+msgstr "pro_scheduler జాబ్ DDL నివేదిక"
+
+#: pro_scheduler/pgproJob.cpp:51
+msgid "pro_scheduler job dependencies report"
+msgstr "pro_scheduler జాబ్ ఆధారపడటాల నివేదిక"
+
+#: pro_scheduler/pgproJob.cpp:54
+msgid "pro_scheduler job dependencies"
+msgstr "pro_scheduler జాబ్ ఆధారపడటాలు"
+
+#: pro_scheduler/pgproJob.cpp:57
+msgid "pro_scheduler job dependents report"
+msgstr "pro_scheduler జాబ్‌పై ఆధారపడినవాటి నివేదిక"
+
+#: pro_scheduler/pgproJob.cpp:60
+msgid "pro_scheduler job dependents"
+msgstr "pro_scheduler జాబ్‌పై ఆధారపడినవి"
+
+#: pro_scheduler/pgproJob.cpp:140
+msgid "Started"
+msgstr "ప్రారంభమైంది"
+
+#: pro_scheduler/pgproJob.cpp:141
+msgid "Finished"
+msgstr "ముగిసింది"
+
+#: pro_scheduler/pgproJob.cpp:143
+msgid "Crontab"
+msgstr "Crontab"
+
+#: pro_scheduler/pgproJob.cpp:146
+msgid "Runas"
+msgstr "ఈ వినియోగదారుగా అమలు"
+
+#: pro_scheduler/pgproJob.cpp:152
+msgid "Next start job"
+msgstr "తదుపరి జాబ్ ప్రారంభం"
+
+#: pro_scheduler/pgproJob.cpp:185
+msgid "Previous sched time run skip"
+msgstr "మునుపటి షెడ్యూల్ రన్ దాటవేయబడింది"
+
+#: pro_scheduler/pgproJob.cpp:254
+msgid "Not run"
+msgstr "అమలు చేయలేదు"
+
+#: pro_scheduler/pgproJob.cpp:356
+msgid "Log_time"
+msgstr "లాగ్ సమయం"
+
+#: pro_scheduler/pgproJob.cpp:357
+msgid "Critical"
+msgstr "క్రిటికల్"
+
+#: pro_scheduler/pgproJob.cpp:359
+msgid "Stage"
+msgstr "దశ"
+
+#: pro_scheduler/pgproJob.cpp:505
+msgid "Enabled or disabled job"
+msgstr "జాబ్ ప్రారంభించబడింది లేదా నిలిపివేయబడింది"
+
+#: frm/frmQuery.cpp:4689
+msgid "Please enter name string with prefix dbname or description server\n"
+msgstr "దయచేసి dbname లేదా సర్వర్ వివరణ ఉపసర్గతో పేరు స్ట్రింగ్‌ను నమోదు చేయండి\n"
+
+#: frm/frmQuery.cpp:4691
+msgid "Name autosave tab window."
+msgstr "ట్యాబ్ విండో ఆటోసేవ్ పేరు."
+
+#: frm/frmOptions.cpp:615
+msgid "Color theme save to file %s"
+msgstr "రంగుల థీమ్ %s ఫైల్‌కు సేవ్ చేయబడింది"
+
+#: frm/frmOptions.cpp:637
+msgid "Color theme load from file %s"
+msgstr "రంగుల థీమ్ %s ఫైల్ నుండి లోడ్ చేయబడింది"
+
+#: frm/frmOptions.cpp:638
+msgid "Load theme"
+msgstr "థీమ్‌ను లోడ్ చేయండి"
+
+#: schema/pgServer.cpp:1253
+msgid "Key words"
+msgstr "కీలక పదాలు"
+
+#: hotdraw/utilities/hdRemoveDeleteDialog.cpp:117
+msgid "     Choose Remove from Diagram to remove only from current diagram.     "
+msgstr "     ప్రస్తుత రేఖాచిత్రం నుండి మాత్రమే తొలగించడానికి రేఖాచిత్రం నుండి తొలగించు ఎంచుకోండి.     "
+
+#: hotdraw/utilities/hdRemoveDeleteDialog.cpp:118
+msgid "     Choose Remove from Model to delete permanently.     "
+msgstr "     శాశ్వతంగా తొలగించడానికి మోడల్ నుండి తొలగించు ఎంచుకోండి.     "
+
+#: hotdraw/main/hdDrawingView.cpp:457
+msgid "Sample Item"
+msgstr "నమూనా అంశం"
+
+#: hotdraw/main/hdDrawingView.cpp:466
+msgid "Sample menu item"
+msgstr "నమూనా మెనూ అంశం"
+
+#: hotdraw/main/hdDrawingView.cpp:466
+msgid "Sample"
+msgstr "నమూనా"
+
+#: hotdraw/main/hdDrawingEditor.cpp:267
+msgid "Are you sure you wish to delete figure ?"
+msgstr "మీరు ఫిగర్‌ను తొలగించాలని ఖచ్చితంగా అనుకుంటున్నారా?"
+
+#: hotdraw/main/hdDrawingEditor.cpp:267
+msgid "Delete figures?"
+msgstr "ఫిగర్‌లను తొలగించాలా?"
+
+#: hotdraw/main/hdDrawingEditor.cpp:272
+msgid "Are you sure you wish to delete %d figures?"
+msgstr "మీరు %d ఫిగర్‌లను తొలగించాలని ఖచ్చితంగా అనుకుంటున్నారా?"
+
+#: ui/dlgFindReplace.xrc:65
+msgid "All find tabs"
+msgstr "అన్ని శోధన ట్యాబ్‌లు"
+
+#: ui/dlgProJob.xrc:105
+msgid "Run as"
+msgstr "ఈ వినియోగదారుగా అమలు చేయి"
+
+#: ui/dlgProJob.xrc:195
+msgid "Commands"
+msgstr "కమాండ్‌లు"
+
+#: ui/dlgProJob.xrc:234
+msgid "use same transaction"
+msgstr "అదే ట్రాన్సాక్షన్‌ను ఉపయోగించండి"
+
+#: ui/dlgServer.xrc:190
+msgid "Select SSL Root Certificate File"
+msgstr "SSL రూట్ సర్టిఫికెట్ ఫైల్‌ను ఎంచుకోండి"
+
+#: ui/dlgServer.xrc:206
+msgid "Select SSL Certificate Revocation List File"
+msgstr "SSL సర్టిఫికెట్ రద్దు జాబితా ఫైల్‌ను ఎంచుకోండి"
+
+#: ui/dlgServer.xrc:222
+msgid "Select SSL certificate file"
+msgstr "SSL సర్టిఫికెట్ ఫైల్‌ను ఎంచుకోండి"
+
+#: ui/dlgServer.xrc:238
+msgid "Select SSL key file"
+msgstr "SSL కీ ఫైల్‌ను ఎంచుకోండి"
+
+#: ui/dlgServer.xrc:361
+msgid "Select identity file"
+msgstr "గుర్తింపు ఫైల్‌ను ఎంచుకోండి"
+
+#: ui/dlgServer.xrc:377
+msgid "Select public key file"
+msgstr "పబ్లిక్ కీ ఫైల్‌ను ఎంచుకోండి"
+
+#: ui/dlgServer.xrc:466
+msgid "Connect str"
+msgstr "కనెక్ట్ స్ట్రింగ్"
+
+#: ui/dlgTransformText.xrc:5
+msgid "Transform text"
+msgstr "టెక్స్ట్‌ను మార్చండి"
+
+#: ui/dlgTransformText.xrc:17
+msgid "Source text options"
+msgstr "మూల టెక్స్ట్ ఎంపికలు"
+
+#: ui/dlgTransformText.xrc:33
+msgid "PCRE regexp"
+msgstr "PCRE రెగ్యులర్ ఎక్స్‌ప్రెషన్"
+
+#: ui/dlgTransformText.xrc:50
+msgid "Replace expression"
+msgstr "భర్తీ ఎక్స్‌ప్రెషన్"
+
+#: ui/dlgTransformText.xrc:67
+msgid "Rows limit"
+msgstr "అడ్డు వరుసల పరిమితి"
+
+#: ui/dlgTransformText.xrc:87
+msgid "Chars limit"
+msgstr "అక్షరాల పరిమితి"
+
+#: ui/dlgTransformText.xrc:107
+msgid "Refresh highlight"
+msgstr "హైలైట్‌ను రిఫ్రెష్ చేయండి"
+
+#: ui/dlgTransformText.xrc:124
+msgid "Source text"
+msgstr "మూల టెక్స్ట్"
+
+#: ui/dlgTransformText.xrc:160
+msgid "Transform text options"
+msgstr "టెక్స్ట్ మార్పిడి ఎంపికలు"
+
+#: ui/dlgTransformText.xrc:176
+msgid "Append before row"
+msgstr "అడ్డు వరుసకు ముందు జోడించండి"
+
+#: ui/dlgTransformText.xrc:196
+msgid "After row"
+msgstr "అడ్డు వరుస తర్వాత"
+
+#: ui/dlgTransformText.xrc:230
+msgid "Field separator"
+msgstr "ఫీల్డ్ విభజకం"
+
+#: ui/dlgTransformText.xrc:267
+msgid "Load options"
+msgstr "లోడ్ ఎంపికలు"
+
+#: ui/dlgTransformText.xrc:276
+msgid "First"
+msgstr "మొదటి"
+
+#: ui/dlgTransformText.xrc:335
+msgid "Rows loading"
+msgstr "అడ్డు వరుసల లోడింగ్"
+
+#: ui/frmAwr.xrc:6
+msgid "AWR report"
+msgstr "AWR నివేదిక"
+
+#: ui/frmAwr.xrc:36
+msgid "Type report"
+msgstr "నివేదిక రకం"
+
+#: ui/frmAwr.xrc:39
+msgid "Report"
+msgstr "నివేదిక"
+
+#: ui/frmAwr.xrc:40
+msgid "Diff report"
+msgstr "తేడా నివేదిక"
+
+#: ui/frmAwr.xrc:104
+msgid "Start Id1"
+msgstr "ప్రారంభం Id1"
+
+#: ui/frmAwr.xrc:123
+msgid "End Id1"
+msgstr "ముగింపు Id1"
+
+#: ui/frmAwr.xrc:166
+msgid "Start Id2"
+msgstr "ప్రారంభం Id2"
+
+#: ui/frmAwr.xrc:185
+msgid "End Id2"
+msgstr "ముగింపు Id2"
+
+#: ui/frmExport.xrc:110
+msgid "format COPY"
+msgstr "COPY ఫార్మాట్"
+
+#: ui/frmExport.xrc:116
+msgid "Xls fmt copy"
+msgstr "Xls ఫార్మాట్ కాపీ"
+
+#: ui/frmImport.xrc:33
+msgid "Select the file to import"
+msgstr "దిగుమతి చేయవలసిన ఫైల్‌ను ఎంచుకోండి"
+
+#: ui/frmOptions.xrc:131
+msgid "Select theme"
+msgstr "థీమ్‌ను ఎంచుకోండి"
+
+#: ui/frmOptions.xrc:154
+msgid "Load"
+msgstr "లోడ్ చేయండి"
+
+#: ui/frmOptions.xrc:222
+msgid "Options extended JSON:"
+msgstr "విస్తరించిన JSON ఎంపికలు:"
+
+#: ui/frmOptions.xrc:261
+msgid "Beautiful big numbers on the statistics page"
+msgstr "గణాంకాల పేజీలో పెద్ద సంఖ్యలను అందంగా చూపండి"
+
+#: ui/frmOptions.xrc:272
+msgid "Show the dependencies of functions on tables,views,functions"
+msgstr "టేబుళ్లు, వ్యూలు, ఫంక్షన్లపై ఫంక్షన్ల ఆధారపడటాలను చూపండి"
+
+#: ui/frmOptions.xrc:457
+msgid "Show DB name in tree"
+msgstr "ట్రీలో DB పేరును చూపండి"
+
+#: ui/frmOptions.xrc:465
+msgid "Quick jump to the root node"
+msgstr "రూట్ నోడ్‌కు త్వరగా వెళ్లండి"
+
+#: ui/frmOptions.xrc:635
+msgid "Select utility to format text"
+msgstr "టెక్స్ట్‌ను ఫార్మాట్ చేయడానికి యుటిలిటీని ఎంచుకోండి"
+
+#: ui/frmOptions.xrc:645
+msgid "External alignment utlity"
+msgstr "బాహ్య అమరిక యుటిలిటీ"
+
+#: ui/frmOptions.xrc:662
+msgid "Enable ASUTP style"
+msgstr "ASUTP శైలిని ప్రారంభించండి"
+
+#: ui/frmOptions.xrc:677
+msgid "Hide query history"
+msgstr "క్వెరీ చరిత్రను దాచండి"
+
+#: ui/frmOptions.xrc:692
+msgid "Auto save query text"
+msgstr "క్వెరీ టెక్స్ట్‌ను ఆటోమేటిక్‌గా సేవ్ చేయండి"
+
+#: ui/frmOptions.xrc:707
+msgid "Use word hints"
+msgstr "పద సూచనలను ఉపయోగించండి"
+
+#: ui/frmOptions.xrc:722
+msgid "Replace variables in a query"
+msgstr "క్వెరీలో వేరియబుల్‌లను భర్తీ చేయండి"
+
+#: ui/frmOptions.xrc:821
+msgid "Use system background color caret line"
+msgstr "కర్సర్ లైన్ కోసం సిస్టమ్ నేపథ్య రంగును ఉపయోగించండి"
+
+#: ui/frmOptions.xrc:876
+msgid "Width for keyboard layout"
+msgstr "కీబోర్డ్ లేఅవుట్ కోసం వెడల్పు"
+
+#: ui/frmOptions.xrc:1227
+msgid "Select file to store favourites queries"
+msgstr "ఇష్టమైన క్వెరీలను నిల్వ చేయడానికి ఫైల్‌ను ఎంచుకోండి"
+
+#: ui/frmOptions.xrc:1255
+msgid "Select file to store macros"
+msgstr "మాక్రోలను నిల్వ చేయడానికి ఫైల్‌ను ఎంచుకోండి"
+
+#: ui/frmOptions.xrc:1283
+msgid "Select file to store queries history"
+msgstr "క్వెరీ చరిత్రను నిల్వ చేయడానికి ఫైల్‌ను ఎంచుకోండి"
+
+#: ui/frmOptions.xrc:1388
+msgid "Blocked by Process Colour"
+msgstr "ప్రాసెస్ ద్వారా నిరోధించబడింది రంగు"
+
+#: ui/frmOptions.xrc:1402
+msgid "Idle&in&transaction&session&timeout Process Colour"
+msgstr "Idle&in&transaction&session&timeout ప్రాసెస్ రంగు"
+
+#: frm/frmOptions.cpp:1
+msgid "Appearance"
+msgstr "రూపం"
+
+#: frm/frmOptions.cpp:2
+msgid "Automatic"
+msgstr "స్వయంచాలకం"
+
+#: frm/frmOptions.cpp:3
+msgid "Light"
+msgstr "లైట్"
+
+#: frm/frmOptions.cpp:4
+msgid "Dark"
+msgstr "డార్క్"
+
+#: frm/frmOptions.cpp:5
+msgid "Restart pgAdmin III to fully apply the appearance change."
+msgstr "రూప మార్పును పూర్తిగా వర్తింపజేయడానికి pgAdmin III ను పునఃప్రారంభించండి."

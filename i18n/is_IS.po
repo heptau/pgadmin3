@@ -16192,4 +16192,402 @@ msgstr "yes"
 #~ msgid "NO ACTION"
 #~ msgstr "NO ACTION"
 
+#: pgAdmin3.cpp:389
+msgid "open server log window"
+msgstr "opna þjónsskráargluggann"
 
+#: pgAdmin3.cpp:403
+msgid "export servers configuration to file pgadmin3.ini"
+msgstr "flytja út þjónastillingar í skrána pgadmin3.ini"
+
+#: pgAdmin3.cpp:404
+msgid "Enable Dark mode"
+msgstr "Virkja dökkan ham"
+
+#: pgAdmin3.cpp:1013
+msgid "Log - "
+msgstr "Skrá - "
+
+#: pro_scheduler/pgproJob.cpp:36
+msgid "Retrieving details on pro_scheduler job"
+msgstr "Sæki upplýsingar um pro_scheduler verk"
+
+#: pro_scheduler/pgproJob.cpp:39
+msgid "Refreshing pro_scheduler job"
+msgstr "Endurnýja pro_scheduler verk"
+
+#: pro_scheduler/pgproJob.cpp:42
+msgid "pro_scheduler job properties report"
+msgstr "Skýrsla um eiginleika pro_scheduler verks"
+
+#: pro_scheduler/pgproJob.cpp:48
+msgid "pro_scheduler job DDL report"
+msgstr "DDL skýrsla pro_scheduler verks"
+
+#: pro_scheduler/pgproJob.cpp:51
+msgid "pro_scheduler job dependencies report"
+msgstr "Skýrsla um ávirkni pro_scheduler verks"
+
+#: pro_scheduler/pgproJob.cpp:54
+msgid "pro_scheduler job dependencies"
+msgstr "Ávirkni pro_scheduler verks"
+
+#: pro_scheduler/pgproJob.cpp:57
+msgid "pro_scheduler job dependents report"
+msgstr "Skýrsla um háð atriði pro_scheduler verks"
+
+#: pro_scheduler/pgproJob.cpp:60
+msgid "pro_scheduler job dependents"
+msgstr "Háð atriði pro_scheduler verks"
+
+#: pro_scheduler/pgproJob.cpp:140
+msgid "Started"
+msgstr "Ræst"
+
+#: pro_scheduler/pgproJob.cpp:141
+msgid "Finished"
+msgstr "Lokið"
+
+#: pro_scheduler/pgproJob.cpp:143
+msgid "Crontab"
+msgstr "Crontab"
+
+#: pro_scheduler/pgproJob.cpp:146
+msgid "Runas"
+msgstr "Keyra sem"
+
+#: pro_scheduler/pgproJob.cpp:152
+msgid "Next start job"
+msgstr "Næsta ræsing verks"
+
+#: pro_scheduler/pgproJob.cpp:185
+msgid "Previous sched time run skip"
+msgstr "Fyrri áætluðum keyrslutíma sleppt"
+
+#: pro_scheduler/pgproJob.cpp:254
+msgid "Not run"
+msgstr "Ekki keyrt"
+
+#: pro_scheduler/pgproJob.cpp:356
+msgid "Log_time"
+msgstr "Log_time"
+
+#: pro_scheduler/pgproJob.cpp:357
+msgid "Critical"
+msgstr "Alvarlegt"
+
+#: pro_scheduler/pgproJob.cpp:359
+msgid "Stage"
+msgstr "Stig"
+
+#: pro_scheduler/pgproJob.cpp:505
+msgid "Enabled or disabled job"
+msgstr "Verk virkjað eða afvirkjað"
+
+#: frm/frmQuery.cpp:4689
+msgid "Please enter name string with prefix dbname or description server\n"
+msgstr "Sláðu inn nafnastreng með forskeytinu dbname eða lýsingu þjóns\n"
+
+#: frm/frmQuery.cpp:4691
+msgid "Name autosave tab window."
+msgstr "Nafn á sjálfvistuðum flipaglugga."
+
+#: frm/frmOptions.cpp:615
+msgid "Color theme save to file %s"
+msgstr "Litaþema vistað í skrána %s"
+
+#: frm/frmOptions.cpp:637
+msgid "Color theme load from file %s"
+msgstr "Litaþema hlaðið úr skránni %s"
+
+#: frm/frmOptions.cpp:638
+msgid "Load theme"
+msgstr "Hlaða þema"
+
+#: schema/pgServer.cpp:1253
+msgid "Key words"
+msgstr "Stikkorð"
+
+#: hotdraw/utilities/hdRemoveDeleteDialog.cpp:117
+msgid "     Choose Remove from Diagram to remove only from current diagram.     "
+msgstr "     Veldu Fjarlægja úr skýringarriti til að fjarlægja aðeins úr núverandi skýringarriti.     "
+
+#: hotdraw/utilities/hdRemoveDeleteDialog.cpp:118
+msgid "     Choose Remove from Model to delete permanently.     "
+msgstr "     Veldu Fjarlægja úr líkani til að eyða varanlega.     "
+
+#: hotdraw/main/hdDrawingView.cpp:457
+msgid "Sample Item"
+msgstr "Dæmi um atriði"
+
+#: hotdraw/main/hdDrawingView.cpp:466
+msgid "Sample menu item"
+msgstr "Dæmi um valmyndaratriði"
+
+#: hotdraw/main/hdDrawingView.cpp:466
+msgid "Sample"
+msgstr "Dæmi"
+
+#: hotdraw/main/hdDrawingEditor.cpp:267
+msgid "Are you sure you wish to delete figure ?"
+msgstr "Ertu viss um að þú viljir eyða myndinni?"
+
+#: hotdraw/main/hdDrawingEditor.cpp:267
+msgid "Delete figures?"
+msgstr "Eyða myndum?"
+
+#: hotdraw/main/hdDrawingEditor.cpp:272
+msgid "Are you sure you wish to delete %d figures?"
+msgstr "Ertu viss um að þú viljir eyða %d myndum?"
+
+#: ui/dlgFindReplace.xrc:65
+msgid "All find tabs"
+msgstr "Allir leitarflipar"
+
+#: ui/dlgProJob.xrc:105
+msgid "Run as"
+msgstr "Keyra sem"
+
+#: ui/dlgProJob.xrc:195
+msgid "Commands"
+msgstr "Skipanir"
+
+#: ui/dlgProJob.xrc:234
+msgid "use same transaction"
+msgstr "nota sömu færslu"
+
+#: ui/dlgServer.xrc:190
+msgid "Select SSL Root Certificate File"
+msgstr "Veldu SSL rótarskírteinisskrá"
+
+#: ui/dlgServer.xrc:206
+msgid "Select SSL Certificate Revocation List File"
+msgstr "Veldu SSL afturköllunarlistaskrá"
+
+#: ui/dlgServer.xrc:222
+msgid "Select SSL certificate file"
+msgstr "Veldu SSL skírteinisskrá"
+
+#: ui/dlgServer.xrc:238
+msgid "Select SSL key file"
+msgstr "Veldu SSL lykilskrá"
+
+#: ui/dlgServer.xrc:361
+msgid "Select identity file"
+msgstr "Veldu auðkennisskrá"
+
+#: ui/dlgServer.xrc:377
+msgid "Select public key file"
+msgstr "Veldu opinbera lykilskrá"
+
+#: ui/dlgServer.xrc:466
+msgid "Connect str"
+msgstr "Tengistrengur"
+
+#: ui/dlgTransformText.xrc:5
+msgid "Transform text"
+msgstr "Umbreyta texta"
+
+#: ui/dlgTransformText.xrc:17
+msgid "Source text options"
+msgstr "Valkostir upprunatexta"
+
+#: ui/dlgTransformText.xrc:33
+msgid "PCRE regexp"
+msgstr "PCRE regluleg segð"
+
+#: ui/dlgTransformText.xrc:50
+msgid "Replace expression"
+msgstr "Útskiptingarsegð"
+
+#: ui/dlgTransformText.xrc:67
+msgid "Rows limit"
+msgstr "Hámark raða"
+
+#: ui/dlgTransformText.xrc:87
+msgid "Chars limit"
+msgstr "Hámark stafa"
+
+#: ui/dlgTransformText.xrc:107
+msgid "Refresh highlight"
+msgstr "Endurnýja auðkenningu"
+
+#: ui/dlgTransformText.xrc:124
+msgid "Source text"
+msgstr "Upprunatexti"
+
+#: ui/dlgTransformText.xrc:160
+msgid "Transform text options"
+msgstr "Valkostir textaumbreytingar"
+
+#: ui/dlgTransformText.xrc:176
+msgid "Append before row"
+msgstr "Bæta við á undan röð"
+
+#: ui/dlgTransformText.xrc:196
+msgid "After row"
+msgstr "Á eftir röð"
+
+#: ui/dlgTransformText.xrc:230
+msgid "Field separator"
+msgstr "Reitaskilgreinir"
+
+#: ui/dlgTransformText.xrc:267
+msgid "Load options"
+msgstr "Hleðsluvalkostir"
+
+#: ui/dlgTransformText.xrc:276
+msgid "First"
+msgstr "Fyrsta"
+
+#: ui/dlgTransformText.xrc:335
+msgid "Rows loading"
+msgstr "Hleð raðir"
+
+#: ui/frmAwr.xrc:6
+msgid "AWR report"
+msgstr "AWR skýrsla"
+
+#: ui/frmAwr.xrc:36
+msgid "Type report"
+msgstr "Tegund skýrslu"
+
+#: ui/frmAwr.xrc:39
+msgid "Report"
+msgstr "Skýrsla"
+
+#: ui/frmAwr.xrc:40
+msgid "Diff report"
+msgstr "Mismunaskýrsla"
+
+#: ui/frmAwr.xrc:104
+msgid "Start Id1"
+msgstr "Upphafs-Id1"
+
+#: ui/frmAwr.xrc:123
+msgid "End Id1"
+msgstr "Loka-Id1"
+
+#: ui/frmAwr.xrc:166
+msgid "Start Id2"
+msgstr "Upphafs-Id2"
+
+#: ui/frmAwr.xrc:185
+msgid "End Id2"
+msgstr "Loka-Id2"
+
+#: ui/frmExport.xrc:110
+msgid "format COPY"
+msgstr "COPY snið"
+
+#: ui/frmExport.xrc:116
+msgid "Xls fmt copy"
+msgstr "Xls snið afritunar"
+
+#: ui/frmImport.xrc:33
+msgid "Select the file to import"
+msgstr "Veldu skrána sem á að flytja inn"
+
+#: ui/frmOptions.xrc:131
+msgid "Select theme"
+msgstr "Veldu þema"
+
+#: ui/frmOptions.xrc:154
+msgid "Load"
+msgstr "Hlaða"
+
+#: ui/frmOptions.xrc:222
+msgid "Options extended JSON:"
+msgstr "Útvíkkaðir JSON valkostir:"
+
+#: ui/frmOptions.xrc:261
+msgid "Beautiful big numbers on the statistics page"
+msgstr "Læsileg stór tölugildi á tölfræðisíðunni"
+
+#: ui/frmOptions.xrc:272
+msgid "Show the dependencies of functions on tables,views,functions"
+msgstr "Sýna ávirkni falla á töflur, sýnir og föll"
+
+#: ui/frmOptions.xrc:457
+msgid "Show DB name in tree"
+msgstr "Sýna heiti gagnagrunns í trénu"
+
+#: ui/frmOptions.xrc:465
+msgid "Quick jump to the root node"
+msgstr "Fljótlegt stökk á rótarhnútinn"
+
+#: ui/frmOptions.xrc:635
+msgid "Select utility to format text"
+msgstr "Veldu forrit til að forsníða texta"
+
+#: ui/frmOptions.xrc:645
+msgid "External alignment utlity"
+msgstr "Ytra jöfnunarforrit"
+
+#: ui/frmOptions.xrc:662
+msgid "Enable ASUTP style"
+msgstr "Virkja ASUTP stíl"
+
+#: ui/frmOptions.xrc:677
+msgid "Hide query history"
+msgstr "Fela fyrirspurnasögu"
+
+#: ui/frmOptions.xrc:692
+msgid "Auto save query text"
+msgstr "Vista fyrirspurnatexta sjálfkrafa"
+
+#: ui/frmOptions.xrc:707
+msgid "Use word hints"
+msgstr "Nota orðaábendingar"
+
+#: ui/frmOptions.xrc:722
+msgid "Replace variables in a query"
+msgstr "Skipta út breytum í fyrirspurn"
+
+#: ui/frmOptions.xrc:821
+msgid "Use system background color caret line"
+msgstr "Nota bakgrunnslit kerfisins fyrir línu bendils"
+
+#: ui/frmOptions.xrc:876
+msgid "Width for keyboard layout"
+msgstr "Breidd fyrir lyklaborðsskipan"
+
+#: ui/frmOptions.xrc:1227
+msgid "Select file to store favourites queries"
+msgstr "Veldu skrá til að vista uppáhaldsfyrirspurnir"
+
+#: ui/frmOptions.xrc:1255
+msgid "Select file to store macros"
+msgstr "Veldu skrá til að vista fjölva"
+
+#: ui/frmOptions.xrc:1283
+msgid "Select file to store queries history"
+msgstr "Veldu skrá til að vista fyrirspurnasögu"
+
+#: ui/frmOptions.xrc:1388
+msgid "Blocked by Process Colour"
+msgstr "Litur ferlis sem er læst"
+
+#: ui/frmOptions.xrc:1402
+msgid "Idle&in&transaction&session&timeout Process Colour"
+msgstr "Litur ferlis Idle&in&transaction&session&timeout"
+
+#: frm/frmOptions.cpp:1
+msgid "Appearance"
+msgstr "Útlit"
+
+#: frm/frmOptions.cpp:2
+msgid "Automatic"
+msgstr "Sjálfvirkt"
+
+#: frm/frmOptions.cpp:3
+msgid "Light"
+msgstr "Ljóst"
+
+#: frm/frmOptions.cpp:4
+msgid "Dark"
+msgstr "Dökkt"
+
+#: frm/frmOptions.cpp:5
+msgid "Restart pgAdmin III to fully apply the appearance change."
+msgstr "Endurræstu pgAdmin III til að beita breytingu á útliti að fullu."

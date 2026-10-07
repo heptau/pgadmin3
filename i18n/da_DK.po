@@ -31201,4 +31201,402 @@ msgstr "Typer"
 #~ msgid "|"
 #~ msgstr "|"
 
+#: pgAdmin3.cpp:389
+msgid "open server log window"
+msgstr "åbn serverens logvindue"
 
+#: pgAdmin3.cpp:403
+msgid "export servers configuration to file pgadmin3.ini"
+msgstr "eksportér serverkonfigurationen til filen pgadmin3.ini"
+
+#: pgAdmin3.cpp:404
+msgid "Enable Dark mode"
+msgstr "Aktivér mørk tilstand"
+
+#: pgAdmin3.cpp:1013
+msgid "Log - "
+msgstr "Log - "
+
+#: pro_scheduler/pgproJob.cpp:36
+msgid "Retrieving details on pro_scheduler job"
+msgstr "Henter oplysninger om pro_scheduler-job"
+
+#: pro_scheduler/pgproJob.cpp:39
+msgid "Refreshing pro_scheduler job"
+msgstr "Opdaterer pro_scheduler-job"
+
+#: pro_scheduler/pgproJob.cpp:42
+msgid "pro_scheduler job properties report"
+msgstr "Egenskabsrapport for pro_scheduler-job"
+
+#: pro_scheduler/pgproJob.cpp:48
+msgid "pro_scheduler job DDL report"
+msgstr "DDL-rapport for pro_scheduler-job"
+
+#: pro_scheduler/pgproJob.cpp:51
+msgid "pro_scheduler job dependencies report"
+msgstr "Afhængighedsrapport for pro_scheduler-job"
+
+#: pro_scheduler/pgproJob.cpp:54
+msgid "pro_scheduler job dependencies"
+msgstr "Afhængigheder for pro_scheduler-job"
+
+#: pro_scheduler/pgproJob.cpp:57
+msgid "pro_scheduler job dependents report"
+msgstr "Rapport over afhængige af pro_scheduler-job"
+
+#: pro_scheduler/pgproJob.cpp:60
+msgid "pro_scheduler job dependents"
+msgstr "Afhængige af pro_scheduler-job"
+
+#: pro_scheduler/pgproJob.cpp:140
+msgid "Started"
+msgstr "Startet"
+
+#: pro_scheduler/pgproJob.cpp:141
+msgid "Finished"
+msgstr "Afsluttet"
+
+#: pro_scheduler/pgproJob.cpp:143
+msgid "Crontab"
+msgstr "Crontab"
+
+#: pro_scheduler/pgproJob.cpp:146
+msgid "Runas"
+msgstr "Kør som"
+
+#: pro_scheduler/pgproJob.cpp:152
+msgid "Next start job"
+msgstr "Næste jobstart"
+
+#: pro_scheduler/pgproJob.cpp:185
+msgid "Previous sched time run skip"
+msgstr "Forrige planlagte kørsel sprunget over"
+
+#: pro_scheduler/pgproJob.cpp:254
+msgid "Not run"
+msgstr "Ikke kørt"
+
+#: pro_scheduler/pgproJob.cpp:356
+msgid "Log_time"
+msgstr "Log_time"
+
+#: pro_scheduler/pgproJob.cpp:357
+msgid "Critical"
+msgstr "Kritisk"
+
+#: pro_scheduler/pgproJob.cpp:359
+msgid "Stage"
+msgstr "Fase"
+
+#: pro_scheduler/pgproJob.cpp:505
+msgid "Enabled or disabled job"
+msgstr "Job aktiveret eller deaktiveret"
+
+#: frm/frmQuery.cpp:4689
+msgid "Please enter name string with prefix dbname or description server\n"
+msgstr "Angiv en navnestreng med præfiks for databasenavn eller serverbeskrivelse\n"
+
+#: frm/frmQuery.cpp:4691
+msgid "Name autosave tab window."
+msgstr "Navn på fanevindue til automatisk lagring."
+
+#: frm/frmOptions.cpp:615
+msgid "Color theme save to file %s"
+msgstr "Farvetema gemt i filen %s"
+
+#: frm/frmOptions.cpp:637
+msgid "Color theme load from file %s"
+msgstr "Farvetema indlæst fra filen %s"
+
+#: frm/frmOptions.cpp:638
+msgid "Load theme"
+msgstr "Indlæs tema"
+
+#: schema/pgServer.cpp:1253
+msgid "Key words"
+msgstr "Nøgleord"
+
+#: hotdraw/utilities/hdRemoveDeleteDialog.cpp:117
+msgid "     Choose Remove from Diagram to remove only from current diagram.     "
+msgstr "     Vælg Fjern fra diagram for kun at fjerne fra det aktuelle diagram.     "
+
+#: hotdraw/utilities/hdRemoveDeleteDialog.cpp:118
+msgid "     Choose Remove from Model to delete permanently.     "
+msgstr "     Vælg Fjern fra model for at slette permanent.     "
+
+#: hotdraw/main/hdDrawingView.cpp:457
+msgid "Sample Item"
+msgstr "Eksempelelement"
+
+#: hotdraw/main/hdDrawingView.cpp:466
+msgid "Sample menu item"
+msgstr "Eksempel på menupunkt"
+
+#: hotdraw/main/hdDrawingView.cpp:466
+msgid "Sample"
+msgstr "Eksempel"
+
+#: hotdraw/main/hdDrawingEditor.cpp:267
+msgid "Are you sure you wish to delete figure ?"
+msgstr "Er du sikker på, at du vil slette figuren?"
+
+#: hotdraw/main/hdDrawingEditor.cpp:267
+msgid "Delete figures?"
+msgstr "Slet figurer?"
+
+#: hotdraw/main/hdDrawingEditor.cpp:272
+msgid "Are you sure you wish to delete %d figures?"
+msgstr "Er du sikker på, at du vil slette %d figurer?"
+
+#: ui/dlgFindReplace.xrc:65
+msgid "All find tabs"
+msgstr "Alle søgefaner"
+
+#: ui/dlgProJob.xrc:105
+msgid "Run as"
+msgstr "Kør som"
+
+#: ui/dlgProJob.xrc:195
+msgid "Commands"
+msgstr "Kommandoer"
+
+#: ui/dlgProJob.xrc:234
+msgid "use same transaction"
+msgstr "brug samme transaktion"
+
+#: ui/dlgServer.xrc:190
+msgid "Select SSL Root Certificate File"
+msgstr "Vælg SSL-rodcertifikatfil"
+
+#: ui/dlgServer.xrc:206
+msgid "Select SSL Certificate Revocation List File"
+msgstr "Vælg fil med SSL-certifikatspærreliste"
+
+#: ui/dlgServer.xrc:222
+msgid "Select SSL certificate file"
+msgstr "Vælg SSL-certifikatfil"
+
+#: ui/dlgServer.xrc:238
+msgid "Select SSL key file"
+msgstr "Vælg SSL-nøglefil"
+
+#: ui/dlgServer.xrc:361
+msgid "Select identity file"
+msgstr "Vælg identitetsfil"
+
+#: ui/dlgServer.xrc:377
+msgid "Select public key file"
+msgstr "Vælg fil med offentlig nøgle"
+
+#: ui/dlgServer.xrc:466
+msgid "Connect str"
+msgstr "Forbindelsesstreng"
+
+#: ui/dlgTransformText.xrc:5
+msgid "Transform text"
+msgstr "Transformér tekst"
+
+#: ui/dlgTransformText.xrc:17
+msgid "Source text options"
+msgstr "Indstillinger for kildetekst"
+
+#: ui/dlgTransformText.xrc:33
+msgid "PCRE regexp"
+msgstr "PCRE-regulært udtryk"
+
+#: ui/dlgTransformText.xrc:50
+msgid "Replace expression"
+msgstr "Erstatningsudtryk"
+
+#: ui/dlgTransformText.xrc:67
+msgid "Rows limit"
+msgstr "Rækkegrænse"
+
+#: ui/dlgTransformText.xrc:87
+msgid "Chars limit"
+msgstr "Tegngrænse"
+
+#: ui/dlgTransformText.xrc:107
+msgid "Refresh highlight"
+msgstr "Opdater fremhævning"
+
+#: ui/dlgTransformText.xrc:124
+msgid "Source text"
+msgstr "Kildetekst"
+
+#: ui/dlgTransformText.xrc:160
+msgid "Transform text options"
+msgstr "Indstillinger for teksttransformation"
+
+#: ui/dlgTransformText.xrc:176
+msgid "Append before row"
+msgstr "Tilføj før række"
+
+#: ui/dlgTransformText.xrc:196
+msgid "After row"
+msgstr "Efter række"
+
+#: ui/dlgTransformText.xrc:230
+msgid "Field separator"
+msgstr "Feltseparator"
+
+#: ui/dlgTransformText.xrc:267
+msgid "Load options"
+msgstr "Indstillinger for indlæsning"
+
+#: ui/dlgTransformText.xrc:276
+msgid "First"
+msgstr "Første"
+
+#: ui/dlgTransformText.xrc:335
+msgid "Rows loading"
+msgstr "Indlæsning af rækker"
+
+#: ui/frmAwr.xrc:6
+msgid "AWR report"
+msgstr "AWR-rapport"
+
+#: ui/frmAwr.xrc:36
+msgid "Type report"
+msgstr "Rapporttype"
+
+#: ui/frmAwr.xrc:39
+msgid "Report"
+msgstr "Rapport"
+
+#: ui/frmAwr.xrc:40
+msgid "Diff report"
+msgstr "Differensrapport"
+
+#: ui/frmAwr.xrc:104
+msgid "Start Id1"
+msgstr "Start-Id1"
+
+#: ui/frmAwr.xrc:123
+msgid "End Id1"
+msgstr "Slut-Id1"
+
+#: ui/frmAwr.xrc:166
+msgid "Start Id2"
+msgstr "Start-Id2"
+
+#: ui/frmAwr.xrc:185
+msgid "End Id2"
+msgstr "Slut-Id2"
+
+#: ui/frmExport.xrc:110
+msgid "format COPY"
+msgstr "COPY-format"
+
+#: ui/frmExport.xrc:116
+msgid "Xls fmt copy"
+msgstr "Kopi i Xls-format"
+
+#: ui/frmImport.xrc:33
+msgid "Select the file to import"
+msgstr "Vælg filen, der skal importeres"
+
+#: ui/frmOptions.xrc:131
+msgid "Select theme"
+msgstr "Vælg tema"
+
+#: ui/frmOptions.xrc:154
+msgid "Load"
+msgstr "Indlæs"
+
+#: ui/frmOptions.xrc:222
+msgid "Options extended JSON:"
+msgstr "Udvidede JSON-indstillinger:"
+
+#: ui/frmOptions.xrc:261
+msgid "Beautiful big numbers on the statistics page"
+msgstr "Læsevenlige store tal på statistiksiden"
+
+#: ui/frmOptions.xrc:272
+msgid "Show the dependencies of functions on tables,views,functions"
+msgstr "Vis funktioners afhængigheder af tabeller, visninger og funktioner"
+
+#: ui/frmOptions.xrc:457
+msgid "Show DB name in tree"
+msgstr "Vis databasenavn i træet"
+
+#: ui/frmOptions.xrc:465
+msgid "Quick jump to the root node"
+msgstr "Hurtigt spring til rodknuden"
+
+#: ui/frmOptions.xrc:635
+msgid "Select utility to format text"
+msgstr "Vælg værktøj til formatering af tekst"
+
+#: ui/frmOptions.xrc:645
+msgid "External alignment utlity"
+msgstr "Eksternt justeringsværktøj"
+
+#: ui/frmOptions.xrc:662
+msgid "Enable ASUTP style"
+msgstr "Aktivér ASUTP-stil"
+
+#: ui/frmOptions.xrc:677
+msgid "Hide query history"
+msgstr "Skjul forespørgselshistorik"
+
+#: ui/frmOptions.xrc:692
+msgid "Auto save query text"
+msgstr "Gem forespørgselstekst automatisk"
+
+#: ui/frmOptions.xrc:707
+msgid "Use word hints"
+msgstr "Brug ordhjælp"
+
+#: ui/frmOptions.xrc:722
+msgid "Replace variables in a query"
+msgstr "Erstat variabler i en forespørgsel"
+
+#: ui/frmOptions.xrc:821
+msgid "Use system background color caret line"
+msgstr "Brug systemets baggrundsfarve til markørlinjen"
+
+#: ui/frmOptions.xrc:876
+msgid "Width for keyboard layout"
+msgstr "Bredde for tastaturlayout"
+
+#: ui/frmOptions.xrc:1227
+msgid "Select file to store favourites queries"
+msgstr "Vælg fil til lagring af foretrukne forespørgsler"
+
+#: ui/frmOptions.xrc:1255
+msgid "Select file to store macros"
+msgstr "Vælg fil til lagring af makroer"
+
+#: ui/frmOptions.xrc:1283
+msgid "Select file to store queries history"
+msgstr "Vælg fil til lagring af forespørgselshistorik"
+
+#: ui/frmOptions.xrc:1388
+msgid "Blocked by Process Colour"
+msgstr "Farve for proces blokeret af anden proces"
+
+#: ui/frmOptions.xrc:1402
+msgid "Idle&in&transaction&session&timeout Process Colour"
+msgstr "Farve for Idle&in&transaction&session&timeout-proces"
+
+#: frm/frmOptions.cpp:1
+msgid "Appearance"
+msgstr "Udseende"
+
+#: frm/frmOptions.cpp:2
+msgid "Automatic"
+msgstr "Automatisk"
+
+#: frm/frmOptions.cpp:3
+msgid "Light"
+msgstr "Lys"
+
+#: frm/frmOptions.cpp:4
+msgid "Dark"
+msgstr "Mørk"
+
+#: frm/frmOptions.cpp:5
+msgid "Restart pgAdmin III to fully apply the appearance change."
+msgstr "Genstart pgAdmin III for at anvende ændringen af udseendet fuldt ud."

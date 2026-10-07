@@ -267,7 +267,20 @@ void sysLogger::DoLog(wxLogLevel level, const wxChar *msg, time_t timestamp)
 	// Display a messagebox if required.
 #if !defined(PGSCLI)
 	if (icon != 0 && !SilenceMessage(msg))
+	{
+#ifdef __WXMAC__
+		// Showing the (modal) NSAlert from inside the wxLog call chain aborts
+		// on macOS (alert icon rendered with a zero size), so show it from the
+		// event loop instead.
+		wxString text = preamble + wxGetTranslation(msg);
+		wxString title = appearanceFactory->GetLongAppName();
+		wxTheApp->CallAfter([text, title, icon]() {
+			wxMessageBox(text, title, wxOK | wxCENTRE | icon);
+		});
+#else
 		wxMessageBox(preamble + wxGetTranslation(msg), appearanceFactory->GetLongAppName(), wxOK | wxCENTRE | icon);
+#endif
+	}
 #endif // PGSCLI
 }
 

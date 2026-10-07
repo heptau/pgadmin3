@@ -16246,4 +16246,402 @@ msgstr "yes"
 #~ msgid "VOLATILE"
 #~ msgstr "VOLATILE"
 
+#: pgAdmin3.cpp:389
+msgid "open server log window"
+msgstr "отвори прозорец за дневникот на серверот"
 
+#: pgAdmin3.cpp:403
+msgid "export servers configuration to file pgadmin3.ini"
+msgstr "извези ја конфигурацијата на серверите во датотеката pgadmin3.ini"
+
+#: pgAdmin3.cpp:404
+msgid "Enable Dark mode"
+msgstr "Овозможи темен режим"
+
+#: pgAdmin3.cpp:1013
+msgid "Log - "
+msgstr "Дневник - "
+
+#: pro_scheduler/pgproJob.cpp:36
+msgid "Retrieving details on pro_scheduler job"
+msgstr "Преземање детали за задачата на pro_scheduler"
+
+#: pro_scheduler/pgproJob.cpp:39
+msgid "Refreshing pro_scheduler job"
+msgstr "Освежување на задачата на pro_scheduler"
+
+#: pro_scheduler/pgproJob.cpp:42
+msgid "pro_scheduler job properties report"
+msgstr "Извештај за својства на задачата на pro_scheduler"
+
+#: pro_scheduler/pgproJob.cpp:48
+msgid "pro_scheduler job DDL report"
+msgstr "Извештај за DDL на задачата на pro_scheduler"
+
+#: pro_scheduler/pgproJob.cpp:51
+msgid "pro_scheduler job dependencies report"
+msgstr "Извештај за зависности на задачата на pro_scheduler"
+
+#: pro_scheduler/pgproJob.cpp:54
+msgid "pro_scheduler job dependencies"
+msgstr "Зависности на задачата на pro_scheduler"
+
+#: pro_scheduler/pgproJob.cpp:57
+msgid "pro_scheduler job dependents report"
+msgstr "Извештај за зависни објекти на задачата на pro_scheduler"
+
+#: pro_scheduler/pgproJob.cpp:60
+msgid "pro_scheduler job dependents"
+msgstr "Зависни објекти на задачата на pro_scheduler"
+
+#: pro_scheduler/pgproJob.cpp:140
+msgid "Started"
+msgstr "Стартувана"
+
+#: pro_scheduler/pgproJob.cpp:141
+msgid "Finished"
+msgstr "Завршена"
+
+#: pro_scheduler/pgproJob.cpp:143
+msgid "Crontab"
+msgstr "Crontab"
+
+#: pro_scheduler/pgproJob.cpp:146
+msgid "Runas"
+msgstr "Изврши како"
+
+#: pro_scheduler/pgproJob.cpp:152
+msgid "Next start job"
+msgstr "Следен старт на задачата"
+
+#: pro_scheduler/pgproJob.cpp:185
+msgid "Previous sched time run skip"
+msgstr "Претходното закажано извршување е прескокнато"
+
+#: pro_scheduler/pgproJob.cpp:254
+msgid "Not run"
+msgstr "Не е извршена"
+
+#: pro_scheduler/pgproJob.cpp:356
+msgid "Log_time"
+msgstr "Време на дневник"
+
+#: pro_scheduler/pgproJob.cpp:357
+msgid "Critical"
+msgstr "Критично"
+
+#: pro_scheduler/pgproJob.cpp:359
+msgid "Stage"
+msgstr "Фаза"
+
+#: pro_scheduler/pgproJob.cpp:505
+msgid "Enabled or disabled job"
+msgstr "Задачата е овозможена или оневозможена"
+
+#: frm/frmQuery.cpp:4689
+msgid "Please enter name string with prefix dbname or description server\n"
+msgstr "Внесете име со префикс за име на база на податоци или опис на серверот\n"
+
+#: frm/frmQuery.cpp:4691
+msgid "Name autosave tab window."
+msgstr "Име на јазичето за автоматско зачувување."
+
+#: frm/frmOptions.cpp:615
+msgid "Color theme save to file %s"
+msgstr "Темата на бои е зачувана во датотеката %s"
+
+#: frm/frmOptions.cpp:637
+msgid "Color theme load from file %s"
+msgstr "Темата на бои е вчитана од датотеката %s"
+
+#: frm/frmOptions.cpp:638
+msgid "Load theme"
+msgstr "Вчитај тема"
+
+#: schema/pgServer.cpp:1253
+msgid "Key words"
+msgstr "Клучни зборови"
+
+#: hotdraw/utilities/hdRemoveDeleteDialog.cpp:117
+msgid "     Choose Remove from Diagram to remove only from current diagram.     "
+msgstr "     Изберете Отстрани од дијаграм за да отстраните само од тековниот дијаграм.     "
+
+#: hotdraw/utilities/hdRemoveDeleteDialog.cpp:118
+msgid "     Choose Remove from Model to delete permanently.     "
+msgstr "     Изберете Отстрани од модел за трајно бришење.     "
+
+#: hotdraw/main/hdDrawingView.cpp:457
+msgid "Sample Item"
+msgstr "Примерок ставка"
+
+#: hotdraw/main/hdDrawingView.cpp:466
+msgid "Sample menu item"
+msgstr "Примерок ставка од мени"
+
+#: hotdraw/main/hdDrawingView.cpp:466
+msgid "Sample"
+msgstr "Примерок"
+
+#: hotdraw/main/hdDrawingEditor.cpp:267
+msgid "Are you sure you wish to delete figure ?"
+msgstr "Дали сте сигурни дека сакате да ја избришете фигурата?"
+
+#: hotdraw/main/hdDrawingEditor.cpp:267
+msgid "Delete figures?"
+msgstr "Да се избришат фигурите?"
+
+#: hotdraw/main/hdDrawingEditor.cpp:272
+msgid "Are you sure you wish to delete %d figures?"
+msgstr "Дали сте сигурни дека сакате да избришете %d фигури?"
+
+#: ui/dlgFindReplace.xrc:65
+msgid "All find tabs"
+msgstr "Сите јазичиња за пребарување"
+
+#: ui/dlgProJob.xrc:105
+msgid "Run as"
+msgstr "Изврши како"
+
+#: ui/dlgProJob.xrc:195
+msgid "Commands"
+msgstr "Команди"
+
+#: ui/dlgProJob.xrc:234
+msgid "use same transaction"
+msgstr "користи иста трансакција"
+
+#: ui/dlgServer.xrc:190
+msgid "Select SSL Root Certificate File"
+msgstr "Изберете датотека со SSL root сертификат"
+
+#: ui/dlgServer.xrc:206
+msgid "Select SSL Certificate Revocation List File"
+msgstr "Изберете листа за отповикување на SSL сертификати"
+
+#: ui/dlgServer.xrc:222
+msgid "Select SSL certificate file"
+msgstr "Изберете датотека со SSL сертификат"
+
+#: ui/dlgServer.xrc:238
+msgid "Select SSL key file"
+msgstr "Изберете датотека со SSL клуч"
+
+#: ui/dlgServer.xrc:361
+msgid "Select identity file"
+msgstr "Изберете датотека со идентитет"
+
+#: ui/dlgServer.xrc:377
+msgid "Select public key file"
+msgstr "Изберете датотека со јавен клуч"
+
+#: ui/dlgServer.xrc:466
+msgid "Connect str"
+msgstr "Низа за поврзување"
+
+#: ui/dlgTransformText.xrc:5
+msgid "Transform text"
+msgstr "Трансформирај текст"
+
+#: ui/dlgTransformText.xrc:17
+msgid "Source text options"
+msgstr "Опции за изворниот текст"
+
+#: ui/dlgTransformText.xrc:33
+msgid "PCRE regexp"
+msgstr "PCRE регуларен израз"
+
+#: ui/dlgTransformText.xrc:50
+msgid "Replace expression"
+msgstr "Израз за замена"
+
+#: ui/dlgTransformText.xrc:67
+msgid "Rows limit"
+msgstr "Ограничување на редови"
+
+#: ui/dlgTransformText.xrc:87
+msgid "Chars limit"
+msgstr "Ограничување на знаци"
+
+#: ui/dlgTransformText.xrc:107
+msgid "Refresh highlight"
+msgstr "Освежи го истакнувањето"
+
+#: ui/dlgTransformText.xrc:124
+msgid "Source text"
+msgstr "Изворен текст"
+
+#: ui/dlgTransformText.xrc:160
+msgid "Transform text options"
+msgstr "Опции за трансформација на текст"
+
+#: ui/dlgTransformText.xrc:176
+msgid "Append before row"
+msgstr "Додај пред редот"
+
+#: ui/dlgTransformText.xrc:196
+msgid "After row"
+msgstr "По редот"
+
+#: ui/dlgTransformText.xrc:230
+msgid "Field separator"
+msgstr "Разделувач на полиња"
+
+#: ui/dlgTransformText.xrc:267
+msgid "Load options"
+msgstr "Опции за вчитување"
+
+#: ui/dlgTransformText.xrc:276
+msgid "First"
+msgstr "Прв"
+
+#: ui/dlgTransformText.xrc:335
+msgid "Rows loading"
+msgstr "Вчитување на редови"
+
+#: ui/frmAwr.xrc:6
+msgid "AWR report"
+msgstr "AWR извештај"
+
+#: ui/frmAwr.xrc:36
+msgid "Type report"
+msgstr "Тип на извештај"
+
+#: ui/frmAwr.xrc:39
+msgid "Report"
+msgstr "Извештај"
+
+#: ui/frmAwr.xrc:40
+msgid "Diff report"
+msgstr "Извештај за разлики"
+
+#: ui/frmAwr.xrc:104
+msgid "Start Id1"
+msgstr "Почетен Id1"
+
+#: ui/frmAwr.xrc:123
+msgid "End Id1"
+msgstr "Краен Id1"
+
+#: ui/frmAwr.xrc:166
+msgid "Start Id2"
+msgstr "Почетен Id2"
+
+#: ui/frmAwr.xrc:185
+msgid "End Id2"
+msgstr "Краен Id2"
+
+#: ui/frmExport.xrc:110
+msgid "format COPY"
+msgstr "COPY формат"
+
+#: ui/frmExport.xrc:116
+msgid "Xls fmt copy"
+msgstr "Xls формат при копирање"
+
+#: ui/frmImport.xrc:33
+msgid "Select the file to import"
+msgstr "Изберете ја датотеката за увоз"
+
+#: ui/frmOptions.xrc:131
+msgid "Select theme"
+msgstr "Изберете тема"
+
+#: ui/frmOptions.xrc:154
+msgid "Load"
+msgstr "Вчитај"
+
+#: ui/frmOptions.xrc:222
+msgid "Options extended JSON:"
+msgstr "Проширени JSON опции:"
+
+#: ui/frmOptions.xrc:261
+msgid "Beautiful big numbers on the statistics page"
+msgstr "Убав приказ на големи бројки на страницата за статистика"
+
+#: ui/frmOptions.xrc:272
+msgid "Show the dependencies of functions on tables,views,functions"
+msgstr "Прикажи ги зависностите на функциите од табели, прегледи и функции"
+
+#: ui/frmOptions.xrc:457
+msgid "Show DB name in tree"
+msgstr "Прикажи го името на базата во дрвото"
+
+#: ui/frmOptions.xrc:465
+msgid "Quick jump to the root node"
+msgstr "Брз скок до коренскиот јазол"
+
+#: ui/frmOptions.xrc:635
+msgid "Select utility to format text"
+msgstr "Изберете алатка за форматирање на текст"
+
+#: ui/frmOptions.xrc:645
+msgid "External alignment utlity"
+msgstr "Надворешна алатка за порамнување"
+
+#: ui/frmOptions.xrc:662
+msgid "Enable ASUTP style"
+msgstr "Овозможи ASUTP стил"
+
+#: ui/frmOptions.xrc:677
+msgid "Hide query history"
+msgstr "Скриј ја историјата на барања"
+
+#: ui/frmOptions.xrc:692
+msgid "Auto save query text"
+msgstr "Автоматски зачувај го текстот на барањето"
+
+#: ui/frmOptions.xrc:707
+msgid "Use word hints"
+msgstr "Користи совети за зборови"
+
+#: ui/frmOptions.xrc:722
+msgid "Replace variables in a query"
+msgstr "Замени променливи во барање"
+
+#: ui/frmOptions.xrc:821
+msgid "Use system background color caret line"
+msgstr "Користи системска боја на позадина за линијата на курсорот"
+
+#: ui/frmOptions.xrc:876
+msgid "Width for keyboard layout"
+msgstr "Ширина за распоредот на тастатурата"
+
+#: ui/frmOptions.xrc:1227
+msgid "Select file to store favourites queries"
+msgstr "Изберете датотека за чување омилени барања"
+
+#: ui/frmOptions.xrc:1255
+msgid "Select file to store macros"
+msgstr "Изберете датотека за чување макроа"
+
+#: ui/frmOptions.xrc:1283
+msgid "Select file to store queries history"
+msgstr "Изберете датотека за чување историја на барања"
+
+#: ui/frmOptions.xrc:1388
+msgid "Blocked by Process Colour"
+msgstr "Боја за блокирано од процес"
+
+#: ui/frmOptions.xrc:1402
+msgid "Idle&in&transaction&session&timeout Process Colour"
+msgstr "Боја&за&процес&со&idle-in-transaction-истек"
+
+#: frm/frmOptions.cpp:1
+msgid "Appearance"
+msgstr "Изглед"
+
+#: frm/frmOptions.cpp:2
+msgid "Automatic"
+msgstr "Автоматски"
+
+#: frm/frmOptions.cpp:3
+msgid "Light"
+msgstr "Светла"
+
+#: frm/frmOptions.cpp:4
+msgid "Dark"
+msgstr "Темна"
+
+#: frm/frmOptions.cpp:5
+msgid "Restart pgAdmin III to fully apply the appearance change."
+msgstr "Рестартирајте го pgAdmin III за целосно да се примени промената на изгледот."

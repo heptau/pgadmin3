@@ -22891,4 +22891,402 @@ msgstr "Typen"
 #~ msgid "|"
 #~ msgstr "|"
 
+#: pgAdmin3.cpp:389
+msgid "open server log window"
+msgstr "Server-Protokollfenster öffnen"
 
+#: pgAdmin3.cpp:403
+msgid "export servers configuration to file pgadmin3.ini"
+msgstr "Serverkonfiguration in die Datei pgadmin3.ini exportieren"
+
+#: pgAdmin3.cpp:404
+msgid "Enable Dark mode"
+msgstr "Dunkelmodus aktivieren"
+
+#: pgAdmin3.cpp:1013
+msgid "Log - "
+msgstr "Protokoll - "
+
+#: pro_scheduler/pgproJob.cpp:36
+msgid "Retrieving details on pro_scheduler job"
+msgstr "Details zum pro_scheduler-Job werden abgerufen"
+
+#: pro_scheduler/pgproJob.cpp:39
+msgid "Refreshing pro_scheduler job"
+msgstr "pro_scheduler-Job wird aktualisiert"
+
+#: pro_scheduler/pgproJob.cpp:42
+msgid "pro_scheduler job properties report"
+msgstr "Eigenschaftenbericht des pro_scheduler-Jobs"
+
+#: pro_scheduler/pgproJob.cpp:48
+msgid "pro_scheduler job DDL report"
+msgstr "DDL-Bericht des pro_scheduler-Jobs"
+
+#: pro_scheduler/pgproJob.cpp:51
+msgid "pro_scheduler job dependencies report"
+msgstr "Abhängigkeitenbericht des pro_scheduler-Jobs"
+
+#: pro_scheduler/pgproJob.cpp:54
+msgid "pro_scheduler job dependencies"
+msgstr "Abhängigkeiten des pro_scheduler-Jobs"
+
+#: pro_scheduler/pgproJob.cpp:57
+msgid "pro_scheduler job dependents report"
+msgstr "Bericht über abhängige Objekte des pro_scheduler-Jobs"
+
+#: pro_scheduler/pgproJob.cpp:60
+msgid "pro_scheduler job dependents"
+msgstr "Abhängige Objekte des pro_scheduler-Jobs"
+
+#: pro_scheduler/pgproJob.cpp:140
+msgid "Started"
+msgstr "Gestartet"
+
+#: pro_scheduler/pgproJob.cpp:141
+msgid "Finished"
+msgstr "Beendet"
+
+#: pro_scheduler/pgproJob.cpp:143
+msgid "Crontab"
+msgstr "Crontab"
+
+#: pro_scheduler/pgproJob.cpp:146
+msgid "Runas"
+msgstr "Ausführen als"
+
+#: pro_scheduler/pgproJob.cpp:152
+msgid "Next start job"
+msgstr "Nächster Jobstart"
+
+#: pro_scheduler/pgproJob.cpp:185
+msgid "Previous sched time run skip"
+msgstr "Vorherige geplante Ausführung übersprungen"
+
+#: pro_scheduler/pgproJob.cpp:254
+msgid "Not run"
+msgstr "Nicht ausgeführt"
+
+#: pro_scheduler/pgproJob.cpp:356
+msgid "Log_time"
+msgstr "Protokollzeit"
+
+#: pro_scheduler/pgproJob.cpp:357
+msgid "Critical"
+msgstr "Kritisch"
+
+#: pro_scheduler/pgproJob.cpp:359
+msgid "Stage"
+msgstr "Phase"
+
+#: pro_scheduler/pgproJob.cpp:505
+msgid "Enabled or disabled job"
+msgstr "Job aktiviert oder deaktiviert"
+
+#: frm/frmQuery.cpp:4689
+msgid "Please enter name string with prefix dbname or description server\n"
+msgstr "Bitte einen Namen mit dem Präfix Datenbankname oder Serverbeschreibung eingeben\n"
+
+#: frm/frmQuery.cpp:4691
+msgid "Name autosave tab window."
+msgstr "Name des automatisch gespeicherten Tab-Fensters."
+
+#: frm/frmOptions.cpp:615
+msgid "Color theme save to file %s"
+msgstr "Farbschema in Datei %s speichern"
+
+#: frm/frmOptions.cpp:637
+msgid "Color theme load from file %s"
+msgstr "Farbschema aus Datei %s laden"
+
+#: frm/frmOptions.cpp:638
+msgid "Load theme"
+msgstr "Farbschema laden"
+
+#: schema/pgServer.cpp:1253
+msgid "Key words"
+msgstr "Schlüsselwörter"
+
+#: hotdraw/utilities/hdRemoveDeleteDialog.cpp:117
+msgid "     Choose Remove from Diagram to remove only from current diagram.     "
+msgstr "     Remove from Diagram wählen, um nur aus dem aktuellen Diagramm zu entfernen.     "
+
+#: hotdraw/utilities/hdRemoveDeleteDialog.cpp:118
+msgid "     Choose Remove from Model to delete permanently.     "
+msgstr "     Remove from Model wählen, um dauerhaft zu löschen.     "
+
+#: hotdraw/main/hdDrawingView.cpp:457
+msgid "Sample Item"
+msgstr "Beispielelement"
+
+#: hotdraw/main/hdDrawingView.cpp:466
+msgid "Sample menu item"
+msgstr "Beispiel-Menüelement"
+
+#: hotdraw/main/hdDrawingView.cpp:466
+msgid "Sample"
+msgstr "Beispiel"
+
+#: hotdraw/main/hdDrawingEditor.cpp:267
+msgid "Are you sure you wish to delete figure ?"
+msgstr "Sind Sie sicher, dass Sie die Figur löschen möchten?"
+
+#: hotdraw/main/hdDrawingEditor.cpp:267
+msgid "Delete figures?"
+msgstr "Figuren löschen?"
+
+#: hotdraw/main/hdDrawingEditor.cpp:272
+msgid "Are you sure you wish to delete %d figures?"
+msgstr "Sind Sie sicher, dass Sie %d Figuren löschen möchten?"
+
+#: ui/dlgFindReplace.xrc:65
+msgid "All find tabs"
+msgstr "Alle Such-Tabs"
+
+#: ui/dlgProJob.xrc:105
+msgid "Run as"
+msgstr "Ausführen als"
+
+#: ui/dlgProJob.xrc:195
+msgid "Commands"
+msgstr "Befehle"
+
+#: ui/dlgProJob.xrc:234
+msgid "use same transaction"
+msgstr "dieselbe Transaktion verwenden"
+
+#: ui/dlgServer.xrc:190
+msgid "Select SSL Root Certificate File"
+msgstr "SSL-Root-Zertifikatsdatei auswählen"
+
+#: ui/dlgServer.xrc:206
+msgid "Select SSL Certificate Revocation List File"
+msgstr "SSL-Zertifikatsperrlistendatei auswählen"
+
+#: ui/dlgServer.xrc:222
+msgid "Select SSL certificate file"
+msgstr "SSL-Zertifikatsdatei auswählen"
+
+#: ui/dlgServer.xrc:238
+msgid "Select SSL key file"
+msgstr "SSL-Schlüsseldatei auswählen"
+
+#: ui/dlgServer.xrc:361
+msgid "Select identity file"
+msgstr "Identitätsdatei auswählen"
+
+#: ui/dlgServer.xrc:377
+msgid "Select public key file"
+msgstr "Datei mit öffentlichem Schlüssel auswählen"
+
+#: ui/dlgServer.xrc:466
+msgid "Connect str"
+msgstr "Verbindungszeichenfolge"
+
+#: ui/dlgTransformText.xrc:5
+msgid "Transform text"
+msgstr "Text transformieren"
+
+#: ui/dlgTransformText.xrc:17
+msgid "Source text options"
+msgstr "Optionen für den Quelltext"
+
+#: ui/dlgTransformText.xrc:33
+msgid "PCRE regexp"
+msgstr "PCRE-Regexp"
+
+#: ui/dlgTransformText.xrc:50
+msgid "Replace expression"
+msgstr "Ersetzungsausdruck"
+
+#: ui/dlgTransformText.xrc:67
+msgid "Rows limit"
+msgstr "Zeilenlimit"
+
+#: ui/dlgTransformText.xrc:87
+msgid "Chars limit"
+msgstr "Zeichenlimit"
+
+#: ui/dlgTransformText.xrc:107
+msgid "Refresh highlight"
+msgstr "Hervorhebung aktualisieren"
+
+#: ui/dlgTransformText.xrc:124
+msgid "Source text"
+msgstr "Quelltext"
+
+#: ui/dlgTransformText.xrc:160
+msgid "Transform text options"
+msgstr "Optionen für die Texttransformation"
+
+#: ui/dlgTransformText.xrc:176
+msgid "Append before row"
+msgstr "Vor der Zeile anhängen"
+
+#: ui/dlgTransformText.xrc:196
+msgid "After row"
+msgstr "Nach der Zeile"
+
+#: ui/dlgTransformText.xrc:230
+msgid "Field separator"
+msgstr "Feldtrenner"
+
+#: ui/dlgTransformText.xrc:267
+msgid "Load options"
+msgstr "Ladeoptionen"
+
+#: ui/dlgTransformText.xrc:276
+msgid "First"
+msgstr "Erste"
+
+#: ui/dlgTransformText.xrc:335
+msgid "Rows loading"
+msgstr "Zeilen laden"
+
+#: ui/frmAwr.xrc:6
+msgid "AWR report"
+msgstr "AWR-Bericht"
+
+#: ui/frmAwr.xrc:36
+msgid "Type report"
+msgstr "Berichtstyp"
+
+#: ui/frmAwr.xrc:39
+msgid "Report"
+msgstr "Bericht"
+
+#: ui/frmAwr.xrc:40
+msgid "Diff report"
+msgstr "Differenzbericht"
+
+#: ui/frmAwr.xrc:104
+msgid "Start Id1"
+msgstr "Start-Id1"
+
+#: ui/frmAwr.xrc:123
+msgid "End Id1"
+msgstr "End-Id1"
+
+#: ui/frmAwr.xrc:166
+msgid "Start Id2"
+msgstr "Start-Id2"
+
+#: ui/frmAwr.xrc:185
+msgid "End Id2"
+msgstr "End-Id2"
+
+#: ui/frmExport.xrc:110
+msgid "format COPY"
+msgstr "COPY-Format"
+
+#: ui/frmExport.xrc:116
+msgid "Xls fmt copy"
+msgstr "Xls-Format kopieren"
+
+#: ui/frmImport.xrc:33
+msgid "Select the file to import"
+msgstr "Zu importierende Datei auswählen"
+
+#: ui/frmOptions.xrc:131
+msgid "Select theme"
+msgstr "Farbschema auswählen"
+
+#: ui/frmOptions.xrc:154
+msgid "Load"
+msgstr "Laden"
+
+#: ui/frmOptions.xrc:222
+msgid "Options extended JSON:"
+msgstr "Erweiterte JSON-Optionen:"
+
+#: ui/frmOptions.xrc:261
+msgid "Beautiful big numbers on the statistics page"
+msgstr "Grosse Zahlen auf der Statistikseite übersichtlich darstellen"
+
+#: ui/frmOptions.xrc:272
+msgid "Show the dependencies of functions on tables,views,functions"
+msgstr "Abhängigkeiten von Funktionen zu Tabellen, Sichten und Funktionen anzeigen"
+
+#: ui/frmOptions.xrc:457
+msgid "Show DB name in tree"
+msgstr "Datenbanknamen im Baum anzeigen"
+
+#: ui/frmOptions.xrc:465
+msgid "Quick jump to the root node"
+msgstr "Schnellsprung zum Wurzelknoten"
+
+#: ui/frmOptions.xrc:635
+msgid "Select utility to format text"
+msgstr "Dienstprogramm zum Formatieren von Text auswählen"
+
+#: ui/frmOptions.xrc:645
+msgid "External alignment utlity"
+msgstr "Externes Ausrichtungsprogramm"
+
+#: ui/frmOptions.xrc:662
+msgid "Enable ASUTP style"
+msgstr "ASUTP-Stil aktivieren"
+
+#: ui/frmOptions.xrc:677
+msgid "Hide query history"
+msgstr "Abfrageverlauf ausblenden"
+
+#: ui/frmOptions.xrc:692
+msgid "Auto save query text"
+msgstr "Abfragetext automatisch speichern"
+
+#: ui/frmOptions.xrc:707
+msgid "Use word hints"
+msgstr "Wort-Hinweise verwenden"
+
+#: ui/frmOptions.xrc:722
+msgid "Replace variables in a query"
+msgstr "Variablen in einer Abfrage ersetzen"
+
+#: ui/frmOptions.xrc:821
+msgid "Use system background color caret line"
+msgstr "Systemhintergrundfarbe für die Cursorzeile verwenden"
+
+#: ui/frmOptions.xrc:876
+msgid "Width for keyboard layout"
+msgstr "Breite für Tastaturbelegung"
+
+#: ui/frmOptions.xrc:1227
+msgid "Select file to store favourites queries"
+msgstr "Datei zum Speichern der Favoriten-Abfragen auswählen"
+
+#: ui/frmOptions.xrc:1255
+msgid "Select file to store macros"
+msgstr "Datei zum Speichern der Makros auswählen"
+
+#: ui/frmOptions.xrc:1283
+msgid "Select file to store queries history"
+msgstr "Datei zum Speichern des Abfrageverlaufs auswählen"
+
+#: ui/frmOptions.xrc:1388
+msgid "Blocked by Process Colour"
+msgstr "Farbe für blockierte Prozesse"
+
+#: ui/frmOptions.xrc:1402
+msgid "Idle&in&transaction&session&timeout Process Colour"
+msgstr "Prozessfarbe bei&Idle&in&transaction&Timeout"
+
+#: frm/frmOptions.cpp:1
+msgid "Appearance"
+msgstr "Erscheinungsbild"
+
+#: frm/frmOptions.cpp:2
+msgid "Automatic"
+msgstr "Automatisch"
+
+#: frm/frmOptions.cpp:3
+msgid "Light"
+msgstr "Hell"
+
+#: frm/frmOptions.cpp:4
+msgid "Dark"
+msgstr "Dunkel"
+
+#: frm/frmOptions.cpp:5
+msgid "Restart pgAdmin III to fully apply the appearance change."
+msgstr "Starten Sie pgAdmin III neu, um die Änderung des Erscheinungsbilds vollständig anzuwenden."

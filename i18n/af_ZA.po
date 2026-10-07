@@ -28871,3 +28871,1759 @@ msgstr "|"
 #~ msgstr ""
 #~ "Besig om te loop\n"
 #~ "\n"
+
+#: pgAdmin3.cpp:389
+msgid "open server log window"
+msgstr "maak bedienerlogvenster oop"
+
+#: pgAdmin3.cpp:403
+msgid "export servers configuration to file pgadmin3.ini"
+msgstr "voer bedienerkonfigurasie uit na lêer pgadmin3.ini"
+
+#: pgAdmin3.cpp:404
+msgid "Enable Dark mode"
+msgstr "Aktiveer donker modus"
+
+#: pgAdmin3.cpp:1013
+msgid "Log - "
+msgstr "Log - "
+
+#: ctl/ctlTreeJSON.cpp:73
+msgid "Please enter find string\n"
+msgstr "Voer asseblief soekteks in\n"
+
+#: ctl/ctlSQLGrid.cpp:993
+msgid "The line size is [ %s ] characters, do you want to continue?"
+msgstr "Die reëllengte is [ %s ] karakters, wil u voortgaan?"
+
+#: ctl/ctlSQLBox.cpp:1426
+msgid "All line (use all EOL)"
+msgstr "Alle reëls (gebruik alle EOL)"
+
+#: ctl/ctlSQLBox.cpp:1427
+msgid "First line pattern (ignore all but the first EOL)"
+msgstr "Eerste reël patroon (ignoreer alles behalwe die eerste EOL)"
+
+#: ctl/ctlSQLBox.cpp:1428
+msgid "Try looking for patterns above"
+msgstr "Probeer om na patrone hierbo te soek"
+
+#: ctl/ctlSQLBox.cpp:1429
+msgid "Compact view"
+msgstr "Kompakte aansig"
+
+#: ctl/ctlSQLBox.cpp:1430
+msgid "Remove multi spaces"
+msgstr "Verwyder veelvuldige spasies"
+
+#: ctl/ctlSQLBox.cpp:1432
+msgid "A multi-choice convenience dialog"
+msgstr "'n Gerieflike veelkeuse-dialoog"
+
+#: ctl/ctlSQLBox.cpp:1433
+msgid "Please select several align options"
+msgstr "Kies asseblief verskeie belyningsopsies"
+
+#: ctl/ctlSQLBox.cpp:1459
+msgid "Aligning complete."
+msgstr "Belyning voltooi."
+
+#: ctl/ctlSQLBox.cpp:1476
+msgid "Formatting Ok"
+msgstr "Formatering reg"
+
+#: ctl/ctlSQLBox.cpp:1500
+msgid "Couldn't run aligning command: "
+msgstr "Kon nie belyningsopdrag uitvoer nie: "
+
+#: ctl/ctlSQLBox.cpp:1522
+msgid "Aligning command did not respond in %d ms"
+msgstr "Belyningsopdrag het nie binne %d ms gereageer nie"
+
+#: ctl/ctlSQLBox.cpp:1534
+msgid "Aligning command error: Output is empty."
+msgstr "Belyningsopdrag fout: Uitvoer is leeg."
+
+#: ctl/ctlListView.cpp:63
+msgid "CFS fragmentation"
+msgstr "CFS-fragmentasie"
+
+#: ctl/ctlListView.cpp:70
+msgid "CFS %"
+msgstr "CFS %"
+
+#: ctl/ctlNavigatePanel.cpp:46
+msgid "Search for a simple string."
+msgstr "Soek vir 'n eenvoudige string."
+
+#: ctl/ctlNavigatePanel.cpp:50
+msgid "Go to the next marker."
+msgstr "Gaan na die volgende merker."
+
+#: ctl/ctlNavigatePanel.cpp:56
+msgid "Go to the next marker of the same type."
+msgstr "Gaan na die volgende merker van dieselfde tipe."
+
+#: ctl/ctlNavigatePanel.cpp:61
+msgid "The next occurrence of the string."
+msgstr "Die volgende voorkoms van die string."
+
+#: ctl/ctlNavigatePanel.cpp:66
+msgid "Previous occurrence of the string."
+msgstr "Vorige voorkoms van die string."
+
+#: ctl/ctlNavigatePanel.cpp:71
+msgid "Find all strings content current row Pid."
+msgstr "Vind alle stringe wat die huidige ry Pid bevat."
+
+#: ctl/ctlNavigatePanel.cpp:76
+msgid "Find all strings content current row State."
+msgstr "Vind alle stringe wat die huidige ry State bevat."
+
+#: ctl/ctlNavigatePanel.cpp:81
+msgid "Enable/disable auto hint."
+msgstr "Aktiveer/deaktiveer outomatiese wenk."
+
+#: ctl/ctlNavigatePanel.cpp:309
+msgid "Incorrect hotkey \"%s\" for command \"%s\""
+msgstr "Ongeldige sneltoets \"%s\" vir opdrag \"%s\""
+
+#: ctl/ctlSQLResult.cpp:390
+msgid "Incorrect flag at the '%s' column."
+msgstr "Ongeldige vlag by die '%s' kolom."
+
+#: ctl/ctlSQLResult.cpp:412
+msgid "The column name empty. '%s' ."
+msgstr "Die kolomnaam is leeg. '%s' ."
+
+#: ctl/ctlSQLResult.cpp:418
+msgid "The column name '%s' was not found in the query results."
+msgstr "Die kolomnaam '%s' is nie in die navraagresultate gevind nie."
+
+#: ctl/ctlSQLResult.cpp:442
+msgid "The column name  '%s' is not closed."
+msgstr "Die kolomnaam  '%s' is nie gesluit nie."
+
+#: dlg/dlgForeignTable.cpp:169
+msgid "Type %s not found in cbDatatype(%d)\n"
+msgstr "Tipe %s nie gevind in cbDatatype(%d) nie\n"
+
+#: pro_scheduler/pgproJob.cpp:36
+msgid "Retrieving details on pro_scheduler job"
+msgstr "Haal besonderhede oor pro_scheduler-taak op"
+
+#: pro_scheduler/pgproJob.cpp:39
+msgid "Refreshing pro_scheduler job"
+msgstr "Verfris pro_scheduler-taak"
+
+#: pro_scheduler/pgproJob.cpp:42
+msgid "pro_scheduler job properties report"
+msgstr "pro_scheduler-taak eienskappe verslag"
+
+#: pro_scheduler/pgproJob.cpp:48
+msgid "pro_scheduler job DDL report"
+msgstr "pro_scheduler-taak DDL-verslag"
+
+#: pro_scheduler/pgproJob.cpp:51
+msgid "pro_scheduler job dependencies report"
+msgstr "pro_scheduler-taak afhanklikhede verslag"
+
+#: pro_scheduler/pgproJob.cpp:54
+msgid "pro_scheduler job dependencies"
+msgstr "pro_scheduler-taak afhanklikhede"
+
+#: pro_scheduler/pgproJob.cpp:57
+msgid "pro_scheduler job dependents report"
+msgstr "pro_scheduler-taak afhanklikes verslag"
+
+#: pro_scheduler/pgproJob.cpp:60
+msgid "pro_scheduler job dependents"
+msgstr "pro_scheduler-taak afhanklikes"
+
+#: pro_scheduler/pgproJob.cpp:140
+msgid "Started"
+msgstr "Begin"
+
+#: pro_scheduler/pgproJob.cpp:141
+msgid "Finished"
+msgstr "Voltooi"
+
+#: pro_scheduler/pgproJob.cpp:143
+msgid "Crontab"
+msgstr "Crontab"
+
+#: pro_scheduler/pgproJob.cpp:146
+msgid "Runas"
+msgstr "Runas"
+
+#: pro_scheduler/pgproJob.cpp:152
+msgid "Next start job"
+msgstr "Volgende taakbegin"
+
+#: pro_scheduler/pgproJob.cpp:185
+msgid "Previous sched time run skip"
+msgstr "Vorige geskeduleerde tyd oorgeslaan"
+
+#: pro_scheduler/pgproJob.cpp:254
+msgid "Not run"
+msgstr "Nie uitgevoer nie"
+
+#: pro_scheduler/pgproJob.cpp:356
+msgid "Log_time"
+msgstr "Log_time"
+
+#: pro_scheduler/pgproJob.cpp:357
+msgid "Critical"
+msgstr "Krities"
+
+#: pro_scheduler/pgproJob.cpp:359
+msgid "Stage"
+msgstr "Fase"
+
+#: pro_scheduler/pgproJob.cpp:505
+msgid "Enabled or disabled job"
+msgstr "Taak geaktiveer of gedeaktiveer"
+
+#: utils/misc.cpp:201
+msgid "Bi"
+msgstr "Bi"
+
+#: utils/misc.cpp:202
+msgid "Mi"
+msgstr "Mi"
+
+#: utils/misc.cpp:203
+msgid "ths"
+msgstr "ths"
+
+#: utils/FunctionPGHelper.cpp:238
+msgid "'The database is closed in the object browser.'"
+msgstr "'Die databasis is gesluit in die objekkruiser.'"
+
+#: utils/dlgTransformText.cpp:76
+msgid "Transformation text"
+msgstr "Transformasieteks"
+
+#: utils/macros.cpp:272
+msgid "Failed to load AutoReplace file!"
+msgstr "Kon nie AutoReplace-lêer laai nie!"
+
+#: utils/macros.cpp:279
+msgid "Failed to read AutoReplace file!"
+msgstr "Kon nie AutoReplace-lêer lees nie!"
+
+#: utils/macros.cpp:298
+msgid "Failed to open AutoReplace file!"
+msgstr "Kon nie AutoReplace-lêer oopmaak nie!"
+
+#: utils/macros.cpp:306
+msgid "Failed to write to AutoReplace file!"
+msgstr "Kon nie na AutoReplace-lêer skryf nie!"
+
+#: utils/sysSettings.cpp:95
+msgid "pgpro_scheduler"
+msgstr "pgpro_scheduler"
+
+#: utils/sysSettings.cpp:139
+msgid "Publications"
+msgstr "Publikasies"
+
+#: utils/sshTunnel.cpp:618
+msgid " [%s]"
+msgstr " [%s]"
+
+#: frm/frmEditGrid.cpp:3383
+msgid "View F&iltered Rows...\tCtrl-F"
+msgstr "Wys gef&ilterde rye...\tCtrl-F"
+
+#: frm/frmEditGrid.cpp:3384
+msgid "View Filtered Rows\tCtrl-F"
+msgstr "Wys gefilterde rye\tCtrl-F"
+
+#: frm/frmQuery.cpp:384
+msgid "New SQL &tab\tCtrl-T"
+msgstr "Nuwe SQL-&oortjie\tCtrl-T"
+
+#: frm/frmQuery.cpp:384
+msgid "Open a new query tab"
+msgstr "Maak 'n nuwe navraag-oortjie oop"
+
+#: frm/frmQuery.cpp:387
+msgid "&Export...\tAlt+E"
+msgstr "&Voer uit...\tAlt+E"
+
+#: frm/frmQuery.cpp:422
+msgid "Double the single quote\tCtrl-'"
+msgstr "Verdubbel die enkelaanhaling\tCtrl-'"
+
+#: frm/frmQuery.cpp:422
+msgid "Double the single quote"
+msgstr "Verdubbel die enkelaanhaling"
+
+#: frm/frmQuery.cpp:423
+msgid "Undouble the single quote\tCtrl-Shift-'"
+msgstr "Maak enkelaanhaling ongedaan\tCtrl-Shift-'"
+
+#: frm/frmQuery.cpp:423
+msgid "Undouble the single quote"
+msgstr "Maak enkelaanhaling ongedaan"
+
+#: frm/frmQuery.cpp:426
+msgid "External Align...\tCtrl-Shift-A"
+msgstr "Eksterne belyning...\tCtrl-Shift-A"
+
+#: frm/frmQuery.cpp:426
+msgid "Call external align command"
+msgstr "Roep eksterne belyningsopdrag"
+
+#: frm/frmQuery.cpp:429
+msgid "Manage autoreplace..."
+msgstr "Bestuur outovervanging..."
+
+#: frm/frmQuery.cpp:429
+msgid "Edit and delete autoreplace strings"
+msgstr "Wysig en vee outovervangingstringe uit"
+
+#: frm/frmQuery.cpp:430
+msgid "Open object\tF4"
+msgstr "Maak objek oop\tF4"
+
+#: frm/frmQuery.cpp:430
+msgid "Open object in brouser tree"
+msgstr "Maak objek oop in die kruiserboom"
+
+#: frm/frmQuery.cpp:431
+msgid "Text transform...\tCtrl+M"
+msgstr "Teksomskakeling...\tCtrl+M"
+
+#: frm/frmQuery.cpp:431
+msgid "Open dialog transform"
+msgstr "Maak omskakelingsdialoog oop"
+
+#: frm/frmQuery.cpp:438
+msgid "&Execute\tF8"
+msgstr "&Voer uit\tF8"
+
+#: frm/frmQuery.cpp:439
+msgid "&Execute new output\tShift-F8"
+msgstr "&Voer nuwe uitvoer uit\tShift-F8"
+
+#: frm/frmQuery.cpp:439
+msgid "Execute query in new output"
+msgstr "Voer navraag in nuwe uitvoer uit"
+
+#: frm/frmQuery.cpp:441
+msgid "Execute to file\tF5"
+msgstr "Voer uit na lêer\tF5"
+
+#: frm/frmQuery.cpp:456
+msgid "&Auto-Select"
+msgstr "&Outo-kies"
+
+#: frm/frmQuery.cpp:456
+msgid "Auto select query"
+msgstr "Kies navraag outomaties"
+
+#: frm/frmQuery.cpp:462
+msgid "Commit\tF10"
+msgstr "Bevestig\tF10"
+
+#: frm/frmQuery.cpp:463
+msgid "Rollback\tShift-F10"
+msgstr "Rol terug\tShift-F10"
+
+#: frm/frmQuery.cpp:617
+msgid "New SQL tab"
+msgstr "Nuwe SQL-oortjie"
+
+#: frm/frmQuery.cpp:624
+msgid "Compare the selected text with the clipboard"
+msgstr "Vergelyk die geselekteerde teks met die knipbord"
+
+#: frm/frmQuery.cpp:646
+msgid "Mode transaction"
+msgstr "Transaksiemodus"
+
+#: frm/frmQuery.cpp:2245
+msgid "Copy Insert format"
+msgstr "Kopieer Insert-formaat"
+
+#: frm/frmQuery.cpp:2245
+msgid "Copy Insert format."
+msgstr "Kopieer Insert-formaat."
+
+#: frm/frmQuery.cpp:2246
+msgid "List columns header"
+msgstr "Lys kolomopskrifte"
+
+#: frm/frmQuery.cpp:2246
+msgid "Copy list columns header"
+msgstr "Kopieer lys van kolomopskrifte"
+
+#: frm/frmQuery.cpp:2247
+msgid "IN list format copy"
+msgstr "IN-lysformaat kopieer"
+
+#: frm/frmQuery.cpp:2247
+msgid "Copy In list format."
+msgstr "Kopieer IN-lysformaat."
+
+#: frm/frmQuery.cpp:2248
+msgid "WHERE list format copy"
+msgstr "WHERE-lysformaat kopieer"
+
+#: frm/frmQuery.cpp:2248
+msgid "Copy where list format."
+msgstr "Kopieer WHERE-lysformaat."
+
+#: frm/frmQuery.cpp:2249
+msgid "Copy table html format"
+msgstr "Kopieer tabel html-formaat"
+
+#: frm/frmQuery.cpp:2249
+msgid "Copy table html format."
+msgstr "Kopieer tabel html-formaat."
+
+#: frm/frmQuery.cpp:2269
+msgid "Draw plot LY(bar) or LXY or XYYY..."
+msgstr "Teken grafiek LY(staaf) of LXY of XYYY..."
+
+#: frm/frmQuery.cpp:2269
+msgid "Draw plot LY(bar) LXY or XYYY..."
+msgstr "Teken grafiek LY(staaf) LXY of XYYY..."
+
+#: frm/frmQuery.cpp:2270
+msgid "Summary"
+msgstr "Opsomming"
+
+#: frm/frmQuery.cpp:2270
+msgid "Summary selected cells."
+msgstr "Som geselekteerde selle op."
+
+#: frm/frmQuery.cpp:2271
+msgid "Compare 2 Cells"
+msgstr "Vergelyk 2 selle"
+
+#: frm/frmQuery.cpp:2271
+msgid "Compare 2 selected cells."
+msgstr "Vergelyk 2 geselekteerde selle."
+
+#: frm/frmQuery.cpp:2272
+msgid "Check the sequence of dates"
+msgstr "Kontroleer die volgorde van datums"
+
+#: frm/frmQuery.cpp:2273
+msgid "Clear filter"
+msgstr "Maak filter skoon"
+
+#: frm/frmQuery.cpp:2333
+msgid "No template generate."
+msgstr "Geen sjabloon gegenereer nie."
+
+#: frm/frmQuery.cpp:2558
+msgid "%i@"
+msgstr "%i@"
+
+#: frm/frmQuery.cpp:3070
+msgid "Out %i"
+msgstr "Uit %i"
+
+#: frm/frmQuery.cpp:3413
+msgid "-- Executing query [%s]:[%s]\n"
+msgstr "-- Voer navraag uit [%s]:[%s]\n"
+
+#: frm/frmQuery.cpp:4241
+msgid "Running aligning command..."
+msgstr "Voer belyningsopdrag uit..."
+
+#: frm/frmQuery.cpp:4471
+msgid "outputPane"
+msgstr "outputPane"
+
+#: frm/frmQuery.cpp:4491
+msgid "Output pane [%s]"
+msgstr "Uitvoerpaneel [%s]"
+
+#: frm/frmQuery.cpp:4597
+msgid "Cannot change to selected SQL tab now. Try again a bit later."
+msgstr "Kan nie nou na die geselekteerde SQL-oortjie verander nie. Probeer weer 'n bietjie later."
+
+#: frm/frmQuery.cpp:4620
+msgid "Cannot add a new SQL tab now. Try again a bit later."
+msgstr "Kan nie nou 'n nuwe SQL-oortjie byvoeg nie. Probeer weer 'n bietjie later."
+
+#: frm/frmQuery.cpp:4689
+msgid "Please enter name string with prefix dbname or description server\n"
+msgstr "Voer asseblief 'n naamstring in met voorvoegsel dbname of bedienerbeskrywing\n"
+
+#: frm/frmQuery.cpp:4691
+msgid "Name autosave tab window."
+msgstr "Naam van outostoor-oortjievenster."
+
+#: frm/frmQuery.cpp:4717
+msgid "Cannot remove the last SQL tab"
+msgstr "Kan nie die laaste SQL-oortjie verwyder nie"
+
+#: frm/frmQuery.cpp:4797
+msgid "Query %d"
+msgstr "Navraag %d"
+
+#: frm/frmQuery.cpp:5148
+msgid "Script Recreate Cascade"
+msgstr "Skrip Herskep Kaskade"
+
+#: frm/frmQuery.cpp:5148
+msgid "Start query tool with recreate cascade script."
+msgstr "Begin navraaggereedskap met herskep-kaskade-skrip."
+
+#: frm/frmOptions.cpp:61
+msgid "PgAdmin3opt settings"
+msgstr "PgAdmin3opt-instellings"
+
+#: frm/frmOptions.cpp:615
+msgid "Color theme save to file %s"
+msgstr "Kleurtema gestoor na lêer %s"
+
+#: frm/frmOptions.cpp:637
+msgid "Color theme load from file %s"
+msgstr "Kleurtema gelaai van lêer %s"
+
+#: frm/frmOptions.cpp:638
+msgid "Load theme"
+msgstr "Laai tema"
+
+#: frm/frmOptions.cpp:1208
+msgid "&Options...\tCtrl-O"
+msgstr "&Opsies...\tCtrl-O"
+
+#: frm/frmStatus.cpp:282
+msgid "&Wait trace"
+msgstr "&Wagspoor"
+
+#: frm/frmStatus.cpp:282
+msgid "Enable the wait event."
+msgstr "Aktiveer die wagbarsgebeurtenis."
+
+#: frm/frmStatus.cpp:283
+msgid "&Wait event save"
+msgstr "&Wagbeurtenis stoor"
+
+#: frm/frmStatus.cpp:283
+msgid "Enable the wait event save to file sample.dat."
+msgstr "Aktiveer die stoor van wagbeurtenisse na lêer sample.dat."
+
+#: frm/frmStatus.cpp:320
+msgid "Value parameter pg_wait_sampling.history_size = %ld greet 1000000  monitoring wait events disabled.\n"
+msgstr "Parameterwaarde pg_wait_sampling.history_size = %ld groter as 1000000  monitering van wagbeurtenisse gedeaktiveer.\n"
+
+#: frm/frmStatus.cpp:383
+msgid "&Query state\tCtrl-Alt-Q"
+msgstr "&Navraagstatus\tCtrl-Alt-Q"
+
+#: frm/frmStatus.cpp:383
+msgid "Show or hide the query state tab."
+msgstr "Wys of versteek die navraagstatus-oortjie."
+
+#: frm/frmStatus.cpp:385
+msgid "Append verbose"
+msgstr "Voeg verbose by"
+
+#: frm/frmStatus.cpp:386
+msgid "Append use buffers"
+msgstr "Voeg gebruik van buffers by"
+
+#: frm/frmStatus.cpp:387
+msgid "Append real timing"
+msgstr "Voeg werklike tydsberekening by"
+
+#: frm/frmStatus.cpp:388
+msgid "Append triggers"
+msgstr "Voeg snellers by"
+
+#: frm/frmStatus.cpp:396
+msgid "&Wait"
+msgstr "&Wag"
+
+#: frm/frmStatus.cpp:436
+msgid "Highlight items only"
+msgstr "Merk net items uit"
+
+#: frm/frmStatus.cpp:517
+msgid "QueryState"
+msgstr "QueryState"
+
+#: frm/frmStatus.cpp:853
+msgid "W_Event_T"
+msgstr "W_Event_T"
+
+#: frm/frmStatus.cpp:854
+msgid "W_Event"
+msgstr "W_Event"
+
+#: frm/frmStatus.cpp:1112
+msgid "Query State"
+msgstr "Navraagstatus"
+
+#: frm/frmStatus.cpp:1126
+msgid "Query Text"
+msgstr "Navraagteks"
+
+#: frm/frmStatus.cpp:1127
+msgid "Plan"
+msgstr "Plan"
+
+#: frm/frmStatus.cpp:1251
+msgid "Functions pg_read_binary_file(text,bigint,bigint,boolean), pg_stat_file(text,boolean),pg_ls_logdir()  permission denied."
+msgstr "Funksies pg_read_binary_file(text,bigint,bigint,boolean), pg_stat_file(text,boolean),pg_ls_logdir()  toestemming geweier."
+
+#: frm/frmStatus.cpp:1716
+msgid "Activity query long execute"
+msgstr "Aktiwiteit navraag lank uitvoering"
+
+#: frm/frmStatus.cpp:2634
+msgid "Query state status long execute"
+msgstr "Navraagstatus lang uitvoering"
+
+#: frm/frmStatus.cpp:2670
+msgid "Refreshing query state list."
+msgstr "Verfris navraagstatuslys."
+
+#: frm/frmStatus.cpp:2959
+msgid "Wait..."
+msgstr "Wag..."
+
+#: frm/frmStatus.cpp:4807
+msgid "&Server Status\tCtrl-S"
+msgstr "&Bedienerstatus\tCtrl-S"
+
+#: frm/frmPlot.cpp:120
+msgid "Lock aspect"
+msgstr "Sluit aspek"
+
+#: frm/frmPlot.cpp:120
+msgid "Lock horizontal and vertical zoom aspect."
+msgstr "Sluit horisontale en vertikale zoem-aspek."
+
+#: frm/frmPlot.cpp:442
+msgid "Save a screenshot"
+msgstr "Stoor 'n skermkiekie"
+
+#: frm/frmLog.cpp:1314
+msgid "Log view..."
+msgstr "Logaansig..."
+
+#: frm/frmLog.cpp:1314
+msgid "Log view CSV format"
+msgstr "Logaansig CSV-formaat"
+
+#: frm/frmMain.cpp:200
+msgid "Git"
+msgstr "Git"
+
+#: frm/frmMain.cpp:472
+msgid "&Server"
+msgstr "&Bediener"
+
+#: frm/frmMain.cpp:472
+msgid "Server menu commands."
+msgstr "Bedienerkieslys-opdragte."
+
+#: frm/frmMain.cpp:1187
+msgid "Create putty tunnel error."
+msgstr "Skep putty-tonnelfout."
+
+#: frm/frmAwr.cpp:33
+msgid "Report AWR"
+msgstr "AWR-verslag"
+
+#: frm/frmAwr.cpp:33
+msgid "Generate AWR report"
+msgstr "Genereer AWR-verslag"
+
+#: schema/pgServer.cpp:1253
+msgid "Key words"
+msgstr "Sleutelwoorde"
+
+#: schema/pgServer.cpp:1338
+msgid "Add connect str"
+msgstr "Voeg verbindingstring by"
+
+#: schema/pgServer.cpp:2264
+msgid "&Set keywords"
+msgstr "&Stel sleutelwoorde"
+
+#: schema/pgServer.cpp:2264
+msgid "Set keywords list the selected server."
+msgstr "Stel sleutelwoordelys vir die geselekteerde bediener."
+
+#: schema/pgServer.cpp:2273
+msgid "Please enter keywords\n"
+msgstr "Voer asseblief sleutelwoorde in\n"
+
+#: schema/pgServer.cpp:2275
+msgid "Keywords server"
+msgstr "Bediener-sleutelwoorde"
+
+#: schema/pgServer.cpp:2374
+msgid "Disconnec&t all servers"
+msgstr "Ontkoppel &alle bedieners"
+
+#: schema/pgServer.cpp:2374
+msgid "Disconnect from all servers."
+msgstr "Ontkoppel van alle bedieners."
+
+#: schema/pgIndex.cpp:499
+msgid "Check Btree index"
+msgstr "Kontroleer Btree-indeks"
+
+#: schema/pgIndex.cpp:499
+msgid "Check Btree index function bt_index_parent_check(oid,true)"
+msgstr "Kontroleer Btree-indeks funksie bt_index_parent_check(oid,true)"
+
+#: schema/pgIndex.cpp:568
+msgid "&Reset index statistics"
+msgstr "&Stel indeksstatistiek terug"
+
+#: schema/pgIndex.cpp:568
+msgid "Reset statistics of the selected index."
+msgstr "Stel statistiek van die geselekteerde indeks terug."
+
+#: schema/pgIndex.cpp:574
+msgid "Are you sure you wish to reset statistics of this index?"
+msgstr "Is u seker u wil die statistiek van hierdie indeks terugstel?"
+
+#: schema/pgSubscription.cpp:33
+msgid "Retrieving details on subscription"
+msgstr "Haal besonderhede oor intekening op"
+
+#: schema/pgSubscription.cpp:37
+msgid "Refreshing subscription"
+msgstr "Verfris intekening"
+
+#: schema/pgSubscription.cpp:41
+msgid "Are you sure you wish to drop subscription \"%s\" including all objects that depend on it?"
+msgstr "Is u seker u wil intekening \"%s\" laat val insluitend alle objekte wat daarvan afhang?"
+
+#: schema/pgSubscription.cpp:45
+msgid "Are you sure you wish to drop subscription \"%s\"?"
+msgstr "Is u seker u wil intekening \"%s\" laat val?"
+
+#: schema/pgSubscription.cpp:49
+msgid "Drop subscription cascaded?"
+msgstr "Laat intekening kaskade val?"
+
+#: schema/pgSubscription.cpp:52
+msgid "Drop subscription?"
+msgstr "Laat intekening val?"
+
+#: schema/pgSubscription.cpp:55
+msgid "Subscription properties report"
+msgstr "Intekening eienskappe verslag"
+
+#: schema/pgSubscription.cpp:59
+msgid "Subscription properties"
+msgstr "Intekening eienskappe"
+
+#: schema/pgSubscription.cpp:62
+msgid "Subscription DDL report"
+msgstr "Intekening DDL-verslag"
+
+#: schema/pgSubscription.cpp:66
+msgid "Subscription DDL"
+msgstr "Intekening DDL"
+
+#: schema/pgSubscription.cpp:69
+msgid "Subscription dependencies report"
+msgstr "Intekening afhanklikhede verslag"
+
+#: schema/pgSubscription.cpp:73
+msgid "Subscription dependencies"
+msgstr "Intekening afhanklikhede"
+
+#: schema/pgSubscription.cpp:76
+msgid "Subscription dependents report"
+msgstr "Intekening afhanklikes verslag"
+
+#: schema/pgSubscription.cpp:80
+msgid "Subscription dependents"
+msgstr "Intekening afhanklikes"
+
+#: schema/pgSubscription.cpp:210
+msgid "Retrieving details on subscriptions"
+msgstr "Haal besonderhede oor intekeninge op"
+
+#: schema/pgSubscription.cpp:213
+msgid "Refreshing subscriptions"
+msgstr "Verfris intekeninge"
+
+#: schema/pgSubscription.cpp:216
+msgid "Subscriptions list report"
+msgstr "Intekeninge lysverslag"
+
+#: schema/pgPublication.cpp:33
+msgid "Retrieving details on publication"
+msgstr "Haal besonderhede oor publikasie op"
+
+#: schema/pgPublication.cpp:37
+msgid "Refreshing publication"
+msgstr "Verfris publikasie"
+
+#: schema/pgPublication.cpp:41
+msgid "Are you sure you wish to drop publication \"%s\" including all objects that depend on it?"
+msgstr "Is u seker u wil publikasie \"%s\" laat val insluitend alle objekte wat daarvan afhang?"
+
+#: schema/pgPublication.cpp:45
+msgid "Are you sure you wish to drop publication \"%s\"?"
+msgstr "Is u seker u wil publikasie \"%s\" laat val?"
+
+#: schema/pgPublication.cpp:49
+msgid "Drop publication cascaded?"
+msgstr "Laat publikasie kaskade val?"
+
+#: schema/pgPublication.cpp:52
+msgid "Drop publication?"
+msgstr "Laat publikasie val?"
+
+#: schema/pgPublication.cpp:55
+msgid "Publication properties report"
+msgstr "Publikasie eienskappe verslag"
+
+#: schema/pgPublication.cpp:59
+msgid "Publication properties"
+msgstr "Publikasie eienskappe"
+
+#: schema/pgPublication.cpp:62
+msgid "Publication DDL report"
+msgstr "Publikasie DDL-verslag"
+
+#: schema/pgPublication.cpp:66
+msgid "Publication DDL"
+msgstr "Publikasie DDL"
+
+#: schema/pgPublication.cpp:69
+msgid "Publication dependencies report"
+msgstr "Publikasie afhanklikhede verslag"
+
+#: schema/pgPublication.cpp:73
+msgid "Publication dependencies"
+msgstr "Publikasie afhanklikhede"
+
+#: schema/pgPublication.cpp:76
+msgid "Publication dependents report"
+msgstr "Publikasie afhanklikes verslag"
+
+#: schema/pgPublication.cpp:80
+msgid "Publication dependents"
+msgstr "Publikasie afhanklikes"
+
+#: schema/pgPublication.cpp:318
+msgid "Retrieving details on publications"
+msgstr "Haal besonderhede oor publikasies op"
+
+#: schema/pgPublication.cpp:321
+msgid "Refreshing publications"
+msgstr "Verfris publikasies"
+
+#: schema/pgPublication.cpp:324
+msgid "Publications list report"
+msgstr "Publikasies lysverslag"
+
+#: schema/pgTable.cpp:1096
+msgid "Create table timestamp"
+msgstr "Skep tabel tydstempel"
+
+#: schema/pgObject.cpp:621
+msgid "extension"
+msgstr "uitbreiding"
+
+#: schema/pgFunction.cpp:410
+msgid "Parallel"
+msgstr "Parallel"
+
+#: schema/pgFunction.cpp:426
+msgid "Last change timestamp"
+msgstr "Laaste wysiging tydstempel"
+
+#: dd/ddmodel/ddDBReverseEnginering.cpp:175
+msgid "Schema not found"
+msgstr "Skema nie gevind nie"
+
+#: dd/ddmodel/ddDBReverseEnginering.cpp:175
+msgid "getting table OID"
+msgstr "haal tabel-OID"
+
+#: dd/ddmodel/ddDBReverseEnginering.cpp:216
+msgid "Table not found"
+msgstr "Tabel nie gevind nie"
+
+#: dd/ddmodel/ddDBReverseEnginering.cpp:665
+msgid "Error detecting kind of foreign key source: from Pk or from Uk"
+msgstr "Fout met opsporing van tipe vreemdesleutelbron: vanaf Pk of vanaf Uk"
+
+#: dd/ddmodel/ddDBReverseEnginering.cpp:665
+msgid "Error importing relationship"
+msgstr "Fout met invoer van verhouding"
+
+#: dd/ddmodel/ddDBReverseEnginering.cpp:786
+msgid "Error detecting kind of foreign key: null or not null"
+msgstr "Fout met opsporing van tipe vreemdesleutel: null of nie null nie"
+
+#: dd/ddmodel/ddDBReverseEnginering.cpp:1333
+msgid "Error fk is repeated"
+msgstr "Fout: fk word herhaal"
+
+#: dd/ddmodel/ddDBReverseEnginering.cpp:1333
+msgid "Error comparing relationships"
+msgstr "Fout met vergelyking van verhoudings"
+
+#: dd/ddmodel/ddDBReverseEnginering.cpp:1673
+msgid "Please, select a schema to use at import tables process:"
+msgstr "Kies asseblief 'n skema om te gebruik tydens die tabelinvoerproses:"
+
+#: dd/ddmodel/ddDBReverseEnginering.cpp:1698
+msgid "Please, select a Schema to continue to next step."
+msgstr "Kies asseblief 'n skema om na die volgende stap voort te gaan."
+
+#: dd/ddmodel/ddDBReverseEnginering.cpp:1698
+msgid "Select a Schema..."
+msgstr "Kies 'n skema..."
+
+#: dd/ddmodel/ddDBReverseEnginering.cpp:1806
+msgid "Table(s) from selected schema"
+msgstr "Tabel(le) uit geselekteerde skema"
+
+#: dd/ddmodel/ddDBReverseEnginering.cpp:1811
+msgid "Tables(s) to be imported"
+msgstr "Tabel(le) om in te voer"
+
+#: dd/ddmodel/ddDBReverseEnginering.cpp:1826
+msgid "Add the selected table(s)"
+msgstr "Voeg die geselekteerde tabel(le) by"
+
+#: dd/ddmodel/ddDBReverseEnginering.cpp:1828
+msgid "Add all tables"
+msgstr "Voeg alle tabelle by"
+
+#: dd/ddmodel/ddDBReverseEnginering.cpp:1830
+msgid "Remove the selected table(s)"
+msgstr "Verwyder die geselekteerde tabel(le)"
+
+#: dd/ddmodel/ddDBReverseEnginering.cpp:1832
+msgid "Remove all tables"
+msgstr "Verwyder alle tabelle"
+
+#: dd/ddmodel/ddDBReverseEnginering.cpp:1981
+msgid "Please, select at least a table to continue to next step."
+msgstr "Kies asseblief ten minste een tabel om na die volgende stap voort te gaan."
+
+#: dd/ddmodel/ddDBReverseEnginering.cpp:1981
+msgid "Select some Tables..."
+msgstr "Kies 'n paar tabelle..."
+
+#: dd/ddmodel/ddDBReverseEnginering.cpp:1997
+msgid "Error when preparing to import table: "
+msgstr "Fout tydens voorbereiding om tabel in te voer: "
+
+#: dd/ddmodel/ddDBReverseEnginering.cpp:2009
+msgid "Prepared to import table: "
+msgstr "Voorbereid om tabel in te voer: "
+
+#: dd/ddmodel/ddDBReverseEnginering.cpp:2009
+msgid "\n"
+msgstr "\n"
+
+#: dd/ddmodel/ddDBReverseEnginering.cpp:2029
+msgid "Returning to previous dialog will remove all selected tables, do you like to continue?"
+msgstr "As u na die vorige dialoog terugkeer, sal alle geselekteerde tabelle verwyder word. Wil u voortgaan?"
+
+#: dd/ddmodel/ddDBReverseEnginering.cpp:2077
+msgid "Returning to previous dialog will delete imported tables before adding it to the model?"
+msgstr "As u na die vorige dialoog terugkeer, sal ingevoerde tabelle uitgevee word voordat dit by die model gevoeg word?"
+
+#: dd/ddmodel/ddDrawingView.cpp:33
+msgid "Add new Table"
+msgstr "Voeg nuwe tabel by"
+
+#: dd/ddmodel/ddDrawingView.cpp:84
+msgid "Table exists already at this diagram"
+msgstr "Tabel bestaan reeds in hierdie diagram"
+
+#: dd/ddmodel/ddDrawingView.cpp:84
+msgid "Drag and drop warning"
+msgstr "Sleep-en-los waarskuwing"
+
+#: dd/ddmodel/ddModelBrowser.cpp:39
+msgid "Database Design"
+msgstr "Databasisontwerp"
+
+#: dd/ddmodel/ddGenerationWizard.cpp:99
+msgid "Create table"
+msgstr "Skep tabel"
+
+#: dd/ddmodel/ddGenerationWizard.cpp:100
+msgid "Alter table"
+msgstr "Verander tabel"
+
+#: dd/ddmodel/ddGenerationWizard.cpp:100
+msgid "Drop, then create"
+msgstr "Laat val, skep dan"
+
+#: dd/ddmodel/ddGenerationWizard.cpp:100
+msgid "Create table [conflict]"
+msgstr "Skep tabel [konflik]"
+
+#: dd/ddmodel/ddGenerationWizard.cpp:157
+msgid "Tables(s) to be generated"
+msgstr "Tabel(le) om te genereer"
+
+#: dd/ddmodel/ddGenerationWizard.cpp:369
+msgid "Please select at least one table to move to next step."
+msgstr "Kies asseblief ten minste een tabel om na die volgende stap te gaan."
+
+#: dd/ddmodel/ddGenerationWizard.cpp:369
+msgid "No tables selected"
+msgstr "Geen tabelle geselekteer nie"
+
+#: dd/ddmodel/ddGenerationWizard.cpp:396
+msgid "No schema"
+msgstr "Geen skema"
+
+#: dd/ddmodel/ddGenerationWizard.cpp:415
+msgid "Please select an item to move to next step."
+msgstr "Kies asseblief 'n item om na die volgende stap te gaan."
+
+#: dd/ddmodel/ddGenerationWizard.cpp:415
+msgid "No choice made"
+msgstr "Geen keuse gemaak nie"
+
+#: dd/ddmodel/ddGenerationWizard.cpp:528
+msgid "Please check the choice for each table:"
+msgstr "Kontroleer asseblief die keuse vir elke tabel:"
+
+#: dd/ddmodel/ddGenerationWizard.cpp:555
+msgid "Select an action"
+msgstr "Kies 'n aksie"
+
+#: dd/ddmodel/ddGenerationWizard.cpp:580
+msgid "Metadata of table to be generated not found at database designer model"
+msgstr "Metadata van tabel wat gegenereer moet word nie gevind in databasisontwerper-model nie"
+
+#: dd/ddmodel/ddGenerationWizard.cpp:580
+msgid "Error at generation process"
+msgstr "Fout tydens genereringsproses"
+
+#: dd/ddmodel/ddGenerationWizard.cpp:599
+msgid "Error importing at generation process"
+msgstr "Fout met invoer tydens genereringsproses"
+
+#: dd/ddmodel/ddGenerationWizard.cpp:615
+msgid "Going back?"
+msgstr "Gaan terug?"
+
+#: dd/ddmodel/ddDrawingEditor.cpp:87
+msgid "Are you sure you wish to delete table "
+msgstr "Is u seker u wil tabel uitvee "
+
+#: dd/ddmodel/ddDrawingEditor.cpp:87
+msgid "Delete table?"
+msgstr "Vee tabel uit?"
+
+#: dd/ddmodel/ddDrawingEditor.cpp:95
+msgid "Are you sure you wish to delete relationship "
+msgstr "Is u seker u wil verhouding uitvee "
+
+#: dd/ddmodel/ddDrawingEditor.cpp:95
+msgid "Delete relationship?"
+msgstr "Vee verhouding uit?"
+
+#: dd/ddmodel/ddDrawingEditor.cpp:114
+msgid "Are you sure you wish to delete %d tables, removing from model related relationships?"
+msgstr "Is u seker u wil %d tabelle uitvee en verwante verhoudings uit die model verwyder?"
+
+#: dd/ddmodel/ddDrawingEditor.cpp:115
+msgid "Delete tables?"
+msgstr "Vee tabelle uit?"
+
+#: dd/ddmodel/ddDrawingEditor.cpp:165
+msgid "Invalid figure kind found"
+msgstr "Ongeldige figuurtipe gevind"
+
+#: dd/ddmodel/ddDrawingEditor.cpp:165
+msgid "Error while deleting tables"
+msgstr "Fout tydens uitvee van tabelle"
+
+#: dd/ddmodel/ddDrawingEditor.cpp:188
+msgid "Error while deleting table"
+msgstr "Fout tydens uitvee van tabel"
+
+#: dd/ddmodel/ddDrawingEditor.cpp:223
+msgid "Error while deleting realtionships"
+msgstr "Fout tydens uitvee van verhoudings"
+
+#: dd/ddmodel/ddDatabaseDesign.cpp:142
+msgid "Invalid number of arguments in call of function generate tables of list"
+msgstr "Ongeldige aantal argumente in oproep van funksie genereer tabelle van lys"
+
+#: dd/ddmodel/ddDatabaseDesign.cpp:162
+msgid "Generating Create sentence(s) for table(s) "
+msgstr "Genereer Create-sin(ne) vir tabel(le) "
+
+#: dd/ddmodel/ddDatabaseDesign.cpp:185
+msgid "Generating Pk sentence for table(s) "
+msgstr "Genereer Pk-sin vir tabel(le) "
+
+#: dd/ddmodel/ddDatabaseDesign.cpp:201
+msgid "Generating Uk sentence(s) for table(s) "
+msgstr "Genereer Uk-sin(ne) vir tabel(le) "
+
+#: dd/ddmodel/ddDatabaseDesign.cpp:217
+msgid "Generating Fk sentence(s) for table(s) "
+msgstr "Genereer Fk-sin(ne) vir tabel(le) "
+
+#: dd/ddmodel/ddDatabaseDesign.cpp:243
+msgid "No connection found when building ALTER objects DDL."
+msgstr "Geen verbinding gevind tydens bou van ALTER-objekte DDL nie."
+
+#: dd/ddmodel/ddDatabaseDesign.cpp:250
+msgid "Schema defined when building ALTER TABLE DDL"
+msgstr "Skema gedefinieer tydens bou van ALTER TABLE DDL"
+
+#: dd/ddmodel/ddDatabaseDesign.cpp:257
+msgid "Generating Alter table sentence(s) for table(s) "
+msgstr "Genereer Alter table-sin(ne) vir tabel(le) "
+
+#: dd/ddmodel/ddDatabaseDesign.cpp:527
+msgid "Failed to write the model file!"
+msgstr "Kon nie die modellêer skryf nie!"
+
+#: hotdraw/utilities/hdRemoveDeleteDialog.cpp:117
+msgid "     Choose Remove from Diagram to remove only from current diagram.     "
+msgstr "     Kies Verwyder uit diagram om slegs uit die huidige diagram te verwyder.     "
+
+#: hotdraw/utilities/hdRemoveDeleteDialog.cpp:118
+msgid "     Choose Remove from Model to delete permanently.     "
+msgstr "     Kies Verwyder uit model om permanent uit te vee.     "
+
+#: hotdraw/main/hdDrawingView.cpp:457
+msgid "Sample Item"
+msgstr "Voorbeelditem"
+
+#: hotdraw/main/hdDrawingView.cpp:466
+msgid "Sample menu item"
+msgstr "Voorbeeldkieslysitem"
+
+#: hotdraw/main/hdDrawingView.cpp:466
+msgid "Sample"
+msgstr "Voorbeeld"
+
+#: hotdraw/main/hdDrawingEditor.cpp:267
+msgid "Are you sure you wish to delete figure ?"
+msgstr "Is u seker u wil figuur uitvee?"
+
+#: hotdraw/main/hdDrawingEditor.cpp:267
+msgid "Delete figures?"
+msgstr "Vee figure uit?"
+
+#: hotdraw/main/hdDrawingEditor.cpp:272
+msgid "Are you sure you wish to delete %d figures?"
+msgstr "Is u seker u wil %d figure uitvee?"
+
+#: dd/dditems/utilities/ddSelectKindFksDialog.cpp:103
+msgid "From Primary"
+msgstr "Vanaf primêr"
+
+#: dd/dditems/utilities/ddSelectKindFksDialog.cpp:110
+msgid "Unique Key: "
+msgstr "Unieke sleutel: "
+
+#: dd/dditems/utilities/ddSelectKindFksDialog.cpp:199
+msgid "Automatically Generated"
+msgstr "Outomaties gegenereer"
+
+#: dd/dditems/figures/ddColumnKindIcon.cpp:62
+msgid "Unique key"
+msgstr "Unieke sleutel"
+
+#: dd/dditems/figures/ddTableFigure.cpp:1178
+msgid "Cannot build an ALTER TABLE statement for a non existing table (%s.%s)."
+msgstr "Kan nie 'n ALTER TABLE-stelling bou vir 'n nie-bestaande tabel nie (%s.%s)."
+
+#: dd/dditems/figures/ddTableFigure.cpp:1179
+msgid "Error when trying to get table OID"
+msgstr "Fout tydens verkryging van tabel-OID"
+
+#: dd/dditems/figures/ddTableFigure.cpp:1186
+msgid "Cannot reverse engineering table %s.%s."
+msgstr "Kan nie tabel %s.%s omgekeerd ontwerp nie."
+
+#: dd/dditems/figures/ddTableFigure.cpp:1187
+msgid "Error when trying to get stub table"
+msgstr "Fout tydens verkryging van stomptabel"
+
+#: dd/dditems/figures/ddTableFigure.cpp:1442
+msgid "\" SET NOT NULL;"
+msgstr "\" SET NOT NULL;"
+
+#: dd/dditems/figures/ddTableFigure.cpp:1469
+msgid "Trying to build ALTER sentences"
+msgstr "Probeer ALTER-sinne bou"
+
+#: dd/dditems/figures/ddColumnFigure.cpp:491
+msgid "relation between table: "
+msgstr "verhouding tussen tabel: "
+
+#: dd/dditems/figures/ddColumnFigure.cpp:491
+msgid " and table: "
+msgstr " en tabel: "
+
+#: dd/dditems/figures/ddColumnFigure.cpp:492
+msgid " is marked as identifying but user created foreign key column: "
+msgstr " is as identifiserend gemerk, maar gebruiker-geskepte vreemdesleutelkolom: "
+
+#: dd/dditems/figures/ddColumnFigure.cpp:493
+msgid " isn't set as primary key \n"
+msgstr " is nie as primêre sleutel gestel nie \n"
+
+#: dd/dditems/figures/ddColumnFigure.cpp:500
+msgid "relation between table:"
+msgstr "verhouding tussen tabel:"
+
+#: dd/dditems/figures/ddColumnFigure.cpp:501
+msgid "is marked as optional but user created foreign key column: "
+msgstr "is as opsioneel gemerk, maar gebruiker-geskepte vreemdesleutelkolom: "
+
+#: dd/dditems/figures/ddColumnFigure.cpp:502
+msgid "is set as mandatory \n"
+msgstr "is as verpligtend gestel \n"
+
+#: dd/dditems/figures/ddColumnFigure.cpp:510
+msgid " is marked as mandatory but user created foreign key column: "
+msgstr " is as verpligtend gemerk, maar gebruiker-geskepte vreemdesleutelkolom: "
+
+#: dd/dditems/figures/ddColumnFigure.cpp:511
+msgid "is set as optional \n"
+msgstr "is as opsioneel gestel \n"
+
+#: dd/dditems/figures/ddColumnFigure.cpp:519
+msgid "User created foreign key column: "
+msgstr "Gebruiker-geskepte vreemdesleutelkolom: "
+
+#: dd/dditems/figures/ddColumnFigure.cpp:519
+msgid "have different datatype from source column of relationship: "
+msgstr "het 'n ander datatipe as die brankolom van verhouding: "
+
+#: dd/dditems/figures/ddColumnFigure.cpp:520
+msgid " \n"
+msgstr " \n"
+
+#: dd/dditems/figures/ddTextTableItemFigure.cpp:243
+msgid "Varchar size"
+msgstr "Varchar-grootte"
+
+#: dd/dditems/figures/ddTextTableItemFigure.cpp:244
+msgid "Size for varchar datatype"
+msgstr "Grootte vir varchar-datatipe"
+
+#: dd/dditems/figures/ddTextTableItemFigure.cpp:264
+msgid "datatype size"
+msgstr "datatipe-grootte"
+
+#: dd/dditems/figures/ddTextTableItemFigure.cpp:265
+msgid "Size for datatype"
+msgstr "Grootte vir datatipe"
+
+#: dd/dditems/figures/ddTextTableItemFigure.cpp:354
+msgid "Add a column..."
+msgstr "Voeg 'n kolom by..."
+
+#: dd/dditems/figures/ddTextTableItemFigure.cpp:355
+msgid "Delete the selected column..."
+msgstr "Vee die geselekteerde kolom uit..."
+
+#: dd/dditems/figures/ddTextTableItemFigure.cpp:358
+msgid "Rename the selected column..."
+msgstr "Hernoem die geselekteerde kolom..."
+
+#: dd/dditems/figures/ddTextTableItemFigure.cpp:360
+msgid "Activate fk auto-naming..."
+msgstr "Aktiveer fk-outobenaming..."
+
+#: dd/dditems/figures/ddTextTableItemFigure.cpp:362
+msgid "Not NULL constraint"
+msgstr "Nie-NULL-beperking"
+
+#: dd/dditems/figures/ddTextTableItemFigure.cpp:373
+msgid "Unique Key"
+msgstr "Unieke sleutel"
+
+#: dd/dditems/figures/ddTextTableItemFigure.cpp:378
+msgid "Column datatype"
+msgstr "Kolom-datatipe"
+
+#: dd/dditems/figures/ddTextTableItemFigure.cpp:381
+msgid "serial"
+msgstr "serial"
+
+#: dd/dditems/figures/ddTextTableItemFigure.cpp:383
+msgid "boolean"
+msgstr "boolean"
+
+#: dd/dditems/figures/ddTextTableItemFigure.cpp:385
+msgid "integer"
+msgstr "integer"
+
+#: dd/dditems/figures/ddTextTableItemFigure.cpp:387
+msgid "money"
+msgstr "money"
+
+#: dd/dditems/figures/ddTextTableItemFigure.cpp:389
+msgid "varchar(n)"
+msgstr "varchar(n)"
+
+#: dd/dditems/figures/ddTextTableItemFigure.cpp:391
+msgid "Choose another datatype..."
+msgstr "Kies 'n ander datatipe..."
+
+#: dd/dditems/figures/ddTextTableItemFigure.cpp:393
+msgid "Primary Key Constraint name..."
+msgstr "Primêresleutelbeperking naam..."
+
+#: dd/dditems/figures/ddTextTableItemFigure.cpp:394
+msgid "Unique Key Constraint name..."
+msgstr "Uniekesleutelbeperking naam..."
+
+#: dd/dditems/figures/ddTextTableItemFigure.cpp:396
+msgid "Delete table..."
+msgstr "Vee tabel uit..."
+
+#: dd/dditems/figures/ddRelationshipFigure.cpp:241
+msgid "Select one"
+msgstr "Kies een"
+
+#: dd/dditems/figures/ddRelationshipFigure.cpp:243
+msgid "Foreign Key From"
+msgstr "Vreemde sleutel vanaf"
+
+#: dd/dditems/figures/ddRelationshipFigure.cpp:264
+msgid "Mandatory relationship kind"
+msgstr "Verpligte verhoudingsoort"
+
+#: dd/dditems/figures/ddRelationshipFigure.cpp:266
+msgid "Identifying relationship"
+msgstr "Identifiserende verhouding"
+
+#: dd/dditems/figures/ddRelationshipFigure.cpp:269
+msgid "1:M"
+msgstr "1:M"
+
+#: dd/dditems/figures/ddRelationshipFigure.cpp:272
+msgid "Foreign Key Constraint Name"
+msgstr "Vreemdesleutelbeperking naam"
+
+#: dd/dditems/figures/ddRelationshipFigure.cpp:275
+msgid "Type Simple"
+msgstr "Tipe Eenvoudig"
+
+#: dd/dditems/figures/ddRelationshipFigure.cpp:277
+msgid "Type Full"
+msgstr "Tipe Volledig"
+
+#: dd/dditems/figures/ddRelationshipFigure.cpp:279
+msgid "Match Type "
+msgstr "Passingstipe "
+
+#: dd/dditems/figures/ddRelationshipFigure.cpp:281
+msgid "[ Simple ]"
+msgstr "[ Eenvoudig ]"
+
+#: dd/dditems/figures/ddRelationshipFigure.cpp:283
+msgid "[ Full ]"
+msgstr "[ Volledig ]"
+
+#: dd/dditems/figures/ddRelationshipFigure.cpp:286
+msgid "On Delete "
+msgstr "Met uitvee "
+
+#: dd/dditems/figures/ddRelationshipFigure.cpp:288
+msgid "No Action"
+msgstr "Geen aksie"
+
+#: dd/dditems/figures/ddRelationshipFigure.cpp:291
+msgid "[ No Action ]"
+msgstr "[ Geen aksie ]"
+
+#: dd/dditems/figures/ddRelationshipFigure.cpp:292
+msgid "Restrict"
+msgstr "Beperk"
+
+#: dd/dditems/figures/ddRelationshipFigure.cpp:295
+msgid "[ Restrict ]"
+msgstr "[ Beperk ]"
+
+#: dd/dditems/figures/ddRelationshipFigure.cpp:296
+msgid "Cascade"
+msgstr "Kaskade"
+
+#: dd/dditems/figures/ddRelationshipFigure.cpp:299
+msgid "[ Cascade ]"
+msgstr "[ Kaskade ]"
+
+#: dd/dditems/figures/ddRelationshipFigure.cpp:300
+msgid "Set Null"
+msgstr "Stel Null"
+
+#: dd/dditems/figures/ddRelationshipFigure.cpp:303
+msgid "[ Set Null ]"
+msgstr "[ Stel Null ]"
+
+#: dd/dditems/figures/ddRelationshipFigure.cpp:304
+msgid "Set Default"
+msgstr "Stel verstek"
+
+#: dd/dditems/figures/ddRelationshipFigure.cpp:307
+msgid "[ Set Default ]"
+msgstr "[ Stel verstek ]"
+
+#: dd/dditems/figures/ddRelationshipFigure.cpp:310
+msgid "On Update "
+msgstr "Met opdatering "
+
+#: dd/dditems/figures/ddRelationshipFigure.cpp:335
+msgid "Delete Relationship..."
+msgstr "Vee verhouding uit..."
+
+#: dd/dditems/figures/ddRelationshipFigure.cpp:452
+msgid "Are you sure you wish to delete relationship between tables %s and %s?"
+msgstr "Is u seker u wil die verhouding tussen tabelle %s en %s uitvee?"
+
+#: include/frm/frmReport.h:156
+msgid "&Compare other objects"
+msgstr "&Vergelyk ander objekte"
+
+#: include/frm/frmReport.h:156
+msgid "Compare other host database select objects."
+msgstr "Vergelyk geselekteerde objekte van ander gasheerdatabasis."
+
+#: ui/dlgFindReplace.xrc:65
+msgid "All find tabs"
+msgstr "Alle soekoortjies"
+
+#: ui/dlgProJob.xrc:105
+msgid "Run as"
+msgstr "Voer uit as"
+
+#: ui/dlgProJob.xrc:195
+msgid "Commands"
+msgstr "Opdragte"
+
+#: ui/dlgProJob.xrc:234
+msgid "use same transaction"
+msgstr "gebruik dieselfde transaksie"
+
+#: ui/dlgServer.xrc:190
+msgid "Select SSL Root Certificate File"
+msgstr "Kies SSL-wortelsertifikaatlêer"
+
+#: ui/dlgServer.xrc:206
+msgid "Select SSL Certificate Revocation List File"
+msgstr "Kies SSL-sertifikaatintrekkingslyslêer"
+
+#: ui/dlgServer.xrc:222
+msgid "Select SSL certificate file"
+msgstr "Kies SSL-sertifikaatlêer"
+
+#: ui/dlgServer.xrc:238
+msgid "Select SSL key file"
+msgstr "Kies SSL-sleutellêer"
+
+#: ui/dlgServer.xrc:361
+msgid "Select identity file"
+msgstr "Kies identiteitslêer"
+
+#: ui/dlgServer.xrc:377
+msgid "Select public key file"
+msgstr "Kies publieke sleutellêer"
+
+#: ui/dlgServer.xrc:466
+msgid "Connect str"
+msgstr "Verbindingstring"
+
+#: ui/dlgTransformText.xrc:5
+msgid "Transform text"
+msgstr "Transformeer teks"
+
+#: ui/dlgTransformText.xrc:17
+msgid "Source text options"
+msgstr "Bronteks-opsies"
+
+#: ui/dlgTransformText.xrc:33
+msgid "PCRE regexp"
+msgstr "PCRE-regex"
+
+#: ui/dlgTransformText.xrc:50
+msgid "Replace expression"
+msgstr "Vervangingsuitdrukking"
+
+#: ui/dlgTransformText.xrc:67
+msgid "Rows limit"
+msgstr "Rybeperking"
+
+#: ui/dlgTransformText.xrc:87
+msgid "Chars limit"
+msgstr "Karakterbeperking"
+
+#: ui/dlgTransformText.xrc:107
+msgid "Refresh highlight"
+msgstr "Verfris uitligting"
+
+#: ui/dlgTransformText.xrc:124
+msgid "Source text"
+msgstr "Bronteks"
+
+#: ui/dlgTransformText.xrc:160
+msgid "Transform text options"
+msgstr "Transformeer teks-opsies"
+
+#: ui/dlgTransformText.xrc:176
+msgid "Append before row"
+msgstr "Voeg voor ry by"
+
+#: ui/dlgTransformText.xrc:196
+msgid "After row"
+msgstr "Na ry"
+
+#: ui/dlgTransformText.xrc:230
+msgid "Field separator"
+msgstr "Veldskeier"
+
+#: ui/dlgTransformText.xrc:267
+msgid "Load options"
+msgstr "Laai-opsies"
+
+#: ui/dlgTransformText.xrc:276
+msgid "First"
+msgstr "Eerste"
+
+#: ui/dlgTransformText.xrc:335
+msgid "Rows loading"
+msgstr "Rye laai"
+
+#: ui/frmAwr.xrc:6
+msgid "AWR report"
+msgstr "AWR-verslag"
+
+#: ui/frmAwr.xrc:36
+msgid "Type report"
+msgstr "Verslagtipe"
+
+#: ui/frmAwr.xrc:39
+msgid "Report"
+msgstr "Verslag"
+
+#: ui/frmAwr.xrc:40
+msgid "Diff report"
+msgstr "Verskilverslag"
+
+#: ui/frmAwr.xrc:104
+msgid "Start Id1"
+msgstr "Begin Id1"
+
+#: ui/frmAwr.xrc:123
+msgid "End Id1"
+msgstr "Einde Id1"
+
+#: ui/frmAwr.xrc:166
+msgid "Start Id2"
+msgstr "Begin Id2"
+
+#: ui/frmAwr.xrc:185
+msgid "End Id2"
+msgstr "Einde Id2"
+
+#: ui/frmExport.xrc:110
+msgid "format COPY"
+msgstr "COPY-formaat"
+
+#: ui/frmExport.xrc:116
+msgid "Xls fmt copy"
+msgstr "Xls-formaat kopieer"
+
+#: ui/frmImport.xrc:33
+msgid "Select the file to import"
+msgstr "Kies die lêer om in te voer"
+
+#: ui/frmOptions.xrc:131
+msgid "Select theme"
+msgstr "Kies tema"
+
+#: ui/frmOptions.xrc:154
+msgid "Load"
+msgstr "Laai"
+
+#: ui/frmOptions.xrc:222
+msgid "Options extended JSON:"
+msgstr "Uitgebreide JSON-opsies:"
+
+#: ui/frmOptions.xrc:261
+msgid "Beautiful big numbers on the statistics page"
+msgstr "Pragtige groot getalle op die statistiekbladsy"
+
+#: ui/frmOptions.xrc:272
+msgid "Show the dependencies of functions on tables,views,functions"
+msgstr "Wys die afhanklikhede van funksies van tabelle, aansigte, funksies"
+
+#: ui/frmOptions.xrc:457
+msgid "Show DB name in tree"
+msgstr "Wys DB-naam in boom"
+
+#: ui/frmOptions.xrc:465
+msgid "Quick jump to the root node"
+msgstr "Vinnige sprong na die wortelnodus"
+
+#: ui/frmOptions.xrc:635
+msgid "Select utility to format text"
+msgstr "Kies nutsprogram om teks te formateer"
+
+#: ui/frmOptions.xrc:645
+msgid "External alignment utlity"
+msgstr "Eksterne belyningsnutsprogram"
+
+#: ui/frmOptions.xrc:662
+msgid "Enable ASUTP style"
+msgstr "Aktiveer ASUTP-styl"
+
+#: ui/frmOptions.xrc:677
+msgid "Hide query history"
+msgstr "Versteek navraaggeskiedenis"
+
+#: ui/frmOptions.xrc:692
+msgid "Auto save query text"
+msgstr "Outostoor navraagteks"
+
+#: ui/frmOptions.xrc:707
+msgid "Use word hints"
+msgstr "Gebruik woordwenke"
+
+#: ui/frmOptions.xrc:722
+msgid "Replace variables in a query"
+msgstr "Vervang veranderlikes in 'n navraag"
+
+#: ui/frmOptions.xrc:821
+msgid "Use system background color caret line"
+msgstr "Gebruik stelselagtergrondkleur vir wenkellyn"
+
+#: ui/frmOptions.xrc:876
+msgid "Width for keyboard layout"
+msgstr "Wydte vir sleutelborduitleg"
+
+#: ui/frmOptions.xrc:1227
+msgid "Select file to store favourites queries"
+msgstr "Kies lêer om gunstelingnavrae te stoor"
+
+#: ui/frmOptions.xrc:1255
+msgid "Select file to store macros"
+msgstr "Kies lêer om makro's te stoor"
+
+#: ui/frmOptions.xrc:1283
+msgid "Select file to store queries history"
+msgstr "Kies lêer om navraaggeskiedenis te stoor"
+
+#: ui/frmOptions.xrc:1388
+msgid "Blocked by Process Colour"
+msgstr "Geblokkeer deur proseskleur"
+
+#: ui/frmOptions.xrc:1402
+msgid "Idle&in&transaction&session&timeout Process Colour"
+msgstr "Proseskleur vir ledig&in&transaksie&sessie&uittelling"
+
+#: frm/mathplot.cpp:1424
+msgid "Center"
+msgstr "Sentreer"
+
+#: frm/mathplot.cpp:1425
+msgid "Center plot view to this position"
+msgstr "Sentreer grafiekaansig op hierdie posisie"
+
+#: frm/mathplot.cpp:1426
+msgid "Fit"
+msgstr "Pas"
+
+#: frm/mathplot.cpp:1426
+msgid "Set plot view to show all items"
+msgstr "Stel grafiekaansig om alle items te wys"
+
+#: frm/mathplot.cpp:1427
+msgid "Zoom in"
+msgstr "Zoem in"
+
+#: frm/mathplot.cpp:1427
+msgid "Zoom in plot view."
+msgstr "Zoem grafiekaansig in."
+
+#: frm/mathplot.cpp:1428
+msgid "Zoom out"
+msgstr "Zoem uit"
+
+#: frm/mathplot.cpp:1428
+msgid "Zoom out plot view."
+msgstr "Zoem grafiekaansig uit."
+
+#: frm/mathplot.cpp:1431
+msgid "Show mouse commands..."
+msgstr "Wys muisopdragte..."
+
+#: frm/mathplot.cpp:1432
+msgid "Show help about the mouse commands."
+msgstr "Wys hulp oor die muisopdragte."
+
+#: frm/mathplot.cpp:1935
+msgid "wxMathPlot help"
+msgstr "wxMathPlot-hulp"
+
+#: dd/dditems/figures/xml/ddXmlStorage.cpp:91
+msgid "Error saving model: not source model have been set"
+msgstr "Fout met stoor van model: geen bronmodel is gestel nie"
+
+#: dd/dditems/figures/xml/ddXmlStorage.cpp:123
+msgid "Fatal Error at libxml for figure persistency"
+msgstr "Noodlottige fout by libxml vir figuurpersistensie"
+
+#: dd/dditems/figures/xml/ddXmlStorage.cpp:624
+msgid "Model is not following embedded DTD definition, check it.\n"
+msgstr "Model volg nie die ingebedde DTD-definisie nie, kontroleer dit.\n"
+
+#: dd/dditems/figures/xml/ddXmlStorage.cpp:656
+msgid "Failed to load document from disk"
+msgstr "Kon nie dokument van skyf laai nie"
+
+#: dd/dditems/figures/xml/ddXmlStorage.cpp:754
+msgid "Invalid version of XML file for pgAdmin database designer found"
+msgstr "Ongeldige weergawe van XML-lêer vir pgAdmin-databasisontwerper gevind"
+
+#: dd/dditems/figures/xml/ddXmlStorage.cpp:754
+msgid "Invalid XML"
+msgstr "Ongeldige XML"
+
+#: dd/dditems/figures/xml/ddXmlStorage.cpp:1054
+msgid "Table initial metadata info not found"
+msgstr "Tabel aanvanklike metadata-inligting nie gevind nie"
+
+#: frm/frmOptions.cpp:1
+msgid "Appearance"
+msgstr "Voorkoms"
+
+#: frm/frmOptions.cpp:2
+msgid "Automatic"
+msgstr "Outomaties"
+
+#: frm/frmOptions.cpp:3
+msgid "Light"
+msgstr "Lig"
+
+#: frm/frmOptions.cpp:4
+msgid "Dark"
+msgstr "Donker"
+
+#: frm/frmOptions.cpp:5
+msgid "Restart pgAdmin III to fully apply the appearance change."
+msgstr "Herbegin pgAdmin III om die voorkomsverandering ten volle toe te pas."

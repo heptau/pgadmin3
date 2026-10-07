@@ -1786,7 +1786,7 @@ msgstr "Segur que vols confirmar les transaccions seleccionades?"
 msgid ""
 "Are you sure you wish to delete %d tables, removing from model related "
 "relationships?"
-msgstr ""
+msgstr "Esteu segur que voleu eliminar %d taules, eliminant del model les relacions relacionades?"
 
 #: /Users/zv/Code/pgadmin3/dd/ddmodel/ddDrawingEditor.cpp:95
 msgid "Are you sure you wish to delete relationship "
@@ -2361,7 +2361,7 @@ msgstr "Segur que vols eliminar el procediment \"%s\"?"
 msgid ""
 "Are you sure you wish to drop publication \"%s\" including all objects that "
 "depend on it?"
-msgstr ""
+msgstr "Esteu segur que voleu eliminar la publicació \"%s\" incloent-hi tots els objectes que en depenen?"
 
 #: /Users/zv/Code/pgadmin3/schema/pgPublication.cpp:45
 #, c-format
@@ -2448,7 +2448,7 @@ msgstr "Segur que vols eliminar el pas \"%s\"?"
 msgid ""
 "Are you sure you wish to drop subscription \"%s\" including all objects that "
 "depend on it?"
-msgstr ""
+msgstr "Esteu segur que voleu eliminar la subscripció \"%s\" incloent-hi tots els objectes que en depenen?"
 
 #: /Users/zv/Code/pgadmin3/schema/pgSubscription.cpp:45
 #, c-format
@@ -6856,7 +6856,7 @@ msgstr "Informe de llista de funcions"
 msgid ""
 "Functions pg_read_binary_file(text,bigint,bigint,boolean), "
 "pg_stat_file(text,boolean),pg_ls_logdir()  permission denied."
-msgstr ""
+msgstr "Les funcions pg_read_binary_file(text,bigint,bigint,boolean), pg_stat_file(text,boolean),pg_ls_logdir() - permís denegat."
 
 #: /Users/zv/Code/pgadmin3/debugger/debugger.cpp:58
 #: /Users/zv/Code/pgadmin3/debugger/debugger.cpp:163
@@ -11898,13 +11898,13 @@ msgstr "Tipus retornat"
 msgid ""
 "Returning to previous dialog will delete imported tables before adding it to "
 "the model?"
-msgstr ""
+msgstr "Tornar al diàleg anterior eliminarà les taules importades abans d'afegir-les al model?"
 
 #: /Users/zv/Code/pgadmin3/dd/ddmodel/ddDBReverseEnginering.cpp:2029
 msgid ""
 "Returning to previous dialog will remove all selected tables, do you like to "
 "continue?"
-msgstr ""
+msgstr "Tornar al diàleg anterior eliminarà totes les taules seleccionades, voleu continuar?"
 
 #: /Users/zv/Code/pgadmin3/schema/pgFunction.cpp:393
 msgid "Returns a set?"
@@ -15248,7 +15248,7 @@ msgstr "El valor ha canviat"
 msgid ""
 "Value parameter pg_wait_sampling.history_size = %ld greet 1000000  "
 "monitoring wait events disabled.\n"
-msgstr ""
+msgstr "El valor del paràmetre pg_wait_sampling.history_size = %ld és superior a 1000000, la supervisió dels esdeveniments d'espera està desactivada.\n"
 
 #: /Users/zv/Code/pgadmin3/dd/dditems/figures/ddTextTableItemFigure.cpp:243
 #: /Users/zv/Code/pgadmin3/dd/dditems/figures/ddTextTableItemFigure.cpp:245
@@ -20966,4 +20966,402 @@ msgstr "si"
 #~ msgid "|"
 #~ msgstr "|"
 
+#: pgAdmin3.cpp:389
+msgid "open server log window"
+msgstr "obre la finestra del registre del servidor"
 
+#: pgAdmin3.cpp:403
+msgid "export servers configuration to file pgadmin3.ini"
+msgstr "exporta la configuració dels servidors al fitxer pgadmin3.ini"
+
+#: pgAdmin3.cpp:404
+msgid "Enable Dark mode"
+msgstr "Activa el mode fosc"
+
+#: pgAdmin3.cpp:1013
+msgid "Log - "
+msgstr "Registre - "
+
+#: pro_scheduler/pgproJob.cpp:36
+msgid "Retrieving details on pro_scheduler job"
+msgstr "S'estan recuperant els detalls de la tasca de pro_scheduler"
+
+#: pro_scheduler/pgproJob.cpp:39
+msgid "Refreshing pro_scheduler job"
+msgstr "S'està actualitzant la tasca de pro_scheduler"
+
+#: pro_scheduler/pgproJob.cpp:42
+msgid "pro_scheduler job properties report"
+msgstr "Informe de propietats de la tasca de pro_scheduler"
+
+#: pro_scheduler/pgproJob.cpp:48
+msgid "pro_scheduler job DDL report"
+msgstr "Informe de DDL de la tasca de pro_scheduler"
+
+#: pro_scheduler/pgproJob.cpp:51
+msgid "pro_scheduler job dependencies report"
+msgstr "Informe de dependències de la tasca de pro_scheduler"
+
+#: pro_scheduler/pgproJob.cpp:54
+msgid "pro_scheduler job dependencies"
+msgstr "Dependències de la tasca de pro_scheduler"
+
+#: pro_scheduler/pgproJob.cpp:57
+msgid "pro_scheduler job dependents report"
+msgstr "Informe de dependents de la tasca de pro_scheduler"
+
+#: pro_scheduler/pgproJob.cpp:60
+msgid "pro_scheduler job dependents"
+msgstr "Dependents de la tasca de pro_scheduler"
+
+#: pro_scheduler/pgproJob.cpp:140
+msgid "Started"
+msgstr "Iniciada"
+
+#: pro_scheduler/pgproJob.cpp:141
+msgid "Finished"
+msgstr "Finalitzada"
+
+#: pro_scheduler/pgproJob.cpp:143
+msgid "Crontab"
+msgstr "Crontab"
+
+#: pro_scheduler/pgproJob.cpp:146
+msgid "Runas"
+msgstr "Executa com a"
+
+#: pro_scheduler/pgproJob.cpp:152
+msgid "Next start job"
+msgstr "Propera execució de la tasca"
+
+#: pro_scheduler/pgproJob.cpp:185
+msgid "Previous sched time run skip"
+msgstr "Execució prevista anterior omesa"
+
+#: pro_scheduler/pgproJob.cpp:254
+msgid "Not run"
+msgstr "No executada"
+
+#: pro_scheduler/pgproJob.cpp:356
+msgid "Log_time"
+msgstr "Log_time"
+
+#: pro_scheduler/pgproJob.cpp:357
+msgid "Critical"
+msgstr "Crític"
+
+#: pro_scheduler/pgproJob.cpp:359
+msgid "Stage"
+msgstr "Etapa"
+
+#: pro_scheduler/pgproJob.cpp:505
+msgid "Enabled or disabled job"
+msgstr "Tasca activada o desactivada"
+
+#: frm/frmQuery.cpp:4689
+msgid "Please enter name string with prefix dbname or description server\n"
+msgstr "Introduïu una cadena de nom amb el prefix del nom de la base de dades o la descripció del servidor\n"
+
+#: frm/frmQuery.cpp:4691
+msgid "Name autosave tab window."
+msgstr "Nom de la finestra de pestanya de desament automàtic."
+
+#: frm/frmOptions.cpp:615
+msgid "Color theme save to file %s"
+msgstr "Tema de colors desat al fitxer %s"
+
+#: frm/frmOptions.cpp:637
+msgid "Color theme load from file %s"
+msgstr "Tema de colors carregat del fitxer %s"
+
+#: frm/frmOptions.cpp:638
+msgid "Load theme"
+msgstr "Carrega el tema"
+
+#: schema/pgServer.cpp:1253
+msgid "Key words"
+msgstr "Paraules clau"
+
+#: hotdraw/utilities/hdRemoveDeleteDialog.cpp:117
+msgid "     Choose Remove from Diagram to remove only from current diagram.     "
+msgstr "     Trieu Elimina del diagrama per eliminar només del diagrama actual.     "
+
+#: hotdraw/utilities/hdRemoveDeleteDialog.cpp:118
+msgid "     Choose Remove from Model to delete permanently.     "
+msgstr "     Trieu Elimina del model per eliminar permanentment.     "
+
+#: hotdraw/main/hdDrawingView.cpp:457
+msgid "Sample Item"
+msgstr "Element d'exemple"
+
+#: hotdraw/main/hdDrawingView.cpp:466
+msgid "Sample menu item"
+msgstr "Element de menú d'exemple"
+
+#: hotdraw/main/hdDrawingView.cpp:466
+msgid "Sample"
+msgstr "Exemple"
+
+#: hotdraw/main/hdDrawingEditor.cpp:267
+msgid "Are you sure you wish to delete figure ?"
+msgstr "Esteu segur que voleu eliminar la figura?"
+
+#: hotdraw/main/hdDrawingEditor.cpp:267
+msgid "Delete figures?"
+msgstr "Eliminar les figures?"
+
+#: hotdraw/main/hdDrawingEditor.cpp:272
+msgid "Are you sure you wish to delete %d figures?"
+msgstr "Esteu segur que voleu eliminar %d figures?"
+
+#: ui/dlgFindReplace.xrc:65
+msgid "All find tabs"
+msgstr "Totes les pestanyes de cerca"
+
+#: ui/dlgProJob.xrc:105
+msgid "Run as"
+msgstr "Executa com a"
+
+#: ui/dlgProJob.xrc:195
+msgid "Commands"
+msgstr "Ordres"
+
+#: ui/dlgProJob.xrc:234
+msgid "use same transaction"
+msgstr "usa la mateixa transacció"
+
+#: ui/dlgServer.xrc:190
+msgid "Select SSL Root Certificate File"
+msgstr "Seleccioneu el fitxer del certificat arrel SSL"
+
+#: ui/dlgServer.xrc:206
+msgid "Select SSL Certificate Revocation List File"
+msgstr "Seleccioneu el fitxer de la llista de revocació de certificats SSL"
+
+#: ui/dlgServer.xrc:222
+msgid "Select SSL certificate file"
+msgstr "Seleccioneu el fitxer del certificat SSL"
+
+#: ui/dlgServer.xrc:238
+msgid "Select SSL key file"
+msgstr "Seleccioneu el fitxer de la clau SSL"
+
+#: ui/dlgServer.xrc:361
+msgid "Select identity file"
+msgstr "Seleccioneu el fitxer d'identitat"
+
+#: ui/dlgServer.xrc:377
+msgid "Select public key file"
+msgstr "Seleccioneu el fitxer de la clau pública"
+
+#: ui/dlgServer.xrc:466
+msgid "Connect str"
+msgstr "Cadena de connexió"
+
+#: ui/dlgTransformText.xrc:5
+msgid "Transform text"
+msgstr "Transforma el text"
+
+#: ui/dlgTransformText.xrc:17
+msgid "Source text options"
+msgstr "Opcions del text d'origen"
+
+#: ui/dlgTransformText.xrc:33
+msgid "PCRE regexp"
+msgstr "Expressió regular PCRE"
+
+#: ui/dlgTransformText.xrc:50
+msgid "Replace expression"
+msgstr "Expressió de reemplaçament"
+
+#: ui/dlgTransformText.xrc:67
+msgid "Rows limit"
+msgstr "Límit de files"
+
+#: ui/dlgTransformText.xrc:87
+msgid "Chars limit"
+msgstr "Límit de caràcters"
+
+#: ui/dlgTransformText.xrc:107
+msgid "Refresh highlight"
+msgstr "Actualitza el ressaltat"
+
+#: ui/dlgTransformText.xrc:124
+msgid "Source text"
+msgstr "Text d'origen"
+
+#: ui/dlgTransformText.xrc:160
+msgid "Transform text options"
+msgstr "Opcions de transformació del text"
+
+#: ui/dlgTransformText.xrc:176
+msgid "Append before row"
+msgstr "Afegeix abans de la fila"
+
+#: ui/dlgTransformText.xrc:196
+msgid "After row"
+msgstr "Després de la fila"
+
+#: ui/dlgTransformText.xrc:230
+msgid "Field separator"
+msgstr "Separador de camps"
+
+#: ui/dlgTransformText.xrc:267
+msgid "Load options"
+msgstr "Opcions de càrrega"
+
+#: ui/dlgTransformText.xrc:276
+msgid "First"
+msgstr "Primer"
+
+#: ui/dlgTransformText.xrc:335
+msgid "Rows loading"
+msgstr "Càrrega de files"
+
+#: ui/frmAwr.xrc:6
+msgid "AWR report"
+msgstr "Informe AWR"
+
+#: ui/frmAwr.xrc:36
+msgid "Type report"
+msgstr "Tipus d'informe"
+
+#: ui/frmAwr.xrc:39
+msgid "Report"
+msgstr "Informe"
+
+#: ui/frmAwr.xrc:40
+msgid "Diff report"
+msgstr "Informe de diferències"
+
+#: ui/frmAwr.xrc:104
+msgid "Start Id1"
+msgstr "Id1 inicial"
+
+#: ui/frmAwr.xrc:123
+msgid "End Id1"
+msgstr "Id1 final"
+
+#: ui/frmAwr.xrc:166
+msgid "Start Id2"
+msgstr "Id2 inicial"
+
+#: ui/frmAwr.xrc:185
+msgid "End Id2"
+msgstr "Id2 final"
+
+#: ui/frmExport.xrc:110
+msgid "format COPY"
+msgstr "format COPY"
+
+#: ui/frmExport.xrc:116
+msgid "Xls fmt copy"
+msgstr "Còpia en format Xls"
+
+#: ui/frmImport.xrc:33
+msgid "Select the file to import"
+msgstr "Seleccioneu el fitxer a importar"
+
+#: ui/frmOptions.xrc:131
+msgid "Select theme"
+msgstr "Seleccioneu el tema"
+
+#: ui/frmOptions.xrc:154
+msgid "Load"
+msgstr "Carrega"
+
+#: ui/frmOptions.xrc:222
+msgid "Options extended JSON:"
+msgstr "Opcions de JSON ampliades:"
+
+#: ui/frmOptions.xrc:261
+msgid "Beautiful big numbers on the statistics page"
+msgstr "Mostra els números grans de manera llegible a la pàgina d'estadístiques"
+
+#: ui/frmOptions.xrc:272
+msgid "Show the dependencies of functions on tables,views,functions"
+msgstr "Mostra les dependències de les funcions respecte a taules, vistes i funcions"
+
+#: ui/frmOptions.xrc:457
+msgid "Show DB name in tree"
+msgstr "Mostra el nom de la BD a l'arbre"
+
+#: ui/frmOptions.xrc:465
+msgid "Quick jump to the root node"
+msgstr "Salt ràpid al node arrel"
+
+#: ui/frmOptions.xrc:635
+msgid "Select utility to format text"
+msgstr "Seleccioneu l'utilitat per formatar el text"
+
+#: ui/frmOptions.xrc:645
+msgid "External alignment utlity"
+msgstr "Utilitat d'alineació externa"
+
+#: ui/frmOptions.xrc:662
+msgid "Enable ASUTP style"
+msgstr "Activa l'estil ASUTP"
+
+#: ui/frmOptions.xrc:677
+msgid "Hide query history"
+msgstr "Amaga l'historial de consultes"
+
+#: ui/frmOptions.xrc:692
+msgid "Auto save query text"
+msgstr "Desa automàticament el text de la consulta"
+
+#: ui/frmOptions.xrc:707
+msgid "Use word hints"
+msgstr "Usa suggeriments de paraules"
+
+#: ui/frmOptions.xrc:722
+msgid "Replace variables in a query"
+msgstr "Reemplaça les variables en una consulta"
+
+#: ui/frmOptions.xrc:821
+msgid "Use system background color caret line"
+msgstr "Usa el color de fons del sistema per a la línia del cursor"
+
+#: ui/frmOptions.xrc:876
+msgid "Width for keyboard layout"
+msgstr "Amplada per a la disposició del teclat"
+
+#: ui/frmOptions.xrc:1227
+msgid "Select file to store favourites queries"
+msgstr "Seleccioneu el fitxer on desar les consultes preferides"
+
+#: ui/frmOptions.xrc:1255
+msgid "Select file to store macros"
+msgstr "Seleccioneu el fitxer on desar les macros"
+
+#: ui/frmOptions.xrc:1283
+msgid "Select file to store queries history"
+msgstr "Seleccioneu el fitxer on desar l'historial de consultes"
+
+#: ui/frmOptions.xrc:1388
+msgid "Blocked by Process Colour"
+msgstr "Color del procés bloquejat per un altre procés"
+
+#: ui/frmOptions.xrc:1402
+msgid "Idle&in&transaction&session&timeout Process Colour"
+msgstr "Color del procés Idle&in&transaction&session&timeout"
+
+#: frm/frmOptions.cpp:1
+msgid "Appearance"
+msgstr "Aparença"
+
+#: frm/frmOptions.cpp:2
+msgid "Automatic"
+msgstr "Automàtic"
+
+#: frm/frmOptions.cpp:3
+msgid "Light"
+msgstr "Clar"
+
+#: frm/frmOptions.cpp:4
+msgid "Dark"
+msgstr "Fosc"
+
+#: frm/frmOptions.cpp:5
+msgid "Restart pgAdmin III to fully apply the appearance change."
+msgstr "Reinicieu pgAdmin III per aplicar completament el canvi d'aparença."

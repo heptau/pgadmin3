@@ -5,6 +5,23 @@ Format loosely follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ## [Unreleased]
 
+### Added
+- Appearance setting (Options → User Interface): Automatic (follow macOS), Light or
+  Dark, independent of the system setting; takes full effect after a restart.
+- Color themes can be loaded/saved from Options (bundled `light`/`dark` themes
+  in `pkg/themes`), with new colour options for query results (zebra rows,
+  plan rows/nodes) and the query editor's transaction background (merged from
+  upstream master).
+- Log file lookup now honours the server's `log_filename` setting.
+
+### Fixed
+- Intermittent crash (native alert) when a message box was shown on macOS 27;
+  message boxes now use wx's generic dialog on macOS.
+- Crash when answering "No" in the reconnect dialog after a server restart.
+- Query result column header sometimes disappearing.
+- Quick-search dialog not refreshing the server list on Backspace.
+- Alignment ignoring `E'...'` literals.
+
 ## [2026.09.22]
 
 ### Added

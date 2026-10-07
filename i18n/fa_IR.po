@@ -25990,3 +25990,1759 @@ msgstr "|"
 
 #~ msgid "pgAdmin - Server Status"
 #~ msgstr "pgAdmin - وضعیت سرور"
+
+#: pgAdmin3.cpp:389
+msgid "open server log window"
+msgstr "باز کردن پنجره گزارش سرور"
+
+#: pgAdmin3.cpp:403
+msgid "export servers configuration to file pgadmin3.ini"
+msgstr "برون‌بری پیکربندی سرورها به فایل pgadmin3.ini"
+
+#: pgAdmin3.cpp:404
+msgid "Enable Dark mode"
+msgstr "فعال‌سازی حالت تاریک"
+
+#: pgAdmin3.cpp:1013
+msgid "Log - "
+msgstr "گزارش - "
+
+#: ctl/ctlTreeJSON.cpp:73
+msgid "Please enter find string\n"
+msgstr "لطفاً رشته جستجو را وارد کنید\n"
+
+#: ctl/ctlSQLGrid.cpp:993
+msgid "The line size is [ %s ] characters, do you want to continue?"
+msgstr "اندازه خط [ %s ] نویسه است، آیا می‌خواهید ادامه دهید؟"
+
+#: ctl/ctlSQLBox.cpp:1426
+msgid "All line (use all EOL)"
+msgstr "همه خطوط (استفاده از همه پایان‌های خط)"
+
+#: ctl/ctlSQLBox.cpp:1427
+msgid "First line pattern (ignore all but the first EOL)"
+msgstr "الگوی خط اول (نادیده گرفتن همه پایان‌های خط به جز اولی)"
+
+#: ctl/ctlSQLBox.cpp:1428
+msgid "Try looking for patterns above"
+msgstr "تلاش برای جستجوی الگوهای بالا"
+
+#: ctl/ctlSQLBox.cpp:1429
+msgid "Compact view"
+msgstr "نمای فشرده"
+
+#: ctl/ctlSQLBox.cpp:1430
+msgid "Remove multi spaces"
+msgstr "حذف فاصله‌های چندگانه"
+
+#: ctl/ctlSQLBox.cpp:1432
+msgid "A multi-choice convenience dialog"
+msgstr "یک پنجره انتخاب چندگانه"
+
+#: ctl/ctlSQLBox.cpp:1433
+msgid "Please select several align options"
+msgstr "لطفاً چند گزینه تراز را انتخاب کنید"
+
+#: ctl/ctlSQLBox.cpp:1459
+msgid "Aligning complete."
+msgstr "تراز کردن کامل شد."
+
+#: ctl/ctlSQLBox.cpp:1476
+msgid "Formatting Ok"
+msgstr "قالب‌بندی موفق"
+
+#: ctl/ctlSQLBox.cpp:1500
+msgid "Couldn't run aligning command: "
+msgstr "اجرای فرمان تراز ناموفق بود: "
+
+#: ctl/ctlSQLBox.cpp:1522
+msgid "Aligning command did not respond in %d ms"
+msgstr "فرمان تراز در %d میلی‌ثانیه پاسخ نداد"
+
+#: ctl/ctlSQLBox.cpp:1534
+msgid "Aligning command error: Output is empty."
+msgstr "خطای فرمان تراز: خروجی خالی است."
+
+#: ctl/ctlListView.cpp:63
+msgid "CFS fragmentation"
+msgstr "تکه‌تکه‌شدگی CFS"
+
+#: ctl/ctlListView.cpp:70
+msgid "CFS %"
+msgstr "CFS %"
+
+#: ctl/ctlNavigatePanel.cpp:46
+msgid "Search for a simple string."
+msgstr "جستجوی یک رشته ساده."
+
+#: ctl/ctlNavigatePanel.cpp:50
+msgid "Go to the next marker."
+msgstr "رفتن به نشانگر بعدی."
+
+#: ctl/ctlNavigatePanel.cpp:56
+msgid "Go to the next marker of the same type."
+msgstr "رفتن به نشانگر بعدی از همان نوع."
+
+#: ctl/ctlNavigatePanel.cpp:61
+msgid "The next occurrence of the string."
+msgstr "رخداد بعدی رشته."
+
+#: ctl/ctlNavigatePanel.cpp:66
+msgid "Previous occurrence of the string."
+msgstr "رخداد قبلی رشته."
+
+#: ctl/ctlNavigatePanel.cpp:71
+msgid "Find all strings content current row Pid."
+msgstr "یافتن همه رشته‌های حاوی Pid ردیف جاری."
+
+#: ctl/ctlNavigatePanel.cpp:76
+msgid "Find all strings content current row State."
+msgstr "یافتن همه رشته‌های حاوی State ردیف جاری."
+
+#: ctl/ctlNavigatePanel.cpp:81
+msgid "Enable/disable auto hint."
+msgstr "فعال/غیرفعال کردن راهنمای خودکار."
+
+#: ctl/ctlNavigatePanel.cpp:309
+msgid "Incorrect hotkey \"%s\" for command \"%s\""
+msgstr "کلید میانبر نادرست \"%s\" برای فرمان \"%s\""
+
+#: ctl/ctlSQLResult.cpp:390
+msgid "Incorrect flag at the '%s' column."
+msgstr "پرچم نادرست در ستون '%s'."
+
+#: ctl/ctlSQLResult.cpp:412
+msgid "The column name empty. '%s' ."
+msgstr "نام ستون خالی است. '%s' ."
+
+#: ctl/ctlSQLResult.cpp:418
+msgid "The column name '%s' was not found in the query results."
+msgstr "نام ستون '%s' در نتایج پرس و جو یافت نشد."
+
+#: ctl/ctlSQLResult.cpp:442
+msgid "The column name  '%s' is not closed."
+msgstr "نام ستون  '%s' بسته نشده است."
+
+#: dlg/dlgForeignTable.cpp:169
+msgid "Type %s not found in cbDatatype(%d)\n"
+msgstr "نوع %s در cbDatatype(%d) یافت نشد\n"
+
+#: pro_scheduler/pgproJob.cpp:36
+msgid "Retrieving details on pro_scheduler job"
+msgstr "در حال بازیابی جزئیات کار pro_scheduler"
+
+#: pro_scheduler/pgproJob.cpp:39
+msgid "Refreshing pro_scheduler job"
+msgstr "در حال تازه‌سازی کار pro_scheduler"
+
+#: pro_scheduler/pgproJob.cpp:42
+msgid "pro_scheduler job properties report"
+msgstr "گزارش ویژگی‌های کار pro_scheduler"
+
+#: pro_scheduler/pgproJob.cpp:48
+msgid "pro_scheduler job DDL report"
+msgstr "گزارش DDL کار pro_scheduler"
+
+#: pro_scheduler/pgproJob.cpp:51
+msgid "pro_scheduler job dependencies report"
+msgstr "گزارش وابستگی‌های کار pro_scheduler"
+
+#: pro_scheduler/pgproJob.cpp:54
+msgid "pro_scheduler job dependencies"
+msgstr "وابستگی‌های کار pro_scheduler"
+
+#: pro_scheduler/pgproJob.cpp:57
+msgid "pro_scheduler job dependents report"
+msgstr "گزارش وابسته‌های کار pro_scheduler"
+
+#: pro_scheduler/pgproJob.cpp:60
+msgid "pro_scheduler job dependents"
+msgstr "وابسته‌های کار pro_scheduler"
+
+#: pro_scheduler/pgproJob.cpp:140
+msgid "Started"
+msgstr "آغاز شد"
+
+#: pro_scheduler/pgproJob.cpp:141
+msgid "Finished"
+msgstr "پایان یافت"
+
+#: pro_scheduler/pgproJob.cpp:143
+msgid "Crontab"
+msgstr "Crontab"
+
+#: pro_scheduler/pgproJob.cpp:146
+msgid "Runas"
+msgstr "اجرا به عنوان"
+
+#: pro_scheduler/pgproJob.cpp:152
+msgid "Next start job"
+msgstr "شروع بعدی کار"
+
+#: pro_scheduler/pgproJob.cpp:185
+msgid "Previous sched time run skip"
+msgstr "زمان اجرای زمان‌بندی‌شده قبلی رد شد"
+
+#: pro_scheduler/pgproJob.cpp:254
+msgid "Not run"
+msgstr "اجرا نشده"
+
+#: pro_scheduler/pgproJob.cpp:356
+msgid "Log_time"
+msgstr "Log_time"
+
+#: pro_scheduler/pgproJob.cpp:357
+msgid "Critical"
+msgstr "بحرانی"
+
+#: pro_scheduler/pgproJob.cpp:359
+msgid "Stage"
+msgstr "مرحله"
+
+#: pro_scheduler/pgproJob.cpp:505
+msgid "Enabled or disabled job"
+msgstr "کار فعال یا غیرفعال شده"
+
+#: utils/misc.cpp:201
+msgid "Bi"
+msgstr "میلیارد"
+
+#: utils/misc.cpp:202
+msgid "Mi"
+msgstr "میلیون"
+
+#: utils/misc.cpp:203
+msgid "ths"
+msgstr "هزار"
+
+#: utils/FunctionPGHelper.cpp:238
+msgid "'The database is closed in the object browser.'"
+msgstr "'پایگاه داده در مرورگر اشیاء بسته است.'"
+
+#: utils/dlgTransformText.cpp:76
+msgid "Transformation text"
+msgstr "تبدیل متن"
+
+#: utils/macros.cpp:272
+msgid "Failed to load AutoReplace file!"
+msgstr "بارگذاری فایل AutoReplace ناموفق بود!"
+
+#: utils/macros.cpp:279
+msgid "Failed to read AutoReplace file!"
+msgstr "خواندن فایل AutoReplace ناموفق بود!"
+
+#: utils/macros.cpp:298
+msgid "Failed to open AutoReplace file!"
+msgstr "باز کردن فایل AutoReplace ناموفق بود!"
+
+#: utils/macros.cpp:306
+msgid "Failed to write to AutoReplace file!"
+msgstr "نوشتن در فایل AutoReplace ناموفق بود!"
+
+#: utils/sysSettings.cpp:95
+msgid "pgpro_scheduler"
+msgstr "pgpro_scheduler"
+
+#: utils/sysSettings.cpp:139
+msgid "Publications"
+msgstr "انتشارها"
+
+#: utils/sshTunnel.cpp:618
+msgid " [%s]"
+msgstr " [%s]"
+
+#: frm/frmEditGrid.cpp:3383
+msgid "View F&iltered Rows...\tCtrl-F"
+msgstr "نمایش ردیف‌های &فیلترشده...\tCtrl-F"
+
+#: frm/frmEditGrid.cpp:3384
+msgid "View Filtered Rows\tCtrl-F"
+msgstr "نمایش ردیف‌های فیلترشده\tCtrl-F"
+
+#: frm/frmQuery.cpp:384
+msgid "New SQL &tab\tCtrl-T"
+msgstr "&زبانه SQL جدید\tCtrl-T"
+
+#: frm/frmQuery.cpp:384
+msgid "Open a new query tab"
+msgstr "باز کردن زبانه پرس و جوی جدید"
+
+#: frm/frmQuery.cpp:387
+msgid "&Export...\tAlt+E"
+msgstr "&برون‌بری...\tAlt+E"
+
+#: frm/frmQuery.cpp:422
+msgid "Double the single quote\tCtrl-'"
+msgstr "دو برابر کردن نقل‌قول تکی\tCtrl-'"
+
+#: frm/frmQuery.cpp:422
+msgid "Double the single quote"
+msgstr "دو برابر کردن نقل‌قول تکی"
+
+#: frm/frmQuery.cpp:423
+msgid "Undouble the single quote\tCtrl-Shift-'"
+msgstr "بازگرداندن نقل‌قول دوتایی به تکی\tCtrl-Shift-'"
+
+#: frm/frmQuery.cpp:423
+msgid "Undouble the single quote"
+msgstr "بازگرداندن نقل‌قول دوتایی به تکی"
+
+#: frm/frmQuery.cpp:426
+msgid "External Align...\tCtrl-Shift-A"
+msgstr "تراز خارجی...\tCtrl-Shift-A"
+
+#: frm/frmQuery.cpp:426
+msgid "Call external align command"
+msgstr "فراخوانی فرمان تراز خارجی"
+
+#: frm/frmQuery.cpp:429
+msgid "Manage autoreplace..."
+msgstr "مدیریت جایگزینی خودکار..."
+
+#: frm/frmQuery.cpp:429
+msgid "Edit and delete autoreplace strings"
+msgstr "ویرایش و حذف رشته‌های جایگزینی خودکار"
+
+#: frm/frmQuery.cpp:430
+msgid "Open object\tF4"
+msgstr "باز کردن شیء\tF4"
+
+#: frm/frmQuery.cpp:430
+msgid "Open object in brouser tree"
+msgstr "باز کردن شیء در درخت مرورگر"
+
+#: frm/frmQuery.cpp:431
+msgid "Text transform...\tCtrl+M"
+msgstr "تبدیل متن...\tCtrl+M"
+
+#: frm/frmQuery.cpp:431
+msgid "Open dialog transform"
+msgstr "باز کردن پنجره تبدیل"
+
+#: frm/frmQuery.cpp:438
+msgid "&Execute\tF8"
+msgstr "&اجرا\tF8"
+
+#: frm/frmQuery.cpp:439
+msgid "&Execute new output\tShift-F8"
+msgstr "&اجرا در خروجی جدید\tShift-F8"
+
+#: frm/frmQuery.cpp:439
+msgid "Execute query in new output"
+msgstr "اجرای پرس و جو در خروجی جدید"
+
+#: frm/frmQuery.cpp:441
+msgid "Execute to file\tF5"
+msgstr "اجرا به فایل\tF5"
+
+#: frm/frmQuery.cpp:456
+msgid "&Auto-Select"
+msgstr "&انتخاب خودکار"
+
+#: frm/frmQuery.cpp:456
+msgid "Auto select query"
+msgstr "انتخاب خودکار پرس و جو"
+
+#: frm/frmQuery.cpp:462
+msgid "Commit\tF10"
+msgstr "تأیید تراکنش\tF10"
+
+#: frm/frmQuery.cpp:463
+msgid "Rollback\tShift-F10"
+msgstr "بازگردانی تراکنش\tShift-F10"
+
+#: frm/frmQuery.cpp:617
+msgid "New SQL tab"
+msgstr "زبانه SQL جدید"
+
+#: frm/frmQuery.cpp:624
+msgid "Compare the selected text with the clipboard"
+msgstr "مقایسه متن انتخاب‌شده با کلیپ‌بورد"
+
+#: frm/frmQuery.cpp:646
+msgid "Mode transaction"
+msgstr "حالت تراکنش"
+
+#: frm/frmQuery.cpp:2245
+msgid "Copy Insert format"
+msgstr "کپی با قالب Insert"
+
+#: frm/frmQuery.cpp:2245
+msgid "Copy Insert format."
+msgstr "کپی با قالب Insert."
+
+#: frm/frmQuery.cpp:2246
+msgid "List columns header"
+msgstr "فهرست سرستون‌ها"
+
+#: frm/frmQuery.cpp:2246
+msgid "Copy list columns header"
+msgstr "کپی فهرست سرستون‌ها"
+
+#: frm/frmQuery.cpp:2247
+msgid "IN list format copy"
+msgstr "کپی با قالب فهرست IN"
+
+#: frm/frmQuery.cpp:2247
+msgid "Copy In list format."
+msgstr "کپی با قالب فهرست IN."
+
+#: frm/frmQuery.cpp:2248
+msgid "WHERE list format copy"
+msgstr "کپی با قالب فهرست WHERE"
+
+#: frm/frmQuery.cpp:2248
+msgid "Copy where list format."
+msgstr "کپی با قالب فهرست WHERE."
+
+#: frm/frmQuery.cpp:2249
+msgid "Copy table html format"
+msgstr "کپی جدول با قالب HTML"
+
+#: frm/frmQuery.cpp:2249
+msgid "Copy table html format."
+msgstr "کپی جدول با قالب HTML."
+
+#: frm/frmQuery.cpp:2269
+msgid "Draw plot LY(bar) or LXY or XYYY..."
+msgstr "رسم نمودار LY (میله‌ای) یا LXY یا XYYY..."
+
+#: frm/frmQuery.cpp:2269
+msgid "Draw plot LY(bar) LXY or XYYY..."
+msgstr "رسم نمودار LY (میله‌ای) LXY یا XYYY..."
+
+#: frm/frmQuery.cpp:2270
+msgid "Summary"
+msgstr "خلاصه"
+
+#: frm/frmQuery.cpp:2270
+msgid "Summary selected cells."
+msgstr "خلاصه سلول‌های انتخاب‌شده."
+
+#: frm/frmQuery.cpp:2271
+msgid "Compare 2 Cells"
+msgstr "مقایسه ۲ سلول"
+
+#: frm/frmQuery.cpp:2271
+msgid "Compare 2 selected cells."
+msgstr "مقایسه ۲ سلول انتخاب‌شده."
+
+#: frm/frmQuery.cpp:2272
+msgid "Check the sequence of dates"
+msgstr "بررسی ترتیب تاریخ‌ها"
+
+#: frm/frmQuery.cpp:2273
+msgid "Clear filter"
+msgstr "پاک کردن فیلتر"
+
+#: frm/frmQuery.cpp:2333
+msgid "No template generate."
+msgstr "هیچ الگویی تولید نشد."
+
+#: frm/frmQuery.cpp:2558
+msgid "%i@"
+msgstr "%i@"
+
+#: frm/frmQuery.cpp:3070
+msgid "Out %i"
+msgstr "خروجی %i"
+
+#: frm/frmQuery.cpp:3413
+msgid "-- Executing query [%s]:[%s]\n"
+msgstr "-- در حال اجرای پرس و جو [%s]:[%s]\n"
+
+#: frm/frmQuery.cpp:4241
+msgid "Running aligning command..."
+msgstr "در حال اجرای فرمان تراز..."
+
+#: frm/frmQuery.cpp:4471
+msgid "outputPane"
+msgstr "outputPane"
+
+#: frm/frmQuery.cpp:4491
+msgid "Output pane [%s]"
+msgstr "پنل خروجی [%s]"
+
+#: frm/frmQuery.cpp:4597
+msgid "Cannot change to selected SQL tab now. Try again a bit later."
+msgstr "در حال حاضر نمی‌توان به زبانه SQL انتخاب‌شده رفت. کمی بعد دوباره تلاش کنید."
+
+#: frm/frmQuery.cpp:4620
+msgid "Cannot add a new SQL tab now. Try again a bit later."
+msgstr "در حال حاضر نمی‌توان زبانه SQL جدید افزود. کمی بعد دوباره تلاش کنید."
+
+#: frm/frmQuery.cpp:4689
+msgid "Please enter name string with prefix dbname or description server\n"
+msgstr "لطفاً رشته نام را با پیشوند نام پایگاه داده یا توضیح سرور وارد کنید\n"
+
+#: frm/frmQuery.cpp:4691
+msgid "Name autosave tab window."
+msgstr "نام پنجره زبانه ذخیره خودکار."
+
+#: frm/frmQuery.cpp:4717
+msgid "Cannot remove the last SQL tab"
+msgstr "حذف آخرین زبانه SQL ممکن نیست"
+
+#: frm/frmQuery.cpp:4797
+msgid "Query %d"
+msgstr "پرس و جو %d"
+
+#: frm/frmQuery.cpp:5148
+msgid "Script Recreate Cascade"
+msgstr "اسکریپت بازسازی آبشاری"
+
+#: frm/frmQuery.cpp:5148
+msgid "Start query tool with recreate cascade script."
+msgstr "اجرای ابزار پرس و جو با اسکریپت بازسازی آبشاری."
+
+#: frm/frmOptions.cpp:61
+msgid "PgAdmin3opt settings"
+msgstr "تنظیمات PgAdmin3opt"
+
+#: frm/frmOptions.cpp:615
+msgid "Color theme save to file %s"
+msgstr "پوسته رنگ در فایل %s ذخیره شد"
+
+#: frm/frmOptions.cpp:637
+msgid "Color theme load from file %s"
+msgstr "پوسته رنگ از فایل %s بارگذاری شد"
+
+#: frm/frmOptions.cpp:638
+msgid "Load theme"
+msgstr "بارگذاری پوسته"
+
+#: frm/frmOptions.cpp:1208
+msgid "&Options...\tCtrl-O"
+msgstr "&گزینه‌ها...\tCtrl-O"
+
+#: frm/frmStatus.cpp:282
+msgid "&Wait trace"
+msgstr "&ردیابی انتظار"
+
+#: frm/frmStatus.cpp:282
+msgid "Enable the wait event."
+msgstr "فعال‌سازی رویداد انتظار."
+
+#: frm/frmStatus.cpp:283
+msgid "&Wait event save"
+msgstr "&ذخیره رویداد انتظار"
+
+#: frm/frmStatus.cpp:283
+msgid "Enable the wait event save to file sample.dat."
+msgstr "فعال‌سازی ذخیره رویداد انتظار در فایل sample.dat."
+
+#: frm/frmStatus.cpp:320
+msgid "Value parameter pg_wait_sampling.history_size = %ld greet 1000000  monitoring wait events disabled.\n"
+msgstr "مقدار پارامتر pg_wait_sampling.history_size = %ld بیشتر از 1000000 است، پایش رویدادهای انتظار غیرفعال شد.\n"
+
+#: frm/frmStatus.cpp:383
+msgid "&Query state\tCtrl-Alt-Q"
+msgstr "&وضعیت پرس و جو\tCtrl-Alt-Q"
+
+#: frm/frmStatus.cpp:383
+msgid "Show or hide the query state tab."
+msgstr "نمایش یا پنهان کردن زبانه وضعیت پرس و جو."
+
+#: frm/frmStatus.cpp:385
+msgid "Append verbose"
+msgstr "افزودن verbose"
+
+#: frm/frmStatus.cpp:386
+msgid "Append use buffers"
+msgstr "افزودن استفاده از بافرها"
+
+#: frm/frmStatus.cpp:387
+msgid "Append real timing"
+msgstr "افزودن زمان‌بندی واقعی"
+
+#: frm/frmStatus.cpp:388
+msgid "Append triggers"
+msgstr "افزودن محرک‌ها"
+
+#: frm/frmStatus.cpp:396
+msgid "&Wait"
+msgstr "&انتظار"
+
+#: frm/frmStatus.cpp:436
+msgid "Highlight items only"
+msgstr "برجسته‌سازی فقط موارد"
+
+#: frm/frmStatus.cpp:517
+msgid "QueryState"
+msgstr "QueryState"
+
+#: frm/frmStatus.cpp:853
+msgid "W_Event_T"
+msgstr "W_Event_T"
+
+#: frm/frmStatus.cpp:854
+msgid "W_Event"
+msgstr "W_Event"
+
+#: frm/frmStatus.cpp:1112
+msgid "Query State"
+msgstr "وضعیت پرس و جو"
+
+#: frm/frmStatus.cpp:1126
+msgid "Query Text"
+msgstr "متن پرس و جو"
+
+#: frm/frmStatus.cpp:1127
+msgid "Plan"
+msgstr "طرح"
+
+#: frm/frmStatus.cpp:1251
+msgid "Functions pg_read_binary_file(text,bigint,bigint,boolean), pg_stat_file(text,boolean),pg_ls_logdir()  permission denied."
+msgstr "توابع pg_read_binary_file(text,bigint,bigint,boolean)، pg_stat_file(text,boolean)،pg_ls_logdir(): دسترسی ممنوع."
+
+#: frm/frmStatus.cpp:1716
+msgid "Activity query long execute"
+msgstr "پرس و جوی فعالیت با اجرای طولانی"
+
+#: frm/frmStatus.cpp:2634
+msgid "Query state status long execute"
+msgstr "وضعیت پرس و جوی با اجرای طولانی"
+
+#: frm/frmStatus.cpp:2670
+msgid "Refreshing query state list."
+msgstr "در حال تازه‌سازی فهرست وضعیت پرس و جو."
+
+#: frm/frmStatus.cpp:2959
+msgid "Wait..."
+msgstr "صبر کنید..."
+
+#: frm/frmStatus.cpp:4807
+msgid "&Server Status\tCtrl-S"
+msgstr "وضعیت &سرور\tCtrl-S"
+
+#: frm/frmPlot.cpp:120
+msgid "Lock aspect"
+msgstr "قفل کردن نسبت"
+
+#: frm/frmPlot.cpp:120
+msgid "Lock horizontal and vertical zoom aspect."
+msgstr "قفل کردن نسبت بزرگ‌نمایی افقی و عمودی."
+
+#: frm/frmPlot.cpp:442
+msgid "Save a screenshot"
+msgstr "ذخیره تصویر صفحه"
+
+#: frm/frmLog.cpp:1314
+msgid "Log view..."
+msgstr "نمایش گزارش..."
+
+#: frm/frmLog.cpp:1314
+msgid "Log view CSV format"
+msgstr "نمایش گزارش با قالب CSV"
+
+#: frm/frmMain.cpp:200
+msgid "Git"
+msgstr "Git"
+
+#: frm/frmMain.cpp:472
+msgid "&Server"
+msgstr "&سرور"
+
+#: frm/frmMain.cpp:472
+msgid "Server menu commands."
+msgstr "فرمان‌های منوی سرور."
+
+#: frm/frmMain.cpp:1187
+msgid "Create putty tunnel error."
+msgstr "ایجاد تونل putty ناموفق بود."
+
+#: frm/frmAwr.cpp:33
+msgid "Report AWR"
+msgstr "گزارش AWR"
+
+#: frm/frmAwr.cpp:33
+msgid "Generate AWR report"
+msgstr "تولید گزارش AWR"
+
+#: schema/pgServer.cpp:1253
+msgid "Key words"
+msgstr "کلمات کلیدی"
+
+#: schema/pgServer.cpp:1338
+msgid "Add connect str"
+msgstr "افزودن رشته اتصال"
+
+#: schema/pgServer.cpp:2264
+msgid "&Set keywords"
+msgstr "&تنظیم کلمات کلیدی"
+
+#: schema/pgServer.cpp:2264
+msgid "Set keywords list the selected server."
+msgstr "تنظیم فهرست کلمات کلیدی برای سرور انتخاب‌شده."
+
+#: schema/pgServer.cpp:2273
+msgid "Please enter keywords\n"
+msgstr "لطفاً کلمات کلیدی را وارد کنید\n"
+
+#: schema/pgServer.cpp:2275
+msgid "Keywords server"
+msgstr "کلمات کلیدی سرور"
+
+#: schema/pgServer.cpp:2374
+msgid "Disconnec&t all servers"
+msgstr "قطع اتصال از &همه سرورها"
+
+#: schema/pgServer.cpp:2374
+msgid "Disconnect from all servers."
+msgstr "قطع اتصال از همه سرورها."
+
+#: schema/pgIndex.cpp:499
+msgid "Check Btree index"
+msgstr "بررسی نمایه Btree"
+
+#: schema/pgIndex.cpp:499
+msgid "Check Btree index function bt_index_parent_check(oid,true)"
+msgstr "بررسی نمایه Btree با تابع bt_index_parent_check(oid,true)"
+
+#: schema/pgIndex.cpp:568
+msgid "&Reset index statistics"
+msgstr "&بازنشانی آمار نمایه"
+
+#: schema/pgIndex.cpp:568
+msgid "Reset statistics of the selected index."
+msgstr "بازنشانی آمار نمایه انتخاب‌شده."
+
+#: schema/pgIndex.cpp:574
+msgid "Are you sure you wish to reset statistics of this index?"
+msgstr "آیا مطمئن هستید که می‌خواهید آمار این نمایه را بازنشانی کنید؟"
+
+#: schema/pgSubscription.cpp:33
+msgid "Retrieving details on subscription"
+msgstr "در حال بازیابی جزئیات اشتراک"
+
+#: schema/pgSubscription.cpp:37
+msgid "Refreshing subscription"
+msgstr "در حال تازه‌سازی اشتراک"
+
+#: schema/pgSubscription.cpp:41
+msgid "Are you sure you wish to drop subscription \"%s\" including all objects that depend on it?"
+msgstr "آیا مطمئن هستید که می‌خواهید اشتراک \"%s\" را به همراه همه اشیاء وابسته به آن حذف کنید؟"
+
+#: schema/pgSubscription.cpp:45
+msgid "Are you sure you wish to drop subscription \"%s\"?"
+msgstr "آیا مطمئن هستید که می‌خواهید اشتراک \"%s\" را حذف کنید؟"
+
+#: schema/pgSubscription.cpp:49
+msgid "Drop subscription cascaded?"
+msgstr "حذف آبشاری اشتراک؟"
+
+#: schema/pgSubscription.cpp:52
+msgid "Drop subscription?"
+msgstr "حذف اشتراک؟"
+
+#: schema/pgSubscription.cpp:55
+msgid "Subscription properties report"
+msgstr "گزارش ویژگی‌های اشتراک"
+
+#: schema/pgSubscription.cpp:59
+msgid "Subscription properties"
+msgstr "ویژگی‌های اشتراک"
+
+#: schema/pgSubscription.cpp:62
+msgid "Subscription DDL report"
+msgstr "گزارش DDL اشتراک"
+
+#: schema/pgSubscription.cpp:66
+msgid "Subscription DDL"
+msgstr "DDL اشتراک"
+
+#: schema/pgSubscription.cpp:69
+msgid "Subscription dependencies report"
+msgstr "گزارش وابستگی‌های اشتراک"
+
+#: schema/pgSubscription.cpp:73
+msgid "Subscription dependencies"
+msgstr "وابستگی‌های اشتراک"
+
+#: schema/pgSubscription.cpp:76
+msgid "Subscription dependents report"
+msgstr "گزارش وابسته‌های اشتراک"
+
+#: schema/pgSubscription.cpp:80
+msgid "Subscription dependents"
+msgstr "وابسته‌های اشتراک"
+
+#: schema/pgSubscription.cpp:210
+msgid "Retrieving details on subscriptions"
+msgstr "در حال بازیابی جزئیات اشتراک‌ها"
+
+#: schema/pgSubscription.cpp:213
+msgid "Refreshing subscriptions"
+msgstr "در حال تازه‌سازی اشتراک‌ها"
+
+#: schema/pgSubscription.cpp:216
+msgid "Subscriptions list report"
+msgstr "گزارش فهرست اشتراک‌ها"
+
+#: schema/pgPublication.cpp:33
+msgid "Retrieving details on publication"
+msgstr "در حال بازیابی جزئیات انتشار"
+
+#: schema/pgPublication.cpp:37
+msgid "Refreshing publication"
+msgstr "در حال تازه‌سازی انتشار"
+
+#: schema/pgPublication.cpp:41
+msgid "Are you sure you wish to drop publication \"%s\" including all objects that depend on it?"
+msgstr "آیا مطمئن هستید که می‌خواهید انتشار \"%s\" را به همراه همه اشیاء وابسته به آن حذف کنید؟"
+
+#: schema/pgPublication.cpp:45
+msgid "Are you sure you wish to drop publication \"%s\"?"
+msgstr "آیا مطمئن هستید که می‌خواهید انتشار \"%s\" را حذف کنید؟"
+
+#: schema/pgPublication.cpp:49
+msgid "Drop publication cascaded?"
+msgstr "حذف آبشاری انتشار؟"
+
+#: schema/pgPublication.cpp:52
+msgid "Drop publication?"
+msgstr "حذف انتشار؟"
+
+#: schema/pgPublication.cpp:55
+msgid "Publication properties report"
+msgstr "گزارش ویژگی‌های انتشار"
+
+#: schema/pgPublication.cpp:59
+msgid "Publication properties"
+msgstr "ویژگی‌های انتشار"
+
+#: schema/pgPublication.cpp:62
+msgid "Publication DDL report"
+msgstr "گزارش DDL انتشار"
+
+#: schema/pgPublication.cpp:66
+msgid "Publication DDL"
+msgstr "DDL انتشار"
+
+#: schema/pgPublication.cpp:69
+msgid "Publication dependencies report"
+msgstr "گزارش وابستگی‌های انتشار"
+
+#: schema/pgPublication.cpp:73
+msgid "Publication dependencies"
+msgstr "وابستگی‌های انتشار"
+
+#: schema/pgPublication.cpp:76
+msgid "Publication dependents report"
+msgstr "گزارش وابسته‌های انتشار"
+
+#: schema/pgPublication.cpp:80
+msgid "Publication dependents"
+msgstr "وابسته‌های انتشار"
+
+#: schema/pgPublication.cpp:318
+msgid "Retrieving details on publications"
+msgstr "در حال بازیابی جزئیات انتشارها"
+
+#: schema/pgPublication.cpp:321
+msgid "Refreshing publications"
+msgstr "در حال تازه‌سازی انتشارها"
+
+#: schema/pgPublication.cpp:324
+msgid "Publications list report"
+msgstr "گزارش فهرست انتشارها"
+
+#: schema/pgTable.cpp:1096
+msgid "Create table timestamp"
+msgstr "مهر زمانی ایجاد جدول"
+
+#: schema/pgObject.cpp:621
+msgid "extension"
+msgstr "افزونه"
+
+#: schema/pgFunction.cpp:410
+msgid "Parallel"
+msgstr "موازی"
+
+#: schema/pgFunction.cpp:426
+msgid "Last change timestamp"
+msgstr "مهر زمانی آخرین تغییر"
+
+#: dd/ddmodel/ddDBReverseEnginering.cpp:175
+msgid "Schema not found"
+msgstr "شِما یافت نشد"
+
+#: dd/ddmodel/ddDBReverseEnginering.cpp:175
+msgid "getting table OID"
+msgstr "دریافت OID جدول"
+
+#: dd/ddmodel/ddDBReverseEnginering.cpp:216
+msgid "Table not found"
+msgstr "جدول یافت نشد"
+
+#: dd/ddmodel/ddDBReverseEnginering.cpp:665
+msgid "Error detecting kind of foreign key source: from Pk or from Uk"
+msgstr "خطا در تشخیص نوع منبع کلید خارجی: از Pk یا از Uk"
+
+#: dd/ddmodel/ddDBReverseEnginering.cpp:665
+msgid "Error importing relationship"
+msgstr "خطا در درون‌ریزی رابطه"
+
+#: dd/ddmodel/ddDBReverseEnginering.cpp:786
+msgid "Error detecting kind of foreign key: null or not null"
+msgstr "خطا در تشخیص نوع کلید خارجی: null یا not null"
+
+#: dd/ddmodel/ddDBReverseEnginering.cpp:1333
+msgid "Error fk is repeated"
+msgstr "خطا: کلید خارجی تکرار شده است"
+
+#: dd/ddmodel/ddDBReverseEnginering.cpp:1333
+msgid "Error comparing relationships"
+msgstr "خطا در مقایسه روابط"
+
+#: dd/ddmodel/ddDBReverseEnginering.cpp:1673
+msgid "Please, select a schema to use at import tables process:"
+msgstr "لطفاً شِمایی را برای استفاده در فرایند درون‌ریزی جدول‌ها انتخاب کنید:"
+
+#: dd/ddmodel/ddDBReverseEnginering.cpp:1698
+msgid "Please, select a Schema to continue to next step."
+msgstr "لطفاً برای ادامه به مرحله بعد یک شِما انتخاب کنید."
+
+#: dd/ddmodel/ddDBReverseEnginering.cpp:1698
+msgid "Select a Schema..."
+msgstr "انتخاب یک شِما..."
+
+#: dd/ddmodel/ddDBReverseEnginering.cpp:1806
+msgid "Table(s) from selected schema"
+msgstr "جدول(های) شِمای انتخاب‌شده"
+
+#: dd/ddmodel/ddDBReverseEnginering.cpp:1811
+msgid "Tables(s) to be imported"
+msgstr "جدول(های) مورد درون‌ریزی"
+
+#: dd/ddmodel/ddDBReverseEnginering.cpp:1826
+msgid "Add the selected table(s)"
+msgstr "افزودن جدول(های) انتخاب‌شده"
+
+#: dd/ddmodel/ddDBReverseEnginering.cpp:1828
+msgid "Add all tables"
+msgstr "افزودن همه جدول‌ها"
+
+#: dd/ddmodel/ddDBReverseEnginering.cpp:1830
+msgid "Remove the selected table(s)"
+msgstr "حذف جدول(های) انتخاب‌شده"
+
+#: dd/ddmodel/ddDBReverseEnginering.cpp:1832
+msgid "Remove all tables"
+msgstr "حذف همه جدول‌ها"
+
+#: dd/ddmodel/ddDBReverseEnginering.cpp:1981
+msgid "Please, select at least a table to continue to next step."
+msgstr "لطفاً برای ادامه به مرحله بعد حداقل یک جدول انتخاب کنید."
+
+#: dd/ddmodel/ddDBReverseEnginering.cpp:1981
+msgid "Select some Tables..."
+msgstr "انتخاب چند جدول..."
+
+#: dd/ddmodel/ddDBReverseEnginering.cpp:1997
+msgid "Error when preparing to import table: "
+msgstr "خطا هنگام آماده‌سازی درون‌ریزی جدول: "
+
+#: dd/ddmodel/ddDBReverseEnginering.cpp:2009
+msgid "Prepared to import table: "
+msgstr "آماده درون‌ریزی جدول: "
+
+#: dd/ddmodel/ddDBReverseEnginering.cpp:2009
+msgid "\n"
+msgstr "\n"
+
+#: dd/ddmodel/ddDBReverseEnginering.cpp:2029
+msgid "Returning to previous dialog will remove all selected tables, do you like to continue?"
+msgstr "بازگشت به پنجره قبلی همه جدول‌های انتخاب‌شده را حذف می‌کند، آیا می‌خواهید ادامه دهید؟"
+
+#: dd/ddmodel/ddDBReverseEnginering.cpp:2077
+msgid "Returning to previous dialog will delete imported tables before adding it to the model?"
+msgstr "بازگشت به پنجره قبلی جدول‌های درون‌ریزی‌شده را پیش از افزودن به مدل حذف می‌کند؟"
+
+#: dd/ddmodel/ddDrawingView.cpp:33
+msgid "Add new Table"
+msgstr "افزودن جدول جدید"
+
+#: dd/ddmodel/ddDrawingView.cpp:84
+msgid "Table exists already at this diagram"
+msgstr "جدول از قبل در این نمودار وجود دارد"
+
+#: dd/ddmodel/ddDrawingView.cpp:84
+msgid "Drag and drop warning"
+msgstr "هشدار کشیدن و رها کردن"
+
+#: dd/ddmodel/ddModelBrowser.cpp:39
+msgid "Database Design"
+msgstr "طراحی پایگاه داده"
+
+#: dd/ddmodel/ddGenerationWizard.cpp:99
+msgid "Create table"
+msgstr "ایجاد جدول"
+
+#: dd/ddmodel/ddGenerationWizard.cpp:100
+msgid "Alter table"
+msgstr "تغییر جدول"
+
+#: dd/ddmodel/ddGenerationWizard.cpp:100
+msgid "Drop, then create"
+msgstr "حذف، سپس ایجاد"
+
+#: dd/ddmodel/ddGenerationWizard.cpp:100
+msgid "Create table [conflict]"
+msgstr "ایجاد جدول [تعارض]"
+
+#: dd/ddmodel/ddGenerationWizard.cpp:157
+msgid "Tables(s) to be generated"
+msgstr "جدول(های) مورد تولید"
+
+#: dd/ddmodel/ddGenerationWizard.cpp:369
+msgid "Please select at least one table to move to next step."
+msgstr "لطفاً برای ادامه به مرحله بعد حداقل یک جدول انتخاب کنید."
+
+#: dd/ddmodel/ddGenerationWizard.cpp:369
+msgid "No tables selected"
+msgstr "هیچ جدولی انتخاب نشده"
+
+#: dd/ddmodel/ddGenerationWizard.cpp:396
+msgid "No schema"
+msgstr "بدون شِما"
+
+#: dd/ddmodel/ddGenerationWizard.cpp:415
+msgid "Please select an item to move to next step."
+msgstr "لطفاً برای ادامه به مرحله بعد یک مورد انتخاب کنید."
+
+#: dd/ddmodel/ddGenerationWizard.cpp:415
+msgid "No choice made"
+msgstr "هیچ انتخابی انجام نشد"
+
+#: dd/ddmodel/ddGenerationWizard.cpp:528
+msgid "Please check the choice for each table:"
+msgstr "لطفاً انتخاب هر جدول را بررسی کنید:"
+
+#: dd/ddmodel/ddGenerationWizard.cpp:555
+msgid "Select an action"
+msgstr "انتخاب یک عمل"
+
+#: dd/ddmodel/ddGenerationWizard.cpp:580
+msgid "Metadata of table to be generated not found at database designer model"
+msgstr "فراداده جدول مورد تولید در مدل طراح پایگاه داده یافت نشد"
+
+#: dd/ddmodel/ddGenerationWizard.cpp:580
+msgid "Error at generation process"
+msgstr "خطا در فرایند تولید"
+
+#: dd/ddmodel/ddGenerationWizard.cpp:599
+msgid "Error importing at generation process"
+msgstr "خطای درون‌ریزی در فرایند تولید"
+
+#: dd/ddmodel/ddGenerationWizard.cpp:615
+msgid "Going back?"
+msgstr "بازگشت؟"
+
+#: dd/ddmodel/ddDrawingEditor.cpp:87
+msgid "Are you sure you wish to delete table "
+msgstr "آیا مطمئن هستید که می‌خواهید جدول را حذف کنید "
+
+#: dd/ddmodel/ddDrawingEditor.cpp:87
+msgid "Delete table?"
+msgstr "حذف جدول؟"
+
+#: dd/ddmodel/ddDrawingEditor.cpp:95
+msgid "Are you sure you wish to delete relationship "
+msgstr "آیا مطمئن هستید که می‌خواهید رابطه را حذف کنید "
+
+#: dd/ddmodel/ddDrawingEditor.cpp:95
+msgid "Delete relationship?"
+msgstr "حذف رابطه؟"
+
+#: dd/ddmodel/ddDrawingEditor.cpp:114
+msgid "Are you sure you wish to delete %d tables, removing from model related relationships?"
+msgstr "آیا مطمئن هستید که می‌خواهید %d جدول را حذف کنید و روابط مرتبط را از مدل بردارید؟"
+
+#: dd/ddmodel/ddDrawingEditor.cpp:115
+msgid "Delete tables?"
+msgstr "حذف جدول‌ها؟"
+
+#: dd/ddmodel/ddDrawingEditor.cpp:165
+msgid "Invalid figure kind found"
+msgstr "نوع شکل نامعتبر یافت شد"
+
+#: dd/ddmodel/ddDrawingEditor.cpp:165
+msgid "Error while deleting tables"
+msgstr "خطا هنگام حذف جدول‌ها"
+
+#: dd/ddmodel/ddDrawingEditor.cpp:188
+msgid "Error while deleting table"
+msgstr "خطا هنگام حذف جدول"
+
+#: dd/ddmodel/ddDrawingEditor.cpp:223
+msgid "Error while deleting realtionships"
+msgstr "خطا هنگام حذف روابط"
+
+#: dd/ddmodel/ddDatabaseDesign.cpp:142
+msgid "Invalid number of arguments in call of function generate tables of list"
+msgstr "تعداد آرگومان‌های نامعتبر در فراخوانی تابع تولید جدول‌ها از فهرست"
+
+#: dd/ddmodel/ddDatabaseDesign.cpp:162
+msgid "Generating Create sentence(s) for table(s) "
+msgstr "در حال تولید دستورهای Create برای جدول(های) "
+
+#: dd/ddmodel/ddDatabaseDesign.cpp:185
+msgid "Generating Pk sentence for table(s) "
+msgstr "در حال تولید دستور Pk برای جدول(های) "
+
+#: dd/ddmodel/ddDatabaseDesign.cpp:201
+msgid "Generating Uk sentence(s) for table(s) "
+msgstr "در حال تولید دستورهای Uk برای جدول(های) "
+
+#: dd/ddmodel/ddDatabaseDesign.cpp:217
+msgid "Generating Fk sentence(s) for table(s) "
+msgstr "در حال تولید دستورهای Fk برای جدول(های) "
+
+#: dd/ddmodel/ddDatabaseDesign.cpp:243
+msgid "No connection found when building ALTER objects DDL."
+msgstr "هنگام ساخت DDL اشیاء ALTER هیچ اتصالی یافت نشد."
+
+#: dd/ddmodel/ddDatabaseDesign.cpp:250
+msgid "Schema defined when building ALTER TABLE DDL"
+msgstr "شِما هنگام ساخت DDL مربوط به ALTER TABLE تعریف شد"
+
+#: dd/ddmodel/ddDatabaseDesign.cpp:257
+msgid "Generating Alter table sentence(s) for table(s) "
+msgstr "در حال تولید دستورهای Alter table برای جدول(های) "
+
+#: dd/ddmodel/ddDatabaseDesign.cpp:527
+msgid "Failed to write the model file!"
+msgstr "نوشتن فایل مدل ناموفق بود!"
+
+#: hotdraw/utilities/hdRemoveDeleteDialog.cpp:117
+msgid "     Choose Remove from Diagram to remove only from current diagram.     "
+msgstr "     برای حذف فقط از نمودار جاری، «حذف از نمودار» را انتخاب کنید.     "
+
+#: hotdraw/utilities/hdRemoveDeleteDialog.cpp:118
+msgid "     Choose Remove from Model to delete permanently.     "
+msgstr "     برای حذف دائمی، «حذف از مدل» را انتخاب کنید.     "
+
+#: hotdraw/main/hdDrawingView.cpp:457
+msgid "Sample Item"
+msgstr "مورد نمونه"
+
+#: hotdraw/main/hdDrawingView.cpp:466
+msgid "Sample menu item"
+msgstr "مورد منوی نمونه"
+
+#: hotdraw/main/hdDrawingView.cpp:466
+msgid "Sample"
+msgstr "نمونه"
+
+#: hotdraw/main/hdDrawingEditor.cpp:267
+msgid "Are you sure you wish to delete figure ?"
+msgstr "آیا مطمئن هستید که می‌خواهید شکل را حذف کنید؟"
+
+#: hotdraw/main/hdDrawingEditor.cpp:267
+msgid "Delete figures?"
+msgstr "حذف شکل‌ها؟"
+
+#: hotdraw/main/hdDrawingEditor.cpp:272
+msgid "Are you sure you wish to delete %d figures?"
+msgstr "آیا مطمئن هستید که می‌خواهید %d شکل را حذف کنید؟"
+
+#: dd/dditems/utilities/ddSelectKindFksDialog.cpp:103
+msgid "From Primary"
+msgstr "از کلید اصلی"
+
+#: dd/dditems/utilities/ddSelectKindFksDialog.cpp:110
+msgid "Unique Key: "
+msgstr "کلید یکتا: "
+
+#: dd/dditems/utilities/ddSelectKindFksDialog.cpp:199
+msgid "Automatically Generated"
+msgstr "تولید خودکار"
+
+#: dd/dditems/figures/ddColumnKindIcon.cpp:62
+msgid "Unique key"
+msgstr "کلید یکتا"
+
+#: dd/dditems/figures/ddTableFigure.cpp:1178
+msgid "Cannot build an ALTER TABLE statement for a non existing table (%s.%s)."
+msgstr "ساخت دستور ALTER TABLE برای جدول ناموجود (%s.%s) ممکن نیست."
+
+#: dd/dditems/figures/ddTableFigure.cpp:1179
+msgid "Error when trying to get table OID"
+msgstr "خطا هنگام دریافت OID جدول"
+
+#: dd/dditems/figures/ddTableFigure.cpp:1186
+msgid "Cannot reverse engineering table %s.%s."
+msgstr "مهندسی معکوس جدول %s.%s ممکن نیست."
+
+#: dd/dditems/figures/ddTableFigure.cpp:1187
+msgid "Error when trying to get stub table"
+msgstr "خطا هنگام دریافت جدول stub"
+
+#: dd/dditems/figures/ddTableFigure.cpp:1442
+msgid "\" SET NOT NULL;"
+msgstr "\" SET NOT NULL;"
+
+#: dd/dditems/figures/ddTableFigure.cpp:1469
+msgid "Trying to build ALTER sentences"
+msgstr "تلاش برای ساخت دستورهای ALTER"
+
+#: dd/dditems/figures/ddColumnFigure.cpp:491
+msgid "relation between table: "
+msgstr "رابطه بین جدول: "
+
+#: dd/dditems/figures/ddColumnFigure.cpp:491
+msgid " and table: "
+msgstr " و جدول: "
+
+#: dd/dditems/figures/ddColumnFigure.cpp:492
+msgid " is marked as identifying but user created foreign key column: "
+msgstr " به عنوان شناسا علامت‌گذاری شده اما ستون کلید خارجی ایجادشده توسط کاربر: "
+
+#: dd/dditems/figures/ddColumnFigure.cpp:493
+msgid " isn't set as primary key \n"
+msgstr " به عنوان کلید اصلی تنظیم نشده است \n"
+
+#: dd/dditems/figures/ddColumnFigure.cpp:500
+msgid "relation between table:"
+msgstr "رابطه بین جدول:"
+
+#: dd/dditems/figures/ddColumnFigure.cpp:501
+msgid "is marked as optional but user created foreign key column: "
+msgstr "به عنوان اختیاری علامت‌گذاری شده اما ستون کلید خارجی ایجادشده توسط کاربر: "
+
+#: dd/dditems/figures/ddColumnFigure.cpp:502
+msgid "is set as mandatory \n"
+msgstr "به عنوان اجباری تنظیم شده است \n"
+
+#: dd/dditems/figures/ddColumnFigure.cpp:510
+msgid " is marked as mandatory but user created foreign key column: "
+msgstr " به عنوان اجباری علامت‌گذاری شده اما ستون کلید خارجی ایجادشده توسط کاربر: "
+
+#: dd/dditems/figures/ddColumnFigure.cpp:511
+msgid "is set as optional \n"
+msgstr "به عنوان اختیاری تنظیم شده است \n"
+
+#: dd/dditems/figures/ddColumnFigure.cpp:519
+msgid "User created foreign key column: "
+msgstr "ستون کلید خارجی ایجادشده توسط کاربر: "
+
+#: dd/dditems/figures/ddColumnFigure.cpp:519
+msgid "have different datatype from source column of relationship: "
+msgstr "نوع داده‌ای متفاوت از ستون منبع رابطه دارد: "
+
+#: dd/dditems/figures/ddColumnFigure.cpp:520
+msgid " \n"
+msgstr " \n"
+
+#: dd/dditems/figures/ddTextTableItemFigure.cpp:243
+msgid "Varchar size"
+msgstr "اندازه varchar"
+
+#: dd/dditems/figures/ddTextTableItemFigure.cpp:244
+msgid "Size for varchar datatype"
+msgstr "اندازه برای نوع داده varchar"
+
+#: dd/dditems/figures/ddTextTableItemFigure.cpp:264
+msgid "datatype size"
+msgstr "اندازه نوع داده"
+
+#: dd/dditems/figures/ddTextTableItemFigure.cpp:265
+msgid "Size for datatype"
+msgstr "اندازه برای نوع داده"
+
+#: dd/dditems/figures/ddTextTableItemFigure.cpp:354
+msgid "Add a column..."
+msgstr "افزودن ستون..."
+
+#: dd/dditems/figures/ddTextTableItemFigure.cpp:355
+msgid "Delete the selected column..."
+msgstr "حذف ستون انتخاب‌شده..."
+
+#: dd/dditems/figures/ddTextTableItemFigure.cpp:358
+msgid "Rename the selected column..."
+msgstr "تغییر نام ستون انتخاب‌شده..."
+
+#: dd/dditems/figures/ddTextTableItemFigure.cpp:360
+msgid "Activate fk auto-naming..."
+msgstr "فعال‌سازی نام‌گذاری خودکار کلید خارجی..."
+
+#: dd/dditems/figures/ddTextTableItemFigure.cpp:362
+msgid "Not NULL constraint"
+msgstr "محدودیت Not NULL"
+
+#: dd/dditems/figures/ddTextTableItemFigure.cpp:373
+msgid "Unique Key"
+msgstr "کلید یکتا"
+
+#: dd/dditems/figures/ddTextTableItemFigure.cpp:378
+msgid "Column datatype"
+msgstr "نوع داده ستون"
+
+#: dd/dditems/figures/ddTextTableItemFigure.cpp:381
+msgid "serial"
+msgstr "serial"
+
+#: dd/dditems/figures/ddTextTableItemFigure.cpp:383
+msgid "boolean"
+msgstr "boolean"
+
+#: dd/dditems/figures/ddTextTableItemFigure.cpp:385
+msgid "integer"
+msgstr "integer"
+
+#: dd/dditems/figures/ddTextTableItemFigure.cpp:387
+msgid "money"
+msgstr "money"
+
+#: dd/dditems/figures/ddTextTableItemFigure.cpp:389
+msgid "varchar(n)"
+msgstr "varchar(n)"
+
+#: dd/dditems/figures/ddTextTableItemFigure.cpp:391
+msgid "Choose another datatype..."
+msgstr "انتخاب نوع داده دیگر..."
+
+#: dd/dditems/figures/ddTextTableItemFigure.cpp:393
+msgid "Primary Key Constraint name..."
+msgstr "نام محدودیت کلید اصلی..."
+
+#: dd/dditems/figures/ddTextTableItemFigure.cpp:394
+msgid "Unique Key Constraint name..."
+msgstr "نام محدودیت کلید یکتا..."
+
+#: dd/dditems/figures/ddTextTableItemFigure.cpp:396
+msgid "Delete table..."
+msgstr "حذف جدول..."
+
+#: dd/dditems/figures/ddRelationshipFigure.cpp:241
+msgid "Select one"
+msgstr "یکی را انتخاب کنید"
+
+#: dd/dditems/figures/ddRelationshipFigure.cpp:243
+msgid "Foreign Key From"
+msgstr "کلید خارجی از"
+
+#: dd/dditems/figures/ddRelationshipFigure.cpp:264
+msgid "Mandatory relationship kind"
+msgstr "نوع رابطه اجباری"
+
+#: dd/dditems/figures/ddRelationshipFigure.cpp:266
+msgid "Identifying relationship"
+msgstr "رابطه شناسا"
+
+#: dd/dditems/figures/ddRelationshipFigure.cpp:269
+msgid "1:M"
+msgstr "1:M"
+
+#: dd/dditems/figures/ddRelationshipFigure.cpp:272
+msgid "Foreign Key Constraint Name"
+msgstr "نام محدودیت کلید خارجی"
+
+#: dd/dditems/figures/ddRelationshipFigure.cpp:275
+msgid "Type Simple"
+msgstr "نوع Simple"
+
+#: dd/dditems/figures/ddRelationshipFigure.cpp:277
+msgid "Type Full"
+msgstr "نوع Full"
+
+#: dd/dditems/figures/ddRelationshipFigure.cpp:279
+msgid "Match Type "
+msgstr "نوع تطابق "
+
+#: dd/dditems/figures/ddRelationshipFigure.cpp:281
+msgid "[ Simple ]"
+msgstr "[ Simple ]"
+
+#: dd/dditems/figures/ddRelationshipFigure.cpp:283
+msgid "[ Full ]"
+msgstr "[ Full ]"
+
+#: dd/dditems/figures/ddRelationshipFigure.cpp:286
+msgid "On Delete "
+msgstr "هنگام حذف "
+
+#: dd/dditems/figures/ddRelationshipFigure.cpp:288
+msgid "No Action"
+msgstr "بدون عمل"
+
+#: dd/dditems/figures/ddRelationshipFigure.cpp:291
+msgid "[ No Action ]"
+msgstr "[ بدون عمل ]"
+
+#: dd/dditems/figures/ddRelationshipFigure.cpp:292
+msgid "Restrict"
+msgstr "محدود کردن"
+
+#: dd/dditems/figures/ddRelationshipFigure.cpp:295
+msgid "[ Restrict ]"
+msgstr "[ محدود کردن ]"
+
+#: dd/dditems/figures/ddRelationshipFigure.cpp:296
+msgid "Cascade"
+msgstr "آبشاری"
+
+#: dd/dditems/figures/ddRelationshipFigure.cpp:299
+msgid "[ Cascade ]"
+msgstr "[ آبشاری ]"
+
+#: dd/dditems/figures/ddRelationshipFigure.cpp:300
+msgid "Set Null"
+msgstr "تنظیم به Null"
+
+#: dd/dditems/figures/ddRelationshipFigure.cpp:303
+msgid "[ Set Null ]"
+msgstr "[ تنظیم به Null ]"
+
+#: dd/dditems/figures/ddRelationshipFigure.cpp:304
+msgid "Set Default"
+msgstr "تنظیم به پیش‌فرض"
+
+#: dd/dditems/figures/ddRelationshipFigure.cpp:307
+msgid "[ Set Default ]"
+msgstr "[ تنظیم به پیش‌فرض ]"
+
+#: dd/dditems/figures/ddRelationshipFigure.cpp:310
+msgid "On Update "
+msgstr "هنگام به‌روزرسانی "
+
+#: dd/dditems/figures/ddRelationshipFigure.cpp:335
+msgid "Delete Relationship..."
+msgstr "حذف رابطه..."
+
+#: dd/dditems/figures/ddRelationshipFigure.cpp:452
+msgid "Are you sure you wish to delete relationship between tables %s and %s?"
+msgstr "آیا مطمئن هستید که می‌خواهید رابطه بین جدول‌های %s و %s را حذف کنید؟"
+
+#: include/frm/frmReport.h:156
+msgid "&Compare other objects"
+msgstr "&مقایسه اشیاء دیگر"
+
+#: include/frm/frmReport.h:156
+msgid "Compare other host database select objects."
+msgstr "مقایسه اشیاء انتخاب‌شده پایگاه داده میزبان دیگر."
+
+#: ui/dlgFindReplace.xrc:65
+msgid "All find tabs"
+msgstr "همه زبانه‌های جستجو"
+
+#: ui/dlgProJob.xrc:105
+msgid "Run as"
+msgstr "اجرا به عنوان"
+
+#: ui/dlgProJob.xrc:195
+msgid "Commands"
+msgstr "فرمان‌ها"
+
+#: ui/dlgProJob.xrc:234
+msgid "use same transaction"
+msgstr "استفاده از همان تراکنش"
+
+#: ui/dlgServer.xrc:190
+msgid "Select SSL Root Certificate File"
+msgstr "انتخاب فایل گواهی ریشه SSL"
+
+#: ui/dlgServer.xrc:206
+msgid "Select SSL Certificate Revocation List File"
+msgstr "انتخاب فایل فهرست ابطال گواهی SSL"
+
+#: ui/dlgServer.xrc:222
+msgid "Select SSL certificate file"
+msgstr "انتخاب فایل گواهی SSL"
+
+#: ui/dlgServer.xrc:238
+msgid "Select SSL key file"
+msgstr "انتخاب فایل کلید SSL"
+
+#: ui/dlgServer.xrc:361
+msgid "Select identity file"
+msgstr "انتخاب فایل هویت"
+
+#: ui/dlgServer.xrc:377
+msgid "Select public key file"
+msgstr "انتخاب فایل کلید عمومی"
+
+#: ui/dlgServer.xrc:466
+msgid "Connect str"
+msgstr "رشته اتصال"
+
+#: ui/dlgTransformText.xrc:5
+msgid "Transform text"
+msgstr "تبدیل متن"
+
+#: ui/dlgTransformText.xrc:17
+msgid "Source text options"
+msgstr "گزینه‌های متن منبع"
+
+#: ui/dlgTransformText.xrc:33
+msgid "PCRE regexp"
+msgstr "عبارت منظم PCRE"
+
+#: ui/dlgTransformText.xrc:50
+msgid "Replace expression"
+msgstr "عبارت جایگزینی"
+
+#: ui/dlgTransformText.xrc:67
+msgid "Rows limit"
+msgstr "محدودیت ردیف‌ها"
+
+#: ui/dlgTransformText.xrc:87
+msgid "Chars limit"
+msgstr "محدودیت نویسه‌ها"
+
+#: ui/dlgTransformText.xrc:107
+msgid "Refresh highlight"
+msgstr "تازه‌سازی برجسته‌سازی"
+
+#: ui/dlgTransformText.xrc:124
+msgid "Source text"
+msgstr "متن منبع"
+
+#: ui/dlgTransformText.xrc:160
+msgid "Transform text options"
+msgstr "گزینه‌های تبدیل متن"
+
+#: ui/dlgTransformText.xrc:176
+msgid "Append before row"
+msgstr "افزودن پیش از ردیف"
+
+#: ui/dlgTransformText.xrc:196
+msgid "After row"
+msgstr "پس از ردیف"
+
+#: ui/dlgTransformText.xrc:230
+msgid "Field separator"
+msgstr "جداکننده فیلد"
+
+#: ui/dlgTransformText.xrc:267
+msgid "Load options"
+msgstr "گزینه‌های بارگذاری"
+
+#: ui/dlgTransformText.xrc:276
+msgid "First"
+msgstr "اول"
+
+#: ui/dlgTransformText.xrc:335
+msgid "Rows loading"
+msgstr "بارگذاری ردیف‌ها"
+
+#: ui/frmAwr.xrc:6
+msgid "AWR report"
+msgstr "گزارش AWR"
+
+#: ui/frmAwr.xrc:36
+msgid "Type report"
+msgstr "نوع گزارش"
+
+#: ui/frmAwr.xrc:39
+msgid "Report"
+msgstr "گزارش"
+
+#: ui/frmAwr.xrc:40
+msgid "Diff report"
+msgstr "گزارش تفاوت"
+
+#: ui/frmAwr.xrc:104
+msgid "Start Id1"
+msgstr "شناسه ۱ آغاز"
+
+#: ui/frmAwr.xrc:123
+msgid "End Id1"
+msgstr "شناسه ۱ پایان"
+
+#: ui/frmAwr.xrc:166
+msgid "Start Id2"
+msgstr "شناسه ۲ آغاز"
+
+#: ui/frmAwr.xrc:185
+msgid "End Id2"
+msgstr "شناسه ۲ پایان"
+
+#: ui/frmExport.xrc:110
+msgid "format COPY"
+msgstr "قالب COPY"
+
+#: ui/frmExport.xrc:116
+msgid "Xls fmt copy"
+msgstr "کپی با قالب Xls"
+
+#: ui/frmImport.xrc:33
+msgid "Select the file to import"
+msgstr "انتخاب فایل برای درون‌ریزی"
+
+#: ui/frmOptions.xrc:131
+msgid "Select theme"
+msgstr "انتخاب پوسته"
+
+#: ui/frmOptions.xrc:154
+msgid "Load"
+msgstr "بارگذاری"
+
+#: ui/frmOptions.xrc:222
+msgid "Options extended JSON:"
+msgstr "گزینه‌های JSON گسترش‌یافته:"
+
+#: ui/frmOptions.xrc:261
+msgid "Beautiful big numbers on the statistics page"
+msgstr "نمایش زیبای اعداد بزرگ در صفحه آمار"
+
+#: ui/frmOptions.xrc:272
+msgid "Show the dependencies of functions on tables,views,functions"
+msgstr "نمایش وابستگی‌های توابع به جدول‌ها، نماها و توابع"
+
+#: ui/frmOptions.xrc:457
+msgid "Show DB name in tree"
+msgstr "نمایش نام پایگاه داده در درخت"
+
+#: ui/frmOptions.xrc:465
+msgid "Quick jump to the root node"
+msgstr "پرش سریع به گره ریشه"
+
+#: ui/frmOptions.xrc:635
+msgid "Select utility to format text"
+msgstr "انتخاب ابزار قالب‌بندی متن"
+
+#: ui/frmOptions.xrc:645
+msgid "External alignment utlity"
+msgstr "ابزار تراز خارجی"
+
+#: ui/frmOptions.xrc:662
+msgid "Enable ASUTP style"
+msgstr "فعال‌سازی سبک ASUTP"
+
+#: ui/frmOptions.xrc:677
+msgid "Hide query history"
+msgstr "پنهان کردن تاریخچه پرس و جو"
+
+#: ui/frmOptions.xrc:692
+msgid "Auto save query text"
+msgstr "ذخیره خودکار متن پرس و جو"
+
+#: ui/frmOptions.xrc:707
+msgid "Use word hints"
+msgstr "استفاده از راهنمای کلمات"
+
+#: ui/frmOptions.xrc:722
+msgid "Replace variables in a query"
+msgstr "جایگزینی متغیرها در پرس و جو"
+
+#: ui/frmOptions.xrc:821
+msgid "Use system background color caret line"
+msgstr "استفاده از رنگ پس‌زمینه سیستم برای خط مکان‌نما"
+
+#: ui/frmOptions.xrc:876
+msgid "Width for keyboard layout"
+msgstr "عرض برای چیدمان صفحه‌کلید"
+
+#: ui/frmOptions.xrc:1227
+msgid "Select file to store favourites queries"
+msgstr "انتخاب فایل برای ذخیره پرس و جوهای مورد علاقه"
+
+#: ui/frmOptions.xrc:1255
+msgid "Select file to store macros"
+msgstr "انتخاب فایل برای ذخیره ماکروها"
+
+#: ui/frmOptions.xrc:1283
+msgid "Select file to store queries history"
+msgstr "انتخاب فایل برای ذخیره تاریخچه پرس و جوها"
+
+#: ui/frmOptions.xrc:1388
+msgid "Blocked by Process Colour"
+msgstr "رنگ فرایند مسدودشده توسط"
+
+#: ui/frmOptions.xrc:1402
+msgid "Idle&in&transaction&session&timeout Process Colour"
+msgstr "رنگ فرایند Idle&in&transaction&session&timeout"
+
+#: frm/mathplot.cpp:1424
+msgid "Center"
+msgstr "مرکز"
+
+#: frm/mathplot.cpp:1425
+msgid "Center plot view to this position"
+msgstr "مرکز کردن نمای نمودار روی این موقعیت"
+
+#: frm/mathplot.cpp:1426
+msgid "Fit"
+msgstr "متناسب‌سازی"
+
+#: frm/mathplot.cpp:1426
+msgid "Set plot view to show all items"
+msgstr "تنظیم نمای نمودار برای نمایش همه موارد"
+
+#: frm/mathplot.cpp:1427
+msgid "Zoom in"
+msgstr "بزرگ‌نمایی"
+
+#: frm/mathplot.cpp:1427
+msgid "Zoom in plot view."
+msgstr "بزرگ‌نمایی نمای نمودار."
+
+#: frm/mathplot.cpp:1428
+msgid "Zoom out"
+msgstr "کوچک‌نمایی"
+
+#: frm/mathplot.cpp:1428
+msgid "Zoom out plot view."
+msgstr "کوچک‌نمایی نمای نمودار."
+
+#: frm/mathplot.cpp:1431
+msgid "Show mouse commands..."
+msgstr "نمایش فرمان‌های ماوس..."
+
+#: frm/mathplot.cpp:1432
+msgid "Show help about the mouse commands."
+msgstr "نمایش راهنمای فرمان‌های ماوس."
+
+#: frm/mathplot.cpp:1935
+msgid "wxMathPlot help"
+msgstr "راهنمای wxMathPlot"
+
+#: dd/dditems/figures/xml/ddXmlStorage.cpp:91
+msgid "Error saving model: not source model have been set"
+msgstr "خطا در ذخیره مدل: مدل منبع تنظیم نشده است"
+
+#: dd/dditems/figures/xml/ddXmlStorage.cpp:123
+msgid "Fatal Error at libxml for figure persistency"
+msgstr "خطای مهلک libxml برای ماندگاری شکل‌ها"
+
+#: dd/dditems/figures/xml/ddXmlStorage.cpp:624
+msgid "Model is not following embedded DTD definition, check it.\n"
+msgstr "مدل از تعریف DTD تعبیه‌شده پیروی نمی‌کند، آن را بررسی کنید.\n"
+
+#: dd/dditems/figures/xml/ddXmlStorage.cpp:656
+msgid "Failed to load document from disk"
+msgstr "بارگذاری سند از دیسک ناموفق بود"
+
+#: dd/dditems/figures/xml/ddXmlStorage.cpp:754
+msgid "Invalid version of XML file for pgAdmin database designer found"
+msgstr "نسخه نامعتبر فایل XML برای طراح پایگاه داده pgAdmin یافت شد"
+
+#: dd/dditems/figures/xml/ddXmlStorage.cpp:754
+msgid "Invalid XML"
+msgstr "XML نامعتبر"
+
+#: dd/dditems/figures/xml/ddXmlStorage.cpp:1054
+msgid "Table initial metadata info not found"
+msgstr "فراداده اولیه جدول یافت نشد"
+
+#: frm/frmOptions.cpp:1
+msgid "Appearance"
+msgstr "ظاهر"
+
+#: frm/frmOptions.cpp:2
+msgid "Automatic"
+msgstr "خودکار"
+
+#: frm/frmOptions.cpp:3
+msgid "Light"
+msgstr "روشن"
+
+#: frm/frmOptions.cpp:4
+msgid "Dark"
+msgstr "تیره"
+
+#: frm/frmOptions.cpp:5
+msgid "Restart pgAdmin III to fully apply the appearance change."
+msgstr "برای اعمال کامل تغییر ظاهر، pgAdmin III را دوباره راه‌اندازی کنید."

@@ -16192,4 +16192,402 @@ msgstr "yes"
 #~ msgid "NO ACTION"
 #~ msgstr "NO ACTION"
 
+#: pgAdmin3.cpp:389
+msgid "open server log window"
+msgstr "સર્વર લૉગ વિન્ડો ખોલો"
 
+#: pgAdmin3.cpp:403
+msgid "export servers configuration to file pgadmin3.ini"
+msgstr "સર્વર્સનું રૂપરેખાંકન pgadmin3.ini ફાઇલમાં નિકાસ કરો"
+
+#: pgAdmin3.cpp:404
+msgid "Enable Dark mode"
+msgstr "ડાર્ક મોડ સક્ષમ કરો"
+
+#: pgAdmin3.cpp:1013
+msgid "Log - "
+msgstr "લૉગ - "
+
+#: pro_scheduler/pgproJob.cpp:36
+msgid "Retrieving details on pro_scheduler job"
+msgstr "pro_scheduler જૉબની વિગતો મેળવી રહ્યા છીએ"
+
+#: pro_scheduler/pgproJob.cpp:39
+msgid "Refreshing pro_scheduler job"
+msgstr "pro_scheduler જૉબ રિફ્રેશ કરી રહ્યા છીએ"
+
+#: pro_scheduler/pgproJob.cpp:42
+msgid "pro_scheduler job properties report"
+msgstr "pro_scheduler જૉબ ગુણધર્મોનો અહેવાલ"
+
+#: pro_scheduler/pgproJob.cpp:48
+msgid "pro_scheduler job DDL report"
+msgstr "pro_scheduler જૉબ DDL અહેવાલ"
+
+#: pro_scheduler/pgproJob.cpp:51
+msgid "pro_scheduler job dependencies report"
+msgstr "pro_scheduler જૉબ નિર્ભરતાઓનો અહેવાલ"
+
+#: pro_scheduler/pgproJob.cpp:54
+msgid "pro_scheduler job dependencies"
+msgstr "pro_scheduler જૉબ નિર્ભરતાઓ"
+
+#: pro_scheduler/pgproJob.cpp:57
+msgid "pro_scheduler job dependents report"
+msgstr "pro_scheduler જૉબ આશ્રિતોનો અહેવાલ"
+
+#: pro_scheduler/pgproJob.cpp:60
+msgid "pro_scheduler job dependents"
+msgstr "pro_scheduler જૉબ આશ્રિતો"
+
+#: pro_scheduler/pgproJob.cpp:140
+msgid "Started"
+msgstr "શરૂ થયું"
+
+#: pro_scheduler/pgproJob.cpp:141
+msgid "Finished"
+msgstr "પૂર્ણ થયું"
+
+#: pro_scheduler/pgproJob.cpp:143
+msgid "Crontab"
+msgstr "Crontab"
+
+#: pro_scheduler/pgproJob.cpp:146
+msgid "Runas"
+msgstr "આ તરીકે ચલાવો"
+
+#: pro_scheduler/pgproJob.cpp:152
+msgid "Next start job"
+msgstr "જૉબની આગલી શરૂઆત"
+
+#: pro_scheduler/pgproJob.cpp:185
+msgid "Previous sched time run skip"
+msgstr "પાછલો સુનિશ્ચિત સમય ચલાવવાનું છોડ્યું"
+
+#: pro_scheduler/pgproJob.cpp:254
+msgid "Not run"
+msgstr "ચલાવ્યું નથી"
+
+#: pro_scheduler/pgproJob.cpp:356
+msgid "Log_time"
+msgstr "લૉગ સમય"
+
+#: pro_scheduler/pgproJob.cpp:357
+msgid "Critical"
+msgstr "ગંભીર"
+
+#: pro_scheduler/pgproJob.cpp:359
+msgid "Stage"
+msgstr "તબક્કો"
+
+#: pro_scheduler/pgproJob.cpp:505
+msgid "Enabled or disabled job"
+msgstr "સક્ષમ અથવા અક્ષમ કરેલ જૉબ"
+
+#: frm/frmQuery.cpp:4689
+msgid "Please enter name string with prefix dbname or description server\n"
+msgstr "કૃપા કરીને ડેટાબેઝના નામ અથવા સર્વરના વર્ણનના ઉપસર્ગ સાથે નામ સ્ટ્રિંગ દાખલ કરો\n"
+
+#: frm/frmQuery.cpp:4691
+msgid "Name autosave tab window."
+msgstr "ટૅબ વિન્ડોનું ઑટોસેવ નામ."
+
+#: frm/frmOptions.cpp:615
+msgid "Color theme save to file %s"
+msgstr "રંગ થીમ ફાઇલ %s માં સાચવી"
+
+#: frm/frmOptions.cpp:637
+msgid "Color theme load from file %s"
+msgstr "રંગ થીમ ફાઇલ %s માંથી લોડ કરી"
+
+#: frm/frmOptions.cpp:638
+msgid "Load theme"
+msgstr "થીમ લોડ કરો"
+
+#: schema/pgServer.cpp:1253
+msgid "Key words"
+msgstr "કીવર્ડ્સ"
+
+#: hotdraw/utilities/hdRemoveDeleteDialog.cpp:117
+msgid "     Choose Remove from Diagram to remove only from current diagram.     "
+msgstr "     ફક્ત વર્તમાન ડાયાગ્રામમાંથી દૂર કરવા માટે ડાયાગ્રામમાંથી દૂર કરો પસંદ કરો.     "
+
+#: hotdraw/utilities/hdRemoveDeleteDialog.cpp:118
+msgid "     Choose Remove from Model to delete permanently.     "
+msgstr "     કાયમ માટે કાઢી નાખવા માટે મૉડલમાંથી દૂર કરો પસંદ કરો.     "
+
+#: hotdraw/main/hdDrawingView.cpp:457
+msgid "Sample Item"
+msgstr "નમૂના આઇટમ"
+
+#: hotdraw/main/hdDrawingView.cpp:466
+msgid "Sample menu item"
+msgstr "નમૂના મેનૂ આઇટમ"
+
+#: hotdraw/main/hdDrawingView.cpp:466
+msgid "Sample"
+msgstr "નમૂનો"
+
+#: hotdraw/main/hdDrawingEditor.cpp:267
+msgid "Are you sure you wish to delete figure ?"
+msgstr "શું તમે ખરેખર આકૃતિ કાઢી નાખવા માંગો છો?"
+
+#: hotdraw/main/hdDrawingEditor.cpp:267
+msgid "Delete figures?"
+msgstr "આકૃતિઓ કાઢી નાખવી?"
+
+#: hotdraw/main/hdDrawingEditor.cpp:272
+msgid "Are you sure you wish to delete %d figures?"
+msgstr "શું તમે ખરેખર %d આકૃતિઓ કાઢી નાખવા માંગો છો?"
+
+#: ui/dlgFindReplace.xrc:65
+msgid "All find tabs"
+msgstr "બધા શોધ ટૅબ"
+
+#: ui/dlgProJob.xrc:105
+msgid "Run as"
+msgstr "આ તરીકે ચલાવો"
+
+#: ui/dlgProJob.xrc:195
+msgid "Commands"
+msgstr "આદેશો"
+
+#: ui/dlgProJob.xrc:234
+msgid "use same transaction"
+msgstr "સમાન ટ્રાન્ઝેક્શન વાપરો"
+
+#: ui/dlgServer.xrc:190
+msgid "Select SSL Root Certificate File"
+msgstr "SSL રૂટ સર્ટિફિકેટ ફાઇલ પસંદ કરો"
+
+#: ui/dlgServer.xrc:206
+msgid "Select SSL Certificate Revocation List File"
+msgstr "SSL સર્ટિફિકેટ રદ યાદી ફાઇલ પસંદ કરો"
+
+#: ui/dlgServer.xrc:222
+msgid "Select SSL certificate file"
+msgstr "SSL સર્ટિફિકેટ ફાઇલ પસંદ કરો"
+
+#: ui/dlgServer.xrc:238
+msgid "Select SSL key file"
+msgstr "SSL કી ફાઇલ પસંદ કરો"
+
+#: ui/dlgServer.xrc:361
+msgid "Select identity file"
+msgstr "આઇડેન્ટિટી ફાઇલ પસંદ કરો"
+
+#: ui/dlgServer.xrc:377
+msgid "Select public key file"
+msgstr "જાહેર કી ફાઇલ પસંદ કરો"
+
+#: ui/dlgServer.xrc:466
+msgid "Connect str"
+msgstr "કનેક્શન સ્ટ્રિંગ"
+
+#: ui/dlgTransformText.xrc:5
+msgid "Transform text"
+msgstr "ટેક્સ્ટ રૂપાંતર"
+
+#: ui/dlgTransformText.xrc:17
+msgid "Source text options"
+msgstr "સ્રોત ટેક્સ્ટ વિકલ્પો"
+
+#: ui/dlgTransformText.xrc:33
+msgid "PCRE regexp"
+msgstr "PCRE રેગ્યુલર એક્સપ્રેશન"
+
+#: ui/dlgTransformText.xrc:50
+msgid "Replace expression"
+msgstr "બદલવાનું એક્સપ્રેશન"
+
+#: ui/dlgTransformText.xrc:67
+msgid "Rows limit"
+msgstr "પંક્તિઓની મર્યાદા"
+
+#: ui/dlgTransformText.xrc:87
+msgid "Chars limit"
+msgstr "અક્ષરોની મર્યાદા"
+
+#: ui/dlgTransformText.xrc:107
+msgid "Refresh highlight"
+msgstr "હાઇલાઇટ રિફ્રેશ કરો"
+
+#: ui/dlgTransformText.xrc:124
+msgid "Source text"
+msgstr "સ્રોત ટેક્સ્ટ"
+
+#: ui/dlgTransformText.xrc:160
+msgid "Transform text options"
+msgstr "ટેક્સ્ટ રૂપાંતર વિકલ્પો"
+
+#: ui/dlgTransformText.xrc:176
+msgid "Append before row"
+msgstr "પંક્તિ પહેલાં ઉમેરો"
+
+#: ui/dlgTransformText.xrc:196
+msgid "After row"
+msgstr "પંક્તિ પછી"
+
+#: ui/dlgTransformText.xrc:230
+msgid "Field separator"
+msgstr "ફીલ્ડ વિભાજક"
+
+#: ui/dlgTransformText.xrc:267
+msgid "Load options"
+msgstr "લોડ વિકલ્પો"
+
+#: ui/dlgTransformText.xrc:276
+msgid "First"
+msgstr "પ્રથમ"
+
+#: ui/dlgTransformText.xrc:335
+msgid "Rows loading"
+msgstr "પંક્તિઓ લોડ કરવી"
+
+#: ui/frmAwr.xrc:6
+msgid "AWR report"
+msgstr "AWR અહેવાલ"
+
+#: ui/frmAwr.xrc:36
+msgid "Type report"
+msgstr "અહેવાલનો પ્રકાર"
+
+#: ui/frmAwr.xrc:39
+msgid "Report"
+msgstr "અહેવાલ"
+
+#: ui/frmAwr.xrc:40
+msgid "Diff report"
+msgstr "તફાવત અહેવાલ"
+
+#: ui/frmAwr.xrc:104
+msgid "Start Id1"
+msgstr "પ્રારંભ Id1"
+
+#: ui/frmAwr.xrc:123
+msgid "End Id1"
+msgstr "અંત Id1"
+
+#: ui/frmAwr.xrc:166
+msgid "Start Id2"
+msgstr "પ્રારંભ Id2"
+
+#: ui/frmAwr.xrc:185
+msgid "End Id2"
+msgstr "અંત Id2"
+
+#: ui/frmExport.xrc:110
+msgid "format COPY"
+msgstr "COPY ફૉર્મેટ"
+
+#: ui/frmExport.xrc:116
+msgid "Xls fmt copy"
+msgstr "Xls ફૉર્મેટમાં કૉપિ"
+
+#: ui/frmImport.xrc:33
+msgid "Select the file to import"
+msgstr "આયાત કરવા માટે ફાઇલ પસંદ કરો"
+
+#: ui/frmOptions.xrc:131
+msgid "Select theme"
+msgstr "થીમ પસંદ કરો"
+
+#: ui/frmOptions.xrc:154
+msgid "Load"
+msgstr "લોડ કરો"
+
+#: ui/frmOptions.xrc:222
+msgid "Options extended JSON:"
+msgstr "વિસ્તૃત JSON વિકલ્પો:"
+
+#: ui/frmOptions.xrc:261
+msgid "Beautiful big numbers on the statistics page"
+msgstr "આંકડા પૃષ્ઠ પર મોટી સંખ્યાઓનું સુંદર પ્રદર્શન"
+
+#: ui/frmOptions.xrc:272
+msgid "Show the dependencies of functions on tables,views,functions"
+msgstr "ટેબલ, વ્યૂ, ફંક્શન્સ પર ફંક્શન્સની નિર્ભરતાઓ બતાવો"
+
+#: ui/frmOptions.xrc:457
+msgid "Show DB name in tree"
+msgstr "ટ્રીમાં DB નામ બતાવો"
+
+#: ui/frmOptions.xrc:465
+msgid "Quick jump to the root node"
+msgstr "રૂટ નોડ પર ઝડપી જમ્પ"
+
+#: ui/frmOptions.xrc:635
+msgid "Select utility to format text"
+msgstr "ટેક્સ્ટ ફૉર્મેટ કરવા માટેની યુટિલિટી પસંદ કરો"
+
+#: ui/frmOptions.xrc:645
+msgid "External alignment utlity"
+msgstr "બાહ્ય ગોઠવણી યુટિલિટી"
+
+#: ui/frmOptions.xrc:662
+msgid "Enable ASUTP style"
+msgstr "ASUTP શૈલી સક્ષમ કરો"
+
+#: ui/frmOptions.xrc:677
+msgid "Hide query history"
+msgstr "ક્વેરી ઇતિહાસ છુપાવો"
+
+#: ui/frmOptions.xrc:692
+msgid "Auto save query text"
+msgstr "ક્વેરી ટેક્સ્ટ આપમેળે સાચવો"
+
+#: ui/frmOptions.xrc:707
+msgid "Use word hints"
+msgstr "શબ્દ સંકેતો વાપરો"
+
+#: ui/frmOptions.xrc:722
+msgid "Replace variables in a query"
+msgstr "ક્વેરીમાં વેરિયેબલ્સ બદલો"
+
+#: ui/frmOptions.xrc:821
+msgid "Use system background color caret line"
+msgstr "કર્સર લાઇન માટે સિસ્ટમનો બૅકગ્રાઉન્ડ રંગ વાપરો"
+
+#: ui/frmOptions.xrc:876
+msgid "Width for keyboard layout"
+msgstr "કીબોર્ડ લેઆઉટ માટે પહોળાઈ"
+
+#: ui/frmOptions.xrc:1227
+msgid "Select file to store favourites queries"
+msgstr "મનપસંદ ક્વેરીઝ સંગ્રહવા માટે ફાઇલ પસંદ કરો"
+
+#: ui/frmOptions.xrc:1255
+msgid "Select file to store macros"
+msgstr "મૅક્રો સંગ્રહવા માટે ફાઇલ પસંદ કરો"
+
+#: ui/frmOptions.xrc:1283
+msgid "Select file to store queries history"
+msgstr "ક્વેરી ઇતિહાસ સંગ્રહવા માટે ફાઇલ પસંદ કરો"
+
+#: ui/frmOptions.xrc:1388
+msgid "Blocked by Process Colour"
+msgstr "અવરોધિત પ્રક્રિયાનો રંગ"
+
+#: ui/frmOptions.xrc:1402
+msgid "Idle&in&transaction&session&timeout Process Colour"
+msgstr "Idle&in&transaction&session&timeout પ્રક્રિયાનો રંગ"
+
+#: frm/frmOptions.cpp:1
+msgid "Appearance"
+msgstr "દેખાવ"
+
+#: frm/frmOptions.cpp:2
+msgid "Automatic"
+msgstr "આપમેળે"
+
+#: frm/frmOptions.cpp:3
+msgid "Light"
+msgstr "હળવો"
+
+#: frm/frmOptions.cpp:4
+msgid "Dark"
+msgstr "ઘેરો"
+
+#: frm/frmOptions.cpp:5
+msgid "Restart pgAdmin III to fully apply the appearance change."
+msgstr "દેખાવનો ફેરફાર સંપૂર્ણપણે લાગુ કરવા માટે pgAdmin III ફરી શરૂ કરો."

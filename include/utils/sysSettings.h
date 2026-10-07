@@ -23,6 +23,7 @@
 class sysSettings : private wxConfig
 {
 	friend class ctlTreeJSON;
+	friend class frmOptions;
 public:
 	sysSettings(const wxString &name);
 	~sysSettings();
@@ -811,6 +812,17 @@ public:
 	void SetConfirmDelete(const bool newval)
 	{
 		WriteBool(wxT("ConfirmDelete"), newval);
+	}
+	// Application appearance: 0 = follow the system, 1 = light, 2 = dark
+	int GetAppearanceMode() const
+	{
+		int i;
+		Read(wxT("AppearanceMode"), &i, 0);
+		return i;
+	}
+	void SetAppearanceMode(int newval)
+	{
+		WriteInt(wxT("AppearanceMode"), newval);
 	}
 	wxString GetCanonicalLanguageName();
 	wxLanguage GetCanonicalLanguage() const

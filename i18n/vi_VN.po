@@ -16192,4 +16192,402 @@ msgstr "yes"
 #~ msgid "NO ACTION"
 #~ msgstr "NO ACTION"
 
+#: pgAdmin3.cpp:389
+msgid "open server log window"
+msgstr "mở cửa sổ nhật ký máy chủ"
 
+#: pgAdmin3.cpp:403
+msgid "export servers configuration to file pgadmin3.ini"
+msgstr "xuất cấu hình máy chủ ra tệp pgadmin3.ini"
+
+#: pgAdmin3.cpp:404
+msgid "Enable Dark mode"
+msgstr "Bật chế độ tối"
+
+#: pgAdmin3.cpp:1013
+msgid "Log - "
+msgstr "Nhật ký - "
+
+#: pro_scheduler/pgproJob.cpp:36
+msgid "Retrieving details on pro_scheduler job"
+msgstr "Đang truy xuất chi tiết về tác vụ pro_scheduler"
+
+#: pro_scheduler/pgproJob.cpp:39
+msgid "Refreshing pro_scheduler job"
+msgstr "Đang làm mới tác vụ pro_scheduler"
+
+#: pro_scheduler/pgproJob.cpp:42
+msgid "pro_scheduler job properties report"
+msgstr "Báo cáo thuộc tính tác vụ pro_scheduler"
+
+#: pro_scheduler/pgproJob.cpp:48
+msgid "pro_scheduler job DDL report"
+msgstr "Báo cáo DDL tác vụ pro_scheduler"
+
+#: pro_scheduler/pgproJob.cpp:51
+msgid "pro_scheduler job dependencies report"
+msgstr "Báo cáo các phụ thuộc của tác vụ pro_scheduler"
+
+#: pro_scheduler/pgproJob.cpp:54
+msgid "pro_scheduler job dependencies"
+msgstr "Các phụ thuộc của tác vụ pro_scheduler"
+
+#: pro_scheduler/pgproJob.cpp:57
+msgid "pro_scheduler job dependents report"
+msgstr "Báo cáo các đối tượng phụ thuộc vào tác vụ pro_scheduler"
+
+#: pro_scheduler/pgproJob.cpp:60
+msgid "pro_scheduler job dependents"
+msgstr "Các đối tượng phụ thuộc vào tác vụ pro_scheduler"
+
+#: pro_scheduler/pgproJob.cpp:140
+msgid "Started"
+msgstr "Đã bắt đầu"
+
+#: pro_scheduler/pgproJob.cpp:141
+msgid "Finished"
+msgstr "Đã kết thúc"
+
+#: pro_scheduler/pgproJob.cpp:143
+msgid "Crontab"
+msgstr "Crontab"
+
+#: pro_scheduler/pgproJob.cpp:146
+msgid "Runas"
+msgstr "Chạy với tư cách"
+
+#: pro_scheduler/pgproJob.cpp:152
+msgid "Next start job"
+msgstr "Lần chạy tác vụ tiếp theo"
+
+#: pro_scheduler/pgproJob.cpp:185
+msgid "Previous sched time run skip"
+msgstr "Bỏ qua lần chạy theo lịch trước đó"
+
+#: pro_scheduler/pgproJob.cpp:254
+msgid "Not run"
+msgstr "Không chạy"
+
+#: pro_scheduler/pgproJob.cpp:356
+msgid "Log_time"
+msgstr "Thời gian nhật ký"
+
+#: pro_scheduler/pgproJob.cpp:357
+msgid "Critical"
+msgstr "Nghiêm trọng"
+
+#: pro_scheduler/pgproJob.cpp:359
+msgid "Stage"
+msgstr "Giai đoạn"
+
+#: pro_scheduler/pgproJob.cpp:505
+msgid "Enabled or disabled job"
+msgstr "Tác vụ được bật hoặc tắt"
+
+#: frm/frmQuery.cpp:4689
+msgid "Please enter name string with prefix dbname or description server\n"
+msgstr "Vui lòng nhập chuỗi tên có tiền tố là tên cơ sở dữ liệu hoặc mô tả máy chủ\n"
+
+#: frm/frmQuery.cpp:4691
+msgid "Name autosave tab window."
+msgstr "Tên cửa sổ tab tự động lưu."
+
+#: frm/frmOptions.cpp:615
+msgid "Color theme save to file %s"
+msgstr "Chủ đề màu đã được lưu vào tệp %s"
+
+#: frm/frmOptions.cpp:637
+msgid "Color theme load from file %s"
+msgstr "Chủ đề màu đã được tải từ tệp %s"
+
+#: frm/frmOptions.cpp:638
+msgid "Load theme"
+msgstr "Tải chủ đề"
+
+#: schema/pgServer.cpp:1253
+msgid "Key words"
+msgstr "Từ khóa"
+
+#: hotdraw/utilities/hdRemoveDeleteDialog.cpp:117
+msgid "     Choose Remove from Diagram to remove only from current diagram.     "
+msgstr "     Chọn Xóa khỏi sơ đồ để chỉ xóa khỏi sơ đồ hiện tại.     "
+
+#: hotdraw/utilities/hdRemoveDeleteDialog.cpp:118
+msgid "     Choose Remove from Model to delete permanently.     "
+msgstr "     Chọn Xóa khỏi mô hình để xóa vĩnh viễn.     "
+
+#: hotdraw/main/hdDrawingView.cpp:457
+msgid "Sample Item"
+msgstr "Mục mẫu"
+
+#: hotdraw/main/hdDrawingView.cpp:466
+msgid "Sample menu item"
+msgstr "Mục trình đơn mẫu"
+
+#: hotdraw/main/hdDrawingView.cpp:466
+msgid "Sample"
+msgstr "Mẫu"
+
+#: hotdraw/main/hdDrawingEditor.cpp:267
+msgid "Are you sure you wish to delete figure ?"
+msgstr "Bạn có chắc muốn xóa hình này không?"
+
+#: hotdraw/main/hdDrawingEditor.cpp:267
+msgid "Delete figures?"
+msgstr "Xóa các hình?"
+
+#: hotdraw/main/hdDrawingEditor.cpp:272
+msgid "Are you sure you wish to delete %d figures?"
+msgstr "Bạn có chắc muốn xóa %d hình không?"
+
+#: ui/dlgFindReplace.xrc:65
+msgid "All find tabs"
+msgstr "Tất cả tab tìm kiếm"
+
+#: ui/dlgProJob.xrc:105
+msgid "Run as"
+msgstr "Chạy với tư cách"
+
+#: ui/dlgProJob.xrc:195
+msgid "Commands"
+msgstr "Lệnh"
+
+#: ui/dlgProJob.xrc:234
+msgid "use same transaction"
+msgstr "dùng cùng giao dịch"
+
+#: ui/dlgServer.xrc:190
+msgid "Select SSL Root Certificate File"
+msgstr "Chọn tệp chứng chỉ gốc SSL"
+
+#: ui/dlgServer.xrc:206
+msgid "Select SSL Certificate Revocation List File"
+msgstr "Chọn tệp danh sách thu hồi chứng chỉ SSL"
+
+#: ui/dlgServer.xrc:222
+msgid "Select SSL certificate file"
+msgstr "Chọn tệp chứng chỉ SSL"
+
+#: ui/dlgServer.xrc:238
+msgid "Select SSL key file"
+msgstr "Chọn tệp khóa SSL"
+
+#: ui/dlgServer.xrc:361
+msgid "Select identity file"
+msgstr "Chọn tệp nhận dạng"
+
+#: ui/dlgServer.xrc:377
+msgid "Select public key file"
+msgstr "Chọn tệp khóa công khai"
+
+#: ui/dlgServer.xrc:466
+msgid "Connect str"
+msgstr "Chuỗi kết nối"
+
+#: ui/dlgTransformText.xrc:5
+msgid "Transform text"
+msgstr "Chuyển đổi văn bản"
+
+#: ui/dlgTransformText.xrc:17
+msgid "Source text options"
+msgstr "Tùy chọn văn bản nguồn"
+
+#: ui/dlgTransformText.xrc:33
+msgid "PCRE regexp"
+msgstr "Biểu thức chính quy PCRE"
+
+#: ui/dlgTransformText.xrc:50
+msgid "Replace expression"
+msgstr "Biểu thức thay thế"
+
+#: ui/dlgTransformText.xrc:67
+msgid "Rows limit"
+msgstr "Giới hạn số dòng"
+
+#: ui/dlgTransformText.xrc:87
+msgid "Chars limit"
+msgstr "Giới hạn số ký tự"
+
+#: ui/dlgTransformText.xrc:107
+msgid "Refresh highlight"
+msgstr "Làm mới đánh dấu"
+
+#: ui/dlgTransformText.xrc:124
+msgid "Source text"
+msgstr "Văn bản nguồn"
+
+#: ui/dlgTransformText.xrc:160
+msgid "Transform text options"
+msgstr "Tùy chọn văn bản chuyển đổi"
+
+#: ui/dlgTransformText.xrc:176
+msgid "Append before row"
+msgstr "Thêm trước dòng"
+
+#: ui/dlgTransformText.xrc:196
+msgid "After row"
+msgstr "Sau dòng"
+
+#: ui/dlgTransformText.xrc:230
+msgid "Field separator"
+msgstr "Dấu phân cách trường"
+
+#: ui/dlgTransformText.xrc:267
+msgid "Load options"
+msgstr "Tùy chọn tải"
+
+#: ui/dlgTransformText.xrc:276
+msgid "First"
+msgstr "Đầu tiên"
+
+#: ui/dlgTransformText.xrc:335
+msgid "Rows loading"
+msgstr "Đang tải các dòng"
+
+#: ui/frmAwr.xrc:6
+msgid "AWR report"
+msgstr "Báo cáo AWR"
+
+#: ui/frmAwr.xrc:36
+msgid "Type report"
+msgstr "Loại báo cáo"
+
+#: ui/frmAwr.xrc:39
+msgid "Report"
+msgstr "Báo cáo"
+
+#: ui/frmAwr.xrc:40
+msgid "Diff report"
+msgstr "Báo cáo khác biệt"
+
+#: ui/frmAwr.xrc:104
+msgid "Start Id1"
+msgstr "Id1 bắt đầu"
+
+#: ui/frmAwr.xrc:123
+msgid "End Id1"
+msgstr "Id1 kết thúc"
+
+#: ui/frmAwr.xrc:166
+msgid "Start Id2"
+msgstr "Id2 bắt đầu"
+
+#: ui/frmAwr.xrc:185
+msgid "End Id2"
+msgstr "Id2 kết thúc"
+
+#: ui/frmExport.xrc:110
+msgid "format COPY"
+msgstr "định dạng COPY"
+
+#: ui/frmExport.xrc:116
+msgid "Xls fmt copy"
+msgstr "Sao chép định dạng Xls"
+
+#: ui/frmImport.xrc:33
+msgid "Select the file to import"
+msgstr "Chọn tệp để nhập"
+
+#: ui/frmOptions.xrc:131
+msgid "Select theme"
+msgstr "Chọn chủ đề"
+
+#: ui/frmOptions.xrc:154
+msgid "Load"
+msgstr "Tải"
+
+#: ui/frmOptions.xrc:222
+msgid "Options extended JSON:"
+msgstr "Tùy chọn JSON mở rộng:"
+
+#: ui/frmOptions.xrc:261
+msgid "Beautiful big numbers on the statistics page"
+msgstr "Hiển thị đẹp các số lớn trên trang thống kê"
+
+#: ui/frmOptions.xrc:272
+msgid "Show the dependencies of functions on tables,views,functions"
+msgstr "Hiển thị sự phụ thuộc của hàm vào bảng, view, hàm"
+
+#: ui/frmOptions.xrc:457
+msgid "Show DB name in tree"
+msgstr "Hiển thị tên CSDL trong cây"
+
+#: ui/frmOptions.xrc:465
+msgid "Quick jump to the root node"
+msgstr "Chuyển nhanh đến nút gốc"
+
+#: ui/frmOptions.xrc:635
+msgid "Select utility to format text"
+msgstr "Chọn tiện ích để định dạng văn bản"
+
+#: ui/frmOptions.xrc:645
+msgid "External alignment utlity"
+msgstr "Tiện ích căn chỉnh bên ngoài"
+
+#: ui/frmOptions.xrc:662
+msgid "Enable ASUTP style"
+msgstr "Bật kiểu ASUTP"
+
+#: ui/frmOptions.xrc:677
+msgid "Hide query history"
+msgstr "Ẩn lịch sử truy vấn"
+
+#: ui/frmOptions.xrc:692
+msgid "Auto save query text"
+msgstr "Tự động lưu văn bản truy vấn"
+
+#: ui/frmOptions.xrc:707
+msgid "Use word hints"
+msgstr "Dùng gợi ý từ"
+
+#: ui/frmOptions.xrc:722
+msgid "Replace variables in a query"
+msgstr "Thay thế biến trong truy vấn"
+
+#: ui/frmOptions.xrc:821
+msgid "Use system background color caret line"
+msgstr "Dùng màu nền hệ thống cho dòng chứa con trỏ"
+
+#: ui/frmOptions.xrc:876
+msgid "Width for keyboard layout"
+msgstr "Chiều rộng cho bố cục bàn phím"
+
+#: ui/frmOptions.xrc:1227
+msgid "Select file to store favourites queries"
+msgstr "Chọn tệp để lưu các truy vấn yêu thích"
+
+#: ui/frmOptions.xrc:1255
+msgid "Select file to store macros"
+msgstr "Chọn tệp để lưu macro"
+
+#: ui/frmOptions.xrc:1283
+msgid "Select file to store queries history"
+msgstr "Chọn tệp để lưu lịch sử truy vấn"
+
+#: ui/frmOptions.xrc:1388
+msgid "Blocked by Process Colour"
+msgstr "Màu của tiến trình bị chặn bởi tiến trình khác"
+
+#: ui/frmOptions.xrc:1402
+msgid "Idle&in&transaction&session&timeout Process Colour"
+msgstr "Màu tiến trình Idle&in&transaction&session&timeout"
+
+#: frm/frmOptions.cpp:1
+msgid "Appearance"
+msgstr "Giao diện"
+
+#: frm/frmOptions.cpp:2
+msgid "Automatic"
+msgstr "Tự động"
+
+#: frm/frmOptions.cpp:3
+msgid "Light"
+msgstr "Sáng"
+
+#: frm/frmOptions.cpp:4
+msgid "Dark"
+msgstr "Tối"
+
+#: frm/frmOptions.cpp:5
+msgid "Restart pgAdmin III to fully apply the appearance change."
+msgstr "Hãy khởi động lại pgAdmin III để áp dụng đầy đủ thay đổi giao diện."

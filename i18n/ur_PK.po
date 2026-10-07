@@ -21066,4 +21066,402 @@ msgstr "اقسام"
 #~ msgid "|"
 #~ msgstr "|"
 
+#: pgAdmin3.cpp:389
+msgid "open server log window"
+msgstr "سرور لاگ ونڈو کھولیں"
 
+#: pgAdmin3.cpp:403
+msgid "export servers configuration to file pgadmin3.ini"
+msgstr "سرورز کی ترتیب فائل pgadmin3.ini میں برآمد کریں"
+
+#: pgAdmin3.cpp:404
+msgid "Enable Dark mode"
+msgstr "ڈارک موڈ فعال کریں"
+
+#: pgAdmin3.cpp:1013
+msgid "Log - "
+msgstr "لاگ - "
+
+#: pro_scheduler/pgproJob.cpp:36
+msgid "Retrieving details on pro_scheduler job"
+msgstr "pro_scheduler جاب کی تفصیلات حاصل کی جا رہی ہیں"
+
+#: pro_scheduler/pgproJob.cpp:39
+msgid "Refreshing pro_scheduler job"
+msgstr "pro_scheduler جاب تازہ کی جا رہی ہے"
+
+#: pro_scheduler/pgproJob.cpp:42
+msgid "pro_scheduler job properties report"
+msgstr "pro_scheduler جاب کی خصوصیات کی رپورٹ"
+
+#: pro_scheduler/pgproJob.cpp:48
+msgid "pro_scheduler job DDL report"
+msgstr "pro_scheduler جاب کی DDL رپورٹ"
+
+#: pro_scheduler/pgproJob.cpp:51
+msgid "pro_scheduler job dependencies report"
+msgstr "pro_scheduler جاب کے انحصار کی رپورٹ"
+
+#: pro_scheduler/pgproJob.cpp:54
+msgid "pro_scheduler job dependencies"
+msgstr "pro_scheduler جاب کے انحصار"
+
+#: pro_scheduler/pgproJob.cpp:57
+msgid "pro_scheduler job dependents report"
+msgstr "pro_scheduler جاب پر منحصر اشیاء کی رپورٹ"
+
+#: pro_scheduler/pgproJob.cpp:60
+msgid "pro_scheduler job dependents"
+msgstr "pro_scheduler جاب پر منحصر اشیاء"
+
+#: pro_scheduler/pgproJob.cpp:140
+msgid "Started"
+msgstr "شروع ہوا"
+
+#: pro_scheduler/pgproJob.cpp:141
+msgid "Finished"
+msgstr "ختم ہوا"
+
+#: pro_scheduler/pgproJob.cpp:143
+msgid "Crontab"
+msgstr "Crontab"
+
+#: pro_scheduler/pgproJob.cpp:146
+msgid "Runas"
+msgstr "بطور چلائیں"
+
+#: pro_scheduler/pgproJob.cpp:152
+msgid "Next start job"
+msgstr "جاب کا اگلا آغاز"
+
+#: pro_scheduler/pgproJob.cpp:185
+msgid "Previous sched time run skip"
+msgstr "پچھلا شیڈول شدہ رن چھوڑ دیا گیا"
+
+#: pro_scheduler/pgproJob.cpp:254
+msgid "Not run"
+msgstr "نہیں چلا"
+
+#: pro_scheduler/pgproJob.cpp:356
+msgid "Log_time"
+msgstr "لاگ کا وقت"
+
+#: pro_scheduler/pgproJob.cpp:357
+msgid "Critical"
+msgstr "نازک"
+
+#: pro_scheduler/pgproJob.cpp:359
+msgid "Stage"
+msgstr "مرحلہ"
+
+#: pro_scheduler/pgproJob.cpp:505
+msgid "Enabled or disabled job"
+msgstr "جاب فعال یا غیر فعال"
+
+#: frm/frmQuery.cpp:4689
+msgid "Please enter name string with prefix dbname or description server\n"
+msgstr "براہ کرم ڈیٹا بیس کے نام یا سرور کی تفصیل کے سابقے کے ساتھ نام کی سٹرنگ درج کریں\n"
+
+#: frm/frmQuery.cpp:4691
+msgid "Name autosave tab window."
+msgstr "ٹیب ونڈو کا خودکار محفوظ نام۔"
+
+#: frm/frmOptions.cpp:615
+msgid "Color theme save to file %s"
+msgstr "رنگوں کی تھیم فائل %s میں محفوظ کی گئی"
+
+#: frm/frmOptions.cpp:637
+msgid "Color theme load from file %s"
+msgstr "رنگوں کی تھیم فائل %s سے لوڈ کی گئی"
+
+#: frm/frmOptions.cpp:638
+msgid "Load theme"
+msgstr "تھیم لوڈ کریں"
+
+#: schema/pgServer.cpp:1253
+msgid "Key words"
+msgstr "کلیدی الفاظ"
+
+#: hotdraw/utilities/hdRemoveDeleteDialog.cpp:117
+msgid "     Choose Remove from Diagram to remove only from current diagram.     "
+msgstr "     صرف موجودہ خاکے سے ہٹانے کے لیے خاکے سے ہٹائیں منتخب کریں۔     "
+
+#: hotdraw/utilities/hdRemoveDeleteDialog.cpp:118
+msgid "     Choose Remove from Model to delete permanently.     "
+msgstr "     مستقل طور پر حذف کرنے کے لیے ماڈل سے ہٹائیں منتخب کریں۔     "
+
+#: hotdraw/main/hdDrawingView.cpp:457
+msgid "Sample Item"
+msgstr "نمونہ آئٹم"
+
+#: hotdraw/main/hdDrawingView.cpp:466
+msgid "Sample menu item"
+msgstr "نمونہ مینو آئٹم"
+
+#: hotdraw/main/hdDrawingView.cpp:466
+msgid "Sample"
+msgstr "نمونہ"
+
+#: hotdraw/main/hdDrawingEditor.cpp:267
+msgid "Are you sure you wish to delete figure ?"
+msgstr "کیا آپ واقعی شکل حذف کرنا چاہتے ہیں؟"
+
+#: hotdraw/main/hdDrawingEditor.cpp:267
+msgid "Delete figures?"
+msgstr "شکلیں حذف کریں؟"
+
+#: hotdraw/main/hdDrawingEditor.cpp:272
+msgid "Are you sure you wish to delete %d figures?"
+msgstr "کیا آپ واقعی %d شکلیں حذف کرنا چاہتے ہیں؟"
+
+#: ui/dlgFindReplace.xrc:65
+msgid "All find tabs"
+msgstr "تمام تلاش ٹیبز"
+
+#: ui/dlgProJob.xrc:105
+msgid "Run as"
+msgstr "بطور چلائیں"
+
+#: ui/dlgProJob.xrc:195
+msgid "Commands"
+msgstr "احکامات"
+
+#: ui/dlgProJob.xrc:234
+msgid "use same transaction"
+msgstr "وہی ٹرانزیکشن استعمال کریں"
+
+#: ui/dlgServer.xrc:190
+msgid "Select SSL Root Certificate File"
+msgstr "SSL روٹ سرٹیفکیٹ فائل منتخب کریں"
+
+#: ui/dlgServer.xrc:206
+msgid "Select SSL Certificate Revocation List File"
+msgstr "SSL سرٹیفکیٹ منسوخی فہرست فائل منتخب کریں"
+
+#: ui/dlgServer.xrc:222
+msgid "Select SSL certificate file"
+msgstr "SSL سرٹیفکیٹ فائل منتخب کریں"
+
+#: ui/dlgServer.xrc:238
+msgid "Select SSL key file"
+msgstr "SSL کی فائل منتخب کریں"
+
+#: ui/dlgServer.xrc:361
+msgid "Select identity file"
+msgstr "شناختی فائل منتخب کریں"
+
+#: ui/dlgServer.xrc:377
+msgid "Select public key file"
+msgstr "عوامی کلید فائل منتخب کریں"
+
+#: ui/dlgServer.xrc:466
+msgid "Connect str"
+msgstr "کنکشن سٹرنگ"
+
+#: ui/dlgTransformText.xrc:5
+msgid "Transform text"
+msgstr "متن تبدیل کریں"
+
+#: ui/dlgTransformText.xrc:17
+msgid "Source text options"
+msgstr "ماخذ متن کے اختیارات"
+
+#: ui/dlgTransformText.xrc:33
+msgid "PCRE regexp"
+msgstr "PCRE ریگولر ایکسپریشن"
+
+#: ui/dlgTransformText.xrc:50
+msgid "Replace expression"
+msgstr "تبدیلی کا ایکسپریشن"
+
+#: ui/dlgTransformText.xrc:67
+msgid "Rows limit"
+msgstr "قطاروں کی حد"
+
+#: ui/dlgTransformText.xrc:87
+msgid "Chars limit"
+msgstr "حروف کی حد"
+
+#: ui/dlgTransformText.xrc:107
+msgid "Refresh highlight"
+msgstr "نمایاں کرنا تازہ کریں"
+
+#: ui/dlgTransformText.xrc:124
+msgid "Source text"
+msgstr "ماخذ متن"
+
+#: ui/dlgTransformText.xrc:160
+msgid "Transform text options"
+msgstr "تبدیل شدہ متن کے اختیارات"
+
+#: ui/dlgTransformText.xrc:176
+msgid "Append before row"
+msgstr "قطار سے پہلے شامل کریں"
+
+#: ui/dlgTransformText.xrc:196
+msgid "After row"
+msgstr "قطار کے بعد"
+
+#: ui/dlgTransformText.xrc:230
+msgid "Field separator"
+msgstr "فیلڈ علیحدہ کرنے والا"
+
+#: ui/dlgTransformText.xrc:267
+msgid "Load options"
+msgstr "لوڈ کے اختیارات"
+
+#: ui/dlgTransformText.xrc:276
+msgid "First"
+msgstr "پہلا"
+
+#: ui/dlgTransformText.xrc:335
+msgid "Rows loading"
+msgstr "قطاریں لوڈ ہو رہی ہیں"
+
+#: ui/frmAwr.xrc:6
+msgid "AWR report"
+msgstr "AWR رپورٹ"
+
+#: ui/frmAwr.xrc:36
+msgid "Type report"
+msgstr "رپورٹ کی قسم"
+
+#: ui/frmAwr.xrc:39
+msgid "Report"
+msgstr "رپورٹ"
+
+#: ui/frmAwr.xrc:40
+msgid "Diff report"
+msgstr "فرق کی رپورٹ"
+
+#: ui/frmAwr.xrc:104
+msgid "Start Id1"
+msgstr "ابتدائی Id1"
+
+#: ui/frmAwr.xrc:123
+msgid "End Id1"
+msgstr "اختتامی Id1"
+
+#: ui/frmAwr.xrc:166
+msgid "Start Id2"
+msgstr "ابتدائی Id2"
+
+#: ui/frmAwr.xrc:185
+msgid "End Id2"
+msgstr "اختتامی Id2"
+
+#: ui/frmExport.xrc:110
+msgid "format COPY"
+msgstr "COPY فارمیٹ"
+
+#: ui/frmExport.xrc:116
+msgid "Xls fmt copy"
+msgstr "Xls فارمیٹ میں کاپی"
+
+#: ui/frmImport.xrc:33
+msgid "Select the file to import"
+msgstr "درآمد کے لیے فائل منتخب کریں"
+
+#: ui/frmOptions.xrc:131
+msgid "Select theme"
+msgstr "تھیم منتخب کریں"
+
+#: ui/frmOptions.xrc:154
+msgid "Load"
+msgstr "لوڈ کریں"
+
+#: ui/frmOptions.xrc:222
+msgid "Options extended JSON:"
+msgstr "توسیع شدہ JSON اختیارات:"
+
+#: ui/frmOptions.xrc:261
+msgid "Beautiful big numbers on the statistics page"
+msgstr "شماریات کے صفحے پر بڑے اعداد کی خوبصورت نمائش"
+
+#: ui/frmOptions.xrc:272
+msgid "Show the dependencies of functions on tables,views,functions"
+msgstr "فنکشنز کا ٹیبلز، ویوز، فنکشنز پر انحصار دکھائیں"
+
+#: ui/frmOptions.xrc:457
+msgid "Show DB name in tree"
+msgstr "ٹری میں ڈیٹا بیس کا نام دکھائیں"
+
+#: ui/frmOptions.xrc:465
+msgid "Quick jump to the root node"
+msgstr "روٹ نوڈ پر فوری چھلانگ"
+
+#: ui/frmOptions.xrc:635
+msgid "Select utility to format text"
+msgstr "متن کی فارمیٹنگ کے لیے یوٹیلیٹی منتخب کریں"
+
+#: ui/frmOptions.xrc:645
+msgid "External alignment utlity"
+msgstr "بیرونی ترتیب بندی یوٹیلیٹی"
+
+#: ui/frmOptions.xrc:662
+msgid "Enable ASUTP style"
+msgstr "ASUTP سٹائل فعال کریں"
+
+#: ui/frmOptions.xrc:677
+msgid "Hide query history"
+msgstr "کوئری ہسٹری چھپائیں"
+
+#: ui/frmOptions.xrc:692
+msgid "Auto save query text"
+msgstr "کوئری کا متن خودکار طور پر محفوظ کریں"
+
+#: ui/frmOptions.xrc:707
+msgid "Use word hints"
+msgstr "الفاظ کے اشارے استعمال کریں"
+
+#: ui/frmOptions.xrc:722
+msgid "Replace variables in a query"
+msgstr "کوئری میں متغیرات تبدیل کریں"
+
+#: ui/frmOptions.xrc:821
+msgid "Use system background color caret line"
+msgstr "کرسر لائن کے لیے سسٹم کا پس منظر رنگ استعمال کریں"
+
+#: ui/frmOptions.xrc:876
+msgid "Width for keyboard layout"
+msgstr "کی بورڈ لے آؤٹ کے لیے چوڑائی"
+
+#: ui/frmOptions.xrc:1227
+msgid "Select file to store favourites queries"
+msgstr "پسندیدہ کوئریز محفوظ کرنے کے لیے فائل منتخب کریں"
+
+#: ui/frmOptions.xrc:1255
+msgid "Select file to store macros"
+msgstr "میکروز محفوظ کرنے کے لیے فائل منتخب کریں"
+
+#: ui/frmOptions.xrc:1283
+msgid "Select file to store queries history"
+msgstr "کوئریز کی ہسٹری محفوظ کرنے کے لیے فائل منتخب کریں"
+
+#: ui/frmOptions.xrc:1388
+msgid "Blocked by Process Colour"
+msgstr "دوسرے کے ذریعے مسدود پروسیس کا رنگ"
+
+#: ui/frmOptions.xrc:1402
+msgid "Idle&in&transaction&session&timeout Process Colour"
+msgstr "پروسیس کا رنگ Idle&in&transaction&session&timeout"
+
+#: frm/frmOptions.cpp:1
+msgid "Appearance"
+msgstr "ظاہری شکل"
+
+#: frm/frmOptions.cpp:2
+msgid "Automatic"
+msgstr "خودکار"
+
+#: frm/frmOptions.cpp:3
+msgid "Light"
+msgstr "روشن"
+
+#: frm/frmOptions.cpp:4
+msgid "Dark"
+msgstr "تاریک"
+
+#: frm/frmOptions.cpp:5
+msgid "Restart pgAdmin III to fully apply the appearance change."
+msgstr "ظاہری شکل کی تبدیلی کو مکمل طور پر لاگو کرنے کے لیے pgAdmin III دوبارہ شروع کریں۔"

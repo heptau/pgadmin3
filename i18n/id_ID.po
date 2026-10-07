@@ -26590,4 +26590,402 @@ msgstr "Tipe"
 #~ msgid "|"
 #~ msgstr "|"
 
+#: pgAdmin3.cpp:389
+msgid "open server log window"
+msgstr "buka jendela log server"
 
+#: pgAdmin3.cpp:403
+msgid "export servers configuration to file pgadmin3.ini"
+msgstr "ekspor konfigurasi server ke berkas pgadmin3.ini"
+
+#: pgAdmin3.cpp:404
+msgid "Enable Dark mode"
+msgstr "Aktifkan mode gelap"
+
+#: pgAdmin3.cpp:1013
+msgid "Log - "
+msgstr "Log - "
+
+#: pro_scheduler/pgproJob.cpp:36
+msgid "Retrieving details on pro_scheduler job"
+msgstr "Mengambil detail pekerjaan pro_scheduler"
+
+#: pro_scheduler/pgproJob.cpp:39
+msgid "Refreshing pro_scheduler job"
+msgstr "Menyegarkan pekerjaan pro_scheduler"
+
+#: pro_scheduler/pgproJob.cpp:42
+msgid "pro_scheduler job properties report"
+msgstr "Laporan properti pekerjaan pro_scheduler"
+
+#: pro_scheduler/pgproJob.cpp:48
+msgid "pro_scheduler job DDL report"
+msgstr "Laporan DDL pekerjaan pro_scheduler"
+
+#: pro_scheduler/pgproJob.cpp:51
+msgid "pro_scheduler job dependencies report"
+msgstr "Laporan dependensi pekerjaan pro_scheduler"
+
+#: pro_scheduler/pgproJob.cpp:54
+msgid "pro_scheduler job dependencies"
+msgstr "Dependensi pekerjaan pro_scheduler"
+
+#: pro_scheduler/pgproJob.cpp:57
+msgid "pro_scheduler job dependents report"
+msgstr "Laporan dependen pekerjaan pro_scheduler"
+
+#: pro_scheduler/pgproJob.cpp:60
+msgid "pro_scheduler job dependents"
+msgstr "Dependen pekerjaan pro_scheduler"
+
+#: pro_scheduler/pgproJob.cpp:140
+msgid "Started"
+msgstr "Dimulai"
+
+#: pro_scheduler/pgproJob.cpp:141
+msgid "Finished"
+msgstr "Selesai"
+
+#: pro_scheduler/pgproJob.cpp:143
+msgid "Crontab"
+msgstr "Crontab"
+
+#: pro_scheduler/pgproJob.cpp:146
+msgid "Runas"
+msgstr "Jalankan sebagai"
+
+#: pro_scheduler/pgproJob.cpp:152
+msgid "Next start job"
+msgstr "Waktu mulai pekerjaan berikutnya"
+
+#: pro_scheduler/pgproJob.cpp:185
+msgid "Previous sched time run skip"
+msgstr "Jadwal eksekusi sebelumnya dilewati"
+
+#: pro_scheduler/pgproJob.cpp:254
+msgid "Not run"
+msgstr "Tidak dijalankan"
+
+#: pro_scheduler/pgproJob.cpp:356
+msgid "Log_time"
+msgstr "Log_time"
+
+#: pro_scheduler/pgproJob.cpp:357
+msgid "Critical"
+msgstr "Kritis"
+
+#: pro_scheduler/pgproJob.cpp:359
+msgid "Stage"
+msgstr "Tahap"
+
+#: pro_scheduler/pgproJob.cpp:505
+msgid "Enabled or disabled job"
+msgstr "Pekerjaan diaktifkan atau dinonaktifkan"
+
+#: frm/frmQuery.cpp:4689
+msgid "Please enter name string with prefix dbname or description server\n"
+msgstr "Masukkan nama dengan awalan nama basis data atau deskripsi server\n"
+
+#: frm/frmQuery.cpp:4691
+msgid "Name autosave tab window."
+msgstr "Nama jendela tab simpan otomatis."
+
+#: frm/frmOptions.cpp:615
+msgid "Color theme save to file %s"
+msgstr "Tema warna disimpan ke berkas %s"
+
+#: frm/frmOptions.cpp:637
+msgid "Color theme load from file %s"
+msgstr "Tema warna dimuat dari berkas %s"
+
+#: frm/frmOptions.cpp:638
+msgid "Load theme"
+msgstr "Muat tema"
+
+#: schema/pgServer.cpp:1253
+msgid "Key words"
+msgstr "Kata kunci"
+
+#: hotdraw/utilities/hdRemoveDeleteDialog.cpp:117
+msgid "     Choose Remove from Diagram to remove only from current diagram.     "
+msgstr "     Pilih Hapus dari Diagram untuk menghapus hanya dari diagram saat ini.     "
+
+#: hotdraw/utilities/hdRemoveDeleteDialog.cpp:118
+msgid "     Choose Remove from Model to delete permanently.     "
+msgstr "     Pilih Hapus dari Model untuk menghapus secara permanen.     "
+
+#: hotdraw/main/hdDrawingView.cpp:457
+msgid "Sample Item"
+msgstr "Item Contoh"
+
+#: hotdraw/main/hdDrawingView.cpp:466
+msgid "Sample menu item"
+msgstr "Item menu contoh"
+
+#: hotdraw/main/hdDrawingView.cpp:466
+msgid "Sample"
+msgstr "Contoh"
+
+#: hotdraw/main/hdDrawingEditor.cpp:267
+msgid "Are you sure you wish to delete figure ?"
+msgstr "Apakah Anda yakin ingin menghapus gambar?"
+
+#: hotdraw/main/hdDrawingEditor.cpp:267
+msgid "Delete figures?"
+msgstr "Hapus gambar?"
+
+#: hotdraw/main/hdDrawingEditor.cpp:272
+msgid "Are you sure you wish to delete %d figures?"
+msgstr "Apakah Anda yakin ingin menghapus %d gambar?"
+
+#: ui/dlgFindReplace.xrc:65
+msgid "All find tabs"
+msgstr "Semua tab pencarian"
+
+#: ui/dlgProJob.xrc:105
+msgid "Run as"
+msgstr "Jalankan sebagai"
+
+#: ui/dlgProJob.xrc:195
+msgid "Commands"
+msgstr "Perintah"
+
+#: ui/dlgProJob.xrc:234
+msgid "use same transaction"
+msgstr "gunakan transaksi yang sama"
+
+#: ui/dlgServer.xrc:190
+msgid "Select SSL Root Certificate File"
+msgstr "Pilih Berkas Sertifikat Root SSL"
+
+#: ui/dlgServer.xrc:206
+msgid "Select SSL Certificate Revocation List File"
+msgstr "Pilih Berkas Daftar Pencabutan Sertifikat SSL"
+
+#: ui/dlgServer.xrc:222
+msgid "Select SSL certificate file"
+msgstr "Pilih berkas sertifikat SSL"
+
+#: ui/dlgServer.xrc:238
+msgid "Select SSL key file"
+msgstr "Pilih berkas kunci SSL"
+
+#: ui/dlgServer.xrc:361
+msgid "Select identity file"
+msgstr "Pilih berkas identitas"
+
+#: ui/dlgServer.xrc:377
+msgid "Select public key file"
+msgstr "Pilih berkas kunci publik"
+
+#: ui/dlgServer.xrc:466
+msgid "Connect str"
+msgstr "String koneksi"
+
+#: ui/dlgTransformText.xrc:5
+msgid "Transform text"
+msgstr "Transformasi teks"
+
+#: ui/dlgTransformText.xrc:17
+msgid "Source text options"
+msgstr "Opsi teks sumber"
+
+#: ui/dlgTransformText.xrc:33
+msgid "PCRE regexp"
+msgstr "Regexp PCRE"
+
+#: ui/dlgTransformText.xrc:50
+msgid "Replace expression"
+msgstr "Ekspresi pengganti"
+
+#: ui/dlgTransformText.xrc:67
+msgid "Rows limit"
+msgstr "Batas baris"
+
+#: ui/dlgTransformText.xrc:87
+msgid "Chars limit"
+msgstr "Batas karakter"
+
+#: ui/dlgTransformText.xrc:107
+msgid "Refresh highlight"
+msgstr "Segarkan sorotan"
+
+#: ui/dlgTransformText.xrc:124
+msgid "Source text"
+msgstr "Teks sumber"
+
+#: ui/dlgTransformText.xrc:160
+msgid "Transform text options"
+msgstr "Opsi transformasi teks"
+
+#: ui/dlgTransformText.xrc:176
+msgid "Append before row"
+msgstr "Tambahkan sebelum baris"
+
+#: ui/dlgTransformText.xrc:196
+msgid "After row"
+msgstr "Setelah baris"
+
+#: ui/dlgTransformText.xrc:230
+msgid "Field separator"
+msgstr "Pemisah bidang"
+
+#: ui/dlgTransformText.xrc:267
+msgid "Load options"
+msgstr "Opsi pemuatan"
+
+#: ui/dlgTransformText.xrc:276
+msgid "First"
+msgstr "Pertama"
+
+#: ui/dlgTransformText.xrc:335
+msgid "Rows loading"
+msgstr "Memuat baris"
+
+#: ui/frmAwr.xrc:6
+msgid "AWR report"
+msgstr "Laporan AWR"
+
+#: ui/frmAwr.xrc:36
+msgid "Type report"
+msgstr "Jenis laporan"
+
+#: ui/frmAwr.xrc:39
+msgid "Report"
+msgstr "Laporan"
+
+#: ui/frmAwr.xrc:40
+msgid "Diff report"
+msgstr "Laporan selisih"
+
+#: ui/frmAwr.xrc:104
+msgid "Start Id1"
+msgstr "Id1 Awal"
+
+#: ui/frmAwr.xrc:123
+msgid "End Id1"
+msgstr "Id1 Akhir"
+
+#: ui/frmAwr.xrc:166
+msgid "Start Id2"
+msgstr "Id2 Awal"
+
+#: ui/frmAwr.xrc:185
+msgid "End Id2"
+msgstr "Id2 Akhir"
+
+#: ui/frmExport.xrc:110
+msgid "format COPY"
+msgstr "format COPY"
+
+#: ui/frmExport.xrc:116
+msgid "Xls fmt copy"
+msgstr "Salin format Xls"
+
+#: ui/frmImport.xrc:33
+msgid "Select the file to import"
+msgstr "Pilih berkas yang akan diimpor"
+
+#: ui/frmOptions.xrc:131
+msgid "Select theme"
+msgstr "Pilih tema"
+
+#: ui/frmOptions.xrc:154
+msgid "Load"
+msgstr "Muat"
+
+#: ui/frmOptions.xrc:222
+msgid "Options extended JSON:"
+msgstr "JSON opsi lanjutan:"
+
+#: ui/frmOptions.xrc:261
+msgid "Beautiful big numbers on the statistics page"
+msgstr "Tampilan angka besar yang rapi pada halaman statistik"
+
+#: ui/frmOptions.xrc:272
+msgid "Show the dependencies of functions on tables,views,functions"
+msgstr "Tampilkan dependensi fungsi pada tabel, view, dan fungsi"
+
+#: ui/frmOptions.xrc:457
+msgid "Show DB name in tree"
+msgstr "Tampilkan nama DB di pohon"
+
+#: ui/frmOptions.xrc:465
+msgid "Quick jump to the root node"
+msgstr "Lompat cepat ke simpul akar"
+
+#: ui/frmOptions.xrc:635
+msgid "Select utility to format text"
+msgstr "Pilih utilitas untuk memformat teks"
+
+#: ui/frmOptions.xrc:645
+msgid "External alignment utlity"
+msgstr "Utilitas perataan eksternal"
+
+#: ui/frmOptions.xrc:662
+msgid "Enable ASUTP style"
+msgstr "Aktifkan gaya ASUTP"
+
+#: ui/frmOptions.xrc:677
+msgid "Hide query history"
+msgstr "Sembunyikan riwayat query"
+
+#: ui/frmOptions.xrc:692
+msgid "Auto save query text"
+msgstr "Simpan otomatis teks query"
+
+#: ui/frmOptions.xrc:707
+msgid "Use word hints"
+msgstr "Gunakan petunjuk kata"
+
+#: ui/frmOptions.xrc:722
+msgid "Replace variables in a query"
+msgstr "Ganti variabel dalam query"
+
+#: ui/frmOptions.xrc:821
+msgid "Use system background color caret line"
+msgstr "Gunakan warna latar sistem untuk baris kursor"
+
+#: ui/frmOptions.xrc:876
+msgid "Width for keyboard layout"
+msgstr "Lebar untuk tata letak keyboard"
+
+#: ui/frmOptions.xrc:1227
+msgid "Select file to store favourites queries"
+msgstr "Pilih berkas untuk menyimpan query favorit"
+
+#: ui/frmOptions.xrc:1255
+msgid "Select file to store macros"
+msgstr "Pilih berkas untuk menyimpan makro"
+
+#: ui/frmOptions.xrc:1283
+msgid "Select file to store queries history"
+msgstr "Pilih berkas untuk menyimpan riwayat query"
+
+#: ui/frmOptions.xrc:1388
+msgid "Blocked by Process Colour"
+msgstr "Warna proses yang diblokir"
+
+#: ui/frmOptions.xrc:1402
+msgid "Idle&in&transaction&session&timeout Process Colour"
+msgstr "Warna proses idle&in&transaction&session&timeout"
+
+#: frm/frmOptions.cpp:1
+msgid "Appearance"
+msgstr "Tampilan"
+
+#: frm/frmOptions.cpp:2
+msgid "Automatic"
+msgstr "Otomatis"
+
+#: frm/frmOptions.cpp:3
+msgid "Light"
+msgstr "Terang"
+
+#: frm/frmOptions.cpp:4
+msgid "Dark"
+msgstr "Gelap"
+
+#: frm/frmOptions.cpp:5
+msgid "Restart pgAdmin III to fully apply the appearance change."
+msgstr "Mulai ulang pgAdmin III untuk menerapkan perubahan tampilan sepenuhnya."

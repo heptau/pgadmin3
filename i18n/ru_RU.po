@@ -29553,3 +29553,1759 @@ msgstr "|"
 #, fuzzy
 #~ msgid "Distincts"
 #~ msgstr "Различные значения"
+
+#: pgAdmin3.cpp:389
+msgid "open server log window"
+msgstr "открыть окно журнала сервера"
+
+#: pgAdmin3.cpp:403
+msgid "export servers configuration to file pgadmin3.ini"
+msgstr "экспортировать конфигурацию серверов в файл pgadmin3.ini"
+
+#: pgAdmin3.cpp:404
+msgid "Enable Dark mode"
+msgstr "Включить тёмный режим"
+
+#: pgAdmin3.cpp:1013
+msgid "Log - "
+msgstr "Журнал - "
+
+#: ctl/ctlTreeJSON.cpp:73
+msgid "Please enter find string\n"
+msgstr "Введите строку для поиска\n"
+
+#: ctl/ctlSQLGrid.cpp:993
+msgid "The line size is [ %s ] characters, do you want to continue?"
+msgstr "Размер строки составляет [ %s ] символов, продолжить?"
+
+#: ctl/ctlSQLBox.cpp:1426
+msgid "All line (use all EOL)"
+msgstr "Все строки (используются все EOL)"
+
+#: ctl/ctlSQLBox.cpp:1427
+msgid "First line pattern (ignore all but the first EOL)"
+msgstr "Шаблон первой строки (игнорировать все EOL, кроме первого)"
+
+#: ctl/ctlSQLBox.cpp:1428
+msgid "Try looking for patterns above"
+msgstr "Попробовать искать шаблоны выше"
+
+#: ctl/ctlSQLBox.cpp:1429
+msgid "Compact view"
+msgstr "Компактный вид"
+
+#: ctl/ctlSQLBox.cpp:1430
+msgid "Remove multi spaces"
+msgstr "Удалить множественные пробелы"
+
+#: ctl/ctlSQLBox.cpp:1432
+msgid "A multi-choice convenience dialog"
+msgstr "Диалог удобного множественного выбора"
+
+#: ctl/ctlSQLBox.cpp:1433
+msgid "Please select several align options"
+msgstr "Выберите несколько параметров выравнивания"
+
+#: ctl/ctlSQLBox.cpp:1459
+msgid "Aligning complete."
+msgstr "Выравнивание завершено."
+
+#: ctl/ctlSQLBox.cpp:1476
+msgid "Formatting Ok"
+msgstr "Форматирование выполнено"
+
+#: ctl/ctlSQLBox.cpp:1500
+msgid "Couldn't run aligning command: "
+msgstr "Не удалось выполнить команду выравнивания: "
+
+#: ctl/ctlSQLBox.cpp:1522
+msgid "Aligning command did not respond in %d ms"
+msgstr "Команда выравнивания не ответила за %d мс"
+
+#: ctl/ctlSQLBox.cpp:1534
+msgid "Aligning command error: Output is empty."
+msgstr "Ошибка команды выравнивания: вывод пуст."
+
+#: ctl/ctlListView.cpp:63
+msgid "CFS fragmentation"
+msgstr "Фрагментация CFS"
+
+#: ctl/ctlListView.cpp:70
+msgid "CFS %"
+msgstr "CFS %"
+
+#: ctl/ctlNavigatePanel.cpp:46
+msgid "Search for a simple string."
+msgstr "Поиск простой строки."
+
+#: ctl/ctlNavigatePanel.cpp:50
+msgid "Go to the next marker."
+msgstr "Перейти к следующей метке."
+
+#: ctl/ctlNavigatePanel.cpp:56
+msgid "Go to the next marker of the same type."
+msgstr "Перейти к следующей метке того же типа."
+
+#: ctl/ctlNavigatePanel.cpp:61
+msgid "The next occurrence of the string."
+msgstr "Следующее вхождение строки."
+
+#: ctl/ctlNavigatePanel.cpp:66
+msgid "Previous occurrence of the string."
+msgstr "Предыдущее вхождение строки."
+
+#: ctl/ctlNavigatePanel.cpp:71
+msgid "Find all strings content current row Pid."
+msgstr "Найти все строки, содержащие Pid текущей строки."
+
+#: ctl/ctlNavigatePanel.cpp:76
+msgid "Find all strings content current row State."
+msgstr "Найти все строки, содержащие State текущей строки."
+
+#: ctl/ctlNavigatePanel.cpp:81
+msgid "Enable/disable auto hint."
+msgstr "Включить/отключить автоподсказку."
+
+#: ctl/ctlNavigatePanel.cpp:309
+msgid "Incorrect hotkey \"%s\" for command \"%s\""
+msgstr "Неверное сочетание клавиш \"%s\" для команды \"%s\""
+
+#: ctl/ctlSQLResult.cpp:390
+msgid "Incorrect flag at the '%s' column."
+msgstr "Неверный флаг в столбце '%s'."
+
+#: ctl/ctlSQLResult.cpp:412
+msgid "The column name empty. '%s' ."
+msgstr "Имя столбца пусто. '%s' ."
+
+#: ctl/ctlSQLResult.cpp:418
+msgid "The column name '%s' was not found in the query results."
+msgstr "Имя столбца '%s' не найдено в результатах запроса."
+
+#: ctl/ctlSQLResult.cpp:442
+msgid "The column name  '%s' is not closed."
+msgstr "Имя столбца '%s' не закрыто."
+
+#: dlg/dlgForeignTable.cpp:169
+msgid "Type %s not found in cbDatatype(%d)\n"
+msgstr "Тип %s не найден в cbDatatype(%d)\n"
+
+#: pro_scheduler/pgproJob.cpp:36
+msgid "Retrieving details on pro_scheduler job"
+msgstr "Получение сведений о задании pro_scheduler"
+
+#: pro_scheduler/pgproJob.cpp:39
+msgid "Refreshing pro_scheduler job"
+msgstr "Обновление задания pro_scheduler"
+
+#: pro_scheduler/pgproJob.cpp:42
+msgid "pro_scheduler job properties report"
+msgstr "Отчёт о свойствах задания pro_scheduler"
+
+#: pro_scheduler/pgproJob.cpp:48
+msgid "pro_scheduler job DDL report"
+msgstr "Отчёт DDL задания pro_scheduler"
+
+#: pro_scheduler/pgproJob.cpp:51
+msgid "pro_scheduler job dependencies report"
+msgstr "Отчёт о зависимостях задания pro_scheduler"
+
+#: pro_scheduler/pgproJob.cpp:54
+msgid "pro_scheduler job dependencies"
+msgstr "Зависимости задания pro_scheduler"
+
+#: pro_scheduler/pgproJob.cpp:57
+msgid "pro_scheduler job dependents report"
+msgstr "Отчёт о зависимых объектах задания pro_scheduler"
+
+#: pro_scheduler/pgproJob.cpp:60
+msgid "pro_scheduler job dependents"
+msgstr "Зависимые объекты задания pro_scheduler"
+
+#: pro_scheduler/pgproJob.cpp:140
+msgid "Started"
+msgstr "Запущено"
+
+#: pro_scheduler/pgproJob.cpp:141
+msgid "Finished"
+msgstr "Завершено"
+
+#: pro_scheduler/pgproJob.cpp:143
+msgid "Crontab"
+msgstr "Crontab"
+
+#: pro_scheduler/pgproJob.cpp:146
+msgid "Runas"
+msgstr "Запуск от имени"
+
+#: pro_scheduler/pgproJob.cpp:152
+msgid "Next start job"
+msgstr "Следующий запуск задания"
+
+#: pro_scheduler/pgproJob.cpp:185
+msgid "Previous sched time run skip"
+msgstr "Предыдущий запланированный запуск пропущен"
+
+#: pro_scheduler/pgproJob.cpp:254
+msgid "Not run"
+msgstr "Не запускалось"
+
+#: pro_scheduler/pgproJob.cpp:356
+msgid "Log_time"
+msgstr "Время_журнала"
+
+#: pro_scheduler/pgproJob.cpp:357
+msgid "Critical"
+msgstr "Критический"
+
+#: pro_scheduler/pgproJob.cpp:359
+msgid "Stage"
+msgstr "Этап"
+
+#: pro_scheduler/pgproJob.cpp:505
+msgid "Enabled or disabled job"
+msgstr "Задание включено или отключено"
+
+#: utils/misc.cpp:201
+msgid "Bi"
+msgstr "млрд"
+
+#: utils/misc.cpp:202
+msgid "Mi"
+msgstr "млн"
+
+#: utils/misc.cpp:203
+msgid "ths"
+msgstr "тыс"
+
+#: utils/FunctionPGHelper.cpp:238
+msgid "'The database is closed in the object browser.'"
+msgstr "'База данных закрыта в обозревателе объектов.'"
+
+#: utils/dlgTransformText.cpp:76
+msgid "Transformation text"
+msgstr "Преобразование текста"
+
+#: utils/macros.cpp:272
+msgid "Failed to load AutoReplace file!"
+msgstr "Не удалось загрузить файл AutoReplace!"
+
+#: utils/macros.cpp:279
+msgid "Failed to read AutoReplace file!"
+msgstr "Не удалось прочитать файл AutoReplace!"
+
+#: utils/macros.cpp:298
+msgid "Failed to open AutoReplace file!"
+msgstr "Не удалось открыть файл AutoReplace!"
+
+#: utils/macros.cpp:306
+msgid "Failed to write to AutoReplace file!"
+msgstr "Не удалось записать в файл AutoReplace!"
+
+#: utils/sysSettings.cpp:95
+msgid "pgpro_scheduler"
+msgstr "pgpro_scheduler"
+
+#: utils/sysSettings.cpp:139
+msgid "Publications"
+msgstr "Публикации"
+
+#: utils/sshTunnel.cpp:618
+msgid " [%s]"
+msgstr " [%s]"
+
+#: frm/frmEditGrid.cpp:3383
+msgid "View F&iltered Rows...\tCtrl-F"
+msgstr "Просмотр &отфильтрованных строк...\tCtrl-F"
+
+#: frm/frmEditGrid.cpp:3384
+msgid "View Filtered Rows\tCtrl-F"
+msgstr "Просмотр отфильтрованных строк\tCtrl-F"
+
+#: frm/frmQuery.cpp:384
+msgid "New SQL &tab\tCtrl-T"
+msgstr "Новая &вкладка SQL\tCtrl-T"
+
+#: frm/frmQuery.cpp:384
+msgid "Open a new query tab"
+msgstr "Открыть новую вкладку запроса"
+
+#: frm/frmQuery.cpp:387
+msgid "&Export...\tAlt+E"
+msgstr "&Экспорт...\tAlt+E"
+
+#: frm/frmQuery.cpp:422
+msgid "Double the single quote\tCtrl-'"
+msgstr "Удвоить одинарную кавычку\tCtrl-'"
+
+#: frm/frmQuery.cpp:422
+msgid "Double the single quote"
+msgstr "Удвоить одинарную кавычку"
+
+#: frm/frmQuery.cpp:423
+msgid "Undouble the single quote\tCtrl-Shift-'"
+msgstr "Убрать удвоение одинарной кавычки\tCtrl-Shift-'"
+
+#: frm/frmQuery.cpp:423
+msgid "Undouble the single quote"
+msgstr "Убрать удвоение одинарной кавычки"
+
+#: frm/frmQuery.cpp:426
+msgid "External Align...\tCtrl-Shift-A"
+msgstr "Внешнее выравнивание...\tCtrl-Shift-A"
+
+#: frm/frmQuery.cpp:426
+msgid "Call external align command"
+msgstr "Вызвать внешнюю команду выравнивания"
+
+#: frm/frmQuery.cpp:429
+msgid "Manage autoreplace..."
+msgstr "Управление автозаменой..."
+
+#: frm/frmQuery.cpp:429
+msgid "Edit and delete autoreplace strings"
+msgstr "Изменение и удаление строк автозамены"
+
+#: frm/frmQuery.cpp:430
+msgid "Open object\tF4"
+msgstr "Открыть объект\tF4"
+
+#: frm/frmQuery.cpp:430
+msgid "Open object in brouser tree"
+msgstr "Открыть объект в дереве обозревателя"
+
+#: frm/frmQuery.cpp:431
+msgid "Text transform...\tCtrl+M"
+msgstr "Преобразование текста...\tCtrl+M"
+
+#: frm/frmQuery.cpp:431
+msgid "Open dialog transform"
+msgstr "Открыть диалог преобразования"
+
+#: frm/frmQuery.cpp:438
+msgid "&Execute\tF8"
+msgstr "&Выполнить\tF8"
+
+#: frm/frmQuery.cpp:439
+msgid "&Execute new output\tShift-F8"
+msgstr "&Выполнить в новом выводе\tShift-F8"
+
+#: frm/frmQuery.cpp:439
+msgid "Execute query in new output"
+msgstr "Выполнить запрос в новом выводе"
+
+#: frm/frmQuery.cpp:441
+msgid "Execute to file\tF5"
+msgstr "Выполнить в файл\tF5"
+
+#: frm/frmQuery.cpp:456
+msgid "&Auto-Select"
+msgstr "&Автовыбор"
+
+#: frm/frmQuery.cpp:456
+msgid "Auto select query"
+msgstr "Автоматический выбор запроса"
+
+#: frm/frmQuery.cpp:462
+msgid "Commit\tF10"
+msgstr "Фиксировать\tF10"
+
+#: frm/frmQuery.cpp:463
+msgid "Rollback\tShift-F10"
+msgstr "Откат\tShift-F10"
+
+#: frm/frmQuery.cpp:617
+msgid "New SQL tab"
+msgstr "Новая вкладка SQL"
+
+#: frm/frmQuery.cpp:624
+msgid "Compare the selected text with the clipboard"
+msgstr "Сравнить выделенный текст с буфером обмена"
+
+#: frm/frmQuery.cpp:646
+msgid "Mode transaction"
+msgstr "Режим транзакции"
+
+#: frm/frmQuery.cpp:2245
+msgid "Copy Insert format"
+msgstr "Копировать в формате Insert"
+
+#: frm/frmQuery.cpp:2245
+msgid "Copy Insert format."
+msgstr "Копировать в формате Insert."
+
+#: frm/frmQuery.cpp:2246
+msgid "List columns header"
+msgstr "Заголовок списка столбцов"
+
+#: frm/frmQuery.cpp:2246
+msgid "Copy list columns header"
+msgstr "Копировать заголовок списка столбцов"
+
+#: frm/frmQuery.cpp:2247
+msgid "IN list format copy"
+msgstr "Копировать в формате списка IN"
+
+#: frm/frmQuery.cpp:2247
+msgid "Copy In list format."
+msgstr "Копировать в формате списка IN."
+
+#: frm/frmQuery.cpp:2248
+msgid "WHERE list format copy"
+msgstr "Копировать в формате списка WHERE"
+
+#: frm/frmQuery.cpp:2248
+msgid "Copy where list format."
+msgstr "Копировать в формате списка WHERE."
+
+#: frm/frmQuery.cpp:2249
+msgid "Copy table html format"
+msgstr "Копировать таблицу в формате HTML"
+
+#: frm/frmQuery.cpp:2249
+msgid "Copy table html format."
+msgstr "Копировать таблицу в формате HTML."
+
+#: frm/frmQuery.cpp:2269
+msgid "Draw plot LY(bar) or LXY or XYYY..."
+msgstr "Построить график LY(столбцы) или LXY или XYYY..."
+
+#: frm/frmQuery.cpp:2269
+msgid "Draw plot LY(bar) LXY or XYYY..."
+msgstr "Построить график LY(столбцы) LXY или XYYY..."
+
+#: frm/frmQuery.cpp:2270
+msgid "Summary"
+msgstr "Сводка"
+
+#: frm/frmQuery.cpp:2270
+msgid "Summary selected cells."
+msgstr "Сводка по выделенным ячейкам."
+
+#: frm/frmQuery.cpp:2271
+msgid "Compare 2 Cells"
+msgstr "Сравнить 2 ячейки"
+
+#: frm/frmQuery.cpp:2271
+msgid "Compare 2 selected cells."
+msgstr "Сравнить 2 выделенные ячейки."
+
+#: frm/frmQuery.cpp:2272
+msgid "Check the sequence of dates"
+msgstr "Проверить последовательность дат"
+
+#: frm/frmQuery.cpp:2273
+msgid "Clear filter"
+msgstr "Очистить фильтр"
+
+#: frm/frmQuery.cpp:2333
+msgid "No template generate."
+msgstr "Шаблон не создан."
+
+#: frm/frmQuery.cpp:2558
+msgid "%i@"
+msgstr "%i@"
+
+#: frm/frmQuery.cpp:3070
+msgid "Out %i"
+msgstr "Вывод %i"
+
+#: frm/frmQuery.cpp:3413
+msgid "-- Executing query [%s]:[%s]\n"
+msgstr "-- Выполняется запрос [%s]:[%s]\n"
+
+#: frm/frmQuery.cpp:4241
+msgid "Running aligning command..."
+msgstr "Выполняется команда выравнивания..."
+
+#: frm/frmQuery.cpp:4471
+msgid "outputPane"
+msgstr "outputPane"
+
+#: frm/frmQuery.cpp:4491
+msgid "Output pane [%s]"
+msgstr "Панель вывода [%s]"
+
+#: frm/frmQuery.cpp:4597
+msgid "Cannot change to selected SQL tab now. Try again a bit later."
+msgstr "Сейчас невозможно переключиться на выбранную вкладку SQL. Повторите попытку чуть позже."
+
+#: frm/frmQuery.cpp:4620
+msgid "Cannot add a new SQL tab now. Try again a bit later."
+msgstr "Сейчас невозможно добавить новую вкладку SQL. Повторите попытку чуть позже."
+
+#: frm/frmQuery.cpp:4689
+msgid "Please enter name string with prefix dbname or description server\n"
+msgstr "Введите строку имени с префиксом имени базы данных или описанием сервера\n"
+
+#: frm/frmQuery.cpp:4691
+msgid "Name autosave tab window."
+msgstr "Имя окна вкладки автосохранения."
+
+#: frm/frmQuery.cpp:4717
+msgid "Cannot remove the last SQL tab"
+msgstr "Невозможно удалить последнюю вкладку SQL"
+
+#: frm/frmQuery.cpp:4797
+msgid "Query %d"
+msgstr "Запрос %d"
+
+#: frm/frmQuery.cpp:5148
+msgid "Script Recreate Cascade"
+msgstr "Скрипт каскадного пересоздания"
+
+#: frm/frmQuery.cpp:5148
+msgid "Start query tool with recreate cascade script."
+msgstr "Запустить инструмент запросов со скриптом каскадного пересоздания."
+
+#: frm/frmOptions.cpp:61
+msgid "PgAdmin3opt settings"
+msgstr "Параметры PgAdmin3opt"
+
+#: frm/frmOptions.cpp:615
+msgid "Color theme save to file %s"
+msgstr "Сохранение цветовой темы в файл %s"
+
+#: frm/frmOptions.cpp:637
+msgid "Color theme load from file %s"
+msgstr "Загрузка цветовой темы из файла %s"
+
+#: frm/frmOptions.cpp:638
+msgid "Load theme"
+msgstr "Загрузить тему"
+
+#: frm/frmOptions.cpp:1208
+msgid "&Options...\tCtrl-O"
+msgstr "&Параметры...\tCtrl-O"
+
+#: frm/frmStatus.cpp:282
+msgid "&Wait trace"
+msgstr "&Трассировка ожиданий"
+
+#: frm/frmStatus.cpp:282
+msgid "Enable the wait event."
+msgstr "Включить событие ожидания."
+
+#: frm/frmStatus.cpp:283
+msgid "&Wait event save"
+msgstr "&Сохранение событий ожидания"
+
+#: frm/frmStatus.cpp:283
+msgid "Enable the wait event save to file sample.dat."
+msgstr "Включить сохранение событий ожидания в файл sample.dat."
+
+#: frm/frmStatus.cpp:320
+msgid "Value parameter pg_wait_sampling.history_size = %ld greet 1000000  monitoring wait events disabled.\n"
+msgstr "Значение параметра pg_wait_sampling.history_size = %ld больше 1000000, мониторинг событий ожидания отключён.\n"
+
+#: frm/frmStatus.cpp:383
+msgid "&Query state\tCtrl-Alt-Q"
+msgstr "&Состояние запроса\tCtrl-Alt-Q"
+
+#: frm/frmStatus.cpp:383
+msgid "Show or hide the query state tab."
+msgstr "Показать или скрыть вкладку состояния запроса."
+
+#: frm/frmStatus.cpp:385
+msgid "Append verbose"
+msgstr "Добавить verbose"
+
+#: frm/frmStatus.cpp:386
+msgid "Append use buffers"
+msgstr "Добавить использование буферов"
+
+#: frm/frmStatus.cpp:387
+msgid "Append real timing"
+msgstr "Добавить реальное время"
+
+#: frm/frmStatus.cpp:388
+msgid "Append triggers"
+msgstr "Добавить триггеры"
+
+#: frm/frmStatus.cpp:396
+msgid "&Wait"
+msgstr "&Ожидание"
+
+#: frm/frmStatus.cpp:436
+msgid "Highlight items only"
+msgstr "Выделять только элементы"
+
+#: frm/frmStatus.cpp:517
+msgid "QueryState"
+msgstr "СостояниеЗапроса"
+
+#: frm/frmStatus.cpp:853
+msgid "W_Event_T"
+msgstr "W_Event_T"
+
+#: frm/frmStatus.cpp:854
+msgid "W_Event"
+msgstr "W_Event"
+
+#: frm/frmStatus.cpp:1112
+msgid "Query State"
+msgstr "Состояние запроса"
+
+#: frm/frmStatus.cpp:1126
+msgid "Query Text"
+msgstr "Текст запроса"
+
+#: frm/frmStatus.cpp:1127
+msgid "Plan"
+msgstr "План"
+
+#: frm/frmStatus.cpp:1251
+msgid "Functions pg_read_binary_file(text,bigint,bigint,boolean), pg_stat_file(text,boolean),pg_ls_logdir()  permission denied."
+msgstr "Функции pg_read_binary_file(text,bigint,bigint,boolean), pg_stat_file(text,boolean),pg_ls_logdir() доступ запрещён."
+
+#: frm/frmStatus.cpp:1716
+msgid "Activity query long execute"
+msgstr "Активность: длительно выполняющиеся запросы"
+
+#: frm/frmStatus.cpp:2634
+msgid "Query state status long execute"
+msgstr "Состояние запроса: длительное выполнение"
+
+#: frm/frmStatus.cpp:2670
+msgid "Refreshing query state list."
+msgstr "Обновление списка состояний запросов."
+
+#: frm/frmStatus.cpp:2959
+msgid "Wait..."
+msgstr "Подождите..."
+
+#: frm/frmStatus.cpp:4807
+msgid "&Server Status\tCtrl-S"
+msgstr "&Состояние сервера\tCtrl-S"
+
+#: frm/frmPlot.cpp:120
+msgid "Lock aspect"
+msgstr "Фиксировать соотношение сторон"
+
+#: frm/frmPlot.cpp:120
+msgid "Lock horizontal and vertical zoom aspect."
+msgstr "Зафиксировать соотношение сторон при масштабировании по горизонтали и вертикали."
+
+#: frm/frmPlot.cpp:442
+msgid "Save a screenshot"
+msgstr "Сохранить снимок экрана"
+
+#: frm/frmLog.cpp:1314
+msgid "Log view..."
+msgstr "Просмотр журнала..."
+
+#: frm/frmLog.cpp:1314
+msgid "Log view CSV format"
+msgstr "Просмотр журнала в формате CSV"
+
+#: frm/frmMain.cpp:200
+msgid "Git"
+msgstr "Git"
+
+#: frm/frmMain.cpp:472
+msgid "&Server"
+msgstr "&Сервер"
+
+#: frm/frmMain.cpp:472
+msgid "Server menu commands."
+msgstr "Команды меню «Сервер»."
+
+#: frm/frmMain.cpp:1187
+msgid "Create putty tunnel error."
+msgstr "Ошибка создания туннеля putty."
+
+#: frm/frmAwr.cpp:33
+msgid "Report AWR"
+msgstr "Отчёт AWR"
+
+#: frm/frmAwr.cpp:33
+msgid "Generate AWR report"
+msgstr "Создать отчёт AWR"
+
+#: schema/pgServer.cpp:1253
+msgid "Key words"
+msgstr "Ключевые слова"
+
+#: schema/pgServer.cpp:1338
+msgid "Add connect str"
+msgstr "Добавить строку подключения"
+
+#: schema/pgServer.cpp:2264
+msgid "&Set keywords"
+msgstr "&Задать ключевые слова"
+
+#: schema/pgServer.cpp:2264
+msgid "Set keywords list the selected server."
+msgstr "Задать список ключевых слов для выбранного сервера."
+
+#: schema/pgServer.cpp:2273
+msgid "Please enter keywords\n"
+msgstr "Введите ключевые слова\n"
+
+#: schema/pgServer.cpp:2275
+msgid "Keywords server"
+msgstr "Ключевые слова сервера"
+
+#: schema/pgServer.cpp:2374
+msgid "Disconnec&t all servers"
+msgstr "Отключить &все серверы"
+
+#: schema/pgServer.cpp:2374
+msgid "Disconnect from all servers."
+msgstr "Отключиться от всех серверов."
+
+#: schema/pgIndex.cpp:499
+msgid "Check Btree index"
+msgstr "Проверить индекс Btree"
+
+#: schema/pgIndex.cpp:499
+msgid "Check Btree index function bt_index_parent_check(oid,true)"
+msgstr "Проверить индекс Btree функцией bt_index_parent_check(oid,true)"
+
+#: schema/pgIndex.cpp:568
+msgid "&Reset index statistics"
+msgstr "&Сбросить статистику индекса"
+
+#: schema/pgIndex.cpp:568
+msgid "Reset statistics of the selected index."
+msgstr "Сбросить статистику выбранного индекса."
+
+#: schema/pgIndex.cpp:574
+msgid "Are you sure you wish to reset statistics of this index?"
+msgstr "Вы действительно хотите сбросить статистику этого индекса?"
+
+#: schema/pgSubscription.cpp:33
+msgid "Retrieving details on subscription"
+msgstr "Получение сведений о подписке"
+
+#: schema/pgSubscription.cpp:37
+msgid "Refreshing subscription"
+msgstr "Обновление подписки"
+
+#: schema/pgSubscription.cpp:41
+msgid "Are you sure you wish to drop subscription \"%s\" including all objects that depend on it?"
+msgstr "Вы действительно хотите удалить подписку \"%s\" вместе со всеми зависящими от неё объектами?"
+
+#: schema/pgSubscription.cpp:45
+msgid "Are you sure you wish to drop subscription \"%s\"?"
+msgstr "Вы действительно хотите удалить подписку \"%s\"?"
+
+#: schema/pgSubscription.cpp:49
+msgid "Drop subscription cascaded?"
+msgstr "Удалить подписку каскадно?"
+
+#: schema/pgSubscription.cpp:52
+msgid "Drop subscription?"
+msgstr "Удалить подписку?"
+
+#: schema/pgSubscription.cpp:55
+msgid "Subscription properties report"
+msgstr "Отчёт о свойствах подписки"
+
+#: schema/pgSubscription.cpp:59
+msgid "Subscription properties"
+msgstr "Свойства подписки"
+
+#: schema/pgSubscription.cpp:62
+msgid "Subscription DDL report"
+msgstr "Отчёт DDL подписки"
+
+#: schema/pgSubscription.cpp:66
+msgid "Subscription DDL"
+msgstr "DDL подписки"
+
+#: schema/pgSubscription.cpp:69
+msgid "Subscription dependencies report"
+msgstr "Отчёт о зависимостях подписки"
+
+#: schema/pgSubscription.cpp:73
+msgid "Subscription dependencies"
+msgstr "Зависимости подписки"
+
+#: schema/pgSubscription.cpp:76
+msgid "Subscription dependents report"
+msgstr "Отчёт о зависимых объектах подписки"
+
+#: schema/pgSubscription.cpp:80
+msgid "Subscription dependents"
+msgstr "Зависимые объекты подписки"
+
+#: schema/pgSubscription.cpp:210
+msgid "Retrieving details on subscriptions"
+msgstr "Получение сведений о подписках"
+
+#: schema/pgSubscription.cpp:213
+msgid "Refreshing subscriptions"
+msgstr "Обновление подписок"
+
+#: schema/pgSubscription.cpp:216
+msgid "Subscriptions list report"
+msgstr "Отчёт о списке подписок"
+
+#: schema/pgPublication.cpp:33
+msgid "Retrieving details on publication"
+msgstr "Получение сведений о публикации"
+
+#: schema/pgPublication.cpp:37
+msgid "Refreshing publication"
+msgstr "Обновление публикации"
+
+#: schema/pgPublication.cpp:41
+msgid "Are you sure you wish to drop publication \"%s\" including all objects that depend on it?"
+msgstr "Вы действительно хотите удалить публикацию \"%s\" вместе со всеми зависящими от неё объектами?"
+
+#: schema/pgPublication.cpp:45
+msgid "Are you sure you wish to drop publication \"%s\"?"
+msgstr "Вы действительно хотите удалить публикацию \"%s\"?"
+
+#: schema/pgPublication.cpp:49
+msgid "Drop publication cascaded?"
+msgstr "Удалить публикацию каскадно?"
+
+#: schema/pgPublication.cpp:52
+msgid "Drop publication?"
+msgstr "Удалить публикацию?"
+
+#: schema/pgPublication.cpp:55
+msgid "Publication properties report"
+msgstr "Отчёт о свойствах публикации"
+
+#: schema/pgPublication.cpp:59
+msgid "Publication properties"
+msgstr "Свойства публикации"
+
+#: schema/pgPublication.cpp:62
+msgid "Publication DDL report"
+msgstr "Отчёт DDL публикации"
+
+#: schema/pgPublication.cpp:66
+msgid "Publication DDL"
+msgstr "DDL публикации"
+
+#: schema/pgPublication.cpp:69
+msgid "Publication dependencies report"
+msgstr "Отчёт о зависимостях публикации"
+
+#: schema/pgPublication.cpp:73
+msgid "Publication dependencies"
+msgstr "Зависимости публикации"
+
+#: schema/pgPublication.cpp:76
+msgid "Publication dependents report"
+msgstr "Отчёт о зависимых объектах публикации"
+
+#: schema/pgPublication.cpp:80
+msgid "Publication dependents"
+msgstr "Зависимые объекты публикации"
+
+#: schema/pgPublication.cpp:318
+msgid "Retrieving details on publications"
+msgstr "Получение сведений о публикациях"
+
+#: schema/pgPublication.cpp:321
+msgid "Refreshing publications"
+msgstr "Обновление публикаций"
+
+#: schema/pgPublication.cpp:324
+msgid "Publications list report"
+msgstr "Отчёт о списке публикаций"
+
+#: schema/pgTable.cpp:1096
+msgid "Create table timestamp"
+msgstr "Время создания таблицы"
+
+#: schema/pgObject.cpp:621
+msgid "extension"
+msgstr "расширение"
+
+#: schema/pgFunction.cpp:410
+msgid "Parallel"
+msgstr "Параллельность"
+
+#: schema/pgFunction.cpp:426
+msgid "Last change timestamp"
+msgstr "Время последнего изменения"
+
+#: dd/ddmodel/ddDBReverseEnginering.cpp:175
+msgid "Schema not found"
+msgstr "Схема не найдена"
+
+#: dd/ddmodel/ddDBReverseEnginering.cpp:175
+msgid "getting table OID"
+msgstr "получение OID таблицы"
+
+#: dd/ddmodel/ddDBReverseEnginering.cpp:216
+msgid "Table not found"
+msgstr "Таблица не найдена"
+
+#: dd/ddmodel/ddDBReverseEnginering.cpp:665
+msgid "Error detecting kind of foreign key source: from Pk or from Uk"
+msgstr "Ошибка определения вида источника внешнего ключа: из Pk или из Uk"
+
+#: dd/ddmodel/ddDBReverseEnginering.cpp:665
+msgid "Error importing relationship"
+msgstr "Ошибка импорта связи"
+
+#: dd/ddmodel/ddDBReverseEnginering.cpp:786
+msgid "Error detecting kind of foreign key: null or not null"
+msgstr "Ошибка определения вида внешнего ключа: null или not null"
+
+#: dd/ddmodel/ddDBReverseEnginering.cpp:1333
+msgid "Error fk is repeated"
+msgstr "Ошибка: fk повторяется"
+
+#: dd/ddmodel/ddDBReverseEnginering.cpp:1333
+msgid "Error comparing relationships"
+msgstr "Ошибка сравнения связей"
+
+#: dd/ddmodel/ddDBReverseEnginering.cpp:1673
+msgid "Please, select a schema to use at import tables process:"
+msgstr "Выберите схему для использования при импорте таблиц:"
+
+#: dd/ddmodel/ddDBReverseEnginering.cpp:1698
+msgid "Please, select a Schema to continue to next step."
+msgstr "Выберите схему, чтобы перейти к следующему шагу."
+
+#: dd/ddmodel/ddDBReverseEnginering.cpp:1698
+msgid "Select a Schema..."
+msgstr "Выберите схему..."
+
+#: dd/ddmodel/ddDBReverseEnginering.cpp:1806
+msgid "Table(s) from selected schema"
+msgstr "Таблицы из выбранной схемы"
+
+#: dd/ddmodel/ddDBReverseEnginering.cpp:1811
+msgid "Tables(s) to be imported"
+msgstr "Таблицы для импорта"
+
+#: dd/ddmodel/ddDBReverseEnginering.cpp:1826
+msgid "Add the selected table(s)"
+msgstr "Добавить выбранные таблицы"
+
+#: dd/ddmodel/ddDBReverseEnginering.cpp:1828
+msgid "Add all tables"
+msgstr "Добавить все таблицы"
+
+#: dd/ddmodel/ddDBReverseEnginering.cpp:1830
+msgid "Remove the selected table(s)"
+msgstr "Удалить выбранные таблицы"
+
+#: dd/ddmodel/ddDBReverseEnginering.cpp:1832
+msgid "Remove all tables"
+msgstr "Удалить все таблицы"
+
+#: dd/ddmodel/ddDBReverseEnginering.cpp:1981
+msgid "Please, select at least a table to continue to next step."
+msgstr "Выберите хотя бы одну таблицу, чтобы перейти к следующему шагу."
+
+#: dd/ddmodel/ddDBReverseEnginering.cpp:1981
+msgid "Select some Tables..."
+msgstr "Выберите несколько таблиц..."
+
+#: dd/ddmodel/ddDBReverseEnginering.cpp:1997
+msgid "Error when preparing to import table: "
+msgstr "Ошибка при подготовке импорта таблицы: "
+
+#: dd/ddmodel/ddDBReverseEnginering.cpp:2009
+msgid "Prepared to import table: "
+msgstr "Подготовлено к импорту таблицы: "
+
+#: dd/ddmodel/ddDBReverseEnginering.cpp:2009
+msgid "\n"
+msgstr "\n"
+
+#: dd/ddmodel/ddDBReverseEnginering.cpp:2029
+msgid "Returning to previous dialog will remove all selected tables, do you like to continue?"
+msgstr "Возврат к предыдущему диалогу удалит все выбранные таблицы, продолжить?"
+
+#: dd/ddmodel/ddDBReverseEnginering.cpp:2077
+msgid "Returning to previous dialog will delete imported tables before adding it to the model?"
+msgstr "Возврат к предыдущему диалогу удалит импортированные таблицы до их добавления в модель?"
+
+#: dd/ddmodel/ddDrawingView.cpp:33
+msgid "Add new Table"
+msgstr "Добавить новую таблицу"
+
+#: dd/ddmodel/ddDrawingView.cpp:84
+msgid "Table exists already at this diagram"
+msgstr "Таблица уже есть в этой диаграмме"
+
+#: dd/ddmodel/ddDrawingView.cpp:84
+msgid "Drag and drop warning"
+msgstr "Предупреждение о перетаскивании"
+
+#: dd/ddmodel/ddModelBrowser.cpp:39
+msgid "Database Design"
+msgstr "Проектирование базы данных"
+
+#: dd/ddmodel/ddGenerationWizard.cpp:99
+msgid "Create table"
+msgstr "Создать таблицу"
+
+#: dd/ddmodel/ddGenerationWizard.cpp:100
+msgid "Alter table"
+msgstr "Изменить таблицу"
+
+#: dd/ddmodel/ddGenerationWizard.cpp:100
+msgid "Drop, then create"
+msgstr "Удалить, затем создать"
+
+#: dd/ddmodel/ddGenerationWizard.cpp:100
+msgid "Create table [conflict]"
+msgstr "Создать таблицу [конфликт]"
+
+#: dd/ddmodel/ddGenerationWizard.cpp:157
+msgid "Tables(s) to be generated"
+msgstr "Таблицы для генерации"
+
+#: dd/ddmodel/ddGenerationWizard.cpp:369
+msgid "Please select at least one table to move to next step."
+msgstr "Выберите хотя бы одну таблицу, чтобы перейти к следующему шагу."
+
+#: dd/ddmodel/ddGenerationWizard.cpp:369
+msgid "No tables selected"
+msgstr "Таблицы не выбраны"
+
+#: dd/ddmodel/ddGenerationWizard.cpp:396
+msgid "No schema"
+msgstr "Нет схемы"
+
+#: dd/ddmodel/ddGenerationWizard.cpp:415
+msgid "Please select an item to move to next step."
+msgstr "Выберите элемент, чтобы перейти к следующему шагу."
+
+#: dd/ddmodel/ddGenerationWizard.cpp:415
+msgid "No choice made"
+msgstr "Выбор не сделан"
+
+#: dd/ddmodel/ddGenerationWizard.cpp:528
+msgid "Please check the choice for each table:"
+msgstr "Проверьте выбор для каждой таблицы:"
+
+#: dd/ddmodel/ddGenerationWizard.cpp:555
+msgid "Select an action"
+msgstr "Выберите действие"
+
+#: dd/ddmodel/ddGenerationWizard.cpp:580
+msgid "Metadata of table to be generated not found at database designer model"
+msgstr "Метаданные генерируемой таблицы не найдены в модели конструктора баз данных"
+
+#: dd/ddmodel/ddGenerationWizard.cpp:580
+msgid "Error at generation process"
+msgstr "Ошибка в процессе генерации"
+
+#: dd/ddmodel/ddGenerationWizard.cpp:599
+msgid "Error importing at generation process"
+msgstr "Ошибка импорта в процессе генерации"
+
+#: dd/ddmodel/ddGenerationWizard.cpp:615
+msgid "Going back?"
+msgstr "Вернуться назад?"
+
+#: dd/ddmodel/ddDrawingEditor.cpp:87
+msgid "Are you sure you wish to delete table "
+msgstr "Вы действительно хотите удалить таблицу "
+
+#: dd/ddmodel/ddDrawingEditor.cpp:87
+msgid "Delete table?"
+msgstr "Удалить таблицу?"
+
+#: dd/ddmodel/ddDrawingEditor.cpp:95
+msgid "Are you sure you wish to delete relationship "
+msgstr "Вы действительно хотите удалить связь "
+
+#: dd/ddmodel/ddDrawingEditor.cpp:95
+msgid "Delete relationship?"
+msgstr "Удалить связь?"
+
+#: dd/ddmodel/ddDrawingEditor.cpp:114
+msgid "Are you sure you wish to delete %d tables, removing from model related relationships?"
+msgstr "Вы действительно хотите удалить таблицы (%d), удалив из модели связанные с ними связи?"
+
+#: dd/ddmodel/ddDrawingEditor.cpp:115
+msgid "Delete tables?"
+msgstr "Удалить таблицы?"
+
+#: dd/ddmodel/ddDrawingEditor.cpp:165
+msgid "Invalid figure kind found"
+msgstr "Обнаружен недопустимый вид фигуры"
+
+#: dd/ddmodel/ddDrawingEditor.cpp:165
+msgid "Error while deleting tables"
+msgstr "Ошибка при удалении таблиц"
+
+#: dd/ddmodel/ddDrawingEditor.cpp:188
+msgid "Error while deleting table"
+msgstr "Ошибка при удалении таблицы"
+
+#: dd/ddmodel/ddDrawingEditor.cpp:223
+msgid "Error while deleting realtionships"
+msgstr "Ошибка при удалении связей"
+
+#: dd/ddmodel/ddDatabaseDesign.cpp:142
+msgid "Invalid number of arguments in call of function generate tables of list"
+msgstr "Недопустимое число аргументов при вызове функции генерации таблиц из списка"
+
+#: dd/ddmodel/ddDatabaseDesign.cpp:162
+msgid "Generating Create sentence(s) for table(s) "
+msgstr "Генерация предложений Create для таблиц "
+
+#: dd/ddmodel/ddDatabaseDesign.cpp:185
+msgid "Generating Pk sentence for table(s) "
+msgstr "Генерация предложения Pk для таблиц "
+
+#: dd/ddmodel/ddDatabaseDesign.cpp:201
+msgid "Generating Uk sentence(s) for table(s) "
+msgstr "Генерация предложений Uk для таблиц "
+
+#: dd/ddmodel/ddDatabaseDesign.cpp:217
+msgid "Generating Fk sentence(s) for table(s) "
+msgstr "Генерация предложений Fk для таблиц "
+
+#: dd/ddmodel/ddDatabaseDesign.cpp:243
+msgid "No connection found when building ALTER objects DDL."
+msgstr "Не найдено соединение при построении DDL объектов ALTER."
+
+#: dd/ddmodel/ddDatabaseDesign.cpp:250
+msgid "Schema defined when building ALTER TABLE DDL"
+msgstr "Схема определена при построении DDL ALTER TABLE"
+
+#: dd/ddmodel/ddDatabaseDesign.cpp:257
+msgid "Generating Alter table sentence(s) for table(s) "
+msgstr "Генерация предложений Alter table для таблиц "
+
+#: dd/ddmodel/ddDatabaseDesign.cpp:527
+msgid "Failed to write the model file!"
+msgstr "Не удалось записать файл модели!"
+
+#: hotdraw/utilities/hdRemoveDeleteDialog.cpp:117
+msgid "     Choose Remove from Diagram to remove only from current diagram.     "
+msgstr "     Выберите «Удалить из диаграммы», чтобы удалить только из текущей диаграммы.     "
+
+#: hotdraw/utilities/hdRemoveDeleteDialog.cpp:118
+msgid "     Choose Remove from Model to delete permanently.     "
+msgstr "     Выберите «Удалить из модели» для окончательного удаления.     "
+
+#: hotdraw/main/hdDrawingView.cpp:457
+msgid "Sample Item"
+msgstr "Элемент-образец"
+
+#: hotdraw/main/hdDrawingView.cpp:466
+msgid "Sample menu item"
+msgstr "Образец элемента меню"
+
+#: hotdraw/main/hdDrawingView.cpp:466
+msgid "Sample"
+msgstr "Образец"
+
+#: hotdraw/main/hdDrawingEditor.cpp:267
+msgid "Are you sure you wish to delete figure ?"
+msgstr "Вы действительно хотите удалить фигуру?"
+
+#: hotdraw/main/hdDrawingEditor.cpp:267
+msgid "Delete figures?"
+msgstr "Удалить фигуры?"
+
+#: hotdraw/main/hdDrawingEditor.cpp:272
+msgid "Are you sure you wish to delete %d figures?"
+msgstr "Вы действительно хотите удалить фигуры (%d)?"
+
+#: dd/dditems/utilities/ddSelectKindFksDialog.cpp:103
+msgid "From Primary"
+msgstr "Из первичного ключа"
+
+#: dd/dditems/utilities/ddSelectKindFksDialog.cpp:110
+msgid "Unique Key: "
+msgstr "Уникальный ключ: "
+
+#: dd/dditems/utilities/ddSelectKindFksDialog.cpp:199
+msgid "Automatically Generated"
+msgstr "Создано автоматически"
+
+#: dd/dditems/figures/ddColumnKindIcon.cpp:62
+msgid "Unique key"
+msgstr "Уникальный ключ"
+
+#: dd/dditems/figures/ddTableFigure.cpp:1178
+msgid "Cannot build an ALTER TABLE statement for a non existing table (%s.%s)."
+msgstr "Невозможно построить предложение ALTER TABLE для несуществующей таблицы (%s.%s)."
+
+#: dd/dditems/figures/ddTableFigure.cpp:1179
+msgid "Error when trying to get table OID"
+msgstr "Ошибка при получении OID таблицы"
+
+#: dd/dditems/figures/ddTableFigure.cpp:1186
+msgid "Cannot reverse engineering table %s.%s."
+msgstr "Невозможно выполнить обратное проектирование таблицы %s.%s."
+
+#: dd/dditems/figures/ddTableFigure.cpp:1187
+msgid "Error when trying to get stub table"
+msgstr "Ошибка при получении таблицы-заглушки"
+
+#: dd/dditems/figures/ddTableFigure.cpp:1442
+msgid "\" SET NOT NULL;"
+msgstr "\" SET NOT NULL;"
+
+#: dd/dditems/figures/ddTableFigure.cpp:1469
+msgid "Trying to build ALTER sentences"
+msgstr "Попытка построить предложения ALTER"
+
+#: dd/dditems/figures/ddColumnFigure.cpp:491
+msgid "relation between table: "
+msgstr "связь между таблицей: "
+
+#: dd/dditems/figures/ddColumnFigure.cpp:491
+msgid " and table: "
+msgstr " и таблицей: "
+
+#: dd/dditems/figures/ddColumnFigure.cpp:492
+msgid " is marked as identifying but user created foreign key column: "
+msgstr " помечена как идентифицирующая, но созданный пользователем столбец внешнего ключа: "
+
+#: dd/dditems/figures/ddColumnFigure.cpp:493
+msgid " isn't set as primary key \n"
+msgstr " не задан как первичный ключ \n"
+
+#: dd/dditems/figures/ddColumnFigure.cpp:500
+msgid "relation between table:"
+msgstr "связь между таблицей:"
+
+#: dd/dditems/figures/ddColumnFigure.cpp:501
+msgid "is marked as optional but user created foreign key column: "
+msgstr "помечена как необязательная, но созданный пользователем столбец внешнего ключа: "
+
+#: dd/dditems/figures/ddColumnFigure.cpp:502
+msgid "is set as mandatory \n"
+msgstr "задан как обязательный \n"
+
+#: dd/dditems/figures/ddColumnFigure.cpp:510
+msgid " is marked as mandatory but user created foreign key column: "
+msgstr " помечена как обязательная, но созданный пользователем столбец внешнего ключа: "
+
+#: dd/dditems/figures/ddColumnFigure.cpp:511
+msgid "is set as optional \n"
+msgstr "задан как необязательный \n"
+
+#: dd/dditems/figures/ddColumnFigure.cpp:519
+msgid "User created foreign key column: "
+msgstr "Созданный пользователем столбец внешнего ключа: "
+
+#: dd/dditems/figures/ddColumnFigure.cpp:519
+msgid "have different datatype from source column of relationship: "
+msgstr "имеет тип данных, отличный от исходного столбца связи: "
+
+#: dd/dditems/figures/ddColumnFigure.cpp:520
+msgid " \n"
+msgstr " \n"
+
+#: dd/dditems/figures/ddTextTableItemFigure.cpp:243
+msgid "Varchar size"
+msgstr "Размер varchar"
+
+#: dd/dditems/figures/ddTextTableItemFigure.cpp:244
+msgid "Size for varchar datatype"
+msgstr "Размер для типа данных varchar"
+
+#: dd/dditems/figures/ddTextTableItemFigure.cpp:264
+msgid "datatype size"
+msgstr "размер типа данных"
+
+#: dd/dditems/figures/ddTextTableItemFigure.cpp:265
+msgid "Size for datatype"
+msgstr "Размер для типа данных"
+
+#: dd/dditems/figures/ddTextTableItemFigure.cpp:354
+msgid "Add a column..."
+msgstr "Добавить столбец..."
+
+#: dd/dditems/figures/ddTextTableItemFigure.cpp:355
+msgid "Delete the selected column..."
+msgstr "Удалить выбранный столбец..."
+
+#: dd/dditems/figures/ddTextTableItemFigure.cpp:358
+msgid "Rename the selected column..."
+msgstr "Переименовать выбранный столбец..."
+
+#: dd/dditems/figures/ddTextTableItemFigure.cpp:360
+msgid "Activate fk auto-naming..."
+msgstr "Включить автоименование fk..."
+
+#: dd/dditems/figures/ddTextTableItemFigure.cpp:362
+msgid "Not NULL constraint"
+msgstr "Ограничение Not NULL"
+
+#: dd/dditems/figures/ddTextTableItemFigure.cpp:373
+msgid "Unique Key"
+msgstr "Уникальный ключ"
+
+#: dd/dditems/figures/ddTextTableItemFigure.cpp:378
+msgid "Column datatype"
+msgstr "Тип данных столбца"
+
+#: dd/dditems/figures/ddTextTableItemFigure.cpp:381
+msgid "serial"
+msgstr "serial"
+
+#: dd/dditems/figures/ddTextTableItemFigure.cpp:383
+msgid "boolean"
+msgstr "boolean"
+
+#: dd/dditems/figures/ddTextTableItemFigure.cpp:385
+msgid "integer"
+msgstr "integer"
+
+#: dd/dditems/figures/ddTextTableItemFigure.cpp:387
+msgid "money"
+msgstr "money"
+
+#: dd/dditems/figures/ddTextTableItemFigure.cpp:389
+msgid "varchar(n)"
+msgstr "varchar(n)"
+
+#: dd/dditems/figures/ddTextTableItemFigure.cpp:391
+msgid "Choose another datatype..."
+msgstr "Выбрать другой тип данных..."
+
+#: dd/dditems/figures/ddTextTableItemFigure.cpp:393
+msgid "Primary Key Constraint name..."
+msgstr "Имя ограничения первичного ключа..."
+
+#: dd/dditems/figures/ddTextTableItemFigure.cpp:394
+msgid "Unique Key Constraint name..."
+msgstr "Имя ограничения уникального ключа..."
+
+#: dd/dditems/figures/ddTextTableItemFigure.cpp:396
+msgid "Delete table..."
+msgstr "Удалить таблицу..."
+
+#: dd/dditems/figures/ddRelationshipFigure.cpp:241
+msgid "Select one"
+msgstr "Выберите один"
+
+#: dd/dditems/figures/ddRelationshipFigure.cpp:243
+msgid "Foreign Key From"
+msgstr "Внешний ключ из"
+
+#: dd/dditems/figures/ddRelationshipFigure.cpp:264
+msgid "Mandatory relationship kind"
+msgstr "Вид обязательной связи"
+
+#: dd/dditems/figures/ddRelationshipFigure.cpp:266
+msgid "Identifying relationship"
+msgstr "Идентифицирующая связь"
+
+#: dd/dditems/figures/ddRelationshipFigure.cpp:269
+msgid "1:M"
+msgstr "1:M"
+
+#: dd/dditems/figures/ddRelationshipFigure.cpp:272
+msgid "Foreign Key Constraint Name"
+msgstr "Имя ограничения внешнего ключа"
+
+#: dd/dditems/figures/ddRelationshipFigure.cpp:275
+msgid "Type Simple"
+msgstr "Тип Simple"
+
+#: dd/dditems/figures/ddRelationshipFigure.cpp:277
+msgid "Type Full"
+msgstr "Тип Full"
+
+#: dd/dditems/figures/ddRelationshipFigure.cpp:279
+msgid "Match Type "
+msgstr "Тип соответствия "
+
+#: dd/dditems/figures/ddRelationshipFigure.cpp:281
+msgid "[ Simple ]"
+msgstr "[ Simple ]"
+
+#: dd/dditems/figures/ddRelationshipFigure.cpp:283
+msgid "[ Full ]"
+msgstr "[ Full ]"
+
+#: dd/dditems/figures/ddRelationshipFigure.cpp:286
+msgid "On Delete "
+msgstr "При удалении "
+
+#: dd/dditems/figures/ddRelationshipFigure.cpp:288
+msgid "No Action"
+msgstr "No Action"
+
+#: dd/dditems/figures/ddRelationshipFigure.cpp:291
+msgid "[ No Action ]"
+msgstr "[ No Action ]"
+
+#: dd/dditems/figures/ddRelationshipFigure.cpp:292
+msgid "Restrict"
+msgstr "Restrict"
+
+#: dd/dditems/figures/ddRelationshipFigure.cpp:295
+msgid "[ Restrict ]"
+msgstr "[ Restrict ]"
+
+#: dd/dditems/figures/ddRelationshipFigure.cpp:296
+msgid "Cascade"
+msgstr "Cascade"
+
+#: dd/dditems/figures/ddRelationshipFigure.cpp:299
+msgid "[ Cascade ]"
+msgstr "[ Cascade ]"
+
+#: dd/dditems/figures/ddRelationshipFigure.cpp:300
+msgid "Set Null"
+msgstr "Set Null"
+
+#: dd/dditems/figures/ddRelationshipFigure.cpp:303
+msgid "[ Set Null ]"
+msgstr "[ Set Null ]"
+
+#: dd/dditems/figures/ddRelationshipFigure.cpp:304
+msgid "Set Default"
+msgstr "Set Default"
+
+#: dd/dditems/figures/ddRelationshipFigure.cpp:307
+msgid "[ Set Default ]"
+msgstr "[ Set Default ]"
+
+#: dd/dditems/figures/ddRelationshipFigure.cpp:310
+msgid "On Update "
+msgstr "При обновлении "
+
+#: dd/dditems/figures/ddRelationshipFigure.cpp:335
+msgid "Delete Relationship..."
+msgstr "Удалить связь..."
+
+#: dd/dditems/figures/ddRelationshipFigure.cpp:452
+msgid "Are you sure you wish to delete relationship between tables %s and %s?"
+msgstr "Вы действительно хотите удалить связь между таблицами %s и %s?"
+
+#: include/frm/frmReport.h:156
+msgid "&Compare other objects"
+msgstr "&Сравнить другие объекты"
+
+#: include/frm/frmReport.h:156
+msgid "Compare other host database select objects."
+msgstr "Сравнить выбранные объекты базы данных другого хоста."
+
+#: ui/dlgFindReplace.xrc:65
+msgid "All find tabs"
+msgstr "Все вкладки поиска"
+
+#: ui/dlgProJob.xrc:105
+msgid "Run as"
+msgstr "Запуск от имени"
+
+#: ui/dlgProJob.xrc:195
+msgid "Commands"
+msgstr "Команды"
+
+#: ui/dlgProJob.xrc:234
+msgid "use same transaction"
+msgstr "использовать ту же транзакцию"
+
+#: ui/dlgServer.xrc:190
+msgid "Select SSL Root Certificate File"
+msgstr "Выберите файл корневого сертификата SSL"
+
+#: ui/dlgServer.xrc:206
+msgid "Select SSL Certificate Revocation List File"
+msgstr "Выберите файл списка отзыва сертификатов SSL"
+
+#: ui/dlgServer.xrc:222
+msgid "Select SSL certificate file"
+msgstr "Выберите файл сертификата SSL"
+
+#: ui/dlgServer.xrc:238
+msgid "Select SSL key file"
+msgstr "Выберите файл ключа SSL"
+
+#: ui/dlgServer.xrc:361
+msgid "Select identity file"
+msgstr "Выберите файл идентификации"
+
+#: ui/dlgServer.xrc:377
+msgid "Select public key file"
+msgstr "Выберите файл открытого ключа"
+
+#: ui/dlgServer.xrc:466
+msgid "Connect str"
+msgstr "Строка подключения"
+
+#: ui/dlgTransformText.xrc:5
+msgid "Transform text"
+msgstr "Преобразование текста"
+
+#: ui/dlgTransformText.xrc:17
+msgid "Source text options"
+msgstr "Параметры исходного текста"
+
+#: ui/dlgTransformText.xrc:33
+msgid "PCRE regexp"
+msgstr "Регулярное выражение PCRE"
+
+#: ui/dlgTransformText.xrc:50
+msgid "Replace expression"
+msgstr "Выражение для замены"
+
+#: ui/dlgTransformText.xrc:67
+msgid "Rows limit"
+msgstr "Ограничение числа строк"
+
+#: ui/dlgTransformText.xrc:87
+msgid "Chars limit"
+msgstr "Ограничение числа символов"
+
+#: ui/dlgTransformText.xrc:107
+msgid "Refresh highlight"
+msgstr "Обновить подсветку"
+
+#: ui/dlgTransformText.xrc:124
+msgid "Source text"
+msgstr "Исходный текст"
+
+#: ui/dlgTransformText.xrc:160
+msgid "Transform text options"
+msgstr "Параметры преобразования текста"
+
+#: ui/dlgTransformText.xrc:176
+msgid "Append before row"
+msgstr "Добавить перед строкой"
+
+#: ui/dlgTransformText.xrc:196
+msgid "After row"
+msgstr "После строки"
+
+#: ui/dlgTransformText.xrc:230
+msgid "Field separator"
+msgstr "Разделитель полей"
+
+#: ui/dlgTransformText.xrc:267
+msgid "Load options"
+msgstr "Параметры загрузки"
+
+#: ui/dlgTransformText.xrc:276
+msgid "First"
+msgstr "Первые"
+
+#: ui/dlgTransformText.xrc:335
+msgid "Rows loading"
+msgstr "Загрузка строк"
+
+#: ui/frmAwr.xrc:6
+msgid "AWR report"
+msgstr "Отчёт AWR"
+
+#: ui/frmAwr.xrc:36
+msgid "Type report"
+msgstr "Тип отчёта"
+
+#: ui/frmAwr.xrc:39
+msgid "Report"
+msgstr "Отчёт"
+
+#: ui/frmAwr.xrc:40
+msgid "Diff report"
+msgstr "Отчёт о различиях"
+
+#: ui/frmAwr.xrc:104
+msgid "Start Id1"
+msgstr "Начальный Id1"
+
+#: ui/frmAwr.xrc:123
+msgid "End Id1"
+msgstr "Конечный Id1"
+
+#: ui/frmAwr.xrc:166
+msgid "Start Id2"
+msgstr "Начальный Id2"
+
+#: ui/frmAwr.xrc:185
+msgid "End Id2"
+msgstr "Конечный Id2"
+
+#: ui/frmExport.xrc:110
+msgid "format COPY"
+msgstr "формат COPY"
+
+#: ui/frmExport.xrc:116
+msgid "Xls fmt copy"
+msgstr "Копирование в формате Xls"
+
+#: ui/frmImport.xrc:33
+msgid "Select the file to import"
+msgstr "Выберите файл для импорта"
+
+#: ui/frmOptions.xrc:131
+msgid "Select theme"
+msgstr "Выберите тему"
+
+#: ui/frmOptions.xrc:154
+msgid "Load"
+msgstr "Загрузить"
+
+#: ui/frmOptions.xrc:222
+msgid "Options extended JSON:"
+msgstr "Расширенные параметры JSON:"
+
+#: ui/frmOptions.xrc:261
+msgid "Beautiful big numbers on the statistics page"
+msgstr "Удобное отображение больших чисел на странице статистики"
+
+#: ui/frmOptions.xrc:272
+msgid "Show the dependencies of functions on tables,views,functions"
+msgstr "Показывать зависимости функций от таблиц, представлений, функций"
+
+#: ui/frmOptions.xrc:457
+msgid "Show DB name in tree"
+msgstr "Показывать имя БД в дереве"
+
+#: ui/frmOptions.xrc:465
+msgid "Quick jump to the root node"
+msgstr "Быстрый переход к корневому узлу"
+
+#: ui/frmOptions.xrc:635
+msgid "Select utility to format text"
+msgstr "Выберите утилиту для форматирования текста"
+
+#: ui/frmOptions.xrc:645
+msgid "External alignment utlity"
+msgstr "Внешняя утилита выравнивания"
+
+#: ui/frmOptions.xrc:662
+msgid "Enable ASUTP style"
+msgstr "Включить стиль ASUTP"
+
+#: ui/frmOptions.xrc:677
+msgid "Hide query history"
+msgstr "Скрыть историю запросов"
+
+#: ui/frmOptions.xrc:692
+msgid "Auto save query text"
+msgstr "Автосохранение текста запроса"
+
+#: ui/frmOptions.xrc:707
+msgid "Use word hints"
+msgstr "Использовать подсказки слов"
+
+#: ui/frmOptions.xrc:722
+msgid "Replace variables in a query"
+msgstr "Заменять переменные в запросе"
+
+#: ui/frmOptions.xrc:821
+msgid "Use system background color caret line"
+msgstr "Использовать системный цвет фона для строки курсора"
+
+#: ui/frmOptions.xrc:876
+msgid "Width for keyboard layout"
+msgstr "Ширина для раскладки клавиатуры"
+
+#: ui/frmOptions.xrc:1227
+msgid "Select file to store favourites queries"
+msgstr "Выберите файл для хранения избранных запросов"
+
+#: ui/frmOptions.xrc:1255
+msgid "Select file to store macros"
+msgstr "Выберите файл для хранения макросов"
+
+#: ui/frmOptions.xrc:1283
+msgid "Select file to store queries history"
+msgstr "Выберите файл для хранения истории запросов"
+
+#: ui/frmOptions.xrc:1388
+msgid "Blocked by Process Colour"
+msgstr "Цвет заблокированного процесса"
+
+#: ui/frmOptions.xrc:1402
+msgid "Idle&in&transaction&session&timeout Process Colour"
+msgstr "Цвет&процесса&с&тайм-аутом&сеанса idle in transaction"
+
+#: frm/mathplot.cpp:1424
+msgid "Center"
+msgstr "Центр"
+
+#: frm/mathplot.cpp:1425
+msgid "Center plot view to this position"
+msgstr "Центрировать вид графика на этой позиции"
+
+#: frm/mathplot.cpp:1426
+msgid "Fit"
+msgstr "По размеру"
+
+#: frm/mathplot.cpp:1426
+msgid "Set plot view to show all items"
+msgstr "Настроить вид графика так, чтобы были видны все элементы"
+
+#: frm/mathplot.cpp:1427
+msgid "Zoom in"
+msgstr "Увеличить"
+
+#: frm/mathplot.cpp:1427
+msgid "Zoom in plot view."
+msgstr "Увеличить вид графика."
+
+#: frm/mathplot.cpp:1428
+msgid "Zoom out"
+msgstr "Уменьшить"
+
+#: frm/mathplot.cpp:1428
+msgid "Zoom out plot view."
+msgstr "Уменьшить вид графика."
+
+#: frm/mathplot.cpp:1431
+msgid "Show mouse commands..."
+msgstr "Показать команды мыши..."
+
+#: frm/mathplot.cpp:1432
+msgid "Show help about the mouse commands."
+msgstr "Показать справку по командам мыши."
+
+#: frm/mathplot.cpp:1935
+msgid "wxMathPlot help"
+msgstr "Справка wxMathPlot"
+
+#: dd/dditems/figures/xml/ddXmlStorage.cpp:91
+msgid "Error saving model: not source model have been set"
+msgstr "Ошибка сохранения модели: не задана исходная модель"
+
+#: dd/dditems/figures/xml/ddXmlStorage.cpp:123
+msgid "Fatal Error at libxml for figure persistency"
+msgstr "Критическая ошибка libxml при сохранении фигур"
+
+#: dd/dditems/figures/xml/ddXmlStorage.cpp:624
+msgid "Model is not following embedded DTD definition, check it.\n"
+msgstr "Модель не соответствует встроенному определению DTD, проверьте её.\n"
+
+#: dd/dditems/figures/xml/ddXmlStorage.cpp:656
+msgid "Failed to load document from disk"
+msgstr "Не удалось загрузить документ с диска"
+
+#: dd/dditems/figures/xml/ddXmlStorage.cpp:754
+msgid "Invalid version of XML file for pgAdmin database designer found"
+msgstr "Обнаружена недопустимая версия XML-файла конструктора баз данных pgAdmin"
+
+#: dd/dditems/figures/xml/ddXmlStorage.cpp:754
+msgid "Invalid XML"
+msgstr "Недопустимый XML"
+
+#: dd/dditems/figures/xml/ddXmlStorage.cpp:1054
+msgid "Table initial metadata info not found"
+msgstr "Исходные метаданные таблицы не найдены"
+
+#: frm/frmOptions.cpp:1
+msgid "Appearance"
+msgstr "Внешний вид"
+
+#: frm/frmOptions.cpp:2
+msgid "Automatic"
+msgstr "Автоматически"
+
+#: frm/frmOptions.cpp:3
+msgid "Light"
+msgstr "Светлая"
+
+#: frm/frmOptions.cpp:4
+msgid "Dark"
+msgstr "Тёмная"
+
+#: frm/frmOptions.cpp:5
+msgid "Restart pgAdmin III to fully apply the appearance change."
+msgstr "Перезапустите pgAdmin III, чтобы полностью применить изменение внешнего вида."

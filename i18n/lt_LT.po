@@ -21817,4 +21817,402 @@ msgstr "Tipai"
 #~ msgid "|"
 #~ msgstr "|"
 
+#: pgAdmin3.cpp:389
+msgid "open server log window"
+msgstr "atidaryti serverio žurnalo langą"
 
+#: pgAdmin3.cpp:403
+msgid "export servers configuration to file pgadmin3.ini"
+msgstr "eksportuoti serverių konfigūraciją į failą pgadmin3.ini"
+
+#: pgAdmin3.cpp:404
+msgid "Enable Dark mode"
+msgstr "Įjungti tamsųjį režimą"
+
+#: pgAdmin3.cpp:1013
+msgid "Log - "
+msgstr "Žurnalas - "
+
+#: pro_scheduler/pgproJob.cpp:36
+msgid "Retrieving details on pro_scheduler job"
+msgstr "Gaunama išsami informacija apie pro_scheduler užduotį"
+
+#: pro_scheduler/pgproJob.cpp:39
+msgid "Refreshing pro_scheduler job"
+msgstr "Atnaujinama pro_scheduler užduotis"
+
+#: pro_scheduler/pgproJob.cpp:42
+msgid "pro_scheduler job properties report"
+msgstr "pro_scheduler užduoties savybių ataskaita"
+
+#: pro_scheduler/pgproJob.cpp:48
+msgid "pro_scheduler job DDL report"
+msgstr "pro_scheduler užduoties DDL ataskaita"
+
+#: pro_scheduler/pgproJob.cpp:51
+msgid "pro_scheduler job dependencies report"
+msgstr "pro_scheduler užduoties priklausomybių ataskaita"
+
+#: pro_scheduler/pgproJob.cpp:54
+msgid "pro_scheduler job dependencies"
+msgstr "pro_scheduler užduoties priklausomybės"
+
+#: pro_scheduler/pgproJob.cpp:57
+msgid "pro_scheduler job dependents report"
+msgstr "pro_scheduler užduoties priklausančių objektų ataskaita"
+
+#: pro_scheduler/pgproJob.cpp:60
+msgid "pro_scheduler job dependents"
+msgstr "pro_scheduler užduoties priklausantys objektai"
+
+#: pro_scheduler/pgproJob.cpp:140
+msgid "Started"
+msgstr "Pradėta"
+
+#: pro_scheduler/pgproJob.cpp:141
+msgid "Finished"
+msgstr "Baigta"
+
+#: pro_scheduler/pgproJob.cpp:143
+msgid "Crontab"
+msgstr "Crontab"
+
+#: pro_scheduler/pgproJob.cpp:146
+msgid "Runas"
+msgstr "Vykdyti kaip"
+
+#: pro_scheduler/pgproJob.cpp:152
+msgid "Next start job"
+msgstr "Kitas užduoties paleidimas"
+
+#: pro_scheduler/pgproJob.cpp:185
+msgid "Previous sched time run skip"
+msgstr "Praleistas ankstesnis suplanuotas paleidimas"
+
+#: pro_scheduler/pgproJob.cpp:254
+msgid "Not run"
+msgstr "Nevykdyta"
+
+#: pro_scheduler/pgproJob.cpp:356
+msgid "Log_time"
+msgstr "Log_time"
+
+#: pro_scheduler/pgproJob.cpp:357
+msgid "Critical"
+msgstr "Kritinis"
+
+#: pro_scheduler/pgproJob.cpp:359
+msgid "Stage"
+msgstr "Etapas"
+
+#: pro_scheduler/pgproJob.cpp:505
+msgid "Enabled or disabled job"
+msgstr "Įjungta arba išjungta užduotis"
+
+#: frm/frmQuery.cpp:4689
+msgid "Please enter name string with prefix dbname or description server\n"
+msgstr "Įveskite pavadinimo eilutę su duomenų bazės prefiksu arba serverio aprašymu\n"
+
+#: frm/frmQuery.cpp:4691
+msgid "Name autosave tab window."
+msgstr "Automatiškai įrašomo skirtuko lango pavadinimas."
+
+#: frm/frmOptions.cpp:615
+msgid "Color theme save to file %s"
+msgstr "Spalvų tema įrašyta į failą %s"
+
+#: frm/frmOptions.cpp:637
+msgid "Color theme load from file %s"
+msgstr "Spalvų tema įkelta iš failo %s"
+
+#: frm/frmOptions.cpp:638
+msgid "Load theme"
+msgstr "Įkelti temą"
+
+#: schema/pgServer.cpp:1253
+msgid "Key words"
+msgstr "Raktažodžiai"
+
+#: hotdraw/utilities/hdRemoveDeleteDialog.cpp:117
+msgid "     Choose Remove from Diagram to remove only from current diagram.     "
+msgstr "     Pasirinkite Pašalinti iš diagramos, kad pašalintumėte tik iš dabartinės diagramos.     "
+
+#: hotdraw/utilities/hdRemoveDeleteDialog.cpp:118
+msgid "     Choose Remove from Model to delete permanently.     "
+msgstr "     Pasirinkite Pašalinti iš modelio, kad ištrintumėte visam laikui.     "
+
+#: hotdraw/main/hdDrawingView.cpp:457
+msgid "Sample Item"
+msgstr "Pavyzdinis elementas"
+
+#: hotdraw/main/hdDrawingView.cpp:466
+msgid "Sample menu item"
+msgstr "Pavyzdinis meniu elementas"
+
+#: hotdraw/main/hdDrawingView.cpp:466
+msgid "Sample"
+msgstr "Pavyzdys"
+
+#: hotdraw/main/hdDrawingEditor.cpp:267
+msgid "Are you sure you wish to delete figure ?"
+msgstr "Ar tikrai norite ištrinti figūrą?"
+
+#: hotdraw/main/hdDrawingEditor.cpp:267
+msgid "Delete figures?"
+msgstr "Ištrinti figūras?"
+
+#: hotdraw/main/hdDrawingEditor.cpp:272
+msgid "Are you sure you wish to delete %d figures?"
+msgstr "Ar tikrai norite ištrinti %d figūrų?"
+
+#: ui/dlgFindReplace.xrc:65
+msgid "All find tabs"
+msgstr "Visi paieškos skirtukai"
+
+#: ui/dlgProJob.xrc:105
+msgid "Run as"
+msgstr "Vykdyti kaip"
+
+#: ui/dlgProJob.xrc:195
+msgid "Commands"
+msgstr "Komandos"
+
+#: ui/dlgProJob.xrc:234
+msgid "use same transaction"
+msgstr "naudoti tą pačią transakciją"
+
+#: ui/dlgServer.xrc:190
+msgid "Select SSL Root Certificate File"
+msgstr "Pasirinkite SSL šakninio sertifikato failą"
+
+#: ui/dlgServer.xrc:206
+msgid "Select SSL Certificate Revocation List File"
+msgstr "Pasirinkite SSL sertifikatų atšaukimo sąrašo failą"
+
+#: ui/dlgServer.xrc:222
+msgid "Select SSL certificate file"
+msgstr "Pasirinkite SSL sertifikato failą"
+
+#: ui/dlgServer.xrc:238
+msgid "Select SSL key file"
+msgstr "Pasirinkite SSL rakto failą"
+
+#: ui/dlgServer.xrc:361
+msgid "Select identity file"
+msgstr "Pasirinkite tapatybės failą"
+
+#: ui/dlgServer.xrc:377
+msgid "Select public key file"
+msgstr "Pasirinkite viešojo rakto failą"
+
+#: ui/dlgServer.xrc:466
+msgid "Connect str"
+msgstr "Prisijungimo eilutė"
+
+#: ui/dlgTransformText.xrc:5
+msgid "Transform text"
+msgstr "Transformuoti tekstą"
+
+#: ui/dlgTransformText.xrc:17
+msgid "Source text options"
+msgstr "Šaltinio teksto parinktys"
+
+#: ui/dlgTransformText.xrc:33
+msgid "PCRE regexp"
+msgstr "PCRE reguliarioji išraiška"
+
+#: ui/dlgTransformText.xrc:50
+msgid "Replace expression"
+msgstr "Keitimo išraiška"
+
+#: ui/dlgTransformText.xrc:67
+msgid "Rows limit"
+msgstr "Eilučių riba"
+
+#: ui/dlgTransformText.xrc:87
+msgid "Chars limit"
+msgstr "Simbolių riba"
+
+#: ui/dlgTransformText.xrc:107
+msgid "Refresh highlight"
+msgstr "Atnaujinti paryškinimą"
+
+#: ui/dlgTransformText.xrc:124
+msgid "Source text"
+msgstr "Šaltinio tekstas"
+
+#: ui/dlgTransformText.xrc:160
+msgid "Transform text options"
+msgstr "Teksto transformacijos parinktys"
+
+#: ui/dlgTransformText.xrc:176
+msgid "Append before row"
+msgstr "Pridėti prieš eilutę"
+
+#: ui/dlgTransformText.xrc:196
+msgid "After row"
+msgstr "Po eilutės"
+
+#: ui/dlgTransformText.xrc:230
+msgid "Field separator"
+msgstr "Laukų skirtukas"
+
+#: ui/dlgTransformText.xrc:267
+msgid "Load options"
+msgstr "Įkėlimo parinktys"
+
+#: ui/dlgTransformText.xrc:276
+msgid "First"
+msgstr "Pirmas"
+
+#: ui/dlgTransformText.xrc:335
+msgid "Rows loading"
+msgstr "Eilučių įkėlimas"
+
+#: ui/frmAwr.xrc:6
+msgid "AWR report"
+msgstr "AWR ataskaita"
+
+#: ui/frmAwr.xrc:36
+msgid "Type report"
+msgstr "Ataskaitos tipas"
+
+#: ui/frmAwr.xrc:39
+msgid "Report"
+msgstr "Ataskaita"
+
+#: ui/frmAwr.xrc:40
+msgid "Diff report"
+msgstr "Skirtumų ataskaita"
+
+#: ui/frmAwr.xrc:104
+msgid "Start Id1"
+msgstr "Pradžios Id1"
+
+#: ui/frmAwr.xrc:123
+msgid "End Id1"
+msgstr "Pabaigos Id1"
+
+#: ui/frmAwr.xrc:166
+msgid "Start Id2"
+msgstr "Pradžios Id2"
+
+#: ui/frmAwr.xrc:185
+msgid "End Id2"
+msgstr "Pabaigos Id2"
+
+#: ui/frmExport.xrc:110
+msgid "format COPY"
+msgstr "COPY formatas"
+
+#: ui/frmExport.xrc:116
+msgid "Xls fmt copy"
+msgstr "Xls formato kopijavimas"
+
+#: ui/frmImport.xrc:33
+msgid "Select the file to import"
+msgstr "Pasirinkite importuojamą failą"
+
+#: ui/frmOptions.xrc:131
+msgid "Select theme"
+msgstr "Pasirinkite temą"
+
+#: ui/frmOptions.xrc:154
+msgid "Load"
+msgstr "Įkelti"
+
+#: ui/frmOptions.xrc:222
+msgid "Options extended JSON:"
+msgstr "Išplėstinio JSON parinktys:"
+
+#: ui/frmOptions.xrc:261
+msgid "Beautiful big numbers on the statistics page"
+msgstr "Gražiai rodyti didelius skaičius statistikos puslapyje"
+
+#: ui/frmOptions.xrc:272
+msgid "Show the dependencies of functions on tables,views,functions"
+msgstr "Rodyti funkcijų priklausomybes nuo lentelių, rodinių, funkcijų"
+
+#: ui/frmOptions.xrc:457
+msgid "Show DB name in tree"
+msgstr "Rodyti DB pavadinimą medyje"
+
+#: ui/frmOptions.xrc:465
+msgid "Quick jump to the root node"
+msgstr "Greitas perėjimas į šakninį mazgą"
+
+#: ui/frmOptions.xrc:635
+msgid "Select utility to format text"
+msgstr "Pasirinkite teksto formatavimo įrankį"
+
+#: ui/frmOptions.xrc:645
+msgid "External alignment utlity"
+msgstr "Išorinis lygiavimo įrankis"
+
+#: ui/frmOptions.xrc:662
+msgid "Enable ASUTP style"
+msgstr "Įjungti ASUTP stilių"
+
+#: ui/frmOptions.xrc:677
+msgid "Hide query history"
+msgstr "Slėpti užklausų istoriją"
+
+#: ui/frmOptions.xrc:692
+msgid "Auto save query text"
+msgstr "Automatiškai įrašyti užklausos tekstą"
+
+#: ui/frmOptions.xrc:707
+msgid "Use word hints"
+msgstr "Naudoti žodžių užuominas"
+
+#: ui/frmOptions.xrc:722
+msgid "Replace variables in a query"
+msgstr "Pakeisti užklausos kintamuosius"
+
+#: ui/frmOptions.xrc:821
+msgid "Use system background color caret line"
+msgstr "Naudoti sistemos fono spalvą žymeklio eilutei"
+
+#: ui/frmOptions.xrc:876
+msgid "Width for keyboard layout"
+msgstr "Plotis klaviatūros išdėstymui"
+
+#: ui/frmOptions.xrc:1227
+msgid "Select file to store favourites queries"
+msgstr "Pasirinkite failą mėgstamoms užklausoms saugoti"
+
+#: ui/frmOptions.xrc:1255
+msgid "Select file to store macros"
+msgstr "Pasirinkite failą makrokomandoms saugoti"
+
+#: ui/frmOptions.xrc:1283
+msgid "Select file to store queries history"
+msgstr "Pasirinkite failą užklausų istorijai saugoti"
+
+#: ui/frmOptions.xrc:1388
+msgid "Blocked by Process Colour"
+msgstr "Proceso blokuojamo spalva"
+
+#: ui/frmOptions.xrc:1402
+msgid "Idle&in&transaction&session&timeout Process Colour"
+msgstr "Idle&in&transaction&session&timeout proceso spalva"
+
+#: frm/frmOptions.cpp:1
+msgid "Appearance"
+msgstr "Išvaizda"
+
+#: frm/frmOptions.cpp:2
+msgid "Automatic"
+msgstr "Automatinė"
+
+#: frm/frmOptions.cpp:3
+msgid "Light"
+msgstr "Šviesi"
+
+#: frm/frmOptions.cpp:4
+msgid "Dark"
+msgstr "Tamsi"
+
+#: frm/frmOptions.cpp:5
+msgid "Restart pgAdmin III to fully apply the appearance change."
+msgstr "Iš naujo paleiskite pgAdmin III, kad išvaizdos pakeitimas būtų visiškai pritaikytas."
