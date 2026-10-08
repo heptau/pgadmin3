@@ -5,6 +5,8 @@ Format loosely follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ## [Unreleased]
 
+## [2026.10.08]
+
 ### Added
 - Appearance setting (Options → User Interface): Automatic (follow macOS), Light or
   Dark, independent of the system setting; takes full effect after a restart.
