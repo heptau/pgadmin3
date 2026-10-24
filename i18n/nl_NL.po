@@ -29253,3 +29253,63 @@ msgstr "Donker"
 #: frm/frmOptions.cpp:5
 msgid "Restart pgAdmin III to fully apply the appearance change."
 msgstr "Start pgAdmin III opnieuw op om de wijziging van de weergave volledig toe te passen."
+
+#: ctl/ctlChat.cpp
+msgid "Up"
+msgstr "Omhoog"
+
+#: ctl/ctlChat.cpp
+msgid "Down"
+msgstr "Omlaag"
+
+#: ctl/ctlChat.cpp
+msgid "Send"
+msgstr "Verzenden"
+
+#: ctl/ctlChat.cpp
+msgid "The window can be closed"
+msgstr "Het venster kan worden gesloten"
+
+#: ctl/ctlChat.cpp
+msgid "Copy done"
+msgstr "Gekopieerd"
+
+#: ctl/ctlChat.cpp
+msgid "AI Chat"
+msgstr "AI-chat"
+
+#: ctl/ctlChat.cpp
+msgid "History clear"
+msgstr "Geschiedenis gewist"
+
+#: ctl/ctlChat.cpp
+msgid "I think.."
+msgstr "Ik denk na.."
+
+#: ctl/ctlChat.cpp
+msgid "Parse json value error in AI Chat Parameters\n"
+msgstr "Fout bij het parseren van de JSON-waarde in de AI-chatparameters\n"
+
+#: ctl/ctlChat.cpp
+msgid "Send selection to AI Chat\tF9"
+msgstr "Selectie naar AI-chat sturen\tF9"
+
+#: ctl/ctlChat.cpp
+msgid "Send selection to AI chat"
+msgstr "Selectie naar AI-chat sturen"
+
+#: ctl/ctlChat.cpp
+msgid "Not response answer server"
+msgstr "Geen antwoord van de server"
+
+#: ctl/ctlChat.cpp
+msgid "Host server"
+msgstr "Hostserver"
+
+#: ctl/ctlChat.cpp
+msgid "Chat Part URL"
+msgstr "URL-deel van de chat"
+
+#: ctl/ctlChat.cpp
+msgid "System prompt"
+msgstr "Systeemprompt"

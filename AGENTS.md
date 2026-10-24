@@ -527,6 +527,17 @@ picks up this work next — treat this as a running log, not final docs.
   headers or format-specifier mismatches (zh_CN, de_DE, ja_JP, fa_IR, ko_KR,
   pl_PL, zh_TW, af_ZA, sr_RS, lv_LV, ru_RU) were also repaired in the
   process.
+- 2026-10-24: Merged `master` (AI Chat feature by lsv, MSVC fixes) into `main`.
+  `CHANGELOG.md` kept (master still edits the case-variant `changelog.md`; on
+  macOS's case-insensitive FS a merge conflicts on it — resolve by keeping
+  `CHANGELOG.md` and porting master's new entries into `[Unreleased]`).
+  Added the 15 new AI Chat strings (ctlChat/chatclient/frmOptions.xrc labels)
+  to all 45 `i18n/*.po` and recompiled every `x64/Release/i18n/*/pgadmin3.mo`.
+  Note: a fresh `xgettext` over the sources does NOT include `.xrc` labels
+  (they live in the `.po` files with `pgadmin/ui/*.xrc` refs), so don't
+  `msgmerge` against a code-only POT — append new msgids instead.
+  `chatclient` uses `wxWebRequest` (wx `net` component, already linked; needs
+  libcurl-enabled wx on Linux, which libwxgtk3.2-dev provides).
 
 ## Known TODOs / not yet solved
 

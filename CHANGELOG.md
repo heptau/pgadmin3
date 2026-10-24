@@ -5,6 +5,13 @@ Format loosely follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ## [Unreleased]
 
+### Added
+- AI Chat (merged from upstream master): new "AI Chat" tab in the output pane
+  talking to an LLM server (e.g. llama/Ollama). Configure host, chat URL,
+  system prompt and model parameters under Options → AI Chat; send selected
+  query text with F9, Ctrl+Enter sends, Ctrl+Up/Down browses history. The tab
+  is hidden when no host server is set. Translated into all 45 languages.
+
 ## [2026.10.08]
 
 ### Added

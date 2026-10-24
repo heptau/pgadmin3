@@ -24367,3 +24367,63 @@ msgstr "Тъмен"
 #: frm/frmOptions.cpp:5
 msgid "Restart pgAdmin III to fully apply the appearance change."
 msgstr "Рестартирайте pgAdmin III, за да се приложи напълно промяната във външния вид."
+
+#: ctl/ctlChat.cpp
+msgid "Up"
+msgstr "Нагоре"
+
+#: ctl/ctlChat.cpp
+msgid "Down"
+msgstr "Надолу"
+
+#: ctl/ctlChat.cpp
+msgid "Send"
+msgstr "Изпрати"
+
+#: ctl/ctlChat.cpp
+msgid "The window can be closed"
+msgstr "Прозорецът може да бъде затворен"
+
+#: ctl/ctlChat.cpp
+msgid "Copy done"
+msgstr "Копирано"
+
+#: ctl/ctlChat.cpp
+msgid "AI Chat"
+msgstr "AI чат"
+
+#: ctl/ctlChat.cpp
+msgid "History clear"
+msgstr "Историята е изчистена"
+
+#: ctl/ctlChat.cpp
+msgid "I think.."
+msgstr "Мисля.."
+
+#: ctl/ctlChat.cpp
+msgid "Parse json value error in AI Chat Parameters\n"
+msgstr "Грешка при анализ на JSON стойност в параметрите на AI чата\n"
+
+#: ctl/ctlChat.cpp
+msgid "Send selection to AI Chat\tF9"
+msgstr "Изпрати избраното към AI чата\tF9"
+
+#: ctl/ctlChat.cpp
+msgid "Send selection to AI chat"
+msgstr "Изпрати избраното към AI чата"
+
+#: ctl/ctlChat.cpp
+msgid "Not response answer server"
+msgstr "Сървърът не отговори"
+
+#: ctl/ctlChat.cpp
+msgid "Host server"
+msgstr "Хост сървър"
+
+#: ctl/ctlChat.cpp
+msgid "Chat Part URL"
+msgstr "Част от URL на чата"
+
+#: ctl/ctlChat.cpp
+msgid "System prompt"
+msgstr "Системен промпт"

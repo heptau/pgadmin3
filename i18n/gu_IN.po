@@ -16591,3 +16591,63 @@ msgstr "ઘેરો"
 #: frm/frmOptions.cpp:5
 msgid "Restart pgAdmin III to fully apply the appearance change."
 msgstr "દેખાવનો ફેરફાર સંપૂર્ણપણે લાગુ કરવા માટે pgAdmin III ફરી શરૂ કરો."
+
+#: ctl/ctlChat.cpp
+msgid "Up"
+msgstr "ઉપર"
+
+#: ctl/ctlChat.cpp
+msgid "Down"
+msgstr "નીચે"
+
+#: ctl/ctlChat.cpp
+msgid "Send"
+msgstr "મોકલો"
+
+#: ctl/ctlChat.cpp
+msgid "The window can be closed"
+msgstr "વિન્ડો બંધ કરી શકાય છે"
+
+#: ctl/ctlChat.cpp
+msgid "Copy done"
+msgstr "નકલ થઈ ગઈ"
+
+#: ctl/ctlChat.cpp
+msgid "AI Chat"
+msgstr "એઆઈ ચેટ"
+
+#: ctl/ctlChat.cpp
+msgid "History clear"
+msgstr "ઇતિહાસ સાફ કર્યો"
+
+#: ctl/ctlChat.cpp
+msgid "I think.."
+msgstr "વિચારી રહ્યો છું.."
+
+#: ctl/ctlChat.cpp
+msgid "Parse json value error in AI Chat Parameters\n"
+msgstr "એઆઈ ચેટ પરિમાણોમાં JSON મૂલ્ય પાર્સ કરવામાં ભૂલ\n"
+
+#: ctl/ctlChat.cpp
+msgid "Send selection to AI Chat\tF9"
+msgstr "પસંદગી એઆઈ ચેટમાં મોકલો\tF9"
+
+#: ctl/ctlChat.cpp
+msgid "Send selection to AI chat"
+msgstr "પસંદગી એઆઈ ચેટમાં મોકલો"
+
+#: ctl/ctlChat.cpp
+msgid "Not response answer server"
+msgstr "સર્વરે જવાબ આપ્યો નથી"
+
+#: ctl/ctlChat.cpp
+msgid "Host server"
+msgstr "હોસ્ટ સર્વર"
+
+#: ctl/ctlChat.cpp
+msgid "Chat Part URL"
+msgstr "ચેટ URL ભાગ"
+
+#: ctl/ctlChat.cpp
+msgid "System prompt"
+msgstr "સિસ્ટમ પ્રોમ્પ્ટ"

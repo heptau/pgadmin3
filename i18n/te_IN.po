@@ -16683,3 +16683,63 @@ msgstr "డార్క్"
 #: frm/frmOptions.cpp:5
 msgid "Restart pgAdmin III to fully apply the appearance change."
 msgstr "రూప మార్పును పూర్తిగా వర్తింపజేయడానికి pgAdmin III ను పునఃప్రారంభించండి."
+
+#: ctl/ctlChat.cpp
+msgid "Up"
+msgstr "పైకి"
+
+#: ctl/ctlChat.cpp
+msgid "Down"
+msgstr "కిందికి"
+
+#: ctl/ctlChat.cpp
+msgid "Send"
+msgstr "పంపు"
+
+#: ctl/ctlChat.cpp
+msgid "The window can be closed"
+msgstr "విండోను మూసివేయవచ్చు"
+
+#: ctl/ctlChat.cpp
+msgid "Copy done"
+msgstr "కాపీ చేయబడింది"
+
+#: ctl/ctlChat.cpp
+msgid "AI Chat"
+msgstr "ఏఐ చాట్"
+
+#: ctl/ctlChat.cpp
+msgid "History clear"
+msgstr "చరిత్ర క్లియర్ చేయబడింది"
+
+#: ctl/ctlChat.cpp
+msgid "I think.."
+msgstr "ఆలోచిస్తున్నాను.."
+
+#: ctl/ctlChat.cpp
+msgid "Parse json value error in AI Chat Parameters\n"
+msgstr "ఏఐ చాట్ పారామితులలో JSON విలువను పార్స్ చేయడంలో లోపం\n"
+
+#: ctl/ctlChat.cpp
+msgid "Send selection to AI Chat\tF9"
+msgstr "ఎంపికను ఏఐ చాట్‌కు పంపు\tF9"
+
+#: ctl/ctlChat.cpp
+msgid "Send selection to AI chat"
+msgstr "ఎంపికను ఏఐ చాట్‌కు పంపు"
+
+#: ctl/ctlChat.cpp
+msgid "Not response answer server"
+msgstr "సర్వర్ స్పందించలేదు"
+
+#: ctl/ctlChat.cpp
+msgid "Host server"
+msgstr "హోస్ట్ సర్వర్"
+
+#: ctl/ctlChat.cpp
+msgid "Chat Part URL"
+msgstr "చాట్ URL భాగం"
+
+#: ctl/ctlChat.cpp
+msgid "System prompt"
+msgstr "సిస్టమ్ ప్రాంప్ట్"

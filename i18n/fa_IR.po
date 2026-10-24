@@ -27746,3 +27746,63 @@ msgstr "تیره"
 #: frm/frmOptions.cpp:5
 msgid "Restart pgAdmin III to fully apply the appearance change."
 msgstr "برای اعمال کامل تغییر ظاهر، pgAdmin III را دوباره راه‌اندازی کنید."
+
+#: ctl/ctlChat.cpp
+msgid "Up"
+msgstr "بالا"
+
+#: ctl/ctlChat.cpp
+msgid "Down"
+msgstr "پایین"
+
+#: ctl/ctlChat.cpp
+msgid "Send"
+msgstr "ارسال"
+
+#: ctl/ctlChat.cpp
+msgid "The window can be closed"
+msgstr "پنجره را می‌توان بست"
+
+#: ctl/ctlChat.cpp
+msgid "Copy done"
+msgstr "کپی شد"
+
+#: ctl/ctlChat.cpp
+msgid "AI Chat"
+msgstr "چت هوش مصنوعی"
+
+#: ctl/ctlChat.cpp
+msgid "History clear"
+msgstr "تاریخچه پاک شد"
+
+#: ctl/ctlChat.cpp
+msgid "I think.."
+msgstr "در حال فکر کردن.."
+
+#: ctl/ctlChat.cpp
+msgid "Parse json value error in AI Chat Parameters\n"
+msgstr "خطا در تجزیه مقدار JSON در پارامترهای چت هوش مصنوعی\n"
+
+#: ctl/ctlChat.cpp
+msgid "Send selection to AI Chat\tF9"
+msgstr "ارسال انتخاب به چت هوش مصنوعی\tF9"
+
+#: ctl/ctlChat.cpp
+msgid "Send selection to AI chat"
+msgstr "ارسال انتخاب به چت هوش مصنوعی"
+
+#: ctl/ctlChat.cpp
+msgid "Not response answer server"
+msgstr "سرور پاسخ نداد"
+
+#: ctl/ctlChat.cpp
+msgid "Host server"
+msgstr "سرور میزبان"
+
+#: ctl/ctlChat.cpp
+msgid "Chat Part URL"
+msgstr "بخش نشانی چت"
+
+#: ctl/ctlChat.cpp
+msgid "System prompt"
+msgstr "پرامپت سیستم"

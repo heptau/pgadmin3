@@ -16591,3 +16591,63 @@ msgstr "Темна"
 #: frm/frmOptions.cpp:5
 msgid "Restart pgAdmin III to fully apply the appearance change."
 msgstr "Перезапустіть pgAdmin III, щоб повністю застосувати зміну вигляду."
+
+#: ctl/ctlChat.cpp
+msgid "Up"
+msgstr "Вгору"
+
+#: ctl/ctlChat.cpp
+msgid "Down"
+msgstr "Вниз"
+
+#: ctl/ctlChat.cpp
+msgid "Send"
+msgstr "Надіслати"
+
+#: ctl/ctlChat.cpp
+msgid "The window can be closed"
+msgstr "Вікно можна закрити"
+
+#: ctl/ctlChat.cpp
+msgid "Copy done"
+msgstr "Скопійовано"
+
+#: ctl/ctlChat.cpp
+msgid "AI Chat"
+msgstr "ШІ-чат"
+
+#: ctl/ctlChat.cpp
+msgid "History clear"
+msgstr "Історію очищено"
+
+#: ctl/ctlChat.cpp
+msgid "I think.."
+msgstr "Думаю.."
+
+#: ctl/ctlChat.cpp
+msgid "Parse json value error in AI Chat Parameters\n"
+msgstr "Помилка розбору значення JSON у параметрах ШІ-чату\n"
+
+#: ctl/ctlChat.cpp
+msgid "Send selection to AI Chat\tF9"
+msgstr "Надіслати виділене до ШІ-чату\tF9"
+
+#: ctl/ctlChat.cpp
+msgid "Send selection to AI chat"
+msgstr "Надіслати виділене до ШІ-чату"
+
+#: ctl/ctlChat.cpp
+msgid "Not response answer server"
+msgstr "Немає відповіді від сервера"
+
+#: ctl/ctlChat.cpp
+msgid "Host server"
+msgstr "Сервер"
+
+#: ctl/ctlChat.cpp
+msgid "Chat Part URL"
+msgstr "Частина URL чату"
+
+#: ctl/ctlChat.cpp
+msgid "System prompt"
+msgstr "Системний промпт"

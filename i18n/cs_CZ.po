@@ -27213,3 +27213,63 @@ msgstr "Tmavý"
 #: frm/frmOptions.cpp:5
 msgid "Restart pgAdmin III to fully apply the appearance change."
 msgstr "Restartujte pgAdmin III, aby se změna vzhledu plně projevila."
+
+#: ctl/ctlChat.cpp
+msgid "Up"
+msgstr "Nahoru"
+
+#: ctl/ctlChat.cpp
+msgid "Down"
+msgstr "Dolů"
+
+#: ctl/ctlChat.cpp
+msgid "Send"
+msgstr "Odeslat"
+
+#: ctl/ctlChat.cpp
+msgid "The window can be closed"
+msgstr "Okno lze zavřít"
+
+#: ctl/ctlChat.cpp
+msgid "Copy done"
+msgstr "Zkopírováno"
+
+#: ctl/ctlChat.cpp
+msgid "AI Chat"
+msgstr "AI chat"
+
+#: ctl/ctlChat.cpp
+msgid "History clear"
+msgstr "Historie vymazána"
+
+#: ctl/ctlChat.cpp
+msgid "I think.."
+msgstr "Přemýšlím.."
+
+#: ctl/ctlChat.cpp
+msgid "Parse json value error in AI Chat Parameters\n"
+msgstr "Chyba při zpracování JSON hodnoty v parametrech AI chatu\n"
+
+#: ctl/ctlChat.cpp
+msgid "Send selection to AI Chat\tF9"
+msgstr "Odeslat výběr do AI chatu\tF9"
+
+#: ctl/ctlChat.cpp
+msgid "Send selection to AI chat"
+msgstr "Odeslat výběr do AI chatu"
+
+#: ctl/ctlChat.cpp
+msgid "Not response answer server"
+msgstr "Server neodpověděl"
+
+#: ctl/ctlChat.cpp
+msgid "Host server"
+msgstr "Server"
+
+#: ctl/ctlChat.cpp
+msgid "Chat Part URL"
+msgstr "Adresa chatu (část URL)"
+
+#: ctl/ctlChat.cpp
+msgid "System prompt"
+msgstr "Systémový prompt"

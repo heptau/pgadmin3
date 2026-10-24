@@ -30627,3 +30627,63 @@ msgstr "Donker"
 #: frm/frmOptions.cpp:5
 msgid "Restart pgAdmin III to fully apply the appearance change."
 msgstr "Herbegin pgAdmin III om die voorkomsverandering ten volle toe te pas."
+
+#: ctl/ctlChat.cpp
+msgid "Up"
+msgstr "Op"
+
+#: ctl/ctlChat.cpp
+msgid "Down"
+msgstr "Af"
+
+#: ctl/ctlChat.cpp
+msgid "Send"
+msgstr "Stuur"
+
+#: ctl/ctlChat.cpp
+msgid "The window can be closed"
+msgstr "Die venster kan gesluit word"
+
+#: ctl/ctlChat.cpp
+msgid "Copy done"
+msgstr "Gekopieer"
+
+#: ctl/ctlChat.cpp
+msgid "AI Chat"
+msgstr "KI-klets"
+
+#: ctl/ctlChat.cpp
+msgid "History clear"
+msgstr "Geskiedenis uitgevee"
+
+#: ctl/ctlChat.cpp
+msgid "I think.."
+msgstr "Ek dink.."
+
+#: ctl/ctlChat.cpp
+msgid "Parse json value error in AI Chat Parameters\n"
+msgstr "Fout met ontleding van JSON-waarde in KI-klets-parameters\n"
+
+#: ctl/ctlChat.cpp
+msgid "Send selection to AI Chat\tF9"
+msgstr "Stuur seleksie na KI-klets\tF9"
+
+#: ctl/ctlChat.cpp
+msgid "Send selection to AI chat"
+msgstr "Stuur seleksie na KI-klets"
+
+#: ctl/ctlChat.cpp
+msgid "Not response answer server"
+msgstr "Geen antwoord van die bediener"
+
+#: ctl/ctlChat.cpp
+msgid "Host server"
+msgstr "Gasheerbediener"
+
+#: ctl/ctlChat.cpp
+msgid "Chat Part URL"
+msgstr "Klets-URL-deel"
+
+#: ctl/ctlChat.cpp
+msgid "System prompt"
+msgstr "Stelselprompt"

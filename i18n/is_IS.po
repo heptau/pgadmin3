@@ -16591,3 +16591,63 @@ msgstr "Dökkt"
 #: frm/frmOptions.cpp:5
 msgid "Restart pgAdmin III to fully apply the appearance change."
 msgstr "Endurræstu pgAdmin III til að beita breytingu á útliti að fullu."
+
+#: ctl/ctlChat.cpp
+msgid "Up"
+msgstr "Upp"
+
+#: ctl/ctlChat.cpp
+msgid "Down"
+msgstr "Niður"
+
+#: ctl/ctlChat.cpp
+msgid "Send"
+msgstr "Senda"
+
+#: ctl/ctlChat.cpp
+msgid "The window can be closed"
+msgstr "Hægt er að loka glugganum"
+
+#: ctl/ctlChat.cpp
+msgid "Copy done"
+msgstr "Afritað"
+
+#: ctl/ctlChat.cpp
+msgid "AI Chat"
+msgstr "Gervigreindarspjall"
+
+#: ctl/ctlChat.cpp
+msgid "History clear"
+msgstr "Ferill hreinsaður"
+
+#: ctl/ctlChat.cpp
+msgid "I think.."
+msgstr "Ég hugsa.."
+
+#: ctl/ctlChat.cpp
+msgid "Parse json value error in AI Chat Parameters\n"
+msgstr "Villa við þáttun JSON-gildis í færibreytum gervigreindarspjalls\n"
+
+#: ctl/ctlChat.cpp
+msgid "Send selection to AI Chat\tF9"
+msgstr "Senda val í gervigreindarspjall\tF9"
+
+#: ctl/ctlChat.cpp
+msgid "Send selection to AI chat"
+msgstr "Senda val í gervigreindarspjall"
+
+#: ctl/ctlChat.cpp
+msgid "Not response answer server"
+msgstr "Þjónninn svaraði ekki"
+
+#: ctl/ctlChat.cpp
+msgid "Host server"
+msgstr "Hýsilþjónn"
+
+#: ctl/ctlChat.cpp
+msgid "Chat Part URL"
+msgstr "Slóðarhluti spjalls"
+
+#: ctl/ctlChat.cpp
+msgid "System prompt"
+msgstr "Kerfisbeiðni"

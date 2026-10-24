@@ -33745,3 +33745,63 @@ msgstr "ダーク"
 #: frm/frmOptions.cpp:5
 msgid "Restart pgAdmin III to fully apply the appearance change."
 msgstr "外観の変更を完全に適用するには、pgAdmin III を再起動してください。"
+
+#: ctl/ctlChat.cpp
+msgid "Up"
+msgstr "上へ"
+
+#: ctl/ctlChat.cpp
+msgid "Down"
+msgstr "下へ"
+
+#: ctl/ctlChat.cpp
+msgid "Send"
+msgstr "送信"
+
+#: ctl/ctlChat.cpp
+msgid "The window can be closed"
+msgstr "ウィンドウを閉じることができます"
+
+#: ctl/ctlChat.cpp
+msgid "Copy done"
+msgstr "コピーしました"
+
+#: ctl/ctlChat.cpp
+msgid "AI Chat"
+msgstr "AIチャット"
+
+#: ctl/ctlChat.cpp
+msgid "History clear"
+msgstr "履歴を消去しました"
+
+#: ctl/ctlChat.cpp
+msgid "I think.."
+msgstr "考え中.."
+
+#: ctl/ctlChat.cpp
+msgid "Parse json value error in AI Chat Parameters\n"
+msgstr "AIチャットのパラメータのJSON値の解析エラー\n"
+
+#: ctl/ctlChat.cpp
+msgid "Send selection to AI Chat\tF9"
+msgstr "選択範囲をAIチャットに送信\tF9"
+
+#: ctl/ctlChat.cpp
+msgid "Send selection to AI chat"
+msgstr "選択範囲をAIチャットに送信"
+
+#: ctl/ctlChat.cpp
+msgid "Not response answer server"
+msgstr "サーバーから応答がありません"
+
+#: ctl/ctlChat.cpp
+msgid "Host server"
+msgstr "ホストサーバー"
+
+#: ctl/ctlChat.cpp
+msgid "Chat Part URL"
+msgstr "チャットURLパス"
+
+#: ctl/ctlChat.cpp
+msgid "System prompt"
+msgstr "システムプロンプト"

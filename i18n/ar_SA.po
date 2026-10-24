@@ -32838,3 +32838,63 @@ msgstr "داكن"
 #: frm/frmOptions.cpp:5
 msgid "Restart pgAdmin III to fully apply the appearance change."
 msgstr "أعد تشغيل pgAdmin III لتطبيق تغيير المظهر بالكامل."
+
+#: ctl/ctlChat.cpp
+msgid "Up"
+msgstr "أعلى"
+
+#: ctl/ctlChat.cpp
+msgid "Down"
+msgstr "أسفل"
+
+#: ctl/ctlChat.cpp
+msgid "Send"
+msgstr "إرسال"
+
+#: ctl/ctlChat.cpp
+msgid "The window can be closed"
+msgstr "يمكن إغلاق النافذة"
+
+#: ctl/ctlChat.cpp
+msgid "Copy done"
+msgstr "تم النسخ"
+
+#: ctl/ctlChat.cpp
+msgid "AI Chat"
+msgstr "دردشة الذكاء الاصطناعي"
+
+#: ctl/ctlChat.cpp
+msgid "History clear"
+msgstr "تم مسح السجل"
+
+#: ctl/ctlChat.cpp
+msgid "I think.."
+msgstr "أفكر.."
+
+#: ctl/ctlChat.cpp
+msgid "Parse json value error in AI Chat Parameters\n"
+msgstr "خطأ في تحليل قيمة JSON في معلمات دردشة الذكاء الاصطناعي\n"
+
+#: ctl/ctlChat.cpp
+msgid "Send selection to AI Chat\tF9"
+msgstr "إرسال التحديد إلى دردشة الذكاء الاصطناعي\tF9"
+
+#: ctl/ctlChat.cpp
+msgid "Send selection to AI chat"
+msgstr "إرسال التحديد إلى دردشة الذكاء الاصطناعي"
+
+#: ctl/ctlChat.cpp
+msgid "Not response answer server"
+msgstr "لم يستجب الخادم"
+
+#: ctl/ctlChat.cpp
+msgid "Host server"
+msgstr "خادم المضيف"
+
+#: ctl/ctlChat.cpp
+msgid "Chat Part URL"
+msgstr "جزء عنوان URL للدردشة"
+
+#: ctl/ctlChat.cpp
+msgid "System prompt"
+msgstr "موجه النظام"

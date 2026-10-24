@@ -24316,3 +24316,63 @@ msgstr "Sötét"
 #: frm/frmOptions.cpp:5
 msgid "Restart pgAdmin III to fully apply the appearance change."
 msgstr "A megjelenés módosításának teljes alkalmazásához indítsa újra a pgAdmin III-at."
+
+#: ctl/ctlChat.cpp
+msgid "Up"
+msgstr "Fel"
+
+#: ctl/ctlChat.cpp
+msgid "Down"
+msgstr "Le"
+
+#: ctl/ctlChat.cpp
+msgid "Send"
+msgstr "Küldés"
+
+#: ctl/ctlChat.cpp
+msgid "The window can be closed"
+msgstr "Az ablak bezárható"
+
+#: ctl/ctlChat.cpp
+msgid "Copy done"
+msgstr "Másolva"
+
+#: ctl/ctlChat.cpp
+msgid "AI Chat"
+msgstr "MI-csevegés"
+
+#: ctl/ctlChat.cpp
+msgid "History clear"
+msgstr "Előzmények törölve"
+
+#: ctl/ctlChat.cpp
+msgid "I think.."
+msgstr "Gondolkodom.."
+
+#: ctl/ctlChat.cpp
+msgid "Parse json value error in AI Chat Parameters\n"
+msgstr "JSON-érték elemzési hiba az MI-csevegés paramétereiben\n"
+
+#: ctl/ctlChat.cpp
+msgid "Send selection to AI Chat\tF9"
+msgstr "Kijelölés küldése az MI-csevegésnek\tF9"
+
+#: ctl/ctlChat.cpp
+msgid "Send selection to AI chat"
+msgstr "Kijelölés küldése az MI-csevegésnek"
+
+#: ctl/ctlChat.cpp
+msgid "Not response answer server"
+msgstr "A szerver nem válaszolt"
+
+#: ctl/ctlChat.cpp
+msgid "Host server"
+msgstr "Kiszolgáló"
+
+#: ctl/ctlChat.cpp
+msgid "Chat Part URL"
+msgstr "Csevegés URL-része"
+
+#: ctl/ctlChat.cpp
+msgid "System prompt"
+msgstr "Rendszerprompt"

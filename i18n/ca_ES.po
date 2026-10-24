@@ -21365,3 +21365,63 @@ msgstr "Fosc"
 #: frm/frmOptions.cpp:5
 msgid "Restart pgAdmin III to fully apply the appearance change."
 msgstr "Reinicieu pgAdmin III per aplicar completament el canvi d'aparença."
+
+#: ctl/ctlChat.cpp
+msgid "Up"
+msgstr "Amunt"
+
+#: ctl/ctlChat.cpp
+msgid "Down"
+msgstr "Avall"
+
+#: ctl/ctlChat.cpp
+msgid "Send"
+msgstr "Envia"
+
+#: ctl/ctlChat.cpp
+msgid "The window can be closed"
+msgstr "La finestra es pot tancar"
+
+#: ctl/ctlChat.cpp
+msgid "Copy done"
+msgstr "Copiat"
+
+#: ctl/ctlChat.cpp
+msgid "AI Chat"
+msgstr "Xat d'IA"
+
+#: ctl/ctlChat.cpp
+msgid "History clear"
+msgstr "Historial esborrat"
+
+#: ctl/ctlChat.cpp
+msgid "I think.."
+msgstr "Pensant.."
+
+#: ctl/ctlChat.cpp
+msgid "Parse json value error in AI Chat Parameters\n"
+msgstr "Error en analitzar el valor JSON als paràmetres del xat d'IA\n"
+
+#: ctl/ctlChat.cpp
+msgid "Send selection to AI Chat\tF9"
+msgstr "Envia la selecció al xat d'IA\tF9"
+
+#: ctl/ctlChat.cpp
+msgid "Send selection to AI chat"
+msgstr "Envia la selecció al xat d'IA"
+
+#: ctl/ctlChat.cpp
+msgid "Not response answer server"
+msgstr "El servidor no ha respost"
+
+#: ctl/ctlChat.cpp
+msgid "Host server"
+msgstr "Servidor amfitrió"
+
+#: ctl/ctlChat.cpp
+msgid "Chat Part URL"
+msgstr "Part de l'URL del xat"
+
+#: ctl/ctlChat.cpp
+msgid "System prompt"
+msgstr "Prompt del sistema"

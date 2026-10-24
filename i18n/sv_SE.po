@@ -23372,3 +23372,63 @@ msgstr "Mörkt"
 #: frm/frmOptions.cpp:5
 msgid "Restart pgAdmin III to fully apply the appearance change."
 msgstr "Starta om pgAdmin III för att tillämpa utseendeändringen fullt ut."
+
+#: ctl/ctlChat.cpp
+msgid "Up"
+msgstr "Upp"
+
+#: ctl/ctlChat.cpp
+msgid "Down"
+msgstr "Ned"
+
+#: ctl/ctlChat.cpp
+msgid "Send"
+msgstr "Skicka"
+
+#: ctl/ctlChat.cpp
+msgid "The window can be closed"
+msgstr "Fönstret kan stängas"
+
+#: ctl/ctlChat.cpp
+msgid "Copy done"
+msgstr "Kopierat"
+
+#: ctl/ctlChat.cpp
+msgid "AI Chat"
+msgstr "AI-chatt"
+
+#: ctl/ctlChat.cpp
+msgid "History clear"
+msgstr "Historik rensad"
+
+#: ctl/ctlChat.cpp
+msgid "I think.."
+msgstr "Jag tänker.."
+
+#: ctl/ctlChat.cpp
+msgid "Parse json value error in AI Chat Parameters\n"
+msgstr "Fel vid tolkning av JSON-värde i AI-chattens parametrar\n"
+
+#: ctl/ctlChat.cpp
+msgid "Send selection to AI Chat\tF9"
+msgstr "Skicka markeringen till AI-chatten\tF9"
+
+#: ctl/ctlChat.cpp
+msgid "Send selection to AI chat"
+msgstr "Skicka markeringen till AI-chatten"
+
+#: ctl/ctlChat.cpp
+msgid "Not response answer server"
+msgstr "Inget svar från servern"
+
+#: ctl/ctlChat.cpp
+msgid "Host server"
+msgstr "Värdserver"
+
+#: ctl/ctlChat.cpp
+msgid "Chat Part URL"
+msgstr "Chattens URL-del"
+
+#: ctl/ctlChat.cpp
+msgid "System prompt"
+msgstr "Systemprompt"
