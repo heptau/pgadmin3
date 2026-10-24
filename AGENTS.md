@@ -538,6 +538,17 @@ picks up this work next — treat this as a running log, not final docs.
   `msgmerge` against a code-only POT — append new msgids instead.
   `chatclient` uses `wxWebRequest` (wx `net` component, already linked; needs
   libcurl-enabled wx on Linux, which libwxgtk3.2-dev provides).
+- 2026-10-24: Dependency/security audit. Homebrew deps (libxml2 2.15.4,
+  libxslt 1.1.45, postgresql@16 16.15, openssl 3.5.9) are current. Rebuilt
+  wxWidgets 3.3.3 -> **3.3.4** (same configure flags as above, prefix
+  `~/wx-cocoa-classic-3.3.4`, source in `~/wx-src/wxWidgets-3.3.4`; old
+  3.3.3 prefix kept as fallback). The `wxArrayBool` dynarray.h bug is
+  **still present in 3.3.4** — reapply the same patch (`Item()`/`operator[]`/
+  `Last()` return `reference`) before `make`. `Makefile`/`run-macos.sh` now
+  default to the 3.3.4 prefix. NOT updated (can't be built/tested here):
+  the prebuilt Windows DLLs in `x64/Release` (OpenSSL 1.0.2n/1.1.1g, both
+  EOL; libssh2.dll links libcrypto-1_1) and the vendored libssh2 1.6.1_DEV
+  headers in `include/libssh2` — these need a Windows build environment.
 
 ## Known TODOs / not yet solved
 

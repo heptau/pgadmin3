@@ -5,6 +5,9 @@ Format loosely follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ## [Unreleased]
 
+### Changed
+- macOS build now uses wxWidgets 3.3.4 (was 3.3.3).
+
 ### Added
 - AI Chat (merged from upstream master): new "AI Chat" tab in the output pane
   talking to an LLM server (e.g. llama/Ollama). Configure host, chat URL,

@@ -17,5 +17,5 @@ fi
 if [ -d ../app-docs ] && [ ! -L docs ] && [ ! -f docs ]; then
 	ln -s ../app-docs docs || true
 fi
-export DYLD_LIBRARY_PATH="${WX_COCOA_PREFIX:-$HOME/wx-cocoa-classic}/lib"
+export DYLD_LIBRARY_PATH="${WX_COCOA_PREFIX:-$HOME/wx-cocoa-classic-3.3.4}/lib"
 exec ./pgAdmin3 "$@"

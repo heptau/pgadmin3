@@ -12,7 +12,7 @@
 
 UNAME_S := $(shell uname -s)
 
-WX_COCOA_PREFIX   ?= $(HOME)/wx-cocoa-classic
+WX_COCOA_PREFIX   ?= $(HOME)/wx-cocoa-classic-3.3.4
 LIBXML2_PREFIX    ?= /opt/homebrew/opt/libxml2
 LIBXSLT_PREFIX    ?= /opt/homebrew/opt/libxslt
 POSTGRESQL_PREFIX ?= /opt/homebrew/opt/postgresql@16
