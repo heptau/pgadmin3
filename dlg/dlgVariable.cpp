@@ -121,7 +121,7 @@ dlgVariable::dlgVariable(ctlSQLBox* parent, wxString& query, std::vector<var_que
     settings->ReadJsonObect(dlgName, opt, def);
     
     int idx = 1;
-    for (int i = 0; i < var_list.size(); i++)
+    for (int i = 0; i < (int)var_list.size(); i++)
     {
         wxString name = var_list[i].txtVar;
         if (name.length() > 1) name = name.substr(1);
@@ -154,18 +154,16 @@ dlgVariable::dlgVariable(ctlSQLBox* parent, wxString& query, std::vector<var_que
 	LoadResource(parent, dlgName);
 	RestorePosition();
 	//wxStaticText statusBar = new wxStatusBar(this, -1, flags);
-	int flags = 0;
 
 	// Icon
 	appearanceFactory->SetIcons(this);
 	//if (startsqlbox->GetQueryBook()==NULL) chkOptionsAllFind->Disable();
 	// Load up the defaults
 	wxString val;
-	bool bVal;
     v_list = var_list;
     originalquery = query;
     
-    for (int i = 0; i < v_list.size(); i++)
+    for (int i = 0; i < (int)v_list.size(); i++)
     {
         wxString name = v_list[i].txtVar;
         if (name.length() > 1) name = name.substr(1);
@@ -236,10 +234,9 @@ void dlgVariable::OnOk(wxCommandEvent &ev)
 {
 	//if (txtFind->GetValue().IsEmpty()) 		return;
     
-    int idx = 0;
     int lastpos = 0;
     std::map<wxString, int> unic_n;
-    for (int i = 0; i < v_list.size(); i++)
+    for (int i = 0; i < (int)v_list.size(); i++)
     {
         wxString name = v_list[i].txtVar;
         if (name.length() > 1) name = name.substr(1);
@@ -278,7 +275,7 @@ void dlgVariable::OnOk(wxCommandEvent &ev)
         modquery += varVal;
         lastpos += v_list[i].txtVar.length();
     }
-    if (lastpos< originalquery.length()) modquery += originalquery.substr(lastpos);
+    if (lastpos< (int)originalquery.length()) modquery += originalquery.substr(lastpos);
 
     settings->WriteJsonObect(dlgName, opt);
     SaveSettings();

@@ -5,6 +5,15 @@ Format loosely follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ## [Unreleased]
 
+### Added
+- Holding Shift while opening the Query tool / Data view ignores saved window
+  sizes and uses the current OS visual scheme (merged from upstream master).
+- Plugins are also loaded from `plugins.d` in the user data directory.
+
+### Changed
+- Merged upstream master: compile-warning cleanups, globals moved to
+  `globalvar.cpp`, removed the unused bundled libssh2 sources.
+
 ## [2026.10.24]
 
 ### Changed

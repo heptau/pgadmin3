@@ -128,7 +128,7 @@ public:
 		// Count
 		{
 			//wxString k = names[nm];
-			for (int col = 1; col < columns.size(); col++) {
+			for (int col = 1; col < (int)columns.size(); col++) {
 				if (types_col[col] < 1) continue;
 				vectord elements=columns[col];
 				//elements.reserve(1000);
@@ -194,7 +194,7 @@ public:
 		wxString name;
 		bool isEmpty = true;
 		if (numMetric >= getCountMetrics()) return footcols;
-		for (int x = 0; x < columns.size();x++) {
+		for (int x = 0; x < (int)columns.size();x++) {
 			if (x == 0) { 
 				// Title
 				name = names[numMetric];
@@ -1410,7 +1410,6 @@ wxString SQL::toString() const {
   	wxString c=wxEmptyString;
 	wxString cmp=wxEmptyString;
 	if (countchild>0) c.Printf(wxT("(%d)"), countchild);
-	bool r=false;
 	if (sql.Cmp(sql2)!=0) {
 		cmp="ne EQ ";
 		cmp.Printf(wxT("(ne EQ (%d, %d))"), sql.Len(),sql2.Len());
@@ -1464,7 +1463,7 @@ wxString reportCompareFactory::ApplyCompareOpts(wxString sql,int metatype) {
 			int end = -1;
 			while (last!=-1) {
 				last++;
-				if (sql.Length() == last) { last = -1; continue; }
+				if ((int)sql.Length() == last) { last = -1; continue; }
 				wxChar c = sql.GetChar(last);
 				if (c == '\'') {
 					last++;
@@ -1489,7 +1488,7 @@ wxString reportCompareFactory::ApplyCompareOpts(wxString sql,int metatype) {
 			int end = -1;
 			while (last != -1) {
 				last++;
-				if (sql.Length() == last) { last = -1; continue; }
+				if ((int)sql.Length() == last) { last = -1; continue; }
 				wxChar c = sql.GetChar(last);
 				if (c == ';') {
 					 end = last; last = -1;
@@ -1663,7 +1662,7 @@ wxWindow *reportCompareFactory::StartDialog(frmMain *form, pgObject *obj)
 	//wxBusyInfo *waiting;
 	wxString msg;
 	// Generate the report header
-	wxDateTime now = wxDateTime::Now();
+	//wxDateTime now = wxDateTime::Now();
 	
 		ctlTree *browser=form->GetBrowser();
 	wxTreeItemIdValue foldercookie;
@@ -1826,8 +1825,8 @@ timer=wxDateTime::GetTimeNow();
 
 int e_count=list.GetCount();
 int linecount=0;
-int nstart=0,lastpos=0;
-int c,minlen=100000,root=0;
+int nstart=0;
+int minlen=100000,root=0;
 wxArrayInt* child;
 wxArrayPtrVoid level(15);
 wxHashTable htab(wxKEY_STRING);
@@ -1836,11 +1835,10 @@ int npos=p2;
     for (int i = 0; i < e_count; ++i)
     {
         SQL& sq = list.Item(i);
-		c=0;
 		nstart=0;
 		if ((nstart=sq.pathtree.rfind('/'))!=wxNOT_FOUND ) { 
 			key=sq.pathtree.SubString(npos,nstart-1);
-			if (minlen>key.Len()) {minlen=key.Len(); root=i;}
+			if (minlen>(int)key.Len()) {minlen=key.Len(); root=i;}
 		}
 		child=(wxArrayInt *)htab.Get(key);
 		if (child==NULL) {
@@ -2024,14 +2022,13 @@ std::wstring reportCompareFactory::printdiff(std::wstring str1, std::wstring str
 	  it = diffs.begin(); // присваиваем ему начало списка
 	  Diff aDiff;
 	  bool modify = false;
-	  bool oneline = false;
 	  nstart = 0;
 	  while (it != diffs.end()) // пока итератор не достигнет конца
 	  {
 		aDiff=*it;
 	    tex=aDiff.text;
 		nstart=0;
-	    while (nstart<tex.length()) {
+	    while (nstart<(int)tex.length()) {
 			pos=tex.find('\n',nstart);
 			if (pos==-1) {t.assign(tex,nstart,tex.length());nstart=tex.length();} else {t.assign(tex,nstart,pos-nstart);nstart=pos;}
 			if (t.length()>0) {
@@ -2044,7 +2041,7 @@ std::wstring reportCompareFactory::printdiff(std::wstring str1, std::wstring str
 				}
 				else modify = true;
 				// пока не встретим перевод строки считаем что это всё одна строка
-				oneline = true;
+				//oneline = true;
 			}
 			else
 			{
@@ -2102,7 +2099,7 @@ std::wstring reportCompareFactory::printdiff(std::wstring str1, std::wstring str
 				
 				//
 				modify=false;
-				oneline=false;
+				//oneline=false;
 			}
 		} // цикл по строкам внутри одного Diff
 	  ++it;
@@ -2182,7 +2179,7 @@ wxString reportCompareFactory::printlvl(int element,int lvl,ArraySQL &list, wxHa
 		r.Replace("@idtablecmp@",tid);	
 		l+=r;
 		if (child!=NULL) {
-			for (int j=0;j<child->GetCount();j++) {
+			for (int j=0;j<(int)child->GetCount();j++) {
 				l+=printlvl(child->Item(j),lvl+1,list,htab);
 			}
 		}
