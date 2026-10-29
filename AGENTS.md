@@ -545,24 +545,17 @@ picks up this work next — treat this as a running log, not final docs.
   3.3.3 prefix kept as fallback). The `wxArrayBool` dynarray.h bug is
   **still present in 3.3.4** — reapply the same patch (`Item()`/`operator[]`/
   `Last()` return `reference`) before `make`. `Makefile`/`run-macos.sh` now
-  default to the 3.3.4 prefix. NOT updated (can't be built/tested here):
-  the prebuilt Windows DLLs in `x64/Release` (OpenSSL 1.0.2n/1.1.1g, both
-  EOL; libssh2.dll links libcrypto-1_1) and the vendored libssh2 1.6.1_DEV
-  headers in `include/libssh2` — these need a Windows build environment.
-
-## Known TODOs / not yet solved
-
-- tests/ (Catch2) disabled on macOS in CMakeLists.txt — needs either a
-  Catch2 v2 compat shim or porting tests/test_Formatter.cpp to Catch2 v3
-  (`catch2/catch_test_macros.hpp` etc).
-- App icon is upscaled from a single 256x256 source (`include/images/
-  pgAdmin3.ico`) — looks fine at normal Dock size but real multi-resolution
-  artwork would look sharper at 512/1024.
-- Not code-signed with a real Developer ID (ad-hoc only) or notarized —
-  fine for running on this machine, but Gatekeeper will complain
-  ("unidentified developer") if the `.app` is copied to another Mac; the
-  user would need to right-click → Open the first time there.
-- Debug-symbol splitting (dsymutil/strip) skipped on macOS, unlike Windows'
-  objcopy-based split — cosmetic, not blocking.
-
-<!-- Append new dated entries below as work progresses. -->
+  default to the 3.3.4 prefix.
+- 2026-10-29: Merged 6 more upstream commits into `main` (Shift soft-reset of
+  window sizes, warning cleanups, globals moved to `globalvar.cpp`,
+  `CMakeLists.txt` now builds a static `pgAdmin3_lib` + thin `pgAdmin3`
+  executable, `PG_SSL` now defined for non-cross builds). Resolved
+  `CMakeLists.txt` (debug-symbol split is now `Debug AND NOT APPLE`) and
+  re-applied our mac edits in `pgAdmin3.cpp` on top of upstream's version.
+  Re-checked dependencies: Homebrew `brew outdated` is empty, wx 3.3.4 is
+  the latest 3.3.x. **Supersedes the 2026-10-24 "NOT updated" note:**
+  upstream has since updated the prebuilt Windows DLLs in `x64/Release`
+  (OpenSSL 3.x, libssh2, libxml2, libxslt; old OpenSSL 1.x DLLs removed) and
+  deleted the vendored libssh2 sources/headers (`libssh2/`,
+  `include/libssh2/`), so nothing is outstanding there. The mac build does
+  not define `HAVE_OPENSSL_CRYPTO`, so SSH tunnelling stays compiled out.
