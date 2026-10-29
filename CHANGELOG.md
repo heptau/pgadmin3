@@ -5,6 +5,8 @@ Format loosely follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ## [Unreleased]
 
+## [2026.10.29]
+
 ### Added
 - Holding Shift while opening the Query tool / Data view ignores saved window
   sizes and uses the current OS visual scheme (merged from upstream master).
