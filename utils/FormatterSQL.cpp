@@ -1,6 +1,10 @@
 #include "pgAdmin3.h"
 #include "wx/regex.h"
 #include <stack>
+extern "C"
+{
+#include "parser/keywords.h"
+}
 using namespace FSQL;
 wxString FormatterSQL::printParseArray() {
     int i = 0;
@@ -89,15 +93,28 @@ wxString FormatterSQL::GetListTable(int cursorPos) {
     if (cursorPos==0) return GetListTable(listTable);
     else return GetListTable(listFunction);
 }
+/**
+ * @brief Получение списка таблиц слева от курсора
+ * Подзапросы игнорируются.
+ * @param positem позиция в items соответсвующая курсору
+ * @param listtable - Возращаемые имена таблиц
+ * @param listalias - Синонимы
+ * @return int - количество таблиц
+ */
 int FormatterSQL::GetTableListBeforePosition(int positem, wxArrayString& listtable, wxArrayString& listalias) {
     int s = 0;
     complite_element* el;
     int left_id = -1;
+    int level = -1;
     while (s < (int)listTable.size()) {
         el = &listTable[s++];
         //r += wxString::Format("[ %s,%s] %s\n", el->table, el->alias, el->columnList);
+        
         bool bet = el->startIndex <= positem && el->endIndex >= positem;
         if (el->startIndex > positem) { s--; break; }
+        // skip with tables
+        if (el->table == '@') continue;
+        level = el->level;
         if (bet ) {
             if (left_id != -1 && (el->endIndex - el->startIndex) >= (&listTable[left_id].endIndex - &listTable[left_id].startIndex)) continue;
             left_id=s-1;
@@ -107,17 +124,19 @@ int FormatterSQL::GetTableListBeforePosition(int positem, wxArrayString& listtab
     if (s > 0) {
         s = s - 1;
         if (left_id != -1) s = left_id;
-        int level = -1;
         while (s >= 0) {
             el = &listTable[s--];
-            if (level == -1) level = el->level;
+            //if (level == -1) level = el->level;
             if (el->table != '@') {
                 if (level > el->level) break;
                 if (level < el->level) continue;
                 listtable.Add(el->table);
                 listalias.Add(el->alias);
                 c++;
-            }
+            } else 
+                // end list table
+                if (c>0 && (level > el->level)) 
+                    break;
         }
     }
     return c;
@@ -225,7 +244,7 @@ wxString FormatterSQL::BuildAutoComplite(int startIndex, int level) {
     //int n_element = startIndex;
     int found_index = startIndex;
     //int start_select_list;
-    int indexlastID;
+    int indexlastID=0;
     union Byte zone { 0 };
     wxString lastname;
     wxString query_cols_list;
@@ -256,7 +275,8 @@ wxString FormatterSQL::BuildAutoComplite(int startIndex, int level) {
                     if (!lastname.IsEmpty())cols.Add(lastname);
                 }
                 zone.b.from = 1; zone.b.select_list = 0;
-                objName.Clear(); isfunction = false; isskipnext = false; el.columnList = ""; el.alias = ""; el.table = ""; el.level = level; el.startIndex = found_index;
+                objName.Clear(); isfunction = false; isskipnext = false; el.columnList = ""; el.alias = ""; el.table = ""; el.level = level;
+                el.startIndex = found_index+1; // next element
             }
             if (vi->txt.Lower() == "with") {
                 zone.b.with = 1; zone.b.skip = 1;
@@ -1201,12 +1221,14 @@ int FormatterSQL::ParseSql(int flags) {
                     #ifdef _DEBUG
                     //wxTrap();
                     int lastidx=items.size()-1;
-                    int st=items[lastidx].srcpos;
-                    wxString textlast=items[lastidx].txt;
-                    st=st+textlast.length();
-                    if (st>=0) {
-                            wxString b=sql.substr(st,100);
-                            wxMessageBox(wxString::Format("Bad sql syntax : %s",b));
+                    if (lastidx>=0) { 
+                        int st=items[lastidx].srcpos;
+                        wxString textlast=items[lastidx].txt;
+                        st=st+textlast.length();
+                        if (st>=0) {
+                                wxString b=sql.substr(st,100);
+                                wxMessageBox(wxString::Format("Bad sql syntax : %s",b));
+                        }
                     }
                     #endif
         errorposition=i;
@@ -1322,6 +1344,71 @@ wxSize FormatterSQL::best_sizeAndDraw(wxDC& dc, wxPoint& pos, view_item& vi, int
     }
 
     return sz;
+}
+void FormatterSQL::initcolors()
+{
+    if (colors.size()==0) {
+        
+        wxString fg=settings->GetSQLBoxColourForeground();
+        wxString keyword=settings->GetSQLBoxColour(5);
+        wxString literal=settings->GetSQLBoxColour(6);
+        wxString doubleqoute=settings->GetSQLBoxColour(7);
+        wxString numeric=settings->GetSQLBoxColour(4);
+        wxString comment=settings->GetSQLBoxColour(1);
+        wxString oper=settings->GetSQLBoxColour(10);
+        wxString name=settings->GetSQLBoxColour(11);
+        if (fg.IsEmpty()) fg=wxSystemSettings::GetColour(wxSYS_COLOUR_WINDOWTEXT).GetAsString(wxC2S_HTML_SYNTAX);
+
+        colors.push_back("");
+        colors.push_back("");
+        colors.push_back((keyword));
+        colors.push_back((literal));
+         colors.push_back((oper));
+         colors.push_back((oper));
+         colors.push_back((doubleqoute));
+         colors.push_back((name));
+         colors.push_back((numeric));
+         colors.push_back((oper)); //bindarg
+         colors.push_back((comment)); //comment
+    }
+}
+wxString FormatterSQL::toHtml()
+{
+    initcolors();
+    int sp_idx=-1;
+    wxString html;
+     for (const auto& item : items) {
+            if (item.srcpos==-1) continue;
+            wxString t;
+            if (sp_idx>=0) {
+                t.Append(' ',item.srcpos-sp_idx);
+                sp_idx=-1;
+            }
+            if (item.type==spaces) {
+                    sp_idx=item.srcpos;
+                    continue;
+                }
+                else
+                    t.Append(item.txt);
+            wxString escapedTxt = escapeHtml(t,true);
+            int ii=item.type;
+            wxString c;
+            if (item.type==name) {
+                wxString value=item.txt;
+                const ScanKeyword *sk = ScanKeywordLookup(value.ToAscii());
+                if (sk) ii=keyword;
+            }
+            
+            //if (!sk)
+		            
+
+            if (ii<(int)colors.size()) c=colors[ii];
+            if (c.IsEmpty()) 
+                    html << escapedTxt;
+                else
+                    html << "<span style=\"color: " << c << ";\">" << escapedTxt << "</span>";
+     }
+     return html;
 }
 /// <summary>
 ///  Получение индекса следующего или предудущего элемента списка отличного от <c>space</c>

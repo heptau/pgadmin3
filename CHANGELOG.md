@@ -5,6 +5,13 @@ Format loosely follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ## [Unreleased]
 
+### Fixed
+- Context help for DB objects: with several identical connections in the object
+  tree the open connection was looked up incorrectly (merged from upstream master).
+- Autocomplete sometimes did not see tables when analysing FKs; tests added
+  (merged from upstream master).
+- Debug builds now define `_DEBUG`/`DEBUG`; assorted compile-warning cleanups.
+
 ## [2026.10.29]
 
 ### Added
