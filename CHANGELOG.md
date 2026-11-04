@@ -5,6 +5,8 @@ Format loosely follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ## [Unreleased]
 
+## [2026.11.04]
+
 ### Fixed
 - Context help for DB objects: with several identical connections in the object
   tree the open connection was looked up incorrectly (merged from upstream master).
